@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>swtk-commons</groupId>
+	<artifactId>swtk-commons</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0.0</version>
+
+	<name>SWTK Commons</name>
+	<inceptionYear>2014</inceptionYear>
+	<description>SWKT Commons</description>
+	<url>https://github.com/torrances/swtk-common</url>
+
+	<modules>
+		<module>../commons-core</module>
+		<module>../commons-framework</module>
+		<module>../commons-dict</module>
+		<module>../commons-ds-d3js</module>
+	</modules>
+
+	<properties>
+		<swtk.version>1.0.0</swtk.version>
+	</properties>
+
+	<dependencies>
+		<!-- https://github.com/torrances/bom/tree/master/mysql -->
+		<dependency>
+			<groupId>mysql-bom</groupId>
+			<artifactId>mysql-bom</artifactId>
+			<version>5.1.34</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>org.swtk.common.core</groupId>
+			<artifactId>commons-core</artifactId>
+			<version>${swtk.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.swtk.common.framework</groupId>
+			<artifactId>commons-framework</artifactId>
+			<version>${swtk.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.swtk.common.dict</groupId>
+			<artifactId>commons-dict</artifactId>
+			<version>${swtk.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.swtk.common.ds.d3js</groupId>
+			<artifactId>commons-ds-d3js</artifactId>
+			<version>${swtk.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.trimc.blogger.commons</groupId>
+			<artifactId>java-commons</artifactId>
+			<version>${swtk.version}</version>
+		</dependency>
+	</dependencies>
+
+</project>

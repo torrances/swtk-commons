@@ -1,0 +1,12 @@
+insert into question_type (name, description) values ('causal-antecedent', 'is characterized by');
+insert into question_type (name, description) values ('causal-consequence', 'what next; what if?');
+insert into question_type (name, description) values ('concept-completion-what', 'what time will we leave?');
+insert into question_type (name, description) values ('concept-completion-when', 'when does X happen?');
+insert into question_type (name, description) values ('concept-completion-where', 'where will X happen?');
+insert into question_type (name, description) values ('concept-completion-who', 'who is on the board of directors?');
+insert into question_type (name, description) values ('definition', 'what is X?');
+insert into question_type (name, description) values ('disablement', 'what disables X from occuring?');
+insert into question_type (name, description) values ('enablement', 'what enabled X to occur?');
+insert into question_type (name, description) values ('feature-specification', 'what are the properties of X?');
+insert into question_type (name, description) values ('procedural', 'how did an agent do X?');
+insert into question_type (name, description) values ('verification', 'can gold corrode');

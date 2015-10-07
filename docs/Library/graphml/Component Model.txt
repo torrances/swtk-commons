@@ -1,0 +1,22 @@
+1. SWTK-NGRAMS
+	===> SWTK-KB
+	if we create a method for auto-derivation of a KB
+	which would be a good thing
+	
+2. SWTK-ENG
+	===> SWTK-LANG
+	generic (not just english) tokenization and parsing
+
+This leaves:
+
+dependencies (this can be public; no IP)
+  commons
+    lang		PRIVATE
+      kb		PRIVATE
+      qa		PRIVATE
+      ml		PRIVATE
+  sandbox
+total = 7 repositories
+
+removes (core, plugins, graph)
+total = 3 repositories	
