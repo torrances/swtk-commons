@@ -18,6 +18,7 @@ public class DictionariesTest {
 		read("measurementWordsDictionary");
 		read("nounPhrasesDictionary");
 		read("stopWordsDictionary");
+		read("languagesDictionary");
 	}
 
 	@Test

@@ -9,6 +9,7 @@ import java.util.TreeSet;
 import org.springframework.core.io.Resource;
 
 import com.trimc.blogger.commons.LogManager;
+import com.trimc.blogger.commons.utils.StringUtils;
 
 public abstract class DictionaryBase implements Dictionary {
 
@@ -27,7 +28,7 @@ public abstract class DictionaryBase implements Dictionary {
 
 			BufferedReader reader = new BufferedReader(new InputStreamReader(resource.getInputStream()));
 			for (String line = reader.readLine(); line != null; line = reader.readLine())
-				set.add(line);
+				set.add(StringUtils.trim(line));
 
 		} catch (IOException e) {
 			logger.error(e, "Failed to Load Dictionary (name = %s)", getBeanName());
