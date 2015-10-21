@@ -9,13 +9,10 @@ import java.util.TreeSet;
 
 import com.trimc.blogger.commons.exception.BusinessException;
 import com.trimc.blogger.commons.type.Codepage;
-import com.trimc.blogger.commons.utils.SetUtils;
 import com.trimc.blogger.commons.utils.file.FileUtils;
 import com.trimc.blogger.commons.utils.string.StringUtils;
 
 public class Runner {
-
-	public static final String[] INVALID_LINES = { "toz				I	L	To	", "asz				I	L	As	", "mnw				I	L	Mon	" };
 
 	public static void main(String... args) throws Throwable {
 
@@ -28,7 +25,6 @@ public class Runner {
 		Map<String, Set<String>> map = new TreeMap<String, Set<String>>();
 		for (String line : FileUtils.toList(IN, Codepage.UTF_8)) {
 
-			if (SetUtils.memberOf(line, INVALID_LINES)) continue;
 			if (line.startsWith("Id	Part2B")) continue;
 			if (!StringUtils.hasValue(line)) continue;
 
