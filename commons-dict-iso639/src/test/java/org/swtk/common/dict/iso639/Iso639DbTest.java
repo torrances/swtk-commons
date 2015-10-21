@@ -14,7 +14,7 @@ import com.trimc.blogger.commons.LogManager;
 
 public final class Iso639DbTest {
 
-	public static final String[] AMBIGUOUS_TERMS = { "and", "but", "eng", "for", "new", "see", "sig", "the", "vel", "to" };
+	public static final String[] AMBIGUOUS_TERMS = { "and", "but", "eng", "for", "new", "see", "sig", "the", "vel", "to", "as", "mon" };
 
 	public static LogManager logger = new LogManager(Iso639DbTest.class);
 
@@ -47,7 +47,7 @@ public final class Iso639DbTest {
 	public void hasByName() throws Throwable {
 		assertTrue(Iso639Db.hasByName("old high german"));
 	}
-	
+
 	@Test
 	public void hasByNameAmbiguousWords() throws Throwable {
 		for (String ambiguousTerm : AMBIGUOUS_TERMS) {

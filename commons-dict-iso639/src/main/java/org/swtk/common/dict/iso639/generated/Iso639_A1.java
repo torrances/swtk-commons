@@ -7,7 +7,7 @@ import org.swtk.common.dict.dto.Entity;
 import org.swtk.common.dict.dto.adapter.EntityAdapter;
 import org.swtk.common.dict.iso639.utils.Iso639Utils;
 
-/**	  * 	AUTO-GENERATED  * 		time 		<1445406732044>  * 		activity 	<public class org.swtk.common.dict.iso639.Runner>  * 		url			<https://github.com/torrances/swtk-data>  * 		agent 		<cmtrim>  * 	DO NOT MODIFY THIS CLASS  * 	CONTENTS ARE AUTOMATICALLY REPLACED BY MDA ROUTINE  */
+/**	  * 	AUTO-GENERATED  * 		time 		<1445407051490>  * 		activity 	<public class org.swtk.common.dict.iso639.Runner>  * 		url			<https://github.com/torrances/swtk-data>  * 		agent 		<cmtrim>  * 	DO NOT MODIFY THIS CLASS  * 	CONTENTS ARE AUTOMATICALLY REPLACED BY MDA ROUTINE  */
 public final class Iso639_A1 {
 	private static Map<Integer, Entity> map = new HashMap<Integer, Entity>();
 
@@ -406,7 +406,6 @@ public final class Iso639_A1 {
 		add("asw				I	L	Australian Aborigines Sign Language	");
 		add("asx				I	L	Muratayak	");
 		add("asy				I	L	Yaosakor Asmat	");
-		add("asz				I	L	As	");
 		add("ata				I	L	Pele-Ata	");
 		add("atb				I	L	Zaiwa	");
 		add("atc				I	E	Atsahuaca	");
