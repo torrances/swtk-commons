@@ -8,11 +8,24 @@ import java.util.TreeSet;
 
 import org.swtk.common.dict.dto.Entity;
 
+import com.trimc.blogger.commons.utils.SetUtils;
+
 public final class Iso639Utils {
 
 	public static Entity findById(String id, Map<Integer, Entity> map) {
 		for (Entity entity : map.values())
 			if (entity.getId().equalsIgnoreCase(id)) return entity;
+
+		return null;
+	}
+
+	public static Entity findByName(String name, Map<Integer, Entity> map) {
+		for (Entity entity : map.values()) {
+			if (entity.getName().equalsIgnoreCase(name)) return entity;
+			if (entity.getShortName().equalsIgnoreCase(name)) return entity;
+			if (SetUtils.memberOfCaseInsensitive(name, entity.getVariations())) return entity;
+		}
+
 		return null;
 	}
 

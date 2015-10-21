@@ -38,6 +38,10 @@ public final class Iso639_$alpha$num {
 		return Iso639Utils.findById(id, map);
 	}
 
+	public static Entity findByName(String name) {
+		return Iso639Utils.findByName(name, map);
+	}
+
 	public static Map<String, Collection<String>> getLanguageNamesWithVariantsAsMap() {
 		return Iso639Utils.getLanguageNamesWithVariantsAsMap(map);
 	}

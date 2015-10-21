@@ -40,7 +40,7 @@ public final class Iso639Db {
 
 	public static LogManager logger = new LogManager(Iso639Db.class);
 
-	public static Entity find(String id) {
+	public static Entity findById(String id) {
 		if (id.startsWith("a")) return Iso639_A1.findById(id);
 		if (id.startsWith("b")) return Iso639_B1.findById(id);
 		if (id.startsWith("c")) return Iso639_C1.findById(id);
@@ -66,6 +66,35 @@ public final class Iso639Db {
 		if (id.startsWith("x")) return Iso639_X1.findById(id);
 		if (id.startsWith("y")) return Iso639_Y1.findById(id);
 		if (id.startsWith("z")) return Iso639_Z1.findById(id);
+		return null;
+	}
+
+	public static Entity findByName(String id) {
+		if (id.startsWith("a")) return Iso639_A1.findByName(id);
+		if (id.startsWith("b")) return Iso639_B1.findByName(id);
+		if (id.startsWith("c")) return Iso639_C1.findByName(id);
+		if (id.startsWith("d")) return Iso639_D1.findByName(id);
+		if (id.startsWith("e")) return Iso639_E1.findByName(id);
+		if (id.startsWith("f")) return Iso639_F1.findByName(id);
+		if (id.startsWith("g")) return Iso639_G1.findByName(id);
+		if (id.startsWith("h")) return Iso639_H1.findByName(id);
+		if (id.startsWith("i")) return Iso639_I1.findByName(id);
+		if (id.startsWith("j")) return Iso639_J1.findByName(id);
+		if (id.startsWith("l")) return Iso639_L1.findByName(id);
+		if (id.startsWith("m")) return Iso639_M1.findByName(id);
+		if (id.startsWith("n")) return Iso639_N1.findByName(id);
+		if (id.startsWith("o")) return Iso639_O1.findByName(id);
+		if (id.startsWith("p")) return Iso639_P1.findByName(id);
+		if (id.startsWith("q")) return Iso639_Q1.findByName(id);
+		if (id.startsWith("r")) return Iso639_R1.findByName(id);
+		if (id.startsWith("s")) return Iso639_S1.findByName(id);
+		if (id.startsWith("t")) return Iso639_T1.findByName(id);
+		if (id.startsWith("u")) return Iso639_U1.findByName(id);
+		if (id.startsWith("v")) return Iso639_V1.findByName(id);
+		if (id.startsWith("w")) return Iso639_W1.findByName(id);
+		if (id.startsWith("x")) return Iso639_X1.findByName(id);
+		if (id.startsWith("y")) return Iso639_Y1.findByName(id);
+		if (id.startsWith("z")) return Iso639_Z1.findByName(id);
 		return null;
 	}
 
@@ -133,5 +162,13 @@ public final class Iso639Db {
 		set.addAll(Iso639_Z1.getLanguageNamesWithVariantsAsSet());
 
 		return set;
+	}
+
+	public static boolean hasById(String id) {
+		return null != findById(id);
+	}
+
+	public static boolean hasByName(String id) {
+		return null != findByName(id);
 	}
 }
