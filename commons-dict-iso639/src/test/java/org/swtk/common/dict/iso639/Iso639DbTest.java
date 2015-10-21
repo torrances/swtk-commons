@@ -13,7 +13,8 @@ import org.swtk.common.dict.iso639.dmo.Iso639Db;
 import com.trimc.blogger.commons.LogManager;
 
 public final class Iso639DbTest {
-	public static final String[] AMBIGUOUS_LANG_ID = { "and", "but", "eng", "for", "new", "see", "sig", "the", "vel" };
+
+	public static final String[] AMBIGUOUS_TERMS = { "and", "but", "eng", "for", "new", "see", "sig", "the", "vel", "to" };
 
 	public static LogManager logger = new LogManager(Iso639DbTest.class);
 
@@ -33,9 +34,18 @@ public final class Iso639DbTest {
 			System.err.println(">" + token + "<");*/
 	}
 
-	@Test
+	/*@Test
 	public void hasByIdAmbiguousWords() throws Throwable {
-		for (String ambiguousTerm : AMBIGUOUS_LANG_ID) {
+		for (String ambiguousTerm : AMBIGUOUS_TERMS) {
+			boolean exists = Iso639Db.getLanguageNamesWithVariantsAsSet().contains(ambiguousTerm);
+			if (exists) logger.info("Testing Ambiguous Term (term = %s, exists = %s)", ambiguousTerm, exists);
+			assertFalse(exists);
+		}
+	}*/
+
+	@Test
+	public void hasByNameAmbiguousWords() throws Throwable {
+		for (String ambiguousTerm : AMBIGUOUS_TERMS) {
 			boolean exists = Iso639Db.getLanguageNamesWithVariantsAsSet().contains(ambiguousTerm);
 			if (exists) logger.info("Testing Ambiguous Term (term = %s, exists = %s)", ambiguousTerm, exists);
 			assertFalse(exists);

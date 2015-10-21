@@ -7,7 +7,7 @@ import org.swtk.common.dict.dto.Entity;
 import org.swtk.common.dict.dto.adapter.EntityAdapter;
 import org.swtk.common.dict.iso639.utils.Iso639Utils;
 
-/**	  * 	AUTO-GENERATED  * 		time 		<1445403627692>  * 		activity 	<public class org.swtk.common.dict.iso639.Runner>  * 		url			<https://github.com/torrances/swtk-data>  * 		agent 		<cmtrim>  * 	DO NOT MODIFY THIS CLASS  * 	CONTENTS ARE AUTOMATICALLY REPLACED BY MDA ROUTINE  */
+/**	  * 	AUTO-GENERATED  * 		time 		<1445404144474>  * 		activity 	<public class org.swtk.common.dict.iso639.Runner>  * 		url			<https://github.com/torrances/swtk-data>  * 		agent 		<cmtrim>  * 	DO NOT MODIFY THIS CLASS  * 	CONTENTS ARE AUTOMATICALLY REPLACED BY MDA ROUTINE  */
 public final class Iso639_T1 {
 	private static Map<Integer, Entity> map = new HashMap<Integer, Entity>();
 
@@ -328,7 +328,6 @@ public final class Iso639_T1 {
 		add("tow				I	L	Jemez	");
 		add("tox				I	L	Tobian	");
 		add("toy				I	L	Topoiyo	");
-		add("toz				I	L	To	");
 		add("tpa				I	L	Taupota	");
 		add("tpc				I	L	Azoyú Me'phaa	");
 		add("tpe				I	L	Tippera	");
