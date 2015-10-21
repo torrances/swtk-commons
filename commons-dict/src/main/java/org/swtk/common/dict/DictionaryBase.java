@@ -9,7 +9,7 @@ import java.util.TreeSet;
 import org.springframework.core.io.Resource;
 
 import com.trimc.blogger.commons.LogManager;
-import com.trimc.blogger.commons.utils.StringUtils;
+import com.trimc.blogger.commons.utils.string.StringUtils;
 
 public abstract class DictionaryBase implements Dictionary {
 
