@@ -7,7 +7,7 @@ import org.swtk.common.dict.dto.Entity;
 import org.swtk.common.dict.dto.adapter.EntityAdapter;
 import org.swtk.common.dict.iso639.utils.Iso639Utils;
 
-/**	  * 	AUTO-GENERATED  * 		time 		<1445404144474>  * 		activity 	<public class org.swtk.common.dict.iso639.Runner>  * 		url			<https://github.com/torrances/swtk-data>  * 		agent 		<cmtrim>  * 	DO NOT MODIFY THIS CLASS  * 	CONTENTS ARE AUTOMATICALLY REPLACED BY MDA ROUTINE  */
+/**	  * 	AUTO-GENERATED  * 		time 		<1445406732044>  * 		activity 	<public class org.swtk.common.dict.iso639.Runner>  * 		url			<https://github.com/torrances/swtk-data>  * 		agent 		<cmtrim>  * 	DO NOT MODIFY THIS CLASS  * 	CONTENTS ARE AUTOMATICALLY REPLACED BY MDA ROUTINE  */
 public final class Iso639_N1 {
 	private static Map<Integer, Entity> map = new HashMap<Integer, Entity>();
 
@@ -528,5 +528,13 @@ public final class Iso639_N1 {
 
 	public static Collection<String> getLanguageNamesWithVariantsAsSet() {
 		return Iso639Utils.getLanguageNamesWithVariantsAsSet(map);
+	}
+
+	public static boolean hasById(String id) {
+		return null != findById(id);
+	}
+
+	public static boolean hasByName(String name) {
+		return null != findByName(name);
 	}
 }

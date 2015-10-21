@@ -49,4 +49,12 @@ public final class Iso639_$alpha$num {
 	public static Collection<String> getLanguageNamesWithVariantsAsSet() {
 		return Iso639Utils.getLanguageNamesWithVariantsAsSet(map);
 	}
+
+	public static boolean hasById(String id) {
+		return null != findById(id);
+	}
+
+	public static boolean hasByName(String name) {
+		return null != findByName(name);
+	}
 }

@@ -44,6 +44,11 @@ public final class Iso639DbTest {
 	}*/
 
 	@Test
+	public void hasByName() throws Throwable {
+		assertTrue(Iso639Db.hasByName("old high german"));
+	}
+	
+	@Test
 	public void hasByNameAmbiguousWords() throws Throwable {
 		for (String ambiguousTerm : AMBIGUOUS_TERMS) {
 			boolean exists = Iso639Db.getLanguageNamesWithVariantsAsSet().contains(ambiguousTerm);
