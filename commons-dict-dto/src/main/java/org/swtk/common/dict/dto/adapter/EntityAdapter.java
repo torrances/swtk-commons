@@ -13,7 +13,20 @@ import com.trimc.blogger.commons.utils.string.StringUtils;
 public class EntityAdapter {
 
 	private static void add(Set<String> set, String original, String variant) {
-		if (!variant.equalsIgnoreCase(original)) set.add(StringUtils.trim(variant));
+		if (variant.equalsIgnoreCase(original)) return;
+
+		/*	replace 
+		 * 		"zo e" with "zoe"
+		 * 	but preserve
+		 * 		"zo es" as "zo es"
+		 */
+		String t1 = variant.substring(variant.length() - 2, variant.length() - 1);
+		String t2 = variant.substring(variant.length() - 1);
+		if (" ".equals(t1) && StringUtils.hasValue(t2)) {
+			variant = variant.substring(0, variant.length() - 2) + variant.substring(variant.length() - 1);
+		}
+
+		set.add(StringUtils.trim(variant));
 	}
 
 	private static String getShortName(String name) {
@@ -59,7 +72,7 @@ public class EntityAdapter {
 		entity.setId(tokens[0]);
 		entity.setScope(ScopeType.find(tokens[4]));
 		entity.setLanguageType(LanguageType.find(tokens[5]));
-		entity.setName(tokens[6]);
+		entity.setName(tokens[6].toLowerCase());
 		entity.setShortName(getShortName(entity.getName()));
 		entity.setVariations(getVariations(entity.getShortName()));
 

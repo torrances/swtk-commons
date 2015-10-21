@@ -54,7 +54,6 @@ public class Runner {
 			template = StringUtils.replace(template, "$url", url);
 			template = StringUtils.replace(template, "$alpha", alpha);
 			template = StringUtils.replace(template, "$content", content);
-			//			System.err.println(template);
 
 			String outFileName = TEMPLATE.getName();
 			outFileName = StringUtils.replace(outFileName, "$alpha", alpha);

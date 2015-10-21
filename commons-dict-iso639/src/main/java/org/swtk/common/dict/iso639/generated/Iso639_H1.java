@@ -7,7 +7,7 @@ import org.swtk.common.dict.dto.Entity;
 import org.swtk.common.dict.dto.adapter.EntityAdapter;
 import org.swtk.common.dict.iso639.utils.Iso639Utils;
 
-/**	  * 	AUTO-GENERATED  * 		time 		<1445393802903>  * 		activity 	<public class org.swtk.common.dict.iso639.Runner>  * 		url			<https://github.com/torrances/swtk-data>  * 		agent 		<cmtrim>  * 	DO NOT MODIFY THIS CLASS  * 	CONTENTS ARE AUTOMATICALLY REPLACED BY MDA ROUTINE  */
+/**	  * 	AUTO-GENERATED  * 		time 		<1445402025724>  * 		activity 	<public class org.swtk.common.dict.iso639.Runner>  * 		url			<https://github.com/torrances/swtk-data>  * 		agent 		<cmtrim>  * 	DO NOT MODIFY THIS CLASS  * 	CONTENTS ARE AUTOMATICALLY REPLACED BY MDA ROUTINE  */
 public final class Iso639_H1 {
 	private static Map<Integer, Entity> map = new HashMap<Integer, Entity>();
 
