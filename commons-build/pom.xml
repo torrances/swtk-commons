@@ -15,6 +15,8 @@
 		<module>../commons-core</module>
 		<module>../commons-framework</module>
 		<module>../commons-dict</module>
+		<module>../commons-dict-dto</module>
+		<module>../commons-dict-iso639</module>
 		<module>../commons-ds-d3js</module>
 	</modules>
 
@@ -54,6 +56,16 @@
 			<groupId>com.trimc.blogger.commons</groupId>
 			<artifactId>java-commons</artifactId>
 			<version>${swtk.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.swtk.common.dict.iso639</groupId>
+			<artifactId>commons-dict-iso639</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.swtk.common.dict.dto</groupId>
+			<artifactId>commons-dict-dto</artifactId>
+			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 
