@@ -100,6 +100,7 @@ public final class Iso639CommonFalsePositives implements Iterable<String> {
 		add("aer");
 		add("abu");
 		add("abé");
+		add("omi");
 	}
 
 	private static void add(String value) {
