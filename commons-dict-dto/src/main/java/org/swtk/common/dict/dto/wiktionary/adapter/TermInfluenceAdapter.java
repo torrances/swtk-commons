@@ -1,10 +1,8 @@
 package org.swtk.common.dict.dto.wiktionary.adapter;
 
-import org.swtk.common.dict.dto.utils.WikiCodeLangLookup;
 import org.swtk.common.dict.dto.wiktionary.TermInfluence;
 
 import com.trimc.blogger.commons.exception.AdapterValidationException;
-import com.trimc.blogger.commons.utils.string.StringUtils;
 
 public final class TermInfluenceAdapter {
 
@@ -13,7 +11,7 @@ public final class TermInfluenceAdapter {
 
 		sb.append(bean.getEnglishTerm());
 		sb.append(", foreign-term = " + bean.getForeignTerm());
-		sb.append(", foreign-language = " + bean.getForeignLanguage());
+		//		sb.append(", foreign-language = " + bean.getForeignLanguage());
 
 		return sb.toString();
 	}
@@ -21,12 +19,12 @@ public final class TermInfluenceAdapter {
 	public static TermInfluence tranform(String foreignTerm, String englishTerm, String foreignLanguageCode) throws AdapterValidationException {
 		TermInfluence bean = new TermInfluence();
 
-		String foreignLanguage = WikiCodeLangLookup.getLangauge(foreignLanguageCode);
-		if (!StringUtils.hasValue(foreignLanguage)) throw new AdapterValidationException("Unrecognized Langauge Code (value = %s)", foreignLanguageCode);
+		//		String foreignLanguage = WikiCodeLangLookup.getLangauge(foreignLanguageCode);
+		//		if (!StringUtils.hasValue(foreignLanguage)) throw new AdapterValidationException("Unrecognized Langauge Code (value = %s)", foreignLanguageCode);
 
 		bean.setEnglishTerm(englishTerm);
 		bean.setForeignTerm(foreignTerm);
-		bean.setForeignLanguage(foreignLanguage);
+		//		bean.setForeignLanguage(foreignLanguage);
 
 		return bean;
 	}

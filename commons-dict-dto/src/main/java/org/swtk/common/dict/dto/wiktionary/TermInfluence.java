@@ -10,15 +10,15 @@ public class TermInfluence {
 
 	private String englishTerm;
 
-	private String foreignLanguage;
+	//	private String foreignLanguage;
 
 	public String getEnglishTerm() {
 		return englishTerm;
 	}
 
-	public String getForeignLanguage() {
-		return foreignLanguage;
-	}
+	//	public String getForeignLanguage() {
+	//		return foreignLanguage;
+	//	}
 
 	public String getForeignTerm() {
 		return foreignTerm;
@@ -28,9 +28,9 @@ public class TermInfluence {
 		return StringUtils.hasValue(getEnglishTerm());
 	}
 
-	public boolean hasForeignLanguage() {
-		return StringUtils.hasValue(getForeignLanguage());
-	}
+	//	public boolean hasForeignLanguage() {
+	//		return StringUtils.hasValue(getForeignLanguage());
+	//	}
 
 	public boolean hasForeignTerm() {
 		return StringUtils.hasValue(getForeignTerm());
@@ -45,9 +45,9 @@ public class TermInfluence {
 		this.englishTerm = englishTerm;
 	}
 
-	public void setForeignLanguage(String foreignLanguage) {
-		this.foreignLanguage = foreignLanguage;
-	}
+	//	public void setForeignLanguage(String foreignLanguage) {
+	//		this.foreignLanguage = foreignLanguage;
+	//	}
 
 	public void setForeignTerm(String foreignTerm) {
 		this.foreignTerm = foreignTerm;
