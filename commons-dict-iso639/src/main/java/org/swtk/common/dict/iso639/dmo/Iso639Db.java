@@ -7,6 +7,7 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 import org.swtk.common.dict.dto.iso639.Language;
+import org.swtk.common.dict.iso639.generated.Iso639Exceptional;
 import org.swtk.common.dict.iso639.generated.Iso639_A1;
 import org.swtk.common.dict.iso639.generated.Iso639_B1;
 import org.swtk.common.dict.iso639.generated.Iso639_C1;
@@ -66,6 +67,8 @@ public final class Iso639Db {
 		if (id.startsWith("x")) return Iso639_X1.findById(id);
 		if (id.startsWith("y")) return Iso639_Y1.findById(id);
 		if (id.startsWith("z")) return Iso639_Z1.findById(id);
+		if (Iso639Exceptional.hasById(id)) return Iso639Exceptional.findById(id);
+
 		return null;
 	}
 
@@ -97,6 +100,7 @@ public final class Iso639Db {
 		if (Iso639_X1.hasByName(name)) return Iso639_X1.findByName(name);
 		if (Iso639_Y1.hasByName(name)) return Iso639_Y1.findByName(name);
 		if (Iso639_Z1.hasByName(name)) return Iso639_Z1.findByName(name);
+		if (Iso639Exceptional.hasByName(name)) return Iso639Exceptional.findByName(name);
 
 		return null;
 	}
@@ -130,6 +134,7 @@ public final class Iso639Db {
 		map.putAll(Iso639_X1.getLanguageNamesWithVariantsAsMap());
 		map.putAll(Iso639_Y1.getLanguageNamesWithVariantsAsMap());
 		map.putAll(Iso639_Z1.getLanguageNamesWithVariantsAsMap());
+		map.putAll(Iso639Exceptional.getLanguageNamesWithVariantsAsMap());
 
 		return map;
 	}
@@ -163,6 +168,7 @@ public final class Iso639Db {
 		set.addAll(Iso639_X1.getLanguageNamesWithVariantsAsSet());
 		set.addAll(Iso639_Y1.getLanguageNamesWithVariantsAsSet());
 		set.addAll(Iso639_Z1.getLanguageNamesWithVariantsAsSet());
+		set.addAll(Iso639Exceptional.getLanguageNamesWithVariantsAsSet());
 
 		return set;
 	}

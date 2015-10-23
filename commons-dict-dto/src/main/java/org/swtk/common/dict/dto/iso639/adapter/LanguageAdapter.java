@@ -29,14 +29,14 @@ public class LanguageAdapter {
 		set.add(StringUtils.trim(variant));
 	}
 
-	private static String getShortName(String name) {
+	public static String getShortName(String name) {
 		name = StringUtils.trim(name.toLowerCase());
 		if (name.contains("(")) name = StringUtils.substringBefore(name, "(").trim();
 
 		return name;
 	}
 
-	private static Set<String> getVariations(String name) {
+	public static Set<String> getVariations(String name) {
 		Set<String> set = new TreeSet<String>();
 
 		add(set, name, StringUtils.unicodeNormalization(name));
