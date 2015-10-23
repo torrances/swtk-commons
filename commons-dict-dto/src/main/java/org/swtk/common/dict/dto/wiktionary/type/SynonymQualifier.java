@@ -2,7 +2,53 @@ package org.swtk.common.dict.dto.wiktionary.type;
 
 public enum SynonymQualifier {
 
-	OBSOLETE("obsolete"), RARE("rare"), UNCOUNTABLE("uncountable"), COUNTABLE("countable"), ADJECTIVE("adjective"), INDISTINCTLY("indistinctly");
+	ABBREVIATION("abbreviation"),
+
+	ADJECTIVE("adjective"),
+
+	ARCHAIC("archaic"),
+
+	ATTRIBUTIVELY("attributively"),
+
+	COLLOQUIAL("colloquial"),
+
+	COUNTABLE("countable"),
+
+	CRUDE("crude"),
+
+	DATED("dated"),
+
+	DEROGATORY("derogatory"),
+
+	DIMINUITIVE("diminutive"),
+
+	EUPHEMISM("euphemism"),
+
+	FAMILIAR("familiar"),
+
+	FORMAL("formal"),
+
+	INDISTINCTLY("indistinctly"),
+
+	INEXACT("inexact"),
+
+	INFORMAL("informal"),
+
+	MODERN("modern"),
+
+	OBSOLETE("obsolete"),
+
+	RARE("rare"),
+
+	SECULAR("secular"),
+
+	SLANG("slang"),
+
+	SYMBOL("symbol"),
+
+	UNCOUNTABLE("uncountable"),
+
+	VULGAR("vulgar");
 
 	public static SynonymQualifier find(String text) {
 		for (SynonymQualifier value : SynonymQualifier.values())
