@@ -17,6 +17,7 @@
 		<module>../commons-dict</module>
 		<module>../commons-dict-dto</module>
 		<module>../commons-dict-iso639</module>
+		<module>../commons-dict-wiktionary</module>
 		<module>../commons-ds-d3js</module>
 	</modules>
 
@@ -53,6 +54,11 @@
 		<dependency>
 			<groupId>org.swtk.common.dict.iso639</groupId>
 			<artifactId>commons-dict-iso639</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.swtk.common.dict.wiktionary</groupId>
+			<artifactId>commons-dict-wiktionary</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 	</dependencies>

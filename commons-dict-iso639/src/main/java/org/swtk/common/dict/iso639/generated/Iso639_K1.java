@@ -3,13 +3,14 @@ package org.swtk.common.dict.iso639.generated;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import org.swtk.common.dict.dto.Entity;
-import org.swtk.common.dict.dto.adapter.EntityAdapter;
+
+import org.swtk.common.dict.dto.iso639.Language;
+import org.swtk.common.dict.dto.iso639.adapter.LanguageAdapter;
 import org.swtk.common.dict.iso639.utils.Iso639Utils;
 
 /**	  * 	AUTO-GENERATED  * 		time 		<1445407051490>  * 		activity 	<public class org.swtk.common.dict.iso639.Runner>  * 		url			<https://github.com/torrances/swtk-data>  * 		agent 		<cmtrim>  * 	DO NOT MODIFY THIS CLASS  * 	CONTENTS ARE AUTOMATICALLY REPLACED BY MDA ROUTINE  */
 public final class Iso639_K1 {
-	private static Map<Integer, Entity> map = new HashMap<Integer, Entity>();
+	private static Map<Integer, Language> map = new HashMap<Integer, Language>();
 
 	static {
 		add("kaa	kaa	kaa		I	L	Kara-Kalpak	");
@@ -671,18 +672,18 @@ public final class Iso639_K1 {
 
 	private static void add(String line) {
 		try {
-			Entity entity = EntityAdapter.transform(line);
+			Language entity = LanguageAdapter.transform(line);
 			map.put(entity.hashCode(), entity);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	public static Entity findById(String id) {
+	public static Language findById(String id) {
 		return Iso639Utils.findById(id, map);
 	}
 
-	public static Entity findByName(String name) {
+	public static Language findByName(String name) {
 		return Iso639Utils.findByName(name, map);
 	}
 

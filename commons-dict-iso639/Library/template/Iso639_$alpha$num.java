@@ -4,8 +4,8 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.swtk.common.dict.dto.Entity;
-import org.swtk.common.dict.dto.adapter.EntityAdapter;
+import org.swtk.common.dict.dto.Language;
+import org.swtk.common.dict.dto.adapter.LanguageAdapter;
 import org.swtk.common.dict.iso639.utils.Iso639Utils;
 
 /**	
@@ -19,7 +19,7 @@ import org.swtk.common.dict.iso639.utils.Iso639Utils;
  */
 public final class Iso639_$alpha$num {
 
-	private static Map<Integer, Entity> map = new HashMap<Integer, Entity>();
+	private static Map<Integer, Language> map = new HashMap<Integer, Language>();
 
 	static {
 		$content
@@ -27,18 +27,18 @@ public final class Iso639_$alpha$num {
 
 	private static void add(String line) {
 		try {
-			Entity entity = EntityAdapter.transform(line);
+			Entity entity = LanguageAdapter.transform(line);
 			map.put(entity.hashCode(), entity);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	public static Entity findById(String id) {
+	public static Language findById(String id) {
 		return Iso639Utils.findById(id, map);
 	}
 
-	public static Entity findByName(String name) {
+	public static Language findByName(String name) {
 		return Iso639Utils.findByName(name, map);
 	}
 

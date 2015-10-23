@@ -1,16 +1,16 @@
-package org.swtk.common.dict.dto.adapter;
+package org.swtk.common.dict.dto.iso639.adapter;
 
 import java.util.Set;
 import java.util.TreeSet;
 
-import org.swtk.common.dict.dto.Entity;
-import org.swtk.common.dict.dto.LanguageType;
-import org.swtk.common.dict.dto.ScopeType;
+import org.swtk.common.dict.dto.iso639.Language;
+import org.swtk.common.dict.types.LanguageType;
+import org.swtk.common.dict.types.ScopeType;
 
 import com.trimc.blogger.commons.exception.AdapterValidationException;
 import com.trimc.blogger.commons.utils.string.StringUtils;
 
-public class EntityAdapter {
+public class LanguageAdapter {
 
 	private static void add(Set<String> set, String original, String variant) {
 		if (variant.equalsIgnoreCase(original)) return;
@@ -50,7 +50,7 @@ public class EntityAdapter {
 		return set;
 	}
 
-	public static String toString(Entity entity) {
+	public static String toString(Language entity) {
 		StringBuilder sb = new StringBuilder();
 
 		sb.append("id = " + entity.getId());
@@ -63,8 +63,8 @@ public class EntityAdapter {
 		return sb.toString();
 	}
 
-	public static Entity transform(String line) throws AdapterValidationException {
-		Entity entity = new Entity();
+	public static Language transform(String line) throws AdapterValidationException {
+		Language entity = new Language();
 
 		String[] tokens = StringUtils.splitPreserveAllTokens(line, '\t');
 		if (8 != tokens.length) throw new AdapterValidationException("Invalid Line (expected-length = %s, actual-length = %s)", 8, tokens.length);

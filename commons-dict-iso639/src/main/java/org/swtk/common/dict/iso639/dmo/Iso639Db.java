@@ -6,7 +6,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import org.swtk.common.dict.dto.Entity;
+import org.swtk.common.dict.dto.iso639.Language;
 import org.swtk.common.dict.iso639.generated.Iso639_A1;
 import org.swtk.common.dict.iso639.generated.Iso639_B1;
 import org.swtk.common.dict.iso639.generated.Iso639_C1;
@@ -40,7 +40,7 @@ public final class Iso639Db {
 
 	public static LogManager logger = new LogManager(Iso639Db.class);
 
-	public static Entity findById(String id) {
+	public static Language findById(String id) {
 		if (id.startsWith("a")) return Iso639_A1.findById(id);
 		if (id.startsWith("b")) return Iso639_B1.findById(id);
 		if (id.startsWith("c")) return Iso639_C1.findById(id);
@@ -69,7 +69,7 @@ public final class Iso639Db {
 		return null;
 	}
 
-	public static Entity findByName(String name) {
+	public static Language findByName(String name) {
 
 		if (Iso639_A1.hasByName(name)) return Iso639_A1.findByName(name);
 		if (Iso639_B1.hasByName(name)) return Iso639_B1.findByName(name);

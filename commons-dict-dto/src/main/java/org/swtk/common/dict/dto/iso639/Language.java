@@ -1,13 +1,15 @@
-package org.swtk.common.dict.dto;
+package org.swtk.common.dict.dto.iso639;
 
 import java.util.Set;
 import java.util.TreeSet;
 
-import org.swtk.common.dict.dto.adapter.EntityAdapter;
+import org.swtk.common.dict.dto.iso639.adapter.LanguageAdapter;
+import org.swtk.common.dict.types.LanguageType;
+import org.swtk.common.dict.types.ScopeType;
 
 import com.trimc.blogger.commons.utils.string.StringUtils;
 
-public class Entity {
+public class Language {
 
 	/**
 	 * 	Purpose:
@@ -126,6 +128,6 @@ public class Entity {
 
 	@Override
 	public String toString() {
-		return EntityAdapter.toString(this);
+		return LanguageAdapter.toString(this);
 	}
 }

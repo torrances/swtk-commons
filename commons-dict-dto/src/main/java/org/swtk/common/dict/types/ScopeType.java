@@ -1,18 +1,18 @@
-package org.swtk.common.dict.dto;
+package org.swtk.common.dict.types;
 
-public enum LanguageType {
+public enum ScopeType {
 
-	ANCIENT("A"), CONSTRUCTED("C"), EXTINCT("E"), HISTORICAL("H"), LIVING("L"), SPECIAL("S");
+	INDIVIDUAL("I"), MACROLANGUAGE("M"), SPECIAL("S");
 
-	public static LanguageType find(String code) {
-		for (LanguageType value : LanguageType.values())
+	public static ScopeType find(String code) {
+		for (ScopeType value : ScopeType.values())
 			if (value.toString().equalsIgnoreCase(code)) return value;
 		return null;
 	}
 
 	private String code;
 
-	private LanguageType(String code) {
+	private ScopeType(String code) {
 		setCode(code);
 	}
 
