@@ -12,10 +12,18 @@ import com.trimc.blogger.commons.utils.string.StringUtils;
 public class Etymology {
 
 	@Expose
-	private String text;
+	private Collection<TermInfluence> influencers;
 
 	@Expose
 	private Collection<String> languages;
+
+	@Expose
+	private String text;
+
+	public Collection<TermInfluence> getInfluencers() {
+		if (null == influencers) setInfluencers(new ArrayList<TermInfluence>());
+		return influencers;
+	}
 
 	public Collection<String> getLanguages() {
 		if (null == languages) setLanguages(new ArrayList<String>());
@@ -39,6 +47,10 @@ public class Etymology {
 	@Ignore
 	public boolean hasText() {
 		return StringUtils.hasValue(getText());
+	}
+
+	public void setInfluencers(Collection<TermInfluence> influencers) {
+		this.influencers = influencers;
 	}
 
 	public void setLanguages(Collection<String> languages) {
