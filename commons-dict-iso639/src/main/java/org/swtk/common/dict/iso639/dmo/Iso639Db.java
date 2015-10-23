@@ -34,6 +34,7 @@ import org.swtk.common.dict.iso639.generated.Iso639_W1;
 import org.swtk.common.dict.iso639.generated.Iso639_X1;
 import org.swtk.common.dict.iso639.generated.Iso639_Y1;
 import org.swtk.common.dict.iso639.generated.Iso639_Z1;
+import org.swtk.common.dict.iso639.generated.IsoTwoLetterCodes;
 
 import com.trimc.blogger.commons.LogManager;
 
@@ -42,6 +43,10 @@ public final class Iso639Db {
 	public static LogManager logger = new LogManager(Iso639Db.class);
 
 	public static Language findById(String id) {
+
+		if (Iso639Exceptional.hasById(id)) return Iso639Exceptional.findById(id);
+		if (2 == id.length() && IsoTwoLetterCodes.hasById(id)) return IsoTwoLetterCodes.findById(id);
+
 		if (id.startsWith("a")) return Iso639_A1.findById(id);
 		if (id.startsWith("b")) return Iso639_B1.findById(id);
 		if (id.startsWith("c")) return Iso639_C1.findById(id);
@@ -67,12 +72,14 @@ public final class Iso639Db {
 		if (id.startsWith("x")) return Iso639_X1.findById(id);
 		if (id.startsWith("y")) return Iso639_Y1.findById(id);
 		if (id.startsWith("z")) return Iso639_Z1.findById(id);
-		if (Iso639Exceptional.hasById(id)) return Iso639Exceptional.findById(id);
 
 		return null;
 	}
 
 	public static Language findByName(String name) {
+
+		if (Iso639Exceptional.hasByName(name)) return Iso639Exceptional.findByName(name);
+		if (IsoTwoLetterCodes.hasByName(name)) return IsoTwoLetterCodes.findByName(name);
 
 		if (Iso639_A1.hasByName(name)) return Iso639_A1.findByName(name);
 		if (Iso639_B1.hasByName(name)) return Iso639_B1.findByName(name);
@@ -100,13 +107,15 @@ public final class Iso639Db {
 		if (Iso639_X1.hasByName(name)) return Iso639_X1.findByName(name);
 		if (Iso639_Y1.hasByName(name)) return Iso639_Y1.findByName(name);
 		if (Iso639_Z1.hasByName(name)) return Iso639_Z1.findByName(name);
-		if (Iso639Exceptional.hasByName(name)) return Iso639Exceptional.findByName(name);
 
 		return null;
 	}
 
 	public static Map<String, Collection<String>> getLanguageNamesWithVariantsAsMap() {
 		Map<String, Collection<String>> map = new TreeMap<String, Collection<String>>();
+
+		map.putAll(Iso639Exceptional.getLanguageNamesWithVariantsAsMap());
+		map.putAll(IsoTwoLetterCodes.getLanguageNamesWithVariantsAsMap());
 
 		map.putAll(Iso639_A1.getLanguageNamesWithVariantsAsMap());
 		map.putAll(Iso639_B1.getLanguageNamesWithVariantsAsMap());
@@ -134,13 +143,15 @@ public final class Iso639Db {
 		map.putAll(Iso639_X1.getLanguageNamesWithVariantsAsMap());
 		map.putAll(Iso639_Y1.getLanguageNamesWithVariantsAsMap());
 		map.putAll(Iso639_Z1.getLanguageNamesWithVariantsAsMap());
-		map.putAll(Iso639Exceptional.getLanguageNamesWithVariantsAsMap());
 
 		return map;
 	}
 
 	public static Collection<String> getLanguageNamesWithVariantsAsSet() {
 		Set<String> set = new TreeSet<String>();
+
+		set.addAll(Iso639Exceptional.getLanguageNamesWithVariantsAsSet());
+		set.addAll(IsoTwoLetterCodes.getLanguageNamesWithVariantsAsSet());
 
 		set.addAll(Iso639_A1.getLanguageNamesWithVariantsAsSet());
 		set.addAll(Iso639_B1.getLanguageNamesWithVariantsAsSet());
@@ -168,7 +179,6 @@ public final class Iso639Db {
 		set.addAll(Iso639_X1.getLanguageNamesWithVariantsAsSet());
 		set.addAll(Iso639_Y1.getLanguageNamesWithVariantsAsSet());
 		set.addAll(Iso639_Z1.getLanguageNamesWithVariantsAsSet());
-		set.addAll(Iso639Exceptional.getLanguageNamesWithVariantsAsSet());
 
 		return set;
 	}

@@ -30,18 +30,13 @@ public final class Iso639DbTest {
 		Collection<String> set = Iso639Db.getLanguageNamesWithVariantsAsSet();
 		assertNotNull(set);
 		assertTrue(set.size() > 1000);
-		/*for (String token : set)
-			System.err.println(">" + token + "<");*/
 	}
 
-	/*@Test
-	public void hasByIdAmbiguousWords() throws Throwable {
-		for (String ambiguousTerm : AMBIGUOUS_TERMS) {
-			boolean exists = Iso639Db.getLanguageNamesWithVariantsAsSet().contains(ambiguousTerm);
-			if (exists) logger.info("Testing Ambiguous Term (term = %s, exists = %s)", ambiguousTerm, exists);
-			assertFalse(exists);
-		}
-	}*/
+	@Test
+	public void hasById() throws Throwable {
+		assertTrue(Iso639Db.hasById("gem-pro"));
+		assertTrue(Iso639Db.hasById("en"));
+	}
 
 	@Test
 	public void hasByName() throws Throwable {
