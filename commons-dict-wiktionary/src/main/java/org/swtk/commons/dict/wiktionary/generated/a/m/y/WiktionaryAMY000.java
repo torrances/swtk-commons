@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wiktionary.generated.a.m.y;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryAMY000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("amyl", "{\"term\":\"amyl\", \"etymology\":{\"influencers\":[{}], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027amylum\u0027 (starch) + \u0027\u0027 Compare with \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"pentyl\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("amylocaine", "{\"term\":\"amylocaine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|amyl|o|caine|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A synthetic local anesthetic, the first to have been developed\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("amyotonia", "{\"term\":\"amyotonia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|a|myotonia|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Lack of normal muscular tension or tonus, especially when congenital\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wiktionary.generated.t.e.p;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryTEP000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("tepal", "{\"term\":\"tepal\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"From French \u0027tépale\u0027 from \u0027pétale\u0027 (lang\u003dfr) by transposition.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One of the component parts of the perianth, the outermost whorls of flower parts, especially when the perianth is not divided into two whorls of unequal appearance\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("tephroite", "{\"term\":\"tephroite\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) {{m|grc|τεφρός||ash-coloured}} {{suffix||-ite|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An orthorhombic-dipyramidal mineral containing manganese, oxygen, and silicon\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("tephrosin", "{\"term\":\"tephrosin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Tephrosia|in|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A natural piscicide found in the the leaves and seeds of \u0027Tephrosia purpurea\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("tepidity", "{\"term\":\"tepidity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The property of being tepid\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("tepidness", "{\"term\":\"tepidness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|tepid|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The property of being tepid\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -1,0 +1,19 @@
+package org.swtk.commons.dict.wiktionary.generated.u.n.m;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryUNM000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("unmaidenliness", "{\"term\":\"unmaidenliness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|un|maidenliness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or condition of being unmaidenly\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unmanageableness", "{\"term\":\"unmanageableness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|unmanageable|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or quality of being unmanageable\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unmappability", "{\"term\":\"unmappability\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\u0027c.\u0027 1952 {{suffix|unmappable|ity|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or condition of being unmappable\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unmasker", "{\"term\":\"unmasker\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|un|masker|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who unmasks\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unmeaningness", "{\"term\":\"unmeaningness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unmeaning|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality of being unmeaning; insignificance\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unmeeting", "{\"term\":\"unmeeting\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|un|meeting|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An informal type of meeting without the rules, format or constraints of a formal meeting\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Our team created and tested three different prototypes with our pilot customers during the innovation \u0027\u0027unmeeting\u0027\u0027 we held last week\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("unmemorableness", "{\"term\":\"unmemorableness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unmemorable|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or condition of being unmemorable\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unmistakableness", "{\"term\":\"unmistakableness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unmistakable|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality of being unmistakable, or recognizably unique\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unmusicality", "{\"term\":\"unmusicality\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unmusical|ity|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or condition of being unmusical\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

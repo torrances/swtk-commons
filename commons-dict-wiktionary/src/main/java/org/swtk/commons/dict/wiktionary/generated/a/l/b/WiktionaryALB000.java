@@ -1,0 +1,13 @@
+package org.swtk.commons.dict.wiktionary.generated.a.l.b;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryALB000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("albacore", "{\"term\":\"albacore\", \"etymology\":{\"influencers\":[], \"languages\":[\"Arabic\", \"English\", \"Portuguese\"], \"text\":\"From Portuguese \u0027albacor\u0027 from Arabic \u0027بكورة\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A large marine fish of warm seas, having edible flesh\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("albanianness", "{\"term\":\"albanianness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Albanian|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality, characteristic or state of being Albanian\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("albariza", "{\"term\":\"albariza\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A white porous chalky soil found in some regions of Andalusia, Spain and on which sherry vineyards are often planted\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("albedometer", "{\"term\":\"albedometer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|albedo|meter|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An instrument used to measure the albedo of a surface\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("albuminemia", "{\"term\":\"albuminemia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|albumin|emia|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The (normal) presence of albumin in the blood\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("albuterol", "{\"term\":\"albuterol\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A drug used to prevent and control bronchial airway obstruction in asthma and COPD\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

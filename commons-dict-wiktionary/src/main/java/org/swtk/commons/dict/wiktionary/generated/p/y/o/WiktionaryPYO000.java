@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wiktionary.generated.p.y.o;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryPYO000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("pyot", "{\"term\":\"pyot\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From \u0027pie\u0027 + \u0027-et\u0027.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A magpie; a water ouzel\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("pyoderma", "{\"term\":\"pyoderma\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|pyo|derma|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"an infection of the skin by pyogenic bacteria\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("pyorrhoea", "{\"term\":\"pyorrhoea\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027πύον\u0027 (pus) in combination with \u0027ῤοια\u0027 (flow”, “flux)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Flowing or of\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("pyosalpinx", "{\"term\":\"pyosalpinx\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|pyo|salpinx|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A distally blocked Fallopian tube filled with pus\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

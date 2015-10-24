@@ -1,0 +1,17 @@
+package org.swtk.commons.dict.wiktionary.generated.e.v.e;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryEVE000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("evenhandedness", "{\"term\":\"evenhandedness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|evenhanded|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality or state of being evenhande\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"came as the prime minister, Nuri Kamal al-Maliki , is under increasing pressure to demonstrate \u0027\u0027evenhandedness\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("eveninger", "{\"term\":\"eveninger\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|evening|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An evening newspaper\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("eveningness", "{\"term\":\"eveningness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|evening|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The characteristic of being most active and alert during the evening; being a night owl\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("evensong", "{\"term\":\"evensong\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A religious service, most commonly seen in the Anglican or Episcopal Church, that takes place in the early hours of the evening\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("eventing", "{\"term\":\"eventing\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|event|ing|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An equestrian event which comprises dressage, cross-country, and showjumping\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("eventuality", "{\"term\":\"eventuality\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|eventual|ity|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A possible event; something that may happen\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("everbloomer", "{\"term\":\"everbloomer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|ever|bloomer|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A plant that blooms throughout the growing season\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("evestrum", "{\"term\":\"evestrum\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"Ancient greek (to 1453)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"According to , an astral body that originates at birth and is responsible for visions of the future\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

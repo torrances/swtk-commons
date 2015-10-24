@@ -1,0 +1,5 @@
+package org.swtk.commons.dict.wiktionary.generated.y.a.c;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryYAC000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("yachter", "{\"term\":\"yachter\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person who sails in yachts\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("yachtsmanship", "{\"term\":\"yachtsmanship\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|yachtsman|ship|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The ability or art of being adept at sailing a yacht\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

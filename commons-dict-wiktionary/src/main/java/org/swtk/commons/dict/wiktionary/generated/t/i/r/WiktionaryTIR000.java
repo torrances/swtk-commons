@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wiktionary.generated.t.i.r;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryTIR000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("tiredness", "{\"term\":\"tiredness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|tired|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of being tired\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("tiremaker", "{\"term\":\"tiremaker\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|tire|maker|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A manufacturer of tires (wheel coverings\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("tiresomeness", "{\"term\":\"tiresomeness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|tiresome|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the state or quality of being tiresome; wearisomeness; tediousness\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

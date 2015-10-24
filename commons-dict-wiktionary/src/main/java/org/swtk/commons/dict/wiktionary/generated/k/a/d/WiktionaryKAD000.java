@@ -1,0 +1,5 @@
+package org.swtk.commons.dict.wiktionary.generated.k.a.d;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryKAD000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("kade", "{\"term\":\"kade\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The , \u0027Melophagus ovinus\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("kady", "{\"term\":\"kady\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"1846. {{unk.|en}} origin — possibly alteration of \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A man\u0027s straw hat\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

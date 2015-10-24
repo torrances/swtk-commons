@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wiktionary.generated.x.a.n;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryXAN000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("xand", "{\"term\":\"xand\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|exclusive|AND|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"XNOR, a logic gate\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("xanthate", "{\"term\":\"xanthate\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any salt or ester of xanthic acid\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("xanthogranuloma", "{\"term\":\"xanthogranuloma\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|xantho|granuloma|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A form of histiocytosis with yellowish lesions\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

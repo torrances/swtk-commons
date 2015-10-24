@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wiktionary.generated.z.o.r;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryZOR000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("zorbing", "{\"term\":\"zorbing\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|zorb|ing|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A sport in which a participant is secured inside a zorb and rolled downhill\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("zoroastrian", "{\"term\":\"zoroastrian\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027zoroastres\u0027 {{suffix||ian|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A follower of Zoroastrianism\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("zorse", "{\"term\":\"zorse\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|zebra|horse|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The offspring of a male zebra and a female horse\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

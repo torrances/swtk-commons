@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wiktionary.generated.y.t.t;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryYTT000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("ytterbia", "{\"term\":\"ytterbia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"ytterbium oxid\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Ytterbium oxide\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("yttrotantalite", "{\"term\":\"yttrotantalite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|yttro|tantalite|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A brown or black tantalate of uranium, yttrium, and calcium\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("yttrotitanite", "{\"term\":\"yttrotitanite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|yttro|titanite|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A brownish-black variety of titanite\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

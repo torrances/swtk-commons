@@ -1,0 +1,17 @@
+package org.swtk.commons.dict.wiktionary.generated.a.z.o;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryAZO000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("azobisformamide", "{\"term\":\"azobisformamide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"azodicarbonamide\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("azocarmine", "{\"term\":\"azocarmine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|azo|carmine|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular red dye\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("azocoupling", "{\"term\":\"azocoupling\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|azo|coupling|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An organic reaction between a diazonium compound and another aromatic compound that produces an azo compound\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("azodicarbonamide", "{\"term\":\"azodicarbonamide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An organic chemical, a yellow to orange red, odorless, crystalline powder, used in food industry as a food additive, a flour bleaching agent and improving agent and in foaming plastics\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("azoospermia", "{\"term\":\"azoospermia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|a|zoospermia|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The absence of live sperm in the semen\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("azotemia", "{\"term\":\"azotemia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the accumulation in the blood of nitrogen-bearing waste products (such as urea) that are usually excreted in the urine\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("azotite", "{\"term\":\"azotite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|azote|ite|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A salt formed by the combination of azotous, or nitrous, acid with a base\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("azoturia", "{\"term\":\"azoturia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|azote|uria|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An increase in the amount of nitrogenous material (such as urea) in the urin\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A condition that affects the muscles of horses, ranging from stiffness and mild cramps to the horse becoming unable to stand, with discoloured urine\", \"priority\":2}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

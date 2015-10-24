@@ -1,0 +1,5 @@
+package org.swtk.commons.dict.wiktionary.generated.a.o.r;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryAOR000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("aortography", "{\"term\":\"aortography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|aorta|alt1\u003daorto-|graphy|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"an arteriography of the aorta\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("aortorrhaphy", "{\"term\":\"aortorrhaphy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|aorta|rrhaphy|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"suture of the aorta\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

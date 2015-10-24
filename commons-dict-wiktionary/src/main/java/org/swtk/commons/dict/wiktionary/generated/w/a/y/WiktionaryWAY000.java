@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wiktionary.generated.w.a.y;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryWAY000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("waybill", "{\"term\":\"waybill\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From \u0027way\u0027 () + \u0027bill\u0027 ()\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A document that lists the final destination (and other details) of each part of a cargo\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("waycest", "{\"term\":\"waycest\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|Way|incest|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The incestuous pairing of the brothers and , of American rock band , in slash fan fiction\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("waygate", "{\"term\":\"waygate\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|way|gate|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The tailrace of a mill\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("waymaker", "{\"term\":\"waymaker\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|way|maker|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who makes a way; a precursor; pioneer; pathfinder\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("waypoint", "{\"term\":\"waypoint\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|way|point|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"any mapped reference point on a route that can be easily identified\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

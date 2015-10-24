@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wiktionary.generated.c.i.m;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryCIM000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("cimbalom", "{\"term\":\"cimbalom\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Hungarian\"], \"text\":\"{{rfe|lang\u003den|From the Hungarian {{m|hu|cimbalom}}?}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A type of concert hammered dulcimer found primarily in the music of Eastern Europ\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("cimbasso", "{\"term\":\"cimbasso\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A bass trombone\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("cimbrian", "{\"term\":\"cimbrian\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A member of a Germanic people who live in Bavaria and parts of North-East Italy\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

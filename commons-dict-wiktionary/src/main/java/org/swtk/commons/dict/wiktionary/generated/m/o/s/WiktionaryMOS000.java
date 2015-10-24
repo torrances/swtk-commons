@@ -1,0 +1,17 @@
+package org.swtk.commons.dict.wiktionary.generated.m.o.s;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryMOS000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("mosaicism", "{\"term\":\"mosaicism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|mosaic|ism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the condition in which more than one genetically distinct population of cells coexist within one individual\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("mosaicist", "{\"term\":\"mosaicist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|mosaic|ist|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a person who designs or builds mosaics\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("mosasaur", "{\"term\":\"mosasaur\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An large extinct marine reptile in the family \u0027\u0027, dominant marine predator of the Cretaceous; the ancestor of modern snakes\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("moschatel", "{\"term\":\"moschatel\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"plant of the genus \u0027Adoxa\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("moskito", "{\"term\":\"moskito\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"tok pisin\"], \"text\":\"English \u0027mosquito\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Mosquito\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("mosque", "{\"term\":\"mosque\", \"etymology\":{\"influencers\":[], \"languages\":[\"Arabic\", \"English\", \"French\", \"Italian\"], \"text\":\"From French \u0027mosquée\u0027 from Italian \u0027moschea\u0027 ultimately from Arabic \u0027مَسْجِد\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A place of worship for Muslims, often having at least one minaret; a masjid\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"There\u0027s an Ahmadiyya \u0027\u0027mosque\u0027\u0027 near to where I live\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("mosquitocide", "{\"term\":\"mosquitocide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|mosquito|cide|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any substance that kills mosquitos\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("mossback", "{\"term\":\"mossback\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|moss|back|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A turtle that, because of its age, has a growth of algae on its back\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A very conservative or reactionary person, especially one with old-fashioned views\", \"priority\":2}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

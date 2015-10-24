@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wiktionary.generated.r.a.b;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryRAB000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("rabbinate", "{\"term\":\"rabbinate\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|rabbi|ate|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The office or function of a rabb\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Rabbis collectively\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("rabbitdom", "{\"term\":\"rabbitdom\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|rabbit|dom|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or essence of being a rabbit\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("rabbithood", "{\"term\":\"rabbithood\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|rabbit|hood|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or essence of being a rabbit\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("rabble", "{\"term\":\"rabble\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A mob; a disorderly crowd\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The mass of common people; the lowest class of people\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("rabidness", "{\"term\":\"rabidness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|rabid|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The property of being rabid\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

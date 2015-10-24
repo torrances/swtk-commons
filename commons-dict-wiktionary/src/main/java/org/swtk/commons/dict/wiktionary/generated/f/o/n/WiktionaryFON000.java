@@ -1,0 +1,5 @@
+package org.swtk.commons.dict.wiktionary.generated.f.o.n;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryFON000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("fone", "{\"term\":\"fone\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Portuguese\"], \"text\":\"From English {{m|en|phone}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"phone\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("fondness", "{\"term\":\"fondness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|fond|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the quality of being fond\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

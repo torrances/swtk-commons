@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wiktionary.generated.i.r.i;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryIRI000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("iridodiagnosis", "{\"term\":\"iridodiagnosis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|irido|diagnosis|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"iridology; diagnosis by studying the iris\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("iridodialysis", "{\"term\":\"iridodialysis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|irido|dialysis|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A localized separation or tearing away of the iris from its attachment to the ciliary body\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("iridology", "{\"term\":\"iridology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A form of alternative medicine involving the diagnosis of body ailments through the examination of the iris of the human eye\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("irishman", "{\"term\":\"irishman\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Irish|man|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A man from Ireland\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("irishness", "{\"term\":\"irishness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Irish|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the quality or state of being Irish\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

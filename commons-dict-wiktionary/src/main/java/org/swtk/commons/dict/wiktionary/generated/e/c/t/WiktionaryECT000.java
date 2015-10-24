@@ -1,0 +1,31 @@
+package org.swtk.commons.dict.wiktionary.generated.e.c.t;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryECT000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("ectasia", "{\"term\":\"ectasia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"ectasis\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ectoantigen", "{\"term\":\"ectoantigen\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|ecto|antigen|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any antigen that is attached to the outside of a bacterium\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ectocervix", "{\"term\":\"ectocervix\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|ecto|cervix|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The part of the cervix that extends into the vagina\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ectochoroidea", "{\"term\":\"ectochoroidea\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|ecto|choroidea|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Loose, pigmented connective tissue that forms the outer layer of the choroid\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ectoderm", "{\"term\":\"ectoderm\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|ecto|derm|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"outermost of the three tissue layers in the embryo of a metazoan animal. Through development, it will produce the epidermis (skin) and nervous system of the adult\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ectodomain", "{\"term\":\"ectodomain\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|ecto|domain|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The portion of a polypeptide on a cell membrane that extends beyond the membrane into the extracellular space\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ectomorph", "{\"term\":\"ectomorph\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Derived from \u0027ectoderm\u0027 {suffix||morph|lang\u003den}} from w:William Herbert Sheldon|William Herbert Sheldon.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Someone with a lean, only slightly muscular bod\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Theoretical body type in which a person has a high metabolism. Such a person can easily maintain a low fat physique, but does not add muscle or body weight easily\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("ectomycorrhiza", "{\"term\":\"ectomycorrhiza\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|ecto|mycorrhiza|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A form of mycorrhiza consisting of a sheath of fungus around the root tips of the symbiotic plant\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ectonucleotidase", "{\"term\":\"ectonucleotidase\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|ecto|nucleotidase|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any nucleotidase that is active outside of a cell\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ectoparasitoid", "{\"term\":\"ectoparasitoid\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|ecto|parasitoid|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An ectoparasitic parasitoid\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ectophyte", "{\"term\":\"ectophyte\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|ecto|phyte|t1\u003doutside|t2\u003dplant|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any plant that lives as a parasite on the surface of another organism\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ectoplasm", "{\"term\":\"ectoplasm\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|ecto|plasm|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The visible substance believed to emanate from the body of a spiritualistic medium during communication with the dead\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"An immaterial or ethereal substance, especially the transparent corporeal presence of a spirit or ghost\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"The outer granule-free layer of cytoplasm\", \"priority\":3}]}, \"synonyms\":{}}");
+
+	add("ectoproct", "{\"term\":\"ectoproct\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A Bryozoa or Ectoprocta, a microscopic sessile moss-like aquatic animal (having the anus of the polyp outside the crown of tentacles), forming a colony\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ectosome", "{\"term\":\"ectosome\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|ecto|some|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An extracellular vesicle assembled at, and released from the plasma membran\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ectropy", "{\"term\":\"ectropy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The overall increase in the organization of a system\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

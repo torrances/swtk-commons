@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wiktionary.generated.u.n.l;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryUNL000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("unlaw", "{\"term\":\"unlaw\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|un|law|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a crime, an illegal action\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unlawfulness", "{\"term\":\"unlawfulness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|un|lawful|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of being unlawful\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"An unlawful act\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("unlife", "{\"term\":\"unlife\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|un|life|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A state of being that is not life (but may resemble it\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unlikeness", "{\"term\":\"unlikeness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unlike|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the state of being unlik\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"an unlike characteristic\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("unlimitedness", "{\"term\":\"unlimitedness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unlimited|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The characteristic of being unlimited; infinity\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

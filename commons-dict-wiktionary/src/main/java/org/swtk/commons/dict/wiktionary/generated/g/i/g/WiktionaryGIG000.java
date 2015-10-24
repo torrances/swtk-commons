@@ -1,0 +1,13 @@
+package org.swtk.commons.dict.wiktionary.generated.g.i.g;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryGIG000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("gigabaud", "{\"term\":\"gigabaud\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|giga|baud|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"one thousand million baud\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("gigabit", "{\"term\":\"gigabit\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|giga|bit|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"10\u0026lt;sup\u0026gt;9\u0026lt;/sup\u0026gt; bits, a thousand million (1,000,000,000) bits\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2\u0026lt;sup\u0026gt;30\u0026lt;/sup\u0026gt; (1,073,741,824) bits\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("gigaparsec", "{\"term\":\"gigaparsec\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|giga|parsec|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A distance of 10\u0026lt;sup\u0026gt;9\u0026lt;/sup\u0026gt; parsecs\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("gigawatt", "{\"term\":\"gigawatt\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|giga|watt|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One thousand million ( 10\u0026lt;sup\u0026gt;9\u0026lt;/sup\u0026gt; ) watts, abbreviated as GW\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("gigman", "{\"term\":\"gigman\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|gig|man|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who operates a gig (a kind of carriage\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("gigue", "{\"term\":\"gigue\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"an Irish dance, derived from the jig, used in the Partita form (Baroque Period\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wiktionary.generated.a.d.h;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryADH000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("adhan", "{\"term\":\"adhan\", \"etymology\":{\"influencers\":[], \"languages\":[\"Arabic\", \"English\"], \"text\":\"From Arabic \u0027أَذَان\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The call to prayer\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("adhesiotomy", "{\"term\":\"adhesiotomy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|adhesion|otomy|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The surgical procedure to divide or separate an adhesion\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("adhesiveness", "{\"term\":\"adhesiveness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|adhesive|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the quality of being, or the degree to which a thing is, adhesive\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("adhocracy", "{\"term\":\"adhocracy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|ad hoc|cracy|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An organizational system designed to be flexible and responsive to the needs of the moment rather than excessively bureaucratic\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

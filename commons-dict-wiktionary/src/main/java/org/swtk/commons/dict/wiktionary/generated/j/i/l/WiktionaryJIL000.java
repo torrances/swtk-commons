@@ -1,0 +1,5 @@
+package org.swtk.commons.dict.wiktionary.generated.j.i.l;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryJIL000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("jilt", "{\"term\":\"jilt\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"scots\"], \"text\":\"Contracted from Scots \u0027jillet|lang\u003dsco\u0027 ()\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A woman who jilts a lover\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("jiltee", "{\"term\":\"jiltee\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|jilt|ee|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who is jilted\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

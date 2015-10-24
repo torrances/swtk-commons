@@ -1,0 +1,13 @@
+package org.swtk.commons.dict.wiktionary.generated.h.y.g;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryHYG000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("hygrine", "{\"term\":\"hygrine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|hygro|alt1\u003dhygr|ine|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A found mainly in leaves, extracted as a thick, pale-yellow of a burning taste\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("hygrograph", "{\"term\":\"hygrograph\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|hygro|graph|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of several forms of automated hygrometer that record humidity\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("hygrometry", "{\"term\":\"hygrometry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|hygro|metry|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The measurement of the moisture content of gases, but especially of the humidity of the atmosphere\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("hygroscope", "{\"term\":\"hygroscope\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|hygro|scope|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An instrument that indicates changes in atmospheric humidity\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("hygroscopicity", "{\"term\":\"hygroscopicity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|hygroscopic|ity|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of being hygroscopic\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The degree to which a substance is hygroscopic\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("hygrostat", "{\"term\":\"hygrostat\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|hygro|stat|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A device that maintains a constant level of humidity\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

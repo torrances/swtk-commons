@@ -1,0 +1,13 @@
+package org.swtk.commons.dict.wiktionary.generated.u.n.r;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryUNR000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("unrealisticness", "{\"term\":\"unrealisticness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|unrealistic|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality or state of being unrealistic\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unremarkableness", "{\"term\":\"unremarkableness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unremarkable|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or condition of being unremarkable\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unrest", "{\"term\":\"unrest\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|un|rest|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A state of trouble, confusion and turbulence, especially in a political context; a time of riots, demonstrations and protests\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unrestrainedness", "{\"term\":\"unrestrainedness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unrestrained|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of being unrestrained\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unrestraint", "{\"term\":\"unrestraint\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|un|restraint|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Lack of restraint; the quality of being unrestrained\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unrhyme", "{\"term\":\"unrhyme\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|un|rhyme|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A line of verse that does not rhyme\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

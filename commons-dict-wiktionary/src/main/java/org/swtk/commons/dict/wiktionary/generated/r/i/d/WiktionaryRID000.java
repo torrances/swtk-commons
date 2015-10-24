@@ -1,0 +1,13 @@
+package org.swtk.commons.dict.wiktionary.generated.r.i.d;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryRID000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("ridder", "{\"term\":\"ridder\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|rid|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who, or that which, rids\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ridesharing", "{\"term\":\"ridesharing\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|ride|sharing|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A form of transportation, other than public transport, in which more than one person shares the use of a vehicle, such as a van or car, to make a trip\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ridgehead", "{\"term\":\"ridgehead\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|ridge|head|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of the family \u0027\u0027 of small, deep-sea stephanoberyciform fish\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ridgepole", "{\"term\":\"ridgepole\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|ridge|pole|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a horizontal pole that supports the roof of a ten\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"a beam along the ridge of a roof to which the rafters are attached\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("ridiculosity", "{\"term\":\"ridiculosity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|ridiculous|ity|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality of being ridiculous; absurdity\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ridiculousness", "{\"term\":\"ridiculousness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|ridiculous|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The characteristic of being ridiculous\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The result of being ridiculous\", \"priority\":2}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

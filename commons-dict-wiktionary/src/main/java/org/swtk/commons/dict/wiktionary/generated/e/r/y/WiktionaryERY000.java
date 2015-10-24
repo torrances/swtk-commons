@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wiktionary.generated.e.r.y;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryERY000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("erysipeloid", "{\"term\":\"erysipeloid\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|erysipelas|oid|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A mild cutaneous infection by \u0027Erysipelothrix rhusiopathiae\u0027 in humans\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("erythematosus", "{\"term\":\"erythematosus\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An eruption of red lesions\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("erythroagglutinin", "{\"term\":\"erythroagglutinin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|erythro|agglutinin|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A lectin, isolated from the red kidney bean (\u0027Phaseolus vulgaris\u0027), that is involved in red cell agglutination\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("erythroblast", "{\"term\":\"erythroblast\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|erythro|blast|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"cell in the bone marrow from which red blood cells develop\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("erythrophyll", "{\"term\":\"erythrophyll\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|erythro|phyll|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The red pigment of leaves, fruits, flowers, etc., in distinction from chlorophyll\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

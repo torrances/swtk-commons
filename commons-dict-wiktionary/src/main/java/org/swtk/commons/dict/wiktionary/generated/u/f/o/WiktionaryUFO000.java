@@ -1,0 +1,5 @@
+package org.swtk.commons.dict.wiktionary.generated.u.f.o;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryUFO000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("ufologist", "{\"term\":\"ufologist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|ufology|ist|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person who studies UFOs\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ufology", "{\"term\":\"ufology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|UFO|logy|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of UFOs\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

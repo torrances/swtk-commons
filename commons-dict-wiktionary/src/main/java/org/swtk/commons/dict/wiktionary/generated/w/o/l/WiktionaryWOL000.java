@@ -1,0 +1,13 @@
+package org.swtk.commons.dict.wiktionary.generated.w.o.l;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryWOL000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("wolfberry", "{\"term\":\"wolfberry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|wolf|berry|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of flowering species of the genus \u0027Lycium\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The berry of this plant.\u0026lt;!--There should be separate sections for the plant and berry in the \u0026quot;translations\u0026quot; section as the words are often different--\u0026gt\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("wolffish", "{\"term\":\"wolffish\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|wolf|fish|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any fish of the family\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("wolfhound", "{\"term\":\"wolfhound\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|wolf|hound|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A dog of various breeds originally developed to hunt wolves\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("wolfling", "{\"term\":\"wolfling\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A wolf cub\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("wolfsbane", "{\"term\":\"wolfsbane\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From \u0027wolf\u0027 + \u0027bane\u0027 calque of Ancient greek (to 1453) \u0027λυκοκτόνον\u0027 from \u0027λύκος\u0027 (wolf) + \u0027κτείνω\u0027 (i kill) Influenced by Latin \u0027lycoctonum\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of several poisonous perennial herbs of the genus \u0027Aconitum\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("wolfskin", "{\"term\":\"wolfskin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|wolf|skin|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The skin of a wolf\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

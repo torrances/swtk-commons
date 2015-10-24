@@ -1,0 +1,21 @@
+package org.swtk.commons.dict.wiktionary.generated.p.i.p;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryPIP000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("pipes", "{\"term\":\"pipes\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{sense|vocal capacity}} As if one\u0027s lungs were composed of pipe-works.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A single pipe organ\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"One\u0027s vocal capacity\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Biceps\", \"priority\":3}]}, \"synonyms\":{}}");
+
+	add("pipelayer", "{\"term\":\"pipelayer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|pipe|layer|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who lays conducting pipes in the ground, for water, gas, etc\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A politician who works in secret\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("piperonylbutoxide", "{\"term\":\"piperonylbutoxide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|piperonyl|butoxide|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A semisynthetic derivative of safrole that is used to enhance the potency of certain pesticides\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("pipetongs", "{\"term\":\"pipetongs\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|pipe|tongs|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A jawed tool for gripping a pipe, in turning or holding it\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("pipevine", "{\"term\":\"pipevine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|pipe|vine|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The Dutchman\u0027s pipe vine\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("piphat", "{\"term\":\"piphat\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Thai\"], \"text\":\"From Thai ปี่พาทย์\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An ensemble of wind and percussion instruments in central Thai classical music\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("piphilologist", "{\"term\":\"piphilologist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|piphilology|ist|lang\u003den}}, after {{m|en|philologist}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Someone who creates or uses mnemonics to memorize sections of the number pi \u0026lt;math\u0026gt; pi\u0026lt;/math\u0026gt\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("piphilology", "{\"term\":\"piphilology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|pi|philology|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The memorization of the digits of pi as a hobby\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("pipit", "{\"term\":\"pipit\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of various small passerine birds, mainly from the genus \u0027Anthus\u0027, that are often drab, ground feeding insectivores of open country\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("pipistrelle", "{\"term\":\"pipistrelle\", \"etymology\":{\"influencers\":[{}], \"languages\":[\"English\", \"French\", \"Italian\", \"Latin\"], \"text\":\"From French \u0027pipistrelle\u0027 from Italian \u0027pipistrello\u0027 (bat) variant of \u0027\u0027 from Latin \u0027vespertilio\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of various species of bat of the genus\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

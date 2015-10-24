@@ -1,0 +1,5 @@
+package org.swtk.commons.dict.wiktionary.generated.v.l.o;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryVLO000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("vlog", "{\"term\":\"vlog\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Short for {{m|en|video blog}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A weblog using video as its primary presentation format\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("vlogger", "{\"term\":\"vlogger\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|vlog|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A contributor to a vlog\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

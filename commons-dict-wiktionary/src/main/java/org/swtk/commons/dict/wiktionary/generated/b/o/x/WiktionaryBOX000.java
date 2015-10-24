@@ -1,0 +1,15 @@
+package org.swtk.commons.dict.wiktionary.generated.b.o.x;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryBOX000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("boxcutter", "{\"term\":\"boxcutter\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|box|cutter|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A utility knife\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("boxercise", "{\"term\":\"boxercise\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"* {{blend|boxing|exercise|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A form of physical workout, combining boxing with aerobic exercise\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("boxfish", "{\"term\":\"boxfish\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|box|fish|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of the family Ostraciidae of squared, bony fish, closely related to the pufferfish and filefish\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("boxful", "{\"term\":\"boxful\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|box|ful|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"as much as a box will hold\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("boxload", "{\"term\":\"boxload\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|box|load|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A load comprising a full box\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("boxlock", "{\"term\":\"boxlock\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|box|lock|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A style of double-barrelled shotgun with concealed, self-cocking hammers that use a break-open action\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("boxout", "{\"term\":\"boxout\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|box|out|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A square or almost square design element that contains text or graphics separate from the main body of text or graphics on the page\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

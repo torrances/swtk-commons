@@ -7,6 +7,8 @@ public enum SynonymQualifierUpperType {
 	ADJECTIVE("adjective"),
 
 	ARCHAIC("archaic"),
+	
+	OTHER("other"),
 
 	// ATTRIBUTIVELY("attributively"), ADJ
 

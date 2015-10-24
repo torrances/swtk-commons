@@ -1,0 +1,29 @@
+package org.swtk.commons.dict.wiktionary.generated.u.n.s;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryUNS000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("unsaleableness", "{\"term\":\"unsaleableness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|unsaleable|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or quality of being unsaleable\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unsatisfactoriness", "{\"term\":\"unsatisfactoriness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unsatisfactory|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or condition of being unsatisfactory\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unscrupulousness", "{\"term\":\"unscrupulousness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unscrupulous|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the state of being unscrupulous\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unselfishness", "{\"term\":\"unselfishness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unselfish|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of being unselfish\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unsellability", "{\"term\":\"unsellability\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|un|sell|ability|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Property of being unsellable\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unsignedness", "{\"term\":\"unsignedness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unsigned|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or condition of being unsigned\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1989\u0027\u0027, \u0027Personal Computer\u0027 magazin\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"You\u0027re quite right: bits are bits, and the \u0026quot;signedness\u0026quot; or \u0027\u0027\u0026quot;unsignedness\u0026quot;\u0027\u0027 of a given bit pattern depends strictly on your point of view\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"1994\u0027\u0027, Mark A Terribile, \u0027Practical C\", \"priority\":4},{\"upperType\":\"NOUN\", \"text\":\"Under ANSI C, the wider type\u0027s signedness or \u0027\u0027unsignedness\u0027\u0027 prevails if the resulting value can be stored in that type, otherwise unsignedness prevails\", \"priority\":5},{\"upperType\":\"NOUN\", \"text\":\"2006\u0027\u0027, William Von Hagen, \u0027The definitive guide to GCC\", \"priority\":6},{\"upperType\":\"NOUN\", \"text\":\"Earlier versions of GCC would try to preserve \u0027\u0027unsignedness\", \"priority\":7}]}, \"synonyms\":{}}");
+
+	add("unsociability", "{\"term\":\"unsociability\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unsociable|ity|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or quality of being unsociable\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unsociableness", "{\"term\":\"unsociableness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unsociable|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or quality of being unsociable\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unsoundness", "{\"term\":\"unsoundness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|un|sound|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the state of being unsound\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unstressedness", "{\"term\":\"unstressedness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unstressed|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or condition of being unstressed\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unstructuredness", "{\"term\":\"unstructuredness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unstructured|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or condition of being unstructured; lack of structure\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unstylishness", "{\"term\":\"unstylishness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unstylish|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or condition of being unstylish\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unsuitedness", "{\"term\":\"unsuitedness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unsuited|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or condition of being unsuited\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unsupportableness", "{\"term\":\"unsupportableness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unsupportable|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the state or quality of being unsupportable\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

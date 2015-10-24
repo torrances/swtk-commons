@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wiktionary.generated.m.a.d;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryMAD000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("madhouse", "{\"term\":\"madhouse\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|mad|house|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A house where insane persons are confined; an insane asylu\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A place exhibiting stereotypical characteristics of such a house\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"This place is a \u0027\u0027madhouse\", \"priority\":3}]}, \"synonyms\":{}}");
+
+	add("madman", "{\"term\":\"madman\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|mad|man|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A male who is insane or mentally disturbed\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("madness", "{\"term\":\"madness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|mad|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of being mad; insanity; mental disease\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"rash folly\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("madreporite", "{\"term\":\"madreporite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|madrepore|ite|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A fossil coral\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("madwort", "{\"term\":\"madwort\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|mad|wort|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Certain of the alyssums\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

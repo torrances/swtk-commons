@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wiktionary.generated.e.l.o;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryELO000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("elocutionist", "{\"term\":\"elocutionist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|elocution|ist|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Someone who practices or teaches elocution\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("elodeid", "{\"term\":\"elodeid\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A stem plant that completes its entire life cycle submerged, or with only its flowers above the waterline\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("eloquentness", "{\"term\":\"eloquentness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|eloquent|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality of being eloquent\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

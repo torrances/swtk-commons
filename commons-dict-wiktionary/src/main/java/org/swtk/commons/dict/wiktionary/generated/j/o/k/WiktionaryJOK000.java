@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wiktionary.generated.j.o.k;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryJOK000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("jokefic", "{\"term\":\"jokefic\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|joke|fic|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A fanfic intended to be humorous or absurd\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("jokesmith", "{\"term\":\"jokesmith\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|joke|smith|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person who devises jokes\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("jokokuite", "{\"term\":\"jokokuite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Jokoku|ite|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A triclinic-pinacoidal light pink mineral containing hydrogen, manganese, oxygen, and sulfur\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

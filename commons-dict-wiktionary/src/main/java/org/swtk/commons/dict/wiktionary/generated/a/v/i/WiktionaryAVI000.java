@@ -1,0 +1,15 @@
+package org.swtk.commons.dict.wiktionary.generated.a.v.i;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryAVI000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("aviary", "{\"term\":\"aviary\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin {{m|la|aviārium}}, from \u0027avis\u0027 ()\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A house, enclosure, large cage, or other place for keeping birds confined; a birdhouse\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("aviatress", "{\"term\":\"aviatress\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|aviator|ess|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A female pilot of an aircraft\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("aviatrices", "{\"term\":\"aviatrices\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Category:English irregular plurals ending in \u0026quot;-ces\u0026quot\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("aviatrix", "{\"term\":\"aviatrix\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|aviator|rix|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A female aviator\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("avihepadnavirus", "{\"term\":\"avihepadnavirus\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of the genus ; an avian hepadnavirus\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("avionics", "{\"term\":\"avionics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|aviation|electronics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The science and technology of the development and use of electrical and electronic devices in aviation\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The devices used in avionics\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("aviophobia", "{\"term\":\"aviophobia\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"Possibly from French {{m|fr|avion||airplane}} {{suffix||phobia|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Fear of flying\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"I\u0027d love to come and visit you but \u0027\u0027aviophobia\u0027\u0027 means that it\u0027d have to be by boat, and that just takes too long\", \"priority\":2}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

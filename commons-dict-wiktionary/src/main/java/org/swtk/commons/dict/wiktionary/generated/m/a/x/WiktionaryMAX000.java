@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wiktionary.generated.m.a.x;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryMAX000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("maxicoat", "{\"term\":\"maxicoat\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|maxi|coat|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A woman\u0027s long coat\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("maximalism", "{\"term\":\"maximalism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|maximal|ism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The opposite of minimalism: a tendency toward exces\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("maxipreparation", "{\"term\":\"maxipreparation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|maxi|preparation|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Relatively large-scale preparation of plasmid DNA\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("maxiseries", "{\"term\":\"maxiseries\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|maxi|series|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A relatively long comic book series\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wiktionary.generated.r.o.p;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryROP000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("ropedancer", "{\"term\":\"ropedancer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|rope|dancer|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A tightrope walker\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ropeman", "{\"term\":\"ropeman\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|rope|man|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"someone who uses a rope\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ropesman", "{\"term\":\"ropesman\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|rope|man|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"someone who uses a rope\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ropeway", "{\"term\":\"ropeway\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|rope|way|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A system of cables, slung from towers, from which carriers are suspended to transport materials\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }
