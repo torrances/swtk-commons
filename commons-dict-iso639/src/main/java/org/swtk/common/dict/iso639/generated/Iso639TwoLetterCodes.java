@@ -25,7 +25,7 @@ import com.trimc.blogger.commons.utils.string.StringUtils;
  * 		6	diacritic?
  *
  */
-public class IsoTwoLetterCodes {
+public class Iso639TwoLetterCodes {
 
 	private static Map<Integer, Language> map = new HashMap<Integer, Language>();
 

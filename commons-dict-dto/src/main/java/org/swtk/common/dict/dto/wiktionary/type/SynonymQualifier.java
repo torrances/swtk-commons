@@ -2,53 +2,57 @@ package org.swtk.common.dict.dto.wiktionary.type;
 
 public enum SynonymQualifier {
 
-	ABBREVIATION("abbreviation"),
+	ABBREVIATION("abbreviation", SynonymQualifierUpperType.ABBREVIATION),
 
-	ADJECTIVE("adjective"),
+	ADJECTIVE("adjective", SynonymQualifierUpperType.ADJECTIVE),
+	
+	ANCIENT("ancient", SynonymQualifierUpperType.ARCHAIC),
 
-	ARCHAIC("archaic"),
+	ARCHAIC("archaic", SynonymQualifierUpperType.ARCHAIC),
 
-	ATTRIBUTIVELY("attributively"),
+	ATTRIBUTIVELY("attributively", SynonymQualifierUpperType.ADJECTIVE),
 
-	COLLOQUIAL("colloquial"),
+	COLLOQUIAL("colloquial", SynonymQualifierUpperType.INFORMAL),
 
-	COUNTABLE("countable"),
+	COUNTABLE("countable", SynonymQualifierUpperType.COUNTABLE),
+	
+	CRUDE("crude", SynonymQualifierUpperType.VULGAR),
 
-	CRUDE("crude"),
+	DATED("dated", SynonymQualifierUpperType.ARCHAIC),
 
-	DATED("dated"),
+	DEROGATORY("derogatory", SynonymQualifierUpperType.PEJORATIVE),
 
-	DEROGATORY("derogatory"),
+	DIMINUITIVE("diminutive", SynonymQualifierUpperType.INFORMAL),
 
-	DIMINUITIVE("diminutive"),
+	EUPHEMISM("euphemism", SynonymQualifierUpperType.INFORMAL),
 
-	EUPHEMISM("euphemism"),
+	FAMILIAR("familiar", SynonymQualifierUpperType.INFORMAL),
 
-	FAMILIAR("familiar"),
+	FORMAL("formal", SynonymQualifierUpperType.FORMAL),
 
-	FORMAL("formal"),
+	INDISTINCTLY("indistinctly", SynonymQualifierUpperType.INDISTINCTLY),
 
-	INDISTINCTLY("indistinctly"),
+	INEXACT("inexact", SynonymQualifierUpperType.INEXACT),
 
-	INEXACT("inexact"),
+	INFORMAL("informal", SynonymQualifierUpperType.INFORMAL),
 
-	INFORMAL("informal"),
+	MODERN("modern", SynonymQualifierUpperType.MODERN),
 
-	MODERN("modern"),
+	OBSOLETE("obsolete", SynonymQualifierUpperType.ARCHAIC),
 
-	OBSOLETE("obsolete"),
+	PEJORATIVE("pejorative", SynonymQualifierUpperType.PEJORATIVE),
 
-	RARE("rare"),
+	RARE("rare", SynonymQualifierUpperType.ARCHAIC),
 
-	SECULAR("secular"),
+	SECULAR("secular", SynonymQualifierUpperType.SECULAR),
 
-	SLANG("slang"),
+	SLANG("slang", SynonymQualifierUpperType.INFORMAL),
 
-	SYMBOL("symbol"),
+	SYMBOL("symbol", SynonymQualifierUpperType.SYMBOL),
 
-	UNCOUNTABLE("uncountable"),
-
-	VULGAR("vulgar");
+	UNCOUNTABLE("uncountable", SynonymQualifierUpperType.UNCOUNTABLE),
+	
+	VULGAR("vulgar", SynonymQualifierUpperType.VULGAR);
 
 	public static SynonymQualifier find(String text) {
 		for (SynonymQualifier value : SynonymQualifier.values())
@@ -57,17 +61,28 @@ public enum SynonymQualifier {
 	}
 
 	private String name;
+	
+	private SynonymQualifierUpperType upperType;
 
-	private SynonymQualifier(String name) {
+	private SynonymQualifier(String name, SynonymQualifierUpperType upperType) {
 		setName(name);
+		setUpperType(upperType);
 	}
 
 	private String getName() {
 		return name;
 	}
 
+	public SynonymQualifierUpperType getUpperType() {
+		return upperType;
+	}
+
 	private void setName(String name) {
 		this.name = name;
+	}
+
+	private void setUpperType(SynonymQualifierUpperType upperType) {
+		this.upperType = upperType;
 	}
 
 	public String toString() {

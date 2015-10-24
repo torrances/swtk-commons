@@ -34,7 +34,7 @@ import org.swtk.common.dict.iso639.generated.Iso639_W1;
 import org.swtk.common.dict.iso639.generated.Iso639_X1;
 import org.swtk.common.dict.iso639.generated.Iso639_Y1;
 import org.swtk.common.dict.iso639.generated.Iso639_Z1;
-import org.swtk.common.dict.iso639.generated.IsoTwoLetterCodes;
+import org.swtk.common.dict.iso639.generated.Iso639TwoLetterCodes;
 
 import com.trimc.blogger.commons.LogManager;
 
@@ -45,7 +45,7 @@ public final class Iso639Db {
 	public static Language findById(String id) {
 
 		if (Iso639Exceptional.hasById(id)) return Iso639Exceptional.findById(id);
-		if (2 == id.length() && IsoTwoLetterCodes.hasById(id)) return IsoTwoLetterCodes.findById(id);
+		if (2 == id.length() && Iso639TwoLetterCodes.hasById(id)) return Iso639TwoLetterCodes.findById(id);
 
 		if (id.startsWith("a")) return Iso639_A1.findById(id);
 		if (id.startsWith("b")) return Iso639_B1.findById(id);
@@ -79,7 +79,7 @@ public final class Iso639Db {
 	public static Language findByName(String name) {
 
 		if (Iso639Exceptional.hasByName(name)) return Iso639Exceptional.findByName(name);
-		if (IsoTwoLetterCodes.hasByName(name)) return IsoTwoLetterCodes.findByName(name);
+		if (Iso639TwoLetterCodes.hasByName(name)) return Iso639TwoLetterCodes.findByName(name);
 
 		if (Iso639_A1.hasByName(name)) return Iso639_A1.findByName(name);
 		if (Iso639_B1.hasByName(name)) return Iso639_B1.findByName(name);
@@ -115,7 +115,7 @@ public final class Iso639Db {
 		Map<String, Collection<String>> map = new TreeMap<String, Collection<String>>();
 
 		map.putAll(Iso639Exceptional.getLanguageNamesWithVariantsAsMap());
-		map.putAll(IsoTwoLetterCodes.getLanguageNamesWithVariantsAsMap());
+		map.putAll(Iso639TwoLetterCodes.getLanguageNamesWithVariantsAsMap());
 
 		map.putAll(Iso639_A1.getLanguageNamesWithVariantsAsMap());
 		map.putAll(Iso639_B1.getLanguageNamesWithVariantsAsMap());
@@ -151,7 +151,7 @@ public final class Iso639Db {
 		Set<String> set = new TreeSet<String>();
 
 		set.addAll(Iso639Exceptional.getLanguageNamesWithVariantsAsSet());
-		set.addAll(IsoTwoLetterCodes.getLanguageNamesWithVariantsAsSet());
+		set.addAll(Iso639TwoLetterCodes.getLanguageNamesWithVariantsAsSet());
 
 		set.addAll(Iso639_A1.getLanguageNamesWithVariantsAsSet());
 		set.addAll(Iso639_B1.getLanguageNamesWithVariantsAsSet());

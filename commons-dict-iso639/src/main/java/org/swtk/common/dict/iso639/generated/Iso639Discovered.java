@@ -12,8 +12,10 @@ import com.trimc.blogger.commons.utils.string.StringUtils;
 
 /**
  * 	Purpose:
- * 		List of exceptional ISO639 codes
- * 		<https://en.wiktionary.org/wiki/Wiktionary:List_of_languages>
+ * 		List of "discovered" ISO639 codes
+ * 		These codes should be featured here:
+ * 			<https://en.wiktionary.org/wiki/Wiktionary:List_of_languages>
+ * 		but are not
  * 
  * 	Columns (0-based):
  * 		0	code					code
@@ -25,7 +27,7 @@ import com.trimc.blogger.commons.utils.string.StringUtils;
  * 		6	diacritic?
  *
  */
-public class Iso639Exceptional {
+public class Iso639Discovered {
 
 	private static Map<Integer, Language> map = new HashMap<Integer, Language>();
 

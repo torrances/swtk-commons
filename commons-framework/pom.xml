@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.swtk.common.framework</groupId>
@@ -35,26 +36,22 @@
 	</properties>
 
 	<dependencies>
-
-		<!-- https://github.com/torrances/bom/tree/master/spring-jpa -->
 		<dependency>
 			<groupId>spring-jpa-bom</groupId>
 			<artifactId>spring-jpa-bom</artifactId>
 			<version>4.1.4</version>
 			<type>pom</type>
 		</dependency>
-		<!--  -->
-		<dependency>
-			<groupId>com.trimc.blogger.commons</groupId>
-			<artifactId>java-commons</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-
-		<!-- External Dependencies -->
 		<dependency>
 			<groupId>mysql-bom</groupId>
 			<artifactId>mysql-bom</artifactId>
 			<version>5.1.34</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>trimc-commons</groupId>
+			<artifactId>trimc-commons</artifactId>
+			<version>1.0.0</version>
 			<type>pom</type>
 		</dependency>
 		<dependency>
@@ -82,7 +79,6 @@
 			<artifactId>gson</artifactId>
 			<version>${gson.version}</version>
 		</dependency>
-
 	</dependencies>
 
 </project>
