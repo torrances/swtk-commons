@@ -15,11 +15,12 @@
 	<modules>
 		<module>../commons-core</module>
 		<module>../commons-framework</module>
+		<module>../commons-ds-d3js</module>
 		<module>../commons-dict</module>
 		<module>../commons-dict-dto</module>
 		<module>../commons-dict-iso639</module>
 		<module>../commons-dict-wiktionary</module>
-		<module>../commons-ds-d3js</module>
+		<module>../commons-dict-gngrams</module>
 	</modules>
 
 	<properties>
@@ -60,6 +61,11 @@
 		<dependency>
 			<groupId>org.swtk.commons.dict.wiktionary</groupId>
 			<artifactId>commons-dict-wiktionary</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.swtk.common.dict.gngrams</groupId>
+			<artifactId>commons-dict-gngrams</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
