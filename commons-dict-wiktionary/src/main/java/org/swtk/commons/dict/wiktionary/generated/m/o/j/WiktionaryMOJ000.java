@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.m.o.j;  import java.util.Hash
 
 	add("mojama", "{\"term\":\"mojama\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A dish consisting of filleted salt-cured tuna.Category:en:Foods\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("mojibake", "{\"term\":\"mojibake\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Japanese\"], \"text\":\"Japanese \u0027lang\u003dja\u0027 from \u0027lang\u003dja|文字|tr\u003dmoji\u0027 () + \u0027lang\u003dja|化ける|tr\u003dbakeru\u0027 (transform, take a different form)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Corrupt characters or letters, especially from display or transfer through an inappropriate character set or encoding\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("mojito", "{\"term\":\"mojito\", \"etymology\":{\"influencers\":[{},{},{}], \"languages\":[\"English\", \"Spanish\", \"Latin\"], \"text\":\"From Cuban-Spanish \u0027mojo\u0027 (sauce) from \u0027mojar\u0027 (to moisten) from hypothetical \u0027molliāre\u0027 (\u0026quot;to soften by soaking\u0026quot;), from Latin {{m|la|molliō||soften}}, from \u0027mollis\u0027 (soft)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A Cuban cocktail made from rum, lime, sugar, mint etc\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.r.i.m;  import java.util.Hash
 
 	add("rimland", "{\"term\":\"rimland\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|rim|land|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a land or region at the periphery of a heartland\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("rimonabant", "{\"term\":\"rimonabant\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Category:en:DrugsAn anti-obesity drug which acts as an appetite suppressant\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("rimrock", "{\"term\":\"rimrock\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|rim|rock|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An outcrop of hard rock, often in the form of a cliff at the edge of a plateau, that forms the margin of a gravel deposit\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("rimshot", "{\"term\":\"rimshot\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|rim|shot|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A percussive note in which the drumstick hits both the head and the rim of the drum\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A percussive sting or flourish used to punctuate a joke in a cabaret or vaudeville act\", \"priority\":2}]}, \"synonyms\":{}}");

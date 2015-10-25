@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wiktionary.generated.a.f.l;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryAFL000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("aflaj", "{\"term\":\"aflaj\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|plural of falaj - channel? Arabic?|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An irrigation system which catches mountain water and controls its movement down man-made subterranean channels, found in Oman\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("aflao", "{\"term\":\"aflao\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A city in Ghana on the Togolese border\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("aflatoxicosis", "{\"term\":\"aflatoxicosis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"disease caused by aflatoxin\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("afloqualone", "{\"term\":\"afloqualone\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A quinazolinone sedative and muscle relaxant\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

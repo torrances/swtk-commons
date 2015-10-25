@@ -4,6 +4,10 @@ package org.swtk.commons.dict.wiktionary.generated.g.o.n;  import java.util.Hash
 
 	add("gonadotrophin", "{\"term\":\"gonadotrophin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of a group of protein hormones secreted by gonadotrope cells of the pituitary gland of vertebrates\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("gonagra", "{\"term\":\"gonagra\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"gout in the knee\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("gonarthritis", "{\"term\":\"gonarthritis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"inflammation of the joint of the knee\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("gondolier", "{\"term\":\"gondolier\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\", \"Italian\"], \"text\":\"From French \u0027gondolier\u0027 from Italian \u0027gondoliere\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A Venetian boatman who propels a gondola\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("goner", "{\"term\":\"goner\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"* {{suffix|gone|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Someone (or something) doomed; a hopeless case\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"I\u0027m a \u0027\u0027goner\u0027\u0027 if this plan doesn\u0027t work\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"You\u0027ll be a \u0027\u0027goner\u0027\u0027 if I hit you with this gun\", \"priority\":3}]}, \"synonyms\":{}}");
@@ -15,6 +19,8 @@ package org.swtk.commons.dict.wiktionary.generated.g.o.n;  import java.util.Hash
 	add("goniometer", "{\"term\":\"goniometer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|gonio|meter|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A device used to measure the angles of crystals\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A radio direction finder\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"An arthrometer (device for measuring the arc or range of mobility of a joint\", \"priority\":3}]}, \"synonyms\":{}}");
 
 	add("gonioscope", "{\"term\":\"gonioscope\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|gonio|scope|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"any of various instruments allowing a clinician to view the irideocorneal angle through a mirror or prism\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("gonioscopy", "{\"term\":\"gonioscopy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|gonio|scopy|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the use of a gonioscope in conjunction with a slit lamp or operating microscope to gain a view of the anatomical angle formed between the eye\u0027s cornea and iris, known as the iridocorneal angle\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("gonococcus", "{\"term\":\"gonococcus\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|gono|coccus|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A bacterium, taxonomic name , that is responsible for gonorrhea\", \"priority\":1}]}, \"synonyms\":{}}");
 

@@ -6,11 +6,17 @@ package org.swtk.commons.dict.wiktionary.generated.g.l.u;  import java.util.Hash
 
 	add("glucosamine", "{\"term\":\"glucosamine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|glucose|amine|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An amino derivative of glucose that is a component of polysaccharides such as chitin; it is marketed as a dietary supplement supposedly to reduce the symptoms of arthritis\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("glucoverodoxin", "{\"term\":\"glucoverodoxin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular steroid glycoside\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("glucuronoxylomannan", "{\"term\":\"glucuronoxylomannan\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A complex polysaccharide,that is the principal constituent of the capsule of the human pathogenic fungus \u0027Cryptococcus neoformans\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("glueball", "{\"term\":\"glueball\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|glue|ball|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A theoretical particle composed entirely of gluons\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("gluhwein", "{\"term\":\"gluhwein\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{borrowing|de|Glühwein|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A type of mulled wine from German-speaking countries made from red wine with cinnamon and other herbs and spices\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1929\u0027\u0027, \u0027A Farewell to Arms\u0027, Folio Society 2008, p. 284\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"we sat inside warmed by the stove and drank hot red wine with spices and lemon in it. They called it \u0027\u0027\u0027glühwein\u0027\u0027\u0027 and it was a good thing to warm you and to celebrate with\", \"priority\":3}]}, \"synonyms\":{}}");
 
 	add("gluino", "{\"term\":\"gluino\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|glue|ino|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The superpartner of the gluon\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("gluonics", "{\"term\":\"gluonics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of gluons, gluonium, and the strong interaction\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("glurge", "{\"term\":\"glurge\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"imitative|Imitative of the retching that might be induced by stories of this kind. (Coined by Patricia Chapin, a member of the urban legends discussion mailing list of the [http://www.snopes.com Snopes] website.)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Sickeningly sweet stories with a moral, often hiding slightly sinister undertones\", \"priority\":1}]}, \"synonyms\":{}}");
 

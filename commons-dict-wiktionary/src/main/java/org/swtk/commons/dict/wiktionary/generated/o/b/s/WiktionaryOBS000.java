@@ -20,9 +20,17 @@ package org.swtk.commons.dict.wiktionary.generated.o.b.s;  import java.util.Hash
 
 	add("obstacle", "{\"term\":\"obstacle\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"old french (842-ca. 1400)\"], \"text\":\"From Old french (842-ca. 1400) French|obstacle\u0027.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Something that impedes, stands in the way of, or holds up progres\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A big \u0027\u0027obstacle\u0027\u0027 to understanding the manual was that it had been poorly translated from the Japanese\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("obstetrication", "{\"term\":\"obstetrication\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The act of assisting as a midwife; delivery of a baby\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("obstetrics", "{\"term\":\"obstetrics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{m|en|obstetric}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The care of women during and after pregnancy\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("obstinacy", "{\"term\":\"obstinacy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state, or an act, of stubbornness or doggedness\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"He finished only through a mixture of determined \u0027\u0027obstinacy\u0027\u0027 and ingenuity\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("obstinateness", "{\"term\":\"obstinateness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The characteristic of being obstinate\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("obstipation", "{\"term\":\"obstipation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|obstipate|ion|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"severe constipation caused by intestinal obstruction\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("obstreperosity", "{\"term\":\"obstreperosity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From \u0027obstreperous\u0027 + \u0027-ity\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of being obstreperous\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("obstruction", "{\"term\":\"obstruction\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027obstructio\u0027 (lang\u003dla) from \u0027obstruo\u0027 (lang\u003dla)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The act of obstructing, or state of being obstructed\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"That which obstructs or impedes; an obstacle; an impediment; a hindrance\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"The condition of having the natural powers obstructed in their usual course; the arrest of the vital functions; death\", \"priority\":3}]}, \"synonyms\":{}}");
 

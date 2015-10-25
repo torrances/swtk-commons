@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.p.y.o;  import java.util.Hash
 
 	add("pyoderma", "{\"term\":\"pyoderma\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|pyo|derma|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"an infection of the skin by pyogenic bacteria\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("pyometra", "{\"term\":\"pyometra\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From the Ancient greek (to 1453) \u0027πύον\u0027 (puss) and \u0027μήτρα\u0027 (uterus)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An infection of the uterus most commonly seen in dogs, but also occasionally in other small mammals, resulting from hormonal and structural changes in the lining of the uterus\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("pyorrhoea", "{\"term\":\"pyorrhoea\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027πύον\u0027 (pus) in combination with \u0027ῤοια\u0027 (flow”, “flux)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Flowing or of\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("pyosalpinx", "{\"term\":\"pyosalpinx\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|pyo|salpinx|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A distally blocked Fallopian tube filled with pus\", \"priority\":1}]}, \"synonyms\":{}}");

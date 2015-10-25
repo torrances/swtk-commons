@@ -6,6 +6,8 @@ package org.swtk.commons.dict.wiktionary.generated.u.l.t;  import java.util.Hash
 
 	add("ultrafinitism", "{\"term\":\"ultrafinitism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|ultra|finitism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A form of finitism that is even more extreme in that it denies those constructs whose construction cannot be physically performed (such as a number that no human could have time to calculate\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("ultraimperialism", "{\"term\":\"ultraimperialism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A comparatively peaceful phase of capitalism that comes after the era of imperialism\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("ultramarine", "{\"term\":\"ultramarine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A brilliant blue pigment that is either extracted from mineral deposits or made synthetically\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A brilliant pure dark blue or slightly purplish colour\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("ultramasculinity", "{\"term\":\"ultramasculinity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|ultra|masculinity|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Extreme masculinity\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -29,5 +31,7 @@ package org.swtk.commons.dict.wiktionary.generated.u.l.t;  import java.util.Hash
 	add("ultrasonography", "{\"term\":\"ultrasonography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The use of ultrasound to produce diagnostic images of the internal organs of the body, or of a foetus\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The use of ultrasound to form images of underwater structures\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("ultrastructure", "{\"term\":\"ultrastructure\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|ultra|structure|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The fine, detailed structure of a biological specimen that can only be observed by electron microscopy\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ultraviolence", "{\"term\":\"ultraviolence\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"ultra + violence\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Unnecessary, unprovoked (usually brutal) violence; violent acts simply for the thrill and entertainment of it\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

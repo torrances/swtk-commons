@@ -2,4 +2,6 @@ package org.swtk.commons.dict.wiktionary.generated.g.o.e;  import java.util.Hash
 
 	add("goety", "{\"term\":\"goety\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Latin \u0027goetia\u0027, from Greek γοητεια ‘witchcraft’, from γοης ‘sorceror’.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"witchcraft, demonic magic, necromancy\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("goethe", "{\"term\":\"goethe\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"w:Johann Wolfgang Johann Wolfgang Goethe, a German writer\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -2,4 +2,6 @@ package org.swtk.commons.dict.wiktionary.generated.b.u.g;  import java.util.Hash
 
 	add("bughouse", "{\"term\":\"bughouse\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From \u0027\u0027 + \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A flea-infested hotel, lodging-house etc\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A prison\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A hospital, especially a lunatic asylum\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"A cheap and dirty cinema\", \"priority\":4}]}, \"synonyms\":{}}");
 
+	add("bugonia", "{\"term\":\"bugonia\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) {{m|grc|βοῦς||ox}} + {{m|grc|γονή||progeny}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An ancient Mediterranean ritual based on the belief that bees were spontaneously generated from a cow’s carcass\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

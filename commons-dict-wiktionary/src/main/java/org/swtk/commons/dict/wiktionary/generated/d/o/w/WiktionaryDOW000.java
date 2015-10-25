@@ -24,6 +24,10 @@ package org.swtk.commons.dict.wiktionary.generated.d.o.w;  import java.util.Hash
 
 	add("downspout", "{\"term\":\"downspout\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|down|spout|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A vertical pipe or conduit that carries rainwater from the scupper, guttering of a building to a lower roof level, drain, ground or storm water runoff system\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("downstage", "{\"term\":\"downstage\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|down|stage|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the part of a stage that is closest to the audience or camera\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("downstairs", "{\"term\":\"downstairs\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The genitali\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The wind lifted up her skirt and I caught a glimpse of her \u0027\u0027downstairs\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("downstater", "{\"term\":\"downstater\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|downstate|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person from downstate; usually specifically a person from downstate New York\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("downstep", "{\"term\":\"downstep\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|down|step|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A downward shift of tone between the syllables or words of a tonal language\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -45,5 +49,7 @@ package org.swtk.commons.dict.wiktionary.generated.d.o.w;  import java.util.Hash
 	add("dowse", "{\"term\":\"dowse\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A blow on the face\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("dowser", "{\"term\":\"dowser\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From \u0027dowse\u0027.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A divining rod used in searching for water, ore, etc.; a dowsing rod\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"One who uses the dowser or divining rod\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("dowsing", "{\"term\":\"dowsing\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The practice of seeking water or other substances (usually liquid) with the aid of a forked stick or similar pointing device, as believed by some practitioners to derive from supernatural power\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

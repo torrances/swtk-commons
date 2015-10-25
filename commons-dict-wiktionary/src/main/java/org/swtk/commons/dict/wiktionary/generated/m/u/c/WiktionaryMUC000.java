@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.m.u.c;  import java.util.Hash
 
 	add("mucamide", "{\"term\":\"mucamide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|mucic|amide|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The acid amide of mucic acid, obtained as a white crystalline substance\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("muchwhat", "{\"term\":\"muchwhat\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|much|what|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Many matters.\u0026lt;ref\u0026gt;\u0027Oxford English Dictionary\u0027, 3rd ed., 2005.\u0026lt;/ref\u0026gt\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("mucilage", "{\"term\":\"mucilage\", \"etymology\":{\"influencers\":[{},{}], \"languages\":[\"English\", \"old french (842-ca. 1400)\"], \"text\":\"From Old french (842-ca. 1400) \u0027mucilage\u0027 (viscous substance found in vegetable material) from \u0027mucilago\u0027 (musty or moldy juice)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A thick gluey substance (gum) produced by many plants and some microorganisms\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("mucker", "{\"term\":\"mucker\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"frien\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Fancy a pint, me old \u0027\u0027mucker\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"friend or acquaintanc\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"How\u0027s about ye \u0027\u0027mucker\u0027\u0027?\u0027 \u003d How are you\", \"priority\":4},{\"upperType\":\"NOUN\", \"text\":\"typically comrade in reference to other friendly, low-ranking soldiers in the same situation\", \"priority\":5},{\"upperType\":\"NOUN\", \"text\":\"Go talk to your \u0027\u0027mucker\", \"priority\":6},{\"upperType\":\"NOUN\", \"text\":\"A person who removes muck (waste, debris, broken rock, etc.), especially from a mine, construction site, or stable\", \"priority\":7},{\"upperType\":\"NOUN\", \"text\":\"A low or vulgar labourer\", \"priority\":8}]}, \"synonyms\":{}}");
@@ -10,9 +12,15 @@ package org.swtk.commons.dict.wiktionary.generated.m.u.c;  import java.util.Hash
 
 	add("muckrake", "{\"term\":\"muckrake\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|muck|rake|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A rake for scraping up dung\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("mucoadhesion", "{\"term\":\"mucoadhesion\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"adhesion to a mucous membrane\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("mucopus", "{\"term\":\"mucopus\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{compound|mucus|pus|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a mixture of mucus and pu\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A Saturday afternoon and a ‘misfire’ books in my hands. Everything swimming in a divine \u0027\u0027mucopus\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("mucoregulator", "{\"term\":\"mucoregulator\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|muco|regulator|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A regulator of the production of mucu\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("mucosity", "{\"term\":\"mucosity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of being mucous\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("mucousness", "{\"term\":\"mucousness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of being mucous\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("mucus", "{\"term\":\"mucus\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"Borrowed from Latin {{m|la|mūcus}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A slippery secretion from the lining of the mucous membranes\", \"priority\":1}]}, \"synonyms\":{}}");
 

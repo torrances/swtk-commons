@@ -14,6 +14,8 @@ package org.swtk.commons.dict.wiktionary.generated.l.a.r;  import java.util.Hash
 
 	add("larkspur", "{\"term\":\"larkspur\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any plant of the genus \u0027Delphinium\u0027 or\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"In particular, a tall robust flowering plant with many purplish-blue flowers\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("larrup", "{\"term\":\"larrup\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Origin uncertain.Many dictionaries suggest a connection with \u0027\u0027larpen\u0027\u0027, Dutch, \u0027to thresh with flails\u0027.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"backchat or rudenes\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Oi, less of your \u0027\u0027larrup\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("larvae", "{\"term\":\"larvae\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Category:English irregular plurals ending in \u0026quot;-ae\u0026quot\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("laryngitis", "{\"term\":\"laryngitis\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\", \"Latin\"], \"text\":\"Attested since 1822 {{C.E.}}; from Latin \u0027lang\u003dla\u0027 from Ancient greek (to 1453) \u0027λάρυγξ\u0027 {{suffix||itis|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An inflammation of the larynx, typically resulting in hoarseness\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"section\u003dchapter passage\u003dThe moment had come for the honeyed word. I lowered my voice to a confidential murmur, but on her inquiring if I had \u0027\u0027laryngitis\u0027\u0027 raised it again\", \"priority\":2}]}, \"synonyms\":{}}");
@@ -21,6 +23,8 @@ package org.swtk.commons.dict.wiktionary.generated.l.a.r;  import java.util.Hash
 	add("laryngograph", "{\"term\":\"laryngograph\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|laryngo|graph|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"electroglottograph\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("laryngology", "{\"term\":\"laryngology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|larynx|ology|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The branch of physiology dealing with the larynx and its disorders\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("laryngorrhoea", "{\"term\":\"laryngorrhoea\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An excessive secretion from a larynx; abnormal mucous discharge of a larynx\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("laryngospasm", "{\"term\":\"laryngospasm\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|laryngo|spasm|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An uncontrolled, spasmodic closure of the larynx\", \"priority\":1}]}, \"synonyms\":{}}");
 

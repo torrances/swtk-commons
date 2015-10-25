@@ -1,3 +1,15 @@
 package org.swtk.commons.dict.wiktionary.generated.o.x.a;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryOXA000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("oxadiazinane", "{\"term\":\"oxadiazinane\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|oxa|diazinane|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A six-membered saturated heterocycle containing three carbon atoms, two nitrogen atoms and one oxygen atom; any derivative of this compound\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("oxalan", "{\"term\":\"oxalan\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"As an approximate anagram of \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A complex nitrogenous substance, C\u0026lt;sub\u0026gt;3\u0026lt;/sub\u0026gt;N\u0026lt;sub\u0026gt;3\u0026lt;/sub\u0026gt;H\u0026lt;sub\u0026gt;5\u0026lt;/sub\u0026gt;O\u0026lt;sub\u0026gt;3\u0026lt;/sub\u0026gt;, obtained from alloxan (or when urea is fused with ethyl oxamate\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("oxalantin", "{\"term\":\"oxalantin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Near-anagram of \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A nitrogenous substance, C\u0026lt;sub\u0026gt;6\u0026lt;/sub\u0026gt;H\u0026lt;sub\u0026gt;4\u0026lt;/sub\u0026gt;N\u0026lt;sub\u0026gt;4\u0026lt;/sub\u0026gt;O\u0026lt;sub\u0026gt;5\u0026lt;/sub\u0026gt;, obtained by the reduction of parabanic acid\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("oxaliplatin", "{\"term\":\"oxaliplatin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular drug used in chemotherapy\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("oxalosis", "{\"term\":\"oxalosis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The deposition of oxalate within the body\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("oxaprotiline", "{\"term\":\"oxaprotiline\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A psychoactive drug and research chemical of the tetracyclic chemical class\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("oxaprozin", "{\"term\":\"oxaprozin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A nonsteroidal anti-inflammatory drug\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

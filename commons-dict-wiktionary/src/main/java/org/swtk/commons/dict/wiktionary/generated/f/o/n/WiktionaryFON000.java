@@ -2,4 +2,6 @@ package org.swtk.commons.dict.wiktionary.generated.f.o.n;  import java.util.Hash
 
 	add("fondness", "{\"term\":\"fondness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|fond|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the quality of being fond\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("fonio", "{\"term\":\"fonio\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\", \"Wolof\"], \"text\":\"From French \u0027fonio\u0027 from Wolof \u0027foño\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Digitaria exilis\u0027, a in western\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"a in western\", \"priority\":2}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

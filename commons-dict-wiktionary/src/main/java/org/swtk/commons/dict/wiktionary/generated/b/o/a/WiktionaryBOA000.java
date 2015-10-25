@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.b.o.a;  import java.util.Hash
 
 	add("boardmanship", "{\"term\":\"boardmanship\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|boardman|ship|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The attributes of service exhibited by an individual who serves on a board, including (or in particular) ethical principles/concepts/ideas\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"the collective attributes characterizing a board’s performance\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"the collective traits emerging as a result of a board’s interpersonal interactions in the performance of their assigned responsibilities\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("boardsailing", "{\"term\":\"boardsailing\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"windsurfing\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("boardshorts", "{\"term\":\"boardshorts\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|board|shorts|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A style of lightweight shorts used as swimwear, associated with surfing\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("boarhound", "{\"term\":\"boarhound\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|boar|hound|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A large dog, descended from breeds originally used to hunt boars\", \"priority\":1}]}, \"synonyms\":{}}");

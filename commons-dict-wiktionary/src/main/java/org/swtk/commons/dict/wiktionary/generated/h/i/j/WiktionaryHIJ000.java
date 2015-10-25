@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.h.i.j;  import java.util.Hash
 
 	add("hijacker", "{\"term\":\"hijacker\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|hijack|er|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Someone who hijacks\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"the \u0027\u0027hijacker\u0027\u0027 of an aeroplane\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Hijackware\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("hijiki", "{\"term\":\"hijiki\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Japanese\"], \"text\":\"Japanese\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a brown seaweed used in Japanese cuisine\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("hijinks", "{\"term\":\"hijinks\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Tricky and/or humorous behaviour\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

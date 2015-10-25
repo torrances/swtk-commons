@@ -12,7 +12,11 @@ package org.swtk.commons.dict.wiktionary.generated.p.o.n;  import java.util.Hash
 
 	add("ponies", "{\"term\":\"ponies\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"horsepowe\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"with \u0027the\u0027) horse racing\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("pontian", "{\"term\":\"pontian\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The Pontic Greek dialect of the historical Pontus region of Asia Minor\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("pontiff", "{\"term\":\"pontiff\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"middle french (ca. 1400-1600)\", \"Latin\"], \"text\":\"From Middle french (ca. 1400-1600) \u0027pontife\u0027 from Latin \u0027pontifex\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A bishop of the early Church; now specifically, the Pope\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2007\u0027\u0027, Edwin Mullins, \u0027The Popes of Avignon\u0027, Blue Bridge 2008, p. 46\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"In several respects John turned out to be an unexpected figure as supreme \u0027\u0027pontiff\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"Any chief figure or leader of a religion\", \"priority\":4},{\"upperType\":\"NOUN\", \"text\":\"A pontifex\", \"priority\":5}]}, \"synonyms\":{}}");
+
+	add("pontin", "{\"term\":\"pontin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An ATPase that is a component of telomerase\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("ponygirl", "{\"term\":\"ponygirl\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|pony|girl|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A woman, usually submissive, who takes the role of a pony; this typically includes wearing tack such as a bridle and bit\", \"priority\":1}]}, \"synonyms\":{}}");
 

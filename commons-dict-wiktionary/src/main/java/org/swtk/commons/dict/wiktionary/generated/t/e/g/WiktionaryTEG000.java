@@ -1,3 +1,9 @@
 package org.swtk.commons.dict.wiktionary.generated.t.e.g;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryTEG000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("tegg", "{\"term\":\"tegg\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A sheep in its second year or before its first shearing\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("tegafur", "{\"term\":\"tegafur\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular drug used to treat cancer\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("tegaserod", "{\"term\":\"tegaserod\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular drug used to treat irritable bowel syndrome and constipation\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("tegestology", "{\"term\":\"tegestology\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin {{m|la|teges||covering, mat}} (oblique stem \u0027teget-\u0027) {{suffix|lang\u003den||logy}}. {{attention|la|why the -s-?}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the collecting of beer mats or coasters\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

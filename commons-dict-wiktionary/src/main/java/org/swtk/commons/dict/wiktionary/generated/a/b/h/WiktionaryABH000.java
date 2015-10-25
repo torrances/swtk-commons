@@ -12,4 +12,6 @@ package org.swtk.commons.dict.wiktionary.generated.a.b.h;  import java.util.Hash
 
 	add("abhorring", "{\"term\":\"abhorring\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|abhor|ing|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Detestation. \u0026lt;ref name\u003dSOED\u0026gt;\u0026lt;/ref\u0026gt\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A detested thing. \u0026lt;ref name\u003dSOED/\u0026gt\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("abhyanga", "{\"term\":\"abhyanga\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Sanskrit\"], \"text\":\"Sanskrit\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A form of Ayurvedic medicine that involves massage of the body with warm oil\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

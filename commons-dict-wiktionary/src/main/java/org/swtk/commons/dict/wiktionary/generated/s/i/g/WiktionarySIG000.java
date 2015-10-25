@@ -12,7 +12,11 @@ package org.swtk.commons.dict.wiktionary.generated.s.i.g;  import java.util.Hash
 
 	add("sightseeing", "{\"term\":\"sightseeing\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|sight|seeing|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The practice of going out looking at things; tourism\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("sigillography", "{\"term\":\"sigillography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From Latin \u0027sigillum\u0027 (small image), + English suffix \u0027-graphy\u0027.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of seals, especially those attached to documents\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("sigint", "{\"term\":\"sigint\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|signal|intelligence|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Information gained from intercepted signals, including traffic analysis\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"An Earth-orbiting satellite used to intercept signals\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A signal sent to a process by its controlling terminal when a user wishes to interrupt the process\", \"priority\":3}]}, \"synonyms\":{}}");
+
+	add("signe", "{\"term\":\"signe\", \"etymology\":{\"influencers\":[], \"languages\":[\"Danish\", \"old norse\"], \"text\":\"Old norse \u0027signý\u0027 Name of heroines in Norse mythology.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"an asteroid discovered by Max Wolf on October 22, 1900\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("signs", "{\"term\":\"signs\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The \u0027\u0027signs\u0027\u0027 in the road warned of ice\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -43,5 +47,9 @@ package org.swtk.commons.dict.wiktionary.generated.s.i.g;  import java.util.Hash
 	add("signmaker", "{\"term\":\"signmaker\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|sign|maker|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A maker of signs\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("signwriter", "{\"term\":\"signwriter\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|sign|writer|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who writes signs\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("signwriting", "{\"term\":\"signwriting\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any form of clear lettering designed to be used on sign\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2001\u0027\u0027, w:Ken Ken Follett, \u0027Jackdaws\u0027, Dutton, ISBN 0525946284, page 30\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Dieter walked along a broad corridor. Each door was clearly labeled in neat German \u0027\u0027signwriting\u0027\u0027, but Dieter looked inside anyway\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"The art or process of writing signs\", \"priority\":4},{\"upperType\":\"NOUN\", \"text\":\"1991\u0027\u0027, Anthony John Lewery, \u0027Popular art: past and present\", \"priority\":5},{\"upperType\":\"NOUN\", \"text\":\"Much modern \u0027\u0027signwriting\u0027\u0027 is also done very cheaply, in the fastest possible way, and creativity is constrained by this commercial pressure as well\", \"priority\":6}]}, \"synonyms\":{}}");
+
+	add("sigourney", "{\"term\":\"sigourney\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"of origin, also spelled Sigournay\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"transferred from the surname\", \"priority\":2}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

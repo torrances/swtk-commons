@@ -8,4 +8,6 @@ package org.swtk.commons.dict.wiktionary.generated.m.y.t;  import java.util.Hash
 
 	add("mythography", "{\"term\":\"mythography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|mytho|graphy|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A depiction of a myth in literature or the arts\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("mythopoiesis", "{\"term\":\"mythopoiesis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From \u0027myth + -poiesis\u0027, since 1936.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the creation of myth\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

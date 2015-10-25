@@ -1,0 +1,5 @@
+package org.swtk.commons.dict.wiktionary.generated.j.u.v;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryJUV000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("juvenalia", "{\"term\":\"juvenalia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"items connected with children, such as toys, dolls, teddy bears, etc\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("juvenescence", "{\"term\":\"juvenescence\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of becoming young or juvenile\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

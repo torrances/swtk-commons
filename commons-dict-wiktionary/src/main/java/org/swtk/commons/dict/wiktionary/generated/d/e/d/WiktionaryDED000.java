@@ -16,4 +16,6 @@ package org.swtk.commons.dict.wiktionary.generated.d.e.d;  import java.util.Hash
 
 	add("deductivism", "{\"term\":\"deductivism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|deductive|ism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The use of deductive reasoning\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("dedupe", "{\"term\":\"dedupe\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"deduplication\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

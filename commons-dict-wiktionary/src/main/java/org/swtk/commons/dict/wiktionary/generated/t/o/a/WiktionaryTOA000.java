@@ -8,6 +8,6 @@ package org.swtk.commons.dict.wiktionary.generated.t.o.a;  import java.util.Hash
 
 	add("toadstone", "{\"term\":\"toadstone\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|toad|stone|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A small stone, once believed to be a jewel embedded in the head of a toad, worn as an amulet\", \"priority\":1}]}, \"synonyms\":{}}");
 
-	add("toast", "{\"term\":\"toast\", \"etymology\":{\"influencers\":[], \"languages\":[\"German\", \"English\"], \"text\":\"From English \u0027toast\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"toast (toasted bread or salutation\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"untoasted white bread\", \"priority\":2}]}, \"synonyms\":{}}");
+	add("toarcian", "{\"term\":\"toarcian\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A subdivision of the Jurassic period\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -6,4 +6,6 @@ package org.swtk.commons.dict.wiktionary.generated.a.d.h;  import java.util.Hash
 
 	add("adhocracy", "{\"term\":\"adhocracy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|ad hoc|cracy|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An organizational system designed to be flexible and responsive to the needs of the moment rather than excessively bureaucratic\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("adhyasa", "{\"term\":\"adhyasa\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Sanskrit\"], \"text\":\"Sanskrit \u0027अध्यास\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The human habit of superimposition, or false attribution of properties of one thing on another thing\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

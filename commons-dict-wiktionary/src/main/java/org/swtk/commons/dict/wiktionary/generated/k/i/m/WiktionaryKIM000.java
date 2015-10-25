@@ -1,3 +1,9 @@
 package org.swtk.commons.dict.wiktionary.generated.k.i.m;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryKIM000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("kimbanguism", "{\"term\":\"kimbanguism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Kimnabgu|ism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A Congolese religion invented by one \u0027\u0027Simon Kimbangu\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("kimbap", "{\"term\":\"kimbap\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Korean\"], \"text\":\"Korean \u0027김밥\u0027 (tr\u003dgimbap) from {{l|ko|김||a type of seaweed}} + {{l|ko|밥||rice}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A Korean dish of steamed white rice and other ingredients rolled in sheets of dried laver seaweed and served in bite-size slices\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("kimmy", "{\"term\":\"kimmy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A diminutive of the female given names Kimberley or Kimberly\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("kimmeridgian", "{\"term\":\"kimmeridgian\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A subdivision of the Jurassic period\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

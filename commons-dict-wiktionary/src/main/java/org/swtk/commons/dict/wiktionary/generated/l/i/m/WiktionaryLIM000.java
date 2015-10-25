@@ -1,4 +1,6 @@
-package org.swtk.commons.dict.wiktionary.generated.l.i.m;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryLIM000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("limbus", "{\"term\":\"limbus\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027limbus\u0027 (edge, border)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A border of an anatomical part, such as the edge of the cornea\", \"priority\":1}]}, \"synonyms\":{}}");
+package org.swtk.commons.dict.wiktionary.generated.l.i.m;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryLIM000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("limburgish", "{\"term\":\"limburgish\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{affix|en|Limburg|-ish}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A Germanic language spoken near the common border between the Netherlands, Belgium and Germany\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("limbus", "{\"term\":\"limbus\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027limbus\u0027 (edge, border)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A border of an anatomical part, such as the edge of the cornea\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("limeade", "{\"term\":\"limeade\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|lime|ade|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A citrus drink made from water, sugar, and the juice of limes\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A glass of this drink\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A variety of this drink\", \"priority\":3}]}, \"synonyms\":{}}");
 
@@ -18,7 +20,17 @@ package org.swtk.commons.dict.wiktionary.generated.l.i.m;  import java.util.Hash
 
 	add("limner", "{\"term\":\"limner\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Someone who limns\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("limnobiology", "{\"term\":\"limnobiology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"branch of biology that deals with animals and plants of fresh water\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("limnobios", "{\"term\":\"limnobios\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the animals and plants of fresh water considered collectively\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("limnodophyte", "{\"term\":\"limnodophyte\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"Ancient greek (to 1453) {{m|grc|λιμνώδης||marshy}} {{suffix||phyte|t2\u003dplant|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Helophyte\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("limnoplankton", "{\"term\":\"limnoplankton\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the plankton of fresh waters, especially of lakes\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("limosis", "{\"term\":\"limosis\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027λιμός\u0027 (hunger)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A ravenous appetite caused by disease; morbid excessive hunger\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("limpa", "{\"term\":\"limpa\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Swedish-style rye bread made with molasses\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("limpet", "{\"term\":\"limpet\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"File:Common thumb|right|Common \u0027\u0027limpets\u0027\u0027 (\u0027Patella vulgata\u0027) in Pembrokeshire, Wale\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A small mollusc, of the family Patellidae with a conical shell found clinging to rocks in the intertidal zones of rocky shores\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Someone dependent; someone disregarding or ignorant of another\u0027s personal space\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"He stuck to me like a \u0027\u0027limpet\u0027\u0027 all day\", \"priority\":4}]}, \"synonyms\":{}}");
 

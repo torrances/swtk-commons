@@ -8,4 +8,6 @@ package org.swtk.commons.dict.wiktionary.generated.s.c.l;  import java.util.Hash
 
 	add("sclerosis", "{\"term\":\"sclerosis\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027σκλήρωσις\u0027 (an induration) from *\u0027\u0027 (σκληροῦν) from \u0027σκληρός\u0027 (hard)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The abnormal hardening of body tissues, such as an artery\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("sclerostin", "{\"term\":\"sclerostin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A glycoprotein that has an antianabolic effect on bone formation\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

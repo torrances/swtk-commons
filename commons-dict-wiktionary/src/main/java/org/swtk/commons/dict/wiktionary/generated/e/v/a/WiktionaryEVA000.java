@@ -2,9 +2,13 @@ package org.swtk.commons.dict.wiktionary.generated.e.v.a;  import java.util.Hash
 
 	add("evaluatee", "{\"term\":\"evaluatee\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|evaluate|ee|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who is evaluate\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Evaluatees\u0027\u0027 are judged based on the assigned criteria\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("evaluativism", "{\"term\":\"evaluativism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|evaluative|ism|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The belief that certain disagreements (even about facts) ultimately stem from differing values, and therefore cannot be resolved as factual disagreements\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("evaluativist", "{\"term\":\"evaluativist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|evaluative|ist|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person who believes in or advocates evaluativism\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("evaluator", "{\"term\":\"evaluator\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|evaluate|or|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"agent Agent noun of evaluate; one who evaluates\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"They were asked to program an expression \u0027\u0027evaluator\u0027\u0027 that could determine the value of a numeric expression\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("evans", "{\"term\":\"evans\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"common in Wales, derived from the given name Evan (or Ifan in\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("evansite", "{\"term\":\"evansite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Evans|ite|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An amorphous mineral containing aluminum, hydrogen, oxygen, and phosphorus\", \"priority\":1}]}, \"synonyms\":{}}");
 

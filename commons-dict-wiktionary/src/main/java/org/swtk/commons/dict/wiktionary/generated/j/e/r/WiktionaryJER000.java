@@ -4,4 +4,6 @@ package org.swtk.commons.dict.wiktionary.generated.j.e.r;  import java.util.Hash
 
 	add("jerkwater", "{\"term\":\"jerkwater\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A train on a branch line\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1975\u0027\u0027, Indiana Historical Society, \u0027Indiana Magazine of History\u0027, Vol. 71, no. 1 (Mar. 1975), page 35\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"…] by bailing from near streams with buckets, (the brake-man called this operation \u0027\u0027jerking water\u0027\u0027) and from this the road gets its name of \u0027\u0027jerkwater\u0027\u0027 road\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("jeroboam", "{\"term\":\"jeroboam\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"First king of the Kingdom of Israel\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

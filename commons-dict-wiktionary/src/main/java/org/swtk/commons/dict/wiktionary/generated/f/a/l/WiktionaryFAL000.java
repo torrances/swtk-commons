@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.f.a.l;  import java.util.Hash
 
 	add("falconet", "{\"term\":\"falconet\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|falcon|et|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A small or young falco\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Any of various small, tropical Asian falcons of the genus \u0027Microhierax\u0027 found in Southeast Asia\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A light cannon developed in the late 15th century and decorated with an image of a falcon\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("falcula", "{\"term\":\"falcula\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The falx cerebelli\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A curved and sharp-pointed claw.\u0026lt;ref\u0026gt;Webster\u0027s Revised Unabridged Dictionary (1913)\u0026lt;/ref\u0026gt\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("faliscan", "{\"term\":\"faliscan\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027faliscus\u0027 {{suffix||an|lang\u003den}}; see \u0027falisci\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A member of an ancient Italic people who lived in southern Etruria\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("falklander", "{\"term\":\"falklander\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Falkland|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An inhabitant of the Falkland Islands\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -37,5 +39,7 @@ package org.swtk.commons.dict.wiktionary.generated.f.a.l;  import java.util.Hash
 	add("falsificationism", "{\"term\":\"falsificationism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|falsification|ism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A scientific philosophy based on the requirement that hypotheses must be falsifiable in order to be scientific; if a claim is not able to be refuted it is not a scientific claim\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("falsifier", "{\"term\":\"falsifier\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|falsify|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One that falsifies\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("falsum", "{\"term\":\"falsum\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"Latin\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An arbitrary contradiction, denoted ⊥\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

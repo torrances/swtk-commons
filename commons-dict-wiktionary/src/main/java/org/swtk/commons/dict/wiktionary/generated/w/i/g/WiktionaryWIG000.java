@@ -4,4 +4,6 @@ package org.swtk.commons.dict.wiktionary.generated.w.i.g;  import java.util.Hash
 
 	add("wiggler", "{\"term\":\"wiggler\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|wiggle|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Anything that wiggles\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The larva of a mosquito\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"An earthworm\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"A magnet designed to make a beam of charged particles follow a curving path in a accelerator\", \"priority\":4}]}, \"synonyms\":{}}");
 
+	add("wighteone", "{\"term\":\"wighteone\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An isoflavone extracted from hedgeapple\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

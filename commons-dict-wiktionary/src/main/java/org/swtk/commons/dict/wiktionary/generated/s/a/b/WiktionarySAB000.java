@@ -2,7 +2,11 @@ package org.swtk.commons.dict.wiktionary.generated.s.a.b;  import java.util.Hash
 
 	add("sabbatarianism", "{\"term\":\"sabbatarianism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|Sabbatarian|ism|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The principles and practices of a Sabbatarian; the observance of the Sabbath, the keeping of the Sabbath\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1971\u0027\u0027, \u0027Religion and the Decline of Magic\u0027, Folio Society 2012, p. 601\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"In the seventeenth century, the connection between \u0027\u0027sabbatarianism\u0027\u0027 and material prosperity was fully accepted by many contemporary preachers […\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("sabbatianism", "{\"term\":\"sabbatianism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Jewish movement named after w:Sabbatai Sabbatai Zevi (1626\u0026amp;ndash;1676\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"“\u0027Sabbatianism is the matrix of every significant movement to have emerged in the eighteenth and nineteenth century, from Hasidism, to Reform Judaism, to the earliest Masonic circles and revolutionary idealism.\u0027” –w:Gershom Gershom Scholem\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("sabellid", "{\"term\":\"sabellid\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A worm of the genus \u0027Sabella\u0027 or the family Sabellidae\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("sabermetrics", "{\"term\":\"sabermetrics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From SABR, the Society for American Baseball Research.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The analysis of baseball, especially via its statistics\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("sabianism", "{\"term\":\"sabianism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Sabian|ism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the worship of the sun, moon and stars\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -15,6 +19,8 @@ package org.swtk.commons.dict.wiktionary.generated.s.a.b;  import java.util.Hash
 	add("sabotager", "{\"term\":\"sabotager\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|sabotage|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who sabotages\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("saboteur", "{\"term\":\"saboteur\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"From French French|saboteur\u0027.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person who intentionally causes the destruction of property in order to hinder the efforts of his/her enemy\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("saburra", "{\"term\":\"saburra\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Vulgar Latin noun, variant of \u0027sabulum\u0027 Greek \u0027σαβούρα\u0027 and Catalan \u0027sorra\u0027 derive from the former, while Italian \u0027sabbia\u0027 Occitan \u0027sabla\u0027 French \u0027sable\u0027 and Esperanto \u0027sablo\u0027 derive from the latter.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Foul granular matter deposited in the alimentary canal by the decomposition of food\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("sabzi", "{\"term\":\"sabzi\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Persian\", \"Hindi\"], \"text\":\"From Hindi \u0027सब्ज़ी\u0027 from Persian \u0027سبزی\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a green vegetabl\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"the larger leaves and the seed capsules of Indian hemp which are used to make bhang\", \"priority\":2}]}, \"synonyms\":{}}");
 

@@ -2,4 +2,6 @@ package org.swtk.commons.dict.wiktionary.generated.t.o.i;  import java.util.Hash
 
 	add("toiletry", "{\"term\":\"toiletry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any item used for personal hygiene or grooming\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("toisanese", "{\"term\":\"toisanese\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"yue chinese\"], \"text\":\"{{suffix|Tosan|ese|lang\u003den}}. From Yue chinese {{zh-l|台山|tr\u003dtoi4 saan1}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person who speaks the dialect of Toisanes\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A person from the area; or descended from people of the area of greater Toisan in Guangdong Province, China\", \"priority\":2}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

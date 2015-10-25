@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.r.a.d;  import java.util.Hash
 
 	add("radargram", "{\"term\":\"radargram\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|radar|gram|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A radar image of mineral deposits or a planetary surface\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("radarmeteorology", "{\"term\":\"radarmeteorology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The use of radar in meteorology, especially to track water and ice in clouds\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("radgie", "{\"term\":\"radgie\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A violent or aggressive person\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("radii", "{\"term\":\"radii\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"1767\u0027\u0027, Richard Helsham and Bryan Robinson, \u0027A Course of Lectures in Natural Philosophy\u0027, [http://books.google.co.uk/books?id\u003duytjZB5I4l0C\u0026amp;pg\u003dPA31\u0026amp;dq\u003d%22the+aequator%22\u0026amp;ei\u003dwNuuSPi0KoLoyASbtPH1Bg page 31\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Now the centrifugal forces of bodies revolving in the ſame time in different circles being to one another as the \u0027\u0027\u0027radii\u0027\u0027\u0027 of the circles (as ſhall be ſhewn when I come to treat of thoſe forces) it follows that the centrifugal force muſt be greateſt at the æquator, and thence be continually diminished towards the poles.Category:English irregular plurals ending in \u0026quot;-i\u0026quot\", \"priority\":2}]}, \"synonyms\":{}}");
@@ -14,13 +16,19 @@ package org.swtk.commons.dict.wiktionary.generated.r.a.d;  import java.util.Hash
 
 	add("radicalness", "{\"term\":\"radicalness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|radical|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the state or the quality of being radical\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("radicicol", "{\"term\":\"radicicol\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular natural product that binds to heat shock protein 90 and alters its function\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("radioactinium", "{\"term\":\"radioactinium\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|radio|actinium|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The radioactive isotope of actinium, having a half-life of 21.7 years\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("radioactivating", "{\"term\":\"radioactivating\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The act of making something radioactive; radioactivation\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("radioactivation", "{\"term\":\"radioactivation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|radio|activation|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The conversion of something into a radioactive form\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("radioactivity", "{\"term\":\"radioactivity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|radioactive|ity|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Spontaneous emission of ionizing radiation as a consequence of a nuclear reaction, or directly from the breakdown of an unstable nucleus\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The radiation so emitted; including gamma rays, alpha particles, neutrons, electrons, positrons, etc\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("radioassay", "{\"term\":\"radioassay\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|radio|assay|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An assay of an ore or some other radioactive sample to determine the intensity of its radiation\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("radioautography", "{\"term\":\"radioautography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"autoradiography\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("radiocarbon", "{\"term\":\"radiocarbon\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|radio|carbon|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A radioactive isotope of carbon, especially\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -36,13 +44,19 @@ package org.swtk.commons.dict.wiktionary.generated.r.a.d;  import java.util.Hash
 
 	add("radiodetermination", "{\"term\":\"radiodetermination\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|radio|determination|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Determination of the position, velocity, or other characteristics of an object by means of radio waves\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("radiodiagnostics", "{\"term\":\"radiodiagnostics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"diagnostics by means of X-rays or radiochemical tracers\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("radioecology", "{\"term\":\"radioecology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|radio|ecology|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the study of the fate and effects of radioactive materials in the environment\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("radiogenesis", "{\"term\":\"radiogenesis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|radio|genesis|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The production of nuclides by radioactive decay\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("radiogenetics", "{\"term\":\"radiogenetics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the study of the genetic effects of radiation\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("radiogold", "{\"term\":\"radiogold\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|radio|gold|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The radioactive isotope of gold, used in medical irradiation and in diagnosis\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("radiogoniometer", "{\"term\":\"radiogoniometer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|radio|goniometer|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"radio direction finder\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("radiogoniometry", "{\"term\":\"radiogoniometry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the measurement of the azimuth and elevation of received radio waves\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("radiograph", "{\"term\":\"radiograph\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|radio|graph|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An image, often a photographic negative, produced by radiation other than normal light; especially an X-ray photograph\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"An instrument for measuring and recording solar radiation\", \"priority\":2}]}, \"synonyms\":{}}");
 
@@ -54,6 +68,10 @@ package org.swtk.commons.dict.wiktionary.generated.r.a.d;  import java.util.Hash
 
 	add("radioimmunoassay", "{\"term\":\"radioimmunoassay\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|radio|immunoassay|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"abbreviated as\u0027 RIA\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A procedure that uses the binding of a radioactively labeled substance to an antibody in order to analyze minute amounts of biological compounds\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("radioimmunodiffusion", "{\"term\":\"radioimmunodiffusion\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"immunodiffusion using antigens or antibodies labelled with radioisotopes\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("radioimmunoprecipitation", "{\"term\":\"radioimmunoprecipitation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"immunoprecipitation using antigens or antibodies labelled with radioisotopes\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("radioiodide", "{\"term\":\"radioiodide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|radio|iodide|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"radioactive iodide\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("radioiodine", "{\"term\":\"radioiodine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|radio|iodine|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The radioactive isotope of iodine, having a half-life of 8 days; used as a medical tracer\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -62,23 +80,35 @@ package org.swtk.commons.dict.wiktionary.generated.r.a.d;  import java.util.Hash
 
 	add("radiologist", "{\"term\":\"radiologist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|radiology|ist|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person who is skilled in or practices radiology\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("radiology", "{\"term\":\"radiology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The use of radioactive substances in diagnosis and treatment\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The use of radiation (including ionizing radiation, especially X-rays) in diagnosis, usually through the formation of images\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Radioscopy\", \"priority\":3}]}, \"synonyms\":{}}");
+
 	add("radiolysis", "{\"term\":\"radiolysis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|radio|lysis|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The dissociation of a molecule as a result of radiation\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("radiomarker", "{\"term\":\"radiomarker\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|radio|marker|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A low-power radio transmitter that supplies positioning information to landing aircraft\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("radiometer", "{\"term\":\"radiometer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|radio|meter|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A device that measures radiant energy\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("radioneuritis", "{\"term\":\"radioneuritis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"neuritis caused by exposure to ionizing radiation\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("radionuclide", "{\"term\":\"radionuclide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|radio|nuclide|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a radioactive nuclide\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("radiopharmacy", "{\"term\":\"radiopharmacy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"That administration of radiopharmaceuticals\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("radiophile", "{\"term\":\"radiophile\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|radio|phile|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any radiophilic organism\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("radiophysics", "{\"term\":\"radiophysics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The physics of ionizing radiatio\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The physics of radio waves\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("radioprotectant", "{\"term\":\"radioprotectant\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|radio|protectant|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any drug that protects against cell damage caused by radiation\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("radioprotection", "{\"term\":\"radioprotection\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|radio|protection|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any form of protection against the harmful effects of ionizing radiation, especially caused by natural sources\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("radioscopy", "{\"term\":\"radioscopy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|radio|scopy|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"examination of objects by the use of X-rays; radiology\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("radiostrontium", "{\"term\":\"radiostrontium\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|radio|strontium|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"any radioactive isotope of strontium, especially\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("radiosymmetry", "{\"term\":\"radiosymmetry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|radio|symmetry|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"radial Radial symmetry\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("radiotechnology", "{\"term\":\"radiotechnology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Technology involving radio waves and radiocommunication\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("radiotelegraph", "{\"term\":\"radiotelegraph\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|radio|telegraph|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"wireless telegraphy\", \"priority\":1}]}, \"synonyms\":{}}");
 

@@ -6,7 +6,11 @@ package org.swtk.commons.dict.wiktionary.generated.r.i.b;  import java.util.Hash
 
 	add("ribbonfish", "{\"term\":\"ribbonfish\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|ribbon|fish|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of several lampriform fish, of the genus , having long, ribbon-like bodies\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("ribbonism", "{\"term\":\"ribbonism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|ribbon|ism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A nineteenth-century popular movement of Catholics in Ireland, active against landlords and their agents, and ideologically and sometimes violently opposed to the Orange Order\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("ribgrass", "{\"term\":\"ribgrass\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|rib|grass|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"ribwort; Old World plantain\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("ribophagy", "{\"term\":\"ribophagy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The degradation of ribosomes by autophagy\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("riboregulation", "{\"term\":\"riboregulation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|ribo|regulation|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"genetic regulation by RNA\", \"priority\":1}]}, \"synonyms\":{}}");
 

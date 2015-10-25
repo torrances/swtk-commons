@@ -12,7 +12,7 @@ package org.swtk.commons.dict.wiktionary.generated.v.a.g;  import java.util.Hash
 
 	add("vaginectomy", "{\"term\":\"vaginectomy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|vagina|ectomy|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The surgical removal of all or part of the vagina\", \"priority\":1}]}, \"synonyms\":{}}");
 
-	add("vagone", "{\"term\":\"vagone\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\", \"Italian\"], \"text\":\"Via French \u0027wagon\u0027 from English \u0027wagon\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"truck, wagon, freight ca\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"carriage, car (\u0027railway\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"railroad car, railcar\", \"priority\":3}]}, \"synonyms\":{}}");
+	add("vagitus", "{\"term\":\"vagitus\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027vāgītus\u0027 (crying, wailing) from \u0027vāgiō\u0027 (cry, wail)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The crying of a newborn baby\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("vagrancy", "{\"term\":\"vagrancy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|vagrant|cy|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the state of being a vagrant\", \"priority\":1}]}, \"synonyms\":{}}");
 

@@ -1,8 +1,12 @@
-package org.swtk.commons.dict.wiktionary.generated.i.m.m;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryIMM000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("immanant", "{\"term\":\"immanant\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A function or property of a matrix, defined as a generalization of the concepts of determinant and permanen\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"permanent\", \"priority\":2}]}, \"synonyms\":{}}");
+package org.swtk.commons.dict.wiktionary.generated.i.m.m;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryIMM000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("immaculateness", "{\"term\":\"immaculateness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The characteristic of being immaculate; spotlessness\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("immanant", "{\"term\":\"immanant\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A function or property of a matrix, defined as a generalization of the concepts of determinant and permanen\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"permanent\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("immateriality", "{\"term\":\"immateriality\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|in|materiality|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the state of being immateria\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"the \u0027\u0027immateriality\u0027\u0027 of the soul\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("immaturity", "{\"term\":\"immaturity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Youth; the condition of being immature or not fully grown\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("immeability", "{\"term\":\"immeability\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"\u0027\u0027 not + Latin \u0027meabilis\u0027 passable, from \u0027\u0027 to pass.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Inability to pass through or to permit passage\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Immeability\u0027\u0027 of the juices.\u0027 \u0026amp;mdash; Arbuthnot\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("immeasurableness", "{\"term\":\"immeasurableness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|immeasurable|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or condition of being immeasurable\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -21,6 +25,8 @@ package org.swtk.commons.dict.wiktionary.generated.i.m.m;  import java.util.Hash
 	add("immortality", "{\"term\":\"immortality\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"old french (842-ca. 1400)\", \"Latin\"], \"text\":\"From Old french (842-ca. 1400) \u0027immortalité\u0027 from Latin \u0027immortalitas\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The condition of being immortal\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"In Greek mythology, was granted immortality but not eternal youth\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("immortelle", "{\"term\":\"immortelle\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{borrowing|fr|lang\u003den}}. French|immortelle.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of various papery flowers, often dried and used as decoration\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1888\u0027\u0027: a big rabbit-warren of a house full of [...] fragments of the day\u0027s market, garlic, stale incense, clothes thrown on the floor, petticoats hung on strings for screens, old bottles, pewter crucifixes, dried \u0027\u0027\u0027immortelles\u0027\u0027\u0027, pariah puppies, plaster images of the Virgin, and hats without crowns. — Rudyard Kipling, ‘His Chance in Life’, \u0027Plain Tales from the Hills\u0027 (Folio Society 2005, p. 55\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("immotility", "{\"term\":\"immotility\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A lack of motility (the inability to move\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("immunoablation", "{\"term\":\"immunoablation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|immunoablate|ion|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Destruction of patient immune resistance for a medical purpose, such as to prepare for an organ transplan\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Total \u0027\u0027immunoablation\u0027\u0027 is extremely dangerous\", \"priority\":2}]}, \"synonyms\":{}}");
 
@@ -42,6 +48,8 @@ package org.swtk.commons.dict.wiktionary.generated.i.m.m;  import java.util.Hash
 
 	add("immunocompetence", "{\"term\":\"immunocompetence\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|immuno|competence|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The body\u0027s capacity to develop an immune response following exposure to an antigen\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("immunocompromise", "{\"term\":\"immunocompromise\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|lang\u003den|immuno|compromise}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of having a compromised immune system\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("immunocytochemistry", "{\"term\":\"immunocytochemistry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|immuno|cytochemistry|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The field of study that encompasses immunochemistry and cytochemistry\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("immunodeficiency", "{\"term\":\"immunodeficiency\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|immuno|deficiency|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A depletion in the body\u0027s natural immune system, or in some component of it\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -58,13 +66,19 @@ package org.swtk.commons.dict.wiktionary.generated.i.m.m;  import java.util.Hash
 
 	add("immunogenetics", "{\"term\":\"immunogenetics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|immuno|genetics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of the genetic basis for the immune response, and of the relationships between genetics and immunity from disease\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("immunohistology", "{\"term\":\"immunohistology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The application of the techniques of immunology to histology\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("immunoinhibition", "{\"term\":\"immunoinhibition\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|immuno|inhibition|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The inhibition of an immune response\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("immunology", "{\"term\":\"immunology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The branch of medicine that studies the body\u0027s immune system\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("immunomodulation", "{\"term\":\"immunomodulation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|immuno|modulation|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of several adjustments in the level of an immune response\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("immunonephelometry", "{\"term\":\"immunonephelometry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|immuno|nephelometry|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The use of nephelometry in the characterisation of antigens and antibodies\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("immunopathology", "{\"term\":\"immunopathology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|immuno|pathology|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The branch of immunology that studies the relation of the immune system to disease\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("immunopeptidomics", "{\"term\":\"immunopeptidomics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The branch of molecular biology that studies the set of immunopeptides of an organism\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("immunoprecipitate", "{\"term\":\"immunoprecipitate\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|immuno|precipitate|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A protein precipitated during immunoprecipitation\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -87,5 +101,7 @@ package org.swtk.commons.dict.wiktionary.generated.i.m.m;  import java.util.Hash
 	add("immunotoxicity", "{\"term\":\"immunotoxicity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|immuno|toxicity|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The toxic effect of an immunotoxin on the immune system\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("immunotoxin", "{\"term\":\"immunotoxin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|immuno|toxin|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any compound that is toxic to the immune system\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("immutableness", "{\"term\":\"immutableness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of being immutable; unchangeableness\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

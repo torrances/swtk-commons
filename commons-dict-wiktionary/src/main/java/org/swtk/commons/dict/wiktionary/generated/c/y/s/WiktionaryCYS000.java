@@ -2,4 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.c.y.s;  import java.util.Hash
 
 	add("cysticercoid", "{\"term\":\"cysticercoid\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|cysticercus|oid|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The larval stage of certain tapeworms, similar in appearance to a cysticercus, but having the scolex filling completely the enclosing cyst\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("cystolithotripsy", "{\"term\":\"cystolithotripsy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Combination of \u0027cyst\u0027 (bladder), -lith (stone or calculus), and the suffix -tripsy\u0027 (the crushing, destruction, or removal).\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The crushing of a stone in the bladder\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("cystourethrography", "{\"term\":\"cystourethrography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"radiography of the bladder and urethr\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wiktionary.generated.m.e.p;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryMEP000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("meph", "{\"term\":\"meph\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"mephedrone\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("mephibosheth", "{\"term\":\"mephibosheth\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient hebrew\"], \"text\":\"From the Ancient hebrew {{m|he|מְפִיבֹשֶׁת|tr\u003dMəp̄īḇṓšeṯ}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a biblical character, the son of Jonathan, grandson of Saul\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("mephistophelism", "{\"term\":\"mephistophelism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"devilishness\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("meprodine", "{\"term\":\"meprodine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular narcotic painkiller\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("mepyramine", "{\"term\":\"mepyramine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A first-generation antihistamine targeting the H1 receptor, used in over-the-counter combination products for colds and menstrual symptoms\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

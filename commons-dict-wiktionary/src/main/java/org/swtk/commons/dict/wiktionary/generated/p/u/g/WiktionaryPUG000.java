@@ -6,6 +6,8 @@ package org.swtk.commons.dict.wiktionary.generated.p.u.g;  import java.util.Hash
 
 	add("pugmark", "{\"term\":\"pugmark\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|pug|mark|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The print or track of an animal\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("pugnaciousness", "{\"term\":\"pugnaciousness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The act or quality of being pugnacious\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("pugnacity", "{\"term\":\"pugnacity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The act or characteristic of being aggressive or combative\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

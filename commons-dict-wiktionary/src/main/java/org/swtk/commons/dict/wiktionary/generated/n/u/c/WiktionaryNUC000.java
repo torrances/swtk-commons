@@ -4,6 +4,8 @@ package org.swtk.commons.dict.wiktionary.generated.n.u.c;  import java.util.Hash
 
 	add("nucleocosmochronology", "{\"term\":\"nucleocosmochronology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|nucleo|cosmochronology|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A technique for estimating the age of astronomical objects by measuring the relative abundances of isotopes\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("nucleonics", "{\"term\":\"nucleonics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of nucleons, or of atomic nucle\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"nuclear physics or technology\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("nucleoplasm", "{\"term\":\"nucleoplasm\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|nucleo|plasm|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The protoplasm of a cell nucleus\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nucleoskeleton", "{\"term\":\"nucleoskeleton\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|nucleo|skeleton|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The framework of the cell nucleus, supporting DNA replication, transcription, chromatin remodeling, signaling, and mRNA synthesis, processing and transport\", \"priority\":1}]}, \"synonyms\":{}}");

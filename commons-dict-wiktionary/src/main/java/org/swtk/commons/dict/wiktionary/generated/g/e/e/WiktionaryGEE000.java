@@ -16,6 +16,8 @@ package org.swtk.commons.dict.wiktionary.generated.g.e.e;  import java.util.Hash
 
 	add("geeksta", "{\"term\":\"geeksta\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|geek|gangsta|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An unfashionable, nerdy individual who performs gangsta-style music\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("geeksville", "{\"term\":\"geeksville\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A place thought to be geeky\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("geese", "{\"term\":\"geese\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"lt;!--Please, do not add anything further (translations, etc) to this sense - add them at \u0026quot;goose\u0026quot; --\u0026gt\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

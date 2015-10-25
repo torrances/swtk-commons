@@ -2,4 +2,6 @@ package org.swtk.commons.dict.wiktionary.generated.g.e.i;  import java.util.Hash
 
 	add("geitonogamy", "{\"term\":\"geitonogamy\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027γείτων\u0027 (neighbour) {{suffix||gamy|t2\u003dmarriage|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Transfer of pollen grains from the anther of a flower to the stigma of another flower of the same plant\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("geitost", "{\"term\":\"geitost\", \"etymology\":{\"influencers\":[{},{},{}], \"languages\":[\"English\", \"Norwegian\"], \"text\":\"Borrowed from Norwegian \u0027geitost\u0027 (goat cheese) which is \u0027geit\u0027 (goat) + \u0027ost\u0027 (cheese) \u0026lt;!-- the last part should be moved to a Norwegian section, as soon there is one --\u0026gt;\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"brunost\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

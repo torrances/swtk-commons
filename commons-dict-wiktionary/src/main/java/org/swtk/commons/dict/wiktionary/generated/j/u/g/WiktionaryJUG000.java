@@ -4,4 +4,8 @@ package org.swtk.commons.dict.wiktionary.generated.j.u.g;  import java.util.Hash
 
 	add("juggler", "{\"term\":\"juggler\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|juggle|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"agent Agent noun of juggle; one who either literally juggles objects, or figuratively juggles tasks\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A person who practices juggling\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A conjuror\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"A magician or wizard\", \"priority\":4}]}, \"synonyms\":{}}");
 
+	add("juglandin", "{\"term\":\"juglandin\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"Latin \u0027juglans\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An extract of green walnut shells, formerly used in medicine and as a dye\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("juglans", "{\"term\":\"juglans\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027iūglāns\u0027 (lang\u003dla)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The walnut and similar trees of the genus \u0027Juglans\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

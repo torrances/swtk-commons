@@ -1,4 +1,8 @@
-package org.swtk.commons.dict.wiktionary.generated.b.i.o;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryBIO000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("bioacoustics", "{\"term\":\"bioacoustics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|acoustics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A cross-disciplinary science that combines biology and acoustics, investigating for instance the mechanisms of sound production and detection\", \"priority\":1}]}, \"synonyms\":{}}");
+package org.swtk.commons.dict.wiktionary.generated.b.i.o;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryBIO000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("biol", "{\"term\":\"biol\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Biology\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("bioaccumulation", "{\"term\":\"bioaccumulation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The process by which substances accumulate in the tissues of living organisms; used especially of toxic substances that accumulate via a food chain\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("bioacoustics", "{\"term\":\"bioacoustics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|acoustics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A cross-disciplinary science that combines biology and acoustics, investigating for instance the mechanisms of sound production and detection\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("bioanalytics", "{\"term\":\"bioanalytics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|analytics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The field of research in biotechnology concerned with analytical techniques\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -16,6 +20,8 @@ package org.swtk.commons.dict.wiktionary.generated.b.i.o;  import java.util.Hash
 
 	add("bioclimatology", "{\"term\":\"bioclimatology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|climatology|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The interdisciplinary field of science that studies the interactions between the biosphere and the Earth\u0027s atmosphere on time scales of the order of seasons or longer (in opposition to biometeorology\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("biocoenology", "{\"term\":\"biocoenology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of biocoenoses\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("biocompatibility", "{\"term\":\"biocompatibility\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|compatibility|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The ability of a material to perform with an appropriate host response in a specific situation\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("biocompiler", "{\"term\":\"biocompiler\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|bio|compiler|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The analogue of a compiler in synthetic biology\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -23,6 +29,8 @@ package org.swtk.commons.dict.wiktionary.generated.b.i.o;  import java.util.Hash
 	add("biocomposite", "{\"term\":\"biocomposite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|composite|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A composite material comprising a resin matrix and a bolster to reinforce natural fibers, wherein either the resin or the bolster is of biological origin\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("biocomputation", "{\"term\":\"biocomputation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|computation|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The use of biocomputers\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("bioconformatics", "{\"term\":\"bioconformatics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study and engineering of protein folding, especially alternatively folded forms (or conformers\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("biocuration", "{\"term\":\"biocuration\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|curation|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The organization, representation and making accessible of biological data to both humans and computers\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -35,6 +43,12 @@ package org.swtk.commons.dict.wiktionary.generated.b.i.o;  import java.util.Hash
 	add("biodosimetry", "{\"term\":\"biodosimetry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|bio|dosimetry|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The measurement of biological response as an estimate of radiation dose\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("bioeconomics", "{\"term\":\"bioeconomics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|economics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of the dynamics of living resources using economic models\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The study of economic systems, applying the laws of thermodynamics\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("bioelectricity", "{\"term\":\"bioelectricity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any form of electricity generated within an organism, especially by a muscle or nerve\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("bioelectromagnetism", "{\"term\":\"bioelectromagnetism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"electromagnetic radiation as it operates upon biological systems and organisms\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("bioenergetics", "{\"term\":\"bioenergetics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of the energy transformations that take place in living organisms\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("bioenergy", "{\"term\":\"bioenergy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|energy|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"energy produced from a biological resource such as biomass or biofuel\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -55,6 +69,8 @@ package org.swtk.commons.dict.wiktionary.generated.b.i.o;  import java.util.Hash
 	add("biofunction", "{\"term\":\"biofunction\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|function|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"biological function\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("biogenetics", "{\"term\":\"biogenetics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|genetics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"genetic engineering\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("biogeochemistry", "{\"term\":\"biogeochemistry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The scientific study of biological, geological and chemical processes in the natural environment and especially of their mutual relationships\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("biogeography", "{\"term\":\"biogeography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|geography|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of the geographical distribution of living thing\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The geographical distribution of a particular living thin\", \"priority\":2}]}, \"synonyms\":{}}");
 
@@ -96,6 +112,8 @@ package org.swtk.commons.dict.wiktionary.generated.b.i.o;  import java.util.Hash
 
 	add("bioload", "{\"term\":\"bioload\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|load|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The nitrogen-processing demand placed upon the filters of an aquarium by uneaten food, decomposing inhabitants, and other waste\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("biologism", "{\"term\":\"biologism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Circa 1920.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The use or emphasis of biological principles or methods in explaining human, especially social, behavior\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("biology", "{\"term\":\"biology\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"{{confix|bio|logy|lang\u003den}}; a {{w|classical compound}} (modern coinage), with components derived from Ancient greek (to 1453) \u0027βίος\u0027 (bio-, life) + \u0027-λογία\u0027 (-logy, branch of study, to speak) The term (rather, analogous terms) arose in various European languages c. 1800, but the term *βίολογία did not exist in Ancient Greek.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of all life or living matter\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The living organisms of a particular region\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"The structure, function, and behavior of an organism or type of organism\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"the biology of the whale\", \"priority\":4}]}, \"synonyms\":{}}");
 
 	add("bioluminescence", "{\"term\":\"bioluminescence\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|luminescence|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The emission of light by a living organism (such as a firefly\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -104,9 +122,13 @@ package org.swtk.commons.dict.wiktionary.generated.b.i.o;  import java.util.Hash
 
 	add("biomagnification", "{\"term\":\"biomagnification\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|magnification|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The process, in an ecosystem, in which a higher concentration of a substance in an organism is obtained higher up the food chain\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("biomanipulation", "{\"term\":\"biomanipulation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the deliberate alteration of an ecosystem by adding or removing species, especially predators\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("biomarker", "{\"term\":\"biomarker\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|marker|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A substance used as an indicator of a biological state, most commonly disease\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("biomathematics", "{\"term\":\"biomathematics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|mathematics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The application of mathematics to the study of biological systems and processes\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("biometrics", "{\"term\":\"biometrics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The automated measurement of biological dat\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The measurement and recording of the physical characteristics of an individual for use in subsequent personal identification\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("biomicrite", "{\"term\":\"biomicrite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|micrite|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A form of limestone consisting of bioclasts in a micrite matrix\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -124,7 +146,15 @@ package org.swtk.commons.dict.wiktionary.generated.b.i.o;  import java.util.Hash
 
 	add("bionics", "{\"term\":\"bionics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|bio|electronics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The design of engineering systems, especially electronic ones, based on that of biological systems\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"biomimetics\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("bionomics", "{\"term\":\"bionomics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of an organism and its relation to its environment; ecology\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("biopathology", "{\"term\":\"biopathology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The pathology (study of the detailed structure) of organs, tumours and similar biological structures\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("biopedturbation", "{\"term\":\"biopedturbation\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\", \"Latin\"], \"text\":\"{{prefix|bio||sort\u003dturbation|lang\u003den}} Ancient greek (to 1453) \u0027πέδον\u0027 (soil) + Latin \u0027turbātiō\u0027 (disturbance; confusion)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The mixing or disturbance of soil by living organisms, as opposed to disturbance of other media such as sediment or leaf litter\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2006\u0027\u0027, Walter G. Whitford, Fenton R. Kay, \u0026quot;Biopedturbation by an island ecosystem engineer: Burrowing volumes and litter deposition by sooty shearwaters\u0026quot;, \u0027New Zealand Journal of Zoology\u0027 Volume 33, Issue\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"The implications of the \u0027\u0027biopedturbation\u0027\u0027 caused by sooty shearwater burrowing to the extent measured in this study may be profound for some ecosystem processes\", \"priority\":3}]}, \"synonyms\":{}}");
+
 	add("biopetroleum", "{\"term\":\"biopetroleum\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|bio|petroleum|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any form of petroleum (or a similar substitute) made biologically (especially from algae\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("biopharmacology", "{\"term\":\"biopharmacology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The pharmacology of drugs produced using biotechnology\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("biophilia", "{\"term\":\"biophilia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|bio|philia|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Hypochondria\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The biological drive to preserve oneself; love of life\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"volume\u003d page\u003d passage\u003d \u0027\u0027Biophilia\u0027\u0027 (βίος, life; φιλία, love). The instinct of self-preservation common to man and the lower animals\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"The love of or empathy with nature and all living things\", \"priority\":4}]}, \"synonyms\":{}}");
 
@@ -143,6 +173,8 @@ package org.swtk.commons.dict.wiktionary.generated.b.i.o;  import java.util.Hash
 	add("biopolitics", "{\"term\":\"biopolitics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|politics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The style of government that regulates populations through biopower\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Anticapitalist insurrection using life and the body as weapons\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"The political application of bioethics\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"A political spectrum that reflects positions towards the sociopolitical consequences of biotechnology\", \"priority\":4}]}, \"synonyms\":{}}");
 
 	add("biopower", "{\"term\":\"biopower\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|power|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A political technology for managing entire populations as a group, essential to modern capitalism etc., contrasting with traditional modes of power based on the threat of death from a sovereign\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("bioprocessing", "{\"term\":\"bioprocessing\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The processing of something using a biological agen\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The processing of something to yield a biological material\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("bioprospecting", "{\"term\":\"bioprospecting\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|prospecting|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The methodical search for novel pharmaceutical (and other) products from plants and microorganisms\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -164,11 +196,15 @@ package org.swtk.commons.dict.wiktionary.generated.b.i.o;  import java.util.Hash
 
 	add("bioresource", "{\"term\":\"bioresource\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|resource|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any resource of biological origin\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("biorheology", "{\"term\":\"biorheology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From biology + rheology\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of the deformation and flow of biological materials, especially biological fluids\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("biorhythm", "{\"term\":\"biorhythm\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"First coined 1960, from {{prefix|bio|rhythm|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any cyclic biological or physiological pattern or activit\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Any of three sinusoidal graphs, normally plotted by computer, having a person\u0027s birthdate as origin, that that are supposed to give meaningful information about emotional levels, physical energy levels, and mental/psychic sensitivity\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("biosafety", "{\"term\":\"biosafety\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|safety|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"protection from potential harm from biological agents, such as infectious microbes or modified genes\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("biosatellite", "{\"term\":\"biosatellite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|satellite|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"an artificial satellite that is designed to carry humans or other organisms\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("biosemantics", "{\"term\":\"biosemantics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|semantics|lang\u003den}}, introduced by {{w|Ruth Millikan}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A theory that aims to produce a constitutive account of intentionality\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("biosemiotics", "{\"term\":\"biosemiotics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|semiotics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A growing field that studies the production, action and interpretation of signs in the biological realm\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -181,6 +217,8 @@ package org.swtk.commons.dict.wiktionary.generated.b.i.o;  import java.util.Hash
 	add("biosphere", "{\"term\":\"biosphere\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|bio|sphere|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the part of the Earth and its atmosphere capable of supporting lif\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"the totality of living organisms and their environment\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("biostitute", "{\"term\":\"biostitute\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|biology|prostitute|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A biologist who lies for money\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("biostratigraphy", "{\"term\":\"biostratigraphy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|bio|stratigraphy|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of the stratigraphic distribution of fossil\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2000\u0027\u0027, ‘No Such Thing as a Fish’, \u0027London Review of Books\u0027, vol. 22 no. 13\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"It is these ordinary animals that have helped science cope with the problems of Deep Time […] and it is astonishing that the \u0027\u0027biostratigraphy\u0027\u0027 based on them doesn’t merit a mention\", \"priority\":3}]}, \"synonyms\":{}}");
 
 	add("biostratinomy", "{\"term\":\"biostratinomy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|bio|gloss1\u003dlife|strati|gloss2\u003dlayer|nomy|gloss3\u003dlaw|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of the processes that take place following the death of an organism\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -207,6 +245,8 @@ package org.swtk.commons.dict.wiktionary.generated.b.i.o;  import java.util.Hash
 	add("biotinide", "{\"term\":\"biotinide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|biotin|ide|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any derivative of biotin\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("biotite", "{\"term\":\"biotite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Biot|ite|lang\u003den}}, named by {{w|Johann Friedrich Ludwig Hausmann|J.F.L. Hausmann}} in 1847 in honour of the French physicist {{w|Jean-Baptiste Biot}}, who, in 1816, researched the optical properties of mica, discovering many unique properties.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A dark brown mica; it is a mixed aluminosilicate and fluoride of potassium, magnesium and iron\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("biotypology", "{\"term\":\"biotypology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of biotypes\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("biovolume", "{\"term\":\"biovolume\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|volume|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The volume of cells in a unit amount of water (normally quoted in cubic millimetres per litre\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A surrogate for biomass, used in ecological studies of invertebrates (normally quoted in cubic millimetres\", \"priority\":2}]}, \"synonyms\":{}}");
 

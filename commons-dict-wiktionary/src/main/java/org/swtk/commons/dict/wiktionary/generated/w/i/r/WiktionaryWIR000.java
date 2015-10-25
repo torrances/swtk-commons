@@ -8,6 +8,8 @@ package org.swtk.commons.dict.wiktionary.generated.w.i.r;  import java.util.Hash
 
 	add("wireframe", "{\"term\":\"wireframe\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|wire|frame|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A visual model of an electronic representation of a three-dimensional object\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A basic visual guide used to suggest the layout of fundamental elements in a web interfac\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("wirelessness", "{\"term\":\"wirelessness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or condition of being wireless; lack of wires or cables\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("wiremaker", "{\"term\":\"wiremaker\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|wire|maker|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A manufacturer of wire\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("wiretap", "{\"term\":\"wiretap\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|wire|tap|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A concealed device connected to a telephone or other communications system that allows a third party to listen or record conversations\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The act of installing such a device\", \"priority\":2}]}, \"synonyms\":{}}");
@@ -17,6 +19,8 @@ package org.swtk.commons.dict.wiktionary.generated.w.i.r;  import java.util.Hash
 	add("wirewalking", "{\"term\":\"wirewalking\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|wire|walking|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The feat of walking on a highwire\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("wireweed", "{\"term\":\"wireweed\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|wire|weed|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any member of the genus of knotweeds and smartweeds\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("wiring", "{\"term\":\"wiring\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|wire|ing|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A mass of electric wires\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("wirralian", "{\"term\":\"wirralian\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Wirral|ian|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An inhabitant of the w:Wirral Wirral peninsula\", \"priority\":1}]}, \"synonyms\":{}}");
 

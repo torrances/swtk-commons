@@ -2,9 +2,13 @@ package org.swtk.commons.dict.wiktionary.generated.o.p.t;  import java.util.Hash
 
 	add("optimate", "{\"term\":\"optimate\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin {{m|la|optimātēs}}, masculine plural form of \u0027optimas\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A member of the patrician ruling class in republican Ancient Rome; an aristocrat, a noble\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2011\u0027\u0027, \u0027Vanished Kingdoms\u0027, Penguin 2012, p. 23\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Over the same decade, the upper stratum of Visigothic society, the \u0027\u0027\u0027optimates\u0027\u0027\u0027gradually lost their influence\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("optimedin", "{\"term\":\"optimedin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular olfactomedin\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("optimisation", "{\"term\":\"optimisation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|optimise|ation|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Category:British English forms\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("optimism", "{\"term\":\"optimism\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"From French \u0027optimisme\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a tendency to expect the best, or at least, a favourable outcom\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"I love her youth, her beauty and above all her \u0027\u0027optimism\u0027\u0027 that everything will turn out fine\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"the doctrine that this world is the best of all possible world\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"the belief that good will eventually triumph over evil\", \"priority\":4}]}, \"synonyms\":{}}");
+
+	add("optimity", "{\"term\":\"optimity\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"Latin \u0027optimitas\u0027 from \u0027\u0027 the best.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of being best\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("optimization", "{\"term\":\"optimization\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|optimize|ation|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the design and operation of a system or process to make it as good as possible in some defined sense\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -21,5 +25,7 @@ package org.swtk.commons.dict.wiktionary.generated.o.p.t;  import java.util.Hash
 	add("optometry", "{\"term\":\"optometry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|opto|metry|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the art and science of vision and eye care\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("optotype", "{\"term\":\"optotype\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|opto|type|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A standardized symbol for testing vision\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Optotypes\u0027\u0027 can be specially shaped letters, numbers, or geometric symbols\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"An eye chart\", \"priority\":3}]}, \"synonyms\":{}}");
+
+	add("optronics", "{\"term\":\"optronics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"optoelectronics\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

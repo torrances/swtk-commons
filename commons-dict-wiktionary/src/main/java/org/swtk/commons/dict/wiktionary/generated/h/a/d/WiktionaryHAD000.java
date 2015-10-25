@@ -1,3 +1,7 @@
 package org.swtk.commons.dict.wiktionary.generated.h.a.d;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryHAD000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("haddock", "{\"term\":\"haddock\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A marine fish, \u0027Melanogrammus aeglefinus\u0027, of the North Atlantic, important as a food fish\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("hadrodynamics", "{\"term\":\"hadrodynamics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of the laws that govern the motion and interaction of hadrons\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("hadronics", "{\"term\":\"hadronics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of hadrons\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -6,11 +6,15 @@ package org.swtk.commons.dict.wiktionary.generated.n.e.u;  import java.util.Hash
 
 	add("neuraxis", "{\"term\":\"neuraxis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}{{rfp|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The axis of the central nervous system; i.e. the spinal cord, rhombencephalon, mesencephalon and diencephalon\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1984\u0027\u0027, “The Disembodied Lady”, chapter 3 in \u0027\u0027 (Reset 2007), page 51\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"The picture revealed by spinal tap was one of an acute polyneuritis, but a polyneuritis of a most exceptional type: not like Guillian–Barré syndrome, with its overwhelming motor involvement, but a purely (or almost purely) sensory neuritis, affecting the sensory roots of spinal and cranial nerves throughout the \u0027\u0027neuraxis\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("neurism", "{\"term\":\"neurism\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"Ancient greek (to 1453)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A supposed \u0026quot;nerve force\u0026quot; in vitalism\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("neuroanastomosis", "{\"term\":\"neuroanastomosis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|anastomosis|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"anastomosis of a pair of nerves\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("neuroanatomy", "{\"term\":\"neuroanatomy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|neuro|anatomy|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The anatomy of the nervous system\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2011\u0027\u0027, \u0027The Better Angels of Our Nature\u0027, Penguin 2012, p. 609\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"This flowchart suggested by the \u0027\u0027neuroanatomy\u0027\u0027 corresponds fairly well with what psychologists see in the clinic and lab\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"The structure of the nerves of a specific organ or organism\", \"priority\":4}]}, \"synonyms\":{}}");
 
 	add("neuroarchitecture", "{\"term\":\"neuroarchitecture\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|architecture|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The structure of systems of neurons and their interconnectio\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The supposed influence of the design of buildings on the central nervous system\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("neurobiologism", "{\"term\":\"neurobiologism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The tendency to attribute neurobiological causes to mental and psychological diseases\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("neurobiology", "{\"term\":\"neurobiology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|biology|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The scientific study of nerve and brain function in people and animals\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -22,6 +26,8 @@ package org.swtk.commons.dict.wiktionary.generated.n.e.u;  import java.util.Hash
 
 	add("neurocircuit", "{\"term\":\"neurocircuit\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|neuro|circuit|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any control mechanism that regulates neural activity\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("neurocognition", "{\"term\":\"neurocognition\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any form of cognition that is associated with the functioning of one or more specific areas of the brain\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("neurocomputation", "{\"term\":\"neurocomputation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|computation|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A computation carried out by neurons\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("neurocomputer", "{\"term\":\"neurocomputer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|computer|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A computer made of living neurons\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"An artificial neural network; a mathematical model designed to imitate the function of living nerve cells\", \"priority\":2}]}, \"synonyms\":{}}");
@@ -31,6 +37,8 @@ package org.swtk.commons.dict.wiktionary.generated.n.e.u;  import java.util.Hash
 	add("neurocranium", "{\"term\":\"neurocranium\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|cranium|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The part of the cranium that encloses the brain\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("neurodegeneration", "{\"term\":\"neurodegeneration\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|degeneration|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The degeneration (and death) of neurons\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("neurodiversity", "{\"term\":\"neurodiversity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|diversity|lang\u003den}}. The citation below from September 30, 1998 is believed to be the earliest published use of the term.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The variety of configurations of the brain, especially with regard to autism\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("neuroeconomics", "{\"term\":\"neuroeconomics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|economics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A combination of neuroscience, economics and psychology used to study the decision-making process\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -46,9 +54,19 @@ package org.swtk.commons.dict.wiktionary.generated.n.e.u;  import java.util.Hash
 
 	add("neurogeneticist", "{\"term\":\"neurogeneticist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|geneticist|lang\u003den}}, on the pattern of \u0027neurogenetics\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A specialist or expert in neurogenetics\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("neurogenin", "{\"term\":\"neurogenin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A transcription factor involved in the differentiation of neurons\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("neuroglia", "{\"term\":\"neuroglia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|glia|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"glial cell\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("neuroglycopenia", "{\"term\":\"neuroglycopenia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A shortage of glucose in the brain\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("neurohormone", "{\"term\":\"neurohormone\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|hormone|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any hormone that stimulates the nervous system\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("neurohypnotism", "{\"term\":\"neurohypnotism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"hypnotism\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("neuroimmunology", "{\"term\":\"neuroimmunology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of the relationship between the nervous system and the immune system, especially with regard to autoimmune conditions\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("neuroleptanalgesia", "{\"term\":\"neuroleptanalgesia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A state of sedation and pain control induced for a medical procedure by a combination of opioids and neuroleptics\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("neuroleptic", "{\"term\":\"neuroleptic\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|neuro|leptic|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An antipsychotic drug\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -58,6 +76,8 @@ package org.swtk.commons.dict.wiktionary.generated.n.e.u;  import java.util.Hash
 
 	add("neurology", "{\"term\":\"neurology\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\"], \"text\":\"From \u0027neurologia\u0027 see {{confix|neuro|logy|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The branch of medicine that deals with the disorders of nervous system including the brain and spinal cord of the central nervous system and the nerves, muscles, and neuromuscular junction of the peripheral nervous system\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("neurolymph", "{\"term\":\"neurolymph\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|lymph|lang\u003den}}?\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"cerebrospinal flui\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("neuromagnetism", "{\"term\":\"neuromagnetism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|magnetism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the study of the very small magnetic fields produced during brain activity\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("neuromics", "{\"term\":\"neuromics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|neuro|omics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The identification of the totality of the neurons in an organism\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -66,13 +86,19 @@ package org.swtk.commons.dict.wiktionary.generated.n.e.u;  import java.util.Hash
 
 	add("neuromyotonia", "{\"term\":\"neuromyotonia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|myotonia|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Spontaneous muscular activity, usually as a result of a fault in the immune system\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("neurooncology", "{\"term\":\"neurooncology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The scientific study of brain neoplasms\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("neuropathogen", "{\"term\":\"neuropathogen\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|pathogen|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any material that is pathogenic to the nervous system\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("neuropathogenesis", "{\"term\":\"neuropathogenesis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|pathogenesis|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The pathogenesis of diseases of the nervous system\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("neuropathology", "{\"term\":\"neuropathology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|pathology|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The pathology (diseases or study of diseases) of the nervous syste\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"the department of \u0027\u0027neuropathology\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Alzheimer-type \u0027\u0027neuropathology\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("neurophenomenology", "{\"term\":\"neurophenomenology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A fusion of phenomenology and neuroscienc\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"An academic discipline which mixes neuroscience and phenomenological observation\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("neurophysiologist", "{\"term\":\"neurophysiologist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|physiologist|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A scientist who studies neurophysiology\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("neurophysiology", "{\"term\":\"neurophysiology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The branch of physiology that deals with the nervous system\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("neurophysiopathologist", "{\"term\":\"neurophysiopathologist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|physiopathologist|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A pathologist who specialises in neurophysiopathology\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -82,9 +108,13 @@ package org.swtk.commons.dict.wiktionary.generated.n.e.u;  import java.util.Hash
 
 	add("neuroplasticity", "{\"term\":\"neuroplasticity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|neuro|plastic|ity|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or quality of being neuroplastic, of having a brain that adapts to experienc\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("neuropsychiatry", "{\"term\":\"neuropsychiatry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|neuro|psychiatry|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The branch of medicine dealing with disorders that have both neurological and psychiatric features\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("neuropsychodynamics", "{\"term\":\"neuropsychodynamics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|psychodynamics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The theoretical synthesis of neuroscience and psychodynamics\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("neuropsychology", "{\"term\":\"neuropsychology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|psychology|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A branch of neurology and of clinical psychology that investigates the physiological basis of psychological processes\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("neuropsychophysiology", "{\"term\":\"neuropsychophysiology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A scientific discipline which integrates neurology, psychology, and physiology\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("neuroradiography", "{\"term\":\"neuroradiography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|radiography|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"radiography of the brain\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -106,6 +136,8 @@ package org.swtk.commons.dict.wiktionary.generated.n.e.u;  import java.util.Hash
 
 	add("neurosynapse", "{\"term\":\"neurosynapse\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|synapse|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A synapse between neuron\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("neurosyphilis", "{\"term\":\"neurosyphilis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|syphilis|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A syphilis infection affecting the nervous system\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("neurotherapeutics", "{\"term\":\"neurotherapeutics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|neuro|therapeutics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The treatment of disorders that affect the nervous system\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("neuroticism", "{\"term\":\"neuroticism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|neurotic|ism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality or state of being neuroti\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Your \u0027\u0027neuroticism\u0027\u0027 is getting out of hand\", \"priority\":2}]}, \"synonyms\":{}}");
@@ -113,6 +145,8 @@ package org.swtk.commons.dict.wiktionary.generated.n.e.u;  import java.util.Hash
 	add("neurotomist", "{\"term\":\"neurotomist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who is skilled in or practices neurotomy\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("neurotoxicity", "{\"term\":\"neurotoxicity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|neuro|toxicity|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or property of being neurotoxic\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("neurotoxicology", "{\"term\":\"neurotoxicology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The scientific study of poisoning by neurotoxins\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("neurotransmission", "{\"term\":\"neurotransmission\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"neuro- + transmission\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The transfer of impulses between neurons\", \"priority\":1}]}, \"synonyms\":{}}");
 

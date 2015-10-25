@@ -1,8 +1,12 @@
 package org.swtk.commons.dict.wiktionary.generated.d.i.p;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryDIP000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("dipeptide", "{\"term\":\"dipeptide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An organic compound formed from two amino acids joined by a peptide bond\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("diphallasparatus", "{\"term\":\"diphallasparatus\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"diphallia\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("diphallia", "{\"term\":\"diphallia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A rare medical condition in which a male infant is born with two penises\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("diphenanthrene", "{\"term\":\"diphenanthrene\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|di|phenanthrene|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of several isomeric aromatic hydrocarbons, analogous to biphenyl, formed from two phenanthrene moieties joined by a single bond\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("diphenism", "{\"term\":\"diphenism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The presence of two distinct phenotypes in a populatio\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("diphenol", "{\"term\":\"diphenol\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any compound that has two phenol groups; especially the isomeric benzenediols (catechol, resorcinol and hydroquinone\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -14,17 +18,31 @@ package org.swtk.commons.dict.wiktionary.generated.d.i.p;  import java.util.Hash
 
 	add("diplegia", "{\"term\":\"diplegia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Paralysis that affects symmetrically opposed parts of the body\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("diplobios", "{\"term\":\"diplobios\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"organisms which spend part of their life in one medium, part in another, considered collectively\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("diplococcus", "{\"term\":\"diplococcus\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|diplo|coccus|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A coccus that typically occurs in groups of two\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("diploe", "{\"term\":\"diploe\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027διπλόη\u0027 (literally, a fold) noun use of feminine of \u0027διπλόος\u0027 (double)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The thin layer of soft, spongy or cancellate tissue between the bone plates which constitute the skull\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("diplogen", "{\"term\":\"diplogen\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"A name proposed by Ernest Rutherford and other chemists, from Ancient greek (to 1453) word for \u0026quot;double\u0026quot;.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"deuterium\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("diplolingo", "{\"term\":\"diplolingo\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The jargon used by diplomats\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("diplomatese", "{\"term\":\"diplomatese\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|diplomat|ese|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The jargon used by diplomats\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("diplomatic", "{\"term\":\"diplomatic\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"From French \u0027diplomatique\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The science of diplomas, or the art of deciphering ancient writings and determining their age, authenticity, etc.; paleography\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1983\u0027\u0027, Theodore Frank Thomas Plucknett, \u0027Studies in English legal history\u0027 (page 151\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"In its broadest aspect, the subject-matter of \u0027\u0027diplomatic\u0027\u0027 is the relation between documents and facts\", \"priority\":3}]}, \"synonyms\":{}}");
 
 	add("diplomatist", "{\"term\":\"diplomatist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a diploma\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1827,\u0027\u0027 w:James Fenimore James Fenimore Cooper, \u0027w:The The Prairie\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"It was not so easy to penetrate the motives of the Pawnees. Calm, dignified, and yet far from repulsive, they set an example of courtesy, blended with reserve, that many a \u0027\u0027diplomatist\u0027\u0027 of the most polished court might have strove in vain to imitate\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("diplophonia", "{\"term\":\"diplophonia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The production, by the voice, of sounds of two different pitches simultaneously\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("diplopia", "{\"term\":\"diplopia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|diplo|opia|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An ophthalmology ophthalmologic condition where one perceives two images; double vision\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("dipraglurant", "{\"term\":\"dipraglurant\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A drug being developed to treat Parkinson\u0027s disease levodopa-induced dyskinesia\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("dipropargyl", "{\"term\":\"dipropargyl\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|di|propargyl|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A pungent volatile liquid, produced artificially from certain allyl derivatives and isomeric with benzine\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("diprotium", "{\"term\":\"diprotium\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Normal molecular hydrogen H\u0026lt;sub\u0026gt;2\u0026lt;/sub\u0026gt\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("dipso", "{\"term\":\"dipso\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{abbreviation of|dipsomaniac|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"dipsomaniac\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -37,5 +55,7 @@ package org.swtk.commons.dict.wiktionary.generated.d.i.p;  import java.util.Hash
 	add("dipsomaniac", "{\"term\":\"dipsomaniac\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|dipso|maniac|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One with a morbid paroxysmal craving for alcohol; an alcoholic\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A persistently drunken person; a drunkard\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("dipstick", "{\"term\":\"dipstick\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|dip|stick|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A stick or rod used to measure the depth of a liquid. Often used to check the level at which a liquid in an opaque or inaccessible tank or reservoir stands; gauge\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"I haven\u0027t checked the oil level of my car\u0027s motor since I lost the \u0027\u0027dipstick\u0027\u0027 three months ago\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A penis\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"A useless person\", \"priority\":4},{\"upperType\":\"NOUN\", \"text\":\"A dipshit\", \"priority\":5},{\"upperType\":\"NOUN\", \"text\":\"A person of inferior intellect or, more accurately, someone who makes an action that would imply this\", \"priority\":6},{\"upperType\":\"NOUN\", \"text\":\"That referee is a right \u0027\u0027dipstick\", \"priority\":7}]}, \"synonyms\":{}}");
+
+	add("dipterology", "{\"term\":\"dipterology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The scientific study of flies, the Diptera\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -10,6 +10,10 @@ package org.swtk.commons.dict.wiktionary.generated.v.o.c;  import java.util.Hash
 
 	add("vocation", "{\"term\":\"vocation\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"old french (842-ca. 1400)\", \"Latin\"], \"text\":\"Old french (842-ca. 1400) \u0027vocation\u0027 \u0026lt; Latin \u0027vocātiō\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An inclination to undertake a certain kind of work, especially a religious career; often in response to a perceived summons; a calling\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"An occupation for which a person is suited, trained or qualified\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("vociferance", "{\"term\":\"vociferance\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From Latin \u0027vōciferor\u0027 (shout) from \u0027vōx\u0027 (voice) + \u0027ferō\u0027 (carry)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"vociferation; noise; clamor\u0026lt;!-- R. Browning no passage in Webster--\u0026gt\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("vociferousness", "{\"term\":\"vociferousness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of being vociferous\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("vocoid", "{\"term\":\"vocoid\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Coined by w:Kenneth Lee Pike|Kenneth Pike, American linguist (1912-2000).\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A phonetic vowel, as opposed to a phonological one\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

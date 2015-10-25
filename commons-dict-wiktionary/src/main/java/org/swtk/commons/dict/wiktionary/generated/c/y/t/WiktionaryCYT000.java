@@ -1,8 +1,12 @@
-package org.swtk.commons.dict.wiktionary.generated.c.y.t;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryCYT000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("cytisine", "{\"term\":\"cytisine\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"French \u0027cytise|lang\u003dfr\u0027 () {{suffix||ine|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A polycyclic alkaloid whose pharmacological activity is similar to nicotine; used in the treatment of nicotinism\", \"priority\":1}]}, \"synonyms\":{}}");
+package org.swtk.commons.dict.wiktionary.generated.c.y.t;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryCYT000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("cytarabine", "{\"term\":\"cytarabine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Short for \u0027cytosine arabinoside\u0027.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular drug used in chemotherapy\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("cytisine", "{\"term\":\"cytisine\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"French \u0027cytise|lang\u003dfr\u0027 () {{suffix||ine|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A polycyclic alkaloid whose pharmacological activity is similar to nicotine; used in the treatment of nicotinism\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("cytoarchitecture", "{\"term\":\"cytoarchitecture\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|cyto|architecture|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The arrangement of cells in an organism or organ\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("cytochemistry", "{\"term\":\"cytochemistry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|cyto|chemistry|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The biochemistry of cells, especially that of the macromolecules responsible for cell structure and function\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("cytochylema", "{\"term\":\"cytochylema\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The fluid portion of the cytoplas\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("cytofluorometry", "{\"term\":\"cytofluorometry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|cyto|fluorometry|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A technique used to separate cells (or chromosomes) via fluorescent markers\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -16,7 +20,11 @@ package org.swtk.commons.dict.wiktionary.generated.c.y.t;  import java.util.Hash
 
 	add("cytopathology", "{\"term\":\"cytopathology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|cyto|pathology|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The branch of pathology that deals with abnormalities of cells\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("cytophagy", "{\"term\":\"cytophagy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The ingestion of cells by phagocytes\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("cytoplasm", "{\"term\":\"cytoplasm\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|cyto|plasm|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The contents of a cell except for the nucleus. It includes cytosol, organelles, vesicles, and the cytoskeleton\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("cytoprotection", "{\"term\":\"cytoprotection\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The process by which various compounds protect cells from damage\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("cytoreduction", "{\"term\":\"cytoreduction\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|cyto|reduction|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The surgical removal of part of a malignant tumour\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -26,9 +34,13 @@ package org.swtk.commons.dict.wiktionary.generated.c.y.t;  import java.util.Hash
 
 	add("cytospin", "{\"term\":\"cytospin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|cyto|spin|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A form of centrifuge used to prepare cell samples for microscopy\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("cytostasis", "{\"term\":\"cytostasis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The prevention of the growth and multiplication of cells\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("cytostome", "{\"term\":\"cytostome\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|cyto|stome|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A cellular organelle found only in certain protozoa; it is specialized for phagocytosis, and usually has the form of a microtubule-supported funnel or groove\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("cytotaxonomy", "{\"term\":\"cytotaxonomy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|cyto|taxonomy|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The classification of organisms based upon their cellular structure and function, and especially based on the number and structure of their chromosomes\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("cytotherapy", "{\"term\":\"cytotherapy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|cyto|therapy|lang\u003den}}{{Wikipedia|cell therapy}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The introduction of new cells into a tissue in order to treat a disease\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("cytotrophoblast", "{\"term\":\"cytotrophoblast\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|cyto|trophoblast|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The inner layer of the trophoblast\", \"priority\":1}]}, \"synonyms\":{}}");
 

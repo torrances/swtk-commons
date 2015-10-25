@@ -26,6 +26,8 @@ package org.swtk.commons.dict.wiktionary.generated.n.o.n;  import java.util.Hash
 
 	add("nonamer", "{\"term\":\"nonamer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|nona|mer|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An oligomer having nine subunits\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("nonanal", "{\"term\":\"nonanal\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|nonane|al|t2\u003daldehyde|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An alkyl aldehyde with a strong fruity or floral odour, used in flavouring and perfumery\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("nonanone", "{\"term\":\"nonanone\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|nonane|one|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A ketone derived from nonane, having the formula C\u0026lt;sub\u0026gt;9\u0026lt;/sub\u0026gt;H\u0026lt;sub\u0026gt;18\u0026lt;/sub\u0026gt;O\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nonapeptide", "{\"term\":\"nonapeptide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|nona|peptide|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An oligopeptide formed from nine amino acids\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -48,6 +50,8 @@ package org.swtk.commons.dict.wiktionary.generated.n.o.n;  import java.util.Hash
 
 	add("noncarbohydrate", "{\"term\":\"noncarbohydrate\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|carbohydrate|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any material that is not a carbohydrate\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("noncaring", "{\"term\":\"noncaring\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|caring|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"uncaringness\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("noncat", "{\"term\":\"noncat\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|cat|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"That which is not cat\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1987\u0027\u0027, Ronald W. Langacker, \u0027Foundations of Cognitive Grammar: Theoretical prerequisites\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"the observation that something is black would not suffice to identify it as a (black) cat since many \u0027\u0027noncats\u0027\u0027 are also black\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"2002\u0027\u0027, Karen Pryor, \u0027Don\u0027t shoot the dog!: the new art of teaching and training\", \"priority\":4},{\"upperType\":\"NOUN\", \"text\":\"Cats will even copy \u0027\u0027noncats\u0027\u0027. One evening my daughter spent an hour teaching her poodle to sit on a child\u0027s rocking chair and rock it\", \"priority\":5}]}, \"synonyms\":{}}");
 
 	add("noncheater", "{\"term\":\"noncheater\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|cheater|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who does not cheat\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -64,6 +68,10 @@ package org.swtk.commons.dict.wiktionary.generated.n.o.n;  import java.util.Hash
 
 	add("noncognitivism", "{\"term\":\"noncognitivism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|cognitivism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The metaethical view that ethical sentences do not express propositions and thus cannot be true or false\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("noncombustibility", "{\"term\":\"noncombustibility\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality or state of being noncombustible\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("noncon", "{\"term\":\"noncon\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Erotica featuring non-consenting sexual situations\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("nonconfession", "{\"term\":\"nonconfession\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|confession|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The absence of a confession, or the refusal to confess\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nonconform", "{\"term\":\"nonconform\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|conform|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A manufactured product, etc. that fails to conform to the required standards\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2006\u0027\u0027, William D. Mawby, \u0027Integrating Inspection Management Into Your Quality Improvement System\u0027 (page 57\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Within a particular batch there are a number of \u0027\u0027nonconforms\u0027\u0027 sprinkled in some unknown way\", \"priority\":3}]}, \"synonyms\":{}}");
@@ -75,6 +83,8 @@ package org.swtk.commons.dict.wiktionary.generated.n.o.n;  import java.util.Hash
 	add("noncontent", "{\"term\":\"noncontent\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|content|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who gives a negative vote in the House of Lords\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nonconversation", "{\"term\":\"nonconversation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|conversation|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"That which is not a conversation; especially a discussion that cannot be regarded as a conversation (because, for example, only one person is speaking\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("noncooperation", "{\"term\":\"noncooperation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The active absence of cooperation\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("noncorticosteroid", "{\"term\":\"noncorticosteroid\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|corticosteroid|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A compound that is not a corticosteroid\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -89,6 +99,8 @@ package org.swtk.commons.dict.wiktionary.generated.n.o.n;  import java.util.Hash
 	add("nonculture", "{\"term\":\"nonculture\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|culture|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Absence of culture\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A group or community that is not a culture\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("noncuplication", "{\"term\":\"noncuplication\", \"etymology\":{\"influencers\":[{}], \"languages\":[], \"text\":\"\u0027noncuple\u0027 (multiply by nine) {{suffix||ic|lang\u003den}} {{suffix||ation|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"w:Samuel Samuel Jeake, \u0027A Compleat Body of Arithmetick, In Four Books\u0027, [http://books.google.co.uk/books?id\u003dzP7mAAAAMAAJ\u0026amp;pg\u003dPA25\u0026amp;dq\u003d%2Bnoncuplication\u0026amp;hl\u003den\u0026amp;ei\u003dtskqToqHFY2l-gaBvbTMBg\u0026amp;sa\u003dX\u0026amp;oi\u003dbook_result\u0026amp;ct\u003dresult\u0026amp;resnum\u003d1\u0026amp;ved\u003d0CD8Q6AEwA\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"v\u003donepage\u0026amp;q\u003d%2Bnoncuplication\u0026amp;f\u003dfalse page 25\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Noncuplication\u0027\u0027\u0027, or to multiply by 9, adjoyn a Cypher to the Right hand of the \u00279\", \"priority\":3}]}, \"synonyms\":{}}");
+
+	add("nondo", "{\"term\":\"nondo\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A coarse umbelliferous North American plant in the genus \u0027Ligusticum\u0027, with a large aromatic root.Category:en:Celery family plants\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nondegeneracy", "{\"term\":\"nondegeneracy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|degeneracy|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the condition of being nondegenerate\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -122,7 +134,11 @@ package org.swtk.commons.dict.wiktionary.generated.n.o.n;  import java.util.Hash
 
 	add("nondrug", "{\"term\":\"nondrug\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|drug|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any substance that is not a drug\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("nondualism", "{\"term\":\"nondualism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Derived from the translation of the Sanskrit term \u0027अद्बैत|sc\u003ddeva|tr\u003dadvaita\u0027 (not two)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The belief that dualism or dichotomy are illusory phenomena, that things such as mind and body may remain distinct while not actually being separate\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("nonego", "{\"term\":\"nonego\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|non|ego|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"That part of the psyche excluding the ego\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("noneism", "{\"term\":\"noneism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|none|ism|lang\u003den}}, coined by {{w|Richard Routley}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The theory that some things do not exist, and it is possible to quantify over non-existent things using the particular or existential quantifier\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nonemigrant", "{\"term\":\"nonemigrant\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|emigrant|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who is not an emigrant\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -148,6 +164,8 @@ package org.swtk.commons.dict.wiktionary.generated.n.o.n;  import java.util.Hash
 
 	add("nongod", "{\"term\":\"nongod\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|god|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who, or that which, is not a god\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2009\u0027\u0027, Samir Selmanovic, \u0027It\u0027s Really All About God: Reflections of a Muslim Atheist Jewish Christian\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"On one hand, nonreligious people worship \u0027\u0027nongods\u0027\u0027 such as work, possessions, spouses\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("nongraffiti", "{\"term\":\"nongraffiti\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any artwork that is not considered to be graffiti\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("nongroup", "{\"term\":\"nongroup\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|group|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"That which is not a group\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nonguest", "{\"term\":\"nonguest\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|guest|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who is not a guest (of a hotel, etc\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -162,9 +180,15 @@ package org.swtk.commons.dict.wiktionary.generated.n.o.n;  import java.util.Hash
 
 	add("noninsect", "{\"term\":\"noninsect\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|insect|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A creature that is not a insect\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("noninterference", "{\"term\":\"noninterference\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The policy of a state of not interfering in the domestic policies of another\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("nonius", "{\"term\":\"nonius\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Latinised form of the name of {{w|Pedro Nunes|Pedro Nunes}} (1502-78), a Portuguese mathematician and geographer.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A device for adjusting the accuracy of mathematical instruments, later superseded by the vernie\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1997\u0027\u0027: Well, of course, one must manipulate the various Screw-Settings precisely, read the \u0027\u0027Nonius\u0027\u0027, and an hundred other details besides I’d but bore you with — Thomas Pynchon \u0027Mason \u0026amp; Dixon\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("nonjuror", "{\"term\":\"nonjuror\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|non|juror|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Someone who refuses to swear a particular oath, specifically a clergyman who refused to take the oath of allegiance to William and Mary in 1689\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1723\u0027\u0027, Charles Walker, \u0027Memoirs of Sally Salisbury\u0027, III\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Accident brought her into the Company of a Couple of \u0027Clergymen\u0027, disguised in \u0027Secular Habits\u0027, The one was a Venerable Old \u0027\u0027Nonjuror\u0027\u0027, the other, the Reverend Dr..... Dean of —\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"One who is not a juror\", \"priority\":4}]}, \"synonyms\":{}}");
+
+	add("nonkin", "{\"term\":\"nonkin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A group of people who are not one\u0027s relatives (not kin\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("nonkinship", "{\"term\":\"nonkinship\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The absence of kinship in a group\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nonlanguage", "{\"term\":\"nonlanguage\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|language|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"That which is not a language\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -173,6 +197,8 @@ package org.swtk.commons.dict.wiktionary.generated.n.o.n;  import java.util.Hash
 	add("nonliar", "{\"term\":\"nonliar\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|liar|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who is not a liar\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nonlibertarian", "{\"term\":\"nonlibertarian\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|libertarian|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who is not a libertarian\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("nonmaleficence", "{\"term\":\"nonmaleficence\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A lack or absence of maleficence\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nonmediator", "{\"term\":\"nonmediator\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|mediator|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who is not a mediator\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -234,11 +260,15 @@ package org.swtk.commons.dict.wiktionary.generated.n.o.n;  import java.util.Hash
 
 	add("nonrebreather", "{\"term\":\"nonrebreather\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|rebreather|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A mask used in medical emergencies to deliver oxygen from a reservoir to the patient\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("nonreductionism", "{\"term\":\"nonreductionism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any treatment, theory etc. that is counter to reductionism\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("nonregent", "{\"term\":\"nonregent\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|regent|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A master of arts whose regency has ceased\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nonreplication", "{\"term\":\"nonreplication\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|replication|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Failure to replicat\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"nonreplication\u0027\u0027 of genes\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Failure to duplicate result\", \"priority\":3}]}, \"synonyms\":{}}");
 
 	add("nonrepublic", "{\"term\":\"nonrepublic\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|republic|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any state that is not a republic\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("nonrepudiation", "{\"term\":\"nonrepudiation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"non- + repudiation\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Assurance that a contract cannot later be denied by either of the parties involved\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Assurance that the claimed sender or recipient is in fact the party who sent or received a given message\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("nonresistor", "{\"term\":\"nonresistor\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|resistor|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who offers no resistance\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -258,13 +288,19 @@ package org.swtk.commons.dict.wiktionary.generated.n.o.n;  import java.util.Hash
 
 	add("nonsigner", "{\"term\":\"nonsigner\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|signer|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who does not sign; a nonsignatory\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"One who is not a signer, who does not use sign language\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("nonsince", "{\"term\":\"nonsince\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"nonsense\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("nonsinger", "{\"term\":\"nonsinger\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|singer|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person who is not a singer\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("nonsinse", "{\"term\":\"nonsinse\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"nonsens\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nonstar", "{\"term\":\"nonstar\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|star|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Someone who is not a sta\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"has been one of the Giants’ most interviewed \u0027\u0027nonstars\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("nonstatement", "{\"term\":\"nonstatement\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|statement|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"That which is not a statement\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2004\u0027\u0027, Ronald Staszkow, Robert Bradshaw, \u0027The mathematical palette\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"For each of the following, classify S as a statement or \u0027\u0027nonstatement\", \"priority\":3}]}, \"synonyms\":{}}");
 
 	add("nonsteroid", "{\"term\":\"nonsteroid\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|steroid|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A substance that is not a steroid\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("nonsummativity", "{\"term\":\"nonsummativity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the state of a system that is not the sum of its parts\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nonswimmer", "{\"term\":\"nonswimmer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|swimmer|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who is not a swimmer, who does not or cannot swim\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -274,11 +310,17 @@ package org.swtk.commons.dict.wiktionary.generated.n.o.n;  import java.util.Hash
 
 	add("nonterrorist", "{\"term\":\"nonterrorist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|terrorist|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who is not a terrorist\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("nontheism", "{\"term\":\"nontheism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Intended as a generalization of \u0027atheism\u0027, \u0027non-theist\u0027 was coined in the 1850s. \u0027Nontheism\u0027 is not recorded in notable dictionaries as of 2007.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of a range of concepts regarding spirituality and religion which do not include the idea of a deity in the form of a theistic god or gods\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("nontheist", "{\"term\":\"nontheist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|theist|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who is not a theist; an atheist\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("nontime", "{\"term\":\"nontime\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|time|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"That which is not time\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1999\u0027\u0027, Eva T. H. Brann, \u0027What, then, is time\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"how perception, taking sensation into consciousness, can take place in the \u0027\u0027nontime\u0027\u0027 of the Now\", \"priority\":3}]}, \"synonyms\":{}}");
 
 	add("nontree", "{\"term\":\"nontree\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|tree|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"That which is not a tree (plant\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"That which is not a tree (type of graph\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("nontrespasser", "{\"term\":\"nontrespasser\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|trespasser|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who is not a trespasser\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("nontrinitarianism", "{\"term\":\"nontrinitarianism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The religious belief that rejects the Christian concept of the trinity\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nonuser", "{\"term\":\"nonuser\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|non|user|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person who is not a user (of drugs, a computer system, etc\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Lack of usage; failure to use\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"An office may be forfeited by misuser or \u0027\u0027nonuser\u0027\u0027\u0027 \u0026amp;mdash; William Blackstone\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"Neglect or omission to use an easement or franchise or to assert a right\", \"priority\":4}]}, \"synonyms\":{}}");
 

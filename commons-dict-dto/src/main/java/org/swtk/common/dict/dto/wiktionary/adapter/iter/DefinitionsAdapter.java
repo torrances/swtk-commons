@@ -20,7 +20,7 @@ public final class DefinitionsAdapter {
 	public static String toString(Definitions definitions) {
 		StringBuilder sb = new StringBuilder();
 
-		if (!definitions.isEmpty()) sb.append(String.format("definitions (total = %s):\n", definitions.size()));
+		if (!definitions.isEmpty()) sb.append(String.format("definitions (total = %s):", definitions.size()));
 
 		Iterator<Definition> iter = definitions.iterator();
 		while (iter.hasNext()) {

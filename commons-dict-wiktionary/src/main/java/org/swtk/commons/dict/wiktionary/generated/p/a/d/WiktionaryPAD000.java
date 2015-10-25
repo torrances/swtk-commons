@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.p.a.d;  import java.util.Hash
 
 	add("padauk", "{\"term\":\"padauk\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The valuable timber of \u0027Pterocarpus\u0027, a pantropical genus of trees\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("paddy", "{\"term\":\"paddy\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Irish\"], \"text\":\"From Irish {{m|ga|Pádraig||Patrick}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An Irish nickname for Patrick\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("paddleboat", "{\"term\":\"paddleboat\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|paddle|boat|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A boat propelled by a paddle whee\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

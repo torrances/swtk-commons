@@ -8,6 +8,8 @@ package org.swtk.commons.dict.wiktionary.generated.e.p.e;  import java.util.Hash
 
 	add("epenthesis", "{\"term\":\"epenthesis\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"Middle of 16th century: via from Ancient greek (to 1453) \u0027ἐπένθεσις\u0027 from \u0027ἐπεντίθημι\u0027 (i insert) from \u0027ἐπί\u0027 + \u0027ἐντίθημι\u0027 (i put in) from \u0027ἐν\u0027 (in) + \u0027τίθημι\u0027 (i put, place)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The insertion of a phoneme, letter, or syllable into a word, usually to satisfy the phonological constraints of a language or poetic context\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("eperisone", "{\"term\":\"eperisone\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular muscle relaxant used against spasms\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("epexegesis", "{\"term\":\"epexegesis\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"Ancient greek (to 1453) \u0027ἐπεξήγησις\u0027 from \u0027ἐπεξηγέομαι\u0027 (i explain in detail) from \u0027ἐπί\u0027 (addition) + \u0027ἐξηγέομαι\u0027 (i narrate, describe)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An additional explanation or explanatory material\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

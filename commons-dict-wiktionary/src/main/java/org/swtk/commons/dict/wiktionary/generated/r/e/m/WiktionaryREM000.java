@@ -18,11 +18,13 @@ package org.swtk.commons.dict.wiktionary.generated.r.e.m;  import java.util.Hash
 
 	add("remix", "{\"term\":\"remix\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|re|mix|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A rearrangement of an older piece of music, possibly including various cosmetic changes\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A piece of music formed by combining existing pieces of music together, possibly including various other cosmetic changes\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("remissibility", "{\"term\":\"remissibility\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality or state of being remissible\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("remissibleness", "{\"term\":\"remissibleness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality of being remissible\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("remitter", "{\"term\":\"remitter\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|remit|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who remits, or makes remittance\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"One who pardons\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"The sending or placing back of a person to a title or right formerly held; the restitution of one who obtains possession of property under a defective title, to his rights under some valid title by virtue of which he might legally have entered into possession only by suit\", \"priority\":3}]}, \"synonyms\":{}}");
 
 	add("remixer", "{\"term\":\"remixer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|remix|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person or thing that carries out remixin\", \"priority\":1}]}, \"synonyms\":{}}");
-
-	add("remixeur", "{\"term\":\"remixeur\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"From English \u0027remixer\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"remixer (person that produces remixes):* \u0027Pour Joey Negro, célèbre DJ et \u0027\u0027remixeur\u0027\u0027, c\u0027est là la définition même du disco\u0027. \u0026lt;small\u0026gt;DJ culture, Ulf Poschardt, Jean-Philippe Henquel et Emmanuel Smouts.\u0026lt;/small\u0026gt\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("remodeler", "{\"term\":\"remodeler\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|remodel|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person who remodels or does remodeling\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -39,6 +41,8 @@ package org.swtk.commons.dict.wiktionary.generated.r.e.m;  import java.util.Hash
 	add("removability", "{\"term\":\"removability\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|remove|ability|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of being removable\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("removal", "{\"term\":\"removal\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|remove|al|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The process of moving, or the fact of being removed\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The relocation of a business etc\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"The dismissal of someone from office\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"A funeral ceremony involving prayers and meeting of the family, usually at the home of the deceased, and normally held on the evening prior to burial\", \"priority\":4}]}, \"synonyms\":{}}");
+
+	add("remuage", "{\"term\":\"remuage\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"French\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The process by which sediment in a wine bottle is drawn to the bottle’s neck where it can be removed\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("remuda", "{\"term\":\"remuda\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Spanish\"], \"text\":\"From Spanish \u0027remuda\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A herd of horses from which the horses to be used for a particular purpose are selected\", \"priority\":1}]}, \"synonyms\":{}}");
 

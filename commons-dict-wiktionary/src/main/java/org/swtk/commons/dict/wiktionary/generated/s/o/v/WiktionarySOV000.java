@@ -2,4 +2,10 @@ package org.swtk.commons.dict.wiktionary.generated.s.o.v;  import java.util.Hash
 
 	add("sovereignty", "{\"term\":\"sovereignty\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"old french (842-ca. 1400)\", \"anglo-norman\"], \"text\":\"From Anglo-norman {{m|fro|sovereyneté}}, from Old french (842-ca. 1400) {{m|fro|souveraineté}}, from {{m|fro|soverain}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of making laws and controlling resources without the coercion of other nations\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Supreme authority over all things\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"The liberty to decide one\u0027s thoughts and actions\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("soviet", "{\"term\":\"soviet\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Russian\"], \"text\":\"From Russian \u0027сове́т\u0027 () \u0027сове́тский\u0027 ()\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of the governing workers\u0027 councils in the Soviet Union\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("sovietization", "{\"term\":\"sovietization\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The act or process of Sovietizing\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("sovietology", "{\"term\":\"sovietology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|Soviet Union|logy|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the field of study of the Soviet Union\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

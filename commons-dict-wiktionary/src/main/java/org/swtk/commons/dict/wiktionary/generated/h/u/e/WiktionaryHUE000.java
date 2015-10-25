@@ -2,4 +2,6 @@ package org.swtk.commons.dict.wiktionary.generated.h.u.e;  import java.util.Hash
 
 	add("huemulite", "{\"term\":\"huemulite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\u0027-ite\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A triclinic-pinacoidal mineral containing hydrogen, magnesium, oxygen, sodium, and vanadium\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("huevos", "{\"term\":\"huevos\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"huevos Huevos rancheros, a Mexican breakfast dis\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"testicles\", \"priority\":2}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

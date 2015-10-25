@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.r.o.a;  import java.util.Hash
 
 	add("roadbed", "{\"term\":\"roadbed\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|road|bed|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The prepared location for a road, including its foundation\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("roadian", "{\"term\":\"roadian\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A subdivision of the Permian period\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("roadie", "{\"term\":\"roadie\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A biker\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"One of the crew for a musical group or other travelling stage production, especially a stagehand or technician\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A beer for the ride, for consumption while one is driving; a road soda\", \"priority\":3}]}, \"synonyms\":{}}");
 
 	add("roadkill", "{\"term\":\"roadkill\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"A {{compound|road|kill|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the killing of an animal by a road vehicl\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"the animal(s) so kille\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"a helpless victim\", \"priority\":3}]}, \"synonyms\":{}}");
@@ -15,6 +17,8 @@ package org.swtk.commons.dict.wiktionary.generated.r.o.a;  import java.util.Hash
 	add("roadwork", "{\"term\":\"roadwork\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|road|work|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The construction or maintenance done to roads\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The traffic jam was caused by \u0027\u0027roadwork\u0027\u0027 being done during rush hour\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Exercise such as running and jogging done on the roads\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"The athlete needed to get home early to do his \u0027\u0027roadwork\u0027\u0027 before it got too dark to be safe\", \"priority\":4}]}, \"synonyms\":{}}");
 
 	add("roadworker", "{\"term\":\"roadworker\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|road|worker|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A worker who carries out road construction or maintenance\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("roadworthiness", "{\"term\":\"roadworthiness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The property of being roadworthy\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("roarer", "{\"term\":\"roarer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|roar|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who roars\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"One of a group of young men who would carouse in taverns, then pick brawls on the street for entertainment\", \"priority\":2}]}, \"synonyms\":{}}");
 

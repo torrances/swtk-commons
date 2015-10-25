@@ -14,9 +14,19 @@ package org.swtk.commons.dict.wiktionary.generated.c.u.p;  import java.util.Hash
 
 	add("cupping", "{\"term\":\"cupping\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The operation of drawing blood to or from the surface of the person by forming a partial vacuum over the spot\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A similar operation for drawing pus from an abscess\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"fire Fire cupping, a traditional therapeutic treatment called in which heated cupping glasses are applied to the skin, supposedly to draw blood towards the surface\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"The taking of a small amount of a beverage such as tea or coffee into the mouth in order to taste it; a session where this is done\", \"priority\":4}]}, \"synonyms\":{}}");
 
+	add("cupro", "{\"term\":\"cupro\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Shortening.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"rayon made by the cuproammonium process\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("cuprammonium", "{\"term\":\"cuprammonium\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|cupro|ammonium|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The cation Cu(NH\u0026lt;sub\u0026gt;3\u0026lt;/sub\u0026gt;)\u0026lt;sub\u0026gt;4\u0026lt;/sub\u0026gt;\u0026lt;sup\u0026gt;2+\u0026lt;/sup\u0026gt; formed by adding ammonia to copper salts\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("cupremia", "{\"term\":\"cupremia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The presence of copper in the blood\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("cupreous", "{\"term\":\"cupreous\", \"etymology\":{\"influencers\":[{}], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027cupreus\u0027 from \u0027cuprum\u0027 (copper)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A reddish-brown color, like that of polished copper\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("cuproammonium", "{\"term\":\"cuproammonium\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An complex of four molecules of ammonia surrounding a copper ion\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("cupronickel", "{\"term\":\"cupronickel\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|cupro|nickel|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An alloy of copper containing from 10 to 40% nickel\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("cuprophosphorus", "{\"term\":\"cuprophosphorus\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"copper phosphide\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("cuproscheelite", "{\"term\":\"cuproscheelite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|cupro|scheelite|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A mineral (CuWO\u0026lt;sub\u0026gt;4\u0026lt;/sub\u0026gt;) having the same structure as scheelite but with calcium replaced by copper\", \"priority\":1}]}, \"synonyms\":{}}");
 

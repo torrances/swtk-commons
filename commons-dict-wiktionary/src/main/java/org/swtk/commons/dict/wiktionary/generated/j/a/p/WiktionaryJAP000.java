@@ -2,9 +2,19 @@ package org.swtk.commons.dict.wiktionary.generated.j.a.p;  import java.util.Hash
 
 	add("japaneseness", "{\"term\":\"japaneseness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Japanese|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality of being Japanese\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("japanification", "{\"term\":\"japanification\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The process of making or becoming Japanese\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("japanning", "{\"term\":\"japanning\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"European technique of creating lacquerware in imitation of traditional Japanese style\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("japanophile", "{\"term\":\"japanophile\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From \u0027japan\u0027 + \u0027-phile\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person who loves the country, culture, or people of Japan\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("japanophilia", "{\"term\":\"japanophilia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From \u0027japan\u0027 + \u0027-philia\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a strong interest in the country, culture, or people of Japan\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("japanophobia", "{\"term\":\"japanophobia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A fear of Japan and Japanese people or cultur\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1906\u0027\u0027 Edward Albert Bell - These meddlesome attorney\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Perhaps this is one of the reasons of their \u0027\u0027Japanophobia\u0027\u0027. But if Japan became the ally of France, all this fear and suspicion of Japan would disappear\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"1999\u0027\u0027 Jagdish Bhagwati et.al. - Trading Blocs: Alternative Approaches to Analyzing Preferential Trade Agreement\", \"priority\":4},{\"upperType\":\"NOUN\", \"text\":\"This would require discarding the extreme \u0027\u0027Japanophobia\u0027\u0027 that characterises the so-called \u0026quot;revisionists\u0026quot; who are really \u0026quot;regressionists\u0026quot; twice over\", \"priority\":5}]}, \"synonyms\":{}}");
+
+	add("japchae", "{\"term\":\"japchae\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Korean\"], \"text\":\"from Korean {{lang|ko|잡채}}: {{lang|ko|잡}} ({{lang|ko|雜}}) \u0026quot;mixed and stirred\u0026quot; + {{lang|ko|채}} ({{lang|ko|菜}}) \u0026quot;vegetables\u0026quot;.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A Korean dish made of sweet potato \u0027dangmyeon\u0027 cellophane noodles, vegetables and other ingredients\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("japlish", "{\"term\":\"japlish\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|Japanese|English|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A confused blend of Japanese and English; Engrish\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("japscat", "{\"term\":\"japscat\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|Jap|scat|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Coprophilia, originating in Japanese pornography\", \"priority\":1}]}, \"synonyms\":{}}");
 

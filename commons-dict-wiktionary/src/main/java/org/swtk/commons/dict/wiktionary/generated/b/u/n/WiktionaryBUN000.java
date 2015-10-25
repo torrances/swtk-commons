@@ -22,6 +22,10 @@ package org.swtk.commons.dict.wiktionary.generated.b.u.n;  import java.util.Hash
 
 	add("bunnia", "{\"term\":\"bunnia\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Gujarati\", \"Hindi\"], \"text\":\"From the Hindi {{m|hi||}}, from the Gujarati {{m|gu||}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A merchant or trader\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1888\u0027\u0027, Rudyard Kipling, ‘In the House of Suddhoo’, \u0027Plain Tales from the Hills\u0027, Folio 2005, p. 103\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"I dare not tell, do anything, or get anything done, because I am in debt to Bhangwan Dass the \u0027\u0027\u0027bunnia\u0027\u0027\u0027 for two gold rings and a heavy anklet\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("bunraku", "{\"term\":\"bunraku\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Japanese\"], \"text\":\"From Japanese \u0027文楽\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A traditional form of Japanese puppetry\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("bunsen", "{\"term\":\"bunsen\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"w:Robert Robert Wilhelm Bunsen, German chemist\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("buntal", "{\"term\":\"buntal\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A fibre obtained from palms of the genus \u0027Corypha\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("buntline", "{\"term\":\"buntline\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|bunt|line|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A type of revolver with an exceptionally long barrel\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Any, except the outermost, of the ropes extending down to the deck with which a square sail is rolled up to the yard\", \"priority\":2}]}, \"synonyms\":{}}");

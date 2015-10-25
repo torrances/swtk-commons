@@ -6,6 +6,8 @@ package org.swtk.commons.dict.wiktionary.generated.m.a.p;  import java.util.Hash
 
 	add("mapuchization", "{\"term\":\"mapuchization\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Mapuche|ization|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Araucanization\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("maputo", "{\"term\":\"maputo\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Portuguese\"], \"text\":\"From Portuguese \u0027maputo\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The of\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("mapvertising", "{\"term\":\"mapvertising\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|map|advertising|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the concept and act of advertising on, or in direct relation to, maps; generally referring to online maps, but also including rooftop and other large, physical ads positioned for satellite photo opportunities\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

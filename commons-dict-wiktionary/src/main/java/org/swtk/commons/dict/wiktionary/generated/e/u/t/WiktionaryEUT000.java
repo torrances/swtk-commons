@@ -4,6 +4,10 @@ package org.swtk.commons.dict.wiktionary.generated.e.u.t;  import java.util.Hash
 
 	add("euthanization", "{\"term\":\"euthanization\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|euthanize|ation|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The act or process of euthanizin\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("euthemia", "{\"term\":\"euthemia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From Greek ευ (\u0026quot;good\u0026quot;) + θυμός (\u0026quot;disposition\u0026quot;)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"meaning \u0026quot;of a good disposition\u0026quot\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("euthermia", "{\"term\":\"euthermia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The condition of having a normal body temperature\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("eutrophy", "{\"term\":\"eutrophy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|eu|trophy|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"healthy nutritio\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"the quality of being rich in minerals and nutrients\", \"priority\":2}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

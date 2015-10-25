@@ -8,6 +8,8 @@ package org.swtk.commons.dict.wiktionary.generated.r.e.i;  import java.util.Hash
 
 	add("reillustration", "{\"term\":\"reillustration\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|re|illustration|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An alternative illustration of something which has already been illustrated at least onc\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("reilly", "{\"term\":\"reilly\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"of origin\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("reimbursement", "{\"term\":\"reimbursement\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|reimburse|ment|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The act of compensating someone for an expense\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("reimmigration", "{\"term\":\"reimmigration\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|re|immigration|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"immigration back to the place from which one came\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -19,6 +21,8 @@ package org.swtk.commons.dict.wiktionary.generated.r.e.i;  import java.util.Hash
 	add("reincarnationist", "{\"term\":\"reincarnationist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|reincarnation|ist|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who believes that beings are reincarnated in a new form after death\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("reinfarction", "{\"term\":\"reinfarction\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|re|infarction|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A second or subsequent infarction\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("reinforcing", "{\"term\":\"reinforcing\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Something that reinforces\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The \u0027\u0027reinforcing\u0027\u0027 for the roof will be installed before the hurricane season begins\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("reinjury", "{\"term\":\"reinjury\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|re|injury|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Injury appearing for the second time\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -35,6 +39,8 @@ package org.swtk.commons.dict.wiktionary.generated.r.e.i;  import java.util.Hash
 	add("reinventor", "{\"term\":\"reinventor\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|reinvent|or|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Someone who reinvents somethin\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"He claimed to be a \u0027\u0027reinventor\u0027\u0027 of government\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("reinvestigation", "{\"term\":\"reinvestigation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|reinvestigate|ion|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An act or process of reinvestigating: a repeat of an earlier investigatio\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("reishi", "{\"term\":\"reishi\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Extract of the bracket fungus (mushroom) (\u0027Ganoderma lucidum\u0027 and sometimes\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("reiter", "{\"term\":\"reiter\", \"etymology\":{\"influencers\":[], \"languages\":[\"German\", \"English\"], \"text\":\"From German \u0027reiter\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A German cavalry soldier of the fourteenth and fifteenth centuries\", \"priority\":1}]}, \"synonyms\":{}}");
 

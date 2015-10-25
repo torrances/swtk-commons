@@ -3,6 +3,8 @@ package org.swtk.commons.dict.wiktionary.controller;
 import org.swtk.common.dict.dto.wiktionary.Entry;
 import org.swtk.commons.dict.wiktionary.generated.j.a.b.*;
 import org.swtk.commons.dict.wiktionary.generated.j.a.c.*;
+import org.swtk.commons.dict.wiktionary.generated.j.a.d.*;
+import org.swtk.commons.dict.wiktionary.generated.j.a.f.*;
 import org.swtk.commons.dict.wiktionary.generated.j.a.g.*;
 import org.swtk.commons.dict.wiktionary.generated.j.a.i.*;
 import org.swtk.commons.dict.wiktionary.generated.j.a.k.*;
@@ -22,17 +24,20 @@ import org.swtk.commons.dict.wiktionary.generated.j.e.d.*;
 import org.swtk.commons.dict.wiktionary.generated.j.e.e.*;
 import org.swtk.commons.dict.wiktionary.generated.j.e.f.*;
 import org.swtk.commons.dict.wiktionary.generated.j.e.g.*;
-import org.swtk.commons.dict.wiktionary.generated.j.e.k.*;
+import org.swtk.commons.dict.wiktionary.generated.j.e.h.*;
+import org.swtk.commons.dict.wiktionary.generated.j.e.j.*;
 import org.swtk.commons.dict.wiktionary.generated.j.e.l.*;
 import org.swtk.commons.dict.wiktionary.generated.j.e.m.*;
 import org.swtk.commons.dict.wiktionary.generated.j.e.n.*;
 import org.swtk.commons.dict.wiktionary.generated.j.e.o.*;
+import org.swtk.commons.dict.wiktionary.generated.j.e.q.*;
 import org.swtk.commons.dict.wiktionary.generated.j.e.r.*;
 import org.swtk.commons.dict.wiktionary.generated.j.e.s.*;
 import org.swtk.commons.dict.wiktionary.generated.j.e.t.*;
 import org.swtk.commons.dict.wiktionary.generated.j.e.w.*;
 import org.swtk.commons.dict.wiktionary.generated.j.h.a.*;
 import org.swtk.commons.dict.wiktionary.generated.j.h.e.*;
+import org.swtk.commons.dict.wiktionary.generated.j.i.a.*;
 import org.swtk.commons.dict.wiktionary.generated.j.i.c.*;
 import org.swtk.commons.dict.wiktionary.generated.j.i.f.*;
 import org.swtk.commons.dict.wiktionary.generated.j.i.g.*;
@@ -68,8 +73,10 @@ import org.swtk.commons.dict.wiktionary.generated.j.u.j.*;
 import org.swtk.commons.dict.wiktionary.generated.j.u.m.*;
 import org.swtk.commons.dict.wiktionary.generated.j.u.n.*;
 import org.swtk.commons.dict.wiktionary.generated.j.u.s.*;
+import org.swtk.commons.dict.wiktionary.generated.j.u.v.*;
 import org.swtk.commons.dict.wiktionary.generated.j.u.x.*;
 import org.swtk.commons.dict.wiktionary.generated.j.y.n.*;
+import org.swtk.commons.dict.wiktionary.generated.j.y.u.*;
 
 public final class WiktionaryDbJ {
 	public static Entry findByName(String name) {
@@ -80,6 +87,10 @@ public final class WiktionaryDbJ {
 			return WiktionaryJAB000.get(name);
 		else if ("jac".equals(sub))
 			return WiktionaryJAC000.get(name);
+		else if ("jad".equals(sub))
+			return WiktionaryJAD000.get(name);
+		else if ("jaf".equals(sub))
+			return WiktionaryJAF000.get(name);
 		else if ("jag".equals(sub))
 			return WiktionaryJAG000.get(name);
 		else if ("jai".equals(sub))
@@ -118,8 +129,10 @@ public final class WiktionaryDbJ {
 			return WiktionaryJEF000.get(name);
 		else if ("jeg".equals(sub))
 			return WiktionaryJEG000.get(name);
-		else if ("jek".equals(sub))
-			return WiktionaryJEK000.get(name);
+		else if ("jeh".equals(sub))
+			return WiktionaryJEH000.get(name);
+		else if ("jej".equals(sub))
+			return WiktionaryJEJ000.get(name);
 		else if ("jel".equals(sub))
 			return WiktionaryJEL000.get(name);
 		else if ("jem".equals(sub))
@@ -128,6 +141,8 @@ public final class WiktionaryDbJ {
 			return WiktionaryJEN000.get(name);
 		else if ("jeo".equals(sub))
 			return WiktionaryJEO000.get(name);
+		else if ("jeq".equals(sub))
+			return WiktionaryJEQ000.get(name);
 		else if ("jer".equals(sub))
 			return WiktionaryJER000.get(name);
 		else if ("jes".equals(sub))
@@ -140,6 +155,8 @@ public final class WiktionaryDbJ {
 			return WiktionaryJHA000.get(name);
 		else if ("jhe".equals(sub))
 			return WiktionaryJHE000.get(name);
+		else if ("jia".equals(sub))
+			return WiktionaryJIA000.get(name);
 		else if ("jic".equals(sub))
 			return WiktionaryJIC000.get(name);
 		else if ("jif".equals(sub))
@@ -210,10 +227,14 @@ public final class WiktionaryDbJ {
 			return WiktionaryJUN000.get(name);
 		else if ("jus".equals(sub))
 			return WiktionaryJUS000.get(name);
+		else if ("juv".equals(sub))
+			return WiktionaryJUV000.get(name);
 		else if ("jux".equals(sub))
 			return WiktionaryJUX000.get(name);
 		else if ("jyn".equals(sub))
 			return WiktionaryJYN000.get(name);
+		else if ("jyu".equals(sub))
+			return WiktionaryJYU000.get(name);
 		return null;
 	}
 }

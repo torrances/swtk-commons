@@ -8,6 +8,8 @@ package org.swtk.commons.dict.wiktionary.generated.i.s.l;  import java.util.Hash
 
 	add("islamofascist", "{\"term\":\"islamofascist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|Islamo|facist|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A Muslim fundamentalist\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("islamology", "{\"term\":\"islamology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Islam|ology|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of Islam\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("islamophile", "{\"term\":\"islamophile\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|Islamo|phile|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One (especially one who is not an adherent of Islam) who loves Islam, Muslims or Islamic culture\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("islamophilia", "{\"term\":\"islamophilia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|Islamo|philia|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Love or admiration of (the values of) Islam or of Islamic civilization\", \"priority\":1}]}, \"synonyms\":{}}");

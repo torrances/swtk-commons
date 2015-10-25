@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.s.a.s;  import java.util.Hash
 
 	add("sashay", "{\"term\":\"sashay\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\", \"Latin\"], \"text\":\"From French {{m|fr|chasser||chase}}, from Latin {{m|la|captō}}, frequentative of {{m|la|capiō||I take}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A chassé\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A sequence of sideways steps in a circle in square dancing\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("saskatchewan", "{\"term\":\"saskatchewan\", \"etymology\":{\"influencers\":[], \"languages\":[\"Cree\", \"English\"], \"text\":\"From Cree \u0027\u0027 (kisiskāciwani-sīpiy)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A river in Canada\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Prairie province in western Canada (named after the river, which flows through it) which has Regina as its capital city\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("saskatoon", "{\"term\":\"saskatoon\", \"etymology\":{\"influencers\":[], \"languages\":[\"Cree\", \"English\"], \"text\":\"From Cree \u0027ᒥᓵᐢᑲᐧᑑᒥᐣ\u0027 (saskatoon berry) from \u0027ᒥᓵᐢᑲᐧᐟ\u0027 (saskatoon) + \u0027\u0027 (-min)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A shrub inhabiting western North America\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The edible berry of this shrub\", \"priority\":2}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

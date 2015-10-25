@@ -1,3 +1,11 @@
 package org.swtk.commons.dict.wiktionary.generated.t.o.c;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryTOC000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("toccata", "{\"term\":\"toccata\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Italian\"], \"text\":\"From Italian \u0027toccata\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A piece of music (usually for a keyboard instrument) designed to emphasise the dexterity of the performer\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("toccer", "{\"term\":\"toccer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a sport in which two teams of eight players contend to get a ball resembling a tennis ball into the other team\u0027s goal primarily by hitting the ball with racquets\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("tocilizumab", "{\"term\":\"tocilizumab\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A humanized monoclonal antibody used as an immunosuppressive drug\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("tocology", "{\"term\":\"tocology\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027τόκος\u0027 (childbirth) from \u0027τίκτω\u0027 (i give birth)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the branch of medicine that deals with childbirth\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("tocolysis", "{\"term\":\"tocolysis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The suppression of uterine contractions\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -12,4 +12,6 @@ package org.swtk.commons.dict.wiktionary.generated.d.a.d;  import java.util.Hash
 
 	add("dadsonite", "{\"term\":\"dadsonite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A monoclinic mineral containing antimony, chlorine, lead, and sulfur\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("dadyl", "{\"term\":\"dadyl\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A substance derived from turpentine\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

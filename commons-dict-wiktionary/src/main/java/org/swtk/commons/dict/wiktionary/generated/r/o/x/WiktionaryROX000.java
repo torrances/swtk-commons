@@ -1,0 +1,5 @@
+package org.swtk.commons.dict.wiktionary.generated.r.o.x;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryROX000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("roxy", "{\"term\":\"roxy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A diminutive of the female given names Roxana, Roxane, or Roxanne\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("roxatidine", "{\"term\":\"roxatidine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular H\u0026lt;sub\u0026gt;2\u0026lt;/sub\u0026gt; receptor antagonist\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

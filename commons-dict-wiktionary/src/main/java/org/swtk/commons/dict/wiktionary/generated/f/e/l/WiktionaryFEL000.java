@@ -16,4 +16,6 @@ package org.swtk.commons.dict.wiktionary.generated.f.e.l;  import java.util.Hash
 
 	add("fellrunning", "{\"term\":\"fellrunning\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|fell|running|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Running in the fells, or similar steep terrain, as a pastime or sport\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("fellwalking", "{\"term\":\"fellwalking\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"walking in the fells as a pastime or sport\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

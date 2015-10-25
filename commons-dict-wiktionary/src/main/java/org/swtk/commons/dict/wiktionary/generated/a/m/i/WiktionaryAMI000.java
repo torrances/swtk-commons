@@ -1,12 +1,22 @@
 package org.swtk.commons.dict.wiktionary.generated.a.m.i;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryAMI000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("amiability", "{\"term\":\"amiability\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A cheerful and friendly disposition; approachable\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("amianthus", "{\"term\":\"amianthus\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027ἀμίαντος\u0027 (undefiled) from \u0027ἀ-\u0027 (not) + \u0027μιαίνω\u0027 (i defile)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a type of asbestos with long, soft, thin fibers\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("amicicide", "{\"term\":\"amicicide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|amicus|cide|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"killing of a frien\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1873\u0027\u0027, Junius Henri Browne, \u0027Women as Idealists\u0027, published in \u0027The Galaxy\u0027, Volume XVI, page [http://books.google.com/books?id\u003dCIoAAAAAYAAJ\u0026amp;pg\u003dPA99\u0026amp;dq\u003damicicide 99\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Men who have been the firmest friends, while in each other\u0027s company periodically and frequently, have clashed and quarrelled in their attempt to dwell beneath the same roof, and, occupying the same apartments, have been moved to commit \u0027\u0027amicicide\", \"priority\":3}]}, \"synonyms\":{}}");
+
+	add("amicite", "{\"term\":\"amicite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Amici|ite|lang\u003den}}, after physicist Giovan Battista Amici (1786–1863).\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A monoclinic-sphenoidal zeolite mineral containing aluminum, hydrogen, oxygen, potassium, silicon, and sodium\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("amidah", "{\"term\":\"amidah\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Hebrew\"], \"text\":\"From Hebrew \u0027תפילה\u0027 \u0027ה־\u0027 {term|עֲמִידָה||lang\u003dhe|tr\u003dt\u0027filát ha\u0027amidá|the standing prayer}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An important daily prayer that is said while standing\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("amidinotransferase", "{\"term\":\"amidinotransferase\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|amidino|transferase|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of a group of enzymes that catalyze the transfer of amidinos\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("amidol", "{\"term\":\"amidol\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|amide|ol|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The hydrochloride of the amino-phenol \u00272,4-diaminophenol\u0027, used as a photographic developer\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("amifostine", "{\"term\":\"amifostine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A cytoprotective adjuvant used in cancer chemotherapy\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("amillennialism", "{\"term\":\"amillennialism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|a|millennial|ism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A view in Christian eschatology that rejects the claimed future thousand-year physical reign of Jesus Christ on the earth, in opposition to premillennial and some postmillennial views of the Book of Revelation, chapter 20, claiming instead that the number of years in Revelation 20 is a symbolic number and that Christ\u0027s eventual physical reign will be permanent\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("amino", "{\"term\":\"amino\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The amine functional group\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("aminadab", "{\"term\":\"aminadab\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A Quaker\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -20,7 +30,17 @@ package org.swtk.commons.dict.wiktionary.generated.a.m.i;  import java.util.Hash
 
 	add("aminoamide", "{\"term\":\"aminoamide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|amino|amide|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The amide of an amino acid\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("aminobenzene", "{\"term\":\"aminobenzene\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Alternative name for aniline (C\u0026lt;sub\u0026gt;6\u0026lt;/sub\u0026gt;H\u0026lt;sub\u0026gt;5\u0026lt;/sub\u0026gt;NH\u0026lt;sub\u0026gt;2\u0026lt;/sub\u0026gt\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("aminoborane", "{\"term\":\"aminoborane\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A mixed hydride of nitrogen and boron, NH\u0026lt;sub\u0026gt;2\u0026lt;/sub\u0026gt;BH\u0026lt;sub\u0026gt;2\u0026lt;/sub\u0026gt;, whose polymer is proposed as a storage site for hydrogen\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("aminocyclopropane", "{\"term\":\"aminocyclopropane\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"cyclopropylamin\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A univalent radical obtained by removal of a hydrogen atom from the ring of cyclopropylamine\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("aminoglutethimide", "{\"term\":\"aminoglutethimide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An antisteroid drug that blocks the production of steroids derived from cholesterol and is used in the treatment of Cushing\u0027s syndrome and metastatic breast cancer\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("aminogram", "{\"term\":\"aminogram\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{confix|amino|gram|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A diagram that shows the amino acid composition of a peptide or protein\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("aminoguanidine", "{\"term\":\"aminoguanidine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An amino derivative of guanidine, used for the treatment of diabetic nephropathy under the name pimagedine\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("aminoketone", "{\"term\":\"aminoketone\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|amino|ketone|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any chemical compound containing both a ketone group and an amine\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The drug bupropion is an \u0027\u0027aminoketone\", \"priority\":2}]}, \"synonyms\":{}}");
 
@@ -32,15 +52,23 @@ package org.swtk.commons.dict.wiktionary.generated.a.m.i;  import java.util.Hash
 
 	add("aminonucleoside", "{\"term\":\"aminonucleoside\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|amino|nucleoside|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any form of a nucleoside derived from an amino sugar\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("aminophenazone", "{\"term\":\"aminophenazone\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A pyrazolone with analgesic, anti-inflammatory, and antipyretic properties\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("aminophospholipid", "{\"term\":\"aminophospholipid\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|amino|phospholipid|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any phospholipid in which the small organic molecule is an amine\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("aminophylline", "{\"term\":\"aminophylline\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A bronchodilator comprising theophylline and ethylenediamine in a 2:1 ratio\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("aminoplastic", "{\"term\":\"aminoplastic\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|amino|plastic|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"melamine/formaldehyde resin\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("aminopterin", "{\"term\":\"aminopterin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|amino|pterin|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A 4-amino analog of folic acid used as a chemotherapy drug\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("aminopyridine", "{\"term\":\"aminopyridine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|amino|pyridine|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of three isomeric amino derivatives of pyridine\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("aminopyrimidine", "{\"term\":\"aminopyrimidine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|amino|pyrimidine|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any amino derivative of a pyrimidine, but especially \u00274-aminopyrimidine\u0027 that is a potassium ion channel blocker\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("aminoquinoline", "{\"term\":\"aminoquinoline\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|amino|quinoline|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of various quinoline derivatives notable as antimalarial drugs\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("aminorex", "{\"term\":\"aminorex\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An anorectic stimulant drug of the 2-amino-5-aryl oxazoline class\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("aminosalicylate", "{\"term\":\"aminosalicylate\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|aminosalicylic|ate|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any salt or ester of aminosalicylic acid\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -49,6 +77,14 @@ package org.swtk.commons.dict.wiktionary.generated.a.m.i;  import java.util.Hash
 	add("aminothiazole", "{\"term\":\"aminothiazole\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|amino|thiazole|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A heterocyclic amine, the starting point for synthesis of many compounds, sometimes used as a thyroid inhibitor in the treatment of hyperthyroidism\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("aminotransfer", "{\"term\":\"aminotransfer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|amino|transfer|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Transamination\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("aminotriazole", "{\"term\":\"aminotriazole\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The heterocyclic organic compound 3-amino-1,2,4-triazole (3-AT), sometimes used as a herbicide (but not, because of its carcinogenic properties, on food crops\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("amiodarone", "{\"term\":\"amiodarone\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular medicine used against arrhythmia\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("amissibility", "{\"term\":\"amissibility\", \"etymology\":{\"influencers\":[], \"languages\":[\"French\"], \"text\":\"Compare French \u0027amissibilité\u0027 See \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality of being amissible; possibility of being lost\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Notions of popular rights and the \u0027\u0027amissibility\u0027\u0027 of sovereign power for misconduct were alternately broached by the two great religious parties of Europe.\u0027 \u0026amp;mdash; Hallam\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("amissness", "{\"term\":\"amissness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or quality of being amiss\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("amity", "{\"term\":\"amity\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"old french (842-ca. 1400)\", \"Latin\"], \"text\":\"From Old french (842-ca. 1400) \u0027amitié\u0027 from *\u0027\u0027 (amicitas) from Latin {{m|la|amīcus||friendly, a friend}}, from {{m|la|amō||I love}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Friendship. The cooperative and supportive relationship between people, or animals. In this sense, the term connotes a relationship which involves mutual knowledge, esteem, affection, and respect along with a degree of rendering service to friends in times of need or crisis\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1922\u0027\u0027: To my native place / Bent upon returning, / Bosom all day burning / To be where my race / Well were known, \u0027twas much with me / There to dwell in \u0027\u0027amity\u0027\u0027. \u0026amp;mdash; Thomas Hardy, \u0027Welcome Home,\u0027 in \u0027Lyrics Late and Earlier,\u0027 192\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Mutual understanding and a peaceful relationship, especially between nations; peace; accord\", \"priority\":3}]}, \"synonyms\":{}}");
 

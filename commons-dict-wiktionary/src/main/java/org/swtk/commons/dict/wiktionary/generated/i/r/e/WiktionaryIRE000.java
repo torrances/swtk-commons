@@ -1,5 +1,9 @@
 package org.swtk.commons.dict.wiktionary.generated.i.r.e;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryIRE000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("irefulness", "{\"term\":\"irefulness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|ireful|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of being ireful; anger; fury\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("ireland", "{\"term\":\"ireland\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Irish\"], \"text\":\"From Irish \u0027éire\u0027 + \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A large island in northwest Europe\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A republic occupying the majority-area of the island of Ireland, with Northern Ireland occupying the rest of the island. Also known as the \u0027Republic of Ireland\u0027 since 1949\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("irelander", "{\"term\":\"irelander\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Ireland|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person from Ireland or of Irish descent\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("irenology", "{\"term\":\"irenology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of peace\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -1,5 +1,7 @@
 package org.swtk.commons.dict.wiktionary.generated.t.a.w;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryTAW000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("tawer", "{\"term\":\"tawer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|taw|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who taws; a dresser of whitleather\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("tawniness", "{\"term\":\"tawniness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality or state of being tawny\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("tawse", "{\"term\":\"tawse\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Apparently a plural form of \u0027\u0027 though attested earlier.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A leather strap or thong which is split into (typically three) tails, used for corporal punishment in schools, applied to the palm of the hands or buttocks\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

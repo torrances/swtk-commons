@@ -4,7 +4,11 @@ package org.swtk.commons.dict.wiktionary.generated.a.m.n;  import java.util.Hash
 
 	add("amnioinfusion", "{\"term\":\"amnioinfusion\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|amnio|infusion|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A method of thinning thick meconium that has passed into the amniotic fluid\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("amniomancy", "{\"term\":\"amniomancy\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027ἀμνίον\u0027 (caul, membrane around the fetus) {{suffix||mancy|lang\u003den}}, from \u0027μαντεία\u0027 (divination)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Divination based on the characteristics of the amniotic sac at childbirth\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("amnion", "{\"term\":\"amnion\", \"etymology\":{\"influencers\":[{}], \"languages\":[\"English\", \"ancient greek (to 1453)\", \"Latin\"], \"text\":\"From Latin \u0027amnion\u0027 (membrane around a fetus) from Ancient greek (to 1453) {{m|grc|ἀμνίον||bowl in which the blood of victims was caught}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The innermost membrane of the fetal membranes of reptiles, birds, and mammals; the sac in which the embryo is suspended\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("amnionitis", "{\"term\":\"amnionitis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"inflammation of the amnion\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("amnioreduction", "{\"term\":\"amnioreduction\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|amnio|reduction|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The removal of excess amniotic fluid\", \"priority\":1}]}, \"synonyms\":{}}");
 

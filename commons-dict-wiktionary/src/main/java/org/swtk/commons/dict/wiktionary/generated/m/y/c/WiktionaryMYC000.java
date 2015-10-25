@@ -10,9 +10,13 @@ package org.swtk.commons.dict.wiktionary.generated.m.y.c;  import java.util.Hash
 
 	add("mycoplasma", "{\"term\":\"mycoplasma\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any infectious bacterium of the genus \u0027Mycoplasma\u0027, often specifically\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"title\u003dThe Smallest volume\u003d101|issue\u003d2|page\u003d83|magazine\u003d|url\u003dhttp://www.americanscientist.org/issues/pub/2013/2/the-smallest-cell|passage\u003dIt is likely that the long evolutionary trajectory of \u0027\u0027\u0027Mycoplasma\u0027\u0027\u0027 went from a reductive autotroph to oxidative heterotroph to a cell-wall–defective degenerate parasite. This evolutionary trajectory assumes the simplicity to complexity route of biogenesis, a point of view that is not universally accepted\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("mycose", "{\"term\":\"mycose\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Trehalose\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("mycosis", "{\"term\":\"mycosis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|myco|osis|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An infection caused by a fungus\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("mycosymbiont", "{\"term\":\"mycosymbiont\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|myco|symbiont|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any fungus that has a symbiotic relationship with a plant\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("mycotoxicology", "{\"term\":\"mycotoxicology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of mycotoxins\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("mycotoxin", "{\"term\":\"mycotoxin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|myco|toxin|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"any substance, produced by a mold or fungus, that is injurious to vertebrates upon ingestion, inhalation or skin contact\", \"priority\":1}]}, \"synonyms\":{}}");
 

@@ -2,11 +2,17 @@ package org.swtk.commons.dict.wiktionary.generated.t.i.l;  import java.util.Hash
 
 	add("tilbury", "{\"term\":\"tilbury\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From the surname \u0027\u0027 (the inventor).\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A small open two-wheeled carriage\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Sixpence (formerly the fare from Gravesend to Tilbury Fort\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("tileability", "{\"term\":\"tileability\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The ability of a shape to tile the plane\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("tilefish", "{\"term\":\"tilefish\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|tile|fish|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Mostly small, perciform marine fish in the family \u0027\u0027; an important food fish\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("tilemap", "{\"term\":\"tilemap\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|tile|map|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A two-dimensional grid made up of rectangular tiles of equal size, each of which can display an image\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("tileset", "{\"term\":\"tileset\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|tile|set|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A collection of rectangular images, or tiles\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2007\u0027\u0027, \u0027PC Gamer\u0027 (volume 14, issues 10-12\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"The imp-infested streets of London get repetitive, but new \u0027\u0027tilesets\u0027\u0027 are introduced later in the plot\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"2011\u0027\u0027, Steffen Itterheim, \u0027Learn iPhone and iPad Cocos2D Game Development\u0027 (page 241\", \"priority\":4},{\"upperType\":\"NOUN\", \"text\":\"Next you need to load a \u0027\u0027tileset\u0027\u0027 containing isometric tiles\", \"priority\":5}]}, \"synonyms\":{}}");
+
+	add("tilidate", "{\"term\":\"tilidate\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular narcotic painkiller\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("tilidine", "{\"term\":\"tilidine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular narcotic painkiller\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("tilter", "{\"term\":\"tilter\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who tilts, or jousts\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"One who fights\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"One who operates a tilt hammer\", \"priority\":3}]}, \"synonyms\":{}}");
 

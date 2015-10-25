@@ -1,3 +1,5 @@
 package org.swtk.commons.dict.wiktionary.generated.o.b.t;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryOBT000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("obtainer", "{\"term\":\"obtainer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who obtains\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("obtusion", "{\"term\":\"obtusion\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The blunting, dulling, or weakening of normal sensation\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

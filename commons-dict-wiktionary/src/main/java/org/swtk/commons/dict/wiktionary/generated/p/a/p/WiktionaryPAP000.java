@@ -10,6 +10,8 @@ package org.swtk.commons.dict.wiktionary.generated.p.a.p;  import java.util.Hash
 
 	add("papercraft", "{\"term\":\"papercraft\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|paper|craft|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The art of making things from paper\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("papercutting", "{\"term\":\"papercutting\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The art of cutting decorative designs out of paper\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The traditional Chinese form of such an art, also known as jianzhi\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("paperhanger", "{\"term\":\"paperhanger\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From \u0027\u0027 + \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Someone who puts wallpaper on walls\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1942\u0027\u0027, Elliot Paul, \u0027The Last Time I Saw Paris\u0027, Sickle Moon 2001, p. 61\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"No one in the street was aware than an Austrian \u0027\u0027paperhanger\u0027\u0027 named Shickelgruber, and calling himself Hitler, had been arrested in Munich and thrown into jail\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"A con man who passes bad cheques or counterfeit paper money; a forger, a con artist\", \"priority\":4}]}, \"synonyms\":{}}");
 
 	add("paperknife", "{\"term\":\"paperknife\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|paper|knife|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A knife for cutting paper or opening envelopes\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -20,11 +22,15 @@ package org.swtk.commons.dict.wiktionary.generated.p.a.p;  import java.util.Hash
 
 	add("papers", "{\"term\":\"papers\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Official documents or identification, as a passport\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"He lost his \u0027\u0027papers\u0027\u0027 while travelling and had a hard time getting home\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("paperwork", "{\"term\":\"paperwork\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|paper|work|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"routine work involving written document\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"written document\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"excessive paperwork, busy work, red tape\", \"priority\":3}]}, \"synonyms\":{}}");
+
 	add("papillomavirus", "{\"term\":\"papillomavirus\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{compound|lang\u003den|papilloma|virus}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any variety of virus which causes wart\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"now specifically, a member of the genus\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("papillon", "{\"term\":\"papillon\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\", \"Latin\"], \"text\":\"From French \u0027\u0027 (papillon) from Latin \u0027papilio\u0027 (butterfly, moth)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A breed of small dog with large ears; a dog of that breed\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2014\u0027\u0027 November 29, Rachel Nuwer, \u0027Lassie gets an upgrade\u0027, \u0027w:New New Scientist\u0027, Issue 2997, page 47\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"The researchers tested various breeds, including border collies, golden retrievers, pit bulls, labradors and even Jackson\u0027s own little \u0027\u0027papillon\u0027\u0027.Category:en:Dogs\", \"priority\":3}]}, \"synonyms\":{}}");
 
 	add("papism", "{\"term\":\"papism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From \u0027papist\u0027 ()\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the Roman Catholic faith\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("papyrography", "{\"term\":\"papyrography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The process of making copies of documents with a papyrograph\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("papyrology", "{\"term\":\"papyrology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of ancient texts written on papyrus\", \"priority\":1}]}, \"synonyms\":{}}");
 

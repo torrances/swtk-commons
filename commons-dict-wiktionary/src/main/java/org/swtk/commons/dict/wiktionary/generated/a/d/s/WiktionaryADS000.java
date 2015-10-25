@@ -1,5 +1,7 @@
 package org.swtk.commons.dict.wiktionary.generated.a.d.s;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryADS000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("adsorbate", "{\"term\":\"adsorbate\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From \u0027adsorb\u0027.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a substance which has been adsorbed\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("adsorptiveness", "{\"term\":\"adsorptiveness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The property of being adsorptive, of tending toward or being characterized by adsorption\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("adspeak", "{\"term\":\"adspeak\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|ad|speak|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The sort of language used in advertisements, typified by bold claims and optimistic encouragement\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

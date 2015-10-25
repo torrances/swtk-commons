@@ -8,4 +8,8 @@ package org.swtk.commons.dict.wiktionary.generated.t.e.p;  import java.util.Hash
 
 	add("tepidness", "{\"term\":\"tepidness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|tepid|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The property of being tepid\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("tepor", "{\"term\":\"tepor\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"lukewarmness, tepidness, moderate warmth\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("teprenone", "{\"term\":\"teprenone\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A drug used for the treatment of gastric ulcers\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

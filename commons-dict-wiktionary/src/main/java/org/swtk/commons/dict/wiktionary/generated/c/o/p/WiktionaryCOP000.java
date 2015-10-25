@@ -2,7 +2,13 @@ package org.swtk.commons.dict.wiktionary.generated.c.o.p;  import java.util.Hash
 
 	add("copal", "{\"term\":\"copal\", \"etymology\":{\"influencers\":[{}], \"languages\":[\"English\", \"Spanish\", \"classical nahuatl\"], \"text\":\"From Spanish \u0027copal\u0027 from Classical nahuatl \u0027copalli\u0027 (incense)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A resinous exudation from various tropical trees used chiefly in making varnishes and printing ink.Category:en:Gums and resins\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("copacking", "{\"term\":\"copacking\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From \u0027\u0027 + \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The manufacture and packaging of a product under contract to a client (and having the client\u0027s name/brand on the packaging\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("copartner", "{\"term\":\"copartner\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|co|partner|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A joint partner (in a business\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("copenhagen", "{\"term\":\"copenhagen\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The capital city of Denmark\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"One of the former counties of Denmark\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A community in Louisiana\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"A children\u0027s game in which one player is enclosed by a circle of others holding a rope. \u0026lt;!--W1913--\u0026gt\", \"priority\":4}]}, \"synonyms\":{}}");
+
+	add("copernicanism", "{\"term\":\"copernicanism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Belief in, or advocacy of the heliocentric model of the heavens\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("copha", "{\"term\":\"copha\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A vegetable shortening made of coconut oil used in cooking\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -13,6 +19,8 @@ package org.swtk.commons.dict.wiktionary.generated.c.o.p;  import java.util.Hash
 	add("copoiesis", "{\"term\":\"copoiesis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|co|poiesis|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"creation together; a joint process of creation\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("copolymer", "{\"term\":\"copolymer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|co|polymer|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a polymer derived from more than one species of monomer\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("copperas", "{\"term\":\"copperas\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"iron(II) sulfate\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1843\u0027\u0027, Thomas Carlyle, \u0027:w:Past and Present Past and Present\u0027, book 2, ch. 6, \u0027Monk Samson\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"…] what a change has introduced itself everywhere into human affairs! How human affairs shall now circulate everywhere not healthy life-blood in them, but, as it were, a detestable \u0027\u0027copperas\u0027\u0027 banker’s ink\", \"priority\":3}]}, \"synonyms\":{}}");
 
 	add("copperleaf", "{\"term\":\"copperleaf\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|copper|leaf|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a shrub with shiny bronze-green leaves and small green flowers\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Other similar-looking species of \u0027Acalypha\", \"priority\":2}]}, \"synonyms\":{}}");
 
@@ -42,7 +50,11 @@ package org.swtk.commons.dict.wiktionary.generated.c.o.p;  import java.util.Hash
 
 	add("copropraxia", "{\"term\":\"copropraxia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An involuntary impulse to make obscene gestures\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("coprosmia", "{\"term\":\"coprosmia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A form of cacosmia in which the odour of feces is imagined\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("copter", "{\"term\":\"copter\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"clipping|Clipping of \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A helicopter\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2005\u0027\u0027, \u0027w:Sin City Sin City\u0027 (the film\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Shellie shouts something I can\u0027t quite make out over the racket of a passing police \u0027\u0027copter\", \"priority\":3}]}, \"synonyms\":{}}");
+
+	add("coptic", "{\"term\":\"coptic\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|Copt|ic|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The Coptic language of Egypt\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("copulation", "{\"term\":\"copulation\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"middle french (ca. 1400-1600)\"], \"text\":\"From Middle french (ca. 1400-1600) \u0027copulation\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The act of coupling or joining; union; conjunction\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Sexual procreation between a man and a woman or transfer of the sperm from male to female; usually applied to the mating process in nonhuman animals; coitus; coition\", \"priority\":2}]}, \"synonyms\":{}}");
 

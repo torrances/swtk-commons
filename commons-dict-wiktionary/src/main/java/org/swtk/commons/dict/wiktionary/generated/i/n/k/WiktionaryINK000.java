@@ -6,6 +6,8 @@ package org.swtk.commons.dict.wiktionary.generated.i.n.k;  import java.util.Hash
 
 	add("inkdot", "{\"term\":\"inkdot\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|ink|dot|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A small spot of ink\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("inkiness", "{\"term\":\"inkiness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The condition of being inky\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("inkjet", "{\"term\":\"inkjet\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|ink|jet|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A device, particularly one used in the printing of documents, which propels tiny droplets of ink to the paper\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"An inkjet printer\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Inkjets\u0027\u0027 aren\u0027t as expensive as they used to be\", \"priority\":3}]}, \"synonyms\":{}}");
 
 	add("inkspot", "{\"term\":\"inkspot\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|ink|spot|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A spot of ink\", \"priority\":1}]}, \"synonyms\":{}}");

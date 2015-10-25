@@ -10,6 +10,10 @@ package org.swtk.commons.dict.wiktionary.generated.s.e.c;  import java.util.Hash
 
 	add("secretase", "{\"term\":\"secretase\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|secrete|ase|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An enzyme that \u0026quot;snips\u0026quot; pieces off a longer protein that is embedded in the cell membrane\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("secretin", "{\"term\":\"secretin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A peptide hormone, secreted by the duodenum, that serves to regulate its acidity\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("secretiveness", "{\"term\":\"secretiveness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or characteristic of being secretive\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("secretome", "{\"term\":\"secretome\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|secrete|ome|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"That part of a proteome consisting of proteins secreted from a cell\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("sectator", "{\"term\":\"sectator\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027sectātor\u0027 from \u0027sectari\u0027 frequentative of \u0027sequi\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A follower, a disciple; someone who follows a particular school; partisan\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1662\u0027\u0027, Thomas Salusbury, \u0027Galileo\u0027s Dialogue Concerning the Two Chief World Systems\u0027, II\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"But that the Earth, Water, Air, are of a nature equally constituted immoveable about the centre, is it not the opinion of your self, Aristotle, Ptolomy, and all their \u0027\u0027sectators\", \"priority\":3}]}, \"synonyms\":{}}");

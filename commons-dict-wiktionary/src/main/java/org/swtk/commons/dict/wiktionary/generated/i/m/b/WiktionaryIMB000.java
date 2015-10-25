@@ -2,4 +2,6 @@ package org.swtk.commons.dict.wiktionary.generated.i.m.b;  import java.util.Hash
 
 	add("imbiber", "{\"term\":\"imbiber\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|imbibe|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"one who imbibes, who drinks, especially alcoholic beverages\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("imbros", "{\"term\":\"imbros\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027ἴμβρος\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"island of Turkey in the north-eastern Aegean Sea\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

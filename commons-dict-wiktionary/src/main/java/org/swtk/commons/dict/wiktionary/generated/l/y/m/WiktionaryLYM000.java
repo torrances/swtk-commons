@@ -6,4 +6,8 @@ package org.swtk.commons.dict.wiktionary.generated.l.y.m;  import java.util.Hash
 
 	add("lymphocytotoxicity", "{\"term\":\"lymphocytotoxicity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|lympho|cytotoxicity|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The condition of being lymphocytotoxic\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("lymphoproliferation", "{\"term\":\"lymphoproliferation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the excessive production of lymphocytes\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("lymphoreticulosis", "{\"term\":\"lymphoreticulosis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"reticulosis of the lymph nodes\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

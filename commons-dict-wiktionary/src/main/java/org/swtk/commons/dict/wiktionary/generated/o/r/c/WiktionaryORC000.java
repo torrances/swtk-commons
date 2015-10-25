@@ -12,4 +12,8 @@ package org.swtk.commons.dict.wiktionary.generated.o.r.c;  import java.util.Hash
 
 	add("orchidologist", "{\"term\":\"orchidologist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|orchid|alt1\u003dorchido-|logist|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who studies orchids\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("orchidology", "{\"term\":\"orchidology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|orchid|ology|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of orchids\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("orciprenaline", "{\"term\":\"orciprenaline\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A bronchodilator used in the treatment of asthma\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

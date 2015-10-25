@@ -18,6 +18,8 @@ package org.swtk.commons.dict.wiktionary.generated.d.a.c;  import java.util.Hash
 
 	add("dactyl", "{\"term\":\"dactyl\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027δάκτυλος\u0027 (a finger) three bones of the finger corresponding to three syllables.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A poetical foot of three syllables (— ~ ~), one long followed by two short, or one accented followed by two unaccented\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("dactylitis", "{\"term\":\"dactylitis\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"Ancient greek (to 1453)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Inflammation of an entire digit (a finger or toe\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("dactylography", "{\"term\":\"dactylography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|dactylo|graphy|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the science of using fingerprints to uniquely identify someone\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("dactylology", "{\"term\":\"dactylology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The use of the fingers and hands to communicate ideas, especially by the deaf\", \"priority\":1}]}, \"synonyms\":{}}");

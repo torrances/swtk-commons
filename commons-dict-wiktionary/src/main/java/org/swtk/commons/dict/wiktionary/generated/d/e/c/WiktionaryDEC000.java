@@ -38,6 +38,8 @@ package org.swtk.commons.dict.wiktionary.generated.d.e.c;  import java.util.Hash
 
 	add("decasulfide", "{\"term\":\"decasulfide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A sulfide having ten atoms of sulfur per molecule\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("decasyllabicity", "{\"term\":\"decasyllabicity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The property of having ten syllables\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("decathlete", "{\"term\":\"decathlete\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|deca|athlete|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"an athlete who competes in a decathlon\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("decease", "{\"term\":\"decease\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"old french (842-ca. 1400)\"], \"text\":\"From Old french (842-ca. 1400) \u0027deces\u0027 (French \u0027décès\u0027 .\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Departure, especially departure from this life\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -96,6 +98,8 @@ package org.swtk.commons.dict.wiktionary.generated.d.e.c;  import java.util.Hash
 
 	add("decisiveness", "{\"term\":\"decisiveness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|decisive|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or quality of being decisive\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("decking", "{\"term\":\"decking\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The material from which a deck is made\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("deckle", "{\"term\":\"deckle\", \"etymology\":{\"influencers\":[], \"languages\":[\"German\", \"English\"], \"text\":\"German \u0027deckel\u0027 diminutive of \u0027decke\u0027 (covering)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A paper-making instrument which limits the pulp, and consequently the size of the resulting paper\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The fattier point-cut end of a brisket of beef\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("decklid", "{\"term\":\"decklid\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|deck|lid|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The cover over the trunk or boot of a motor vehicle\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -103,6 +107,8 @@ package org.swtk.commons.dict.wiktionary.generated.d.e.c;  import java.util.Hash
 	add("decklist", "{\"term\":\"decklist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|deck|list|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A list of the cards in a player\u0027s deck, in a collectible card game\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("declaimer", "{\"term\":\"declaimer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"one who declaims\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("declan", "{\"term\":\"declan\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"anglicized form of an Irish Gaelic saint\u0027s name Deaglán\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("declarator", "{\"term\":\"declarator\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A legal declaration\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A construct in a programming language that makes a declaration\", \"priority\":2}]}, \"synonyms\":{}}");
 
@@ -122,6 +128,8 @@ package org.swtk.commons.dict.wiktionary.generated.d.e.c;  import java.util.Hash
 
 	add("declivity", "{\"term\":\"declivity\", \"etymology\":{\"influencers\":[{}], \"languages\":[\"English\", \"French\", \"Latin\"], \"text\":\"1610s, from French \u0027déclivité\u0027 from Latin \u0027declivitatem\u0027 {{m|la|dēclīvitās}},from {{m|la|dēclivis||a sloping downward}}, from \u0027de\u0027 (down) + {{m|la|clīvus||a slope}}, from Proto-indo-european {{m|ine-pro|*ḱleywo-}}, from Proto-indo-european {{m|ine-pro|*ḱley-||to lean}} (English \u0027lean\u0027 .\u0026lt;ref\u0026gt;{{R:Online Etymology Dictionary|declivity}}\u0026lt;/ref\u0026gt;\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the downward slope of a hil\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1899\u0027\u0027, Joseph Conrad, \u0027s:Heart of Heart of Darkness\u0027, s:Heart of Darkness/Section section\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A rocky cliff appeared, mounds of turned–up earth by the shore, houses on a hill, others with iron roofs, amongst a waste of excavations, or hanging to the \u0027\u0027declivity\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"a downward bend in a path\", \"priority\":4}]}, \"synonyms\":{}}");
 
+	add("decluttering", "{\"term\":\"decluttering\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{confix|de|clutter|ing|lang\u003den}}. Compare \u0027declutter\u0027 (attested later).\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The fact or process of removing clutter; tidying, removing unwanted or messy items from a given place\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2010\u0027\u0027, Oliver Burkeman, \u0027The Guardian\u0027, 2 October\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"The \u0027\u0027decluttering\u0027\u0027 trend is nothing new, and has much to recommend it, but every week now seems to bring a fresh example of what ascetics might once have called the renunciation of possessions […\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"2014\u0027\u0027, Lauren Rosenfeld and Melva Green, \u0027Breathing Room\u0027, p. 14\", \"priority\":4},{\"upperType\":\"NOUN\", \"text\":\"Decluttering\u0027\u0027 is an act of compassion—for yourself and for others, because it frees you from draining influences so you can give yourself over fully to what you love and care for\", \"priority\":5}]}, \"synonyms\":{}}");
+
 	add("décor", "{\"term\":\"décor\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{borrowing|fr|décor|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Category:English terms spelled with É\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("decoy", "{\"term\":\"decoy\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Dutch\"], \"text\":\"From Dutch {{compound|de|kooi|lang\u003dnl|nocat\u003d1}}, literally \u0026quot;The Cage\u0026quot;. Possibly related to verb {{m|en|coy}} (which itself may have been influenced by decoy).\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person or object meant to lure something to danger\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A real or fake animal used by hunters to lure game\", \"priority\":2}]}, \"synonyms\":{}}");
@@ -135,6 +143,8 @@ package org.swtk.commons.dict.wiktionary.generated.d.e.c;  import java.util.Hash
 	add("decolorizer", "{\"term\":\"decolorizer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|decolorize|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"That which decolorizes\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("decomino", "{\"term\":\"decomino\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{affix|en|deca-|alt1\u003ddec(a)-|polyomino|alt2\u003d(poly)omino}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"lt;!--Note: there is no direct Wikipedia link--\u0026gt\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A polyomino made up of ten squares\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("decommunization", "{\"term\":\"decommunization\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The act or process of decommunizing\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("decompaction", "{\"term\":\"decompaction\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|de|compaction|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The act or process of making something less compact; often specifically the reversal of previous compactio\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -188,6 +198,8 @@ package org.swtk.commons.dict.wiktionary.generated.d.e.c;  import java.util.Hash
 
 	add("decryption", "{\"term\":\"decryption\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"Verbal noun of \u0027decrypt\u0027 from \u0027de-\u0027 + \u0027crypt\u0027 (only attested in compounds, such as \u0027cryptogram\u0027 from Ancient greek (to 1453) \u0027κρυπτός\u0027 (hidden)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The process reversing an encryption, i.e. the process which converts encrypted data into its original form\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("decubitis", "{\"term\":\"decubitis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Inflammations cause by a reclined position of the body; it often refers to the complications of bed-ridden patients such as bed sores\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("decumbence", "{\"term\":\"decumbence\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The act or posture of lying down\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("decumbency", "{\"term\":\"decumbency\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"decumbenc\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Sir Thomas Brown\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"The ancient manner of \u0027\u0027decumbency\", \"priority\":3}]}, \"synonyms\":{}}");
@@ -197,5 +209,7 @@ package org.swtk.commons.dict.wiktionary.generated.d.e.c;  import java.util.Hash
 	add("decurion", "{\"term\":\"decurion\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027decuriō\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An officer in charge of ten men in the ancient Roman army\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A member of local government in ancient Rome\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("decurionate", "{\"term\":\"decurionate\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"Latin \u0027decurionatus\u0027 from \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The position or office of a decurion\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("decycling", "{\"term\":\"decycling\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The removal of cycles from a graph\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

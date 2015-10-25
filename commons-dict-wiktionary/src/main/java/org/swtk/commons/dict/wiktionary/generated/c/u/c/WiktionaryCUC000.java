@@ -4,4 +4,6 @@ package org.swtk.commons.dict.wiktionary.generated.c.u.c;  import java.util.Hash
 
 	add("cucumber", "{\"term\":\"cucumber\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"old french (842-ca. 1400)\", \"Latin\"], \"text\":\"From Old french (842-ca. 1400) \u0027cocombre\u0027 (French \u0027concombre\u0027 , from Latin \u0027cucumis\u0027 whose ablative singular is \u0027cucumere\u0027 Probably of Pre-Italic origin.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A vine in the gourd family, \u0027Cucumis sativus\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The edible fruit of this plant, having a green rind and crisp white flesh\", \"priority\":2}]}, \"synonyms\":{\"list\":[{\"text\":\"cuke\", \"synonymQualifier\":\"INFORMAL\"}]}}");
 
+	add("cucurbitane", "{\"term\":\"cucurbitane\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An isomer of lanostane\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

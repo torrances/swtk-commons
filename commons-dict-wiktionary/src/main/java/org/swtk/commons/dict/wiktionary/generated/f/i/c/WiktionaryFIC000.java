@@ -8,4 +8,6 @@ package org.swtk.commons.dict.wiktionary.generated.f.i.c;  import java.util.Hash
 
 	add("fictiveness", "{\"term\":\"fictiveness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|fictive|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality of being fictive\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("fictography", "{\"term\":\"fictography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A fictionalized biography; a biography written about a fictional character. For example, \u0027w:Gulliver\u0027s Gulliver\u0027s Travels\u0027 written by w:Jonathan Jonathan Swift but presented as being written by Lemuel Gulliver, the novel\u0027s main character\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

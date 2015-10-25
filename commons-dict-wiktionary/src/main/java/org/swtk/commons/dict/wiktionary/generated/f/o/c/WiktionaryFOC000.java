@@ -4,4 +4,6 @@ package org.swtk.commons.dict.wiktionary.generated.f.o.c;  import java.util.Hash
 
 	add("focuses", "{\"term\":\"focuses\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Category:English plurals ending in \u0026quot;-es\u0026quot\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("focussing", "{\"term\":\"focussing\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The action of the verb \u0027\u0027to focus\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

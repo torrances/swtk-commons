@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.d.o.i;  import java.util.Hash
 
 	add("doilem", "{\"term\":\"doilem\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A stupid person, an idiot, a fool or halfwit\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("doingness", "{\"term\":\"doingness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of doing something; action\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("doings", "{\"term\":\"doings\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"regular activitie\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"social event\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"sewage\", \"priority\":3}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -8,6 +8,12 @@ package org.swtk.commons.dict.wiktionary.generated.l.o.v;  import java.util.Hash
 
 	add("lovechild", "{\"term\":\"lovechild\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A child born to parents who aren\u0027t married to one another\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("lovecraft", "{\"term\":\"lovecraft\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"w:H.P. H.P. Lovecraft (1890-1937), an American author of fantasy, horror and science fiction, noted for combining these three genres within single narratives. Lovecraft\u0027s works have become highly important and influential among writers and fans of modern horror fiction\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The literature written by H. P. Lovecraft\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A surname\", \"priority\":3}]}, \"synonyms\":{}}");
+
+	add("loveint", "{\"term\":\"loveint\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Parody of \u0027sigint\u0027 \u0027humint\u0027 etc., suggesting \u0026quot;love intelligence\u0026quot;.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The use of government espionage tools or techniques to investigate one\u0027s love interests\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("lovelessness", "{\"term\":\"lovelessness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|loveless|ness|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or condition of being loveless; lack of love\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("loveliness", "{\"term\":\"loveliness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|lovely|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The property of being lovely, of attractiveness, beauty, appearing to be lovable\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The result of being lovely\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("lovesickness", "{\"term\":\"lovesickness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|lovesick|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Quality or property of being lovesick\", \"priority\":1}]}, \"synonyms\":{}}");

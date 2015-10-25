@@ -4,7 +4,11 @@ package org.swtk.commons.dict.wiktionary.generated.g.u.l;  import java.util.Hash
 
 	add("gules", "{\"term\":\"gules\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"middle french (ca. 1400-1600)\", \"old french (842-ca. 1400)\"], \"text\":\"From Old french (842-ca. 1400) \u0027geule\u0027 (animal’s mouth, throat) via Middle french (ca. 1400-1600) \u0027geules\u0027 Compare with French \u0027gueules\u0027 and Spanish \u0027gules\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The blazoning term for red, e.g. on a coat of arms, typically represented in engraving by vertical parallel lines\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("gulgul", "{\"term\":\"gulgul\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Hindi\"], \"text\":\"Hindi\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A cement made in India from seashells pulverized and mixed with oil, and spread over a ship\u0027s bottom to prevent worms from boring into it\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("gullywasher", "{\"term\":\"gullywasher\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|gully|washer|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An intense, but usually short-lived, rainstorm\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("gulofuranose", "{\"term\":\"gulofuranose\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The furanose form of gulose\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("gulper", "{\"term\":\"gulper\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|gulp|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who gulps\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1989\u0027\u0027, William R. Hunt, \u0027Body love: the amazing career of Bernarr Macfadden\u0027 (page 28\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Believers in Fletcher\u0027s system were anything but quick shovelers and \u0027\u0027gulpers\u0027\u0027 of food\", \"priority\":3}]}, \"synonyms\":{}}");
 

@@ -4,7 +4,15 @@ package org.swtk.commons.dict.wiktionary.generated.e.c.h;  import java.util.Hash
 
 	add("echocardiography", "{\"term\":\"echocardiography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|echo|cardiography|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The use of ultrasound to produce images of the heart\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("echocardiology", "{\"term\":\"echocardiology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"echocardiograph\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("echoencephalography", "{\"term\":\"echoencephalography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The detailing of interfaces in the brain by means of ultrasonic waves\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("echoer", "{\"term\":\"echoer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|echo|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who, or that which, echoes or repeats something back\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("echographia", "{\"term\":\"echographia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A form of agraphia in which one can write from dictation or copy but cannot do original writing\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("echography", "{\"term\":\"echography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|echo|graphy|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The use of ultrasound as a diagnostic aid\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("echokinesis", "{\"term\":\"echokinesis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|echo|kinesis|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the compulsion or the act of imitating movements of others\", \"priority\":1}]}, \"synonyms\":{}}");
 

@@ -2,4 +2,6 @@ package org.swtk.commons.dict.wiktionary.generated.h.i.k;  import java.util.Hash
 
 	add("hiker", "{\"term\":\"hiker\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who hikes, especially frequently\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("hiking", "{\"term\":\"hiking\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Compound noun of \u0027hill walking\u0027, British origination, c. 1920s* \u0027\u00272012\u0027\u0027, Jacquelin Winspear, \u0027Elegy for Eddie\u0027, p. 248.*: After the war, however, in the early 1920s, the government had launched a series of advertisements aimed at getting the population out into the fresh air, encouraging people to go hill walking, which some master of the slogan had abbreviated to \u0026quot;\u0027\u0027hiking\u0027\u0027\u0026quot;.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"walking in the countryside for pleasure or sport\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

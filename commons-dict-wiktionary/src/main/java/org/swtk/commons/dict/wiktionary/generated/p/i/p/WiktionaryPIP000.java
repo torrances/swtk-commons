@@ -1,5 +1,7 @@
 package org.swtk.commons.dict.wiktionary.generated.p.i.p;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryPIP000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("pipes", "{\"term\":\"pipes\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{sense|vocal capacity}} As if one\u0027s lungs were composed of pipe-works.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A single pipe organ\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"One\u0027s vocal capacity\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Biceps\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("pipeclay", "{\"term\":\"pipeclay\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"catlinite\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("pipelayer", "{\"term\":\"pipelayer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|pipe|layer|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who lays conducting pipes in the ground, for water, gas, etc\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A politician who works in secret\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("piperonylbutoxide", "{\"term\":\"piperonylbutoxide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|piperonyl|butoxide|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A semisynthetic derivative of safrole that is used to enhance the potency of certain pesticides\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -14,8 +16,12 @@ package org.swtk.commons.dict.wiktionary.generated.p.i.p;  import java.util.Hash
 
 	add("piphilology", "{\"term\":\"piphilology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|pi|philology|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The memorization of the digits of pi as a hobby\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("pipil", "{\"term\":\"pipil\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The Uto-Aztecan language, descended from Nahuatl, spoken by an indigenous people of El Salvador\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A group of people indigenous to western El Salvador\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("pipit", "{\"term\":\"pipit\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of various small passerine birds, mainly from the genus \u0027Anthus\u0027, that are often drab, ground feeding insectivores of open country\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("pipistrelle", "{\"term\":\"pipistrelle\", \"etymology\":{\"influencers\":[{}], \"languages\":[\"English\", \"French\", \"Italian\", \"Latin\"], \"text\":\"From French \u0027pipistrelle\u0027 from Italian \u0027pipistrello\u0027 (bat) variant of \u0027\u0027 from Latin \u0027vespertilio\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of various species of bat of the genus\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("pipobroman", "{\"term\":\"pipobroman\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular drug used in the treatment of blood disorders\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

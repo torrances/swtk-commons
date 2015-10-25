@@ -1,10 +1,14 @@
 package org.swtk.commons.dict.wiktionary.generated.a.z.o;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryAZO000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("azobisformamide", "{\"term\":\"azobisformamide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"azodicarbonamide\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("azobisisobutyronitrile", "{\"term\":\"azobisisobutyronitrile\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An organic compound often used as a foamer in plastics and rubber and as a radical initiator\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("azocarmine", "{\"term\":\"azocarmine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|azo|carmine|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular red dye\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("azocoupling", "{\"term\":\"azocoupling\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|azo|coupling|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An organic reaction between a diazonium compound and another aromatic compound that produces an azo compound\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("azodicarbonamide", "{\"term\":\"azodicarbonamide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An organic chemical, a yellow to orange red, odorless, crystalline powder, used in food industry as a food additive, a flour bleaching agent and improving agent and in foaming plastics\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("azolitmin", "{\"term\":\"azolitmin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A purplish-red material, of uncertain composition, that is the principal colouring matter of litmus\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("azoospermia", "{\"term\":\"azoospermia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|a|zoospermia|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The absence of live sperm in the semen\", \"priority\":1}]}, \"synonyms\":{}}");
 

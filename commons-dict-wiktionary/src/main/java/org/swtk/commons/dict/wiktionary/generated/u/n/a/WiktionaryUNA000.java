@@ -1,12 +1,18 @@
 package org.swtk.commons.dict.wiktionary.generated.u.n.a;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryUNA000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("unableness", "{\"term\":\"unableness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unable|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality of being unable\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("unacceptability", "{\"term\":\"unacceptability\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The property of being unacceptable\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("unadvisedness", "{\"term\":\"unadvisedness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unadvised|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality of being inadvisable\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unagi", "{\"term\":\"unagi\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Japanese\"], \"text\":\"From Japanese\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A type of sushi made from freshwater eel\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("unairworthiness", "{\"term\":\"unairworthiness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unairworthy|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or quality of being unairworthy\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("unalikeness", "{\"term\":\"unalikeness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unalike|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or quality of being unalike\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("unalterableness", "{\"term\":\"unalterableness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unalterable|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality or state or not being alterable\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("unamiability", "{\"term\":\"unamiability\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality of being unamiable\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("unamiableness", "{\"term\":\"unamiableness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unamiable|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality of being unamiable\", \"priority\":1}]}, \"synonyms\":{}}");
 

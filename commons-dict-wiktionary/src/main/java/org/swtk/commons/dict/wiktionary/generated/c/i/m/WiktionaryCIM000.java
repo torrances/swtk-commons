@@ -4,4 +4,6 @@ package org.swtk.commons.dict.wiktionary.generated.c.i.m;  import java.util.Hash
 
 	add("cimbrian", "{\"term\":\"cimbrian\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A member of a Germanic people who live in Bavaria and parts of North-East Italy\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("cimemoxin", "{\"term\":\"cimemoxin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A hydrazine-derived antidepressant, never marketed\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

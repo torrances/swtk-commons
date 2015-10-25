@@ -2,7 +2,11 @@ package org.swtk.commons.dict.wiktionary.generated.r.e.e;  import java.util.Hash
 
 	add("reedfish", "{\"term\":\"reedfish\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|reed|fish|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A fish related to the bichir\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("reeding", "{\"term\":\"reeding\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Decorative moulding of parallel strips that resemble reeds\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Milling on the edge of a coin\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("reedist", "{\"term\":\"reedist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|reed|ist|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A musician who plays reed instruments (usually more than one\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("reelin", "{\"term\":\"reelin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|reel|in|lang\u003den}}, from the abnormal gait of \u0027\u0027 mice, later found to be deficient in this protein.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A protein that helps to regulate processes of neuronal migration and positioning in the developing brain\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("reembarkation", "{\"term\":\"reembarkation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|re|embarkation|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"embarkation again or anew\", \"priority\":1}]}, \"synonyms\":{}}");
 

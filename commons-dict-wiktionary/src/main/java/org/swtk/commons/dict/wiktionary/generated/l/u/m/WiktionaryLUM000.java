@@ -4,6 +4,12 @@ package org.swtk.commons.dict.wiktionary.generated.l.u.m;  import java.util.Hash
 
 	add("lumberjack", "{\"term\":\"lumberjack\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From lumber and jack.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a person whose work is to fell trees\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"a lumberjacket\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("lumefantrine", "{\"term\":\"lumefantrine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Category:en:DrugsAn antimalarial drug having the chemical formula C\u0026lt;sub\u0026gt;30\u0026lt;/sub\u0026gt;H\u0026lt;sub\u0026gt;32\u0026lt;/sub\u0026gt;Cl\u0026lt;sub\u0026gt;3\u0026lt;/sub\u0026gt;NO\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("luminal", "{\"term\":\"luminal\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A sedative\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("luminism", "{\"term\":\"luminism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An American artistic style of the nineteenth century, characterised by effects of light in landscapes\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("lummox", "{\"term\":\"lummox\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A clumsy, stupid person; an awkward bungler\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"You\u0027ve broken the plates, you great lummox\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("lumpectomy", "{\"term\":\"lumpectomy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|lump|ectomy|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The surgical removal of a tumour or cyst from a breast\", \"priority\":1}]}, \"synonyms\":{}}");

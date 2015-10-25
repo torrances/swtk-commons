@@ -4,7 +4,11 @@ package org.swtk.commons.dict.wiktionary.generated.l.e.x;  import java.util.Hash
 
 	add("lexicography", "{\"term\":\"lexicography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|lexico|graphy|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The art or craft of compiling, writing and editing dictionaries\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The scholarly discipline of analyzing and describing the semantic, syntagmatic and paradigmatic relationships within the lexicon (vocabulary) of a language and developing theories of dictionary components and structures linking the data in dictionaries\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("lexiconophilia", "{\"term\":\"lexiconophilia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The love of dictionaries and other books of words\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("lexicostatistics", "{\"term\":\"lexicostatistics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|lexico|statistics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Statistical estimation of the degree of linguistic divergence between two languages, based on the proportion of cognates\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("lexicosyntax", "{\"term\":\"lexicosyntax\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"lexis and syntax considered together\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("lexigram", "{\"term\":\"lexigram\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|lexi|gram|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A symbol that represents a word but is not necessarily indicative of the object referenced by the word, used in studies of communication\", \"priority\":1}]}, \"synonyms\":{}}");
 

@@ -1,6 +1,16 @@
 package org.swtk.commons.dict.wiktionary.generated.a.m.y;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryAMY000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("amyl", "{\"term\":\"amyl\", \"etymology\":{\"influencers\":[{}], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027amylum\u0027 (starch) + \u0027\u0027 Compare with \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"pentyl\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("amyelia", "{\"term\":\"amyelia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The congenital lack of a spinal cord\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("amygdalin", "{\"term\":\"amygdalin\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) {{m|grc|ἀμυγδάλη||almond}} {{suffix||in|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a glycoside of benzaldehyde and hydrogen cyanide found in bitter almonds, and in the kernels of some other fruit\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("amylmetacresol", "{\"term\":\"amylmetacresol\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An antiseptic used to treat minor infections of the mouth and throat\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("amylocaine", "{\"term\":\"amylocaine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|amyl|o|caine|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A synthetic local anesthetic, the first to have been developed\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("amylolysis", "{\"term\":\"amylolysis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The conversion of starch into sugar by the action of acids or enzymes such as amylase\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("amylum", "{\"term\":\"amylum\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\", \"Latin\"], \"text\":\"From Latin \u0027amylum\u0027 from Ancient greek (to 1453) \u0027ἄμυλον\u0027 from {{prefix|ἀ|μύλη|t1\u003dprivative|t2\u003dmill|lang\u003dgrc|nocat\u003d1}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"starch\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("amyotonia", "{\"term\":\"amyotonia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|a|myotonia|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Lack of normal muscular tension or tonus, especially when congenital\", \"priority\":1}]}, \"synonyms\":{}}");
 

@@ -6,6 +6,8 @@ package org.swtk.commons.dict.wiktionary.generated.r.o.t;  import java.util.Hash
 
 	add("roton", "{\"term\":\"roton\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|rotation|on|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quantum of rotation in a superfluid\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("rotodiffusion", "{\"term\":\"rotodiffusion\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"rotatory (gyrokinetic) diffusion\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("rotoscope", "{\"term\":\"rotoscope\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A technique in which animators trace live live-action movement frame by frame\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("rotter", "{\"term\":\"rotter\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A worthless, despicable person\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A scoundrel\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A non-accredited journalist\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"date\u003d31 January url\u003dhttp://www.theguardian.com/football/2015/jan/31/chelsea-manchester-city-premier-league-match-report|passage\u003dpparently it was the fault of Jamie Redknapp and all the other \u0027\u0027rotters\u0027\u0027 in the media that Diego Costa was suspended and Mourinho, in turn, was applying his own ban\", \"priority\":4}]}, \"synonyms\":{}}");

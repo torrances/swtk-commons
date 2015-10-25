@@ -6,7 +6,15 @@ package org.swtk.commons.dict.wiktionary.generated.d.i.h;  import java.util.Hash
 
 	add("dihydride", "{\"term\":\"dihydride\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any hydride containing two atoms of hydrogen per molecule\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("dihydro", "{\"term\":\"dihydro\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Two hydrogen atoms in a molecule\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("dihydroartemisinin", "{\"term\":\"dihydroartemisinin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|di-|hydro-|artemisinin|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An antimalarial drug, the active metabolite of all artemisinin compounds, also available as a drug in itself\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("dihydrocodeine", "{\"term\":\"dihydrocodeine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular narcotic painkiller\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("dihydrogen", "{\"term\":\"dihydrogen\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The divalent radical formed from two separate hydrogen atoms or ions\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Describing a dihydrogen bond\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("dihydroxo", "{\"term\":\"dihydroxo\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Two hydroxy groups in a molecule\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("dihydroxyphenylalanine", "{\"term\":\"dihydroxyphenylalanine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Abbreviated as\u0027: dopa or DOPA\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Either of two enantiomers of a derivative of the amino acid tyrosine\", \"priority\":2}]}, \"synonyms\":{}}");
 

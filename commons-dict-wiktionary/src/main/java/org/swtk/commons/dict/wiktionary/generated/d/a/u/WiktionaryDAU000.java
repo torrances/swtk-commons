@@ -4,6 +4,8 @@ package org.swtk.commons.dict.wiktionary.generated.d.a.u;  import java.util.Hash
 
 	add("daughterboard", "{\"term\":\"daughterboard\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|daughter|board|lang\u003den}} (modelled on \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A circuit board that is an extension of a motherboard or other card\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("dauntlessness", "{\"term\":\"dauntlessness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The characteristic of being dauntless; fearlessness\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("dauphinoise", "{\"term\":\"dauphinoise\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"French \u0027dauphinoise\u0027 from the w:Dauphiné|Dauphiné area of France, near the Italian border, whence this dish comes.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A dish of sliced potatoes baked in milk, cream and cheese. It is also known as \u0027w:gratin gratin dauphinois\u0027.Category:en:Foods\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("daurade", "{\"term\":\"daurade\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Spanish\", \"French\", \"Latin\"], \"text\":\"From French \u0027daurade\u0027 itself borrowed, through the intermediate of an Italian text, from Spanish \u0027dorada\u0027 partially from Latin {{m|la|aurāta}}, and influenced by the verb \u0027dorar\u0027 (gild, give a golden color) compare \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"sea brea\", \"priority\":1}]}, \"synonyms\":{}}");

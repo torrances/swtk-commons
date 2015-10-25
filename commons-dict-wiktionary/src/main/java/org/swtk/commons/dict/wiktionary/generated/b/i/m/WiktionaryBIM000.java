@@ -10,4 +10,6 @@ package org.swtk.commons.dict.wiktionary.generated.b.i.m;  import java.util.Hash
 
 	add("bimmy", "{\"term\":\"bimmy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|perhaps from bum|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A sennet whip\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("bimoraicity", "{\"term\":\"bimoraicity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The property of having two morae\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

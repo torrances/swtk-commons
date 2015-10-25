@@ -6,6 +6,8 @@ package org.swtk.commons.dict.wiktionary.generated.h.a.p;  import java.util.Hash
 
 	add("haplogroup", "{\"term\":\"haplogroup\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|haplo|group|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A group of closely related haplotypes\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("haploidy", "{\"term\":\"haploidy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of being haploid\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("haplology", "{\"term\":\"haplology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|haplo|logy|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"from Latin )\u0026lt;br\u0026gt;English pronunciation of as (not\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The process of deleting one of two almost identical syllables within a word\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"An instance of deleting one of two almost identical syllables within a word\", \"priority\":3}]}, \"synonyms\":{}}");
 
 	add("haplon", "{\"term\":\"haplon\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|haplo|on|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A hypothetical fundamental particle\", \"priority\":1}]}, \"synonyms\":{}}");

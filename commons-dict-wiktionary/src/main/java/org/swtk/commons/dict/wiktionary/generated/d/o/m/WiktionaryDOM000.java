@@ -18,4 +18,6 @@ package org.swtk.commons.dict.wiktionary.generated.d.o.m;  import java.util.Hash
 
 	add("dominionism", "{\"term\":\"dominionism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|dominion|ism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A tendency among some conservative Christians, especially in the USA, to seek influence or control over secular civil government through political action\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("domotics", "{\"term\":\"domotics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Contraction of \u0027domestic robotics\u0027. Alternately, from the Latin \u0027domus\u0027, \u0026quot;home\u0026quot;.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Robotic technology for use in the home\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

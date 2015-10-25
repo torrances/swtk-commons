@@ -22,6 +22,12 @@ package org.swtk.commons.dict.wiktionary.generated.p.i.t;  import java.util.Hash
 
 	add("pitmaster", "{\"term\":\"pitmaster\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|pit|master|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who operates a barbecue pit. Sometimes a term of respect for someone who is skilled at barbecuing\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("pitmatic", "{\"term\":\"pitmatic\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The language spoken by inhabitants of the mining villages in Northumberland or Durham\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"quot;The\u0027aall taalk ower pitmatic in Durham!\u0026quot\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("pittacal", "{\"term\":\"pittacal\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\", \"ancient greek (to 1453)\"], \"text\":\"Ancient greek (to 1453) pitch + beautiful: compare French \u0027pittacale\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A dark blue dyestuff, the first to be commercially produced\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("pittle", "{\"term\":\"pittle\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Possibly onomatopoeic. Confer \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"urine\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("pituita", "{\"term\":\"pituita\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027pītuīta\u0027 (mucus, phlegm)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Phlegm; mucus\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Book I (New York 2001 edition), p.148\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Pituita\u0027\u0027, or phlegm, is a cold and moist humour, begotten of the colder part of the chylus\u0026amp;nbsp;[…\", \"priority\":3}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

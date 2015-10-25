@@ -6,8 +6,12 @@ package org.swtk.commons.dict.wiktionary.generated.y.e.l;  import java.util.Hash
 
 	add("yellowhammer", "{\"term\":\"yellowhammer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|yellow|hammer|lang\u003den}}{{etystub|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A passerine bird, \u0027Emberiza citrinella\u0027, of western Eurasia, which is mainly yellow in colour\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The northern flicker, \u0027Colaptes auratus\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A native or resident of the American state of Alabama\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("yellowknife", "{\"term\":\"yellowknife\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Capital of the Northwest Territories, Canada\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("yellowlegs", "{\"term\":\"yellowlegs\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|yellow|lags|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Either of two birds in the genus \u0027Tringa\u0027, with yellow legs\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("yellowthroat", "{\"term\":\"yellowthroat\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Bahuvrihi compound of {{compound|yellow|throat|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A mostly yellow-colored group of New World warblers in the genus \u0027Geothlypis\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("yeltsin", "{\"term\":\"yeltsin\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Russian\"], \"text\":\"Transliteration of Russian \u0027е́льцин\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"w:Boris Boris Yeltsin, Russian president\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

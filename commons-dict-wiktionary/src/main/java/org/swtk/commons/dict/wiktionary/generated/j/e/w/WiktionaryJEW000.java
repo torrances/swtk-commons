@@ -8,6 +8,8 @@ package org.swtk.commons.dict.wiktionary.generated.j.e.w;  import java.util.Hash
 
 	add("jewfish", "{\"term\":\"jewfish\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of many types of fish including the Japanese seabass\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("jewiness", "{\"term\":\"jewiness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Jewy|ness}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Negative stereotypical Jewish qualities\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("jewishness", "{\"term\":\"jewishness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Jewish|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The property of being Jewish\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("jewman", "{\"term\":\"jewman\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|Jew|man|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A (male) Jew\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2000\u0027\u0027, Kevin Corrigan Kearns, \u0027Dublin tenement life: an oral history\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"quot;There were other \u0027\u0027Jewmen\u0027\u0027 — Mr Wolfson over to Bride Street, Mr Taylor of Fumbally Lane, Mr Tolkin of Mount Pleasant Place and then Benny Coleman in Tailors Lane.\u0026quot\", \"priority\":3}]}, \"synonyms\":{}}");

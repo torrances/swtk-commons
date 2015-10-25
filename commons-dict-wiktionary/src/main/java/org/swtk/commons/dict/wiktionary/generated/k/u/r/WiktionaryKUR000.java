@@ -2,4 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.k.u.r;  import java.util.Hash
 
 	add("kurchatovite", "{\"term\":\"kurchatovite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Kurchatov|ite|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An orthorhombic-disphenoidal light gray mineral containing boron, calcium, iron, magnesium, manganese, and oxygen\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("kurchatovium", "{\"term\":\"kurchatovium\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Named for w:Igor Kurchatov|Igor Kurchatov, with \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"rutherfordium\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("kurdish", "{\"term\":\"kurdish\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Kurd|ish|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Indo-Iranian language of Kurdistan (In the Mesopotamia region, from the Zagros of mid-western Iran to the eastern extension of the chain of the Taurus Mountains\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

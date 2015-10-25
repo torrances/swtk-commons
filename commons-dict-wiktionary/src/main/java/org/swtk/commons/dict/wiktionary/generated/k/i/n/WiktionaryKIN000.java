@@ -8,9 +8,23 @@ package org.swtk.commons.dict.wiktionary.generated.k.i.n;  import java.util.Hash
 
 	add("kinematics", "{\"term\":\"kinematics\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\", \"ancient greek (to 1453)\"], \"text\":\"French \u0027cinématique\u0027 from Ancient greek (to 1453) \u0027κίνημα\u0027 (motion) {suffix||ics|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The branch of mechanics concerned with objects in motion, but not with the forces involved\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("kinesia", "{\"term\":\"kinesia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"motion sickness\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("kinesiatrics", "{\"term\":\"kinesiatrics\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"Ancient greek (to 1453)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The treatment of disease by muscular movements\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("kinesics", "{\"term\":\"kinesics\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027κίνησις\u0027 (motion, movement)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Non-verbal communication by means of gestures, and/or other body movement\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("kinesiology", "{\"term\":\"kinesiology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{confix|kinesi|logy|lang\u003den}}, with interfix \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the study of body movemen\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"the application of such principles to the diagnosis and treatment of muscular imbalance\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("kinesis", "{\"term\":\"kinesis\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027κίνησις\u0027 (motion, movement)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the movement of an organism in response to an external stimulus\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("kinesthetics", "{\"term\":\"kinesthetics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The ability to feel movements of the limbs and body. Referred by some people as the sixth sense\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("kinetics", "{\"term\":\"kinetics\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027κινητικός\u0027 (kinetic)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The branch of mechanics concerned purely with the motion of bodies. This is in contrast to dynamics, which also considers the reasons for motion, e.g. the forces acting on such bodies\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The branch of chemistry that is concerned with the rates of chemical reactions\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("kinetogenesis", "{\"term\":\"kinetogenesis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|kineto|genesis|lang\u003den}}, coined by {{w|Edward Drinker Cope}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The neo-Lamarckian doctrine or hypothesis that animal structures have been produced, directly or indirectly, by animal movements\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("kinetosis", "{\"term\":\"kinetosis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"motion sickness\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("kingbird", "{\"term\":\"kingbird\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|king|bird|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A group of large insectivorous passerine birds of the genus \u0027Tyrannus\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -37,6 +51,8 @@ package org.swtk.commons.dict.wiktionary.generated.k.i.n;  import java.util.Hash
 	add("kinome", "{\"term\":\"kinome\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|kinase|ome|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The set of all kinases expressed in a cell or contained in a genome\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("kinoshitalite", "{\"term\":\"kinoshitalite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Kinoshita|lite|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A mineral containing barium, aluminium, magnesium, and silicon\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("kinshasa", "{\"term\":\"kinshasa\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The capital and largest city of the Democratic Republic of the Congo (formerly Zaire), in the western part of the country on the Congo River\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("kintype", "{\"term\":\"kintype\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|kin|type|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A kin relationship expressed in terms of the specific direct relationships involved, such as \u0026quot;mother\u0027s brother\u0027s son\u0026quot; rather than the more general \u0026quot;cousin\u0026quot\", \"priority\":1}]}, \"synonyms\":{}}");
 

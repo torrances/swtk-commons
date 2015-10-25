@@ -4,6 +4,10 @@ package org.swtk.commons.dict.wiktionary.generated.k.o.m;  import java.util.Hash
 
 	add("komatsuna", "{\"term\":\"komatsuna\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Japanese\"], \"text\":\"From Japanese \u0027小松菜\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A leaf vegetable, a form of \u0027Brassica rapa\u0027, used in Japanese cooking\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("kombu", "{\"term\":\"kombu\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Japanese\"], \"text\":\"From Japanese \u0027lang\u003dja\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Edible kelp used in East Asian cuisin\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("komku", "{\"term\":\"komku\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"The term komku is a portmanteau of the Malay language words \u0027buku\u0027 and \u0027komik\u0027. The word \u0027\u0027\u0027kom\u0027\u0027ik\u0027 and \u0027bu\u0027\u0027ku\u0027\u0027\u0027 were mix and became komku. The original Malay language word \u0027buku komik\u0027 is reversed and became \u0027komik buku\u0027 which lead to the slang komku.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A type of illustration which has story and dialog\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A comic book, regardless of the artistic style\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("kommand", "{\"term\":\"kommand\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From \u0027\u0027 introduced by {{w|Howard Lasnik}} in 1976.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The relationship between a node in a parse tree and other nodes dominated by the same minimal cyclic node\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

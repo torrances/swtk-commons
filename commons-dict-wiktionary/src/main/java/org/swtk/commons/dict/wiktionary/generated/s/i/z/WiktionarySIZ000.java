@@ -4,6 +4,10 @@ package org.swtk.commons.dict.wiktionary.generated.s.i.z;  import java.util.Hash
 
 	add("sizism", "{\"term\":\"sizism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|size|ism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"prejudice against a person based on their size\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("sizofiran", "{\"term\":\"sizofiran\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A beta-glucan polysaccharide\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("sizzler", "{\"term\":\"sizzler\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|sizzle|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who, or that which, sizzles\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"An Indian dish of meat and vegetables served sizzling on a hot plate\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("sizzurp", "{\"term\":\"sizzurp\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From insertion of \u0027-izz-\u0027 variant of \u0027\u0027 into \u0027surp\u0027 ()\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A mixed drink including a codeine-laced promethazine cough syrup as an ingredient\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

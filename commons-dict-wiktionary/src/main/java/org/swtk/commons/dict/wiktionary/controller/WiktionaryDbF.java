@@ -5,9 +5,9 @@ import org.swtk.commons.dict.wiktionary.generated.f.a.a.*;
 import org.swtk.commons.dict.wiktionary.generated.f.a.b.*;
 import org.swtk.commons.dict.wiktionary.generated.f.a.c.*;
 import org.swtk.commons.dict.wiktionary.generated.f.a.d.*;
-import org.swtk.commons.dict.wiktionary.generated.f.a.e.*;
 import org.swtk.commons.dict.wiktionary.generated.f.a.f.*;
 import org.swtk.commons.dict.wiktionary.generated.f.a.g.*;
+import org.swtk.commons.dict.wiktionary.generated.f.a.h.*;
 import org.swtk.commons.dict.wiktionary.generated.f.a.i.*;
 import org.swtk.commons.dict.wiktionary.generated.f.a.j.*;
 import org.swtk.commons.dict.wiktionary.generated.f.a.k.*;
@@ -26,11 +26,11 @@ import org.swtk.commons.dict.wiktionary.generated.f.e.c.*;
 import org.swtk.commons.dict.wiktionary.generated.f.e.d.*;
 import org.swtk.commons.dict.wiktionary.generated.f.e.e.*;
 import org.swtk.commons.dict.wiktionary.generated.f.e.i.*;
-import org.swtk.commons.dict.wiktionary.generated.f.e.j.*;
 import org.swtk.commons.dict.wiktionary.generated.f.e.l.*;
 import org.swtk.commons.dict.wiktionary.generated.f.e.m.*;
 import org.swtk.commons.dict.wiktionary.generated.f.e.n.*;
 import org.swtk.commons.dict.wiktionary.generated.f.e.o.*;
+import org.swtk.commons.dict.wiktionary.generated.f.e.p.*;
 import org.swtk.commons.dict.wiktionary.generated.f.e.r.*;
 import org.swtk.commons.dict.wiktionary.generated.f.e.s.*;
 import org.swtk.commons.dict.wiktionary.generated.f.e.t.*;
@@ -61,6 +61,7 @@ import org.swtk.commons.dict.wiktionary.generated.f.l.i.*;
 import org.swtk.commons.dict.wiktionary.generated.f.l.o.*;
 import org.swtk.commons.dict.wiktionary.generated.f.l.u.*;
 import org.swtk.commons.dict.wiktionary.generated.f.l.y.*;
+import org.swtk.commons.dict.wiktionary.generated.f.m.a.*;
 import org.swtk.commons.dict.wiktionary.generated.f.o.a.*;
 import org.swtk.commons.dict.wiktionary.generated.f.o.c.*;
 import org.swtk.commons.dict.wiktionary.generated.f.o.d.*;
@@ -94,6 +95,7 @@ import org.swtk.commons.dict.wiktionary.generated.f.u.r.*;
 import org.swtk.commons.dict.wiktionary.generated.f.u.s.*;
 import org.swtk.commons.dict.wiktionary.generated.f.u.t.*;
 import org.swtk.commons.dict.wiktionary.generated.f.y.l.*;
+import org.swtk.commons.dict.wiktionary.generated.f.y.n.*;
 import org.swtk.commons.dict.wiktionary.generated.f.y.r.*;
 
 public final class WiktionaryDbF {
@@ -109,12 +111,12 @@ public final class WiktionaryDbF {
 			return WiktionaryFAC000.get(name);
 		else if ("fad".equals(sub))
 			return WiktionaryFAD000.get(name);
-		else if ("fae".equals(sub))
-			return WiktionaryFAE000.get(name);
 		else if ("faf".equals(sub))
 			return WiktionaryFAF000.get(name);
 		else if ("fag".equals(sub))
 			return WiktionaryFAG000.get(name);
+		else if ("fah".equals(sub))
+			return WiktionaryFAH000.get(name);
 		else if ("fai".equals(sub))
 			return WiktionaryFAI000.get(name);
 		else if ("faj".equals(sub))
@@ -151,8 +153,6 @@ public final class WiktionaryDbF {
 			return WiktionaryFEE000.get(name);
 		else if ("fei".equals(sub))
 			return WiktionaryFEI000.get(name);
-		else if ("fej".equals(sub))
-			return WiktionaryFEJ000.get(name);
 		else if ("fel".equals(sub))
 			return WiktionaryFEL000.get(name);
 		else if ("fem".equals(sub))
@@ -161,6 +161,8 @@ public final class WiktionaryDbF {
 			return WiktionaryFEN000.get(name);
 		else if ("feo".equals(sub))
 			return WiktionaryFEO000.get(name);
+		else if ("fep".equals(sub))
+			return WiktionaryFEP000.get(name);
 		else if ("fer".equals(sub))
 			return WiktionaryFER000.get(name);
 		else if ("fes".equals(sub))
@@ -221,6 +223,8 @@ public final class WiktionaryDbF {
 			return WiktionaryFLU000.get(name);
 		else if ("fly".equals(sub))
 			return WiktionaryFLY000.get(name);
+		else if ("fma".equals(sub))
+			return WiktionaryFMA000.get(name);
 		else if ("foa".equals(sub))
 			return WiktionaryFOA000.get(name);
 		else if ("foc".equals(sub))
@@ -287,6 +291,8 @@ public final class WiktionaryDbF {
 			return WiktionaryFUT000.get(name);
 		else if ("fyl".equals(sub))
 			return WiktionaryFYL000.get(name);
+		else if ("fyn".equals(sub))
+			return WiktionaryFYN000.get(name);
 		else if ("fyr".equals(sub))
 			return WiktionaryFYR000.get(name);
 		return null;

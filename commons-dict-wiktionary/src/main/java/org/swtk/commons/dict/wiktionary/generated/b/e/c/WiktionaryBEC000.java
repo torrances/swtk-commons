@@ -2,6 +2,10 @@ package org.swtk.commons.dict.wiktionary.generated.b.e.c;  import java.util.Hash
 
 	add("béchamel", "{\"term\":\"béchamel\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{borrowing|fr|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"béchamel sauceCategory:English terms spelled with bechamel\", \"priority\":1}]}, \"synonyms\":{}}");
 
-	add("bécosses", "{\"term\":\"bécosses\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"English \u0027backhouse\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Outhouse toilets\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Toilets in general, especially outdoor or makeshift ones\", \"priority\":2}]}, \"synonyms\":{}}");
+	add("bechuanaland", "{\"term\":\"bechuanaland\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A former name of what is now Botswana, used until 1966\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("beclometasone", "{\"term\":\"beclometasone\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A potent glucocorticoid steroid use to treat asthma\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("becomingness", "{\"term\":\"becomingness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|becoming|ness|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or quality of becoming\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

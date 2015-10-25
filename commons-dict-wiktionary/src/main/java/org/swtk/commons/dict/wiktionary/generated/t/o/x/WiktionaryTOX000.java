@@ -2,4 +2,10 @@ package org.swtk.commons.dict.wiktionary.generated.t.o.x;  import java.util.Hash
 
 	add("toxicokinetics", "{\"term\":\"toxicokinetics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|toxico|kinetics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The application of pharmacokinetics to the study of toxicity\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("toxicopharmacology", "{\"term\":\"toxicopharmacology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The pharmacology of toxic substances\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("toxicoproteomics", "{\"term\":\"toxicoproteomics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The application of proteomics to toxicology\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("toxophily", "{\"term\":\"toxophily\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The love of, or an addiction to, archery\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

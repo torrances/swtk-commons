@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wiktionary.generated.s.i.a;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionarySIA000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("sialography", "{\"term\":\"sialography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The radiographic examination of the salivary glands\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("sialorrhea", "{\"term\":\"sialorrhea\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Drooling; the flow of excess saliva from the mouth\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("siamyl", "{\"term\":\"siamyl\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The univalent radical 1,2-dimethylpropyl- that is isomeric with amyl\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("siatista", "{\"term\":\"siatista\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A city in Greece located in the western Kozani prefecture\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

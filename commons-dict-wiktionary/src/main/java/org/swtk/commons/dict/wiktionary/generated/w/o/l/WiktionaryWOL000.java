@@ -10,4 +10,6 @@ package org.swtk.commons.dict.wiktionary.generated.w.o.l;  import java.util.Hash
 
 	add("wolfskin", "{\"term\":\"wolfskin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|wolf|skin|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The skin of a wolf\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("wolverhampton", "{\"term\":\"wolverhampton\", \"etymology\":{\"influencers\":[], \"languages\":[\"old english (ca. 450-1100)\", \"English\"], \"text\":\"From Old english (ca. 450-1100) \u0027Wulfrūnehēantūn\u0027 named after Lady Wulfruna, who founded the town.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A city in the West Midlands of England\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

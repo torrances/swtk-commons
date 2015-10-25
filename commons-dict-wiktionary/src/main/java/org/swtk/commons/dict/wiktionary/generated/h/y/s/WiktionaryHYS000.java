@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.h.y.s;  import java.util.Hash
 
 	add("hysteroepilepsy", "{\"term\":\"hysteroepilepsy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hystero|epilepsy|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A supposed illness, later identified as iatrogenic, resembling hysteria and characterized by epileptiform convulsions\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("hysterography", "{\"term\":\"hysterography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The graphical recording of the strength of uterine contractions during labour\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("hysterophyte", "{\"term\":\"hysterophyte\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From {{m|la|hysterophytum}}, from Ancient greek (to 1453) {{m|grc|ὑστέρα||womb, figuratively the earth}} + {{m|grc|φυτόν||plant}}. Equivalent to {{confix|hystero|phyte|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A plant or fungus that lives on dead or living organic matter\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("hysterotomy", "{\"term\":\"hysterotomy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|hystero|tomy|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The surgical procedure of making an incision in the uterus, commonly combined with a laparotomy during a caesarean section\", \"priority\":1}]}, \"synonyms\":{}}");

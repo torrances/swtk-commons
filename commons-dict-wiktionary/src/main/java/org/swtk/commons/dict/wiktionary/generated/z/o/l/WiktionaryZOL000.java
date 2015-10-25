@@ -2,4 +2,6 @@ package org.swtk.commons.dict.wiktionary.generated.z.o.l;  import java.util.Hash
 
 	add("zolaist", "{\"term\":\"zolaist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Zola|ist|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who writes in the style of the French writer (1840-1902\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("zolimomab", "{\"term\":\"zolimomab\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular mouse monoclonal antibody\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

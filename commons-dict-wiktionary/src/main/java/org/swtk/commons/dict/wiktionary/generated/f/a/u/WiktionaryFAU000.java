@@ -8,7 +8,11 @@ package org.swtk.commons.dict.wiktionary.generated.f.a.u;  import java.util.Hash
 
 	add("faunivore", "{\"term\":\"faunivore\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|fauna|vore|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any animal that eats other animals\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("faunivory", "{\"term\":\"faunivory\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|faunivore|y|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The eating of other animals\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("faunlet", "{\"term\":\"faunlet\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|faun|let|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A young sexually attractive boy\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Vladimir Nabokov, \u0027Lolita\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"When I was a child and she was a child, my little Annabel was no nymphet to me; I was her equal, a faunlet in my own right\", \"priority\":3}]}, \"synonyms\":{}}");
+
+	add("fauvism", "{\"term\":\"fauvism\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"From French \u0027fauvisme\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An artistic movement of the last part of the 19th century which emphasized spontaneity and the use of extremely bright colors\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("fauxmosexual", "{\"term\":\"fauxmosexual\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|faux|homosexual|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A heterosexual person who affects homosexual characteristics\", \"priority\":1}]}, \"synonyms\":{}}");
 

@@ -50,6 +50,8 @@ package org.swtk.commons.dict.wiktionary.generated.c.o.u;  import java.util.Hash
 
 	add("countercry", "{\"term\":\"countercry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|counter|cry|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A cry raised in opposition to another\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("countercyclicality", "{\"term\":\"countercyclicality\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality of being \u0027countercyclical\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("counterdemonstration", "{\"term\":\"counterdemonstration\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|counter|demonstration|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A demonstration in opposition to another demonstration\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("counterdemonstrator", "{\"term\":\"counterdemonstrator\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|counter|demonstrator|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Someone who demonstrates in opposition to another demonstration that is happening nearby at the same tim\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -68,6 +70,8 @@ package org.swtk.commons.dict.wiktionary.generated.c.o.u;  import java.util.Hash
 
 	add("counterinsurgent", "{\"term\":\"counterinsurgent\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|counter|insurgent|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person combating an insurgenc\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("counterintelligence", "{\"term\":\"counterintelligence\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|counter|intelligence|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"counterespionage\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("counterinterpretation", "{\"term\":\"counterinterpretation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|counter|interpretation|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An interpretation that goes against another interpretation\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("counterion", "{\"term\":\"counterion\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|counter|ion|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any ion of opposite charge to another in a solution or other electrochemical system\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -75,6 +79,8 @@ package org.swtk.commons.dict.wiktionary.generated.c.o.u;  import java.util.Hash
 	add("counterirritant", "{\"term\":\"counterirritant\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|counter|irritant|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any substance used to cause inflammation in one part of the body with the goal of lessening inflammation elsewhere\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("counterirritation", "{\"term\":\"counterirritation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|counter|irritation|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The treatment of one diseased area by acting elsewhere\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("counterknowledge", "{\"term\":\"counterknowledge\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\u0027counter- + knowledge\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Misinformation packaged to look like fact\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("countermark", "{\"term\":\"countermark\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|counter|mark|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A mark or token added to those already existing, as a security or proof\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"An artificial cavity made in the teeth of horses that have outgrown their natural mark, to disguise their age\", \"priority\":2}]}, \"synonyms\":{}}");
 
@@ -164,6 +170,8 @@ package org.swtk.commons.dict.wiktionary.generated.c.o.u;  import java.util.Hash
 
 	add("countryside", "{\"term\":\"countryside\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|country|side|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"typically used with the definite article\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A rural landscape\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A rural area, or the rural part of a larger area, as in \u0026quot;the Swedish countryside.\u0026quot\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("coupage", "{\"term\":\"coupage\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"From French\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The blending (or ) of wine\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("coupler", "{\"term\":\"coupler\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|couple|er|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Someone who couples things together, especially someone whose job it is to couple railway carriages\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Anything that serves to couple things together; but especially a device that couples railway carriages\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A device that connects two keyboards of an organ together so that they play together\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"A device used to convert electronic information into audible sound signals for transmission over telephone lines\", \"priority\":4},{\"upperType\":\"NOUN\", \"text\":\"An electrical device used to transfer energy from one electric device to another, especially without a physical connection\", \"priority\":5}]}, \"synonyms\":{}}");
 
 	add("couplezilla", "{\"term\":\"couplezilla\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|couple|zilla|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A couple who, in the course of planning their wedding, display difficult, selfish, narcissistic behaviour relating to the event\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"lt;br /\u0026gt;I say.. \u0027\u0027Couplezilla\u0027\u0027 go ahead and embrace your zilla-ness. This is the stuff that makes great wedding horror stories\", \"priority\":2}]}, \"synonyms\":{}}");
@@ -175,6 +183,8 @@ package org.swtk.commons.dict.wiktionary.generated.c.o.u;  import java.util.Hash
 	add("coursebook", "{\"term\":\"coursebook\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|course|book|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A textbook, a book designed to accompany a specific academic course, or one specified by the writers of the course to be read by its students\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("coursemate", "{\"term\":\"coursemate\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|course|mate|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who is taking the same academic course\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"I went drinking with some of my \u0027\u0027coursemates\u0027\u0027 after the last lecture of the term\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("coursework", "{\"term\":\"coursework\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Work carried out by students of a particular course; it is assessed and counts towards the grade given\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("courtesan", "{\"term\":\"courtesan\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\", \"Latin\"], \"text\":\"From French {{m|fr|courtisane}}, from Italian {{m|it|cortigiana}}, feminine of {{m|it|cortigiano||courtier}}, from {{m|it|corte||court}}, itself from Latin {{m|la|cohors}}. More at English {{l|en|court}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A woman of a royal or noble court\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The mistress of a royal or noble\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A prostitute, especially one with high-status or wealthy clients\", \"priority\":3}]}, \"synonyms\":{}}");
 

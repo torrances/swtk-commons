@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.o.c.e;  import java.util.Hash
 
 	add("oceanography", "{\"term\":\"oceanography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|ocean|graphy|alt2\u003dography|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The exploration and scientific study of the oceans and ocean floor\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("oceanology", "{\"term\":\"oceanology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"oceanography\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("ocelot", "{\"term\":\"ocelot\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"From French \u0027ocelot\u0027 a word formed by w:Georges-Louis Leclerc, Comte de Buffon|Buffon from \u0027ocelotl\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An American feline carnivore (\u0027Felis pardalis\u0027) covered with blackish ocellated spots and blotches which are variously arranged\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -10,4 +10,6 @@ package org.swtk.commons.dict.wiktionary.generated.l.o.a;  import java.util.Hash
 
 	add("loather", "{\"term\":\"loather\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who loathes\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("loathness", "{\"term\":\"loathness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"unwillingness; reluctance\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

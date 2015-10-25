@@ -6,6 +6,10 @@ package org.swtk.commons.dict.wiktionary.generated.e.n.a;  import java.util.Hash
 
 	add("enamelist", "{\"term\":\"enamelist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|enamel|ist|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An artist who works with enamel\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("enamelwork", "{\"term\":\"enamelwork\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Objects decorated with enamel\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("enantiocontrol", "{\"term\":\"enantiocontrol\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"control (normally partial) over the enantiomeric composition of a reaction product\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("enargia", "{\"term\":\"enargia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}The term enargia has evolved from the original Greek term ενάργεια, which is most accurately translated as sensory vividness.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Vivid, lively description\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -4,4 +4,6 @@ package org.swtk.commons.dict.wiktionary.generated.e.c.c;  import java.util.Hash
 
 	add("ecclesia", "{\"term\":\"ecclesia\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027ecclesia\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The public legislative assembly of the Athenians\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A church, either as a body or as a building\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"The congregation, the group of believers, symbolic body or building\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("eccrinology", "{\"term\":\"eccrinology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The scientific study of secretion and the eccrine glands\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

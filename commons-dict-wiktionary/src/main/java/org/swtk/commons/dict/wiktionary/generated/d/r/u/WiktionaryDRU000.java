@@ -2,6 +2,10 @@ package org.swtk.commons.dict.wiktionary.generated.d.r.u;  import java.util.Hash
 
 	add("drudge", "{\"term\":\"drudge\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"middle english (1100-1500)\"], \"text\":\"From Middle english (1100-1500) \u0027druggen\u0027 which is possibly related to Old English {{m|ang|drēogan}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person who works in a low servile job\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Someone who works for (and may be take advantage taken advantage of by) someone else\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("drugability", "{\"term\":\"drugability\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The ability of a compound to be used commercially as a pharmaceutical drug (taking into account technical and financial considerations\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("druggability", "{\"term\":\"druggability\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The ability of a portion of a genome to be targeted by a drug, especially by a small molecule drug\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("drugget", "{\"term\":\"drugget\", \"etymology\":{\"influencers\":[{}], \"languages\":[\"English\", \"French\"], \"text\":\"From French \u0027droguet\u0027 from \u0027drogue\u0027 (cheap) of uncertain origin.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An inexpensive coarse woolen cloth, used mainly for clothing\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A floor covering made of drugget\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"1904\u0027\u0027 December, \u0027s:The Adventure of the Second The Adventure of the Second Stain\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"This carpet was a small square \u0027\u0027drugget\u0027\u0027 in the centre of the roo\", \"priority\":4},{\"upperType\":\"NOUN\", \"text\":\"There was a neat hat-and-umbrella stand, and the stranger\u0027s weary feet fell soft on a good, serviceable dark-red \u0027\u0027drugget\u0027\u0027, which matched in colour the flock-paper on the walls\", \"priority\":5}]}, \"synonyms\":{}}");
 
 	add("druggeting", "{\"term\":\"druggeting\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|drugget|ing|pos1\u003dcountable noun|pos2\u003dsuffix forming uncountable nouns denoting materials|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"hard-wearing, cloth, in strips, used as an covering, for\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -18,9 +22,13 @@ package org.swtk.commons.dict.wiktionary.generated.d.r.u;  import java.util.Hash
 
 	add("druidess", "{\"term\":\"druidess\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|druid|ess|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A female druid\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("druidry", "{\"term\":\"druidry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|druid|ry|alt1\u003dDruid|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A religion and philosophy which promotes harmony with nature, and draws on the practices of the druids\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("drumette", "{\"term\":\"drumette\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|drum|ette|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The first segment meatier part) of a chicken wing, closest to the body\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("drumfish", "{\"term\":\"drumfish\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|drum|fish|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any fish of the family Sciaenidae; they make a loud noise by means of an air bladder\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("drumian", "{\"term\":\"drumian\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A subdivision of the Cambrian period\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("drumlin", "{\"term\":\"drumlin\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Irish\"], \"text\":\"Irish \u0027droim\u0027 \u0027back, ridge\u0027 + English diminutive|dim. suffix \u0027-lin\u0027 (variant of \u0027-ling\u0027)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An elongated hill or ridge of glacial drift\", \"priority\":1}]}, \"synonyms\":{}}");
 

@@ -6,6 +6,8 @@ package org.swtk.commons.dict.wiktionary.generated.c.o.q;  import java.util.Hash
 
 	add("coquettishness", "{\"term\":\"coquettishness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|coquettish|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or quality of being coquettish\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("coquimbite", "{\"term\":\"coquimbite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Coquimbo|ite|lang\u003den}}, after the province of Chile where it was found.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The nonahydrate of iron(III) sulfate\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("coquina", "{\"term\":\"coquina\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of several small marine clams, of the species , common in US coastal waters\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A soft form of limestone made of fragments of shells\", \"priority\":2}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

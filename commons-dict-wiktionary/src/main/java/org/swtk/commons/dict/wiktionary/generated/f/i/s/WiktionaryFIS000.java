@@ -30,6 +30,8 @@ package org.swtk.commons.dict.wiktionary.generated.f.i.s;  import java.util.Hash
 
 	add("fishtail", "{\"term\":\"fishtail\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|fish|tail|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The tail of a fish, or an object resembling this\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The skidding of the back of a vehicle from side to side\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("fissility", "{\"term\":\"fissility\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Quality of being fissile\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The property of mudstones to split along layers, more or less parallel to the plane of bedding, thus becoming described as shales\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("fister", "{\"term\":\"fister\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|fist|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Someone partakes in fisting\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("fistfight", "{\"term\":\"fistfight\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|fist|fight|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A fight using bare fists\", \"priority\":1}]}, \"synonyms\":{}}");

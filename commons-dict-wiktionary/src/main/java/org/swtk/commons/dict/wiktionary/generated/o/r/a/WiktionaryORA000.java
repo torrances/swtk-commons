@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.o.r.a;  import java.util.Hash
 
 	add("oralism", "{\"term\":\"oralism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|oral|ism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A philosophy of education for the deaf, opposed to manualism, that uses spoken language consisting of lipreading, speech, the process of watching mouth movements, and mastering breathing techniques\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("oralloy", "{\"term\":\"oralloy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"enriched uranium\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("orangeade", "{\"term\":\"orangeade\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|orange|ade|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A soft drink or a soda with an orange flavor\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A mixture of soda water and orange juice\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Orange juice, see also orange\", \"priority\":3}]}, \"synonyms\":{}}");
 
 	add("orangelo", "{\"term\":\"orangelo\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|orange|pomelo|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A citrus fruit that is a cross between an orange and a grapefruit\", \"priority\":1}]}, \"synonyms\":{}}");

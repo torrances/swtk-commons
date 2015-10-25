@@ -4,6 +4,12 @@ package org.swtk.commons.dict.wiktionary.generated.d.i.b;  import java.util.Hash
 
 	add("dibbler", "{\"term\":\"dibbler\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|dibble|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A small Australian marsupial of the genus (), somewhat reminiscent of a mouse\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A dibble (device for making holes in which to plant seeds\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A person who uses a dibble\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("dibenzoyl", "{\"term\":\"dibenzoyl\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Two benzoyl groups in a molecule\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("diborane", "{\"term\":\"diborane\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"boron hydride, B\u0026lt;sub\u0026gt;2\u0026lt;/sub\u0026gt;H\u0026lt;sub\u0026gt;6\u0026lt;/sub\u0026gt;, a colourless explosive gas with a nasty smell; it has an unusual structure in which two of the hydrogen atoms form a bridge between the two boron atoms\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("diboron", "{\"term\":\"diboron\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Two boron atoms in a molecule\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("dibutyl", "{\"term\":\"dibutyl\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Two butyl groups in a molecule\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

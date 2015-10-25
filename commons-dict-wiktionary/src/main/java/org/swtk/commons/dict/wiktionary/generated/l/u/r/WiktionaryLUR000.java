@@ -4,4 +4,6 @@ package org.swtk.commons.dict.wiktionary.generated.l.u.r;  import java.util.Hash
 
 	add("lurker", "{\"term\":\"lurker\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"lurk + -er, \u0027agentive suffix\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"agent Agent noun of lurk; one who lurks\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A user who observes a community rather than participating; someone who reads or takes advantage of content on a website, newsgroup, etc. but does not contribute\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A small fishing-boat.\u0026lt;!--per Webster 1913--\u0026gt\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("lurve", "{\"term\":\"lurve\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Love, fondness\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

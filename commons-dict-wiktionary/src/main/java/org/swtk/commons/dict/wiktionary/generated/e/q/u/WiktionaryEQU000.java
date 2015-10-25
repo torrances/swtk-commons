@@ -6,9 +6,17 @@ package org.swtk.commons.dict.wiktionary.generated.e.q.u;  import java.util.Hash
 
 	add("equanimity", "{\"term\":\"equanimity\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\", \"Latin\"], \"text\":\"From French \u0027équanimité\u0027 from Latin {{m|la|aequanimitās||calmness, equanimity}}, from \u0027aequus\u0027 (even; calm; fair) + \u0027animus\u0027 (mind, soul) + {{m|la|-itās}}. Surface analysis is {{confix|equ|animus|ity|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the state of being calm, stable and composed, especially under stres\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1954\u0027\u0027, Albert Einstein, \u0027Ideas and Opinions\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Few people are capable of expressing with \u0027\u0027equanimity\u0027\u0027 opinions which differ from the prejudices of their social environment\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("equestrianism", "{\"term\":\"equestrianism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The art of riding horses; horsemanship\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("equiangularity", "{\"term\":\"equiangularity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The condition of being equiangular\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("equibalance", "{\"term\":\"equibalance\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|equi|balance|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Equal weight; equiponderance\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("equidistribution", "{\"term\":\"equidistribution\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|equi|distribution|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An equal distribution\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("equilaterality", "{\"term\":\"equilaterality\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The condition of being equilateral\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("equilibrioception", "{\"term\":\"equilibrioception\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The sense of balance\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("equimultiple", "{\"term\":\"equimultiple\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|equi|multiple|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One of the products arising from the multiplication of two or more values by the same value\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"14 and 28 are \u0027\u0027equimultiples\u0027\u0027 of 2 and 4\", \"priority\":2}]}, \"synonyms\":{}}");
 

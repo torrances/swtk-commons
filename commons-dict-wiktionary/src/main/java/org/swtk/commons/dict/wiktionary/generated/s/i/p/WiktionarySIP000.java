@@ -4,6 +4,10 @@ package org.swtk.commons.dict.wiktionary.generated.s.i.p;  import java.util.Hash
 
 	add("sippy", "{\"term\":\"sippy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|sip|y|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A little sip; less than a cup of some particular drin\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"lt;!-- context: Australian aboriginal community --\u0026gt\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("sippenhaft", "{\"term\":\"sippenhaft\", \"etymology\":{\"influencers\":[], \"languages\":[\"German\", \"English\"], \"text\":\"From German \u0027sippenhaft\u0027 (kin liability)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The principle of families sharing the responsibility for a crime committed by one of its members\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("sippet", "{\"term\":\"sippet\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"First attested in the 16th Century, as a diminutive of sop.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A small piece of something, especially a piece of toast or fried bean eaten with soup or gravy\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("siprnet", "{\"term\":\"siprnet\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The Secret Internet Protocol Router Network: the U.S. Department of Defense\u0027s largest network for the exchange of classified information and messages at the SECRET level\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

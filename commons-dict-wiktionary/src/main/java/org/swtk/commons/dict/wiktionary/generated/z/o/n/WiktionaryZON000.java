@@ -4,6 +4,8 @@ package org.swtk.commons.dict.wiktionary.generated.z.o.n;  import java.util.Hash
 
 	add("zonetime", "{\"term\":\"zonetime\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|zone|time|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The time in a particular timezone, as opposed to standard time\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("zongzi", "{\"term\":\"zongzi\", \"etymology\":{\"influencers\":[], \"languages\":[\"mandarin chinese\", \"English\", \"Chinese\"], \"text\":\"From Chinese Mandarin chinese {{zh-l|粽子|zòngzi}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Traditional Chinese dumplings of glutinous rice stuffed with fillings, wrapped in large flat leaves, and cooked by steaming or boiling\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("zonian", "{\"term\":\"zonian\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|zone|ian|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A Panamanian from the former American territory in Panama called the Panama Canal Zone\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("zonkey", "{\"term\":\"zonkey\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|zebra|donkey|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The offspring of a zebra and a donkey\", \"priority\":1}]}, \"synonyms\":{}}");

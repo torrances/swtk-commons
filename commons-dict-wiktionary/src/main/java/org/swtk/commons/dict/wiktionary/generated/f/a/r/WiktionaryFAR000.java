@@ -2,6 +2,10 @@ package org.swtk.commons.dict.wiktionary.generated.f.a.r;  import java.util.Hash
 
 	add("farcicalness", "{\"term\":\"farcicalness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|farcical|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The property of being farcical\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("farctate", "{\"term\":\"farctate\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"Latin {{attention|la}} \u0027\u0027 past participle of \u0027\u0027 See \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of having overeaten\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("farfara", "{\"term\":\"farfara\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The dried leaves of coltsfoot (\u0027Tussilago farfara\u0027), formerly used to treat bronchitis\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("farmboy", "{\"term\":\"farmboy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|farm|boy|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A boy or young man who works on a farm\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("farmhouse", "{\"term\":\"farmhouse\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|farm|house|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a farmer\u0027s residence\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -11,6 +15,8 @@ package org.swtk.commons.dict.wiktionary.generated.f.a.r;  import java.util.Hash
 	add("farmland", "{\"term\":\"farmland\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|farm|land|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Land which is suitable for farming and agricultural production\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("farnesylpyrophosphate", "{\"term\":\"farnesylpyrophosphate\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|farnesyl|pyrophosphate|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An intermediate in the HMG-CoA reductase pathway used by organisms in the biosynthesis of terpenes, terpenoids, and sterols\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("farro", "{\"term\":\"farro\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Italian\"], \"text\":\"From Italian \u0027farro\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Emmer whea\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Category:en:Grains\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("farsightedness", "{\"term\":\"farsightedness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|farsighted|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The condition of being unable to focus on near objects; presbyopi\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The quality of being considerate about what might happen in the future\", \"priority\":2}]}, \"synonyms\":{}}");
 

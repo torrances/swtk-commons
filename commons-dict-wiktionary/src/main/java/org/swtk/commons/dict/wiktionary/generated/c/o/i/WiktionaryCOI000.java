@@ -6,6 +6,8 @@ package org.swtk.commons.dict.wiktionary.generated.c.o.i;  import java.util.Hash
 
 	add("coiler", "{\"term\":\"coiler\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|coil|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person who, or device which coils\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("coimmunoprecipitation", "{\"term\":\"coimmunoprecipitation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|co|immunoprecipitation|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The immunoprecipitation of multiple antigens at the same time\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("coinage", "{\"term\":\"coinage\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"old french (842-ca. 1400)\"], \"text\":\"From Old french (842-ca. 1400) \u0027coignage\u0027 () from \u0027coignier\u0027 ()\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The process of coining money\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Coins taken collectively; currency\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"The creation of new words, neologizing\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"Something which has been made or invented, especially a coined word; a neologism\", \"priority\":4}]}, \"synonyms\":{}}");
 
 	add("coincidence", "{\"term\":\"coincidence\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"From French \u0027coïncidence\u0027.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Of objects, the property of being coincident; occurring at the same time or place\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Of events, the appearance of a meaningful connection when there is none\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A coincidence point\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"A fixed point of a correspondence; a point of a variety corresponding to itself under a correspondence\", \"priority\":4}]}, \"synonyms\":{}}");
@@ -31,6 +33,8 @@ package org.swtk.commons.dict.wiktionary.generated.c.o.i;  import java.util.Hash
 	add("coinventor", "{\"term\":\"coinventor\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|co|inventor|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who invents something jointly with another person or persons\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("coion", "{\"term\":\"coion\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|co|ion|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any ion of the same charge as another in a solution or other electrochemical system\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("coitarche", "{\"term\":\"coitarche\", \"etymology\":{\"influencers\":[{}], \"languages\":[\"English\", \"ancient greek (to 1453)\", \"Latin\"], \"text\":\"From Latin \u0027coitus\u0027 (sexual intercourse) + Ancient greek (to 1453) \u0027ἀρχή\u0027 (beginning)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"first sexual intercours\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("coition", "{\"term\":\"coition\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027coitionem\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"sexual Sexual intercourse\", \"priority\":1}]}, \"synonyms\":{}}");
 

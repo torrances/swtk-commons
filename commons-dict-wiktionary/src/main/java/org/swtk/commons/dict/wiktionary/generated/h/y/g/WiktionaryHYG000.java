@@ -8,6 +8,8 @@ package org.swtk.commons.dict.wiktionary.generated.h.y.g;  import java.util.Hash
 
 	add("hygroscopicity", "{\"term\":\"hygroscopicity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|hygroscopic|ity|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of being hygroscopic\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The degree to which a substance is hygroscopic\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("hygroscopy", "{\"term\":\"hygroscopy\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"From French \u0027hygroscopie\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The ability of a substance to attract and hold water molecules from the surrounding environment\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("hygrostat", "{\"term\":\"hygrostat\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|hygro|stat|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A device that maintains a constant level of humidity\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

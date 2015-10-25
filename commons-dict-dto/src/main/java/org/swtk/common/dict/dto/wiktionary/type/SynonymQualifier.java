@@ -17,10 +17,12 @@ public enum SynonymQualifier {
 	ATTRIBUTIVELY("attributively", SynonymQualifierUpperType.ADJECTIVE),
 	
 	BELIEVERS("believers", SynonymQualifierUpperType.OTHER),
-
+	
 	BOTANY("botany", SynonymQualifierUpperType.OTHER),
 
 	COLLOQUIAL("colloquial", SynonymQualifierUpperType.INFORMAL),
+
+	COMPUTING("computing", SynonymQualifierUpperType.OTHER),
 	
 	COUNTABLE("countable", SynonymQualifierUpperType.COUNTABLE),
 

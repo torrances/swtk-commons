@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wiktionary.generated.j.i.a;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryJIA000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("jiao", "{\"term\":\"jiao\", \"etymology\":{\"influencers\":[], \"languages\":[\"mandarin chinese\", \"English\", \"Chinese\"], \"text\":\"From Chinese Mandarin chinese {{m|cmn|角|tr\u003djiǎo}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A currency unit of the People\u0027s Republic of China, one tenth of a yuan\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("jiangshanian", "{\"term\":\"jiangshanian\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A subdivision of the Cambrian period\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("jianzhi", "{\"term\":\"jianzhi\", \"etymology\":{\"influencers\":[], \"languages\":[\"mandarin chinese\", \"English\"], \"text\":\"From Chinese Mandarin chinese {{zh-l|剪紙|tr\u003djiǎnzhǐ}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Chinese traditional paper cutting\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -4,6 +4,8 @@ package org.swtk.commons.dict.wiktionary.generated.c.o.h;  import java.util.Hash
 
 	add("coheiress", "{\"term\":\"coheiress\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|co|heiress|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One of several who are heiresses to an estate\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("coheirship", "{\"term\":\"coheirship\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of being a coheir\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("coherentism", "{\"term\":\"coherentism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|coherent|ism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A form of reasoning where the truth or falsehood of a belief is defined by its coherence with the rest of the believer\u0027s knowledge and experiences\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("coherer", "{\"term\":\"coherer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|cohere|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A detector of radio waves used in very early radio receivers\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Wireless\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Now, this home battery here ready to print is the main steam. The \u0027\u0027coherer\u0027\u0027 is the valve, always ready to be turned on. The Hertzian wave is the child\u0027s hand that turns it\", \"priority\":3}]}, \"synonyms\":{}}");

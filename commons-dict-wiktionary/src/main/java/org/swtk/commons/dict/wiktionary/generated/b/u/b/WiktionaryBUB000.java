@@ -12,4 +12,6 @@ package org.swtk.commons.dict.wiktionary.generated.b.u.b;  import java.util.Hash
 
 	add("bubblehead", "{\"term\":\"bubblehead\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|bubble|head|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A stupid person\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A submariner; bubble-head\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A navy hardhat or salvage diver (inspired by the shape of the old spun-copper diving helmet\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("bubblin", "{\"term\":\"bubblin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Crying, weeping, action of the verb \u0027to bubble\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

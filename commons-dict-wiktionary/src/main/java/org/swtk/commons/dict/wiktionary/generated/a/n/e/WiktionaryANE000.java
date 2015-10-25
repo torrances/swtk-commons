@@ -8,7 +8,19 @@ package org.swtk.commons.dict.wiktionary.generated.a.n.e;  import java.util.Hash
 
 	add("anecumene", "{\"term\":\"anecumene\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|an|ecumene|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"All the uninhabited parts of the world\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("anegre", "{\"term\":\"anegre\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Anigre: the tree and (especially) its wood\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("anejaculation", "{\"term\":\"anejaculation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The inability to ejaculate\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("anekantavada", "{\"term\":\"anekantavada\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Sanskrit\"], \"text\":\"From Sanskrit \u0027अनेकान्तवाद|tr\u003dan-ekānta-vāda\u0027 (scepticism, non-absolutism) a compound literally meaning \u0026quot;doctrine of non-exclusivity\u0026quot;.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One of the most important and basic doctrines of Jainism. It refers to the principles of pluralism and multiplicity of viewpoints, the notion that truth and reality are perceived differently from diverse points of view, and that no single point of view is the complete truth\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("anelloni", "{\"term\":\"anelloni\", \"etymology\":{\"influencers\":[{}], \"languages\":[\"English\", \"Italian\"], \"text\":\"From Italian \u0027anello\u0027 (ring)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A type of pasta similar to rigatoni but with ridges on the inside.\u0026lt;ref name\u003d\u0026quot;nym\u0026quot;/\u0026gt\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2011, Robin Raisfeld \u0026amp; Rob Patronite, \u0027Bowled Over\u0027, w:New York New York Magazine\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"The pièce de résistance, though, is a dried tubular pasta called anelloni, a fashion-forward shape that dares to wear its sauce-clinging ridges on the inside of the loop instead of on the outside\u0026lt;ref name\u003d\u0026quot;nym\u0026quot;\u0026gt;\u0026lt;/ref\u0026gt\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"A type of pasta developed to investigate ring-shaped polymers.\u0026lt;ref name\u003d\u0026quot;pw\u0026quot;/\u0026gt\", \"priority\":4},{\"upperType\":\"NOUN\", \"text\":\"2014, Davide Michieletto \u0026amp; Matthew S. Turner, \u0027A taste for anelloni\u0027, w:Physics Physics World (w:IOP IOP), pages 28-31\", \"priority\":5},{\"upperType\":\"NOUN\", \"text\":\"So we decided to create our own \u0026quot;ring spaghetti\u0026quot; \u0026amp;mdash; or \u0026quot;anelloni\u0026quot; as we\u0027ve decided to call it (\u0027anello\u0027 in Italian meaning \u0026quot;ring\u0026quot;).\u0026lt;ref name\u003d\u0026quot;pw\u0026quot;\u0026gt;\u0026lt;/ref\u0026gt\", \"priority\":6}]}, \"synonyms\":{}}");
+
+	add("anemochory", "{\"term\":\"anemochory\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{confix|anemo|chory|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The dispersal of seeds, spores, or fruit by wind\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("anemograph", "{\"term\":\"anemograph\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|anemo|graph|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An anemometer that makes a graphical recording\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("anemography", "{\"term\":\"anemography\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"Ancient greek (to 1453) wind + \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A scientific description of the winds\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The art of recording the direction and force of the wind, as by means of an anemograph\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("anemometer", "{\"term\":\"anemometer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|anemo|meter|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An instrument for measuring and recording the speed of the wind, a windmeter\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -16,13 +28,21 @@ package org.swtk.commons.dict.wiktionary.generated.a.n.e;  import java.util.Hash
 
 	add("anemonin", "{\"term\":\"anemonin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|anemone|in|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An acrid toxic substance obtained from some species of anemone\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("anemophily", "{\"term\":\"anemophily\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A form of pollination whereby pollen is distributed by wind\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("anemoscopy", "{\"term\":\"anemoscopy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|anemo|scopy|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Divination by use of the wind including its direction and intensity\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("anemotaxis", "{\"term\":\"anemotaxis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Movement of an in response to\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("anemotropism", "{\"term\":\"anemotropism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The orientation of plants in response to the direction of the wind\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("anencephaly", "{\"term\":\"anencephaly\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From the Latin \u0027anencephalia\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A lethal birth defect in which most of the brain and parts of the skull are missing; absence of the encephalon\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("aneroid", "{\"term\":\"aneroid\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An aneroid barometer\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("anestrus", "{\"term\":\"anestrus\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|an|estrus|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"In some female animals, a spell of sexual respite in between breeding periods\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("aneurine", "{\"term\":\"aneurine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"thiamine\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("aneurysm", "{\"term\":\"aneurysm\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027ἀνεύρυσμα|lang\u003dgrc\u0027 () from \u0027ἀνά|lang\u003dgrc\u0027 () + \u0027εὐρύς|lang\u003dgrc\u0027 ()\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An abnormal blood-filled swelling of an artery or vein, resulting from a localized weakness in the wall of the vessel\", \"priority\":1}]}, \"synonyms\":{}}");
 

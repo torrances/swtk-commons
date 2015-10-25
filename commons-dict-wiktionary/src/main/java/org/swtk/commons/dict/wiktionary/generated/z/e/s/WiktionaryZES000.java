@@ -2,4 +2,6 @@ package org.swtk.commons.dict.wiktionary.generated.z.e.s;  import java.util.Hash
 
 	add("zester", "{\"term\":\"zester\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|zest|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A kitchen implement used to remove the zest of citrus fruit\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("zestiness", "{\"term\":\"zestiness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or property of being zesty\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

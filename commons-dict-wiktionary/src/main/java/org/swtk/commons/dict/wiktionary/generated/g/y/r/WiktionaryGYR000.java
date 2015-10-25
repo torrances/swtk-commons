@@ -6,6 +6,8 @@ package org.swtk.commons.dict.wiktionary.generated.g.y.r;  import java.util.Hash
 
 	add("gyroresonance", "{\"term\":\"gyroresonance\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|gyro|resonance|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"gyroscopic resonance\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("gyrotropy", "{\"term\":\"gyrotropy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The helical movement of electromagnetic radiation through a chiral material\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("gyrwas", "{\"term\":\"gyrwas\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An Anglo-Saxon population of the Fens, divided into northern and southern groups\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

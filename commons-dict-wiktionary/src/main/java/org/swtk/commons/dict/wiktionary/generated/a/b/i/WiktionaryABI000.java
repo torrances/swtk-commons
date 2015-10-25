@@ -8,9 +8,13 @@ package org.swtk.commons.dict.wiktionary.generated.a.b.i;  import java.util.Hash
 
 	add("abidingness", "{\"term\":\"abidingness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|abiding|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or quality abiding. \u0026lt;ref\u0026gt;\u0026lt;/ref\u0026gt\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("abidjan", "{\"term\":\"abidjan\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The de facto capital and largest city of Côte d\u0027Ivoire\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("abience", "{\"term\":\"abience\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|abient|ence|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Withdrawal from, or avoidance of a stimulus\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("abietate", "{\"term\":\"abietate\", \"etymology\":{\"influencers\":[{}], \"languages\":[], \"text\":\"From \u0027abiet\u0027 (abietic acid) + \u0027-ate\u0027 (tr\u003da chemical compound)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any salt or ester of abietic acid; resinate\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("abietol", "{\"term\":\"abietol\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular abietane diterpenoid\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("abilo", "{\"term\":\"abilo\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{borrowing|tl|abilo||Garuga abilo|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Bogo; a Philippine fruit tree, from the family Burseraceae.\u0026lt;ref\u0026gt;\u0026lt;/ref\u0026gt;Category:en:Sapindales order plants\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -20,12 +24,22 @@ package org.swtk.commons.dict.wiktionary.generated.a.b.i;  import java.util.Hash
 
 	add("abilla", "{\"term\":\"abilla\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Spanish\"], \"text\":\"From American Spanish {{etystub|en}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An oily seed, from the South American plant , used to make candles.\u0026lt;ref\u0026gt;\u0026lt;/ref\u0026gt\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("abimelech", "{\"term\":\"abimelech\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Hebrew\"], \"text\":\"From Hebrew \u0027אבימלך\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A name of several Philistine kings\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1611\u0027\u0027, w:King James Version of the King James Version of the Bible, \u0027s:Bible (King Genesis 26:8\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"And it came to pass, when he had been there a long time, that \u0027\u0027Abimelech\u0027\u0027 king of the Philistines looked out at a window, and saw, and, behold, Isaac was sporting with Rebekah his wife\", \"priority\":3}]}, \"synonyms\":{}}");
+
+	add("abington", "{\"term\":\"abington\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A small town in Pennsylvania, near Philadelphia\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A town in southeastern Massachusetts, south of Boston\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("abiogenist", "{\"term\":\"abiogenist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|abiogenesis|ist|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who believes that life can be produced independently of antecedent life. \u0026lt;ref\u0026gt;\u0026lt;/ref\u0026gt\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("abiology", "{\"term\":\"abiology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The sciences, such as geology and astronomy, that collectively deal with inorganic or lifeless bodies\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("abioseston", "{\"term\":\"abioseston\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|a|bioseston|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The non-living particulate matter in lakes and oceans\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("abiosis", "{\"term\":\"abiosis\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From \u0027a-\u0027 from Ancient greek (to 1453) \u0027ἀ-\u0027 + \u0027bios\u0027 from Ancient greek (to 1453) \u0027βίος\u0027 (life) + \u0027-ωσις\u0027 ((verbal noun ending))\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The absence of life\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("abipón", "{\"term\":\"abipón\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{borrowing|es|abipón|lang\u003den}} of American Indian origin.\u0026lt;ref\u0026gt;{{R:MW3 1976|page\u003d3}}\u0026lt;/ref\u0026gt;\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An extinct people of Argentina and Paraguay\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The language of the Abipón people, of Guaicuruan origin\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("abirritation", "{\"term\":\"abirritation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|abirritate|ion|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A pathological condition opposite to that of irritation; debility; want of strength; asthenia; atony\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Decreased response to stimuli\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("abitibi", "{\"term\":\"abitibi\", \"etymology\":{\"influencers\":[{}], \"languages\":[\"algonquin\", \"English\", \"meskwaki\"], \"text\":\"From Algonquin akin to and Meskwaki \u0027abi\u0027ta-bi-g\u0027 (halfway across water) from \u0027abi\u0027ta\u0027 (halfway) + \u0027bi\u0027 (water)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A geographic region in Quebec within Abitibi-Témiscamingue\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"An Algonquin people of Ontario\", \"priority\":2}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -4,6 +4,8 @@ package org.swtk.commons.dict.wiktionary.generated.o.p.a;  import java.util.Hash
 
 	add("opalization", "{\"term\":\"opalization\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|opalize|ation|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The process of making something opalescent, or of converting wood etc into opal\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("opanak", "{\"term\":\"opanak\", \"etymology\":{\"influencers\":[], \"languages\":[\"Serbo-Croatian\"], \"text\":\"From Proto-slavic {{m|sla-pro|*opьnъkъ}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Aa kind of traditional leather shoes worn in Bulgaria, Bosnia and Herzegovina, Croatia, Macedonia and Serbia\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("opaqueness", "{\"term\":\"opaqueness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|opaque|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The characteristic of being opaque\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

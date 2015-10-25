@@ -1,9 +1,15 @@
 package org.swtk.commons.dict.wiktionary.generated.a.c.y;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryACY000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("acyl", "{\"term\":\"acyl\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of class of organic radicals, RCO-, formed by the removal of a hydroxyl group from a carboxylic acid\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("acycloguanosine", "{\"term\":\"acycloguanosine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A guanosine analogue antiviral drug\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("acyclovir", "{\"term\":\"acyclovir\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An antiviral drug used in the treatment of genital herpes\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("acyltransferase", "{\"term\":\"acyltransferase\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{compound|acyl|transferase|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of several transferase enzymes that catalyze the transfer of acyl groups between lipids\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("acyrologia", "{\"term\":\"acyrologia\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\", \"Latin\"], \"text\":\"From Latin from Ancient greek (to 1453) \u0027ἀκυρολογία\u0027 () \u0027α-\u0027 (not) + \u0027κυρος\u0027 (authority) \u0027λογια\u0027 (speech)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"inexact, inappropriate or improper use of a wor\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"malapropism\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("acyrology", "{\"term\":\"acyrology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The incorrect use of language\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("acyron", "{\"term\":\"acyron\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027ἄκυρον\u0027 (lang\u003dgrc)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The use of words incompatible with or contrary to the speaker\u0027s meaning\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

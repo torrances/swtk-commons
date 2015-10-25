@@ -2,4 +2,6 @@ package org.swtk.commons.dict.wiktionary.generated.b.a.j;  import java.util.Hash
 
 	add("bajillion", "{\"term\":\"bajillion\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"See {{suffix||illion|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An unspecified large number (of\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("bajocian", "{\"term\":\"bajocian\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A subdivision of the Jurassic period\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

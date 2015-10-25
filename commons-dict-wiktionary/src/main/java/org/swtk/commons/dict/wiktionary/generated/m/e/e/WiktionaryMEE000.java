@@ -4,4 +4,8 @@ package org.swtk.commons.dict.wiktionary.generated.m.e.e;  import java.util.Hash
 
 	add("meerkat", "{\"term\":\"meerkat\", \"etymology\":{\"influencers\":[], \"languages\":[\"Afrikaans\", \"English\", \"Dutch\"], \"text\":\"From Afrikaans \u0027meerkat\u0027 transferrative use of Dutch \u0027meerkat\u0027 (guenon (monkey)) Compare English \u0027mercat\u0027 \u0026lt;!--Hindi मर्कट \u0027markat\u0027 (monkey, ape), Sanskrit मर्कट \u0027markata\u0027 is a possible origin of the name.Bettter not to speculate without a source --\u0026gt;\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Suricata suricatta\u0027, a small carnivorous mammal of the mongoose family, from the Kalahari Desert, known for its habit of standing on its hind legs\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("meetingitis", "{\"term\":\"meetingitis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|meeting|itis|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An excessive propensity to hold unnecessary meetings\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("meetness", "{\"term\":\"meetness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"fitness; suitability; propriety\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

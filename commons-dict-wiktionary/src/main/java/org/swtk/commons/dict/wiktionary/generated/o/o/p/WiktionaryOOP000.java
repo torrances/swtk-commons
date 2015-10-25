@@ -2,4 +2,6 @@ package org.swtk.commons.dict.wiktionary.generated.o.o.p;  import java.util.Hash
 
 	add("oophorectomy", "{\"term\":\"oophorectomy\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From noun use of Ancient greek (to 1453) \u0027ὠοφόρος\u0027 (egg-bearing) + \u0027\u0027 corresponding to {{suffix|oophore|ectomy|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Surgical removal of one or both ovaries\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("oophoritis", "{\"term\":\"oophoritis\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From noun use of Ancient greek (to 1453) \u0027ὠοφόρος\u0027 (egg-bearing) {{suffix||itis|lang\u003den}}{{wikipedia}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"inflammation of the ovaries\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -22,6 +22,8 @@ package org.swtk.commons.dict.wiktionary.generated.m.e.g;  import java.util.Hash
 
 	add("megacryometeor", "{\"term\":\"megacryometeor\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|mega-|cryo-|meteor|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a very large water ice object that falls from the sky, similar in composition to hailstones\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("megacystis", "{\"term\":\"megacystis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A rare disease that is identified by an abnormally large or distended bladder\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("megadecibel", "{\"term\":\"megadecibel\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|mega|decibel|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A measure of sound intensity, one million decibels\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("megadiversity", "{\"term\":\"megadiversity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|mega|diversity|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Very great diversity\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -48,7 +50,11 @@ package org.swtk.commons.dict.wiktionary.generated.m.e.g;  import java.util.Hash
 
 	add("megaliter", "{\"term\":\"megaliter\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|mega|liter|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One million liters\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("megalithism", "{\"term\":\"megalithism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|megalith|ism|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The culture surrounding the building of megaliths\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("megalocornea", "{\"term\":\"megalocornea\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|megalo|cornea|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A condition characterized by a very large cornea\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("megalography", "{\"term\":\"megalography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The depiction of great or grand things, such as heroes and gods\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("megalomaniac", "{\"term\":\"megalomaniac\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One affected with or exhibiting megalomania\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -98,6 +104,8 @@ package org.swtk.commons.dict.wiktionary.generated.m.e.g;  import java.util.Hash
 
 	add("megastar", "{\"term\":\"megastar\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|mega|star|lang\u003den}} and still more than a \u0026quot;star\u0026quot;\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A very famous or successful celebrity\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("megastardom", "{\"term\":\"megastardom\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of someone acknowledged as a megastar\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("megaterror", "{\"term\":\"megaterror\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|mega|terror|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Large-scale terrorism\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("megaton", "{\"term\":\"megaton\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"metric prefix {{prefix|mega|ton|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A measure of the strength of an explosion or a bomb based on how many million tons of TNT would be needed to produce the same energy\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -105,5 +113,7 @@ package org.swtk.commons.dict.wiktionary.generated.m.e.g;  import java.util.Hash
 	add("megatsunami", "{\"term\":\"megatsunami\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|mega|tsunami|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A very large tsunami\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("megayacht", "{\"term\":\"megayacht\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|mega|yacht|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A very large luxury yach\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"a marina capable of accommodating \u0027\u0027megayachts\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("meggings", "{\"term\":\"meggings\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|man|leggings|lang\u003den}}; compare \u0027treggings\u0027 \u0027jeggings\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"tights or leggings for men\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

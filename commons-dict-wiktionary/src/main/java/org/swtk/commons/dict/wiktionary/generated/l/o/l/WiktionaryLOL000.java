@@ -6,4 +6,6 @@ package org.swtk.commons.dict.wiktionary.generated.l.o.l;  import java.util.Hash
 
 	add("lollipop", "{\"term\":\"lollipop\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Multiple theories abound. One is that it is a {{borrowing|rme|lollipobbul||candy apple|nocap\u003d1|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An item of confectionery consisting of a piece of candy/sweet attached to a stick\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("lollygag", "{\"term\":\"lollygag\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Origin unknown.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Silliness, nonsense\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"He likes to do his car up with blacked-out windows, and all that \u0027\u0027lollygag\", \"priority\":2}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

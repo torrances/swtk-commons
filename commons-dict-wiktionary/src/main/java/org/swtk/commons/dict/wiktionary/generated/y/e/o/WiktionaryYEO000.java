@@ -2,4 +2,6 @@ package org.swtk.commons.dict.wiktionary.generated.y.e.o;  import java.util.Hash
 
 	add("yeomanry", "{\"term\":\"yeomanry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|yeoman|ry|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A class of small freeholders who cultivated their own land\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Bancrof\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"The enfranchised \u0027\u0027yeomanry\u0027\u0027 began to feel an instinct for dominion\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"A British volunteer cavalry force organized in 1761 for home defense and later incorporated into the Territorial Army\", \"priority\":4}]}, \"synonyms\":{}}");
 
+	add("yeovil", "{\"term\":\"yeovil\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A town in Somerset, England\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

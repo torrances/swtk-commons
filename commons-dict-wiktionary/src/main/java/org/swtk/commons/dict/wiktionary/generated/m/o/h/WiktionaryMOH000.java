@@ -4,6 +4,10 @@ package org.swtk.commons.dict.wiktionary.generated.m.o.h;  import java.util.Hash
 
 	add("mohammedist", "{\"term\":\"mohammedist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Mohammed|ist|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A Muslim\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("mohegan", "{\"term\":\"mohegan\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An indigenous people of New England who, at the time of European contact, formed a unit with the Pequot, but later became separate\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The language of this people; Mohegan-Pequot\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("mohican", "{\"term\":\"mohican\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"mahican\"], \"text\":\"From their self-designation in Mahican meaning \u0026quot;people of the estuary.\u0026quot;\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An indigenous people of New England; the Mahicans\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The \u0027\u0027Mohican\u0027\u0027 are an Algonquian-speaking people\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"The Mohegan people\", \"priority\":3}]}, \"synonyms\":{}}");
+
 	add("mohur", "{\"term\":\"mohur\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a Persian gold coi\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"a gold coin of British India whose value was fifteen rupees\", \"priority\":2}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

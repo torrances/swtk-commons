@@ -4,6 +4,8 @@ package org.swtk.commons.dict.wiktionary.generated.c.o.c;  import java.util.Hash
 
 	add("cocaptain", "{\"term\":\"cocaptain\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|co|captain|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"joint captain\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("coccidiosis", "{\"term\":\"coccidiosis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The disease caused by coccidian infection\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("coccyx", "{\"term\":\"coccyx\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027κόκκυξ\u0027 (cuckoo) referring to the curved shape of a cuckoo\u0027s beak when viewed from the side.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The final (bottommost) fused vertebrae at the base of the spine, the tailbone\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("cocelebrant", "{\"term\":\"cocelebrant\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|co|celebrant|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One of two or more celebrants involved with the same occasion\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -16,6 +18,8 @@ package org.swtk.commons.dict.wiktionary.generated.c.o.c;  import java.util.Hash
 
 	add("cockade", "{\"term\":\"cockade\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"From French \u0027lang\u003dfr\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A rosette worn in a hat as an office or party badge\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("cockaigne", "{\"term\":\"cockaigne\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"old french (842-ca. 1400)\"], \"text\":\"From Old french (842-ca. 1400) \u0027cocaigne\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A land in medieval myth, a land of plenty, a land of luxury and idleness\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("cockapoo", "{\"term\":\"cockapoo\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|cocker spaniel|poodle|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A cross between an American cocker spaniel and a miniature poodle\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("cockatiel", "{\"term\":\"cockatiel\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Nymphicus hollandicus\u0027, a small, rather atypical cockatoo with a distinctive pointed yellow crest\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -25,6 +29,8 @@ package org.swtk.commons.dict.wiktionary.generated.c.o.c;  import java.util.Hash
 	add("cockfight", "{\"term\":\"cockfight\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|cock|fight|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A contest, in a cockpit, between gamecocks fitted with cockspurs\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("cockhead", "{\"term\":\"cockhead\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|cock|head|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The glans penis\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Matt Bernstein Sycamore, \u0027Pulling Taffy\u0027 (2003) p. 64\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"He says oh that feels great, could you squeeze a bit harder on my \u0027\u0027cockhead\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"Dickhead\", \"priority\":4},{\"upperType\":\"NOUN\", \"text\":\"Jerzy N. Kosinski, \u0027The Devil Tree: A Novel\u0027 (2003) p. 89\", \"priority\":5},{\"upperType\":\"NOUN\", \"text\":\"I\u0027m star material, you \u0027\u0027cockhead\u0027\u0027. Just look at me\", \"priority\":6},{\"upperType\":\"NOUN\", \"text\":\"The rounded or pointed top of a grinding mill spindle, forming a pivot on which the stone is balanced\", \"priority\":7}]}, \"synonyms\":{}}");
+
+	add("cockiness", "{\"term\":\"cockiness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality of being cocky\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("cocklebur", "{\"term\":\"cocklebur\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|cockle|bur|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of the coarse composite weeds of the genus \u0027Xanthium\u0027, with a prickly fruit\", \"priority\":1}]}, \"synonyms\":{}}");
 

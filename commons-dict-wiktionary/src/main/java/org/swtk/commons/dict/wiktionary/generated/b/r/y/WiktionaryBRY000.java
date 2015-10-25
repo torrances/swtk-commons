@@ -6,4 +6,6 @@ package org.swtk.commons.dict.wiktionary.generated.b.r.y;  import java.util.Hash
 
 	add("bryozoon", "{\"term\":\"bryozoon\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bryo|zoon|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A polyzoon; a tiny animal that forms compound colonies\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("brythonic", "{\"term\":\"brythonic\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Brython|ic|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A Celtic language\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

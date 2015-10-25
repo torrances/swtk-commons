@@ -4,4 +4,6 @@ package org.swtk.commons.dict.wiktionary.generated.e.m.o;  import java.util.Hash
 
 	add("emotionology", "{\"term\":\"emotionology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|emotion|ology|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The way a group of people think and speak about their emotions\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The multidisciplinary study of emotions\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("emotronic", "{\"term\":\"emotronic\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|emo|electronic|lang\u003den}}, referring to electronic music.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A genre of music that fuses emo and electronic music, typically combining emotional lyrics with instruments such as synthesizers, bass guitars, and sequencer\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -4,6 +4,8 @@ package org.swtk.commons.dict.wiktionary.generated.f.e.e;  import java.util.Hash
 
 	add("feedreader", "{\"term\":\"feedreader\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|feed|reader|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A software program that gathers content from newsfeeds\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("feeing", "{\"term\":\"feeing\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The hiring of servants for a fee\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("feels", "{\"term\":\"feels\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Feelings\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("féerie", "{\"term\":\"féerie\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"French \u0027féerie\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A fantastical theatrical production featuring fairies\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2003\u0027\u0027: Syd\u0027s \u0027\u0027féerie\u0027\u0027 entourage and girlies in drifting crinoline went out of the window, of course, along with his animated scarecrows — Jeremy Harding, ‘Afternoonishness’, \u0027London Review of Books\u0027 25:1Category:English terms spelled with É\", \"priority\":2}]}, \"synonyms\":{}}");

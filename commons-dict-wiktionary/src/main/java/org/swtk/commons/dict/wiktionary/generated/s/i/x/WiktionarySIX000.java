@@ -4,4 +4,6 @@ package org.swtk.commons.dict.wiktionary.generated.s.i.x;  import java.util.Hash
 
 	add("sixsome", "{\"term\":\"sixsome\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|six|some|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A group of six persons or things\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("sixte", "{\"term\":\"sixte\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The sixth defensive position, with the sword hand held at chest height, and the tip of the sword at eye level\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

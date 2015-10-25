@@ -10,6 +10,8 @@ package org.swtk.commons.dict.wiktionary.generated.u.n.p;  import java.util.Hash
 
 	add("unprofessionalization", "{\"term\":\"unprofessionalization\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|un|professionalization|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the process of making something unprofessional\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("unprofitability", "{\"term\":\"unprofitability\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or condition of being unprofitable\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("unpunctualness", "{\"term\":\"unpunctualness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|unpunctual|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Not being punctual; lateness\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

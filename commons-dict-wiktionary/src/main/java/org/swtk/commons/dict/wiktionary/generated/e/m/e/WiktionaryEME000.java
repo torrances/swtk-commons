@@ -10,6 +10,10 @@ package org.swtk.commons.dict.wiktionary.generated.e.m.e;  import java.util.Hash
 
 	add("emerger", "{\"term\":\"emerger\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|emerge|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The form of an aquatic insect that is hatching or emerging; used in fly fishing\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("emergy", "{\"term\":\"emergy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From \u0027\u0027 \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the total energy used in the life cycle of some product; the available energy of one kind that has to be used up directly and indirectly to make a product or service\u0026lt;ref\u0026gt;\u0026lt;/ref\u0026gt\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("emetophilia", "{\"term\":\"emetophilia\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"Based on Ancient greek (to 1453) \u0027ἐμέω\u0027 (i vomit) + \u0027φιλέω\u0027 (i love)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A sexual fetish in which an individual is aroused by vomiting, or by seeing others vomit\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("emetophobia", "{\"term\":\"emetophobia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An inordinate fear of vomiting, especially in public\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

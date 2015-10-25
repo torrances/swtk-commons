@@ -2,4 +2,6 @@ package org.swtk.commons.dict.wiktionary.generated.o.w.n;  import java.util.Hash
 
 	add("ownership", "{\"term\":\"ownership\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|owner|ship|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of having complete legal control of the status of something\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("ownness", "{\"term\":\"ownness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The property of being one\u0027s own\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

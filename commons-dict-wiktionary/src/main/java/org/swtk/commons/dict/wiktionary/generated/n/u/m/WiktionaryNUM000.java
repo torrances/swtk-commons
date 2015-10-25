@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.n.u.m;  import java.util.Hash
 
 	add("numen", "{\"term\":\"numen\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin {{m|la|numen|nūmen}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a divinity, especially a local or presiding go\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("numericlature", "{\"term\":\"numericlature\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A system of nomenclature based on numbers\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("numerousness", "{\"term\":\"numerousness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|numerous|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or quality of being numerous\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("numismatics", "{\"term\":\"numismatics\", \"etymology\":{\"influencers\":[{}], \"languages\":[\"English\", \"French\", \"ancient greek (to 1453)\"], \"text\":\"From French \u0027numismatique\u0027 from \u0027numisma\u0027 \u0027numismatis\u0027 (coin) variant of Latin \u0027nomisma\u0027 from Ancient greek (to 1453) \u0027νόμισμα\u0027 (current coin, custom) from \u0027νομίζω\u0027 (i hold or own as a custom, usage, i use customarily, practise, i am used to) from \u0027νόμος\u0027 (usage, custom) from \u0027νέμω\u0027 (i keep, hold, watch)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of coins (or of medals\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The collecting of coins (or of medals\", \"priority\":2}]}, \"synonyms\":{}}");

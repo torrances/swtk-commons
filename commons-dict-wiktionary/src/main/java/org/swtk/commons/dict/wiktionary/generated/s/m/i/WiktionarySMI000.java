@@ -6,6 +6,8 @@ package org.swtk.commons.dict.wiktionary.generated.s.m.i;  import java.util.Hash
 
 	add("smiter", "{\"term\":\"smiter\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who smites\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("smitham", "{\"term\":\"smitham\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Small lumps of ore which free miners scavenged because small quantities were exempt from payment of taxes. The practice ended in 1760 when the Duke of Devonshire challenged the tax exemption\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("smithereen", "{\"term\":\"smithereen\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From the name of the city, after w:Alfred Waldron Smithers|Sir A.W. Smithers (1850–1924), chairman of the Grand Trunk Pacific Railway. Influenced by \u0027smithereens\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A native of Smithers, British Columbia\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("smithery", "{\"term\":\"smithery\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|smith|ery|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The place where a smith works\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The trade or craft of a smith\", \"priority\":2}]}, \"synonyms\":{}}");

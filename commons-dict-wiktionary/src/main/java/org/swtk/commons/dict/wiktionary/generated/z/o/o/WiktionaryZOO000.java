@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.z.o.o;  import java.util.Hash
 
 	add("zoocentrism", "{\"term\":\"zoocentrism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|zoo|centrism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A viewpoint or theory that focuses on animals, giving them preference above all other considerations\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("zoochory", "{\"term\":\"zoochory\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{confix|zoo|chory|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The dispersal of seeds, spores, or fruit by animals\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("zoochosis", "{\"term\":\"zoochosis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|zoo|psychosis|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Abnormal animal behaviour caused by time in captivity\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("zooerastia", "{\"term\":\"zooerastia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|zoo|erastia|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The practice of a human engaging in sexual intercourse with an anima\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -9,6 +11,8 @@ package org.swtk.commons.dict.wiktionary.generated.z.o.o;  import java.util.Hash
 	add("zooerasty", "{\"term\":\"zooerasty\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|zoo|erasty|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The practice of a human engaging in sexual intercourse with an animal\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("zooflagellate", "{\"term\":\"zooflagellate\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|zoo|flagellate|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of the heterotrophic flagellates of the phylum Zoomastigophora\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("zoogenesis", "{\"term\":\"zoogenesis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The theory that the major types of lifeform on Earth evolved separately and independently from each other\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("zoogeography", "{\"term\":\"zoogeography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|zoo|geography|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The scientific study of the geographical distribution of animal species\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -42,11 +46,17 @@ package org.swtk.commons.dict.wiktionary.generated.z.o.o;  import java.util.Hash
 
 	add("zoopathology", "{\"term\":\"zoopathology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|zoo|pathology|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Animal pathology; veterinary pathology\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("zoophagia", "{\"term\":\"zoophagia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The act of eating living creatures\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("zoophagy", "{\"term\":\"zoophagy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{confix|zoo|phagy|t1\u003drelating to animals|t2\u003dfeeding on|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The feeding on animals\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("zoophilia", "{\"term\":\"zoophilia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Human sexual attraction toward or sexual interaction with animals\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Excessive fondness for animals\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("zoophyte", "{\"term\":\"zoophyte\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From {{m|la|zōophyton}}, from Ancient greek (to 1453) {{m|grc|ζωόφῠτον}}. Surface reading of {{confix|zoo|phyte|t1\u003danimal|t2\u003dplant|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of various invertebrate animals which resemble plants, such as sponges, corals and sea anemones\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("zoopsia", "{\"term\":\"zoopsia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{confix|zoo|opsia|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Visual hallucinations of animals\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1986\u0027\u0027, \u0027Julia Paradise\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"One of her most persistent hallucinations was a small brightly patterned snake moving across the floor in the periphery of her vision. Her \u0027\u0027zoöpsia\u0027\u0027 was accompanied by a terror of real animals\", \"priority\":3}]}, \"synonyms\":{}}");
+
+	add("zooscopy", "{\"term\":\"zooscopy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The scientific observation of living animals\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A form of hallucination in which the sufferer believes he/she sees animals\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("zoosemantics", "{\"term\":\"zoosemantics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|zoo|semantics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The semantics of animal communication\", \"priority\":1}]}, \"synonyms\":{}}");
 

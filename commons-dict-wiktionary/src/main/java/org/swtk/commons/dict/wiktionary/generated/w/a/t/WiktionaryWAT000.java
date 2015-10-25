@@ -56,6 +56,8 @@ package org.swtk.commons.dict.wiktionary.generated.w.a.t;  import java.util.Hash
 
 	add("watertightness", "{\"term\":\"watertightness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|watertight|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The condition of being watertight\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("waterzooi", "{\"term\":\"waterzooi\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Dutch\"], \"text\":\"From Dutch \u0027waterzooi\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A type of Flemish stew, traditionally made with fish\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("watkinsonite", "{\"term\":\"watkinsonite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Watkinson|ite|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A monoclinic-domatic black mineral containing bismuth, copper, lead, selenium, and sulfur\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("wattlebird", "{\"term\":\"wattlebird\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|wattle|bird|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of a group of Australian birds in the genus \u0027Anthochaera\u0027 of the honeyeater family Meliphagidae\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Any of three birds in the family Callaeidae, endemic to New Zealand\", \"priority\":2}]}, \"synonyms\":{}}");

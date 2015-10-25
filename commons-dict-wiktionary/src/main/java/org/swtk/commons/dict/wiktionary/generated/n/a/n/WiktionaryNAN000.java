@@ -20,6 +20,8 @@ package org.swtk.commons.dict.wiktionary.generated.n.a.n;  import java.util.Hash
 
 	add("nanocalorimetry", "{\"term\":\"nanocalorimetry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|nano|calorimetry|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"nanoscale calorimetry\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("nanocephaly", "{\"term\":\"nanocephaly\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The condition of having an abnormally small head\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("nanocircuit", "{\"term\":\"nanocircuit\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\u0027nano-\u0027 + \u0027circuit\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An electrical circuit at nanoscale\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nanocircuitry", "{\"term\":\"nanocircuitry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|nano|circuitry|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"nanoscale circuitry\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -64,6 +66,8 @@ package org.swtk.commons.dict.wiktionary.generated.n.a.n;  import java.util.Hash
 
 	add("nanolithography", "{\"term\":\"nanolithography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|nano|lithography|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the use of lithography to fabricate nanoscale patterns\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("nanomagnetism", "{\"term\":\"nanomagnetism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the study of) magnetism on a nanoscale\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("nanomanipulator", "{\"term\":\"nanomanipulator\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|nano|manipulator|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A nanoscale manipulator, or one designed to manipulate nanoscale objects\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nanomechanics", "{\"term\":\"nanomechanics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|nano|mechanics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of the mechanical properties of nanostructures and nanomaterials\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -82,6 +86,8 @@ package org.swtk.commons.dict.wiktionary.generated.n.a.n;  import java.util.Hash
 
 	add("nanopatterning", "{\"term\":\"nanopatterning\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|nano|patterning|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The fabrication of a nanoscale pattern, especially as part of an electronic component\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("nanophilia", "{\"term\":\"nanophilia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An interest in nanotechnology and its benefits\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2006\u0027\u0027 Joachim Schummer, Davis Baird - Nanotechnology Challenges: Implications for Philosophy, Ethics and Societ\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Extreme \u0027\u0027nanophilia\u0027\u0027 is also represented in some works of science fiction, especially the novels of Kathleen Ann Goonan (eg, 1994, 1997, 2000\", \"priority\":3}]}, \"synonyms\":{}}");
+
 	add("nanopolymer", "{\"term\":\"nanopolymer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|nano|polymer|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A polymer or copolymer material containing dispersed nanoparticles\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nanopositioning", "{\"term\":\"nanopositioning\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|nano|positioning|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"nanoscale positioning\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -90,11 +96,15 @@ package org.swtk.commons.dict.wiktionary.generated.n.a.n;  import java.util.Hash
 
 	add("nanorelay", "{\"term\":\"nanorelay\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|nano|relay|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A nanoscale relay\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("nanori", "{\"term\":\"nanori\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Japanese\"], \"text\":\"From Japanese \u0027名乗り\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A Japanese reading of a kanji character that is used for names of people or places\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("nanoroughness", "{\"term\":\"nanoroughness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|nano|roughness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality of being rough at nanoscale\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nanosatellite", "{\"term\":\"nanosatellite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|nano|satellite|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An artificial satellite with a wet mass between 1 and 10 kilograms\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nanosecond", "{\"term\":\"nanosecond\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"The SI prefix {{prefix|nano|second|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A measure of time equal to one billionth of a second. Abbreviation: ns\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("nanosensing", "{\"term\":\"nanosensing\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The use of nanosensors to investigate nanoparticles\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nanosensor", "{\"term\":\"nanosensor\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|nano|sensor|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A nanoscale sensor\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -111,6 +121,8 @@ package org.swtk.commons.dict.wiktionary.generated.n.a.n;  import java.util.Hash
 	add("nanotube", "{\"term\":\"nanotube\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|nano|tube|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Shortening of carbon nanotube; A carbon molecule, in the shape of a tube, having a fullerene structure and a diameter of about 1 or 2 nanometers\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"any nanotech tubular structure with a characteristic diameter measured in a few nanometres, such as titanium nanotubes\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("nanovaccinology", "{\"term\":\"nanovaccinology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|nano|vaccinology|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The use of nanotechnology in vaccine development\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("nanovid", "{\"term\":\"nanovid\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Shortened from \u0027nanometer video-enhanced microscopy\u0027.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A microscopic technique for visualizing colloidal gold particles of nanoscale diameter, utilizing contrast enhancement and digital image processing\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nanowhisker", "{\"term\":\"nanowhisker\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|nano|whisker|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A nanoscale whisker\", \"priority\":1}]}, \"synonyms\":{}}");
 

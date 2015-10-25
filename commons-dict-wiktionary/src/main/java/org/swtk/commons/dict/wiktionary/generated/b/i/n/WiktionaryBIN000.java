@@ -10,7 +10,11 @@ package org.swtk.commons.dict.wiktionary.generated.b.i.n;  import java.util.Hash
 
 	add("binger", "{\"term\":\"binger\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Someone who binges\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("binghamite", "{\"term\":\"binghamite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Bingham|ite|lang\u003den}}, after William Bingham, a lapidary, who discovered it in 1936.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A type of agate stone found in Minnesota\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("biniou", "{\"term\":\"biniou\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{borrowing|br|binioù|lang\u003den}}, plural of \u0027béni\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A set of traditional Breton bagpipes.Category:en:Musical instruments\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("binitarianism", "{\"term\":\"binitarianism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The belief, particularly among some Christians, that God is two personae (persons), two individuals, or two aspects in one Godhead (or God), these being God the Father and God the Son (Jesus Christ\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("binoculars", "{\"term\":\"binoculars\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Abbreviation of \u0026quot;binocular glass\u0026quot;.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A hand-held device consisting of a series of lenses and prisms, used to magnify objects so that they can be better seen from a distance, and looked at through both eyes\", \"priority\":1}]}, \"synonyms\":{}}");
 

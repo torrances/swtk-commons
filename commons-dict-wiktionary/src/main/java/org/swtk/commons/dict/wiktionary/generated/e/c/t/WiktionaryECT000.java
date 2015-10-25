@@ -8,6 +8,8 @@ package org.swtk.commons.dict.wiktionary.generated.e.c.t;  import java.util.Hash
 
 	add("ectoderm", "{\"term\":\"ectoderm\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|ecto|derm|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"outermost of the three tissue layers in the embryo of a metazoan animal. Through development, it will produce the epidermis (skin) and nervous system of the adult\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("ectodin", "{\"term\":\"ectodin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A secreted inhibitor of bone morphogenetic proteins\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("ectodomain", "{\"term\":\"ectodomain\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|ecto|domain|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The portion of a polypeptide on a cell membrane that extends beyond the membrane into the extracellular space\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("ectomorph", "{\"term\":\"ectomorph\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Derived from \u0027ectoderm\u0027 {suffix||morph|lang\u003den}} from w:William Herbert Sheldon|William Herbert Sheldon.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Someone with a lean, only slightly muscular bod\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Theoretical body type in which a person has a high metabolism. Such a person can easily maintain a low fat physique, but does not add muscle or body weight easily\", \"priority\":2}]}, \"synonyms\":{}}");

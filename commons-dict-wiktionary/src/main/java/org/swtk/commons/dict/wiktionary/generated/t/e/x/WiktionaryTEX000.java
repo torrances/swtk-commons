@@ -4,7 +4,11 @@ package org.swtk.commons.dict.wiktionary.generated.t.e.x;  import java.util.Hash
 
 	add("texter", "{\"term\":\"texter\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|text|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who texts; one who sends text messages\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Australia\u0027) a marke\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"marker, felt-tipped pen\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("textese", "{\"term\":\"textese\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|text|ese|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An abbreviated form of language used in texting, instant messaging, chatrooms etc\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("textile", "{\"term\":\"textile\", \"etymology\":{\"influencers\":[{}], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027textile\u0027 substantive use of \u0027textilis\u0027 (woven) from \u0027texō\u0027 (weave)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Cloth produced from a fabric\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"a non-nudist\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("texting", "{\"term\":\"texting\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|text|messaging|lang\u003den}}, derived from text messaging\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the use of a mobile phone to send text messages via SMS\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("textphone", "{\"term\":\"textphone\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|text|phone|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A telephone with a simple keyboard and a small screen, used by the deaf\", \"priority\":1}]}, \"synonyms\":{}}");
 

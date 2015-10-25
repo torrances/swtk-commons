@@ -1,0 +1,5 @@
+package org.swtk.commons.dict.wiktionary.generated.c.a.j;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryCAJ000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("cajolement", "{\"term\":\"cajolement\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|cajole|ment|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The act of cajoling or the state of being cajoled\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("cajuput", "{\"term\":\"cajuput\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"cajuput oil\", \"priority\":1}]}, \"synonyms\":{}}");
+
+ 	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

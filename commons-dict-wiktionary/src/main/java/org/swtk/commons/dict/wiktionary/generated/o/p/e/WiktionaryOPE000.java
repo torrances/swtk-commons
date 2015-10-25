@@ -8,6 +8,8 @@ package org.swtk.commons.dict.wiktionary.generated.o.p.e;  import java.util.Hash
 
 	add("operationism", "{\"term\":\"operationism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|operation|ism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The doctrine that the meaning of a term consists of the operation(s) performed in defining it\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("operoseness", "{\"term\":\"operoseness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of being operose; tedium\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("opetide", "{\"term\":\"opetide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|ope|tide|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The early spring, or the time when flowers begin opening\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Her soul was as a flower in its \u0027\u0027opetide\u0027\u0027.\u0027 --w:Max Max Beerbohm in Zuleika Dobson\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"The time between Epiphany and Ash Wednesday when marriages were formerly solemnized publicly in churches\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"The time after harvest when the common fields are open to all kinds of stock\", \"priority\":4}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -24,6 +24,7 @@ import org.swtk.commons.dict.wiktionary.generated.t.a.u.*;
 import org.swtk.commons.dict.wiktionary.generated.t.a.v.*;
 import org.swtk.commons.dict.wiktionary.generated.t.a.w.*;
 import org.swtk.commons.dict.wiktionary.generated.t.a.x.*;
+import org.swtk.commons.dict.wiktionary.generated.t.b.i.*;
 import org.swtk.commons.dict.wiktionary.generated.t.c.h.*;
 import org.swtk.commons.dict.wiktionary.generated.t.e.a.*;
 import org.swtk.commons.dict.wiktionary.generated.t.e.b.*;
@@ -31,6 +32,8 @@ import org.swtk.commons.dict.wiktionary.generated.t.e.c.*;
 import org.swtk.commons.dict.wiktionary.generated.t.e.d.*;
 import org.swtk.commons.dict.wiktionary.generated.t.e.e.*;
 import org.swtk.commons.dict.wiktionary.generated.t.e.g.*;
+import org.swtk.commons.dict.wiktionary.generated.t.e.h.*;
+import org.swtk.commons.dict.wiktionary.generated.t.e.i.*;
 import org.swtk.commons.dict.wiktionary.generated.t.e.k.*;
 import org.swtk.commons.dict.wiktionary.generated.t.e.l.*;
 import org.swtk.commons.dict.wiktionary.generated.t.e.m.*;
@@ -43,6 +46,7 @@ import org.swtk.commons.dict.wiktionary.generated.t.e.t.*;
 import org.swtk.commons.dict.wiktionary.generated.t.e.u.*;
 import org.swtk.commons.dict.wiktionary.generated.t.e.w.*;
 import org.swtk.commons.dict.wiktionary.generated.t.e.x.*;
+import org.swtk.commons.dict.wiktionary.generated.t.e.z.*;
 import org.swtk.commons.dict.wiktionary.generated.t.h.a.*;
 import org.swtk.commons.dict.wiktionary.generated.t.h.e.*;
 import org.swtk.commons.dict.wiktionary.generated.t.h.i.*;
@@ -52,22 +56,26 @@ import org.swtk.commons.dict.wiktionary.generated.t.h.r.*;
 import org.swtk.commons.dict.wiktionary.generated.t.h.u.*;
 import org.swtk.commons.dict.wiktionary.generated.t.h.w.*;
 import org.swtk.commons.dict.wiktionary.generated.t.h.y.*;
+import org.swtk.commons.dict.wiktionary.generated.t.i.a.*;
 import org.swtk.commons.dict.wiktionary.generated.t.i.b.*;
 import org.swtk.commons.dict.wiktionary.generated.t.i.c.*;
 import org.swtk.commons.dict.wiktionary.generated.t.i.d.*;
 import org.swtk.commons.dict.wiktionary.generated.t.i.e.*;
+import org.swtk.commons.dict.wiktionary.generated.t.i.f.*;
 import org.swtk.commons.dict.wiktionary.generated.t.i.g.*;
 import org.swtk.commons.dict.wiktionary.generated.t.i.k.*;
 import org.swtk.commons.dict.wiktionary.generated.t.i.l.*;
 import org.swtk.commons.dict.wiktionary.generated.t.i.m.*;
 import org.swtk.commons.dict.wiktionary.generated.t.i.n.*;
+import org.swtk.commons.dict.wiktionary.generated.t.i.o.*;
 import org.swtk.commons.dict.wiktionary.generated.t.i.p.*;
 import org.swtk.commons.dict.wiktionary.generated.t.i.q.*;
 import org.swtk.commons.dict.wiktionary.generated.t.i.r.*;
 import org.swtk.commons.dict.wiktionary.generated.t.i.s.*;
 import org.swtk.commons.dict.wiktionary.generated.t.i.t.*;
+import org.swtk.commons.dict.wiktionary.generated.t.i.v.*;
+import org.swtk.commons.dict.wiktionary.generated.t.i.z.*;
 import org.swtk.commons.dict.wiktionary.generated.t.j.a.*;
-import org.swtk.commons.dict.wiktionary.generated.t.j.e.*;
 import org.swtk.commons.dict.wiktionary.generated.t.o.a.*;
 import org.swtk.commons.dict.wiktionary.generated.t.o.b.*;
 import org.swtk.commons.dict.wiktionary.generated.t.o.c.*;
@@ -98,9 +106,13 @@ import org.swtk.commons.dict.wiktionary.generated.t.r.u.*;
 import org.swtk.commons.dict.wiktionary.generated.t.r.y.*;
 import org.swtk.commons.dict.wiktionary.generated.t.s.a.*;
 import org.swtk.commons.dict.wiktionary.generated.t.s.c.*;
+import org.swtk.commons.dict.wiktionary.generated.t.s.e.*;
+import org.swtk.commons.dict.wiktionary.generated.t.s.i.*;
 import org.swtk.commons.dict.wiktionary.generated.t.s.o.*;
+import org.swtk.commons.dict.wiktionary.generated.t.s.r.*;
 import org.swtk.commons.dict.wiktionary.generated.t.s.u.*;
 import org.swtk.commons.dict.wiktionary.generated.t.t.e.*;
+import org.swtk.commons.dict.wiktionary.generated.t.u.a.*;
 import org.swtk.commons.dict.wiktionary.generated.t.u.b.*;
 import org.swtk.commons.dict.wiktionary.generated.t.u.c.*;
 import org.swtk.commons.dict.wiktionary.generated.t.u.g.*;
@@ -120,13 +132,13 @@ import org.swtk.commons.dict.wiktionary.generated.t.w.e.*;
 import org.swtk.commons.dict.wiktionary.generated.t.w.i.*;
 import org.swtk.commons.dict.wiktionary.generated.t.w.o.*;
 import org.swtk.commons.dict.wiktionary.generated.t.y.c.*;
-import org.swtk.commons.dict.wiktionary.generated.t.y.g.*;
 import org.swtk.commons.dict.wiktionary.generated.t.y.i.*;
 import org.swtk.commons.dict.wiktionary.generated.t.y.l.*;
 import org.swtk.commons.dict.wiktionary.generated.t.y.m.*;
 import org.swtk.commons.dict.wiktionary.generated.t.y.p.*;
 import org.swtk.commons.dict.wiktionary.generated.t.y.r.*;
 import org.swtk.commons.dict.wiktionary.generated.t.z.a.*;
+import org.swtk.commons.dict.wiktionary.generated.t.z.e.*;
 import org.swtk.commons.dict.wiktionary.generated.t.z.i.*;
 
 public final class WiktionaryDbT {
@@ -180,6 +192,8 @@ public final class WiktionaryDbT {
 			return WiktionaryTAW000.get(name);
 		else if ("tax".equals(sub))
 			return WiktionaryTAX000.get(name);
+		else if ("tbi".equals(sub))
+			return WiktionaryTBI000.get(name);
 		else if ("tch".equals(sub))
 			return WiktionaryTCH000.get(name);
 		else if ("tea".equals(sub))
@@ -194,6 +208,10 @@ public final class WiktionaryDbT {
 			return WiktionaryTEE000.get(name);
 		else if ("teg".equals(sub))
 			return WiktionaryTEG000.get(name);
+		else if ("teh".equals(sub))
+			return WiktionaryTEH000.get(name);
+		else if ("tei".equals(sub))
+			return WiktionaryTEI000.get(name);
 		else if ("tek".equals(sub))
 			return WiktionaryTEK000.get(name);
 		else if ("tel".equals(sub))
@@ -218,6 +236,8 @@ public final class WiktionaryDbT {
 			return WiktionaryTEW000.get(name);
 		else if ("tex".equals(sub))
 			return WiktionaryTEX000.get(name);
+		else if ("tez".equals(sub))
+			return WiktionaryTEZ000.get(name);
 		else if ("tha".equals(sub))
 			return WiktionaryTHA000.get(name);
 		else if ("the".equals(sub))
@@ -236,6 +256,8 @@ public final class WiktionaryDbT {
 			return WiktionaryTHW000.get(name);
 		else if ("thy".equals(sub))
 			return WiktionaryTHY000.get(name);
+		else if ("tia".equals(sub))
+			return WiktionaryTIA000.get(name);
 		else if ("tib".equals(sub))
 			return WiktionaryTIB000.get(name);
 		else if ("tic".equals(sub))
@@ -244,6 +266,8 @@ public final class WiktionaryDbT {
 			return WiktionaryTID000.get(name);
 		else if ("tie".equals(sub))
 			return WiktionaryTIE000.get(name);
+		else if ("tif".equals(sub))
+			return WiktionaryTIF000.get(name);
 		else if ("tig".equals(sub))
 			return WiktionaryTIG000.get(name);
 		else if ("tik".equals(sub))
@@ -254,6 +278,8 @@ public final class WiktionaryDbT {
 			return WiktionaryTIM000.get(name);
 		else if ("tin".equals(sub))
 			return WiktionaryTIN000.get(name);
+		else if ("tio".equals(sub))
+			return WiktionaryTIO000.get(name);
 		else if ("tip".equals(sub))
 			return WiktionaryTIP000.get(name);
 		else if ("tiq".equals(sub))
@@ -264,10 +290,12 @@ public final class WiktionaryDbT {
 			return WiktionaryTIS000.get(name);
 		else if ("tit".equals(sub))
 			return WiktionaryTIT000.get(name);
+		else if ("tiv".equals(sub))
+			return WiktionaryTIV000.get(name);
+		else if ("tiz".equals(sub))
+			return WiktionaryTIZ000.get(name);
 		else if ("tja".equals(sub))
 			return WiktionaryTJA000.get(name);
-		else if ("tje".equals(sub))
-			return WiktionaryTJE000.get(name);
 		else if ("toa".equals(sub))
 			return WiktionaryTOA000.get(name);
 		else if ("tob".equals(sub))
@@ -328,12 +356,20 @@ public final class WiktionaryDbT {
 			return WiktionaryTSA000.get(name);
 		else if ("tsc".equals(sub))
 			return WiktionaryTSC000.get(name);
+		else if ("tse".equals(sub))
+			return WiktionaryTSE000.get(name);
+		else if ("tsi".equals(sub))
+			return WiktionaryTSI000.get(name);
 		else if ("tso".equals(sub))
 			return WiktionaryTSO000.get(name);
+		else if ("tsr".equals(sub))
+			return WiktionaryTSR000.get(name);
 		else if ("tsu".equals(sub))
 			return WiktionaryTSU000.get(name);
 		else if ("tte".equals(sub))
 			return WiktionaryTTE000.get(name);
+		else if ("tua".equals(sub))
+			return WiktionaryTUA000.get(name);
 		else if ("tub".equals(sub))
 			return WiktionaryTUB000.get(name);
 		else if ("tuc".equals(sub))
@@ -372,8 +408,6 @@ public final class WiktionaryDbT {
 			return WiktionaryTWO000.get(name);
 		else if ("tyc".equals(sub))
 			return WiktionaryTYC000.get(name);
-		else if ("tyg".equals(sub))
-			return WiktionaryTYG000.get(name);
 		else if ("tyi".equals(sub))
 			return WiktionaryTYI000.get(name);
 		else if ("tyl".equals(sub))
@@ -386,6 +420,8 @@ public final class WiktionaryDbT {
 			return WiktionaryTYR000.get(name);
 		else if ("tza".equals(sub))
 			return WiktionaryTZA000.get(name);
+		else if ("tze".equals(sub))
+			return WiktionaryTZE000.get(name);
 		else if ("tzi".equals(sub))
 			return WiktionaryTZI000.get(name);
 		return null;

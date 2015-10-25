@@ -4,6 +4,10 @@ package org.swtk.commons.dict.wiktionary.generated.c.y.c;  import java.util.Hash
 
 	add("cyclo", "{\"term\":\"cyclo\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|tricycle|o|alt1\u003dcycle|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A tuk-tuk\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A cycle rickshaw\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("cyclades", "{\"term\":\"cyclades\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027κυκλάδες\u0027 plural of \u0027κυκλάς\u0027 from \u0027κύκλος\u0027 (circle, ring)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An Aegean island chain in southeast-central Greece, surrounding the main island Delos, further including the islands of Andros, Naxos, Paros, Santorini, Syra, Tinos and Zea.: used with the definite article (\u0027The Cyclades\u0027), unless some islands are specified\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("cyclarbamate", "{\"term\":\"cyclarbamate\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A muscle relaxant and tranquilizer of the carbamate family\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("cycleway", "{\"term\":\"cycleway\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|cycle|way|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"cycle path, cycle lane\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("cyclicity", "{\"term\":\"cyclicity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|cyclic|ity|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of recurring at regular intervals; of being cyclic\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"An instance of cyclic behaviour\", \"priority\":2}]}, \"synonyms\":{}}");
@@ -13,6 +17,12 @@ package org.swtk.commons.dict.wiktionary.generated.c.y.c;  import java.util.Hash
 	add("cycloalkane", "{\"term\":\"cycloalkane\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|cyclo|alkane|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any saturated alicyclic hydrocarbon\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("cycloalkyne", "{\"term\":\"cycloalkyne\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|cyclo|alkyne|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any cyclic alkyne\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("cyclobarbital", "{\"term\":\"cyclobarbital\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A barbiturate derivative\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("cyclobenzannulation", "{\"term\":\"cyclobenzannulation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The formation or expansion of a ring by the introduction of one or more fused benzene rings\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("cyclobenzaprine", "{\"term\":\"cyclobenzaprine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular antidepressant generally prescribed as an analgesic and muscle relaxant\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("cyclobutannulation", "{\"term\":\"cyclobutannulation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{blend|cyclobutane|annulation|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Modification by the addition of, or by cyclization to form, a cyclobutane ring\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -44,7 +54,11 @@ package org.swtk.commons.dict.wiktionary.generated.c.y.c;  import java.util.Hash
 
 	add("cyclopaedia", "{\"term\":\"cyclopaedia\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"Ancient greek (to 1453) circle + the bringing up of a child, education, erudition. See \u0027\u0027 and compare \u0027\u0027 \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The circle or compass of the arts and sciences (originally, of the seven so-called liberal arts and sciences); circle of human knowledge\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"An encyclopedia\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("cyclopentane", "{\"term\":\"cyclopentane\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An alicyclic hydrocarbon, C\u0026lt;sub\u0026gt;5\u0026lt;/sub\u0026gt;H\u0026lt;sub\u0026gt;10\u0026lt;/sub\u0026gt;; a volatile inflammable liquid, sometimes used as a solvent\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("cyclopentannulation", "{\"term\":\"cyclopentannulation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{blend|cyclopentane|annulation|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Modification by the addition of, or by cyclization to form, a cyclopentane ring\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("cyclopentene", "{\"term\":\"cyclopentene\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A cycloalkene, C\u0026lt;sub\u0026gt;5\u0026lt;/sub\u0026gt;H\u0026lt;sub\u0026gt;8\u0026lt;/sub\u0026gt;; a colorless liquid with a petrol-like odor, used as a monomer for the synthesis of plastics\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("cyclophane", "{\"term\":\"cyclophane\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|cyclo|phane|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A hydrocarbon consisting an aromatic unit (typically a benzene ring) and an aliphatic chain that forms a bridge between two positions of the aromatic ring; more complex derivatives (the superphanes) with multiple aromatic units and bridges forming cagelike structures are known\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Any cyclic structure used as a base phane in the nomenclature of complex organic compounds\", \"priority\":2}]}, \"synonyms\":{}}");
 
@@ -52,7 +66,11 @@ package org.swtk.commons.dict.wiktionary.generated.c.y.c;  import java.util.Hash
 
 	add("cyclopropene", "{\"term\":\"cyclopropene\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|cyclo|propene|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The cycloalkene having three carbon atoms and one double bond; any derivative of this compound\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("cyclopropylamine", "{\"term\":\"cyclopropylamine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The primary amine derived from cyclopropane by replacing a hydrogen atom by an amino group\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("cyclosilicate", "{\"term\":\"cyclosilicate\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|cyclo|silicate|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of several classes of silicate mineral having rings of silicate anions\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("cyclotrigermenium", "{\"term\":\"cyclotrigermenium\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A compound containing a ring of three germanium atoms, with a double bond between two of them (the germanium analogue of cyclopropene\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The symmetric cation formed by removal of an electron from this compoun\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Any derivative of this compound or cation\", \"priority\":3}]}, \"synonyms\":{}}");
 
 	add("cyclotron", "{\"term\":\"cyclotron\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|cyclo|tron|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An early particle accelerator in which charged particles were generated at a central source and accelerated spirally outward through a fixed magnetic and alternating electric fields\", \"priority\":1}]}, \"synonyms\":{}}");
 
