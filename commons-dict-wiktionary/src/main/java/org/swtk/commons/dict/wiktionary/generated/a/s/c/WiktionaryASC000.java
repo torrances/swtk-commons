@@ -8,6 +8,8 @@ package org.swtk.commons.dict.wiktionary.generated.a.s.c;  import java.util.Hash
 
 	add("asceticism", "{\"term\":\"asceticism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The principles and practices of an ascetic; extreme self-denial and austerity\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("ascii", "{\"term\":\"ascii\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"American Standard Code for Information Interchange\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("ascience", "{\"term\":\"ascience\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"unseeing, not knowing, not sensing\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("asclepius", "{\"term\":\"asclepius\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\", \"Latin\"], \"text\":\"From Latin \u0027asclepius\u0027 from Ancient greek (to 1453) \u0027ἀσκληπιός\u0027 (asclepius)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The god of doctors, medicine and healing. He is the son of Apollo and Coronis, and his wife is Epione. His Roman name is Aesculapius\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Short for , an\", \"priority\":2}]}, \"synonyms\":{}}");

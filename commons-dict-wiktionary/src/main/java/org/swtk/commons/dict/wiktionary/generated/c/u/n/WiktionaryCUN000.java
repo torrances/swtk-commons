@@ -12,6 +12,8 @@ package org.swtk.commons.dict.wiktionary.generated.c.u.n;  import java.util.Hash
 
 	add("cunnilinctor", "{\"term\":\"cunnilinctor\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Someone who performs cunnilingus\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2006\u0027\u0027, Deborah Cameron, Don Kulick, \u0027The language and sexuality reader\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"What confuses the matter even more is the common and vociferous distaste among homosexual men for women and for their vulvar odor, which makes it hard to understand how homosexuals could become professional \u0027\u0027cunnilinctors\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("cunnilingus", "{\"term\":\"cunnilingus\", \"etymology\":{\"influencers\":[{}], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027cunnus\u0027 (vulva) + \u0027lingo\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"oral Oral sex in which a person\u0027s clitoris and/or vulva is orally stimulated\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("cuntada", "{\"term\":\"cuntada\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|cunt|Canada|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Canada\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("cuntass", "{\"term\":\"cuntass\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|cunt|ass|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a contemptible person\", \"priority\":1}]}, \"synonyms\":{}}");

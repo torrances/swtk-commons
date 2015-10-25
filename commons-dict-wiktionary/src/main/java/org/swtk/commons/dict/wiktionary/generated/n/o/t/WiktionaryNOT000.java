@@ -4,6 +4,8 @@ package org.swtk.commons.dict.wiktionary.generated.n.o.t;  import java.util.Hash
 
 	add("notator", "{\"term\":\"notator\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|notate|or|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who notates; a writer of notation\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("notebook", "{\"term\":\"notebook\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|note|book|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Image:Moleskine ruled notebook, inside thumbnail|right|A \u0027\u0027notebook\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A book in which notes or memoranda are written\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"notebook computer, a class of laptop computer\", \"priority\":3}]}, \"synonyms\":{}}");
+
 	add("notecard", "{\"term\":\"notecard\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|note|card|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A paper card on which notes are written, or which is intended for such us\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Write your ideas down on \u0027\u0027notecards\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("noteholder", "{\"term\":\"noteholder\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|note|holder|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An entity holding a note, such as a promissory note\", \"priority\":1}]}, \"synonyms\":{}}");

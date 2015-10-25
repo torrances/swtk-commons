@@ -12,4 +12,6 @@ package org.swtk.commons.dict.wiktionary.generated.s.e.v;  import java.util.Hash
 
 	add("severity", "{\"term\":\"severity\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"middle french (ca. 1400-1600)\", \"Latin\"], \"text\":\"From Middle french (ca. 1400-1600) \u0027severite\u0027 from Latin \u0027severitas\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state of being severe\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The degree of something undesirable; badness or seriousness\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"The \u0027\u0027severity\u0027\u0027 of the offence merits a long prison sentence\", \"priority\":3}]}, \"synonyms\":{}}");
 
+	add("seville", "{\"term\":\"seville\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From the Spanish \u0027Sevilla\u0027.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A city in Andalusia, Spain\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

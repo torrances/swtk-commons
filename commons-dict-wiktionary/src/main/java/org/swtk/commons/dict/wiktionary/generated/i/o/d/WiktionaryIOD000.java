@@ -8,6 +8,8 @@ package org.swtk.commons.dict.wiktionary.generated.i.o.d;  import java.util.Hash
 
 	add("iodoform", "{\"term\":\"iodoform\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|iodo|form|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A halogenated hydrocarbon, CHI\u0026lt;sub\u0026gt;3\u0026lt;/sub\u0026gt;; a yellow crystalline compound, formerly used as a mild antiseptic\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("iodomethane", "{\"term\":\"iodomethane\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|iodo|methane|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The aliphatic halogenated hydrocarbon, CH\u0026lt;sub\u0026gt;3\u0026lt;/sub\u0026gt;I, that is used in organic synthesis to introduce a methyl group into compounds\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("iodometry", "{\"term\":\"iodometry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|iodo|metry|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An analytical technique that uses the sudden disappearance (or appearance) of iodine to mark the end of a redox titration\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("iodonitrotetrazolium", "{\"term\":\"iodonitrotetrazolium\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The univalent radical \u00272-(4-iodophenyl)-3-(4-nitrophenyl)-5-phenyltetrazolium\", \"priority\":1}]}, \"synonyms\":{}}");

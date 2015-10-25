@@ -10,6 +10,8 @@ package org.swtk.commons.dict.wiktionary.generated.i.n.o;  import java.util.Hash
 
 	add("inosculate", "{\"term\":\"inosculate\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the act of inosculating\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("inositol", "{\"term\":\"inositol\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) stem of \u0027ἴς\u0027 (lang\u003dgrc) +\u0027-ose\u0027 () + \u0027-ite\u0027 () {{suffix||ol|gloss2\u003dan alcohol|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"any of several isomeric cyclic polyhydric alcohols, C\u0026lt;sub\u0026gt;6\u0026lt;/sub\u0026gt;H\u0026lt;sub\u0026gt;12\u0026lt;/sub\u0026gt;O\u0026lt;sub\u0026gt;6\u0026lt;/sub\u0026gt;, found in both plant and animal tissue\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("inotropy", "{\"term\":\"inotropy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the force of muscle contractio\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

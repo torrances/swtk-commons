@@ -4,6 +4,8 @@ package org.swtk.commons.dict.wiktionary.generated.l.e.p;  import java.util.Hash
 
 	add("lepper", "{\"term\":\"lepper\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A horse that jumps well\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1899\u0027\u0027, Banjo Paterson, \u0027s:Father Riley\u0027s Father Riley\u0027s Horse\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"He\u0027s the king of all the \u0027\u0027leppers\u0027\u0027 that was ever seen to lep\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"A five-foot fence -- he\u0027d clear it in a hop\", \"priority\":4},{\"upperType\":\"NOUN\", \"text\":\"A type of Texas Longhorn, a subgroup of Butler cattle\", \"priority\":5}]}, \"synonyms\":{}}");
 
+	add("lepra", "{\"term\":\"lepra\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"Latin {{lena}}. See \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"leprosy\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("leprechaunology", "{\"term\":\"leprechaunology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of leprechauns\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("leprechology", "{\"term\":\"leprechology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of leprechauns\", \"priority\":1}]}, \"synonyms\":{}}");

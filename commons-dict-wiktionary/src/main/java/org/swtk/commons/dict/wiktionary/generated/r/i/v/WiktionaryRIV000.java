@@ -8,6 +8,8 @@ package org.swtk.commons.dict.wiktionary.generated.r.i.v;  import java.util.Hash
 
 	add("riverport", "{\"term\":\"riverport\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|river|port|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A port along a river\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("riverside", "{\"term\":\"riverside\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|river|side|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A bank or side of a river\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Gonna lay down my burden; Down by the \u0027\u0027riverside\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("riviation", "{\"term\":\"riviation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"fishing\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("rivne", "{\"term\":\"rivne\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Ukrainian\"], \"text\":\"From Ukrainian \u0027рівне\u0027 (tr\u003drívne)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A city in Ukraine, administrative centre of Rivne province\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Rivne province (\u0027oblast\u0027), in north-western Ukraine\", \"priority\":2}]}, \"synonyms\":{}}");

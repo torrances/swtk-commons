@@ -6,4 +6,6 @@ package org.swtk.commons.dict.wiktionary.generated.a.a.l;  import java.util.Hash
 
 	add("aalii", "{\"term\":\"aalii\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"hawaiian\"], \"text\":\"From Hawaiian \u0027ʻaʻaliʻi|lang\u003dhaw\u0027 (name of any of the {{taxlink) hardwood shrubs}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A bushy small tree, \u0027Dodonaea viscosa\u0027, native to Hawaii, Australia, Africa, and tropical America, having sticky leaves and dark wood.\u0026lt;ref\u0026gt;Urdang, Laurence, (1984)\u0026lt;/ref\u0026gt;\u0026lt;ref\u0026gt;Morris, William, (1971)\u0026lt;/ref\u0026gt\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("aalst", "{\"term\":\"aalst\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of a number of towns in Belgium or the Netherlands\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

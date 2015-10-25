@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.b.a.h;  import java.util.Hash
 
 	add("bahamas", "{\"term\":\"bahamas\", \"etymology\":{\"influencers\":[{}], \"languages\":[\"English\", \"Spanish\", \"taino\"], \"text\":\"Disputed; Spanish \u0027baja\u0027 \u0027mar\u0027 (\u0026quot;shallow sea\u0026quot;) or from Taino \u0027ba ha ma\u0027 (big upper middle land) via Spanish.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A country in the Caribbean. Official names, short: The Bahamas; full: Commonwealth of the Bahamas\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("bahia", "{\"term\":\"bahia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{m|pt|bahia}}, an obsolete spelling of {{m|pt|baía||bay}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A large state in the south of northeastern Brazil with Salvador as its state capital\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("bahrain", "{\"term\":\"bahrain\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\"], \"text\":\"{{borrowing|ar|اَلْبَحْرَيْن|lit\u003dthe two seas|lang\u003den}}, from {{m|ar|بَحْر||sea}}, from Proto-semitic {{m|sem-pro|*baḥr-||sea}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A country in the Middle East. Official name: Kingdom of Bahrain\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

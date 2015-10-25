@@ -8,6 +8,10 @@ package org.swtk.commons.dict.wiktionary.generated.a.r.t;  import java.util.Hash
 
 	add("artemether", "{\"term\":\"artemether\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|artemisinin|ether|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An antimalarial derived from artemisinin, and used to treat multiply drug-resistant strains of \u0027falciparum\u0027 malaria\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("artemia", "{\"term\":\"artemia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The brine shrimp (of genus \u0027Artemia\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("artemisia", "{\"term\":\"artemisia\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\", \"Latin\"], \"text\":\"From Latin \u0027artemisia\u0027 from Ancient greek (to 1453) \u0027ἀρτεμισία\u0027 from \u0027ἄρτεμις\u0027 (artemis, the goddess)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of many aromatic flowering plants of the genus \u0027Artemisia\u0027, including wormwood, sagebrush, and tarragon\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("artemotil", "{\"term\":\"artemotil\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A fast-acting blood schizonticide specifically indicated for the treatment of chloroquine-resistant \u0027Plasmodium falciparum\u0027 malaria and cerebral malaria cases\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("arteriogenesis", "{\"term\":\"arteriogenesis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|arterio|genesis|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An increase in the diameter of existing arterial vessels\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -33,6 +37,8 @@ package org.swtk.commons.dict.wiktionary.generated.a.r.t;  import java.util.Hash
 	add("artfulness", "{\"term\":\"artfulness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|artful|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality of being artful or of acting in an artful manner\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("arthralgia", "{\"term\":\"arthralgia\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\"], \"text\":\"From \u0027arthr-\u0027 (joint) {{suffix||algia|gloss2\u003dpain|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"pain in a joint, especially when not caused by arthritis\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("arthritis", "{\"term\":\"arthritis\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\", \"Latin\"], \"text\":\"From Latin from Ancient greek (to 1453) \u0027lang\u003dgrc|ἀρθρῖτις\u0027 () from \u0027ἄρθρον|lang\u003dgrc\u0027 () See also arthro- and -itis.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Inflammation of a joint or joints causing pain and/or disability, swelling and stiffness, and due to various causes such as infection, trauma, degenerative changes or metabolic disorders\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("arthrocentesis", "{\"term\":\"arthrocentesis\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"Ancient greek (to 1453) \u0027ἄρθρον\u0027 (joint) + \u0027κέντησις\u0027 (puncture)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The clinical procedure of using a syringe to collect synovial fluid from a joint capsule, used in the diagnosis of gout, arthritis, and synovial infections\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -101,6 +107,8 @@ package org.swtk.commons.dict.wiktionary.generated.a.r.t;  import java.util.Hash
 	add("artisanry", "{\"term\":\"artisanry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|artisan|ry|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The work of an artisan\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("artisanship", "{\"term\":\"artisanship\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|artisan|ship|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or quality associated with being an artisa\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("artist", "{\"term\":\"artist\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\", \"Italian\", \"Latin\"], \"text\":\"From French \u0027artiste\u0027 from Italian \u0027artista\u0027 from late Latin \u0027artista\u0027 from \u0027ars\u0027 ()\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person who creates art\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A person who creates art as an occupation\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A person who is skilled at some activity\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"A recording artist\", \"priority\":4}]}, \"synonyms\":{}}");
 
 	add("artisticness", "{\"term\":\"artisticness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|artistic|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Quality of being artistic\", \"priority\":1}]}, \"synonyms\":{}}");
 

@@ -20,6 +20,8 @@ package org.swtk.commons.dict.wiktionary.generated.e.n.g;  import java.util.Hash
 
 	add("engorgement", "{\"term\":\"engorgement\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|engorge|ment|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The process or the condition of becoming engorged, becoming over-filled with fluid\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("engram", "{\"term\":\"engram\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|en|gram|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A postulated physical or biochemical change in neural tissue that represents a memory\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A painful, negative mental image representing a past event\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("engraver", "{\"term\":\"engraver\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|engrave|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a person who engrave\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"a tool used in this process\", \"priority\":2}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

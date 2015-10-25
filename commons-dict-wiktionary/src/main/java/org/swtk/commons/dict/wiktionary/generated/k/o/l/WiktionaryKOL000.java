@@ -4,4 +4,8 @@ package org.swtk.commons.dict.wiktionary.generated.k.o.l;  import java.util.Hash
 
 	add("koliva", "{\"term\":\"koliva\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) {{m|grc|κόλλυβα||small cakes}}, from {{m|grc|κόλλυβος||small coin}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A dish made of sweetened boiled wheat, optionally mixed with nuts and spices, and used in Eastern Orthodox rituals to commemorate the dead\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("kolkata", "{\"term\":\"kolkata\", \"etymology\":{\"influencers\":[], \"languages\":[\"Bengali\", \"English\"], \"text\":\"From the city\u0027s Bengali name, \u0027কলকাতা\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state capital of West Bengal (India), formerly known as Calcutta\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("kolyma", "{\"term\":\"kolyma\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Russian\"], \"text\":\"From the Russian {{l|ru|Колыма́|g\u003df}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An area in the far north-eastern region of Russia; location of Stalinist slave labour camps in the 1930s to 1950s\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A river in the far north-eastern area of Russia\", \"priority\":2}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

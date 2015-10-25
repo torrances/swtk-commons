@@ -6,4 +6,6 @@ package org.swtk.commons.dict.wiktionary.generated.k.i.m;  import java.util.Hash
 
 	add("kimmeridgian", "{\"term\":\"kimmeridgian\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A subdivision of the Jurassic period\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("kimono", "{\"term\":\"kimono\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{borrowing|ja|着物|tr\u003dkimono||clothing|lang\u003den}}, which is from {{m|ja|着||wearing}} + {{m|ja|物|tr\u003dmono||thing}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A traditional Japanese robe-like garment that is now generally worn only in formal occasions\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A yukata\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A long robe-like garment\", \"priority\":3}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

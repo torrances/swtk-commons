@@ -14,6 +14,8 @@ package org.swtk.commons.dict.wiktionary.generated.s.c.u;  import java.util.Hash
 
 	add("sculpin", "{\"term\":\"sculpin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A small fish of the family Cottidae, usually lacking scales. Often found on river bottoms and in tidal pools\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("sculptor", "{\"term\":\"sculptor\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027scūlptor\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person who sculpts. An artist who produces sculpture\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("sculptrices", "{\"term\":\"sculptrices\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Category:English irregular plurals ending in \u0026quot;-ces\u0026quot\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("sculpturist", "{\"term\":\"sculpturist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|sculpture|ist|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A maker of sculptures\", \"priority\":1}]}, \"synonyms\":{}}");

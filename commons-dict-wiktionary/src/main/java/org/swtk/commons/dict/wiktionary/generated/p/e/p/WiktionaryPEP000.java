@@ -8,6 +8,8 @@ package org.swtk.commons.dict.wiktionary.generated.p.e.p;  import java.util.Hash
 
 	add("peppiness", "{\"term\":\"peppiness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|peppy|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality of being peppy\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"I am not generally known for my \u0027\u0027peppiness\u0027\u0027 prior to my first cup of coffee in the morning\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("pepsi", "{\"term\":\"pepsi\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From \u0027\u0027 the name of one of its ingredients.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A brand of carbonated cola non-alcoholic drink produced by the company Pepsi\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("peptidome", "{\"term\":\"peptidome\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|peptide|genome|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The complete set of peptides encoded by a particular genome, or present within a particular cell type or organism\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("peptidomics", "{\"term\":\"peptidomics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The branch of molecular biology that studies the set of peptides of an organism\", \"priority\":1}]}, \"synonyms\":{}}");

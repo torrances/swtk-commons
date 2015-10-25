@@ -10,7 +10,11 @@ package org.swtk.commons.dict.wiktionary.generated.x.e.r;  import java.util.Hash
 
 	add("xerophagia", "{\"term\":\"xerophagia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{confix|xero|phagia|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The eating of dry food\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("xerophile", "{\"term\":\"xerophile\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|xero|phile|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any xerophilic organism\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("xerophthalmia", "{\"term\":\"xerophthalmia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|xero|ophthalmia|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A condition due to a deficiency of vitamin A where the conjunctiva and cornea become dry. The condition starts with conjunctival xerosis and night blindness and progresses to corneal xerosis and, later, a severe condition called keratomalacia\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("xerophyte", "{\"term\":\"xerophyte\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|xero|phyte|t1\u003ddry|t2\u003dplant|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any plant suited for life in a habitat where water is scarce, such as in a desert or chaparral. Such plants may be succulent, have small or reduced leaves, or spines\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A desert plant\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("xeroradiography", "{\"term\":\"xeroradiography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A method of X-ray photography which uses an electrically charged metal plate instead of film\", \"priority\":1}]}, \"synonyms\":{}}");
 

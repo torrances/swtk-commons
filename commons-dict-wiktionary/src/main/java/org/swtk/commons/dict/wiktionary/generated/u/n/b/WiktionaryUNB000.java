@@ -10,6 +10,8 @@ package org.swtk.commons.dict.wiktionary.generated.u.n.b;  import java.util.Hash
 
 	add("unbibium", "{\"term\":\"unbibium\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"w:Systematic element name|Systematic element name.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The systematic element name for the (as yet undiscovered) chemical element with atomic number 122 (\u0027symbol\u0027 Ubb\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("unbinilium", "{\"term\":\"unbinilium\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"w:Systematic element name|Systematic element name.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The systematic element name for the (as yet undiscovered) chemical element with atomic number 120 (\u0027symbol\u0027 Ubn\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("unbirthing", "{\"term\":\"unbirthing\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|un|birthing|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Crawling back into a vagina and reentering the uterus (chiefly practiced in role-playing\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("unbiunium", "{\"term\":\"unbiunium\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The systematic element name for the (as yet undiscovered) chemical element with atomic number 121 (\u0027symbol\u0027 Ubu\", \"priority\":1}]}, \"synonyms\":{}}");

@@ -6,6 +6,8 @@ package org.swtk.commons.dict.wiktionary.generated.s.y.m;  import java.util.Hash
 
 	add("symbology", "{\"term\":\"symbology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|symbol|ology|lang\u003den}}, with haplology of \u0027-olol-\u0027 to \u0027-ol\u0027.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study or use of symbols\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"An encoding scheme, particularly for barcodes\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("symbols", "{\"term\":\"symbols\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Category:English autological terms\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("symbrachydactyly", "{\"term\":\"symbrachydactyly\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A congenital abnormality of the hand, characterized by missing or malformed fingers\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("sympathoinhibition", "{\"term\":\"sympathoinhibition\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|sympatho|inhibition|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"inhibition of the sympathetic nervous system\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -17,5 +19,7 @@ package org.swtk.commons.dict.wiktionary.generated.s.y.m;  import java.util.Hash
 	add("symphyseotomy", "{\"term\":\"symphyseotomy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The operation of dividing the symphysis pubis to facilitate labour; the Sigualtian section\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("symporter", "{\"term\":\"symporter\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|sym|porter|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An integral membrane protein involved in the movement of different molecules or ions in the same direction across a phospholipid membrane\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("symposium", "{\"term\":\"symposium\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027συμπόσιον\u0027 (drinking party) from \u0027συμπίνω\u0027 (drink together) \u0027συν-\u0027 (together-) + \u0027πίνω\u0027 (drink)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A conference or other meeting for discussion of a topic, especially one in which the participants make presentations\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"in ancient Greece\u0027) A drinking party, especially one with intellectual discussion\", \"priority\":2}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

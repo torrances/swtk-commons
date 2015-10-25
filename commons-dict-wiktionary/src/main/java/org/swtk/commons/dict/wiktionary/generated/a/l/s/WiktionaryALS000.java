@@ -4,4 +4,6 @@ package org.swtk.commons.dict.wiktionary.generated.a.l.s;  import java.util.Hash
 
 	add("alstonite", "{\"term\":\"alstonite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An aragonite mineral consisting of an isomorphous mixture of calcium and barium carbonates\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("alstroemeria", "{\"term\":\"alstroemeria\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From the genus name.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any member of the genus of South American flowering plants, the Peruvian Peruvian lilies\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

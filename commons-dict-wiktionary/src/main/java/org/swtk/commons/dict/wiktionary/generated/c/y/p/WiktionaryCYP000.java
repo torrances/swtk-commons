@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.c.y.p;  import java.util.Hash
 
 	add("cypherpunk", "{\"term\":\"cypherpunk\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|cipher|cyberpunk|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person with an interest in encryption and privacy, especially one who uses encrypted email\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("cypriot", "{\"term\":\"cypriot\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) {{m|grc|Κυπριώτης||Cypriot}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person from Cyprus\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The dialect of Greek as spoken in Cyprus\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("cyprodime", "{\"term\":\"cyprodime\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An opioid antagonist from the morphinan family\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

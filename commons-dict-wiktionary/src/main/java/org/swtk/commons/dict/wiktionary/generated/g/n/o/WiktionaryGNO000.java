@@ -4,6 +4,8 @@ package org.swtk.commons.dict.wiktionary.generated.g.n.o;  import java.util.Hash
 
 	add("gnoseology", "{\"term\":\"gnoseology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|gnosis|logy|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The scientific or philosophical study of knowledge\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("gnosticism", "{\"term\":\"gnosticism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Gnostic|ism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A wide variety of Jewish and early Christian sects having an interest in gnosis, or divine knowledge and generally holding the belief that there is a god greater than the Demiurge, or the creator of the world\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("gnotobiont", "{\"term\":\"gnotobiont\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{etystub|en}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A gnotobiot\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -6,9 +6,13 @@ package org.swtk.commons.dict.wiktionary.generated.s.u.n;  import java.util.Hash
 
 	add("sunbird", "{\"term\":\"sunbird\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|sun|bird|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A bird belonging to any of several species in the family Nectariniidae\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("sunbittern", "{\"term\":\"sunbittern\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From \u0027sun\u0027 + \u0027bittern\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Eurypyga helias\u0027, a species of bird, the sole member of the family Eurypygidae, found in the tropical regions of the Americas\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("sunbonnet", "{\"term\":\"sunbonnet\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|sun|bonnet|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A hat (bonnet) worn for protection from bright sunlight\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1929\u0027\u0027, w:M. Barnard M. Barnard Eldershaw, \u0027w:A House is A House Is Built\u0027, Chapter VII, Section x\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"She saw a square picture framed in the window, two whitewashed cottages each with a little winding path, a bed of red and yellow cockscom\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"cockscomb, a sloping field, a row of gum tre\", \"priority\":4},{\"upperType\":\"NOUN\", \"text\":\"gum-trees, a child in a blue \u0027\u0027sunbonnet\u0027\u0027 carrying a basket\", \"priority\":5}]}, \"synonyms\":{}}");
 
 	add("sundaland", "{\"term\":\"sundaland\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|Sunda|land|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a biogeographical region of Southeastern Asia which encompasses the areas of the Asian continental shelf that was exposed during the last ice age\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("sundanese", "{\"term\":\"sundanese\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"The word \u0026quot;Sunda\u0026quot; may originate from Sanskrit, in which case it may mean either \u0026quot;light\u0026quot; or \u0026quot;water\u0026quot;.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An ethnic group in the western part of the island of Java in Indonesia, numbering approximately 40 million\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The language of the Sundanese people. The language is also known as Basa Sunda\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("sunderland", "{\"term\":\"sunderland\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A city in Tyne and Wear, England\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -36,9 +40,13 @@ package org.swtk.commons.dict.wiktionary.generated.s.u.n;  import java.util.Hash
 
 	add("sunnah", "{\"term\":\"sunnah\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Muhammad\u0027s way of life, as recorded in the hadiths, especially when viewed as a model for Muslims to emulate\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("sunniness", "{\"term\":\"sunniness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|sunny|ness|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The property of being sunny\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("sunnism", "{\"term\":\"sunnism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Sunni Isla\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"In this country, \u0027\u0027Sunnism\u0027\u0027 forms the majority\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("sunnite", "{\"term\":\"sunnite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A Sunni, a follower of the Sunni branch of Islam\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("sunnization", "{\"term\":\"sunnization\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The process of Sunnizing; the act of becoming Sunni\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("sunphotometry", "{\"term\":\"sunphotometry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The measurement of the intensity of direct sunlight\", \"priority\":1}]}, \"synonyms\":{}}");
 

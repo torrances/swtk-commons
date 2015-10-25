@@ -22,4 +22,6 @@ package org.swtk.commons.dict.wiktionary.generated.m.y.r;  import java.util.Hash
 
 	add("myrtanol", "{\"term\":\"myrtanol\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The bicyclic terpenoid alcohol \u0027(1S,2S)-6,6-dimethylbicyclo[3.1.1]heptane-2-methanol\u0027 that is used in perfumery and flavouring\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("myrtle", "{\"term\":\"myrtle\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"old french (842-ca. 1400)\", \"Latin\"], \"text\":\"From Old french (842-ca. 1400) \u0027myrte\u0027 from Latin \u0027myrtus\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An evergreen shrub or small tree of the genus \u0027Myrtus\u0027, native to southern Europe and north Africa\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

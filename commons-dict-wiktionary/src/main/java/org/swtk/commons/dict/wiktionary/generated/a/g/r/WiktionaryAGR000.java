@@ -42,6 +42,8 @@ package org.swtk.commons.dict.wiktionary.generated.a.g.r;  import java.util.Hash
 
 	add("agritainment", "{\"term\":\"agritainment\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|agriculture|entertainment|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A trend in the American agricultural industry to include entertainment endeavors on the farm\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("agrobacterium", "{\"term\":\"agrobacterium\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A soil bacterium, of the genus \u0027Agrobacterium\u0027, which can fix nitrogen, and causes the formation of crown galls in plants\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("agrobiologist", "{\"term\":\"agrobiologist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|agrobiology|ist|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who studies bacteria and other organisms in soil for the purpose of growing crops or feeding animals\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"One who studies the nutrition or breeding of animals or crops\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("agrobiology", "{\"term\":\"agrobiology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|agro|biology|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The science of plant life and nutrition\", \"priority\":1}]}, \"synonyms\":{}}");

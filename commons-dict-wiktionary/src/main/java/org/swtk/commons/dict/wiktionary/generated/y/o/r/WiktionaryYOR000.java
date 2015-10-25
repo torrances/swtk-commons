@@ -6,6 +6,8 @@ package org.swtk.commons.dict.wiktionary.generated.y.o.r;  import java.util.Hash
 
 	add("yorkshirewoman", "{\"term\":\"yorkshirewoman\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|Yorkshire|woman|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A woman from Yorkshire, England\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("yoruba", "{\"term\":\"yoruba\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A Saharan language. It belongs to the Benue-Congo branch of the w:Niger-Congo Niger-Congo language family, and has nearly 30 million speakers in Nigeria, Benin, Togo and Sierra Leone, as well as communities in Brazil and Cuba\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"An African traditional religion which spawned various offshoots in the Americas in the 15th to 19th centuries. These include santería and Lukumi. See\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("yoruban", "{\"term\":\"yoruban\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Yoruba|an|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A member of the people\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

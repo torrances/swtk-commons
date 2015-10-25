@@ -18,9 +18,13 @@ package org.swtk.commons.dict.wiktionary.generated.f.l.u;  import java.util.Hash
 
 	add("fluffer", "{\"term\":\"fluffer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"fluff + -er\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"agent Agent noun of fluff; one who fluffs\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1993\u0027\u0027, \u0027Design\u0027 (issues 533-539, page 38\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Woe betide the camera-shy or the \u0027\u0027fluffers\u0027\u0027 of lines\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"One who arouses male pornographic actors before filming\", \"priority\":4},{\"upperType\":\"NOUN\", \"text\":\"One who is employed to clean the tracks in the tunnels of the London Underground\", \"priority\":5}]}, \"synonyms\":{}}");
 
+	add("flufftail", "{\"term\":\"flufftail\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|fluff|tail|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of nine species of bird in the genus \u0027Sarothrura\u0027 of the family Sarothruridae, endemic to Africa\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("fluffy", "{\"term\":\"fluffy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A popular given name for a pet, often for a cat\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"story) and Gregory S. Malins (teleplay) date \u003d 1999-05-06 title \u003d episode \u003d people \u003d role \u003d season \u003d 5 number \u003d 21 time \u003d 03:59 passage \u003d \u0026lt;span style\u003d\u0026quot;font-variant:small-caps\u0026quot;\u0026gt;Joey:\u0026lt;/span\u0026gt; That is not a cat.\u0026lt;br/\u0026gt;\u0026lt;span style\u003d\u0026quot;font-variant:small-caps\u0026quot;\u0026gt;Rachel:\u0026lt;/span\u0026gt; Yes, it is.\u0026lt;br/\u0026gt;\u0026lt;span style\u003d\u0026quot;font-variant:small-caps\u0026quot;\u0026gt;Ross:\u0026lt;/span\u0026gt; Why is it inside out?\u0026lt;br/\u0026gt;\u0026lt;span style\u003d\u0026quot;font-variant:small-caps\u0026quot;\u0026gt;Rachel:\u0026lt;/span\u0026gt; Excuse me, but this is a purebred, show-quality Sphinx cat. […] I’m going to go set up a little litter box for Mrs. Whiskerson. [\u0027Ross looks at her\u0027] Well, what am I going to call her—\u0027\u0027Fluffy\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("flufylline", "{\"term\":\"flufylline\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular bronchodilator\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("fluid", "{\"term\":\"fluid\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027lang\u003dla|fluidus\u0027 () from \u0027lang\u003dla|fluere\u0027 () akin to Ancient Greek \u0027lang\u003dgrc|φλύειν\u0027 () Several related terms in English from Latin (\u0027fluent\u0027 \u0027flux\u0027 , and cognate from Proto-Indo-European (via Germanic) with \u0027flow\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any substance which can flow with relative ease, tends to assume the shape of its container, and obeys Bernoulli\u0027s principle; a liquid, gas or plasma\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("fluidism", "{\"term\":\"fluidism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|fluid|ism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The doctrine that the fluids of the body are the source of its vital properties and are susceptible to disease\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -34,7 +38,11 @@ package org.swtk.commons.dict.wiktionary.generated.f.l.u;  import java.util.Hash
 
 	add("flunkee", "{\"term\":\"flunkee\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|flunk|ee|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who flunks an academic course\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("fluor", "{\"term\":\"fluor\", \"etymology\":{\"influencers\":[{}], \"languages\":[\"Danish\", \"Latin\"], \"text\":\"From \u0027fluor\u0027 from Latin \u0027fluere\u0027 (to flow)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Fluorite (symbol: F\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("fluoral", "{\"term\":\"fluoral\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The compound trifluoroacetaldehyde, CF\u0026lt;sub\u0026gt;3\u0026lt;/sub\u0026gt;-CHO\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("fluorapatite", "{\"term\":\"fluorapatite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A calcium halophosphate mineral, in which fluoride replaces the hydroxide of apatite, that is mined as a phosphate ore, and occurs in the enamel of teeth\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("fluorescein", "{\"term\":\"fluorescein\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|fluoresce|in|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of a class of yellow xanthene dyes which are visible when highly diluted; used forensically to detect traces of blood, and in analytical chemistry as an indicator in silver nitrate titrations\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -56,11 +64,15 @@ package org.swtk.commons.dict.wiktionary.generated.f.l.u;  import java.util.Hash
 
 	add("fluorodeoxyuridine", "{\"term\":\"fluorodeoxyuridine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A fluorinated derivative of deoxyuridine\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("fluorohydride", "{\"term\":\"fluorohydride\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|fluoro|hydride|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An compound formed by the addition of the elements of hydrogen fluoride\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("fluoroimmunometry", "{\"term\":\"fluoroimmunometry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A method for testing allergies by measuring fluorescently labelled antibodies for detection of antigens in the cells of a patient\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("fluorosulfite", "{\"term\":\"fluorosulfite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|fluoro|sulfite|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The anion SO\u0026lt;sub\u0026gt;2\u0026lt;/sub\u0026gt;F\u0026lt;sup\u0026gt;-\u0026lt;/sup\u0026gt; or any salt containing this anion\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("fluorspar", "{\"term\":\"fluorspar\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{blend|fluorite|spa. Etymology 3|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A halide mineral composed of calcium fluoride\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("fluoxetine", "{\"term\":\"fluoxetine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An SSRI antidepressant drug with formula C\u0026lt;sub\u0026gt;17\u0026lt;/sub\u0026gt;H\u0026lt;sub\u0026gt;18\u0026lt;/sub\u0026gt;F\u0026lt;sub\u0026gt;3\u0026lt;/sub\u0026gt;NO\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("flupentixol", "{\"term\":\"flupentixol\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A typical antipsychotic drug of the thioxanthenes\", \"priority\":1}]}, \"synonyms\":{}}");
 

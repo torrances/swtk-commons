@@ -2,4 +2,6 @@ package org.swtk.commons.dict.wiktionary.generated.i.l.i;  import java.util.Hash
 
 	add("ilium", "{\"term\":\"ilium\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\", \"Latin\"], \"text\":\"From Latin \u0027ilium\u0027 from Ancient greek (to 1453) \u0027ἴλιον\u0027 ()\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"another name of Troy\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("ilium", "{\"term\":\"ilium\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin {{m|la|īlium||lower abdomen}}, from {{m|la|īle||flank}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The upper and widest of the three bones that make up each side of the hipbone and pelvis\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The ileum, part of the small intestine\", \"priority\":2}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

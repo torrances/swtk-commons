@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.a.m.y;  import java.util.Hash
 
 	add("amyelia", "{\"term\":\"amyelia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The congenital lack of a spinal cord\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("amygdala", "{\"term\":\"amygdala\", \"etymology\":{\"influencers\":[{}], \"languages\":[\"English\", \"ancient greek (to 1453)\", \"Latin\"], \"text\":\"Because of its shape, from Latin \u0027amygdala\u0027 (almond) from Ancient greek (to 1453) \u0027ἀμυγδάλη\u0027 (almond)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The region of the brain, located in the medial temporal lobe, believed to play a key role in the emotions, such as fear and pleasure, in both animals and humans\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("amygdalin", "{\"term\":\"amygdalin\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) {{m|grc|ἀμυγδάλη||almond}} {{suffix||in|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a glycoside of benzaldehyde and hydrogen cyanide found in bitter almonds, and in the kernels of some other fruit\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("amylmetacresol", "{\"term\":\"amylmetacresol\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An antiseptic used to treat minor infections of the mouth and throat\", \"priority\":1}]}, \"synonyms\":{}}");

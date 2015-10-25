@@ -6,4 +6,6 @@ package org.swtk.commons.dict.wiktionary.generated.z.y.g;  import java.util.Hash
 
 	add("zygophyte", "{\"term\":\"zygophyte\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|zygo|phyte|t1\u003dunion; pair|t2\u003dplant|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any plant of a proposed class or grand division in which reproduction consists in the union of two similar cells\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("zygote", "{\"term\":\"zygote\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027ζυγωτός\u0027 (yoked) from \u0027ζυγός\u0027 (yoke)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A fertilized egg cell\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

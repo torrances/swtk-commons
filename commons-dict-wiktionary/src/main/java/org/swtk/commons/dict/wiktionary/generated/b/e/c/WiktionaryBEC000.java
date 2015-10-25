@@ -8,4 +8,6 @@ package org.swtk.commons.dict.wiktionary.generated.b.e.c;  import java.util.Hash
 
 	add("becomingness", "{\"term\":\"becomingness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|becoming|ness|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or quality of becoming\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("becquerel", "{\"term\":\"becquerel\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"{{borrowing|fr|becquerel|lang\u003den}}. Named after the French physicist {{w|Henri Becquerel}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"In the International System of Units, the derived unit of radioactive activity; the activity of a quantity of radioactive material in which one nucleus decays per second. Symbol: Bq\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

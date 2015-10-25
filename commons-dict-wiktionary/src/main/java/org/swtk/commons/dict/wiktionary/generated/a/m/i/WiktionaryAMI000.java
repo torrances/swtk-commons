@@ -6,6 +6,8 @@ package org.swtk.commons.dict.wiktionary.generated.a.m.i;  import java.util.Hash
 
 	add("amicite", "{\"term\":\"amicite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Amici|ite|lang\u003den}}, after physicist Giovan Battista Amici (1786–1863).\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A monoclinic-sphenoidal zeolite mineral containing aluminum, hydrogen, oxygen, potassium, silicon, and sodium\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("amide", "{\"term\":\"amide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any derivative of an oxoacid in which the hydroxyl group has been replaced with an amino or substituted amino group; especially such derivatives of a carboxylic acid, the carboxamides\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Any ionic derivative of ammonia in which a hydrogen atom has been replaced with a metal cation\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("amidah", "{\"term\":\"amidah\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Hebrew\"], \"text\":\"From Hebrew \u0027תפילה\u0027 \u0027ה־\u0027 {term|עֲמִידָה||lang\u003dhe|tr\u003dt\u0027filát ha\u0027amidá|the standing prayer}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An important daily prayer that is said while standing\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("amidinotransferase", "{\"term\":\"amidinotransferase\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|amidino|transferase|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of a group of enzymes that catalyze the transfer of amidinos\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -14,7 +16,11 @@ package org.swtk.commons.dict.wiktionary.generated.a.m.i;  import java.util.Hash
 
 	add("amifostine", "{\"term\":\"amifostine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A cytoprotective adjuvant used in cancer chemotherapy\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("amigo", "{\"term\":\"amigo\", \"etymology\":{\"influencers\":[{},{}], \"languages\":[\"English\", \"Spanish\", \"Latin\"], \"text\":\"From Spanish \u0027amigo\u0027 (friend) from Latin \u0027amicus\u0027 (friend) derived from \u0027amo\u0027 Compare French \u0027ami\u0027 Italian \u0027amico\u0027 Portuguese \u0027amigo\u0027 and Romanian \u0027amic\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"frien\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Mexica\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A native of the Philippines who was friendly toward the Spanish\", \"priority\":3}]}, \"synonyms\":{}}");
+
 	add("amillennialism", "{\"term\":\"amillennialism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|a|millennial|ism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A view in Christian eschatology that rejects the claimed future thousand-year physical reign of Jesus Christ on the earth, in opposition to premillennial and some postmillennial views of the Book of Revelation, chapter 20, claiming instead that the number of years in Revelation 20 is a symbolic number and that Christ\u0027s eventual physical reign will be permanent\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("amine", "{\"term\":\"amine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From \u0027ammonia\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A functional group formally derived from ammonia by replacing one, two or three hydrogen atoms with hydrocarbon or other radicals\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Any organic compound containing an amine functional group\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("amino", "{\"term\":\"amino\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The amine functional group\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -35,6 +41,8 @@ package org.swtk.commons.dict.wiktionary.generated.a.m.i;  import java.util.Hash
 	add("aminoborane", "{\"term\":\"aminoborane\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A mixed hydride of nitrogen and boron, NH\u0026lt;sub\u0026gt;2\u0026lt;/sub\u0026gt;BH\u0026lt;sub\u0026gt;2\u0026lt;/sub\u0026gt;, whose polymer is proposed as a storage site for hydrogen\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("aminocyclopropane", "{\"term\":\"aminocyclopropane\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"cyclopropylamin\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A univalent radical obtained by removal of a hydrogen atom from the ring of cyclopropylamine\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("aminoester", "{\"term\":\"aminoester\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|amino|ester|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of a class of local anesthetics\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("aminoglutethimide", "{\"term\":\"aminoglutethimide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An antisteroid drug that blocks the production of steroids derived from cholesterol and is used in the treatment of Cushing\u0027s syndrome and metastatic breast cancer\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -81,6 +89,8 @@ package org.swtk.commons.dict.wiktionary.generated.a.m.i;  import java.util.Hash
 	add("aminotriazole", "{\"term\":\"aminotriazole\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The heterocyclic organic compound 3-amino-1,2,4-triazole (3-AT), sometimes used as a herbicide (but not, because of its carcinogenic properties, on food crops\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("amiodarone", "{\"term\":\"amiodarone\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular medicine used against arrhythmia\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("amish", "{\"term\":\"amish\", \"etymology\":{\"influencers\":[], \"languages\":[\"German\", \"English\", \"pennsylvania german\"], \"text\":\"From Pennsylvania german \u0027amisch\u0027 or German \u0027amische\u0027 after the name of the Swiss preacher w:Jakob Amman|Jakob Amman (1645-1730).\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A strict Anabaptist sect living mainly in Pennsylvania, Ohio and Indiana\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("amissibility", "{\"term\":\"amissibility\", \"etymology\":{\"influencers\":[], \"languages\":[\"French\"], \"text\":\"Compare French \u0027amissibilité\u0027 See \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality of being amissible; possibility of being lost\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Notions of popular rights and the \u0027\u0027amissibility\u0027\u0027 of sovereign power for misconduct were alternately broached by the two great religious parties of Europe.\u0027 \u0026amp;mdash; Hallam\", \"priority\":2}]}, \"synonyms\":{}}");
 

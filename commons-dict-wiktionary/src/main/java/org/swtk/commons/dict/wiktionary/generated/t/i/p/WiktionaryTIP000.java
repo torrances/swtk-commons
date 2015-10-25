@@ -8,6 +8,8 @@ package org.swtk.commons.dict.wiktionary.generated.t.i.p;  import java.util.Hash
 
 	add("tippex", "{\"term\":\"tippex\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{trademark erosion|Tipp-Ex|[http://www.bicworld.com/ BIC corporation]|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular brand of correction fluid\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("tipple", "{\"term\":\"tipple\", \"etymology\":{\"influencers\":[], \"languages\":[\"Norwegian\"], \"text\":\"Origin unknown but possibly from Scandinavian source (see Norwegian \u0027tipla\u0027 .\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An area near the entrance of mines which is used to load and unload coal\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"An apparatus for unloading railroad freight cars by tipping them; the place where this is done\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Any alcoholic drink\", \"priority\":3}]}, \"synonyms\":{}}");
+
 	add("tipranavir", "{\"term\":\"tipranavir\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An anti-retroviral drug of the protease inhibitor class that is used in to treat HIV infected patients\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("tipsheet", "{\"term\":\"tipsheet\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|tip|sheet|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A page or mailing of information and hint\", \"priority\":1}]}, \"synonyms\":{}}");

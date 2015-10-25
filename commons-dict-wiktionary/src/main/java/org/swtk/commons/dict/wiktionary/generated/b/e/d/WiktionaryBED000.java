@@ -14,6 +14,8 @@ package org.swtk.commons.dict.wiktionary.generated.b.e.d;  import java.util.Hash
 
 	add("bedload", "{\"term\":\"bedload\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{compound|bed|load|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Sediment that is carried along the bottom of a river or stream, rather than in the curren\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("bedouin", "{\"term\":\"bedouin\", \"etymology\":{\"influencers\":[], \"languages\":[\"Arabic\", \"English\"], \"text\":\"From Arabic \u0027بَدَوِيُّون\u0027 plural form of \u0027بَدَوِيّ\u0027 \u0026lt;!--, from {{m|ar|tr\u003dbâdija}}, the uncultivated (desert) plain where they traditionally roam. ?--\u0026gt;\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A desert-dweller, especially a member of a nomadic Arab desert tribe\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("bedplate", "{\"term\":\"bedplate\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|bed|plate|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The foundation framing or piece, by which the other parts are supported and held in place; the bed\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("bedrest", "{\"term\":\"bedrest\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Confinement to bed, often under instructions of a physician, in order to recover from an injury, an illness, or the frailty associated with other physical discomforts such as a difficult pregnancy\", \"priority\":1}]}, \"synonyms\":{}}");

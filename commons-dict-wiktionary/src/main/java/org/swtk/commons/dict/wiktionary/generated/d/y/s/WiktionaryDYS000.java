@@ -46,6 +46,8 @@ package org.swtk.commons.dict.wiktionary.generated.d.y.s;  import java.util.Hash
 
 	add("dyspnea", "{\"term\":\"dyspnea\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027dyspnoea\u0027, from \u0027δύσπνοια\u0027 (bad breathing) compound of \u0027δυσ-\u0027 (bad, unfortunate) and \u0027πνοή\u0027 (breeze)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Difficult or labored , shortness of breath\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("dysprosium", "{\"term\":\"dysprosium\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027δυσπρόσιτος\u0027 (hard to get)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A metallic chemical element (\u0027symbol\u0027 Dy) with an atomic number of 66\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("dystelectasis", "{\"term\":\"dystelectasis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Improper inflation of the lung\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("dysteleology", "{\"term\":\"dysteleology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The view that existence has no \u0027telos\u0027 or final cause from purposeful design\", \"priority\":1}]}, \"synonyms\":{}}");

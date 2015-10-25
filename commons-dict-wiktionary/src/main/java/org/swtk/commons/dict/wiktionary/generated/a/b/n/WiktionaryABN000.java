@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.a.b.n;  import java.util.Hash
 
 	add("abnet", "{\"term\":\"abnet\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Hebrew\"], \"text\":\"From Hebrew \u0027avnet\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The girdle of a Jewish priest or officer. \u0026lt;ref\u0026gt;\u0026lt;/ref\u0026gt\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("abnegation", "{\"term\":\"abnegation\", \"etymology\":{\"influencers\":[{}], \"languages\":[\"English\", \"French\"], \"text\":\"First attested before 1398. From \u0027\u0027 {{m|la|abnegātiō}}, from {{m|la|abnegō||refuse, deny}}, from \u0027ab\u0027 (off) + {{m|la|negō||deny; refuse, say no}}. Compare French \u0027abnégation\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A denial; a renunciation; denial of desire or self-interest. \u0026lt;ref name\u003dSOED\u0026gt;\u0026lt;/ref\u0026gt\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("abnegator", "{\"term\":\"abnegator\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From from Latin \u0027abnegatus\u0027 Equivalent to {{suffix|abnegate|or|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who abnegates, denies, or rejects. \u0026lt;ref\u0026gt;\u0026lt;/ref\u0026gt\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("abnormalcy", "{\"term\":\"abnormalcy\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|abnormal|cy|lang\u003den}}, by analogy with normalcy.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Capitalism was not a normalcy but an abnormalcy\", \"priority\":1}]}, \"synonyms\":{}}");

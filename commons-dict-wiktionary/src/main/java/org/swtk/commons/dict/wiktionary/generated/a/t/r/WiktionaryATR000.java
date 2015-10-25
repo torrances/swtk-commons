@@ -16,4 +16,6 @@ package org.swtk.commons.dict.wiktionary.generated.a.t.r;  import java.util.Hash
 
 	add("atropisomerism", "{\"term\":\"atropisomerism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"isomerism as a result of restricted rotation about a single bond\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("atropos", "{\"term\":\"atropos\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027ἄτροπος\u0027 literally meaning \u0027inflexible\u0027 or \u0027not turning\u0027, from the Greek \u0027a-\u0027, (not) + \u0027tropos\u0027, (to turn)\u0027.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One of the three Fates, or Moirae; a daughter of Zeus and Themis; the cutter of the thread of life, depicted as an old woman. Her Roman counterpart is Morta\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

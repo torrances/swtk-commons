@@ -2,7 +2,11 @@ package org.swtk.commons.dict.wiktionary.generated.s.u.d;  import java.util.Hash
 
 	add("suds", "{\"term\":\"suds\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"lather, foam\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("sudan", "{\"term\":\"sudan\", \"etymology\":{\"influencers\":[], \"languages\":[\"Arabic\", \"English\"], \"text\":\"From Arabic {{m|ar|سُودَان||black people}}, plural of {{m|ar|أَسْوَد|}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Country in Northeast Africa. Official name: Republic of the Sudan\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Often used with the definite article \u0026quot;the\u0026quot\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A climatic zone characterized by savannas and mosaic forests running in a belt just south of the Sahel in West and East Afric\", \"priority\":3}]}, \"synonyms\":{}}");
+
 	add("sudetenland", "{\"term\":\"sudetenland\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a region in Bohemia\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("sudoku", "{\"term\":\"sudoku\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Japanese\"], \"text\":\"Japanese 数独 (sūdoku), numbers singly\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A type of puzzle whose completion requires each of typically nine rows and columns and each of as many usually square subregions to contain, without duplication, 1 up to 9 or the grid dimension\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("sudser", "{\"term\":\"sudser\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From \u0027\u0027 an allusion to \u0027\u0027 in \u0027\u0027 {{suffix||er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A foaming agent used in detergents etc\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A serial melodrama shown on television, especially one broadcast during the daytime, often sponsored by household products manufacturers\", \"priority\":2}]}, \"synonyms\":{}}");
 

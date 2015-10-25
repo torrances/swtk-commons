@@ -8,4 +8,6 @@ package org.swtk.commons.dict.wiktionary.generated.b.a.u;  import java.util.Hash
 
 	add("bautzen", "{\"term\":\"bautzen\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A city in Germany\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("bauxite", "{\"term\":\"bauxite\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"French from {{w|Les Baux}} in France, {{suffix||ite|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The principal ore of aluminium; a clay-like mineral, being a mixture of hydrated oxides and hydroxides\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

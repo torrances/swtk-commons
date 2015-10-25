@@ -28,4 +28,6 @@ package org.swtk.commons.dict.wiktionary.generated.f.e.m;  import java.util.Hash
 
 	add("femtometre", "{\"term\":\"femtometre\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|femto|metre|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"10\u0026lt;sup\u0026gt;-15\u0026lt;/sup\u0026gt; of a metre. Symbol: fm\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("femur", "{\"term\":\"femur\", \"etymology\":{\"influencers\":[{}], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027femur\u0027 (genitive \u0027feminis\u0027 (thigh) , from Proto-indo-european {{m|ine-pro|*dhonu||fir}}. More at tan.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A thighbone\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A segment of the leg of an insect or arachnid\", \"priority\":2}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

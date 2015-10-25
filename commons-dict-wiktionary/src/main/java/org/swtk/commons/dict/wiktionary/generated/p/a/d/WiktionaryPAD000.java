@@ -6,4 +6,8 @@ package org.swtk.commons.dict.wiktionary.generated.p.a.d;  import java.util.Hash
 
 	add("paddleboat", "{\"term\":\"paddleboat\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|paddle|boat|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A boat propelled by a paddle whee\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("padel", "{\"term\":\"padel\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A racquet sport popular in Spain and Latin America, usually played in doubles on a small, closed court\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("padishah", "{\"term\":\"padishah\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Persian\"], \"text\":\"From Persian \u0027پادشاه\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a ruler of a Muslim country or state\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -6,6 +6,8 @@ package org.swtk.commons.dict.wiktionary.generated.o.c.t;  import java.util.Hash
 
 	add("octamer", "{\"term\":\"octamer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|octa|mer|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An oligomer having eight subunits\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("octane", "{\"term\":\"octane\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|octo|ane|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of the eighteen isomeric aliphatic hydrocarbons (C\u0026lt;sub\u0026gt;8\u0026lt;/sub\u0026gt;H\u0026lt;sub\u0026gt;18\u0026lt;/sub\u0026gt;) found in petroleum, especially an iso-octane 2,2,4 trimethyl-pentane; they are used as fuels and solvents\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("octaoxygen", "{\"term\":\"octaoxygen\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|octa|oxygen|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A red allotrope of oxygen, O\u0026lt;sub\u0026gt;8\u0026lt;/sub\u0026gt;, that is stable only under very high pressures\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("octasulfur", "{\"term\":\"octasulfur\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|octa|sulfur|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The most common allotrope of sulfur (S\u0026lt;sub\u0026gt;8\u0026lt;/sub\u0026gt;) containing eight atoms in a ring\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -28,6 +30,8 @@ package org.swtk.commons.dict.wiktionary.generated.o.c.t;  import java.util.Hash
 
 	add("octli", "{\"term\":\"octli\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From Nahuatl \u0027octl. Classical_Nahuatl|octli\u0027.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Pulque\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("october", "{\"term\":\"october\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"middle english (1100-1500)\", \"old french (842-ca. 1400)\", \"Latin\"], \"text\":\"From Middle english (1100-1500) from Old french (842-ca. 1400) {{m|fro|octobre}}, from Latin {{m|la|octōber||eighth month}}, from Latin {{m|la|octō||eight}}, from Proto-indo-european {{m|ine-pro|*oḱtṓw||twice four}}. October was the eighth month in the Roman calendar.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The tenth month of the Gregorian calendar, following September and preceding November. Abbreviation: \u0027\u0027Oct\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("octocentenary", "{\"term\":\"octocentenary\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|octo|centenary|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An eight-hundredth anniversary\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("octochamp", "{\"term\":\"octochamp\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|octo|champ|t1\u003deight|pos2\u003dshort form of {{m|en|champion}}|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A winner of eight heats of the British television game show \u0027w:Countdown (game Countdown\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -47,6 +51,8 @@ package org.swtk.commons.dict.wiktionary.generated.o.c.t;  import java.util.Hash
 	add("octopodes", "{\"term\":\"octopodes\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Category:English irregular plurals ending in \u0026quot;-des\u0026quot\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("octopole", "{\"term\":\"octopole\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|octo|pole|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A multipole configuration with eight equal charges arranged in a circular pattern\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Any configuration or analysis having eightfold symmetry\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("octopus", "{\"term\":\"octopus\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027ὀκτώπους\u0027 from \u0027ὀκτώ\u0027 (eight) + \u0027πούς\u0027 (foot)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of several marine molluscs/mollusks, of the family \u0027, having no internal or external protective shell or bone (unlike the nautilus, squid or cuttlefish) and eight arms each covered with suckers\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The flesh of these marine molluscs eaten as food\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"An organization that has many powerful branches controlled from the centre\", \"priority\":3}]}, \"synonyms\":{}}");
 
 	add("octosyllable", "{\"term\":\"octosyllable\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|octo|syllable|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"line of verse with eight syllables\", \"priority\":1}]}, \"synonyms\":{}}");
 

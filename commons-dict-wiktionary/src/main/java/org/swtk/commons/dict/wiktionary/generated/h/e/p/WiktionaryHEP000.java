@@ -6,6 +6,8 @@ package org.swtk.commons.dict.wiktionary.generated.h.e.p;  import java.util.Hash
 
 	add("hepaticology", "{\"term\":\"hepaticology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The scientific study of liverworts (Marchantiophyta\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Hepaticology\u0027\u0027, outside the temperate parts of the Northern Hemisphere, still lies deep in the shadow cast by that ultimate \u0026quot;closet taxonomist,\u0026quot; Franz Stephani—a ghost whose shadow falls over us all\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("hepatitis", "{\"term\":\"hepatitis\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\", \"Latin\"], \"text\":\"From Latin {{m|la|hēpatītis}}, from {{m|la|hēpar||liver}}, from Ancient greek (to 1453) \u0027ἧπαρ|lang\u003dgrc\u0027 ()\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Inflammation of the liver, sometimes caused by a viral infection\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2013\u0027\u0027, Teri Shors, \u0027Understanding Viruses\u0027, 2nd editio\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Hepatitises\u0027\u0027 B and C are the most important chronic viral infections of humans\", \"priority\":3}]}, \"synonyms\":{}}");
+
 	add("hepatoblast", "{\"term\":\"hepatoblast\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|hepato|blast|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The fetal precursor of the hepatocyte\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("hepatoblastoma", "{\"term\":\"hepatoblastoma\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|hepato|blastoma|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A blastoma situated in the liver\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -36,9 +38,15 @@ package org.swtk.commons.dict.wiktionary.generated.h.e.p;  import java.util.Hash
 
 	add("heptameter", "{\"term\":\"heptameter\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hepta|meter|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a line or verse containing seven metrical feet\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("heptamolybdate", "{\"term\":\"heptamolybdate\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hepta|molybdate|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The oxyanion of molybdenum Mo\u0026lt;sub\u0026gt;7\u0026lt;/sub\u0026gt;O\u0026lt;sub\u0026gt;24\u0026lt;/sub\u0026gt;\u0026lt;sup\u0026gt;6-\u0026lt;/sup\u0026gt;; any salt containing this anion\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("heptanaldehyde", "{\"term\":\"heptanaldehyde\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An alkyl aldehyde with a strong fruity odour, used in flavouring and perfumes\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("heptane", "{\"term\":\"heptane\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|hepta|ane|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of the nine isomers of the saturated aliphatic hydrocarbon C\u0026lt;sub\u0026gt;7\u0026lt;/sub\u0026gt;H\u0026lt;sub\u0026gt;16\u0026lt;/sub\u0026gt;, obtained from petroleum, especially n-heptane (CH\u0026lt;sub\u0026gt;3\u0026lt;/sub\u0026gt;(CH\u0026lt;sub\u0026gt;2\u0026lt;/sub\u0026gt;)\u0026lt;sub\u0026gt;5\u0026lt;/sub\u0026gt;CH\u0026lt;sub\u0026gt;3\u0026lt;/sub\u0026gt\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("heptaselenide", "{\"term\":\"heptaselenide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hepta|selenide|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"any selenide containing seven selenium atoms in each molecule\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("heptasulfide", "{\"term\":\"heptasulfide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hepta|sulfide|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any compound having seven sulfide groups, or seven linked sulfur atoms\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("heptathlete", "{\"term\":\"heptathlete\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hepta|athlete|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An athlete who competes in the heptathlon\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -47,5 +55,7 @@ package org.swtk.commons.dict.wiktionary.generated.h.e.p;  import java.util.Hash
 	add("heptomino", "{\"term\":\"heptomino\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hepta|polyomino|alt2\u003d(poly)omino|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"lt;!--Note: there is no direct Wikipedia link--\u0026gt\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A polyomino made up of seven squares\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("heptose", "{\"term\":\"heptose\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|hepta|ose|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A sugar or saccharide containing seven carbon atoms\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("heptoxide", "{\"term\":\"heptoxide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hepta|oxide|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"any oxide containing seven oxygen atoms in each molecule\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

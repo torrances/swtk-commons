@@ -28,7 +28,15 @@ package org.swtk.commons.dict.wiktionary.generated.v.a.r;  import java.util.Hash
 
 	add("varmeter", "{\"term\":\"varmeter\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|var|meter|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A reactive voltammeter measuring reactive power in vars\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("varna", "{\"term\":\"varna\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Sanskrit\"], \"text\":\"From Sanskrit \u0027sc\u003ddeva|वर्ण|tr\u003dvárṇa\u0027 (colour, tint, dye, pigment, appearance, aspect) from verbal root \u0027वृणोति|tr\u003d√vṛ\u0027 (to choose, select)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"any of the four original castes in Hinduism, or the system of such castes\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("varna", "{\"term\":\"varna\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A city in northeastern Bulgaria\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("varroa", "{\"term\":\"varroa\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From the genus name \u0027Varroa\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Infestation with the mite , or the disease caused by such mite\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"These bees are resistant to \u0027\u0027varroa\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("varsity", "{\"term\":\"varsity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Alteration of university\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"university\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("varus", "{\"term\":\"varus\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"Latin\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A deformity in which the foot is turned inward\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("varve", "{\"term\":\"varve\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Swedish\"], \"text\":\"From Swedish \u0027varv\u0027 ()\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An annual layer of sediment or sedimentary rock\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2011\u0027\u0027, \u0027The Origin of Our Species\u0027, Penguin 2012, p. 37\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A comparable method uses \u0027\u0027varves\u0027\u0027 […] where spans of time can be measured through counting \u0027\u0027varves\u0027\u0027, and also by radiocarbon dating plant or animal residues within the \u0027\u0027varves\", \"priority\":3}]}, \"synonyms\":{}}");
 

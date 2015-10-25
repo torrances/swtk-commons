@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.t.o.x;  import java.util.Hash
 
 	add("toxicokinetics", "{\"term\":\"toxicokinetics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|toxico|kinetics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The application of pharmacokinetics to the study of toxicity\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("toxicomania", "{\"term\":\"toxicomania\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|toxico|mania|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"an insane desire for poisonous or intoxicating substances\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("toxicopharmacology", "{\"term\":\"toxicopharmacology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The pharmacology of toxic substances\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("toxicoproteomics", "{\"term\":\"toxicoproteomics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The application of proteomics to toxicology\", \"priority\":1}]}, \"synonyms\":{}}");

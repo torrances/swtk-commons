@@ -2,4 +2,6 @@ package org.swtk.commons.dict.wiktionary.generated.k.n.e;  import java.util.Hash
 
 	add("kneesies", "{\"term\":\"kneesies\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|knee|sies|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"flirtatious touching using the knee(s\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"She kept trying to play \u0027\u0027kneesies\u0027\u0027 with me under the table\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("knesset", "{\"term\":\"knesset\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Hebrew\"], \"text\":\"From Hebrew \u0027כְּנֶסֶת\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The Israeli parliament, located in Jerusalem\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

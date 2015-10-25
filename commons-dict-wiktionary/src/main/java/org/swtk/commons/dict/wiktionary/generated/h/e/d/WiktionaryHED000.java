@@ -10,4 +10,6 @@ package org.swtk.commons.dict.wiktionary.generated.h.e.d;  import java.util.Hash
 
 	add("hedonism", "{\"term\":\"hedonism\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027ἡδονή\u0027 (pleasure) + -ism. (Eng. usg. 1856)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The belief that pleasure or happiness is the highest good in life. Some hedonists, such as the Epicureans, have insisted that pleasure of the entire mind, not just pleasure of the senses, is the highest good\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A general devotion to the pursuit of pleasure\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("hedonist", "{\"term\":\"hedonist\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027ἡδονή\u0027 (pleasure) {{suffix||ist|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"someone devoted to hedonism\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

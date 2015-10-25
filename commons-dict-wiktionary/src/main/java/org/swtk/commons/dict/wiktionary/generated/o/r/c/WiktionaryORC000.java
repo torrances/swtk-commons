@@ -14,6 +14,12 @@ package org.swtk.commons.dict.wiktionary.generated.o.r.c;  import java.util.Hash
 
 	add("orchidology", "{\"term\":\"orchidology\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{suffix|orchid|ology|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of orchids\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("orchis", "{\"term\":\"orchis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any plant of the genus \u0027Orchis\u0027; an orchi\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1919,\u0027\u0027 , \u0027\u0027, Duckworth, hardback edition, page 9\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"He had a suit of summer mufti, and a broad-brimmed blue beaver hat looped with leaves broken from the hedgerows in the lanes, and a Leander scarf tucked full of flowers: loosestrife, meadowrue, \u0027\u0027orchis\u0027\u0027, ragged-robin\", \"priority\":3}]}, \"synonyms\":{}}");
+
 	add("orciprenaline", "{\"term\":\"orciprenaline\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A bronchodilator used in the treatment of asthma\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("orcos", "{\"term\":\"orcos\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Use of an oath to enhance the believability of a statement\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("orcus", "{\"term\":\"orcus\", \"etymology\":{\"influencers\":[], \"languages\":[\"ancient greek (to 1453)\", \"Latin\"], \"text\":\"Uncertain, but possibly from Ancient greek (to 1453) \u0027ὅρχος\u0027 \u0026lt;ref\u0026gt;Wagenvoort, Studies in Roman Literature, Culture and Religion\u0026lt;/ref\u0026gt;\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the Etruscan and Roman god of the underworl\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"a large trans-Neptunian object and plutino, sometimes referred to as the \u0027anti-Pluto\", \"priority\":2}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

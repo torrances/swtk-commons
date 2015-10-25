@@ -14,4 +14,8 @@ package org.swtk.commons.dict.wiktionary.generated.d.e.h;  import java.util.Hash
 
 	add("dehydration", "{\"term\":\"dehydration\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The act or process of freeing from water; also, the condition of a body from which the water has been removed\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("dehydrogenase", "{\"term\":\"dehydrogenase\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of several enzymes that catalyze the removal of hydrogen (a proton) from biological compounds\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("dehydrogenation", "{\"term\":\"dehydrogenation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any reaction or process in which hydrogen is removed from a substance, especially the production of unsaturated organic compounds from saturated ones\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

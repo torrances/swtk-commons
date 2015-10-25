@@ -6,4 +6,6 @@ package org.swtk.commons.dict.wiktionary.generated.e.p.o;  import java.util.Hash
 
 	add("épopée", "{\"term\":\"épopée\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{borrowing|fr|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Category:English terms spelled with epopee\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("epopee", "{\"term\":\"epopee\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"From French \u0027épopée\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"an epic, saga\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

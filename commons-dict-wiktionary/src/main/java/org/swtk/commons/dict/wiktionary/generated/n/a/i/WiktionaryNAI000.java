@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.n.a.i;  import java.util.Hash
 
 	add("nait", "{\"term\":\"nait\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Abbreviation of \u0027\u0027 ()\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A too-low number of platelets in a newborn\u0027s blood, due to his mother\u0027s antibodies having been passed via the placenta and attacking his own platelets\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("naiad", "{\"term\":\"naiad\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\", \"Latin\"], \"text\":\"Latin \u0027naias\u0027 from Ancient greek (to 1453) \u0027νᾱϊάς\u0027 (naiad) from \u0027νάειν|lang\u003dgrc\u0027 ()\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A female deity (nymph) associated with water, especially a spring, stream, or other fresh water\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The aquatic larva (nymph) of a dragonfly or damselfly\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("nails", "{\"term\":\"nails\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The four round-topped pedestals outside the Corn Exchange in Bristol on which bargains used to be struck\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nailbed", "{\"term\":\"nailbed\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|nail|bed|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The area underneath a nail in a human or other mamma\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -11,6 +13,8 @@ package org.swtk.commons.dict.wiktionary.generated.n.a.i;  import java.util.Hash
 	add("nailist", "{\"term\":\"nailist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|nail|ist|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Someone whose occupation is to trim any type of nails, apply artificial nails (or \u0026quot;nail art\u0026quot;) and care for nails. The well-known appellation of a manicurist (or a \u0026quot;nail technician\u0026quot;) in Japan and some Southeast Asian countries\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("nainsook", "{\"term\":\"nainsook\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Hindi\"], \"text\":\"From Hindi \u0027नैनसुख\u0027 from \u0027नैन|sc\u003ddeva|tr\u003dnain|lang\u003dhi\u0027 () + \u0027सुख|sc\u003ddeva|tr\u003dsukh|lang\u003dhi\u0027 ()\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A soft, fine muslin of South Asian origin, sometimes used to make baby clothes\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("nairobi", "{\"term\":\"nairobi\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"masai\"], \"text\":\"From Masai \u0027\u0027 (enkare nyrobi) the name of the Nairobi river.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The capital of Kenya\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("naitp", "{\"term\":\"naitp\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Abbreviation of \u0027neonatal alloimmune thrombocytopenia\u0027.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A too-low number of platelets in a newborn\u0027s blood, due to his mother\u0027s antibodies having been passed via the placenta and attacking his own platelets\", \"priority\":1}]}, \"synonyms\":{}}");
 

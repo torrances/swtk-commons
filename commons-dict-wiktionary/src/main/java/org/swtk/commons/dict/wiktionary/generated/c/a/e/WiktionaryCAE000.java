@@ -4,8 +4,16 @@ package org.swtk.commons.dict.wiktionary.generated.c.a.e;  import java.util.Hash
 
 	add("caelatura", "{\"term\":\"caelatura\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The art of producing decorative metalwork other than statuary, such as reliefs, intaglios, engravings, and chasing\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("caerphilly", "{\"term\":\"caerphilly\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Named after the town of Caerphilly, Wales.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A light colored, crumbly cheese made from cow\u0027s milk\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("caerphilly", "{\"term\":\"caerphilly\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a town in Glamorgan, South Wales\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("caesar", "{\"term\":\"caesar\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From Latin \u0027caesar\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An ancient Roman family name, notably that of w:Julius Gaius Iulius Caesar\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The government; society; earthly powers\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Render therefore unto \u0027\u0027Caesar\u0027\u0027 the things which are \u0027\u0027Caesar\u0027\u0027’s; and unto God the things that are God\u0027s\", \"priority\":3}]}, \"synonyms\":{}}");
+
 	add("caesarism", "{\"term\":\"caesarism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Caesar|ism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"autocrac\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"democratic dictatorship\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("caesaropapism", "{\"term\":\"caesaropapism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The doctrine that the state has authority over the church in ecclesiastical matters\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("caesium", "{\"term\":\"caesium\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"Latin \u0027caesius\u0027 (sky-blue) in reference to the radiation spectra + -ium\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A metallic chemical element (\u0027symbol\u0027 Cs) with an atomic number of 55\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

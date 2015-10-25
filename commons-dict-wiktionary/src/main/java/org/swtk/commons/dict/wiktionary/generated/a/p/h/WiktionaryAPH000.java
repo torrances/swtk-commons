@@ -26,6 +26,8 @@ package org.swtk.commons.dict.wiktionary.generated.a.p.h;  import java.util.Hash
 
 	add("aphrasia", "{\"term\":\"aphrasia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|a|phrase|ia|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Condition of being unable to speak\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("aphrodisia", "{\"term\":\"aphrodisia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A state of sexual desire\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"sexual intercourse\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("aphroditus", "{\"term\":\"aphroditus\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) {{m|grc|Ἀφρόδιτος}}, masculine form of {{m|grc|Ἀφροδίτη}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"was a male Aphrodite from Cyprus, and represented as a herm with a phallus, in later mythology became known as Hermaphroditus, the son of Hermes and Aphrodite.\u0026lt;ref\u0026gt;\u0026lt;/ref\u0026gt;\u0026lt;ref\u0026gt;\u0026lt;/ref\u0026gt\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("aphrometer", "{\"term\":\"aphrometer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A device used to measure the pressure within a bottle of sparkling wine\", \"priority\":1}]}, \"synonyms\":{}}");

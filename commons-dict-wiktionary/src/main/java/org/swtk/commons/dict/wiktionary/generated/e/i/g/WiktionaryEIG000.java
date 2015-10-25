@@ -4,6 +4,8 @@ package org.swtk.commons.dict.wiktionary.generated.e.i.g;  import java.util.Hash
 
 	add("eigenfunction", "{\"term\":\"eigenfunction\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|eigen|function|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A function \u0026lt;math\u0026gt; phi\u0026lt;/math\u0026gt; such that, for a given linear operator \u0026lt;math\u0026gt;D\u0026lt;/math\u0026gt;, \u0026lt;math\u0026gt;D phi\u003d lambda phi\u0026lt;/math\u0026gt; for some scalar \u0026lt;math\u0026gt; lambda\u0026lt;/math\u0026gt; (called an eigenvalue\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("eigengrau", "{\"term\":\"eigengrau\", \"etymology\":{\"influencers\":[], \"languages\":[\"German\"], \"text\":\"From German {{m|de|Eigengrau||intrinsic grey}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The dark grey colour seen by the eyes in perfect darkness as a result of signals from the optic nerves\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("eigenhead", "{\"term\":\"eigenhead\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|eigen|head|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One of a set of eigenvectors used in visual recognition systems to represent a person\u0027s head\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("eigenimage", "{\"term\":\"eigenimage\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|eigen|image|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The set of eigenvectors used by a computer system in the recognition of an image (especially of a face\", \"priority\":1}]}, \"synonyms\":{}}");

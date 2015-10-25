@@ -6,6 +6,8 @@ package org.swtk.commons.dict.wiktionary.generated.a.i.r;  import java.util.Hash
 
 	add("airbridge", "{\"term\":\"airbridge\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|air|bridge|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An aerobridge or jetway, a telescoping corridor from an airport terminal to an aircraft for secure boarding and disembarkation\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The route and aircraft used to deliver material by an airlift\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A conductor on an integrated circuit that crosses over other conductors with an air gap introduced between in the wafer manufacturing process\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"The Schottky contact is connected to the anode pad using a Gold \u0027\u0027airbridge\", \"priority\":4}]}, \"synonyms\":{}}");
 
+	add("airbus", "{\"term\":\"airbus\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|air|bus|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A subsonic jet airliner, especially a wide-bodied one\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("aircar", "{\"term\":\"aircar\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|air|car|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A car capable of flight\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("aircover", "{\"term\":\"aircover\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"protection (of land or sea operations) by aircraft\", \"priority\":1}]}, \"synonyms\":{}}");

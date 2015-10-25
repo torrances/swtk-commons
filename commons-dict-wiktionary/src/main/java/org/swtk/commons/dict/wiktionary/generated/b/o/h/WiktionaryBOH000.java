@@ -2,6 +2,10 @@ package org.swtk.commons.dict.wiktionary.generated.b.o.h;  import java.util.Hash
 
 	add("bohdanowiczite", "{\"term\":\"bohdanowiczite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\u0027\u0027 (a surname from \u0027\u0027 + \u0027\u0027 + \u0027\u0027 (a patronymic)) {{suffix||ite|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A trigonal-hexagonal scalenohedral lead gray mineral containing bismuth, selenium, and silver\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("bohemium", "{\"term\":\"bohemium\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Former name of rhenium\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("bohrium", "{\"term\":\"bohrium\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Surname of {{w|Niels Bohr}} + {{suffix||ium|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A transuranic chemical element (\u0027symbol\u0027 Bh) with an atomic number of 107\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("bohunk", "{\"term\":\"bohunk\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Probably \u0027bohemian\u0027 + \u0027hungarian\u0027 Compare \u0027hunk\u0027 \u0027hunky\u0027 \u0027honky\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An immigrant from Central Europe\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A brawny or coarse person\", \"priority\":2}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

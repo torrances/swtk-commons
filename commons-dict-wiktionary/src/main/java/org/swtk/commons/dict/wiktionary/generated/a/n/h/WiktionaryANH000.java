@@ -8,6 +8,8 @@ package org.swtk.commons.dict.wiktionary.generated.a.n.h;  import java.util.Hash
 
 	add("anhydrase", "{\"term\":\"anhydrase\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|an|hydrase|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An enzyme that catalyzes the removal of water from a material\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("anhydride", "{\"term\":\"anhydride\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|an|hydride|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"any compound formally derived from another (or from others) by the loss of a water molecule, especially acid anhydrides\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("anhydrite", "{\"term\":\"anhydrite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A saline evaporite consisting of anhydrous calcium sulfate (gypsum\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("anhydrobiosis", "{\"term\":\"anhydrobiosis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{affix|en|an-|hydro-|-biosis}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A form of cryptobiosis that occurs in situations of extreme desiccation\", \"priority\":1}]}, \"synonyms\":{}}");

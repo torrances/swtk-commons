@@ -2,4 +2,6 @@ package org.swtk.commons.dict.wiktionary.generated.f.a.d;  import java.util.Hash
 
 	add("fado", "{\"term\":\"fado\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\", \"Portuguese\"], \"text\":\"From Portuguese \u0027fado|lang\u003dpt\u0027 () from Latin \u0027fatum\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A Portuguese folk song, usually featuring a single vocalist, Portuguese guitar and sometimes classical guitar. Lyrical themes are often melancholic in nature; the structure of the song is of greater importance\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("fader", "{\"term\":\"fader\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|fade|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A device used to control sound volume\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

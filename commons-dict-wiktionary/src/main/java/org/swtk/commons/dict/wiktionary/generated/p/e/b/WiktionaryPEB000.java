@@ -4,4 +4,6 @@ package org.swtk.commons.dict.wiktionary.generated.p.e.b;  import java.util.Hash
 
 	add("pebblesnail", "{\"term\":\"pebblesnail\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|pebble|snail|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of various freshwater snails in the families and\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("pébrine", "{\"term\":\"pébrine\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"From French \u0027pébrine\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A parasitic disease affecting silkworms\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2007\u0027\u0027, Graham Robb, \u0027The Discovery of France\u0027, Picador 2008, p. 267\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"In 1852, a disease called \u0027\u0027pébrine\u0027\u0027 began to spread among the silkworms.Category:en:DiseasesCategory:English terms spelled with É\", \"priority\":3}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

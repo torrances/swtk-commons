@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wiktionary.generated.v.a.u;  import java.util.Hash
 
 	add("vaunter", "{\"term\":\"vaunter\", \"etymology\":{\"influencers\":[], \"languages\":[\"old french (842-ca. 1400)\"], \"text\":\"{{-er|vaunt}}, perhaps a calque of Old french (842-ca. 1400) \u0027vanteor\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Someone who vaunts, who brags; a braggart\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("vauxhall", "{\"term\":\"vauxhall\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{rfe|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An inner city area of Lambeth in South London\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A British motor car company, now part of\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("vauxite", "{\"term\":\"vauxite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|Vaux|ite|lang\u003den}}, after American mineral collector George Vaux Junior (1863-1927).\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A phosphate mineral of the laueite–paravauxite group\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

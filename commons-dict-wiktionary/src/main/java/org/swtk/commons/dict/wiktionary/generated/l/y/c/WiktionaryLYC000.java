@@ -14,6 +14,8 @@ package org.swtk.commons.dict.wiktionary.generated.l.y.c;  import java.util.Hash
 
 	add("lycophobia", "{\"term\":\"lycophobia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|lyco|phobia|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Fear of wolves\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("lycra", "{\"term\":\"lycra\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Trademark\u0027. A type of synthetic elastic fabric and fibre (spandex) used for tight-fitting garments, such as swimming costumes\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Clothing made from such materials, especially with reference to cycling shorts\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A tight-fitting garment made of Lycra\", \"priority\":3}]}, \"synonyms\":{}}");
+
 	add("lycra", "{\"term\":\"lycra\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"spande\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

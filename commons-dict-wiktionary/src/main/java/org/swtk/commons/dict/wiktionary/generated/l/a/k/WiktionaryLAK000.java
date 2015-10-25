@@ -8,4 +8,6 @@ package org.swtk.commons.dict.wiktionary.generated.l.a.k;  import java.util.Hash
 
 	add("lakist", "{\"term\":\"lakist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|lake|ist|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A member of the , a group of English Romantic poets from the Lake District\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("lakota", "{\"term\":\"lakota\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"Lakota for \u0026quot;alliance of friends\u0026quot;\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A Native American tribe, also known as the Sioux, now living primarily on the Rosebud, Pine Ridge, Lower Brule, Standing Rock and Cheyenne River Reservations\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The language spoken by the Lakota\", \"priority\":2}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

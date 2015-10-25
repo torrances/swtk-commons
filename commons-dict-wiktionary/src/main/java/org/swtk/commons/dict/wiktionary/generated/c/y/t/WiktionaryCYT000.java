@@ -6,6 +6,8 @@ package org.swtk.commons.dict.wiktionary.generated.c.y.t;  import java.util.Hash
 
 	add("cytochemistry", "{\"term\":\"cytochemistry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|cyto|chemistry|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The biochemistry of cells, especially that of the macromolecules responsible for cell structure and function\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("cytochrome", "{\"term\":\"cytochrome\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{confix|cyto|chrome|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of various related hemoproteins found in the cells of most organisms, which are an important part of cell respiration\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"2001\u0027\u0027: The drug-metabolizing enzymes in the liver, called \u0027\u0027cytochrome\u0027\u0027-p450s, comprise a large family of some fifty or more related enzymes, which have evolved in a remarkable way — Leslie Iversen, \u0027Drugs: A Very Short Introduction\u0027 (Oxford 2001, p. 33\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("cytochylema", "{\"term\":\"cytochylema\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The fluid portion of the cytoplas\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("cytofluorometry", "{\"term\":\"cytofluorometry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|cyto|fluorometry|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A technique used to separate cells (or chromosomes) via fluorescent markers\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -31,6 +33,8 @@ package org.swtk.commons.dict.wiktionary.generated.c.y.t;  import java.util.Hash
 	add("cytosine", "{\"term\":\"cytosine\", \"etymology\":{\"influencers\":[], \"languages\":[\"German\", \"English\"], \"text\":\"After German \u0027cytosin\u0027 from \u0027\u0027 + \u0027\u0027 + \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A base, C\u0026lt;sub\u0026gt;4\u0026lt;/sub\u0026gt;H\u0026lt;sub\u0026gt;5\u0026lt;/sub\u0026gt;N\u0026lt;sub\u0026gt;3\u0026lt;/sub\u0026gt;O, which pairs with guanine in DNA and RNA\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("cytoskeleton", "{\"term\":\"cytoskeleton\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|cyto|skeleton|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A matrix of intercellular protein, in the forms of microfilaments and microtubules, that provide some rigidity to cells\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("cytosol", "{\"term\":\"cytosol\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The aqueous solution of a cell\u0027s cytoplasm, consisting of water, organic molecules and inorganic ions\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("cytospin", "{\"term\":\"cytospin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|cyto|spin|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A form of centrifuge used to prepare cell samples for microscopy\", \"priority\":1}]}, \"synonyms\":{}}");
 

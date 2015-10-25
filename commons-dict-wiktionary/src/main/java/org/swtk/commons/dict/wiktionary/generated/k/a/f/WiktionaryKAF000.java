@@ -8,4 +8,6 @@ package org.swtk.commons.dict.wiktionary.generated.k.a.f;  import java.util.Hash
 
 	add("kafkatrapping", "{\"term\":\"kafkatrapping\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|Kafka|trapping|lang\u003den}}, coined in 2010 by Eric Raymond in reference to Franz Kafka\u0027s story \u0027The Trial\u0027, in which a man is accused o...\u0026quot;\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A sophistical form of argument that attempts to overcome an opponent by inducing a sense of guilt\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("kaftan", "{\"term\":\"kaftan\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ottoman turkish (1500-1928)\", \"Russian\"], \"text\":\"Via Russian {{m|ru|кафта́н}}, from Ottoman turkish (1500-1928)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A long tunic worn in the Eastern Mediterranean\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A long dress or shirt similar in style to those worn in the Eastern Mediterranean\", \"priority\":2}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

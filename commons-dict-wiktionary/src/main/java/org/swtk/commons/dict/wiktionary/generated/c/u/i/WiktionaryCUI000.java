@@ -2,4 +2,6 @@ package org.swtk.commons.dict.wiktionary.generated.c.u.i;  import java.util.Hash
 
 	add("cuirassier", "{\"term\":\"cuirassier\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{borrowing|fr|cuirassier|lang\u003den}}, see below.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A cavalry soldier equipped with a cuirass (armor).Category:en:Military\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("cuisine", "{\"term\":\"cuisine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{borrowing|fr|lang\u003den}} \u0027cuisine\u0027 (cooking, culinary art, kitchen)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a characteristic style of preparing food, often associated with a place of origi\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"French \u0027\u0027cuisine\u0027\u0027 is considered to be one of the world\u0027s most refined and elegant styles of cooking\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"The restaurant is noted for its excellent \u0027\u0027cuisine\", \"priority\":3}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

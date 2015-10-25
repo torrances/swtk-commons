@@ -6,9 +6,13 @@ package org.swtk.commons.dict.wiktionary.generated.a.l.u;  import java.util.Hash
 
 	add("alumian", "{\"term\":\"alumian\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"natroalunite\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("alumina", "{\"term\":\"alumina\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"From (combining form of) Latin \u0027alumen\u0027 + \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"aluminium Aluminum oxide used especially in mining, material sciences and ceramics\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("alumine", "{\"term\":\"alumine\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"alumina\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("aluminite", "{\"term\":\"aluminite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A hydrous aluminium sulfate mineral with formula Al\u0026lt;sub\u0026gt;2\u0026lt;/sub\u0026gt;SO\u0026lt;sub\u0026gt;4\u0026lt;/sub\u0026gt;(OH)\u0026lt;sub\u0026gt;4\u0026lt;/sub\u0026gt;·7(H\u0026lt;sub\u0026gt;2\u0026lt;/sub\u0026gt;O\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("aluminium", "{\"term\":\"aluminium\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Latin\"], \"text\":\"First used in 1812 as an alternative form of \u0027aluminum\u0027 which was invented in the same year.\u0026lt;ref\u0026gt;\u0027Chambers Dictionary of Etymology\u0027, Robert K. Barnhart (ed.), Chambers, 1988\u0026lt;/ref\u0026gt;, from Latin \u0027alumen\u0027 from Proto-indo-european {{m|ine-pro|*h₂elud-}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A light, silvery metal extracted from bauxite, and a chemical element (\u0027symbol\u0027 Al) with an atomic number of 13\", \"priority\":1}]}, \"synonyms\":{\"list\":[{\"text\":\"alumium\", \"synonymQualifier\":\"OBSOLETE\"}]}}");
 
 	add("aluminography", "{\"term\":\"aluminography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The art or process of producing, and printing from, aluminium plates, after the manner of ordinary lithography\", \"priority\":1}]}, \"synonyms\":{}}");
 

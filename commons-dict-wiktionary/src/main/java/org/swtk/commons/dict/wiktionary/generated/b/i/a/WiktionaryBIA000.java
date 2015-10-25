@@ -2,4 +2,6 @@ package org.swtk.commons.dict.wiktionary.generated.b.i.a;  import java.util.Hash
 
 	add("bialgebra", "{\"term\":\"bialgebra\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bi|algebra|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular form of vector space which is a compatible form of two algebras\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("biathlon", "{\"term\":\"biathlon\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A winter sport combining cross-country skiing and rifle shooting\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

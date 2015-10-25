@@ -8,6 +8,10 @@ package org.swtk.commons.dict.wiktionary.generated.s.a.w;  import java.util.Hash
 
 	add("sawgrass", "{\"term\":\"sawgrass\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|saw|grass|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any of several \u0027Cladium\u0027 species, long sedges with sa\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"saw-like sharp, serrated edges, such as , and\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("sawney", "{\"term\":\"sawney\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"scots\"], \"text\":\"From {{m|sco|Sawney}}, a Scots variant of the personal name \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a fool, an idiot\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("sawtooth", "{\"term\":\"sawtooth\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{compound|saw|tooth|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A cutting bit of a saw\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"sawtooth wave\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("sawyer", "{\"term\":\"sawyer\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"middle english (1100-1500)\"], \"text\":\"From Middle english (1100-1500) equivalent to {{suffix|saw|yer|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who saws timber, especially in a sawpit\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A large trunk of a tree brought down by the force of a river\u0027s curren\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"A beetle that lives and feeds on trees, including timber\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"The bowfin.\u0026lt;!--Webster 1913--\u0026gt\", \"priority\":4}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

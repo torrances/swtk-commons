@@ -8,4 +8,6 @@ package org.swtk.commons.dict.wiktionary.generated.s.i.r;  import java.util.Hash
 
 	add("sirius", "{\"term\":\"sirius\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\", \"Latin\"], \"text\":\"From Latin \u0027sīrius\u0027 from Ancient greek (to 1453) \u0027σείριος\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A bluish-white star in the constellation Canis Major; Alpha (α) Canis Majoris. A vertex of the Winter Triangle and the brightest star in the night sky. It is actually a binary star with a white dwarf companion star\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("sirrah", "{\"term\":\"sirrah\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a term of address to an inferior male or more commonly a child. A modern day equivalent would be \u0026quot;little man\u0026quot\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

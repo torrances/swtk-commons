@@ -8,6 +8,8 @@ package org.swtk.commons.dict.wiktionary.generated.t.u.l;  import java.util.Hash
 
 	add("tulipwood", "{\"term\":\"tulipwood\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|tulip|wood|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The striped, variegated wood of the tulip tree\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("tulle", "{\"term\":\"tulle\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"From French \u0027tulle\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A kind of silk lace or light netting, used for clothing, veils, etc\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("tulsa", "{\"term\":\"tulsa\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Second largest city in the state of Oklahoma\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A county in the state of Oklahoma\", \"priority\":2}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -32,6 +32,8 @@ package org.swtk.commons.dict.wiktionary.generated.f.i.s;  import java.util.Hash
 
 	add("fissility", "{\"term\":\"fissility\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Quality of being fissile\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The property of mudstones to split along layers, more or less parallel to the plane of bedding, thus becoming described as shales\", \"priority\":2}]}, \"synonyms\":{}}");
 
+	add("fissure", "{\"term\":\"fissure\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"old french (842-ca. 1400)\", \"Latin\"], \"text\":\"From Old french (842-ca. 1400) \u0027fissure\u0027 Latin \u0027fissura\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a crack or opening, as in a rock\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("fister", "{\"term\":\"fister\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|fist|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Someone partakes in fisting\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("fistfight", "{\"term\":\"fistfight\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|fist|fight|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A fight using bare fists\", \"priority\":1}]}, \"synonyms\":{}}");

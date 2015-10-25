@@ -4,4 +4,6 @@ package org.swtk.commons.dict.wiktionary.generated.e.p.a;  import java.util.Hash
 
 	add("epanalepsis", "{\"term\":\"epanalepsis\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"Ancient greek (to 1453) to take up.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The repetition of the same word or clause after intervening matter\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("epazote", "{\"term\":\"epazote\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Spanish\", \"classical nahuatl\"], \"text\":\"From Spanish \u0027epazote\u0027 from Classical nahuatl \u0027epazōtl\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A pungent herb used in Latin-American cooking and tea making, and in folk medicine\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

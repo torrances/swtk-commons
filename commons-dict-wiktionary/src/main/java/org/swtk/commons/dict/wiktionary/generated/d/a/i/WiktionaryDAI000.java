@@ -20,4 +20,6 @@ package org.swtk.commons.dict.wiktionary.generated.d.a.i;  import java.util.Hash
 
 	add("dairywoman", "{\"term\":\"dairywoman\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|dairy|woman|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A woman who works in a dairy, or who delivers dairy products\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("daisy", "{\"term\":\"daisy\", \"etymology\":{\"influencers\":[], \"languages\":[\"old english (ca. 450-1100)\", \"English\"], \"text\":\"Old english (ca. 450-1100) {{m|ang|dæġes ēaġe||day\u0027s eye}} due to the flowers closing their blossoms during night.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A wild flowering plant \u0027Bellis perennis\u0027 of the Asteraceae family, with a yellow head and white petal\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Many other flowering plants of various species\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"boots or other footwear. From daisy roots\", \"priority\":3}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

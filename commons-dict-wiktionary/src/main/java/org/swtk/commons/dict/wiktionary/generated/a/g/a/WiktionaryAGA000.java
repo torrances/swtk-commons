@@ -32,4 +32,6 @@ package org.swtk.commons.dict.wiktionary.generated.a.g.a;  import java.util.Hash
 
 	add("agathology", "{\"term\":\"agathology\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From the Ancient greek (to 1453) \u0027ἀγαθός\u0027 (good) {{suffix||ology|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The science or theory of the good\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("agave", "{\"term\":\"agave\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027ἀγαυή\u0027 (agave) from \u0027ἀγαυός\u0027 (noble, illustrious)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A plant of the genus \u0027Agave\u0027, which includes the maguey or century plant. Attaining maturity, it produces a gigantic flower stem\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

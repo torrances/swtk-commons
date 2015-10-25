@@ -4,4 +4,6 @@ package org.swtk.commons.dict.wiktionary.generated.t.a.h;  import java.util.Hash
 
 	add("tahdig", "{\"term\":\"tahdig\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"Persian\"], \"text\":\"From Persian {{m|fa|ته‌دیگ|tr\u003dtah-dig}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The crispy layer of rice (and sometimes lavash bread or sliced potatoes) taken from the bottom of the pot in which the rice (chelow) is cooked in cuisine of Western Asia\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("tahiti", "{\"term\":\"tahiti\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The largest island in French Polynesia\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

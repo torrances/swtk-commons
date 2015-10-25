@@ -6,4 +6,8 @@ package org.swtk.commons.dict.wiktionary.generated.k.r.a;  import java.util.Hash
 
 	add("kramer", "{\"term\":\"kramer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"derived from the German\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("kraut", "{\"term\":\"kraut\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"A World War I-era shortening of \u0027sauerkraut\u0027, a typical German food.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A German\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("krautrock", "{\"term\":\"krautrock\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{compound|Kraut|rock|gloss1\u003dGerman|gloss2\u003drock music|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"sometimes capitalized\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A genre of German experimental rock music from the 1970s\", \"priority\":2}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

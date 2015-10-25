@@ -2,4 +2,6 @@ package org.swtk.commons.dict.wiktionary.generated.e.n.z;  import java.util.Hash
 
 	add("enzootic", "{\"term\":\"enzootic\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a disease which is consistently prevalent in a population of non-human animals in a limited region, season or climate\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("enzyme", "{\"term\":\"enzyme\", \"etymology\":{\"influencers\":[], \"languages\":[\"German\", \"English\", \"ancient greek (to 1453)\"], \"text\":\"From German \u0027enzym\u0027 created in 1878, by the German physiologist w:Wilhelm Kühne|Wilhelm Kühne from Ancient greek (to 1453) \u0027ἐν\u0027 (in) and \u0027ζύμη\u0027 (sourdough)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A globular protein that catalyses a biological chemical reaction\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

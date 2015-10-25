@@ -4,6 +4,8 @@ package org.swtk.commons.dict.wiktionary.generated.i.m.i;  import java.util.Hash
 
 	add("imiquimod", "{\"term\":\"imiquimod\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A particular topical immune-response modifier\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("imitation", "{\"term\":\"imitation\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"old french (842-ca. 1400)\", \"Latin\"], \"text\":\"From Old french (842-ca. 1400) \u0027imitacion\u0027 from Latin \u0027imitatio\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The act of imitating\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"A copy\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("imitator", "{\"term\":\"imitator\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|imitate|or|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One who imitates or apes another\", \"priority\":1}]}, \"synonyms\":{}}");
 
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

@@ -130,6 +130,8 @@ package org.swtk.commons.dict.wiktionary.generated.h.y.p;  import java.util.Hash
 
 	add("hyperhidrosis", "{\"term\":\"hyperhidrosis\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From {{prefix|hyper-||lang\u003den}} Ancient greek (to 1453) {{m|grc|ἱδρώς||sweat}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A medical condition with the primary symptom of excessive sweating, in excess of that required for regulation of body temperature\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("hyperinflation", "{\"term\":\"hyperinflation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{wikipedia}}{{prefix|hyper|inflation|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A very high rate of Inflation\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1985\u0027\u0027, Leon N. Lindberg, Charles S. Maier, Brian M. Barry, \u0027The Politics of inflation and economic stagnation\u0027, page 7\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Even though ten years elapsed between the German \u0027\u0027hyperinflation\u0027\u0027 of 1923 and the seizure of power by Hitler, it is often suggested that the two events are causally related\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"1987\u0027\u0027, Philip Cagan, \u0026quot;Hyperinflation\u0026quot;, in \u0027The New Palgrave: A Dictionary of Economics\", \"priority\":4},{\"upperType\":\"NOUN\", \"text\":\"Only inconvertible paper currencies can be expanded rapidly without limit to generate \u0027\u0027hyperinflation\", \"priority\":5},{\"upperType\":\"NOUN\", \"text\":\"2004\u0027\u0027, John Barkley Rosser, Marina V. Rosser, \u0027Comparative Economics in a Transforming World Economy\u0027, page 23\", \"priority\":6},{\"upperType\":\"NOUN\", \"text\":\"When \u0027\u0027hyperinflation\u0027\u0027 peaked, wheelbarrows full of money were required to shop for groceries\", \"priority\":7}]}, \"synonyms\":{}}");
+
 	add("hyperinsulinaemia", "{\"term\":\"hyperinsulinaemia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hyper|insulinaemia|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The presence of an unusually high level of insulin in the bloodstream\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("hyperinsulinemia", "{\"term\":\"hyperinsulinemia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hyper|insulinemia|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The condition of having an excessively high level of insulin in the blood, usually due to excess production\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -145,6 +147,8 @@ package org.swtk.commons.dict.wiktionary.generated.h.y.p;  import java.util.Hash
 	add("hyperkyphosis", "{\"term\":\"hyperkyphosis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hyper|kyphosis|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"excessive kyphotic curvature of the thoracic region of the spine\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("hyperlexia", "{\"term\":\"hyperlexia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"* From \u0027\u0027 + \u0027\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The precocious ability to read single words at a very early age\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("hyperlink", "{\"term\":\"hyperlink\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hyper|link|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Some text or a graphic in an electronic document that can be activated to display another document or trigger an action\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"An address, URL, or program that defines a hyperlink\u0027s function\", \"priority\":2}]}, \"synonyms\":{}}");
 
 	add("hypermasculinity", "{\"term\":\"hypermasculinity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|hyper|masculinity|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The quality or exhibition of exaggerated masculine behavior or traits, especially strength and those of a violent, dominant, or sexual natur\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"1999\u0027\u0027, Varda Burstyn, \u0027The rites of men: manhood, politics, and the culture of sport\u0027, page 192\u0026lt;!---[http://books.google.com/books?id\u003dVys1oqERxbIC\u0026amp;pg\u003dPA192\u0026amp;dq\u003dhypermasculinity\u0026amp;hl\u003den\u0026amp;ei\u003djuqfTp2KCqqoiAKMor1g\u0026amp;sa\u003dX\u0026amp;oi\u003dbook_result\u0026amp;ct\u003dresult\u0026amp;resnum\u003d3\u0026amp;sqi\u003d2\u0026amp;ved\u003d0CDYQ6AEwAg]---\u0026gt\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"These images glamourized and normalized violent standards of \u0027\u0027hypermasculinity\", \"priority\":3}]}, \"synonyms\":{}}");
 
@@ -170,6 +174,10 @@ package org.swtk.commons.dict.wiktionary.generated.h.y.p;  import java.util.Hash
 
 	add("hypernucleus", "{\"term\":\"hypernucleus\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hyper|nucleus|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"a nucleus that consists of protons, neutrons and at least one hyperon, such as a lambda baryon\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("hyperonym", "{\"term\":\"hyperonym\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|hyper|onym|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Hypernym; superordinate term\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("hyperoodon", "{\"term\":\"hyperoodon\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"multiple languages\"], \"text\":\"From Multiple languages \u0027hyperoodon\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A whale in the genus \u0027Hyperoodon\u0027 of the order Cetacea, comprising both species of bottlenose whale\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("hyperosmia", "{\"term\":\"hyperosmia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Hypersensitivity of the sense of smell\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("hyperosmolarity", "{\"term\":\"hyperosmolarity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hyper|osmolarity|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An abnormally high osmolarity\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -179,6 +187,8 @@ package org.swtk.commons.dict.wiktionary.generated.h.y.p;  import java.util.Hash
 	add("hyperovulation", "{\"term\":\"hyperovulation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The release of multiple eggs during ovulation\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("hyperoxia", "{\"term\":\"hyperoxia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A condition caused by an excess of oxygen in tissues and organs\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("hyperoxide", "{\"term\":\"hyperoxide\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hyper|oxide|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Any oxide that has a higher than normal ratio of oxygen to metal\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("hyperparameter", "{\"term\":\"hyperparameter\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hyper|parameter|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"In Bayesian statistics, a parameter of a prior (as distinguished from parameters of the model for the underlying system under analysis\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -282,6 +292,8 @@ package org.swtk.commons.dict.wiktionary.generated.h.y.p;  import java.util.Hash
 
 	add("hypnorape", "{\"term\":\"hypnorape\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hypno|rape|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"rape carried out by first hypnotizing the victim \u0026lt;!--seems to be purely hypothetical, though!--\u0026gt\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("hypnos", "{\"term\":\"hypnos\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"ancient greek (to 1453)\"], \"text\":\"From Ancient greek (to 1453) \u0027ὕπνος\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The god and personification of sleep. The son of Nyx and Erebus, twin brother of Thanatos, husband of Pasithea, and the father of the Oneiroi. His Roman counterpart is Somnus\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("hypnotist", "{\"term\":\"hypnotist\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|hypnotise|ist|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A person who uses hypnotism to induce hypnosis in someone, either for entertainment or therapy\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("hypnotizability", "{\"term\":\"hypnotizability\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From \u0027hypnotize\u0027 + \u0027-ability\u0027\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the ability to be hypnotize\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The hypnotizability of people varies\", \"priority\":2}]}, \"synonyms\":{}}");
@@ -362,6 +374,8 @@ package org.swtk.commons.dict.wiktionary.generated.h.y.p;  import java.util.Hash
 
 	add("hyponutrition", "{\"term\":\"hyponutrition\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hypo|nutrition|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"undernutrition\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("hyponym", "{\"term\":\"hyponym\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|hypo|onym|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A more specific term; a subordinate grouping word or phrase\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("hypoosmolarity", "{\"term\":\"hypoosmolarity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hypo|osmolarity|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An abnormally low osmolarity\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("hypoparathyroidism", "{\"term\":\"hypoparathyroidism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\u0027hypo-\u0027 (lang\u003den) + {{suffix|parathyroid|ism|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"deficiency of parathyroid hormone\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -377,6 +391,8 @@ package org.swtk.commons.dict.wiktionary.generated.h.y.p;  import java.util.Hash
 	add("hypophosphate", "{\"term\":\"hypophosphate\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hypo|phosphate|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The oxyanion of phosphorus P\u0026lt;sub\u0026gt;2\u0026lt;/sub\u0026gt;O\u0026lt;sub\u0026gt;6\u0026lt;/sub\u0026gt;\u0026lt;sup\u0026gt;4-\u0026lt;/sup\u0026gt; derived from hypophosphoric acid; any salt containing this anion\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("hypophosphatemia", "{\"term\":\"hypophosphatemia\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hypo|phosphatemia|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"An electrolyte disturbance in which there is an abnormally low level of phosphate in the blood, most commonly seen when malnourished patients are given large amounts of carbohydrates, creating a high phosphorus demand in the cells of the body\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("hypophosphite", "{\"term\":\"hypophosphite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hypo|phosphite|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"any salt of hypophosphorous acid\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("hypophosphorylation", "{\"term\":\"hypophosphorylation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|hypo|phosphorylation|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"phosphorylation to a less than normal extent, or less than fully\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -411,6 +427,8 @@ package org.swtk.commons.dict.wiktionary.generated.h.y.p;  import java.util.Hash
 	add("hypotaxis", "{\"term\":\"hypotaxis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Syntactic subordination of one clause or construction to another\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("hypotension", "{\"term\":\"hypotension\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hypo|tension|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The disease or disorder of abnormally low blood pressure\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("hypothalamus", "{\"term\":\"hypothalamus\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hypo|thalamus|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A region of the forebrain located below the thalamus, forming the basal portion of the diencephalon, and functioning to regulate body temperature, some metabolic processes and governing the autonomic nervous system\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("hypothallus", "{\"term\":\"hypothallus\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|hypo|thallus|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The outgrowth of hyphae from under the margin of the thallus of a crustose lichen, connecting the island-like areoles into a single lichen\", \"priority\":1}]}, \"synonyms\":{}}");
 

@@ -162,6 +162,8 @@ package org.swtk.commons.dict.wiktionary.generated.u.n.d;  import java.util.Hash
 
 	add("undescribableness", "{\"term\":\"undescribableness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or characteristic of being undescribable\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("undine", "{\"term\":\"undine\", \"etymology\":{\"influencers\":[{}], \"languages\":[\"English\", \"Latin\"], \"text\":\"Modern Latin \u0027undina\u0027 from Latin \u0027unda\u0027 (wave)\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A female water-sprite or nymph\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The elemental being of water\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("undisguisedness", "{\"term\":\"undisguisedness\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{confix|un|disguised|ness|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The state or condition of being undisguised\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("undoer", "{\"term\":\"undoer\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|undo|er|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"one who undoes\", \"priority\":1}]}, \"synonyms\":{}}");

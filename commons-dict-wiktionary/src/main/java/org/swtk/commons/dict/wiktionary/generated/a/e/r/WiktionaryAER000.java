@@ -1,4 +1,6 @@
-package org.swtk.commons.dict.wiktionary.generated.a.e.r;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryAER000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("aerie", "{\"term\":\"aerie\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A Local chapter of the Fraternal Order of Eagles\", \"priority\":1}]}, \"synonyms\":{}}");
+package org.swtk.commons.dict.wiktionary.generated.a.e.r;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryAER000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("aeration", "{\"term\":\"aeration\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The process by which air is circulated through or mixed with a substance such as soil or a liquid\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("aerie", "{\"term\":\"aerie\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A Local chapter of the Fraternal Order of Eagles\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("aerialism", "{\"term\":\"aerialism\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"aerial navigation; aeronautics; aviation\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -28,11 +30,17 @@ package org.swtk.commons.dict.wiktionary.generated.a.e.r;  import java.util.Hash
 
 	add("aerodynamics", "{\"term\":\"aerodynamics\", \"etymology\":{\"influencers\":[], \"languages\":[\"English\", \"French\"], \"text\":\"From French \u0027aérodynamique\u0027 from {{prefix|aero|dynamics|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The science of the dynamics of bodies moving relative to gases, especially the interaction of moving objects with the atmosphere\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("aerodyne", "{\"term\":\"aerodyne\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{back-form|aerodynamic|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A heavier-than-air craft, deriving its lift from motion\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("aeroemphysema", "{\"term\":\"aeroemphysema\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|aero|emphysema|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A form of emphysema that results from rapid decompression\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("aerogel", "{\"term\":\"aerogel\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|aero|gel|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A porous, ultralight solid-state substance, similar to gel, in which the liquid component is replaced with gas\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("aerogenerator", "{\"term\":\"aerogenerator\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|aero|generator|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A generator powered by wind\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("aerokinesis", "{\"term\":\"aerokinesis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|aero|kinesis|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A telekinetic ability to control the movement of air\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("aerolite", "{\"term\":\"aerolite\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|aero|lite|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A meteorite consisting of silicate minerals\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("aerolysin", "{\"term\":\"aerolysin\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A cytolytic pore-forming toxin exported by \u0027Aeromonas hydrophila\u0027 bacteria\", \"priority\":1}]}, \"synonyms\":{}}");
 

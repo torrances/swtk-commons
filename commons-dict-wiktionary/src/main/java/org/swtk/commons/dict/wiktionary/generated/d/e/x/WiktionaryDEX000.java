@@ -8,4 +8,6 @@ package org.swtk.commons.dict.wiktionary.generated.d.e.x;  import java.util.Hash
 
 	add("dextrorotation", "{\"term\":\"dextrorotation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|dextro|rotation|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Rotation in a clockwise direction, especially such rotation of the plane of polarized light\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("dextrose", "{\"term\":\"dextrose\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|dextro|ose|lang\u003den}} {{gloss|right sugar}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the naturally-occurring dextrorotatory form of glucose monosaccharide molecule\", \"priority\":1}]}, \"synonyms\":{}}");
+
  	}  	private static void add(String term, String json) { 		map.put(term, GsonUtils.toObject(json, Entry.class)); 	}  	public static Entry get(String term) { 		return map.get(term); 	} 	 	public static boolean has(String term) { 		return null != get(term); 	} }

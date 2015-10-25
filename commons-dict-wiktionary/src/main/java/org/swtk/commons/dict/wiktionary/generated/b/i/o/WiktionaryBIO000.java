@@ -1,5 +1,7 @@
 package org.swtk.commons.dict.wiktionary.generated.b.i.o;  import java.util.HashMap; import java.util.Map;  import org.swtk.common.dict.dto.wiktionary.Entry;  import com.trimc.blogger.commons.utils.GsonUtils;  public class WiktionaryBIO000 {  	private static Map<String, Entry> map = new HashMap<String, Entry>();  	static { 			add("biol", "{\"term\":\"biol\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Biology\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("bion", "{\"term\":\"bion\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{back-form|bionic|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A cyborg or robot\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("bioaccumulation", "{\"term\":\"bioaccumulation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The process by which substances accumulate in the tissues of living organisms; used especially of toxic substances that accumulate via a food chain\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("bioacoustics", "{\"term\":\"bioacoustics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|acoustics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A cross-disciplinary science that combines biology and acoustics, investigating for instance the mechanisms of sound production and detection\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -38,6 +40,8 @@ package org.swtk.commons.dict.wiktionary.generated.b.i.o;  import java.util.Hash
 
 	add("biodemography", "{\"term\":\"biodemography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|demography|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A branch of human demography concerned with understanding the complementary biological and demographic determinants of, and interactions between, the birth and death processes that shape individuals and populations\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("biodiesel", "{\"term\":\"biodiesel\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|diesel|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"Fuel for diesel engines made of renewable organic raw materials as opposed to fossil hydrocarbons\", \"priority\":1}]}, \"synonyms\":{}}");
+
 	add("biodiversity", "{\"term\":\"biodiversity\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|bio|diversity|lang\u003den}}.\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the diversity (number and variety of species) of plant and animal life within a region\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("biodosimetry", "{\"term\":\"biodosimetry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"From {{prefix|bio|dosimetry|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The measurement of biological response as an estimate of radiation dose\", \"priority\":1}]}, \"synonyms\":{}}");
@@ -68,11 +72,15 @@ package org.swtk.commons.dict.wiktionary.generated.b.i.o;  import java.util.Hash
 
 	add("biofunction", "{\"term\":\"biofunction\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|function|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"biological function\", \"priority\":1}]}, \"synonyms\":{}}");
 
+	add("biogenesis", "{\"term\":\"biogenesis\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|bio|genesis|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The principle that living organisms are produced only from other living organisms\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"Biosynthesis\", \"priority\":2}]}, \"synonyms\":{}}");
+
 	add("biogenetics", "{\"term\":\"biogenetics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|genetics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"genetic engineering\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("biogeochemistry", "{\"term\":\"biogeochemistry\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The scientific study of biological, geological and chemical processes in the natural environment and especially of their mutual relationships\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("biogeography", "{\"term\":\"biogeography\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|geography|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The study of the geographical distribution of living thing\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"The geographical distribution of a particular living thin\", \"priority\":2}]}, \"synonyms\":{}}");
+
+	add("biograph", "{\"term\":\"biograph\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{confix|bio|graph|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A biographical essay\", \"priority\":1},{\"upperType\":\"NOUN\", \"text\":\"An early device to show moving pictures on a screen\", \"priority\":2},{\"upperType\":\"NOUN\", \"text\":\"Mrs Bathurst\", \"priority\":3},{\"upperType\":\"NOUN\", \"text\":\"“\u0027\u0027Biograph\u0027\u0027 or cinematograph was what I was alludin\u0027 to. London Bridge with the omnibuses — a troopship goin\u0027 to the war — marines on parade at Portsmouth an\u0027 the Plymouth Express arrivin\u0027 at Paddin\u0027ton.” “Seen \u0027em all. Seen \u0027em all,” said Hooper impatiently\", \"priority\":4}]}, \"synonyms\":{}}");
 
 	add("biographee", "{\"term\":\"biographee\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{suffix|biography|ee|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"One about whom a biography is written; the subject of a biography\", \"priority\":1}]}, \"synonyms\":{}}");
 
@@ -125,6 +133,8 @@ package org.swtk.commons.dict.wiktionary.generated.b.i.o;  import java.util.Hash
 	add("biomanipulation", "{\"term\":\"biomanipulation\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"the deliberate alteration of an ecosystem by adding or removing species, especially predators\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("biomarker", "{\"term\":\"biomarker\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|marker|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A substance used as an indicator of a biological state, most commonly disease\", \"priority\":1}]}, \"synonyms\":{}}");
+
+	add("biomaterial", "{\"term\":\"biomaterial\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|material|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"A nonviable, biocompatible material used in a medical device, intended to interact with biological systems or to evaluate, treat, augment, or replace any tissue, organ, or function of the body\", \"priority\":1}]}, \"synonyms\":{}}");
 
 	add("biomathematics", "{\"term\":\"biomathematics\", \"etymology\":{\"influencers\":[], \"languages\":[], \"text\":\"{{prefix|bio|mathematics|lang\u003den}}\"}, \"definitions\":{\"list\":[{\"upperType\":\"NOUN\", \"text\":\"The application of mathematics to the study of biological systems and processes\", \"priority\":1}]}, \"synonyms\":{}}");
 
