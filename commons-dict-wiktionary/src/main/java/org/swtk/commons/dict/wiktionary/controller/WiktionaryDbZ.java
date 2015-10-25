@@ -64,129 +64,68 @@ import org.swtk.commons.dict.wiktionary.generated.z.y.t.*;
 
 public final class WiktionaryDbZ {
 	public static Entry findByName(String name) {
-		if (name.length() < 4)
-			return null;
+		if (name.length() < 4) return null;
 		String sub = name.substring(0, 3).toLowerCase();
-		if ("zaa".equals(sub))
-			return WiktionaryZAA000.get(name);
-		else if ("zab".equals(sub))
-			return WiktionaryZAB000.get(name);
-		else if ("zac".equals(sub))
-			return WiktionaryZAC000.get(name);
-		else if ("zad".equals(sub))
-			return WiktionaryZAD000.get(name);
-		else if ("zag".equals(sub))
-			return WiktionaryZAG000.get(name);
-		else if ("zai".equals(sub))
-			return WiktionaryZAI000.get(name);
-		else if ("zal".equals(sub))
-			return WiktionaryZAL000.get(name);
-		else if ("zam".equals(sub))
-			return WiktionaryZAM000.get(name);
-		else if ("zan".equals(sub))
-			return WiktionaryZAN000.get(name);
-		else if ("zap".equals(sub))
-			return WiktionaryZAP000.get(name);
-		else if ("zar".equals(sub))
-			return WiktionaryZAR000.get(name);
-		else if ("zaw".equals(sub))
-			return WiktionaryZAW000.get(name);
-		else if ("zaz".equals(sub))
-			return WiktionaryZAZ000.get(name);
-		else if ("zea".equals(sub))
-			return WiktionaryZEA000.get(name);
-		else if ("zeb".equals(sub))
-			return WiktionaryZEB000.get(name);
-		else if ("zee".equals(sub))
-			return WiktionaryZEE000.get(name);
-		else if ("zei".equals(sub))
-			return WiktionaryZEI000.get(name);
-		else if ("zel".equals(sub))
-			return WiktionaryZEL000.get(name);
-		else if ("zem".equals(sub))
-			return WiktionaryZEM000.get(name);
-		else if ("zen".equals(sub))
-			return WiktionaryZEN000.get(name);
-		else if ("zeo".equals(sub))
-			return WiktionaryZEO000.get(name);
-		else if ("zep".equals(sub))
-			return WiktionaryZEP000.get(name);
-		else if ("zer".equals(sub))
-			return WiktionaryZER000.get(name);
-		else if ("zes".equals(sub))
-			return WiktionaryZES000.get(name);
-		else if ("zeu".equals(sub))
-			return WiktionaryZEU000.get(name);
-		else if ("zey".equals(sub))
-			return WiktionaryZEY000.get(name);
-		else if ("zha".equals(sub))
-			return WiktionaryZHA000.get(name);
-		else if ("zhe".equals(sub))
-			return WiktionaryZHE000.get(name);
-		else if ("zhy".equals(sub))
-			return WiktionaryZHY000.get(name);
-		else if ("zic".equals(sub))
-			return WiktionaryZIC000.get(name);
-		else if ("zil".equals(sub))
-			return WiktionaryZIL000.get(name);
-		else if ("zim".equals(sub))
-			return WiktionaryZIM000.get(name);
-		else if ("zin".equals(sub))
-			return WiktionaryZIN000.get(name);
-		else if ("zio".equals(sub))
-			return WiktionaryZIO000.get(name);
-		else if ("zip".equals(sub))
-			return WiktionaryZIP000.get(name);
-		else if ("zir".equals(sub))
-			return WiktionaryZIR000.get(name);
-		else if ("zit".equals(sub))
-			return WiktionaryZIT000.get(name);
-		else if ("ziv".equals(sub))
-			return WiktionaryZIV000.get(name);
-		else if ("zlo".equals(sub))
-			return WiktionaryZLO000.get(name);
-		else if ("zoa".equals(sub))
-			return WiktionaryZOA000.get(name);
-		else if ("zoe".equals(sub))
-			return WiktionaryZOE000.get(name);
-		else if ("zok".equals(sub))
-			return WiktionaryZOK000.get(name);
-		else if ("zol".equals(sub))
-			return WiktionaryZOL000.get(name);
-		else if ("zon".equals(sub))
-			return WiktionaryZON000.get(name);
-		else if ("zoo".equals(sub))
-			return WiktionaryZOO000.get(name);
-		else if ("zop".equals(sub))
-			return WiktionaryZOP000.get(name);
-		else if ("zor".equals(sub))
-			return WiktionaryZOR000.get(name);
-		else if ("zos".equals(sub))
-			return WiktionaryZOS000.get(name);
-		else if ("zou".equals(sub))
-			return WiktionaryZOU000.get(name);
-		else if ("zub".equals(sub))
-			return WiktionaryZUB000.get(name);
-		else if ("zug".equals(sub))
-			return WiktionaryZUG000.get(name);
-		else if ("zuh".equals(sub))
-			return WiktionaryZUH000.get(name);
-		else if ("zui".equals(sub))
-			return WiktionaryZUI000.get(name);
-		else if ("zul".equals(sub))
-			return WiktionaryZUL000.get(name);
-		else if ("zun".equals(sub))
-			return WiktionaryZUN000.get(name);
-		else if ("zur".equals(sub))
-			return WiktionaryZUR000.get(name);
-		else if ("zyd".equals(sub))
-			return WiktionaryZYD000.get(name);
-		else if ("zyg".equals(sub))
-			return WiktionaryZYG000.get(name);
-		else if ("zym".equals(sub))
-			return WiktionaryZYM000.get(name);
-		else if ("zyt".equals(sub))
-			return WiktionaryZYT000.get(name);
+		if ("zaa".equals(sub)) return WiktionaryZAA000.get(name);
+		else if ("zab".equals(sub)) return WiktionaryZAB000.get(name);
+		else if ("zac".equals(sub)) return WiktionaryZAC000.get(name);
+		else if ("zad".equals(sub)) return WiktionaryZAD000.get(name);
+		else if ("zag".equals(sub)) return WiktionaryZAG000.get(name);
+		else if ("zai".equals(sub)) return WiktionaryZAI000.get(name);
+		else if ("zal".equals(sub)) return WiktionaryZAL000.get(name);
+		else if ("zam".equals(sub)) return WiktionaryZAM000.get(name);
+		else if ("zan".equals(sub)) return WiktionaryZAN000.get(name);
+		else if ("zap".equals(sub)) return WiktionaryZAP000.get(name);
+		else if ("zar".equals(sub)) return WiktionaryZAR000.get(name);
+		else if ("zaw".equals(sub)) return WiktionaryZAW000.get(name);
+		else if ("zaz".equals(sub)) return WiktionaryZAZ000.get(name);
+		else if ("zea".equals(sub)) return WiktionaryZEA000.get(name);
+		else if ("zeb".equals(sub)) return WiktionaryZEB000.get(name);
+		else if ("zee".equals(sub)) return WiktionaryZEE000.get(name);
+		else if ("zei".equals(sub)) return WiktionaryZEI000.get(name);
+		else if ("zel".equals(sub)) return WiktionaryZEL000.get(name);
+		else if ("zem".equals(sub)) return WiktionaryZEM000.get(name);
+		else if ("zen".equals(sub)) return WiktionaryZEN000.get(name);
+		else if ("zeo".equals(sub)) return WiktionaryZEO000.get(name);
+		else if ("zep".equals(sub)) return WiktionaryZEP000.get(name);
+		else if ("zer".equals(sub)) return WiktionaryZER000.get(name);
+		else if ("zes".equals(sub)) return WiktionaryZES000.get(name);
+		else if ("zeu".equals(sub)) return WiktionaryZEU000.get(name);
+		else if ("zey".equals(sub)) return WiktionaryZEY000.get(name);
+		else if ("zha".equals(sub)) return WiktionaryZHA000.get(name);
+		else if ("zhe".equals(sub)) return WiktionaryZHE000.get(name);
+		else if ("zhy".equals(sub)) return WiktionaryZHY000.get(name);
+		else if ("zic".equals(sub)) return WiktionaryZIC000.get(name);
+		else if ("zil".equals(sub)) return WiktionaryZIL000.get(name);
+		else if ("zim".equals(sub)) return WiktionaryZIM000.get(name);
+		else if ("zin".equals(sub)) return WiktionaryZIN000.get(name);
+		else if ("zio".equals(sub)) return WiktionaryZIO000.get(name);
+		else if ("zip".equals(sub)) return WiktionaryZIP000.get(name);
+		else if ("zir".equals(sub)) return WiktionaryZIR000.get(name);
+		else if ("zit".equals(sub)) return WiktionaryZIT000.get(name);
+		else if ("ziv".equals(sub)) return WiktionaryZIV000.get(name);
+		else if ("zlo".equals(sub)) return WiktionaryZLO000.get(name);
+		else if ("zoa".equals(sub)) return WiktionaryZOA000.get(name);
+		else if ("zoe".equals(sub)) return WiktionaryZOE000.get(name);
+		else if ("zok".equals(sub)) return WiktionaryZOK000.get(name);
+		else if ("zol".equals(sub)) return WiktionaryZOL000.get(name);
+		else if ("zon".equals(sub)) return WiktionaryZON000.get(name);
+		else if ("zoo".equals(sub)) return WiktionaryZOO000.get(name);
+		else if ("zop".equals(sub)) return WiktionaryZOP000.get(name);
+		else if ("zor".equals(sub)) return WiktionaryZOR000.get(name);
+		else if ("zos".equals(sub)) return WiktionaryZOS000.get(name);
+		else if ("zou".equals(sub)) return WiktionaryZOU000.get(name);
+		else if ("zub".equals(sub)) return WiktionaryZUB000.get(name);
+		else if ("zug".equals(sub)) return WiktionaryZUG000.get(name);
+		else if ("zuh".equals(sub)) return WiktionaryZUH000.get(name);
+		else if ("zui".equals(sub)) return WiktionaryZUI000.get(name);
+		else if ("zul".equals(sub)) return WiktionaryZUL000.get(name);
+		else if ("zun".equals(sub)) return WiktionaryZUN000.get(name);
+		else if ("zur".equals(sub)) return WiktionaryZUR000.get(name);
+		else if ("zyd".equals(sub)) return WiktionaryZYD000.get(name);
+		else if ("zyg".equals(sub)) return WiktionaryZYG000.get(name);
+		else if ("zym".equals(sub)) return WiktionaryZYM000.get(name);
+		else if ("zyt".equals(sub)) return WiktionaryZYT000.get(name);
 		return null;
 	}
 }

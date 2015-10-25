@@ -106,213 +106,110 @@ import org.swtk.commons.dict.wiktionary.generated.k.y.u.*;
 
 public final class WiktionaryDbK {
 	public static Entry findByName(String name) {
-		if (name.length() < 4)
-			return null;
+		if (name.length() < 4) return null;
 		String sub = name.substring(0, 3).toLowerCase();
-		if ("kab".equals(sub))
-			return WiktionaryKAB000.get(name);
-		else if ("kad".equals(sub))
-			return WiktionaryKAD000.get(name);
-		else if ("kaf".equals(sub))
-			return WiktionaryKAF000.get(name);
-		else if ("kag".equals(sub))
-			return WiktionaryKAG000.get(name);
-		else if ("kah".equals(sub))
-			return WiktionaryKAH000.get(name);
-		else if ("kai".equals(sub))
-			return WiktionaryKAI000.get(name);
-		else if ("kaj".equals(sub))
-			return WiktionaryKAJ000.get(name);
-		else if ("kak".equals(sub))
-			return WiktionaryKAK000.get(name);
-		else if ("kal".equals(sub))
-			return WiktionaryKAL000.get(name);
-		else if ("kam".equals(sub))
-			return WiktionaryKAM000.get(name);
-		else if ("kan".equals(sub))
-			return WiktionaryKAN000.get(name);
-		else if ("kap".equals(sub))
-			return WiktionaryKAP000.get(name);
-		else if ("kar".equals(sub))
-			return WiktionaryKAR000.get(name);
-		else if ("kas".equals(sub))
-			return WiktionaryKAS000.get(name);
-		else if ("kat".equals(sub))
-			return WiktionaryKAT000.get(name);
-		else if ("kav".equals(sub))
-			return WiktionaryKAV000.get(name);
-		else if ("kaw".equals(sub))
-			return WiktionaryKAW000.get(name);
-		else if ("kay".equals(sub))
-			return WiktionaryKAY000.get(name);
-		else if ("kaz".equals(sub))
-			return WiktionaryKAZ000.get(name);
-		else if ("keb".equals(sub))
-			return WiktionaryKEB000.get(name);
-		else if ("ked".equals(sub))
-			return WiktionaryKED000.get(name);
-		else if ("kee".equals(sub))
-			return WiktionaryKEE000.get(name);
-		else if ("kef".equals(sub))
-			return WiktionaryKEF000.get(name);
-		else if ("keg".equals(sub))
-			return WiktionaryKEG000.get(name);
-		else if ("kei".equals(sub))
-			return WiktionaryKEI000.get(name);
-		else if ("kel".equals(sub))
-			return WiktionaryKEL000.get(name);
-		else if ("kem".equals(sub))
-			return WiktionaryKEM000.get(name);
-		else if ("ken".equals(sub))
-			return WiktionaryKEN000.get(name);
-		else if ("kep".equals(sub))
-			return WiktionaryKEP000.get(name);
-		else if ("ker".equals(sub))
-			return WiktionaryKER000.get(name);
-		else if ("kes".equals(sub))
-			return WiktionaryKES000.get(name);
-		else if ("ket".equals(sub))
-			return WiktionaryKET000.get(name);
-		else if ("kev".equals(sub))
-			return WiktionaryKEV000.get(name);
-		else if ("key".equals(sub))
-			return WiktionaryKEY000.get(name);
-		else if ("kha".equals(sub))
-			return WiktionaryKHA000.get(name);
-		else if ("khe".equals(sub))
-			return WiktionaryKHE000.get(name);
-		else if ("khi".equals(sub))
-			return WiktionaryKHI000.get(name);
-		else if ("khm".equals(sub))
-			return WiktionaryKHM000.get(name);
-		else if ("kho".equals(sub))
-			return WiktionaryKHO000.get(name);
-		else if ("khu".equals(sub))
-			return WiktionaryKHU000.get(name);
-		else if ("kib".equals(sub))
-			return WiktionaryKIB000.get(name);
-		else if ("kic".equals(sub))
-			return WiktionaryKIC000.get(name);
-		else if ("kid".equals(sub))
-			return WiktionaryKID000.get(name);
-		else if ("kie".equals(sub))
-			return WiktionaryKIE000.get(name);
-		else if ("kil".equals(sub))
-			return WiktionaryKIL000.get(name);
-		else if ("kim".equals(sub))
-			return WiktionaryKIM000.get(name);
-		else if ("kin".equals(sub))
-			return WiktionaryKIN000.get(name);
-		else if ("kip".equals(sub))
-			return WiktionaryKIP000.get(name);
-		else if ("kir".equals(sub))
-			return WiktionaryKIR000.get(name);
-		else if ("kis".equals(sub))
-			return WiktionaryKIS000.get(name);
-		else if ("kit".equals(sub))
-			return WiktionaryKIT000.get(name);
-		else if ("kiv".equals(sub))
-			return WiktionaryKIV000.get(name);
-		else if ("kiw".equals(sub))
-			return WiktionaryKIW000.get(name);
-		else if ("kiz".equals(sub))
-			return WiktionaryKIZ000.get(name);
-		else if ("kkk".equals(sub))
-			return WiktionaryKKK000.get(name);
-		else if ("kla".equals(sub))
-			return WiktionaryKLA000.get(name);
-		else if ("kle".equals(sub))
-			return WiktionaryKLE000.get(name);
-		else if ("kli".equals(sub))
-			return WiktionaryKLI000.get(name);
-		else if ("klo".equals(sub))
-			return WiktionaryKLO000.get(name);
-		else if ("klu".equals(sub))
-			return WiktionaryKLU000.get(name);
-		else if ("kme".equals(sub))
-			return WiktionaryKME000.get(name);
-		else if ("kna".equals(sub))
-			return WiktionaryKNA000.get(name);
-		else if ("kne".equals(sub))
-			return WiktionaryKNE000.get(name);
-		else if ("kni".equals(sub))
-			return WiktionaryKNI000.get(name);
-		else if ("kno".equals(sub))
-			return WiktionaryKNO000.get(name);
-		else if ("knu".equals(sub))
-			return WiktionaryKNU000.get(name);
-		else if ("koa".equals(sub))
-			return WiktionaryKOA000.get(name);
-		else if ("kob".equals(sub))
-			return WiktionaryKOB000.get(name);
-		else if ("kod".equals(sub))
-			return WiktionaryKOD000.get(name);
-		else if ("kof".equals(sub))
-			return WiktionaryKOF000.get(name);
-		else if ("koh".equals(sub))
-			return WiktionaryKOH000.get(name);
-		else if ("kok".equals(sub))
-			return WiktionaryKOK000.get(name);
-		else if ("kol".equals(sub))
-			return WiktionaryKOL000.get(name);
-		else if ("kom".equals(sub))
-			return WiktionaryKOM000.get(name);
-		else if ("kon".equals(sub))
-			return WiktionaryKON000.get(name);
-		else if ("koo".equals(sub))
-			return WiktionaryKOO000.get(name);
-		else if ("kor".equals(sub))
-			return WiktionaryKOR000.get(name);
-		else if ("kos".equals(sub))
-			return WiktionaryKOS000.get(name);
-		else if ("kou".equals(sub))
-			return WiktionaryKOU000.get(name);
-		else if ("koz".equals(sub))
-			return WiktionaryKOZ000.get(name);
-		else if ("kra".equals(sub))
-			return WiktionaryKRA000.get(name);
-		else if ("kre".equals(sub))
-			return WiktionaryKRE000.get(name);
-		else if ("kri".equals(sub))
-			return WiktionaryKRI000.get(name);
-		else if ("kro".equals(sub))
-			return WiktionaryKRO000.get(name);
-		else if ("kru".equals(sub))
-			return WiktionaryKRU000.get(name);
-		else if ("kry".equals(sub))
-			return WiktionaryKRY000.get(name);
-		else if ("ksh".equals(sub))
-			return WiktionaryKSH000.get(name);
-		else if ("kub".equals(sub))
-			return WiktionaryKUB000.get(name);
-		else if ("kud".equals(sub))
-			return WiktionaryKUD000.get(name);
-		else if ("kuf".equals(sub))
-			return WiktionaryKUF000.get(name);
-		else if ("kui".equals(sub))
-			return WiktionaryKUI000.get(name);
-		else if ("kum".equals(sub))
-			return WiktionaryKUM000.get(name);
-		else if ("kun".equals(sub))
-			return WiktionaryKUN000.get(name);
-		else if ("kur".equals(sub))
-			return WiktionaryKUR000.get(name);
-		else if ("kut".equals(sub))
-			return WiktionaryKUT000.get(name);
-		else if ("kuw".equals(sub))
-			return WiktionaryKUW000.get(name);
-		else if ("kya".equals(sub))
-			return WiktionaryKYA000.get(name);
-		else if ("kyl".equals(sub))
-			return WiktionaryKYL000.get(name);
-		else if ("kyn".equals(sub))
-			return WiktionaryKYN000.get(name);
-		else if ("kyp".equals(sub))
-			return WiktionaryKYP000.get(name);
-		else if ("kyr".equals(sub))
-			return WiktionaryKYR000.get(name);
-		else if ("kyu".equals(sub))
-			return WiktionaryKYU000.get(name);
+		if ("kab".equals(sub)) return WiktionaryKAB000.get(name);
+		else if ("kad".equals(sub)) return WiktionaryKAD000.get(name);
+		else if ("kaf".equals(sub)) return WiktionaryKAF000.get(name);
+		else if ("kag".equals(sub)) return WiktionaryKAG000.get(name);
+		else if ("kah".equals(sub)) return WiktionaryKAH000.get(name);
+		else if ("kai".equals(sub)) return WiktionaryKAI000.get(name);
+		else if ("kaj".equals(sub)) return WiktionaryKAJ000.get(name);
+		else if ("kak".equals(sub)) return WiktionaryKAK000.get(name);
+		else if ("kal".equals(sub)) return WiktionaryKAL000.get(name);
+		else if ("kam".equals(sub)) return WiktionaryKAM000.get(name);
+		else if ("kan".equals(sub)) return WiktionaryKAN000.get(name);
+		else if ("kap".equals(sub)) return WiktionaryKAP000.get(name);
+		else if ("kar".equals(sub)) return WiktionaryKAR000.get(name);
+		else if ("kas".equals(sub)) return WiktionaryKAS000.get(name);
+		else if ("kat".equals(sub)) return WiktionaryKAT000.get(name);
+		else if ("kav".equals(sub)) return WiktionaryKAV000.get(name);
+		else if ("kaw".equals(sub)) return WiktionaryKAW000.get(name);
+		else if ("kay".equals(sub)) return WiktionaryKAY000.get(name);
+		else if ("kaz".equals(sub)) return WiktionaryKAZ000.get(name);
+		else if ("keb".equals(sub)) return WiktionaryKEB000.get(name);
+		else if ("ked".equals(sub)) return WiktionaryKED000.get(name);
+		else if ("kee".equals(sub)) return WiktionaryKEE000.get(name);
+		else if ("kef".equals(sub)) return WiktionaryKEF000.get(name);
+		else if ("keg".equals(sub)) return WiktionaryKEG000.get(name);
+		else if ("kei".equals(sub)) return WiktionaryKEI000.get(name);
+		else if ("kel".equals(sub)) return WiktionaryKEL000.get(name);
+		else if ("kem".equals(sub)) return WiktionaryKEM000.get(name);
+		else if ("ken".equals(sub)) return WiktionaryKEN000.get(name);
+		else if ("kep".equals(sub)) return WiktionaryKEP000.get(name);
+		else if ("ker".equals(sub)) return WiktionaryKER000.get(name);
+		else if ("kes".equals(sub)) return WiktionaryKES000.get(name);
+		else if ("ket".equals(sub)) return WiktionaryKET000.get(name);
+		else if ("kev".equals(sub)) return WiktionaryKEV000.get(name);
+		else if ("key".equals(sub)) return WiktionaryKEY000.get(name);
+		else if ("kha".equals(sub)) return WiktionaryKHA000.get(name);
+		else if ("khe".equals(sub)) return WiktionaryKHE000.get(name);
+		else if ("khi".equals(sub)) return WiktionaryKHI000.get(name);
+		else if ("khm".equals(sub)) return WiktionaryKHM000.get(name);
+		else if ("kho".equals(sub)) return WiktionaryKHO000.get(name);
+		else if ("khu".equals(sub)) return WiktionaryKHU000.get(name);
+		else if ("kib".equals(sub)) return WiktionaryKIB000.get(name);
+		else if ("kic".equals(sub)) return WiktionaryKIC000.get(name);
+		else if ("kid".equals(sub)) return WiktionaryKID000.get(name);
+		else if ("kie".equals(sub)) return WiktionaryKIE000.get(name);
+		else if ("kil".equals(sub)) return WiktionaryKIL000.get(name);
+		else if ("kim".equals(sub)) return WiktionaryKIM000.get(name);
+		else if ("kin".equals(sub)) return WiktionaryKIN000.get(name);
+		else if ("kip".equals(sub)) return WiktionaryKIP000.get(name);
+		else if ("kir".equals(sub)) return WiktionaryKIR000.get(name);
+		else if ("kis".equals(sub)) return WiktionaryKIS000.get(name);
+		else if ("kit".equals(sub)) return WiktionaryKIT000.get(name);
+		else if ("kiv".equals(sub)) return WiktionaryKIV000.get(name);
+		else if ("kiw".equals(sub)) return WiktionaryKIW000.get(name);
+		else if ("kiz".equals(sub)) return WiktionaryKIZ000.get(name);
+		else if ("kkk".equals(sub)) return WiktionaryKKK000.get(name);
+		else if ("kla".equals(sub)) return WiktionaryKLA000.get(name);
+		else if ("kle".equals(sub)) return WiktionaryKLE000.get(name);
+		else if ("kli".equals(sub)) return WiktionaryKLI000.get(name);
+		else if ("klo".equals(sub)) return WiktionaryKLO000.get(name);
+		else if ("klu".equals(sub)) return WiktionaryKLU000.get(name);
+		else if ("kme".equals(sub)) return WiktionaryKME000.get(name);
+		else if ("kna".equals(sub)) return WiktionaryKNA000.get(name);
+		else if ("kne".equals(sub)) return WiktionaryKNE000.get(name);
+		else if ("kni".equals(sub)) return WiktionaryKNI000.get(name);
+		else if ("kno".equals(sub)) return WiktionaryKNO000.get(name);
+		else if ("knu".equals(sub)) return WiktionaryKNU000.get(name);
+		else if ("koa".equals(sub)) return WiktionaryKOA000.get(name);
+		else if ("kob".equals(sub)) return WiktionaryKOB000.get(name);
+		else if ("kod".equals(sub)) return WiktionaryKOD000.get(name);
+		else if ("kof".equals(sub)) return WiktionaryKOF000.get(name);
+		else if ("koh".equals(sub)) return WiktionaryKOH000.get(name);
+		else if ("kok".equals(sub)) return WiktionaryKOK000.get(name);
+		else if ("kol".equals(sub)) return WiktionaryKOL000.get(name);
+		else if ("kom".equals(sub)) return WiktionaryKOM000.get(name);
+		else if ("kon".equals(sub)) return WiktionaryKON000.get(name);
+		else if ("koo".equals(sub)) return WiktionaryKOO000.get(name);
+		else if ("kor".equals(sub)) return WiktionaryKOR000.get(name);
+		else if ("kos".equals(sub)) return WiktionaryKOS000.get(name);
+		else if ("kou".equals(sub)) return WiktionaryKOU000.get(name);
+		else if ("koz".equals(sub)) return WiktionaryKOZ000.get(name);
+		else if ("kra".equals(sub)) return WiktionaryKRA000.get(name);
+		else if ("kre".equals(sub)) return WiktionaryKRE000.get(name);
+		else if ("kri".equals(sub)) return WiktionaryKRI000.get(name);
+		else if ("kro".equals(sub)) return WiktionaryKRO000.get(name);
+		else if ("kru".equals(sub)) return WiktionaryKRU000.get(name);
+		else if ("kry".equals(sub)) return WiktionaryKRY000.get(name);
+		else if ("ksh".equals(sub)) return WiktionaryKSH000.get(name);
+		else if ("kub".equals(sub)) return WiktionaryKUB000.get(name);
+		else if ("kud".equals(sub)) return WiktionaryKUD000.get(name);
+		else if ("kuf".equals(sub)) return WiktionaryKUF000.get(name);
+		else if ("kui".equals(sub)) return WiktionaryKUI000.get(name);
+		else if ("kum".equals(sub)) return WiktionaryKUM000.get(name);
+		else if ("kun".equals(sub)) return WiktionaryKUN000.get(name);
+		else if ("kur".equals(sub)) return WiktionaryKUR000.get(name);
+		else if ("kut".equals(sub)) return WiktionaryKUT000.get(name);
+		else if ("kuw".equals(sub)) return WiktionaryKUW000.get(name);
+		else if ("kya".equals(sub)) return WiktionaryKYA000.get(name);
+		else if ("kyl".equals(sub)) return WiktionaryKYL000.get(name);
+		else if ("kyn".equals(sub)) return WiktionaryKYN000.get(name);
+		else if ("kyp".equals(sub)) return WiktionaryKYP000.get(name);
+		else if ("kyr".equals(sub)) return WiktionaryKYR000.get(name);
+		else if ("kyu".equals(sub)) return WiktionaryKYU000.get(name);
 		return null;
 	}
 }

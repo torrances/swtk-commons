@@ -72,145 +72,76 @@ import org.swtk.commons.dict.wiktionary.generated.v.y.o.*;
 
 public final class WiktionaryDbV {
 	public static Entry findByName(String name) {
-		if (name.length() < 4)
-			return null;
+		if (name.length() < 4) return null;
 		String sub = name.substring(0, 3).toLowerCase();
-		if ("vaa".equals(sub))
-			return WiktionaryVAA000.get(name);
-		else if ("vac".equals(sub))
-			return WiktionaryVAC000.get(name);
-		else if ("vag".equals(sub))
-			return WiktionaryVAG000.get(name);
-		else if ("vai".equals(sub))
-			return WiktionaryVAI000.get(name);
-		else if ("vaj".equals(sub))
-			return WiktionaryVAJ000.get(name);
-		else if ("val".equals(sub))
-			return WiktionaryVAL000.get(name);
-		else if ("van".equals(sub))
-			return WiktionaryVAN000.get(name);
-		else if ("vap".equals(sub))
-			return WiktionaryVAP000.get(name);
-		else if ("var".equals(sub))
-			return WiktionaryVAR000.get(name);
-		else if ("vas".equals(sub))
-			return WiktionaryVAS000.get(name);
-		else if ("vat".equals(sub))
-			return WiktionaryVAT000.get(name);
-		else if ("vau".equals(sub))
-			return WiktionaryVAU000.get(name);
-		else if ("vav".equals(sub))
-			return WiktionaryVAV000.get(name);
-		else if ("vcj".equals(sub))
-			return WiktionaryVCJ000.get(name);
-		else if ("vea".equals(sub))
-			return WiktionaryVEA000.get(name);
-		else if ("vec".equals(sub))
-			return WiktionaryVEC000.get(name);
-		else if ("ved".equals(sub))
-			return WiktionaryVED000.get(name);
-		else if ("vee".equals(sub))
-			return WiktionaryVEE000.get(name);
-		else if ("veg".equals(sub))
-			return WiktionaryVEG000.get(name);
-		else if ("veh".equals(sub))
-			return WiktionaryVEH000.get(name);
-		else if ("vei".equals(sub))
-			return WiktionaryVEI000.get(name);
-		else if ("vel".equals(sub))
-			return WiktionaryVEL000.get(name);
-		else if ("ven".equals(sub))
-			return WiktionaryVEN000.get(name);
-		else if ("ver".equals(sub))
-			return WiktionaryVER000.get(name);
-		else if ("ves".equals(sub))
-			return WiktionaryVES000.get(name);
-		else if ("vet".equals(sub))
-			return WiktionaryVET000.get(name);
-		else if ("vex".equals(sub))
-			return WiktionaryVEX000.get(name);
-		else if ("via".equals(sub))
-			return WiktionaryVIA000.get(name);
-		else if ("vib".equals(sub))
-			return WiktionaryVIB000.get(name);
-		else if ("vic".equals(sub))
-			return WiktionaryVIC000.get(name);
-		else if ("vid".equals(sub))
-			return WiktionaryVID000.get(name);
-		else if ("vie".equals(sub))
-			return WiktionaryVIE000.get(name);
-		else if ("vif".equals(sub))
-			return WiktionaryVIF000.get(name);
-		else if ("vig".equals(sub))
-			return WiktionaryVIG000.get(name);
-		else if ("vil".equals(sub))
-			return WiktionaryVIL000.get(name);
-		else if ("vin".equals(sub))
-			return WiktionaryVIN000.get(name);
-		else if ("vio".equals(sub))
-			return WiktionaryVIO000.get(name);
-		else if ("vip".equals(sub))
-			return WiktionaryVIP000.get(name);
-		else if ("vir".equals(sub))
-			return WiktionaryVIR000.get(name);
-		else if ("vis".equals(sub))
-			return WiktionaryVIS000.get(name);
-		else if ("vit".equals(sub))
-			return WiktionaryVIT000.get(name);
-		else if ("viu".equals(sub))
-			return WiktionaryVIU000.get(name);
-		else if ("viv".equals(sub))
-			return WiktionaryVIV000.get(name);
-		else if ("vix".equals(sub))
-			return WiktionaryVIX000.get(name);
-		else if ("viz".equals(sub))
-			return WiktionaryVIZ000.get(name);
-		else if ("vla".equals(sub))
-			return WiktionaryVLA000.get(name);
-		else if ("vli".equals(sub))
-			return WiktionaryVLI000.get(name);
-		else if ("vlo".equals(sub))
-			return WiktionaryVLO000.get(name);
-		else if ("voc".equals(sub))
-			return WiktionaryVOC000.get(name);
-		else if ("vog".equals(sub))
-			return WiktionaryVOG000.get(name);
-		else if ("voi".equals(sub))
-			return WiktionaryVOI000.get(name);
-		else if ("vok".equals(sub))
-			return WiktionaryVOK000.get(name);
-		else if ("vol".equals(sub))
-			return WiktionaryVOL000.get(name);
-		else if ("vom".equals(sub))
-			return WiktionaryVOM000.get(name);
-		else if ("von".equals(sub))
-			return WiktionaryVON000.get(name);
-		else if ("vor".equals(sub))
-			return WiktionaryVOR000.get(name);
-		else if ("vot".equals(sub))
-			return WiktionaryVOT000.get(name);
-		else if ("vou".equals(sub))
-			return WiktionaryVOU000.get(name);
-		else if ("vow".equals(sub))
-			return WiktionaryVOW000.get(name);
-		else if ("vox".equals(sub))
-			return WiktionaryVOX000.get(name);
-		else if ("voy".equals(sub))
-			return WiktionaryVOY000.get(name);
-		else if ("vra".equals(sub))
-			return WiktionaryVRA000.get(name);
-		else if ("vrb".equals(sub))
-			return WiktionaryVRB000.get(name);
-		else if ("vrd".equals(sub))
-			return WiktionaryVRD000.get(name);
-		else if ("vri".equals(sub))
-			return WiktionaryVRI000.get(name);
-		else if ("vul".equals(sub))
-			return WiktionaryVUL000.get(name);
-		else if ("vur".equals(sub))
-			return WiktionaryVUR000.get(name);
-		else if ("vyo".equals(sub))
-			return WiktionaryVYO000.get(name);
+		if ("vaa".equals(sub)) return WiktionaryVAA000.get(name);
+		else if ("vac".equals(sub)) return WiktionaryVAC000.get(name);
+		else if ("vag".equals(sub)) return WiktionaryVAG000.get(name);
+		else if ("vai".equals(sub)) return WiktionaryVAI000.get(name);
+		else if ("vaj".equals(sub)) return WiktionaryVAJ000.get(name);
+		else if ("val".equals(sub)) return WiktionaryVAL000.get(name);
+		else if ("van".equals(sub)) return WiktionaryVAN000.get(name);
+		else if ("vap".equals(sub)) return WiktionaryVAP000.get(name);
+		else if ("var".equals(sub)) return WiktionaryVAR000.get(name);
+		else if ("vas".equals(sub)) return WiktionaryVAS000.get(name);
+		else if ("vat".equals(sub)) return WiktionaryVAT000.get(name);
+		else if ("vau".equals(sub)) return WiktionaryVAU000.get(name);
+		else if ("vav".equals(sub)) return WiktionaryVAV000.get(name);
+		else if ("vcj".equals(sub)) return WiktionaryVCJ000.get(name);
+		else if ("vea".equals(sub)) return WiktionaryVEA000.get(name);
+		else if ("vec".equals(sub)) return WiktionaryVEC000.get(name);
+		else if ("ved".equals(sub)) return WiktionaryVED000.get(name);
+		else if ("vee".equals(sub)) return WiktionaryVEE000.get(name);
+		else if ("veg".equals(sub)) return WiktionaryVEG000.get(name);
+		else if ("veh".equals(sub)) return WiktionaryVEH000.get(name);
+		else if ("vei".equals(sub)) return WiktionaryVEI000.get(name);
+		else if ("vel".equals(sub)) return WiktionaryVEL000.get(name);
+		else if ("ven".equals(sub)) return WiktionaryVEN000.get(name);
+		else if ("ver".equals(sub)) return WiktionaryVER000.get(name);
+		else if ("ves".equals(sub)) return WiktionaryVES000.get(name);
+		else if ("vet".equals(sub)) return WiktionaryVET000.get(name);
+		else if ("vex".equals(sub)) return WiktionaryVEX000.get(name);
+		else if ("via".equals(sub)) return WiktionaryVIA000.get(name);
+		else if ("vib".equals(sub)) return WiktionaryVIB000.get(name);
+		else if ("vic".equals(sub)) return WiktionaryVIC000.get(name);
+		else if ("vid".equals(sub)) return WiktionaryVID000.get(name);
+		else if ("vie".equals(sub)) return WiktionaryVIE000.get(name);
+		else if ("vif".equals(sub)) return WiktionaryVIF000.get(name);
+		else if ("vig".equals(sub)) return WiktionaryVIG000.get(name);
+		else if ("vil".equals(sub)) return WiktionaryVIL000.get(name);
+		else if ("vin".equals(sub)) return WiktionaryVIN000.get(name);
+		else if ("vio".equals(sub)) return WiktionaryVIO000.get(name);
+		else if ("vip".equals(sub)) return WiktionaryVIP000.get(name);
+		else if ("vir".equals(sub)) return WiktionaryVIR000.get(name);
+		else if ("vis".equals(sub)) return WiktionaryVIS000.get(name);
+		else if ("vit".equals(sub)) return WiktionaryVIT000.get(name);
+		else if ("viu".equals(sub)) return WiktionaryVIU000.get(name);
+		else if ("viv".equals(sub)) return WiktionaryVIV000.get(name);
+		else if ("vix".equals(sub)) return WiktionaryVIX000.get(name);
+		else if ("viz".equals(sub)) return WiktionaryVIZ000.get(name);
+		else if ("vla".equals(sub)) return WiktionaryVLA000.get(name);
+		else if ("vli".equals(sub)) return WiktionaryVLI000.get(name);
+		else if ("vlo".equals(sub)) return WiktionaryVLO000.get(name);
+		else if ("voc".equals(sub)) return WiktionaryVOC000.get(name);
+		else if ("vog".equals(sub)) return WiktionaryVOG000.get(name);
+		else if ("voi".equals(sub)) return WiktionaryVOI000.get(name);
+		else if ("vok".equals(sub)) return WiktionaryVOK000.get(name);
+		else if ("vol".equals(sub)) return WiktionaryVOL000.get(name);
+		else if ("vom".equals(sub)) return WiktionaryVOM000.get(name);
+		else if ("von".equals(sub)) return WiktionaryVON000.get(name);
+		else if ("vor".equals(sub)) return WiktionaryVOR000.get(name);
+		else if ("vot".equals(sub)) return WiktionaryVOT000.get(name);
+		else if ("vou".equals(sub)) return WiktionaryVOU000.get(name);
+		else if ("vow".equals(sub)) return WiktionaryVOW000.get(name);
+		else if ("vox".equals(sub)) return WiktionaryVOX000.get(name);
+		else if ("voy".equals(sub)) return WiktionaryVOY000.get(name);
+		else if ("vra".equals(sub)) return WiktionaryVRA000.get(name);
+		else if ("vrb".equals(sub)) return WiktionaryVRB000.get(name);
+		else if ("vrd".equals(sub)) return WiktionaryVRD000.get(name);
+		else if ("vri".equals(sub)) return WiktionaryVRI000.get(name);
+		else if ("vul".equals(sub)) return WiktionaryVUL000.get(name);
+		else if ("vur".equals(sub)) return WiktionaryVUR000.get(name);
+		else if ("vyo".equals(sub)) return WiktionaryVYO000.get(name);
 		return null;
 	}
 }

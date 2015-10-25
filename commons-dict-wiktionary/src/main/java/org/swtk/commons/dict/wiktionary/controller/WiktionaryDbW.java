@@ -78,157 +78,82 @@ import org.swtk.commons.dict.wiktionary.generated.w.y.v.*;
 
 public final class WiktionaryDbW {
 	public static Entry findByName(String name) {
-		if (name.length() < 4)
-			return null;
+		if (name.length() < 4) return null;
 		String sub = name.substring(0, 3).toLowerCase();
-		if ("waa".equals(sub))
-			return WiktionaryWAA000.get(name);
-		else if ("wac".equals(sub))
-			return WiktionaryWAC000.get(name);
-		else if ("wad".equals(sub))
-			return WiktionaryWAD000.get(name);
-		else if ("waf".equals(sub))
-			return WiktionaryWAF000.get(name);
-		else if ("wag".equals(sub))
-			return WiktionaryWAG000.get(name);
-		else if ("wah".equals(sub))
-			return WiktionaryWAH000.get(name);
-		else if ("wai".equals(sub))
-			return WiktionaryWAI000.get(name);
-		else if ("wak".equals(sub))
-			return WiktionaryWAK000.get(name);
-		else if ("wal".equals(sub))
-			return WiktionaryWAL000.get(name);
-		else if ("wam".equals(sub))
-			return WiktionaryWAM000.get(name);
-		else if ("wan".equals(sub))
-			return WiktionaryWAN000.get(name);
-		else if ("wap".equals(sub))
-			return WiktionaryWAP000.get(name);
-		else if ("waq".equals(sub))
-			return WiktionaryWAQ000.get(name);
-		else if ("war".equals(sub))
-			return WiktionaryWAR000.get(name);
-		else if ("was".equals(sub))
-			return WiktionaryWAS000.get(name);
-		else if ("wat".equals(sub))
-			return WiktionaryWAT000.get(name);
-		else if ("wav".equals(sub))
-			return WiktionaryWAV000.get(name);
-		else if ("wax".equals(sub))
-			return WiktionaryWAX000.get(name);
-		else if ("way".equals(sub))
-			return WiktionaryWAY000.get(name);
-		else if ("waz".equals(sub))
-			return WiktionaryWAZ000.get(name);
-		else if ("wea".equals(sub))
-			return WiktionaryWEA000.get(name);
-		else if ("web".equals(sub))
-			return WiktionaryWEB000.get(name);
-		else if ("wed".equals(sub))
-			return WiktionaryWED000.get(name);
-		else if ("wee".equals(sub))
-			return WiktionaryWEE000.get(name);
-		else if ("weg".equals(sub))
-			return WiktionaryWEG000.get(name);
-		else if ("wei".equals(sub))
-			return WiktionaryWEI000.get(name);
-		else if ("wel".equals(sub))
-			return WiktionaryWEL000.get(name);
-		else if ("wen".equals(sub))
-			return WiktionaryWEN000.get(name);
-		else if ("wer".equals(sub))
-			return WiktionaryWER000.get(name);
-		else if ("wes".equals(sub))
-			return WiktionaryWES000.get(name);
-		else if ("wet".equals(sub))
-			return WiktionaryWET000.get(name);
-		else if ("wha".equals(sub))
-			return WiktionaryWHA000.get(name);
-		else if ("whe".equals(sub))
-			return WiktionaryWHE000.get(name);
-		else if ("whi".equals(sub))
-			return WiktionaryWHI000.get(name);
-		else if ("who".equals(sub))
-			return WiktionaryWHO000.get(name);
-		else if ("whu".equals(sub))
-			return WiktionaryWHU000.get(name);
-		else if ("wic".equals(sub))
-			return WiktionaryWIC000.get(name);
-		else if ("wid".equals(sub))
-			return WiktionaryWID000.get(name);
-		else if ("wif".equals(sub))
-			return WiktionaryWIF000.get(name);
-		else if ("wig".equals(sub))
-			return WiktionaryWIG000.get(name);
-		else if ("wik".equals(sub))
-			return WiktionaryWIK000.get(name);
-		else if ("wil".equals(sub))
-			return WiktionaryWIL000.get(name);
-		else if ("wim".equals(sub))
-			return WiktionaryWIM000.get(name);
-		else if ("win".equals(sub))
-			return WiktionaryWIN000.get(name);
-		else if ("wip".equals(sub))
-			return WiktionaryWIP000.get(name);
-		else if ("wir".equals(sub))
-			return WiktionaryWIR000.get(name);
-		else if ("wis".equals(sub))
-			return WiktionaryWIS000.get(name);
-		else if ("wit".equals(sub))
-			return WiktionaryWIT000.get(name);
-		else if ("wiz".equals(sub))
-			return WiktionaryWIZ000.get(name);
-		else if ("wla".equals(sub))
-			return WiktionaryWLA000.get(name);
-		else if ("woa".equals(sub))
-			return WiktionaryWOA000.get(name);
-		else if ("wob".equals(sub))
-			return WiktionaryWOB000.get(name);
-		else if ("wod".equals(sub))
-			return WiktionaryWOD000.get(name);
-		else if ("wog".equals(sub))
-			return WiktionaryWOG000.get(name);
-		else if ("wok".equals(sub))
-			return WiktionaryWOK000.get(name);
-		else if ("wol".equals(sub))
-			return WiktionaryWOL000.get(name);
-		else if ("wom".equals(sub))
-			return WiktionaryWOM000.get(name);
-		else if ("won".equals(sub))
-			return WiktionaryWON000.get(name);
-		else if ("woo".equals(sub))
-			return WiktionaryWOO000.get(name);
-		else if ("wor".equals(sub))
-			return WiktionaryWOR000.get(name);
-		else if ("wou".equals(sub))
-			return WiktionaryWOU000.get(name);
-		else if ("wow".equals(sub))
-			return WiktionaryWOW000.get(name);
-		else if ("wra".equals(sub))
-			return WiktionaryWRA000.get(name);
-		else if ("wre".equals(sub))
-			return WiktionaryWRE000.get(name);
-		else if ("wri".equals(sub))
-			return WiktionaryWRI000.get(name);
-		else if ("wro".equals(sub))
-			return WiktionaryWRO000.get(name);
-		else if ("wry".equals(sub))
-			return WiktionaryWRY000.get(name);
-		else if ("wud".equals(sub))
-			return WiktionaryWUD000.get(name);
-		else if ("wul".equals(sub))
-			return WiktionaryWUL000.get(name);
-		else if ("wus".equals(sub))
-			return WiktionaryWUS000.get(name);
-		else if ("wyn".equals(sub))
-			return WiktionaryWYN000.get(name);
-		else if ("wyo".equals(sub))
-			return WiktionaryWYO000.get(name);
-		else if ("wyt".equals(sub))
-			return WiktionaryWYT000.get(name);
-		else if ("wyv".equals(sub))
-			return WiktionaryWYV000.get(name);
+		if ("waa".equals(sub)) return WiktionaryWAA000.get(name);
+		else if ("wac".equals(sub)) return WiktionaryWAC000.get(name);
+		else if ("wad".equals(sub)) return WiktionaryWAD000.get(name);
+		else if ("waf".equals(sub)) return WiktionaryWAF000.get(name);
+		else if ("wag".equals(sub)) return WiktionaryWAG000.get(name);
+		else if ("wah".equals(sub)) return WiktionaryWAH000.get(name);
+		else if ("wai".equals(sub)) return WiktionaryWAI000.get(name);
+		else if ("wak".equals(sub)) return WiktionaryWAK000.get(name);
+		else if ("wal".equals(sub)) return WiktionaryWAL000.get(name);
+		else if ("wam".equals(sub)) return WiktionaryWAM000.get(name);
+		else if ("wan".equals(sub)) return WiktionaryWAN000.get(name);
+		else if ("wap".equals(sub)) return WiktionaryWAP000.get(name);
+		else if ("waq".equals(sub)) return WiktionaryWAQ000.get(name);
+		else if ("war".equals(sub)) return WiktionaryWAR000.get(name);
+		else if ("was".equals(sub)) return WiktionaryWAS000.get(name);
+		else if ("wat".equals(sub)) return WiktionaryWAT000.get(name);
+		else if ("wav".equals(sub)) return WiktionaryWAV000.get(name);
+		else if ("wax".equals(sub)) return WiktionaryWAX000.get(name);
+		else if ("way".equals(sub)) return WiktionaryWAY000.get(name);
+		else if ("waz".equals(sub)) return WiktionaryWAZ000.get(name);
+		else if ("wea".equals(sub)) return WiktionaryWEA000.get(name);
+		else if ("web".equals(sub)) return WiktionaryWEB000.get(name);
+		else if ("wed".equals(sub)) return WiktionaryWED000.get(name);
+		else if ("wee".equals(sub)) return WiktionaryWEE000.get(name);
+		else if ("weg".equals(sub)) return WiktionaryWEG000.get(name);
+		else if ("wei".equals(sub)) return WiktionaryWEI000.get(name);
+		else if ("wel".equals(sub)) return WiktionaryWEL000.get(name);
+		else if ("wen".equals(sub)) return WiktionaryWEN000.get(name);
+		else if ("wer".equals(sub)) return WiktionaryWER000.get(name);
+		else if ("wes".equals(sub)) return WiktionaryWES000.get(name);
+		else if ("wet".equals(sub)) return WiktionaryWET000.get(name);
+		else if ("wha".equals(sub)) return WiktionaryWHA000.get(name);
+		else if ("whe".equals(sub)) return WiktionaryWHE000.get(name);
+		else if ("whi".equals(sub)) return WiktionaryWHI000.get(name);
+		else if ("who".equals(sub)) return WiktionaryWHO000.get(name);
+		else if ("whu".equals(sub)) return WiktionaryWHU000.get(name);
+		else if ("wic".equals(sub)) return WiktionaryWIC000.get(name);
+		else if ("wid".equals(sub)) return WiktionaryWID000.get(name);
+		else if ("wif".equals(sub)) return WiktionaryWIF000.get(name);
+		else if ("wig".equals(sub)) return WiktionaryWIG000.get(name);
+		else if ("wik".equals(sub)) return WiktionaryWIK000.get(name);
+		else if ("wil".equals(sub)) return WiktionaryWIL000.get(name);
+		else if ("wim".equals(sub)) return WiktionaryWIM000.get(name);
+		else if ("win".equals(sub)) return WiktionaryWIN000.get(name);
+		else if ("wip".equals(sub)) return WiktionaryWIP000.get(name);
+		else if ("wir".equals(sub)) return WiktionaryWIR000.get(name);
+		else if ("wis".equals(sub)) return WiktionaryWIS000.get(name);
+		else if ("wit".equals(sub)) return WiktionaryWIT000.get(name);
+		else if ("wiz".equals(sub)) return WiktionaryWIZ000.get(name);
+		else if ("wla".equals(sub)) return WiktionaryWLA000.get(name);
+		else if ("woa".equals(sub)) return WiktionaryWOA000.get(name);
+		else if ("wob".equals(sub)) return WiktionaryWOB000.get(name);
+		else if ("wod".equals(sub)) return WiktionaryWOD000.get(name);
+		else if ("wog".equals(sub)) return WiktionaryWOG000.get(name);
+		else if ("wok".equals(sub)) return WiktionaryWOK000.get(name);
+		else if ("wol".equals(sub)) return WiktionaryWOL000.get(name);
+		else if ("wom".equals(sub)) return WiktionaryWOM000.get(name);
+		else if ("won".equals(sub)) return WiktionaryWON000.get(name);
+		else if ("woo".equals(sub)) return WiktionaryWOO000.get(name);
+		else if ("wor".equals(sub)) return WiktionaryWOR000.get(name);
+		else if ("wou".equals(sub)) return WiktionaryWOU000.get(name);
+		else if ("wow".equals(sub)) return WiktionaryWOW000.get(name);
+		else if ("wra".equals(sub)) return WiktionaryWRA000.get(name);
+		else if ("wre".equals(sub)) return WiktionaryWRE000.get(name);
+		else if ("wri".equals(sub)) return WiktionaryWRI000.get(name);
+		else if ("wro".equals(sub)) return WiktionaryWRO000.get(name);
+		else if ("wry".equals(sub)) return WiktionaryWRY000.get(name);
+		else if ("wud".equals(sub)) return WiktionaryWUD000.get(name);
+		else if ("wul".equals(sub)) return WiktionaryWUL000.get(name);
+		else if ("wus".equals(sub)) return WiktionaryWUS000.get(name);
+		else if ("wyn".equals(sub)) return WiktionaryWYN000.get(name);
+		else if ("wyo".equals(sub)) return WiktionaryWYO000.get(name);
+		else if ("wyt".equals(sub)) return WiktionaryWYT000.get(name);
+		else if ("wyv".equals(sub)) return WiktionaryWYV000.get(name);
 		return null;
 	}
 }
