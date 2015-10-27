@@ -7,14 +7,42 @@ public enum DataNounFrameType {
 	ACTION("+"),
 
 	HYPERNYM("@"),
-	
+
 	PARTONOMY("%p"),
 
 	SYNONYM("~"),
 
-	UNKNOWN_2("%s"),
-	
-	UNKNOWN_1("-c");
+	UNKNOWN_01("-c"),
+
+	UNKNOWN_02("%s"),
+
+	UNKNOWN_03("~i"),
+
+	UNKNOWN_04("\\"),
+
+	UNKNOWN_05("@i"),
+
+	UNKNOWN_06("="),
+
+	UNKNOWN_07(";u"),
+
+	UNKNOWN_08(";r"),
+
+	UNKNOWN_09(";c"),
+
+	UNKNOWN_10("-u"),
+
+	UNKNOWN_11("-r"),
+
+	UNKNOWN_12("%m"),
+
+	UNKNOWN_13("#s"),
+
+	UNKNOWN_14("#p"),
+
+	UNKNOWN_15("#m"),
+
+	UNKNOWN_16("!");
 
 	public static LogManager logger = new LogManager(DataNounFrameType.class);
 
