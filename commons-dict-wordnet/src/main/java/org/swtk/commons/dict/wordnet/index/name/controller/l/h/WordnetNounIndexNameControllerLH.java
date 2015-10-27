@@ -1,4 +1,4 @@
-package org.swtk.commons.dict.wordnet.index.name.controller.l.h;  import java.util.Collection;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  	import org.swtk.commons.dict.wordnet.index.name.instance.l.l.a.m.WordnetNounIndexNameInstanceLLAM;
+package org.swtk.commons.dict.wordnet.index.name.controller.l.h;  import java.util.Collection; import java.util.Set; import java.util.TreeSet;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  	import org.swtk.commons.dict.wordnet.index.name.instance.l.l.a.m.WordnetNounIndexNameInstanceLLAM;
 	import org.swtk.commons.dict.wordnet.index.name.instance.l.l.a.n.WordnetNounIndexNameInstanceLLAN;
 	import org.swtk.commons.dict.wordnet.index.name.instance.l.l.o.y.WordnetNounIndexNameInstanceLLOY;
 	import org.swtk.commons.dict.wordnet.index.name.instance.l.l.u.d.WordnetNounIndexNameInstanceLLUD;
@@ -10,4 +10,10 @@ package org.swtk.commons.dict.wordnet.index.name.controller.l.h;  import java.ut
 	if ("llud".equals(key)) return WordnetNounIndexNameInstanceLLUD.get(TERM);
 	if ("llul".equals(key)) return WordnetNounIndexNameInstanceLLUL.get(TERM);
 	if ("llyr".equals(key)) return WordnetNounIndexNameInstanceLLYR.get(TERM);
-  		throw new BusinessException("TERM not found (id = %s)", TERM); 	} }
+  		throw new BusinessException("TERM not found (id = %s)", TERM); 	} 	 	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceLLAM.terms());
+	set.addAll(WordnetNounIndexNameInstanceLLAN.terms());
+	set.addAll(WordnetNounIndexNameInstanceLLOY.terms());
+	set.addAll(WordnetNounIndexNameInstanceLLUD.terms());
+	set.addAll(WordnetNounIndexNameInstanceLLUL.terms());
+	set.addAll(WordnetNounIndexNameInstanceLLYR.terms());
+  		return set; 	} }

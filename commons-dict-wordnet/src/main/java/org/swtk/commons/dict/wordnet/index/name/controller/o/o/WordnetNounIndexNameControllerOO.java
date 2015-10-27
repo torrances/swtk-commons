@@ -1,4 +1,4 @@
-package org.swtk.commons.dict.wordnet.index.name.controller.o.o;  import java.util.Collection;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  	import org.swtk.commons.dict.wordnet.index.name.instance.o.o.c.y.WordnetNounIndexNameInstanceOOCY;
+package org.swtk.commons.dict.wordnet.index.name.controller.o.o;  import java.util.Collection; import java.util.Set; import java.util.TreeSet;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  	import org.swtk.commons.dict.wordnet.index.name.instance.o.o.c.y.WordnetNounIndexNameInstanceOOCY;
 	import org.swtk.commons.dict.wordnet.index.name.instance.o.o.d.l.WordnetNounIndexNameInstanceOODL;
 	import org.swtk.commons.dict.wordnet.index.name.instance.o.o.g.e.WordnetNounIndexNameInstanceOOGE;
 	import org.swtk.commons.dict.wordnet.index.name.instance.o.o.l.o.WordnetNounIndexNameInstanceOOLO;
@@ -22,4 +22,16 @@ package org.swtk.commons.dict.wordnet.index.name.controller.o.o;  import java.ut
 	if ("ooti".equals(key)) return WordnetNounIndexNameInstanceOOTI.get(TERM);
 	if ("ooze".equals(key)) return WordnetNounIndexNameInstanceOOZE.get(TERM);
 	if ("oozi".equals(key)) return WordnetNounIndexNameInstanceOOZI.get(TERM);
-  		throw new BusinessException("TERM not found (id = %s)", TERM); 	} }
+  		throw new BusinessException("TERM not found (id = %s)", TERM); 	} 	 	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceOOCY.terms());
+	set.addAll(WordnetNounIndexNameInstanceOODL.terms());
+	set.addAll(WordnetNounIndexNameInstanceOOGE.terms());
+	set.addAll(WordnetNounIndexNameInstanceOOLO.terms());
+	set.addAll(WordnetNounIndexNameInstanceOOMP.terms());
+	set.addAll(WordnetNounIndexNameInstanceOOMY.terms());
+	set.addAll(WordnetNounIndexNameInstanceOOPH.terms());
+	set.addAll(WordnetNounIndexNameInstanceOORT.terms());
+	set.addAll(WordnetNounIndexNameInstanceOOSP.terms());
+	set.addAll(WordnetNounIndexNameInstanceOOTI.terms());
+	set.addAll(WordnetNounIndexNameInstanceOOZE.terms());
+	set.addAll(WordnetNounIndexNameInstanceOOZI.terms());
+  		return set; 	} }
