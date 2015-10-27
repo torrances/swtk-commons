@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.p.i.e.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePIER {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"pier\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03940209\", \"03940318\", \"03939805\"]}");
+	add("{\"term\":\"pierce\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11254803\"]}");
+	add("{\"term\":\"pierid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02283110\"]}");
+	add("{\"term\":\"pieridae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02282875\"]}");
+	add("{\"term\":\"pieris\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02283497\", \"12263809\"]}");
+	add("{\"term\":\"pierre\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09162230\"]}");
+	add("{\"term\":\"pierrot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09626294\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

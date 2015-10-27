@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.g.r.a.v;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceGRAV {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"grave\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06835587\", \"03459977\", \"15168686\"]}");
+	add("{\"term\":\"gravedigger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10163988\"]}");
+	add("{\"term\":\"gravel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14723045\"]}");
+	add("{\"term\":\"gravelweed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12051857\"]}");
+	add("{\"term\":\"graveness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04654835\"]}");
+	add("{\"term\":\"graver\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03460299\"]}");
+	add("{\"term\":\"graverobber\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10164091\", \"10164250\"]}");
+	add("{\"term\":\"graves\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11032296\"]}");
+	add("{\"term\":\"gravestone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03460432\"]}");
+	add("{\"term\":\"graveyard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08538806\"]}");
+	add("{\"term\":\"gravida\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10164358\", \"14070491\"]}");
+	add("{\"term\":\"gravidation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14070343\"]}");
+	add("{\"term\":\"gravidity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14070343\"]}");
+	add("{\"term\":\"gravidness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14070343\"]}");
+	add("{\"term\":\"gravimeter\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03460586\", \"03558666\"]}");
+	add("{\"term\":\"gravimetry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01004355\"]}");
+	add("{\"term\":\"gravitas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04917861\"]}");
+	add("{\"term\":\"gravitation\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06208048\", \"07377430\", \"11484542\"]}");
+	add("{\"term\":\"graviton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09314539\"]}");
+	add("{\"term\":\"gravity\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07527386\", \"04654835\", \"11484542\"]}");
+	add("{\"term\":\"gravure\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"01105279\", \"03460746\", \"03460867\", \"06691529\"]}");
+	add("{\"term\":\"gravy\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07492727\", \"07853888\", \"07854049\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

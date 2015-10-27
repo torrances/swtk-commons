@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.p.h.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSPHE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"sphecidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02217986\"]}");
+	add("{\"term\":\"sphecius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02218718\"]}");
+	add("{\"term\":\"sphecoid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02217813\"]}");
+	add("{\"term\":\"sphecoidea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02217624\"]}");
+	add("{\"term\":\"sphecotheres\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01578853\"]}");
+	add("{\"term\":\"sphenion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05242680\"]}");
+	add("{\"term\":\"spheniscidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02058085\"]}");
+	add("{\"term\":\"sphenisciformes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02057934\"]}");
+	add("{\"term\":\"spheniscus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02059527\"]}");
+	add("{\"term\":\"sphenodon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01675759\"]}");
+	add("{\"term\":\"sphenoid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05288497\"]}");
+	add("{\"term\":\"sphenopsida\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13239620\"]}");
+	add("{\"term\":\"sphere\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"08538450\", \"13921592\", \"13921893\", \"05861665\", \"08671145\", \"04281649\", \"14537641\"]}");
+	add("{\"term\":\"sphericalness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05080300\"]}");
+	add("{\"term\":\"sphericity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05080300\"]}");
+	add("{\"term\":\"spherocyte\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05462689\"]}");
+	add("{\"term\":\"spheroid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13921338\"]}");
+	add("{\"term\":\"spherometer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04281805\"]}");
+	add("{\"term\":\"spherule\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13922428\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

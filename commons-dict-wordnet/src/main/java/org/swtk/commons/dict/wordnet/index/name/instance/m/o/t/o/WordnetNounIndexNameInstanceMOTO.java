@@ -1,0 +1,21 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.m.o.t.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMOTO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"motoneuron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05474348\"]}");
+	add("{\"term\":\"motor\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09382528\", \"03795479\"]}");
+	add("{\"term\":\"motorbike\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03775257\"]}");
+	add("{\"term\":\"motorboat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03795763\"]}");
+	add("{\"term\":\"motorbus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02927500\"]}");
+	add("{\"term\":\"motorcade\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08445340\"]}");
+	add("{\"term\":\"motorcar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02961779\"]}");
+	add("{\"term\":\"motorcoach\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02927500\"]}");
+	add("{\"term\":\"motorcycle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03796045\"]}");
+	add("{\"term\":\"motorcycling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00452621\"]}");
+	add("{\"term\":\"motorcyclist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10353722\"]}");
+	add("{\"term\":\"motoring\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00299938\"]}");
+	add("{\"term\":\"motorisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00103747\"]}");
+	add("{\"term\":\"motorist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10353814\"]}");
+	add("{\"term\":\"motorization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00103747\"]}");
+	add("{\"term\":\"motorman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10353968\"]}");
+	add("{\"term\":\"motormouth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10354048\"]}");
+	add("{\"term\":\"motortruck\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04497386\"]}");
+	add("{\"term\":\"motorway\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03311555\"]}");
+	add("{\"term\":\"motown\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09122994\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

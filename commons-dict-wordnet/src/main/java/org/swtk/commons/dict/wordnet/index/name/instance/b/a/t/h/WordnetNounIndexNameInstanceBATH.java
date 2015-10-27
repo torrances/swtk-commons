@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.b.a.t.h;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBATH {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"bath\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"08898429\", \"13637841\", \"00258637\", \"02809715\"]}");
+	add("{\"term\":\"bathe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00443377\"]}");
+	add("{\"term\":\"bather\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09862990\", \"10702573\"]}");
+	add("{\"term\":\"bathhouse\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02810060\", \"02810177\"]}");
+	add("{\"term\":\"bathing\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00256081\", \"00428856\"]}");
+	add("{\"term\":\"batholite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14956441\"]}");
+	add("{\"term\":\"batholith\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14956441\"]}");
+	add("{\"term\":\"bathometer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02811830\"]}");
+	add("{\"term\":\"bathos\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06385614\", \"07497407\", \"07082088\"]}");
+	add("{\"term\":\"bathrobe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02810801\"]}");
+	add("{\"term\":\"bathroom\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04453410\", \"02810916\"]}");
+	add("{\"term\":\"bathsheba\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10857884\"]}");
+	add("{\"term\":\"bathtub\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02811600\"]}");
+	add("{\"term\":\"bathyergidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02371664\"]}");
+	add("{\"term\":\"bathyergus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02371822\"]}");
+	add("{\"term\":\"bathymeter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02811830\"]}");
+	add("{\"term\":\"bathymetry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01001031\"]}");
+	add("{\"term\":\"bathyscape\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02811964\"]}");
+	add("{\"term\":\"bathyscaph\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02811964\"]}");
+	add("{\"term\":\"bathyscaphe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02811964\"]}");
+	add("{\"term\":\"bathysphere\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02812103\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

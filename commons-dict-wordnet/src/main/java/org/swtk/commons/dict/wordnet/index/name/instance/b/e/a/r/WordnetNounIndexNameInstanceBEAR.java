@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.b.e.a.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBEAR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"bear\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09864599\", \"02134305\"]}");
+	add("{\"term\":\"bearberry\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"12251709\", \"12778063\", \"13162341\"]}");
+	add("{\"term\":\"bearcat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02138755\"]}");
+	add("{\"term\":\"beard\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"01957959\", \"02418916\", \"09864809\", \"13111354\", \"05269065\"]}");
+	add("{\"term\":\"bearer\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"10199542\", \"10414772\", \"10330910\", \"09917148\"]}");
+	add("{\"term\":\"bearing\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"02820166\", \"03012169\", \"05009987\", \"04917554\", \"08698626\", \"13817907\"]}");
+	add("{\"term\":\"bearnaise\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07851523\"]}");
+	add("{\"term\":\"bearskin\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02820651\", \"14788697\"]}");
+	add("{\"term\":\"bearwood\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13162341\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

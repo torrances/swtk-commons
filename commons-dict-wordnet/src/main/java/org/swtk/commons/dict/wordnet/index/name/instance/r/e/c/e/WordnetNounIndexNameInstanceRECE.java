@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.r.e.c.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRECE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"receding\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00058306\", \"07350814\"]}");
+	add("{\"term\":\"receipt\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06532213\", \"00091073\"]}");
+	add("{\"term\":\"receipts\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13277590\"]}");
+	add("{\"term\":\"receivables\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13351305\"]}");
+	add("{\"term\":\"receiver\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"10530411\", \"10530567\", \"09651094\", \"04409715\", \"10285229\", \"04067759\"]}");
+	add("{\"term\":\"receivership\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00599882\", \"01189068\", \"14502904\"]}");
+	add("{\"term\":\"recency\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04934445\", \"05056959\"]}");
+	add("{\"term\":\"recent\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15149665\"]}");
+	add("{\"term\":\"recentness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04934445\", \"05056959\"]}");
+	add("{\"term\":\"receptacle\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04068554\", \"13150920\", \"04068016\"]}");
+	add("{\"term\":\"reception\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00140739\", \"00091073\", \"06291693\", \"08271252\", \"06643359\"]}");
+	add("{\"term\":\"receptionist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10530662\"]}");
+	add("{\"term\":\"receptiveness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04652377\"]}");
+	add("{\"term\":\"receptivity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04652377\"]}");
+	add("{\"term\":\"receptor\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05306677\", \"05616623\"]}");
+	add("{\"term\":\"recess\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"01064921\", \"04069081\", \"09336622\", \"13895060\", \"14037117\"]}");
+	add("{\"term\":\"recession\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00058306\", \"01252578\", \"08446513\", \"13895060\", \"14036839\"]}");
+	add("{\"term\":\"recessional\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07050978\", \"08446513\"]}");
+	add("{\"term\":\"recessive\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05445891\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.d.o.c.k;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDOCK {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"dock\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"02160718\", \"02161624\", \"03221531\", \"03222036\", \"03939805\", \"12624720\", \"03221894\"]}");
+	add("{\"term\":\"dockage\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00052966\", \"03221531\", \"13342252\"]}");
+	add("{\"term\":\"docker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10674608\"]}");
+	add("{\"term\":\"docket\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05919534\", \"06497282\"]}");
+	add("{\"term\":\"dockhand\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10674608\"]}");
+	add("{\"term\":\"docking\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00052966\"]}");
+	add("{\"term\":\"dockside\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08667559\"]}");
+	add("{\"term\":\"dockworker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10674608\"]}");
+	add("{\"term\":\"dockyard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08657967\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

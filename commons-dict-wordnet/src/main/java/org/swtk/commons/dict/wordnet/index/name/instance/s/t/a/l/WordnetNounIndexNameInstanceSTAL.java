@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.t.a.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSTAL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"stalactite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09466657\"]}");
+	add("{\"term\":\"stalagmite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09466825\"]}");
+	add("{\"term\":\"stalemate\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07368680\", \"14038832\"]}");
+	add("{\"term\":\"staleness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04935185\", \"05657630\"]}");
+	add("{\"term\":\"stalin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11332115\"]}");
+	add("{\"term\":\"stalinabad\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09043683\"]}");
+	add("{\"term\":\"stalingrad\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09032455\"]}");
+	add("{\"term\":\"stalinisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13582114\"]}");
+	add("{\"term\":\"stalinism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08457622\"]}");
+	add("{\"term\":\"stalinist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10665764\"]}");
+	add("{\"term\":\"stalinization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13582114\"]}");
+	add("{\"term\":\"stalino\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09038469\"]}");
+	add("{\"term\":\"stalk\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00290859\", \"00321451\", \"00712776\", \"13149924\", \"14830069\"]}");
+	add("{\"term\":\"stalker\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"10506264\", \"10665872\", \"10665967\"]}");
+	add("{\"term\":\"stalking\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00321451\", \"00712776\"]}");
+	add("{\"term\":\"stall\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"01077649\", \"02971792\", \"04306837\", \"07333424\", \"04306353\", \"02877081\", \"04306508\"]}");
+	add("{\"term\":\"stalling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01077649\"]}");
+	add("{\"term\":\"stallion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02379833\"]}");
+	add("{\"term\":\"stalls\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04302017\"]}");
+	add("{\"term\":\"stalwart\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10295092\"]}");
+	add("{\"term\":\"stalwartness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05038715\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

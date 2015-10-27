@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.f.u.n.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFUNG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"fungi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13013224\"]}");
+	add("{\"term\":\"fungia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01920392\"]}");
+	add("{\"term\":\"fungibility\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04743169\"]}");
+	add("{\"term\":\"fungible\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03408084\"]}");
+	add("{\"term\":\"fungicide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02723112\"]}");
+	add("{\"term\":\"fungus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13013628\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.r.i.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCRIS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"crisis\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07432244\", \"13956593\"]}");
+	add("{\"term\":\"crisp\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07728304\"]}");
+	add("{\"term\":\"crispin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10935125\"]}");
+	add("{\"term\":\"crispiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04946724\"]}");
+	add("{\"term\":\"crispness\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04946724\", \"07103468\", \"04934275\"]}");
+	add("{\"term\":\"crisscross\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04688744\"]}");
+	add("{\"term\":\"cristal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02681592\"]}");
+	add("{\"term\":\"cristobalite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14697054\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

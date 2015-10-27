@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.c.i.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSCIN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"scincella\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01686653\"]}");
+	add("{\"term\":\"scincid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01686774\"]}");
+	add("{\"term\":\"scincidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01686365\"]}");
+	add("{\"term\":\"scincus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01686541\"]}");
+	add("{\"term\":\"scindapsus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11812288\"]}");
+	add("{\"term\":\"scintilla\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09448916\", \"13795925\"]}");
+	add("{\"term\":\"scintillation\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"04778367\", \"04960121\", \"05627973\", \"07426245\", \"11526767\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

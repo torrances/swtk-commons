@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.i.n.s.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceINSP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"inspection\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00880949\"]}");
+	add("{\"term\":\"inspector\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10087775\", \"10228448\"]}");
+	add("{\"term\":\"inspectorate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08430997\"]}");
+	add("{\"term\":\"inspectorship\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00594728\"]}");
+	add("{\"term\":\"inspiration\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"00838449\", \"01264338\", \"05694495\", \"05805481\", \"03579155\", \"05842891\"]}");
+	add("{\"term\":\"inspirer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10138039\"]}");
+	add("{\"term\":\"inspissation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00358732\", \"13521760\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

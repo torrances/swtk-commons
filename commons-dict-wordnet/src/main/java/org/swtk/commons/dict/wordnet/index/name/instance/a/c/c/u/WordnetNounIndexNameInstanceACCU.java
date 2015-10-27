@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.a.c.c.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceACCU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"acculturation\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05765046\", \"05993821\", \"01131305\"]}");
+	add("{\"term\":\"accumulation\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"13387866\", \"00372821\", \"07968050\", \"13446038\"]}");
+	add("{\"term\":\"accumulator\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"02675932\", \"04335467\", \"09955820\"]}");
+	add("{\"term\":\"accuracy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04810458\", \"04810156\"]}");
+	add("{\"term\":\"accusal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07248890\"]}");
+	add("{\"term\":\"accusation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06743529\", \"07248890\"]}");
+	add("{\"term\":\"accusative\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06322547\"]}");
+	add("{\"term\":\"accused\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09781434\"]}");
+	add("{\"term\":\"accuser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09781808\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

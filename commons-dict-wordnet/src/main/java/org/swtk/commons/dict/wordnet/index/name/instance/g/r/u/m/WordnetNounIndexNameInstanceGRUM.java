@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.g.r.u.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceGRUM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"grumble\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07225752\", \"07407083\"]}");
+	add("{\"term\":\"grumbler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10796007\"]}");
+	add("{\"term\":\"grumbling\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07225752\", \"07407083\"]}");
+	add("{\"term\":\"grume\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05409676\", \"14963801\"]}");
+	add("{\"term\":\"grummet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03137089\"]}");
+	add("{\"term\":\"grump\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10167825\"]}");
+	add("{\"term\":\"grumpiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04649226\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

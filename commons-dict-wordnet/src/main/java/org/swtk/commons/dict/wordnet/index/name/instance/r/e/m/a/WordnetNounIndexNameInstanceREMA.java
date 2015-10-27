@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.r.e.m.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceREMA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"remainder\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03291294\", \"13751346\", \"13755803\", \"13833030\"]}");
+	add("{\"term\":\"remains\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05225393\", \"09226555\", \"09430224\"]}");
+	add("{\"term\":\"remake\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04081441\"]}");
+	add("{\"term\":\"remaking\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04081441\"]}");
+	add("{\"term\":\"remand\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00329153\"]}");
+	add("{\"term\":\"remark\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05718520\", \"06777755\"]}");
+	add("{\"term\":\"remarriage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01251299\"]}");
+	add("{\"term\":\"rematch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07357795\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.t.o.i.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTOIL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"toil\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00621992\"]}");
+	add("{\"term\":\"toiler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10719754\"]}");
+	add("{\"term\":\"toilet\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00830365\", \"14499576\", \"04453655\", \"04453410\"]}");
+	add("{\"term\":\"toiletry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04454577\"]}");
+	add("{\"term\":\"toilette\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00830365\"]}");
+	add("{\"term\":\"toilsomeness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04717220\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

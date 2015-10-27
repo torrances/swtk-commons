@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.r.a.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCRAB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"crab\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"00446514\", \"02187819\", \"07803691\", \"08704396\", \"09771988\", \"09993584\", \"01979598\"]}");
+	add("{\"term\":\"crabapple\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07755320\", \"12654972\", \"12655190\"]}");
+	add("{\"term\":\"crabbedness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04649057\"]}");
+	add("{\"term\":\"crabbiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04649057\"]}");
+	add("{\"term\":\"crabgrass\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12137534\"]}");
+	add("{\"term\":\"crabmeat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07803691\"]}");
+	add("{\"term\":\"crabs\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14478340\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

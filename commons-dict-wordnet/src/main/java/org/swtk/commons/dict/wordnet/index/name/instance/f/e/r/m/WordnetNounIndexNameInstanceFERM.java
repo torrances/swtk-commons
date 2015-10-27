@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.f.e.r.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFERM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"fermat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10989791\"]}");
+	add("{\"term\":\"fermata\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05059394\", \"06880560\"]}");
+	add("{\"term\":\"ferment\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"13596636\", \"14762931\", \"14002988\"]}");
+	add("{\"term\":\"fermentation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13596636\", \"14002988\"]}");
+	add("{\"term\":\"fermenting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13596636\"]}");
+	add("{\"term\":\"fermentologist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09639603\"]}");
+	add("{\"term\":\"fermi\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10989978\", \"13679309\"]}");
+	add("{\"term\":\"fermion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09302067\"]}");
+	add("{\"term\":\"fermium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14661517\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

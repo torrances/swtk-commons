@@ -1,0 +1,25 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.e.q.u.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceEQUI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"equid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02376801\"]}");
+	add("{\"term\":\"equidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02376253\"]}");
+	add("{\"term\":\"equidistribution\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05737307\"]}");
+	add("{\"term\":\"equilateral\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13885155\"]}");
+	add("{\"term\":\"equilibration\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01268125\"]}");
+	add("{\"term\":\"equilibrium\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"05667210\", \"13920689\", \"13467370\", \"13957933\"]}");
+	add("{\"term\":\"equine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02376801\"]}");
+	add("{\"term\":\"equinoctial\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08537373\"]}");
+	add("{\"term\":\"equinox\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08537911\", \"15248139\"]}");
+	add("{\"term\":\"equipage\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02971932\", \"03735644\"]}");
+	add("{\"term\":\"equipment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03298959\"]}");
+	add("{\"term\":\"equipoise\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13920689\"]}");
+	add("{\"term\":\"equipping\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01159386\"]}");
+	add("{\"term\":\"equisetaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13239965\"]}");
+	add("{\"term\":\"equisetales\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13239798\"]}");
+	add("{\"term\":\"equisetatae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13239620\"]}");
+	add("{\"term\":\"equisetum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13240156\"]}");
+	add("{\"term\":\"equitation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00451320\"]}");
+	add("{\"term\":\"equity\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04846385\", \"13354435\", \"13354711\"]}");
+	add("{\"term\":\"equivalence\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04754082\", \"04755513\", \"13969940\"]}");
+	add("{\"term\":\"equivalent\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05033674\", \"05703519\"]}");
+	add("{\"term\":\"equivocalness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04832345\"]}");
+	add("{\"term\":\"equivocation\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00753122\", \"04832614\", \"06773810\"]}");
+	add("{\"term\":\"equivocator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10187605\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

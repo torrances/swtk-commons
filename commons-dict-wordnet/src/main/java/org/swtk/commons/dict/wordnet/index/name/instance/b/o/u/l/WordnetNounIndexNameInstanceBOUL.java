@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.b.o.u.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBOUL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"boulder\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09090206\", \"09250746\"]}");
+	add("{\"term\":\"boule\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02881870\"]}");
+	add("{\"term\":\"boulevard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02766477\"]}");
+	add("{\"term\":\"boulevardier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09888305\"]}");
+	add("{\"term\":\"boulez\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10878965\"]}");
+	add("{\"term\":\"boulle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02881870\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

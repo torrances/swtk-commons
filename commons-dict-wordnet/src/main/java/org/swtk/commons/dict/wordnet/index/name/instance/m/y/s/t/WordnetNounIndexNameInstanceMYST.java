@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.m.y.s.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMYST {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"mystery\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06382415\", \"05693343\"]}");
+	add("{\"term\":\"mystic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10363285\"]}");
+	add("{\"term\":\"mysticeti\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02065644\"]}");
+	add("{\"term\":\"mysticism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05792565\", \"05957724\"]}");
+	add("{\"term\":\"mystification\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01268645\", \"03809451\", \"05692835\"]}");
+	add("{\"term\":\"mystifier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06797496\"]}");
+	add("{\"term\":\"mystique\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04734817\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

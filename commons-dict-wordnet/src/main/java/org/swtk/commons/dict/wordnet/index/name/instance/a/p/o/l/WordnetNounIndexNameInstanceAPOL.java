@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.a.p.o.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceAPOL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"apolemia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01916081\"]}");
+	add("{\"term\":\"apollinaire\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10840048\"]}");
+	add("{\"term\":\"apollo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09576896\"]}");
+	add("{\"term\":\"apologetics\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06192582\"]}");
+	add("{\"term\":\"apologia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06753614\"]}");
+	add("{\"term\":\"apologist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09817975\"]}");
+	add("{\"term\":\"apologue\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06383718\"]}");
+	add("{\"term\":\"apology\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05829462\", \"06753614\", \"06645870\"]}");
+	add("{\"term\":\"apolune\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08513209\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

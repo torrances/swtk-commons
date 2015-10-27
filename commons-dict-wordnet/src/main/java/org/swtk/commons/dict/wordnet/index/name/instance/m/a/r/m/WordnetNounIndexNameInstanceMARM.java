@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.m.a.r.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMARM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"marmalade\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07659373\"]}");
+	add("{\"term\":\"marmara\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09370105\"]}");
+	add("{\"term\":\"marmite\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03728318\", \"07601670\"]}");
+	add("{\"term\":\"marmora\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09370105\"]}");
+	add("{\"term\":\"marmoset\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02492850\"]}");
+	add("{\"term\":\"marmot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02363989\"]}");
+	add("{\"term\":\"marmota\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02363874\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

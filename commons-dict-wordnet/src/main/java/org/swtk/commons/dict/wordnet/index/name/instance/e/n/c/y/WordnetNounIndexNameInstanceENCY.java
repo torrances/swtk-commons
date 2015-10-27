@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.e.n.c.y;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceENCY {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"encyclia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12081317\"]}");
+	add("{\"term\":\"encyclical\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06637569\"]}");
+	add("{\"term\":\"encyclopaedia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06439057\"]}");
+	add("{\"term\":\"encyclopaedism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05994884\"]}");
+	add("{\"term\":\"encyclopaedist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10075374\"]}");
+	add("{\"term\":\"encyclopedia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06439057\"]}");
+	add("{\"term\":\"encyclopedism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05994884\"]}");
+	add("{\"term\":\"encyclopedist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10075374\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.h.e.l.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHELP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"help\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"05157079\", \"05162155\", \"09835195\", \"01210099\"]}");
+	add("{\"term\":\"helpdesk\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01213037\"]}");
+	add("{\"term\":\"helper\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09631739\", \"09835195\"]}");
+	add("{\"term\":\"helpfulness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04848895\", \"05156942\"]}");
+	add("{\"term\":\"helping\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07593928\"]}");
+	add("{\"term\":\"helplessness\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07553530\", \"14025114\", \"05212250\"]}");
+	add("{\"term\":\"helpmate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10190191\"]}");
+	add("{\"term\":\"helpmeet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10190191\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

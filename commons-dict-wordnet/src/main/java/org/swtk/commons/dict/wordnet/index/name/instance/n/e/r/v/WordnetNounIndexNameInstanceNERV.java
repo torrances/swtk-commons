@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.n.e.r.v;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNERV {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"nerva\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11224059\"]}");
+	add("{\"term\":\"nerve\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04845441\", \"04864721\", \"05481998\"]}");
+	add("{\"term\":\"nervelessness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04865863\"]}");
+	add("{\"term\":\"nerveroot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12077102\"]}");
+	add("{\"term\":\"nerves\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04869467\", \"14398981\"]}");
+	add("{\"term\":\"nervi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11223910\"]}");
+	add("{\"term\":\"nervousness\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04632316\", \"14398981\", \"07540999\"]}");
+	add("{\"term\":\"nervure\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02471366\", \"13118945\"]}");
+	add("{\"term\":\"nervus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05481998\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

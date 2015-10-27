@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.n.o.t.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNOTE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"note\", \"synsetCount\":9, \"upperType\":\"NOUN\", \"ids\":[\"13419642\", \"14458911\", \"06775984\", \"13414935\", \"04734952\", \"07097011\", \"06878395\", \"06638793\", \"06516453\"]}");
+	add("{\"term\":\"notebook\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03838213\", \"06427062\"]}");
+	add("{\"term\":\"notecase\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04555648\"]}");
+	add("{\"term\":\"notechis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01752956\"]}");
+	add("{\"term\":\"notemigonus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01444696\"]}");
+	add("{\"term\":\"notepad\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15045652\"]}");
+	add("{\"term\":\"notepaper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06269819\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

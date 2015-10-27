@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.h.i.l.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHILL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hill\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"03797867\", \"11069933\", \"11070052\", \"03797581\", \"09325914\"]}");
+	add("{\"term\":\"hillary\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11070178\"]}");
+	add("{\"term\":\"hillbilly\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10195988\"]}");
+	add("{\"term\":\"hillel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11070431\"]}");
+	add("{\"term\":\"hilliness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04779796\"]}");
+	add("{\"term\":\"hillock\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09349568\"]}");
+	add("{\"term\":\"hillside\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09326434\"]}");
+	add("{\"term\":\"hilltop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08602314\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

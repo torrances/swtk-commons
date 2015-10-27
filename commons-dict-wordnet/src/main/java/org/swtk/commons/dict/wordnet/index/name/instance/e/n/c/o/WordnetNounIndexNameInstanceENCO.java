@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.e.n.c.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceENCO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"encoding\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00617127\"]}");
+	add("{\"term\":\"encolure\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01902535\"]}");
+	add("{\"term\":\"encomium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06706894\"]}");
+	add("{\"term\":\"encompassment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14450941\"]}");
+	add("{\"term\":\"encopresis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14410882\"]}");
+	add("{\"term\":\"encore\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00100259\"]}");
+	add("{\"term\":\"encounter\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07195703\", \"00148007\", \"07429522\", \"00961487\"]}");
+	add("{\"term\":\"encouragement\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07556837\", \"01213509\", \"06704187\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

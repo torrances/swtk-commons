@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.a.c.a.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceACAN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"acantha\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13935854\"]}");
+	add("{\"term\":\"acanthaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12832616\"]}");
+	add("{\"term\":\"acanthion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05238594\"]}");
+	add("{\"term\":\"acanthisitta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01591499\"]}");
+	add("{\"term\":\"acanthisittidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01590813\"]}");
+	add("{\"term\":\"acanthocephala\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01925812\"]}");
+	add("{\"term\":\"acanthocephalan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01926045\"]}");
+	add("{\"term\":\"acanthocereus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11863330\"]}");
+	add("{\"term\":\"acanthocybium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02627762\"]}");
+	add("{\"term\":\"acanthocyte\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05462028\"]}");
+	add("{\"term\":\"acanthocytosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14095240\"]}");
+	add("{\"term\":\"acantholysis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14245083\"]}");
+	add("{\"term\":\"acanthoma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14259149\"]}");
+	add("{\"term\":\"acanthophis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01752668\"]}");
+	add("{\"term\":\"acanthopterygian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02554802\"]}");
+	add("{\"term\":\"acanthopterygii\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02554455\"]}");
+	add("{\"term\":\"acanthoscelides\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02185150\"]}");
+	add("{\"term\":\"acanthosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14245223\"]}");
+	add("{\"term\":\"acanthuridae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02623737\"]}");
+	add("{\"term\":\"acanthurus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02624049\"]}");
+	add("{\"term\":\"acanthus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12832995\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

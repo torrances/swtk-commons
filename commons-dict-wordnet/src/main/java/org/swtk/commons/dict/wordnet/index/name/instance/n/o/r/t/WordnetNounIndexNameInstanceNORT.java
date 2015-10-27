@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.n.o.r.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNORT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"north\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"11229780\", \"13853640\", \"13857626\", \"08578618\", \"13853375\", \"09074770\", \"09075108\"]}");
+	add("{\"term\":\"northampton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08906148\"]}");
+	add("{\"term\":\"northamptonshire\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08906000\"]}");
+	add("{\"term\":\"northeast\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"08578767\", \"13857745\", \"08581519\", \"13854042\"]}");
+	add("{\"term\":\"northeaster\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11483350\"]}");
+	add("{\"term\":\"northeastward\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13854042\"]}");
+	add("{\"term\":\"norther\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11508350\"]}");
+	add("{\"term\":\"northerly\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11508350\"]}");
+	add("{\"term\":\"northern\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06961969\"]}");
+	add("{\"term\":\"northerner\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10821887\", \"10382381\"]}");
+	add("{\"term\":\"northernness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05086387\"]}");
+	add("{\"term\":\"northland\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08580527\"]}");
+	add("{\"term\":\"northman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09749546\"]}");
+	add("{\"term\":\"northrop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11229980\"]}");
+	add("{\"term\":\"northumberland\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08904555\"]}");
+	add("{\"term\":\"northumbria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08906374\"]}");
+	add("{\"term\":\"northward\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13853375\"]}");
+	add("{\"term\":\"northwest\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"08579483\", \"13857084\", \"13858452\", \"08581668\"]}");
+	add("{\"term\":\"northwester\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11468812\"]}");
+	add("{\"term\":\"northwestward\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13857084\"]}");
+	add("{\"term\":\"nortriptyline\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03836122\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

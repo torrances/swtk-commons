@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.a.c.h.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceACHI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"achievability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14506028\"]}");
+	add("{\"term\":\"achievement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00035910\"]}");
+	add("{\"term\":\"achiever\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09782244\"]}");
+	add("{\"term\":\"achillea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11936936\"]}");
+	add("{\"term\":\"achilles\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09617472\"]}");
+	add("{\"term\":\"achimenes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12850982\"]}");
+	add("{\"term\":\"aching\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14347092\"]}");
+	add("{\"term\":\"achira\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12371608\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

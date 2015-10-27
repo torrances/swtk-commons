@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.c.o.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSCOM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"scomber\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02627007\"]}");
+	add("{\"term\":\"scomberesocidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02553947\"]}");
+	add("{\"term\":\"scomberesox\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02554125\"]}");
+	add("{\"term\":\"scomberomorus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02628048\"]}");
+	add("{\"term\":\"scombresocidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02553947\"]}");
+	add("{\"term\":\"scombresox\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02554125\"]}");
+	add("{\"term\":\"scombridae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02626498\"]}");
+	add("{\"term\":\"scombroid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02626075\"]}");
+	add("{\"term\":\"scombroidea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02625800\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

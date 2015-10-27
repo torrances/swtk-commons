@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.y.n.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSYND {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"syndactylism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14495510\"]}");
+	add("{\"term\":\"syndactyly\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14495510\"]}");
+	add("{\"term\":\"syndic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10706381\"]}");
+	add("{\"term\":\"syndicalism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08338551\"]}");
+	add("{\"term\":\"syndicalist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09811257\"]}");
+	add("{\"term\":\"syndicate\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"08372251\", \"08253359\", \"08263223\"]}");
+	add("{\"term\":\"syndication\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01117669\", \"01140868\"]}");
+	add("{\"term\":\"syndicator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10706521\"]}");
+	add("{\"term\":\"syndrome\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14327487\", \"05879412\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

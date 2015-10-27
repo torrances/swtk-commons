@@ -1,0 +1,25 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.m.a.r.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMARI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"mari\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06970027\", \"09725792\"]}");
+	add("{\"term\":\"maria\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12385675\", \"09369510\"]}");
+	add("{\"term\":\"mariachi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08267330\"]}");
+	add("{\"term\":\"marianas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08856544\"]}");
+	add("{\"term\":\"maricopa\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06935843\", \"09679945\"]}");
+	add("{\"term\":\"mariehamn\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08798572\"]}");
+	add("{\"term\":\"marigold\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12040976\"]}");
+	add("{\"term\":\"marihuana\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02953127\", \"12417727\"]}");
+	add("{\"term\":\"marijuana\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02953127\", \"12417727\"]}");
+	add("{\"term\":\"marimba\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03726875\"]}");
+	add("{\"term\":\"marina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03727081\"]}");
+	add("{\"term\":\"marinade\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07840478\"]}");
+	add("{\"term\":\"marinara\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07854417\"]}");
+	add("{\"term\":\"marine\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10313979\", \"10313800\"]}");
+	add("{\"term\":\"marineland\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03727182\"]}");
+	add("{\"term\":\"mariner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10314263\"]}");
+	add("{\"term\":\"marines\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08209747\", \"08209900\"]}");
+	add("{\"term\":\"marini\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11176802\"]}");
+	add("{\"term\":\"marino\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11176802\"]}");
+	add("{\"term\":\"marionette\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04031744\"]}");
+	add("{\"term\":\"mariposa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12466705\"]}");
+	add("{\"term\":\"mariposan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06937436\"]}");
+	add("{\"term\":\"mariticide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00222594\"]}");
+	add("{\"term\":\"maritimes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08840570\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

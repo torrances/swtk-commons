@@ -1,0 +1,26 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.l.o.n.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLONG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"longan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12764112\"]}");
+	add("{\"term\":\"longanberry\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07782385\", \"12764112\"]}");
+	add("{\"term\":\"longanimity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04647895\"]}");
+	add("{\"term\":\"longbeard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02828382\"]}");
+	add("{\"term\":\"longboat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03693146\"]}");
+	add("{\"term\":\"longbow\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03693254\"]}");
+	add("{\"term\":\"longbowman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10290474\"]}");
+	add("{\"term\":\"longer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10290575\"]}");
+	add("{\"term\":\"longevity\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04935067\", \"05058885\"]}");
+	add("{\"term\":\"longfellow\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11157918\"]}");
+	add("{\"term\":\"longhand\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06361681\"]}");
+	add("{\"term\":\"longhorn\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02407084\"]}");
+	add("{\"term\":\"longicorn\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02171351\"]}");
+	add("{\"term\":\"longing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07501768\"]}");
+	add("{\"term\":\"longitude\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08614224\"]}");
+	add("{\"term\":\"longlegs\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02037315\"]}");
+	add("{\"term\":\"longness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05058752\", \"05140552\"]}");
+	add("{\"term\":\"longroot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11826838\"]}");
+	add("{\"term\":\"longshoreman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10674608\"]}");
+	add("{\"term\":\"longshot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03693642\"]}");
+	add("{\"term\":\"longsightedness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14577603\"]}");
+	add("{\"term\":\"longueur\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15159006\"]}");
+	add("{\"term\":\"longways\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00540547\"]}");
+	add("{\"term\":\"longwool\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02416855\"]}");
+	add("{\"term\":\"longyi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03703247\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

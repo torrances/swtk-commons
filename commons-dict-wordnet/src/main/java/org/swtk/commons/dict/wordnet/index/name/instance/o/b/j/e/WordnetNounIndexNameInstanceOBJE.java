@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.o.b.j.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceOBJE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"object\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"06142175\", \"05818974\", \"06321227\", \"05990115\", \"00002684\"]}");
+	add("{\"term\":\"objectification\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03843680\", \"00933903\"]}");
+	add("{\"term\":\"objection\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"01027620\", \"01179523\", \"07222998\", \"07261402\"]}");
+	add("{\"term\":\"objectionableness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04789019\"]}");
+	add("{\"term\":\"objective\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03843818\", \"05990115\"]}");
+	add("{\"term\":\"objectiveness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04899539\"]}");
+	add("{\"term\":\"objectivity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04899539\"]}");
+	add("{\"term\":\"objector\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10037746\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

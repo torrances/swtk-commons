@@ -1,0 +1,21 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.t.a.n.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTANG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"tang\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"01406236\", \"01406354\", \"01407748\", \"01407891\", \"05723811\", \"08175819\", \"05000286\"]}");
+	add("{\"term\":\"tanga\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09058426\", \"13724725\"]}");
+	add("{\"term\":\"tanganyika\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09057780\", \"09356418\"]}");
+	add("{\"term\":\"tange\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11350958\"]}");
+	add("{\"term\":\"tangelo\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07764550\", \"12731942\"]}");
+	add("{\"term\":\"tangency\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03098248\", \"14443478\"]}");
+	add("{\"term\":\"tangent\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13810247\", \"13893773\"]}");
+	add("{\"term\":\"tangerine\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04972751\", \"07764392\", \"12731055\"]}");
+	add("{\"term\":\"tangibility\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04767279\"]}");
+	add("{\"term\":\"tangibleness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04767279\"]}");
+	add("{\"term\":\"tangier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08992962\"]}");
+	add("{\"term\":\"tangiers\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08992962\"]}");
+	add("{\"term\":\"tanginess\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05000286\"]}");
+	add("{\"term\":\"tangle\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05693684\", \"09477542\"]}");
+	add("{\"term\":\"tanglebush\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12323209\"]}");
+	add("{\"term\":\"tango\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07071869\", \"00538460\"]}");
+	add("{\"term\":\"tangor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12731677\"]}");
+	add("{\"term\":\"tangram\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04395661\"]}");
+	add("{\"term\":\"tangshan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08746582\"]}");
+	add("{\"term\":\"tanguy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11351058\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.e.m.b.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceEMBO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"embodiment\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00934815\", \"05949928\", \"10438047\"]}");
+	add("{\"term\":\"embolectomy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00674477\"]}");
+	add("{\"term\":\"embolism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14124565\", \"15197711\"]}");
+	add("{\"term\":\"embolus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14396812\"]}");
+	add("{\"term\":\"embonpoint\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05008078\"]}");
+	add("{\"term\":\"embossment\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04080781\", \"06868482\"]}");
+	add("{\"term\":\"embothrium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12236899\"]}");
+	add("{\"term\":\"embouchure\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03800320\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

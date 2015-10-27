@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.b.o.b.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBOBB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"bobber\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02863403\"]}");
+	add("{\"term\":\"bobbin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02863755\"]}");
+	add("{\"term\":\"bobble\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00072684\"]}");
+	add("{\"term\":\"bobby\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09882027\"]}");
+	add("{\"term\":\"bobbysock\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02716077\"]}");
+	add("{\"term\":\"bobbysocks\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02716077\"]}");
+	add("{\"term\":\"bobbysoxer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09882119\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

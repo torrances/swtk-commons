@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.r.y.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCRYS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"crystal\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"03147330\", \"03147485\", \"14903901\", \"09283372\", \"03147563\", \"14907357\"]}");
+	add("{\"term\":\"crystallisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11430412\"]}");
+	add("{\"term\":\"crystallite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09283650\"]}");
+	add("{\"term\":\"crystallization\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05780041\", \"09283372\", \"11430412\"]}");
+	add("{\"term\":\"crystallizing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11430412\"]}");
+	add("{\"term\":\"crystallographer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10001270\"]}");
+	add("{\"term\":\"crystallography\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06108483\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

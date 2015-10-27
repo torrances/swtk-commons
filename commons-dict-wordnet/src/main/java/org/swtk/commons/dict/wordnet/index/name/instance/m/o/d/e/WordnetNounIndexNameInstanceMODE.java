@@ -1,0 +1,25 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.m.o.d.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMODE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"mode\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"06033024\", \"06874680\", \"13823636\", \"13824846\", \"13946962\", \"04936080\"]}");
+	add("{\"term\":\"model\", \"synsetCount\":9, \"upperType\":\"NOUN\", \"ids\":[\"00900502\", \"10310901\", \"05945830\", \"10344517\", \"05933998\", \"03782816\", \"10344226\", \"05854179\", \"05898856\"]}");
+	add("{\"term\":\"modeler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10345440\"]}");
+	add("{\"term\":\"modeling\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00900502\", \"00939711\", \"03785154\"]}");
+	add("{\"term\":\"modeller\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10345440\"]}");
+	add("{\"term\":\"modelling\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00900502\", \"00939711\"]}");
+	add("{\"term\":\"modem\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03783287\"]}");
+	add("{\"term\":\"moderate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09924290\"]}");
+	add("{\"term\":\"moderateness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05124960\", \"05154151\"]}");
+	add("{\"term\":\"moderation\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00354075\", \"04890809\", \"07371701\", \"05124960\"]}");
+	add("{\"term\":\"moderationism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05996168\"]}");
+	add("{\"term\":\"moderationist\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09924290\", \"10345623\"]}");
+	add("{\"term\":\"moderatism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06224132\"]}");
+	add("{\"term\":\"moderator\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"10345753\", \"10345923\", \"10346058\", \"14751534\"]}");
+	add("{\"term\":\"moderatorship\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00596660\"]}");
+	add("{\"term\":\"modern\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06839776\", \"10346217\"]}");
+	add("{\"term\":\"modernisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00265756\"]}");
+	add("{\"term\":\"modernism\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00413462\", \"05057819\", \"03783494\"]}");
+	add("{\"term\":\"modernist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10346309\"]}");
+	add("{\"term\":\"modernity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05057819\"]}");
+	add("{\"term\":\"modernization\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06420633\", \"00265756\"]}");
+	add("{\"term\":\"modernness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05057819\"]}");
+	add("{\"term\":\"modestness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04908124\", \"05154151\"]}");
+	add("{\"term\":\"modesty\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04907298\", \"04908124\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

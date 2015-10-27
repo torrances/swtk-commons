@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.p.l.u.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePLUN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"plunder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13283562\"]}");
+	add("{\"term\":\"plunderage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00778936\"]}");
+	add("{\"term\":\"plunderer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10462744\"]}");
+	add("{\"term\":\"plundering\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00967999\"]}");
+	add("{\"term\":\"plunge\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07448809\", \"00443832\"]}");
+	add("{\"term\":\"plunger\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03955226\", \"03976514\", \"10039131\", \"10653473\"]}");
+	add("{\"term\":\"plunk\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00133039\", \"07404907\"]}");
+	add("{\"term\":\"plunker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00133039\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.a.n.c.h;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceANCH {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"anchor\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"09812410\", \"05702197\", \"02712226\"]}");
+	add("{\"term\":\"anchorage\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00052872\", \"08657351\", \"09078369\", \"13341713\", \"13946615\"]}");
+	add("{\"term\":\"anchorite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10538719\"]}");
+	add("{\"term\":\"anchorman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09812410\"]}");
+	add("{\"term\":\"anchorperson\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09812410\"]}");
+	add("{\"term\":\"anchovy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02536465\", \"07799643\"]}");
+	add("{\"term\":\"anchusa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12838224\"]}");
+	add("{\"term\":\"anchylosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14045991\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.a.m.e.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceAMER {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"amercement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13322350\"]}");
+	add("{\"term\":\"america\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09218493\", \"09067337\"]}");
+	add("{\"term\":\"american\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"09757749\", \"06960241\", \"09758057\"]}");
+	add("{\"term\":\"americana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02704252\"]}");
+	add("{\"term\":\"americanisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13451061\"]}");
+	add("{\"term\":\"americanism\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00414567\", \"07095537\", \"04885734\"]}");
+	add("{\"term\":\"americanization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13451061\"]}");
+	add("{\"term\":\"americium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14652672\"]}");
+	add("{\"term\":\"amerind\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06919215\"]}");
+	add("{\"term\":\"amerindian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09664887\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

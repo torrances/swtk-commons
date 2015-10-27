@@ -1,0 +1,21 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.g.r.a.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceGRAP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"grape\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03458491\", \"13165571\", \"07774656\"]}");
+	add("{\"term\":\"grapefruit\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07765945\", \"12730448\"]}");
+	add("{\"term\":\"grapeshot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03458491\"]}");
+	add("{\"term\":\"grapevine\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13165571\", \"07238295\"]}");
+	add("{\"term\":\"graph\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06831828\", \"07012462\", \"07012937\"]}");
+	add("{\"term\":\"grapheme\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06831828\"]}");
+	add("{\"term\":\"graphic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03458640\"]}");
+	add("{\"term\":\"graphics\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03458929\", \"07011408\"]}");
+	add("{\"term\":\"graphite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14820745\"]}");
+	add("{\"term\":\"graphologist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10163708\"]}");
+	add("{\"term\":\"graphology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06258491\"]}");
+	add("{\"term\":\"graphospasm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14384320\"]}");
+	add("{\"term\":\"grapnel\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03459054\", \"03459155\"]}");
+	add("{\"term\":\"grapo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08037882\"]}");
+	add("{\"term\":\"grappa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07920202\"]}");
+	add("{\"term\":\"grappelli\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11032038\"]}");
+	add("{\"term\":\"grapple\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00623506\", \"03041093\", \"03459155\"]}");
+	add("{\"term\":\"grappler\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03459155\", \"10812808\"]}");
+	add("{\"term\":\"grappling\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00448525\", \"00623506\"]}");
+	add("{\"term\":\"graptophyllum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12833425\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

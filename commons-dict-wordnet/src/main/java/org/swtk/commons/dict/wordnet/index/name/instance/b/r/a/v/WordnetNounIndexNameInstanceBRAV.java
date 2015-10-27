@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.b.r.a.v;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBRAV {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"bravado\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06902641\"]}");
+	add("{\"term\":\"brave\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07961030\", \"09665626\"]}");
+	add("{\"term\":\"braveness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04864314\"]}");
+	add("{\"term\":\"bravery\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07541421\", \"04864314\"]}");
+	add("{\"term\":\"bravo\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06705579\", \"09833101\"]}");
+	add("{\"term\":\"bravura\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05645201\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

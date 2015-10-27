@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.m.a.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSMAR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"smarm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06709053\"]}");
+	add("{\"term\":\"smarminess\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04875718\"]}");
+	add("{\"term\":\"smart\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14355278\"]}");
+	add("{\"term\":\"smarta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10633355\"]}");
+	add("{\"term\":\"smarting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14355278\"]}");
+	add("{\"term\":\"smartness\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"04640320\", \"04820943\", \"05628738\", \"14355278\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

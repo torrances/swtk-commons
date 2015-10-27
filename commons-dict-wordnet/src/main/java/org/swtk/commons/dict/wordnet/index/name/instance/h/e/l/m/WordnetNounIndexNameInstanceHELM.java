@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.h.e.l.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHELM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"helm\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01259202\", \"03518055\"]}");
+	add("{\"term\":\"helmet\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03518281\", \"03518520\"]}");
+	add("{\"term\":\"helmetflower\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"11743696\", \"12075147\", \"12888586\"]}");
+	add("{\"term\":\"helmholtz\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11059340\"]}");
+	add("{\"term\":\"helminth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01925358\"]}");
+	add("{\"term\":\"helminthiasis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14477020\"]}");
+	add("{\"term\":\"helminthic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04535925\"]}");
+	add("{\"term\":\"helminthostachys\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12982449\"]}");
+	add("{\"term\":\"helmsman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10189389\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

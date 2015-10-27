@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.d.i.a.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDIAM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"diam\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05109077\"]}");
+	add("{\"term\":\"diamagnet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14628941\"]}");
+	add("{\"term\":\"diamagnetism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11500216\"]}");
+	add("{\"term\":\"diamante\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03192974\", \"04180759\"]}");
+	add("{\"term\":\"diameter\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13894356\", \"05109077\"]}");
+	add("{\"term\":\"diamine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14629035\"]}");
+	add("{\"term\":\"diamond\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"02783939\", \"02802752\", \"03192656\", \"13905618\", \"14858733\", \"13393131\"]}");
+	add("{\"term\":\"diamondback\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01758222\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

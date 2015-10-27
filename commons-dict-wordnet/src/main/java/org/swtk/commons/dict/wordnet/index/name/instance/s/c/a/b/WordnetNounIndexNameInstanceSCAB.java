@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.c.a.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSCAB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"scab\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05271746\", \"10573883\"]}");
+	add("{\"term\":\"scabbard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04148392\"]}");
+	add("{\"term\":\"scabicide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15062883\"]}");
+	add("{\"term\":\"scabies\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14203809\"]}");
+	add("{\"term\":\"scabiosa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12704168\"]}");
+	add("{\"term\":\"scabious\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12704168\"]}");
+	add("{\"term\":\"scablands\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09448222\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

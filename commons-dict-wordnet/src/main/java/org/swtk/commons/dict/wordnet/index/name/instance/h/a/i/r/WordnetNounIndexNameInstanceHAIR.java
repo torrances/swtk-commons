@@ -1,0 +1,26 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.h.a.i.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHAIR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hair\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"01902791\", \"03480797\", \"05261857\", \"13110851\", \"13783743\", \"05262259\"]}");
+	add("{\"term\":\"hairball\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09323950\"]}");
+	add("{\"term\":\"hairbrush\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03480704\"]}");
+	add("{\"term\":\"haircare\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00258095\"]}");
+	add("{\"term\":\"haircloth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03480797\"]}");
+	add("{\"term\":\"haircut\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00360648\", \"05265076\"]}");
+	add("{\"term\":\"hairdo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05264345\"]}");
+	add("{\"term\":\"hairdresser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10175409\"]}");
+	add("{\"term\":\"hairdressing\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00258095\", \"03480946\"]}");
+	add("{\"term\":\"hairgrip\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02863980\"]}");
+	add("{\"term\":\"hairiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04690810\"]}");
+	add("{\"term\":\"hairlessness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04691064\", \"14480666\"]}");
+	add("{\"term\":\"hairline\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05263703\", \"06815116\"]}");
+	add("{\"term\":\"hairnet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03481084\"]}");
+	add("{\"term\":\"hairpiece\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03481206\"]}");
+	add("{\"term\":\"hairpin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03481436\"]}");
+	add("{\"term\":\"hairsbreadth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13783743\"]}");
+	add("{\"term\":\"hairsplitter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10175733\"]}");
+	add("{\"term\":\"hairsplitting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05757207\"]}");
+	add("{\"term\":\"hairspring\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03482266\"]}");
+	add("{\"term\":\"hairstreak\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02285555\"]}");
+	add("{\"term\":\"hairstyle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05264345\"]}");
+	add("{\"term\":\"hairstylist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10175409\"]}");
+	add("{\"term\":\"hairtail\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02625585\"]}");
+	add("{\"term\":\"hairweaving\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00258335\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

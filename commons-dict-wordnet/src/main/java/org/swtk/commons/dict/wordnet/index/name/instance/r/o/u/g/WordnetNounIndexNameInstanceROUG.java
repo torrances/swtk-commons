@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.r.o.u.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceROUG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"rouge\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04119846\"]}");
+	add("{\"term\":\"rougeberry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11877042\"]}");
+	add("{\"term\":\"rough\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08658537\"]}");
+	add("{\"term\":\"roughage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07584383\"]}");
+	add("{\"term\":\"roughcast\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04120015\", \"15030579\"]}");
+	add("{\"term\":\"roughleg\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01610241\"]}");
+	add("{\"term\":\"roughneck\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09898763\"]}");
+	add("{\"term\":\"roughness\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"00375254\", \"13559097\", \"14000631\", \"14547631\", \"04824795\", \"04995915\", \"04955418\"]}");
+	add("{\"term\":\"roughrider\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10559970\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

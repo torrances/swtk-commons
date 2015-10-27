@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.c.r.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSCRO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"scrod\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02526248\", \"07805358\"]}");
+	add("{\"term\":\"scrofula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14167729\"]}");
+	add("{\"term\":\"scroll\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06419376\", \"13898609\"]}");
+	add("{\"term\":\"scrooge\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10377436\"]}");
+	add("{\"term\":\"scrophularia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12897444\"]}");
+	add("{\"term\":\"scrophulariaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12896792\"]}");
+	add("{\"term\":\"scrophulariales\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12829511\"]}");
+	add("{\"term\":\"scrotum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05525057\"]}");
+	add("{\"term\":\"scrounger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10349902\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

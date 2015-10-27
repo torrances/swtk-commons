@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.e.n.t.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceENTO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"entoblast\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01467214\"]}");
+	add("{\"term\":\"entoderm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01467214\"]}");
+	add("{\"term\":\"entoloma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13032790\"]}");
+	add("{\"term\":\"entolomataceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13032616\"]}");
+	add("{\"term\":\"entombment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07466297\"]}");
+	add("{\"term\":\"entomion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05239833\"]}");
+	add("{\"term\":\"entomologist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10079712\"]}");
+	add("{\"term\":\"entomology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06081825\"]}");
+	add("{\"term\":\"entomophobia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14408565\"]}");
+	add("{\"term\":\"entomophthora\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12995422\"]}");
+	add("{\"term\":\"entomophthoraceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12995217\"]}");
+	add("{\"term\":\"entomophthorales\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12995046\"]}");
+	add("{\"term\":\"entomostraca\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01996603\"]}");
+	add("{\"term\":\"entoparasite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01387658\"]}");
+	add("{\"term\":\"entoproct\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02317144\"]}");
+	add("{\"term\":\"entoprocta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02316973\"]}");
+	add("{\"term\":\"entourage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08446124\"]}");
+	add("{\"term\":\"entozoan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01387658\"]}");
+	add("{\"term\":\"entozoon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01387658\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

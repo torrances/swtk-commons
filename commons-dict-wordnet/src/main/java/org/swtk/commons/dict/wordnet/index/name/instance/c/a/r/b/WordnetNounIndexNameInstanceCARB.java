@@ -1,0 +1,25 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.a.r.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCARB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"carbamate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14816451\"]}");
+	add("{\"term\":\"carbamide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15110039\"]}");
+	add("{\"term\":\"carbide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14816720\"]}");
+	add("{\"term\":\"carbine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02964887\"]}");
+	add("{\"term\":\"carbineer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09913198\"]}");
+	add("{\"term\":\"carbohydrate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14816873\"]}");
+	add("{\"term\":\"carboloy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14817393\"]}");
+	add("{\"term\":\"carbomycin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02965150\"]}");
+	add("{\"term\":\"carbon\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"02965287\", \"14821983\", \"14657384\"]}");
+	add("{\"term\":\"carbonado\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07680213\", \"14817563\"]}");
+	add("{\"term\":\"carbonara\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07847122\"]}");
+	add("{\"term\":\"carbonate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14822620\"]}");
+	add("{\"term\":\"carbonation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13464171\"]}");
+	add("{\"term\":\"carbondale\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09105689\"]}");
+	add("{\"term\":\"carboniferous\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15152259\"]}");
+	add("{\"term\":\"carbonisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13464543\"]}");
+	add("{\"term\":\"carbonization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13464543\"]}");
+	add("{\"term\":\"carbonyl\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14814696\"]}");
+	add("{\"term\":\"carborundum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14823646\"]}");
+	add("{\"term\":\"carboxyl\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14814966\"]}");
+	add("{\"term\":\"carboy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02965497\"]}");
+	add("{\"term\":\"carbuncle\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14207256\", \"14901637\"]}");
+	add("{\"term\":\"carburetor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02965636\"]}");
+	add("{\"term\":\"carburettor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02965636\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

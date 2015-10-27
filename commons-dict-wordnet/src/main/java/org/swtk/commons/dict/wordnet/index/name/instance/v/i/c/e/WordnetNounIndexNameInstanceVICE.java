@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.v.i.c.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceVICE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"vice\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00748327\", \"04861104\"]}");
+	add("{\"term\":\"vicegerent\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10770820\"]}");
+	add("{\"term\":\"vicereine\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10771453\", \"10771688\"]}");
+	add("{\"term\":\"viceroy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02279920\", \"10771453\"]}");
+	add("{\"term\":\"viceroyalty\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08695889\"]}");
+	add("{\"term\":\"viceroyship\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00606731\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

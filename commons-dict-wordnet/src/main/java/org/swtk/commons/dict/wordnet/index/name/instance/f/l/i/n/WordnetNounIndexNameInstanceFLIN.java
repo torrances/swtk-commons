@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.f.l.i.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFLIN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"flinch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00867149\"]}");
+	add("{\"term\":\"flinders\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07972864\", \"10993331\"]}");
+	add("{\"term\":\"flindersia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12719043\"]}");
+	add("{\"term\":\"flindosa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12719358\"]}");
+	add("{\"term\":\"flindosy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12719358\"]}");
+	add("{\"term\":\"fling\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00105984\", \"00511486\", \"00788715\"]}");
+	add("{\"term\":\"flint\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"09123290\", \"09304451\", \"14895229\"]}");
+	add("{\"term\":\"flinthead\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02007509\"]}");
+	add("{\"term\":\"flintlock\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03368395\", \"03368595\"]}");
+	add("{\"term\":\"flintstone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14895419\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.m.o.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSMOO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"smooch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00139419\"]}");
+	add("{\"term\":\"smooching\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00855630\"]}");
+	add("{\"term\":\"smooth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01266417\"]}");
+	add("{\"term\":\"smoothbark\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12356454\"]}");
+	add("{\"term\":\"smoothbore\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04254672\"]}");
+	add("{\"term\":\"smoother\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03255291\"]}");
+	add("{\"term\":\"smoothhound\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01495210\"]}");
+	add("{\"term\":\"smoothie\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07930511\", \"10634695\"]}");
+	add("{\"term\":\"smoothness\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"04716287\", \"04776955\", \"04920499\", \"07083250\", \"04954363\"]}");
+	add("{\"term\":\"smoothy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10634695\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

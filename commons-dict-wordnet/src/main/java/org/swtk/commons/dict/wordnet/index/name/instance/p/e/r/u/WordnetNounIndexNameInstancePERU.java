@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.p.e.r.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePERU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"peru\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09001424\"]}");
+	add("{\"term\":\"peruke\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03923449\"]}");
+	add("{\"term\":\"perusal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06610798\"]}");
+	add("{\"term\":\"perusing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06610798\"]}");
+	add("{\"term\":\"perutz\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11250967\"]}");
+	add("{\"term\":\"peruvian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09745913\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

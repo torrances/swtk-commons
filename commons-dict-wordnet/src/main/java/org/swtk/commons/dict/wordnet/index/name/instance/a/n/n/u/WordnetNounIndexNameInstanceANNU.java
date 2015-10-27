@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.a.n.n.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceANNU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"annual\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06438138\", \"11573257\"]}");
+	add("{\"term\":\"annualry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05575122\"]}");
+	add("{\"term\":\"annuitant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09814997\"]}");
+	add("{\"term\":\"annuity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13315526\"]}");
+	add("{\"term\":\"annulet\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02716628\", \"02716929\"]}");
+	add("{\"term\":\"annulment\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00232754\", \"01243544\", \"14587637\"]}");
+	add("{\"term\":\"annulus\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13116107\", \"13898031\"]}");
+	add("{\"term\":\"annum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15228997\"]}");
+	add("{\"term\":\"annunciation\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06738907\", \"06759903\", \"15210982\"]}");
+	add("{\"term\":\"annunciator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02717050\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

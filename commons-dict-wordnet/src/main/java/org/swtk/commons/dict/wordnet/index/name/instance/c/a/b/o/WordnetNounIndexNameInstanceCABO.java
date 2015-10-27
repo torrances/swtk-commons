@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.a.b.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCABO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cabochon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14724207\"]}");
+	add("{\"term\":\"cabomba\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11738565\"]}");
+	add("{\"term\":\"cabombaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11738289\"]}");
+	add("{\"term\":\"caboodle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07971317\"]}");
+	add("{\"term\":\"caboose\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02935907\", \"03417130\"]}");
+	add("{\"term\":\"cabot\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10897336\", \"10897593\"]}");
+	add("{\"term\":\"cabotage\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00316133\", \"05183298\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.d.e.s.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDESP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"despair\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07557311\", \"14509858\"]}");
+	add("{\"term\":\"despatch\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00062110\", \"00223115\", \"05066981\", \"06695539\"]}");
+	add("{\"term\":\"desperado\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10028042\"]}");
+	add("{\"term\":\"desperate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10028189\"]}");
+	add("{\"term\":\"desperation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04669747\", \"14509858\"]}");
+	add("{\"term\":\"despicability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04815223\"]}");
+	add("{\"term\":\"despicableness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04815223\"]}");
+	add("{\"term\":\"despisal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07563140\"]}");
+	add("{\"term\":\"despising\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07563140\"]}");
+	add("{\"term\":\"despite\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00419800\", \"07518219\"]}");
+	add("{\"term\":\"despoilation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00968973\"]}");
+	add("{\"term\":\"despoiler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10462744\"]}");
+	add("{\"term\":\"despoilment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00968973\"]}");
+	add("{\"term\":\"despoina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09592596\"]}");
+	add("{\"term\":\"despoliation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00968973\"]}");
+	add("{\"term\":\"despondence\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07553783\"]}");
+	add("{\"term\":\"despondency\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07553783\"]}");
+	add("{\"term\":\"despot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10754955\"]}");
+	add("{\"term\":\"despotism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08457622\", \"14467378\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

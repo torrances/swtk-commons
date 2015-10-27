@@ -1,0 +1,27 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.f.r.a.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFRAN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"franc\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13684295\"]}");
+	add("{\"term\":\"france\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10997364\", \"08949695\"]}");
+	add("{\"term\":\"franchise\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05194714\", \"08077029\", \"06538802\"]}");
+	add("{\"term\":\"franciscan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10798221\"]}");
+	add("{\"term\":\"francisella\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01368115\"]}");
+	add("{\"term\":\"francium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14662042\"]}");
+	add("{\"term\":\"franck\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10998418\", \"10998689\"]}");
+	add("{\"term\":\"franco\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10998838\"]}");
+	add("{\"term\":\"francoa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12818453\"]}");
+	add("{\"term\":\"francophil\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10128488\"]}");
+	add("{\"term\":\"francophile\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10128488\"]}");
+	add("{\"term\":\"francophobe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10128601\"]}");
+	add("{\"term\":\"frangibility\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05050909\"]}");
+	add("{\"term\":\"frangibleness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05050909\"]}");
+	add("{\"term\":\"frangipane\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07639084\"]}");
+	add("{\"term\":\"frangipani\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11794982\"]}");
+	add("{\"term\":\"frangipanni\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11794982\"]}");
+	add("{\"term\":\"frank\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07692347\", \"09708200\"]}");
+	add("{\"term\":\"frankenstein\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"09622369\", \"09622575\", \"14031235\"]}");
+	add("{\"term\":\"frankfort\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08790755\", \"09112196\"]}");
+	add("{\"term\":\"frankfurt\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08790755\"]}");
+	add("{\"term\":\"frankfurter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07692347\"]}");
+	add("{\"term\":\"frankincense\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14898102\"]}");
+	add("{\"term\":\"franklin\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"10128819\", \"10999075\", \"10999531\"]}");
+	add("{\"term\":\"frankliniella\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02274804\"]}");
+	add("{\"term\":\"frankness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04658088\", \"04878915\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

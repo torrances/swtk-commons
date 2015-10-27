@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.t.e.n.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTEND {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"tendency\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"08699515\", \"04951225\", \"07514352\", \"06206319\"]}");
+	add("{\"term\":\"tendentiousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06214024\"]}");
+	add("{\"term\":\"tender\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"04416146\", \"04416263\", \"04416414\", \"07179737\", \"09841233\", \"13395181\"]}");
+	add("{\"term\":\"tenderfoot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10720612\"]}");
+	add("{\"term\":\"tendergreen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11899760\"]}");
+	add("{\"term\":\"tenderheartedness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07569907\"]}");
+	add("{\"term\":\"tenderisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00248930\"]}");
+	add("{\"term\":\"tenderiser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15093003\"]}");
+	add("{\"term\":\"tenderization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00248930\"]}");
+	add("{\"term\":\"tenderizer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15093003\"]}");
+	add("{\"term\":\"tenderloin\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07675538\", \"08707384\"]}");
+	add("{\"term\":\"tenderness\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"07520586\", \"07560035\", \"07569907\", \"14356022\", \"04634598\"]}");
+	add("{\"term\":\"tending\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00656128\"]}");
+	add("{\"term\":\"tendinitis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14379983\"]}");
+	add("{\"term\":\"tendon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05303752\"]}");
+	add("{\"term\":\"tendonitis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14379983\"]}");
+	add("{\"term\":\"tendosynovitis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14380398\"]}");
+	add("{\"term\":\"tendrac\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01896848\"]}");
+	add("{\"term\":\"tendril\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13123534\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

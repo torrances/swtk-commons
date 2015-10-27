@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.p.a.r.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePARL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"parlance\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07095369\"]}");
+	add("{\"term\":\"parlay\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00508282\"]}");
+	add("{\"term\":\"parley\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07156145\"]}");
+	add("{\"term\":\"parliament\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00493508\", \"08336128\"]}");
+	add("{\"term\":\"parliamentarian\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10420008\", \"10420136\"]}");
+	add("{\"term\":\"parlor\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03685038\", \"03897235\"]}");
+	add("{\"term\":\"parlormaid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10420525\"]}");
+	add("{\"term\":\"parlour\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03685038\", \"03897235\"]}");
+	add("{\"term\":\"parlourmaid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10420525\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

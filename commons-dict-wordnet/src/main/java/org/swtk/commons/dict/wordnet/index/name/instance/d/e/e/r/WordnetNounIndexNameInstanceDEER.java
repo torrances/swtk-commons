@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.d.e.e.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDEER {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"deer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02432691\"]}");
+	add("{\"term\":\"deerberry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12269811\"]}");
+	add("{\"term\":\"deere\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10946855\"]}");
+	add("{\"term\":\"deerhound\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02094654\"]}");
+	add("{\"term\":\"deerskin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14786665\"]}");
+	add("{\"term\":\"deerstalker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03175538\"]}");
+	add("{\"term\":\"deerstalking\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00712980\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

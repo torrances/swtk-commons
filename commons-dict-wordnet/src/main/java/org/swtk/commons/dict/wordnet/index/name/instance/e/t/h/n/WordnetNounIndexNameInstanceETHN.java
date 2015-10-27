@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.e.t.h.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceETHN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ethnarch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10085068\"]}");
+	add("{\"term\":\"ethnic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10085354\"]}");
+	add("{\"term\":\"ethnicity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04806382\"]}");
+	add("{\"term\":\"ethnocentrism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06211402\"]}");
+	add("{\"term\":\"ethnographer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10085450\"]}");
+	add("{\"term\":\"ethnography\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06155997\"]}");
+	add("{\"term\":\"ethnologist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10085565\"]}");
+	add("{\"term\":\"ethnology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06156331\"]}");
+	add("{\"term\":\"ethnos\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07983996\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

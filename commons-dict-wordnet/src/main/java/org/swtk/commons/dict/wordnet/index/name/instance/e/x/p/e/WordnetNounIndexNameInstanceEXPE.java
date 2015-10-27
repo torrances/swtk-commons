@@ -1,0 +1,26 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.e.x.p.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceEXPE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"expectancy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05960190\", \"07526319\"]}");
+	add("{\"term\":\"expectation\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"06033638\", \"07526162\", \"14509706\", \"05953807\"]}");
+	add("{\"term\":\"expectedness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04802501\", \"14524959\"]}");
+	add("{\"term\":\"expectorant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03309550\"]}");
+	add("{\"term\":\"expectoration\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00119372\", \"13499137\"]}");
+	add("{\"term\":\"expectorator\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03309550\", \"10656272\"]}");
+	add("{\"term\":\"expedience\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04842719\", \"05165814\"]}");
+	add("{\"term\":\"expediency\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05165814\"]}");
+	add("{\"term\":\"expedient\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00178297\"]}");
+	add("{\"term\":\"expedition\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"05066981\", \"00312635\", \"00310473\", \"08426087\", \"00970583\"]}");
+	add("{\"term\":\"expeditiousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05066981\"]}");
+	add("{\"term\":\"expelling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13487789\"]}");
+	add("{\"term\":\"expender\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10654673\"]}");
+	add("{\"term\":\"expending\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01124922\"]}");
+	add("{\"term\":\"expenditure\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00357193\", \"01124922\", \"13296311\"]}");
+	add("{\"term\":\"expense\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"13298909\", \"07435271\", \"13296518\"]}");
+	add("{\"term\":\"expensiveness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05153138\"]}");
+	add("{\"term\":\"experience\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07300108\", \"05993469\", \"05766056\"]}");
+	add("{\"term\":\"experiment\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00787613\", \"05806051\", \"00640799\"]}");
+	add("{\"term\":\"experimentalism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06218144\", \"05970612\"]}");
+	add("{\"term\":\"experimentation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00640799\", \"05806051\"]}");
+	add("{\"term\":\"experimenter\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09640726\", \"09640607\"]}");
+	add("{\"term\":\"expert\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09640897\"]}");
+	add("{\"term\":\"expertise\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05648574\"]}");
+	add("{\"term\":\"expertness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05648574\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

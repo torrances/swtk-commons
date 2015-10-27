@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.f.e.t.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFETI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"fetich\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01209832\", \"03609171\"]}");
+	add("{\"term\":\"fetichism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00739356\", \"05954076\"]}");
+	add("{\"term\":\"feticide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00232182\"]}");
+	add("{\"term\":\"fetidness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04987905\"]}");
+	add("{\"term\":\"fetish\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01209832\", \"03609171\", \"07504434\"]}");
+	add("{\"term\":\"fetishism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00739356\", \"05954076\"]}");
+	add("{\"term\":\"fetishist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10105317\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

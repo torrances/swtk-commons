@@ -9,7 +9,7 @@ import org.swtk.common.dict.dto.wordnet.IndexNoun;
 import org.swtk.common.dict.types.DataNounFrameType;
 import org.swtk.common.dict.utils.DataNounFramesHelper;
 import org.swtk.commons.dict.wordnet.frame.controller.WordnetNounFrameController;
-import org.swtk.commons.dict.wordnet.index.controller.WordnetNounIndexController;
+import org.swtk.commons.dict.wordnet.index.byid.controller.WordnetNounIndexIdController;
 
 public final class WordnetNounFrameControllerTest {
 
@@ -20,7 +20,7 @@ public final class WordnetNounFrameControllerTest {
 		assertNotNull(bean);
 		for (DataNounFrame frame : DataNounFramesHelper.filter(bean.getDataNounFrames(), DataNounFrameType.HYPERNYM)) {
 			System.err.println("\t" + frame.getId());
-			for (IndexNoun indexNoun : WordnetNounIndexController.get(frame.getId())) {
+			for (IndexNoun indexNoun : WordnetNounIndexIdController.get(frame.getId())) {
 				System.err.println("\t\t" + indexNoun.getTerm());
 			}
 		}

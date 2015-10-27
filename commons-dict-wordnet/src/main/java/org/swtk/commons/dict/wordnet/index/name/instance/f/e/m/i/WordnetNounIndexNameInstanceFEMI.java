@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.f.e.m.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFEMI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"feminine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06339989\"]}");
+	add("{\"term\":\"feminineness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05016127\"]}");
+	add("{\"term\":\"femininity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04674763\"]}");
+	add("{\"term\":\"feminisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13500808\"]}");
+	add("{\"term\":\"feminism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00802082\", \"05976640\"]}");
+	add("{\"term\":\"feminist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10104404\"]}");
+	add("{\"term\":\"feminization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13500808\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

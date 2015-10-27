@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.h.a.s.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHASS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hassam\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11053988\"]}");
+	add("{\"term\":\"hassel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11054163\"]}");
+	add("{\"term\":\"hassid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10181288\"]}");
+	add("{\"term\":\"hassidim\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08111832\"]}");
+	add("{\"term\":\"hassidism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06244411\"]}");
+	add("{\"term\":\"hassium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14663973\"]}");
+	add("{\"term\":\"hassle\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01174931\", \"07387165\"]}");
+	add("{\"term\":\"hassock\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03502656\", \"03863938\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

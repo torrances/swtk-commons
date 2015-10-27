@@ -1,0 +1,28 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.r.e.t.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRETR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"retraction\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00342521\", \"07220756\"]}");
+	add("{\"term\":\"retractor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04090912\"]}");
+	add("{\"term\":\"retraining\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00897577\"]}");
+	add("{\"term\":\"retread\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04091054\"]}");
+	add("{\"term\":\"retreat\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"00055303\", \"00055472\", \"03522810\", \"06817705\", \"06817846\", \"08660590\", \"00057732\"]}");
+	add("{\"term\":\"retreatant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10545360\"]}");
+	add("{\"term\":\"retreated\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07966881\"]}");
+	add("{\"term\":\"retrenchment\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00193759\", \"04091201\"]}");
+	add("{\"term\":\"retrial\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01201855\"]}");
+	add("{\"term\":\"retribution\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01238028\", \"00260387\", \"13321851\"]}");
+	add("{\"term\":\"retrieval\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00046648\", \"05769377\", \"13572143\"]}");
+	add("{\"term\":\"retriever\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02101681\"]}");
+	add("{\"term\":\"retro\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05759427\"]}");
+	add("{\"term\":\"retrofit\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00364879\", \"04091346\"]}");
+	add("{\"term\":\"retroflection\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00342716\", \"07146934\", \"14555200\"]}");
+	add("{\"term\":\"retroflexion\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00342716\", \"07146934\", \"14555200\"]}");
+	add("{\"term\":\"retrogression\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00236075\", \"07441493\"]}");
+	add("{\"term\":\"retronym\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06314305\"]}");
+	add("{\"term\":\"retrophyllum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11679323\"]}");
+	add("{\"term\":\"retrorocket\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04091475\"]}");
+	add("{\"term\":\"retrospect\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05796034\"]}");
+	add("{\"term\":\"retrospection\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05772970\", \"06779445\"]}");
+	add("{\"term\":\"retrospective\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08424926\"]}");
+	add("{\"term\":\"retroversion\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00236075\", \"06358758\", \"14555200\"]}");
+	add("{\"term\":\"retrovir\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02768434\"]}");
+	add("{\"term\":\"retrovirus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01338923\"]}");
+	add("{\"term\":\"retrovision\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05783916\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

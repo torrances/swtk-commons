@@ -1,0 +1,15 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.l.i.n.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLINE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"line\", \"synsetCount\":30, \"upperType\":\"NOUN\", \"ids\":[\"04014761\", \"05756783\", \"06638793\", \"07026095\", \"07041860\", \"13400586\", \"13735108\", \"03676799\", \"03676994\", \"06270774\", \"08611480\", \"00583425\", \"03676175\", \"08118903\", \"01206784\", \"04409192\", \"03676598\", \"03952601\", \"13928798\", \"08610818\", \"08393816\", \"02937552\", \"05781046\", \"08611842\", \"11495037\", \"07025650\", \"13886392\", \"08447160\", \"06812755\", \"08447525\"]}");
+	add("{\"term\":\"lineage\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"04929964\", \"13347997\", \"13735513\", \"13835254\", \"08118903\"]}");
+	add("{\"term\":\"lineament\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05609513\", \"05857811\"]}");
+	add("{\"term\":\"linearity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05070387\"]}");
+	add("{\"term\":\"lineation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00264656\", \"08630343\"]}");
+	add("{\"term\":\"linebacker\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00727620\", \"10282699\"]}");
+	add("{\"term\":\"linecut\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03677423\", \"03677571\"]}");
+	add("{\"term\":\"lineman\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00727351\", \"10069171\", \"10283277\", \"10283108\"]}");
+	add("{\"term\":\"linemen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08447011\"]}");
+	add("{\"term\":\"linen\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03677678\", \"14959136\", \"03677847\"]}");
+	add("{\"term\":\"linendraper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10283381\"]}");
+	add("{\"term\":\"liner\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03678353\", \"03678596\", \"03679093\", \"00132428\"]}");
+	add("{\"term\":\"linesman\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10069171\", \"10283628\"]}");
+	add("{\"term\":\"lineup\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06497868\", \"08448162\", \"06497998\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

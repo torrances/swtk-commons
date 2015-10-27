@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.h.e.a.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHEAT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"heat\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"03514169\", \"07476245\", \"14061746\", \"04635549\", \"05733472\", \"05023355\", \"11486442\"]}");
+	add("{\"term\":\"heater\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00109001\", \"03513245\"]}");
+	add("{\"term\":\"heath\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08521872\", \"12247449\"]}");
+	add("{\"term\":\"heathen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10185987\"]}");
+	add("{\"term\":\"heathenism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06234419\"]}");
+	add("{\"term\":\"heather\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04965323\", \"12254046\"]}");
+	add("{\"term\":\"heathfowl\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01798376\"]}");
+	add("{\"term\":\"heathland\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08521872\"]}");
+	add("{\"term\":\"heating\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03514169\", \"13513079\"]}");
+	add("{\"term\":\"heatstroke\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14227577\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

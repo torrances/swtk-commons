@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.a.l.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCALA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"calaba\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12385457\"]}");
+	add("{\"term\":\"calabash\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"02940998\", \"03454395\", \"12186645\", \"12836428\", \"12836598\"]}");
+	add("{\"term\":\"calabazilla\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12182942\"]}");
+	add("{\"term\":\"calabria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08822814\"]}");
+	add("{\"term\":\"calabura\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12214664\"]}");
+	add("{\"term\":\"caladenia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12068868\"]}");
+	add("{\"term\":\"caladium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11806137\"]}");
+	add("{\"term\":\"calais\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08954641\"]}");
+	add("{\"term\":\"calamagrostis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12133306\"]}");
+	add("{\"term\":\"calamari\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07797777\"]}");
+	add("{\"term\":\"calamary\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07797777\"]}");
+	add("{\"term\":\"calamine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14702567\"]}");
+	add("{\"term\":\"calamint\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12863647\"]}");
+	add("{\"term\":\"calamintha\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12863525\"]}");
+	add("{\"term\":\"calamity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07329438\"]}");
+	add("{\"term\":\"calamus\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"02471248\", \"02595237\", \"11801399\", \"11801645\", \"12607059\"]}");
+	add("{\"term\":\"calan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04535103\"]}");
+	add("{\"term\":\"calandrinia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11878875\"]}");
+	add("{\"term\":\"calanthe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12069397\"]}");
+	add("{\"term\":\"calapooya\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09677959\"]}");
+	add("{\"term\":\"calapuya\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09677959\"]}");
+	add("{\"term\":\"calash\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02941342\", \"02941479\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

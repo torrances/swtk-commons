@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.l.u.m.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLUMB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"lumbago\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14351695\"]}");
+	add("{\"term\":\"lumber\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02802334\", \"14967718\"]}");
+	add("{\"term\":\"lumbering\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00610057\"]}");
+	add("{\"term\":\"lumberjack\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03702243\", \"10295742\"]}");
+	add("{\"term\":\"lumberman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10295742\"]}");
+	add("{\"term\":\"lumbermill\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03702341\"]}");
+	add("{\"term\":\"lumberyard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03702599\"]}");
+	add("{\"term\":\"lumbus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02466034\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

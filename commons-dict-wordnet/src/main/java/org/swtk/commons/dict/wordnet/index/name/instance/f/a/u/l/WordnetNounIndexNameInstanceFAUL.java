@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.f.a.u.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFAUL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"fauld\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03330233\"]}");
+	add("{\"term\":\"faulkner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10987625\"]}");
+	add("{\"term\":\"fault\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"00569850\", \"04677049\", \"07436844\", \"09301443\", \"05146359\", \"14487787\", \"00071785\"]}");
+	add("{\"term\":\"faultfinder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10006070\"]}");
+	add("{\"term\":\"faultfinding\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06723969\"]}");
+	add("{\"term\":\"faultiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14495883\"]}");
+	add("{\"term\":\"faulting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09301443\"]}");
+	add("{\"term\":\"faultlessness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04906750\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.v.a.r.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceVARI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"variability\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04779129\", \"04742473\"]}");
+	add("{\"term\":\"variable\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07285985\", \"09492282\", \"05866043\", \"09492089\"]}");
+	add("{\"term\":\"variableness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04742473\"]}");
+	add("{\"term\":\"variance\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"00195818\", \"01144471\", \"04742473\", \"04756982\", \"06034344\", \"07196502\", \"07381227\"]}");
+	add("{\"term\":\"variant\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"05849159\", \"05872761\", \"08128123\", \"07381227\"]}");
+	add("{\"term\":\"variate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05872761\"]}");
+	add("{\"term\":\"variation\", \"synsetCount\":11, \"upperType\":\"NOUN\", \"ids\":[\"00196043\", \"00530138\", \"10361391\", \"11435198\", \"13593527\", \"13916003\", \"04528994\", \"05849159\", \"07043499\", \"00195818\", \"07351990\"]}");
+	add("{\"term\":\"varicella\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14156457\"]}");
+	add("{\"term\":\"varicocele\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14596848\"]}");
+	add("{\"term\":\"varicosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14596977\"]}");
+	add("{\"term\":\"varicosity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14597098\"]}");
+	add("{\"term\":\"variedness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04742796\"]}");
+	add("{\"term\":\"variegation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00196418\", \"04743068\"]}");
+	add("{\"term\":\"varietal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07916465\"]}");
+	add("{\"term\":\"variety\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"04759289\", \"05847533\", \"07033353\", \"08118051\", \"04758560\", \"08415730\"]}");
+	add("{\"term\":\"variola\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14147905\"]}");
+	add("{\"term\":\"variolation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00826275\"]}");
+	add("{\"term\":\"variolization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00826275\"]}");
+	add("{\"term\":\"variometer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04529158\"]}");
+	add("{\"term\":\"variorum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06603004\"]}");
+	add("{\"term\":\"varix\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14597258\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

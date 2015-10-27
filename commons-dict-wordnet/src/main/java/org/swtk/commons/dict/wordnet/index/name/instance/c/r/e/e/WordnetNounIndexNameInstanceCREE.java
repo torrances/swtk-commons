@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.r.e.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCREE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cree\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06922074\", \"09673676\"]}");
+	add("{\"term\":\"creed\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06802268\", \"05968821\"]}");
+	add("{\"term\":\"creek\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09673784\", \"09252316\"]}");
+	add("{\"term\":\"creel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03134499\"]}");
+	add("{\"term\":\"creep\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00295712\", \"03134595\", \"07327103\", \"09996447\"]}");
+	add("{\"term\":\"creeper\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01591927\", \"09995649\", \"13123407\"]}");
+	add("{\"term\":\"creepiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05731025\"]}");
+	add("{\"term\":\"creeping\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00295712\"]}");
+	add("{\"term\":\"creeps\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07535222\", \"14286591\"]}");
+	add("{\"term\":\"creese\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03634019\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

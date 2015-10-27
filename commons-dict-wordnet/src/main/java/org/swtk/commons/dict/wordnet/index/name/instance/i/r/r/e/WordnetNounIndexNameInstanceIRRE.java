@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.i.r.r.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceIRRE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"irreality\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13983403\"]}");
+	add("{\"term\":\"irredenta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08606696\"]}");
+	add("{\"term\":\"irredentism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05972965\"]}");
+	add("{\"term\":\"irredentist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10236708\"]}");
+	add("{\"term\":\"irregular\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03592219\", \"10170076\"]}");
+	add("{\"term\":\"irregularity\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"14394566\", \"05073181\", \"04777450\", \"00738486\"]}");
+	add("{\"term\":\"irrelevance\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13818046\"]}");
+	add("{\"term\":\"irrelevancy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13818046\"]}");
+	add("{\"term\":\"irreligion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04835843\"]}");
+	add("{\"term\":\"irreligionist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10236878\"]}");
+	add("{\"term\":\"irreligiousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04835843\"]}");
+	add("{\"term\":\"irreplaceableness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04748435\"]}");
+	add("{\"term\":\"irrepressibility\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04641316\"]}");
+	add("{\"term\":\"irreproducibility\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04813544\"]}");
+	add("{\"term\":\"irresistibility\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05199508\"]}");
+	add("{\"term\":\"irresistibleness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05199508\"]}");
+	add("{\"term\":\"irresoluteness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04873696\"]}");
+	add("{\"term\":\"irresolution\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04873696\", \"05707137\"]}");
+	add("{\"term\":\"irresponsibility\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04678103\"]}");
+	add("{\"term\":\"irresponsibleness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04678103\"]}");
+	add("{\"term\":\"irreverence\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00747530\", \"06217468\"]}");
+	add("{\"term\":\"irreversibility\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04747008\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

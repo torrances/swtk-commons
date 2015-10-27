@@ -1,0 +1,26 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.a.r.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCARP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"carp\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01442155\", \"07795099\"]}");
+	add("{\"term\":\"carpal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05279313\"]}");
+	add("{\"term\":\"carpathians\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09259329\"]}");
+	add("{\"term\":\"carpel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11698194\"]}");
+	add("{\"term\":\"carpentaria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09320826\"]}");
+	add("{\"term\":\"carpenter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09916137\"]}");
+	add("{\"term\":\"carpenteria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12810314\"]}");
+	add("{\"term\":\"carpentry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00608890\"]}");
+	add("{\"term\":\"carper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09916278\"]}");
+	add("{\"term\":\"carpet\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09259672\", \"04125115\"]}");
+	add("{\"term\":\"carpetbag\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02970746\"]}");
+	add("{\"term\":\"carpetbagger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09916425\"]}");
+	add("{\"term\":\"carpeting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04125115\"]}");
+	add("{\"term\":\"carpetweed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11842003\"]}");
+	add("{\"term\":\"carphophis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01731086\"]}");
+	add("{\"term\":\"carpinaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12306889\"]}");
+	add("{\"term\":\"carping\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06723969\"]}");
+	add("{\"term\":\"carpinus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12307098\"]}");
+	add("{\"term\":\"carpobrotus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11839823\"]}");
+	add("{\"term\":\"carpocapsa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02287704\"]}");
+	add("{\"term\":\"carpodacus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01535305\"]}");
+	add("{\"term\":\"carpophore\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11698353\"]}");
+	add("{\"term\":\"carport\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02971533\"]}");
+	add("{\"term\":\"carpospore\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11569179\"]}");
+	add("{\"term\":\"carpus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05592578\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

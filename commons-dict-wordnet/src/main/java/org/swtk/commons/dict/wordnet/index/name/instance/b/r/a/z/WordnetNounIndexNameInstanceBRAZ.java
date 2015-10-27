@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.b.r.a.z;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBRAZ {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"brazenness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04866867\"]}");
+	add("{\"term\":\"brazier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02896680\"]}");
+	add("{\"term\":\"brazil\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07787707\", \"08872733\"]}");
+	add("{\"term\":\"brazilian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09714290\"]}");
+	add("{\"term\":\"brazilwood\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12509773\", \"12510029\"]}");
+	add("{\"term\":\"brazos\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09251526\"]}");
+	add("{\"term\":\"brazzaville\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08752083\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

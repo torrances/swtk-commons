@@ -1,0 +1,24 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.m.u.l.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMULT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"multicollinearity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06037373\"]}");
+	add("{\"term\":\"multiculturalism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05973672\"]}");
+	add("{\"term\":\"multifariousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04758560\"]}");
+	add("{\"term\":\"multiflora\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12642833\"]}");
+	add("{\"term\":\"multimedia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06272397\"]}");
+	add("{\"term\":\"multinomial\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05870439\"]}");
+	add("{\"term\":\"multiple\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05868575\"]}");
+	add("{\"term\":\"multiplex\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03804504\", \"06287678\"]}");
+	add("{\"term\":\"multiplexer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03804635\"]}");
+	add("{\"term\":\"multiplicand\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13756119\"]}");
+	add("{\"term\":\"multiplication\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00873254\", \"13539046\", \"00851612\"]}");
+	add("{\"term\":\"multiplicity\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05129173\", \"05106012\"]}");
+	add("{\"term\":\"multiplier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13755958\"]}");
+	add("{\"term\":\"multiprocessing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13539343\"]}");
+	add("{\"term\":\"multiprocessor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03804762\"]}");
+	add("{\"term\":\"multiprogramming\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13539482\"]}");
+	add("{\"term\":\"multistage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15316346\"]}");
+	add("{\"term\":\"multitude\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"08197108\", \"08199634\", \"13797293\"]}");
+	add("{\"term\":\"multitudinousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05129560\"]}");
+	add("{\"term\":\"multivalence\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14593911\"]}");
+	add("{\"term\":\"multivalency\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14593911\"]}");
+	add("{\"term\":\"multiversity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08303722\"]}");
+	add("{\"term\":\"multivitamin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07954247\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

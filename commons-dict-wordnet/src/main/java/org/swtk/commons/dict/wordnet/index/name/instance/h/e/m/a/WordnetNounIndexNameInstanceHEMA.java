@@ -1,0 +1,27 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.h.e.m.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHEMA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hemachatus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01751782\"]}");
+	add("{\"term\":\"hemagglutination\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13513339\"]}");
+	add("{\"term\":\"hemangioma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14271057\"]}");
+	add("{\"term\":\"hematemesis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00120030\"]}");
+	add("{\"term\":\"hematin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15049564\"]}");
+	add("{\"term\":\"hematinic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03519105\"]}");
+	add("{\"term\":\"hematite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14929871\"]}");
+	add("{\"term\":\"hematocele\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14340648\"]}");
+	add("{\"term\":\"hematochezia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13513490\"]}");
+	add("{\"term\":\"hematochrome\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15013202\"]}");
+	add("{\"term\":\"hematocoele\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14340648\"]}");
+	add("{\"term\":\"hematocolpometra\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14340860\"]}");
+	add("{\"term\":\"hematocolpos\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14340989\"]}");
+	add("{\"term\":\"hematocrit\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03519273\", \"13843978\"]}");
+	add("{\"term\":\"hematocyst\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14225471\"]}");
+	add("{\"term\":\"hematocytopenia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13997079\"]}");
+	add("{\"term\":\"hematocyturia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14289902\"]}");
+	add("{\"term\":\"hematogenesis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13513656\"]}");
+	add("{\"term\":\"hematohiston\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15050509\"]}");
+	add("{\"term\":\"hematoidin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14780548\"]}");
+	add("{\"term\":\"hematologist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10190353\"]}");
+	add("{\"term\":\"hematology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06060665\"]}");
+	add("{\"term\":\"hematolysis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13514416\"]}");
+	add("{\"term\":\"hematoma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14342141\"]}");
+	add("{\"term\":\"hematopoiesis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13513656\"]}");
+	add("{\"term\":\"hematuria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14337747\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

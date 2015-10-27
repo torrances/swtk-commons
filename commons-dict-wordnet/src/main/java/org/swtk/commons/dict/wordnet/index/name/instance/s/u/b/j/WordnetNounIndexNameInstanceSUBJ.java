@@ -1,0 +1,12 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.u.b.j;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSUBJ {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"subject\", \"synsetCount\":8, \"upperType\":\"NOUN\", \"ids\":[\"06321115\", \"09648571\", \"10688105\", \"06320921\", \"05822417\", \"06005806\", \"04354303\", \"06612141\"]}");
+	add("{\"term\":\"subjection\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00089847\", \"14019785\"]}");
+	add("{\"term\":\"subjectiveness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04899739\"]}");
+	add("{\"term\":\"subjectivism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05221389\", \"05986002\"]}");
+	add("{\"term\":\"subjectivist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10688448\"]}");
+	add("{\"term\":\"subjectivity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04899739\"]}");
+	add("{\"term\":\"subjoining\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00372654\"]}");
+	add("{\"term\":\"subjugation\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00089847\", \"00422042\", \"14019785\"]}");
+	add("{\"term\":\"subjugator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10688564\"]}");
+	add("{\"term\":\"subjunction\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00372654\"]}");
+	add("{\"term\":\"subjunctive\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13824149\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

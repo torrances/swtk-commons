@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.index.byid.instance.p1.p3;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexIdInstance1313 {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("13130492", "{\"term\":\"angiospermous tree\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13130492\"]}");
+	add("13130492", "{\"term\":\"flowering tree\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13130492\"]}");
+	add("13131674", "{\"term\":\"nut tree\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13131674\"]}");
+	add("13131933", "{\"term\":\"spice tree\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11728296\", \"13131933\"]}");
+	add("13132099", "{\"term\":\"fever tree\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"11778952\", \"12358134\", \"12690123\", \"13132099\"]}");
+	add("13132263", "{\"term\":\"stump\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03164306\", \"04353081\", \"05568264\", \"13132263\"]}");
+	add("13132263", "{\"term\":\"tree stump\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13132263\"]}");
+	add("13132459", "{\"term\":\"stool\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"04453655\", \"13132459\", \"14878449\", \"04334034\"]}");
+	add("13132640", "{\"term\":\"bonsai\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13132640\"]}");
+	add("13132794", "{\"term\":\"ming tree\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13132794\", \"13132960\"]}");
+	add("13132960", "{\"term\":\"ming tree\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13132794\", \"13132960\"]}");
+	add("13133055", "{\"term\":\"ground cover\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13133055\", \"13133186\"]}");
+	add("13133055", "{\"term\":\"groundcover\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13133055\", \"13133186\"]}");
+	add("13133186", "{\"term\":\"ground cover\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13133055\", \"13133186\"]}");
+	add("13133186", "{\"term\":\"groundcover\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13133055\", \"13133186\"]}");
+	add("13133423", "{\"term\":\"bush\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"05271086\", \"10895055\", \"10895288\", \"10895517\", \"08455215\", \"08522039\", \"13133423\"]}");
+	add("13133423", "{\"term\":\"shrub\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13133423\"]}");
+	add("13139089", "{\"term\":\"undershrub\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13139089\"]}");
+	add("13139157", "{\"term\":\"burning bush\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"11852343\", \"12733386\", \"12770439\", \"13139157\"]}");
+	add("13139328", "{\"term\":\"shrublet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13139328\"]}");
+	add("13139466", "{\"term\":\"subshrub\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13139466\"]}");
+	add("13139466", "{\"term\":\"suffrutex\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13139466\"]}");
+ 	}  	private static void add(final String ID, final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(ID)) ? map.get(ID) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(ID, list); 	} 	 	public static Collection<IndexNoun> get(final String ID) { 		return map.get(ID); 	}  	public boolean has(final String ID) { 		return map.containsKey(ID); 	} }

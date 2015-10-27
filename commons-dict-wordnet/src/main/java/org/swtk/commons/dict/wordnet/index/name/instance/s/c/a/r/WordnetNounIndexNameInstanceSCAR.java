@@ -1,0 +1,24 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.c.a.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSCAR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"scar\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04701248\", \"14386888\"]}");
+	add("{\"term\":\"scarab\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02175170\"]}");
+	add("{\"term\":\"scarabaean\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02174521\"]}");
+	add("{\"term\":\"scarabaeid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02174521\"]}");
+	add("{\"term\":\"scarabaeidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02174285\"]}");
+	add("{\"term\":\"scarabaeus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02175170\"]}");
+	add("{\"term\":\"scaramouch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10574966\"]}");
+	add("{\"term\":\"scaramouche\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10574966\"]}");
+	add("{\"term\":\"scarceness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05124253\"]}");
+	add("{\"term\":\"scarcity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05124253\"]}");
+	add("{\"term\":\"scardinius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01445232\"]}");
+	add("{\"term\":\"scare\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07536676\", \"14429335\"]}");
+	add("{\"term\":\"scarecrow\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04150777\"]}");
+	add("{\"term\":\"scaremonger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10575107\"]}");
+	add("{\"term\":\"scarer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04150777\"]}");
+	add("{\"term\":\"scarf\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04151306\", \"04150962\"]}");
+	add("{\"term\":\"scarface\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10901536\"]}");
+	add("{\"term\":\"scarfpin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04441804\"]}");
+	add("{\"term\":\"scaridae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02613171\"]}");
+	add("{\"term\":\"scarlatina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14147552\"]}");
+	add("{\"term\":\"scarlet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04972154\"]}");
+	add("{\"term\":\"scarp\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03301257\", \"09297058\"]}");
+	add("{\"term\":\"scartella\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02616317\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

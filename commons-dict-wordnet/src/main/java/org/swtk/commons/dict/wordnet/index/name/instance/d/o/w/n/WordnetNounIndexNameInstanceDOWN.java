@@ -1,0 +1,26 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.d.o.w.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDOWN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"down\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"05263175\", \"09292247\", \"10962136\", \"00459310\", \"01899202\"]}");
+	add("{\"term\":\"downbeat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07101164\"]}");
+	add("{\"term\":\"downcast\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03234123\"]}");
+	add("{\"term\":\"downdraft\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11543163\"]}");
+	add("{\"term\":\"downer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04173614\"]}");
+	add("{\"term\":\"downfall\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07442328\", \"11515038\", \"07332733\"]}");
+	add("{\"term\":\"downgrade\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05076254\"]}");
+	add("{\"term\":\"downheartedness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07553056\"]}");
+	add("{\"term\":\"downhill\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07478829\", \"09292378\"]}");
+	add("{\"term\":\"downiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04946015\"]}");
+	add("{\"term\":\"downing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10962271\"]}");
+	add("{\"term\":\"downpour\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11522520\"]}");
+	add("{\"term\":\"downrightness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04925675\"]}");
+	add("{\"term\":\"downshift\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00169868\", \"00169968\"]}");
+	add("{\"term\":\"downside\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05861384\"]}");
+	add("{\"term\":\"downsizing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00193759\"]}");
+	add("{\"term\":\"downslope\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09288526\"]}");
+	add("{\"term\":\"downspin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00267404\"]}");
+	add("{\"term\":\"downstage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03234229\"]}");
+	add("{\"term\":\"downstroke\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06812343\"]}");
+	add("{\"term\":\"downswing\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00267245\", \"00572993\"]}");
+	add("{\"term\":\"downtick\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01112716\"]}");
+	add("{\"term\":\"downtime\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15142563\"]}");
+	add("{\"term\":\"downtown\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08556635\"]}");
+	add("{\"term\":\"downturn\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00267245\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

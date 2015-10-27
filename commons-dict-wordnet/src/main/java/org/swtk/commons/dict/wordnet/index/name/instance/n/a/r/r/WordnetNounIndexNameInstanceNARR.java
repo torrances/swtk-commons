@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.n.a.r.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNARR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"narration\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06408950\", \"07235433\", \"07235754\"]}");
+	add("{\"term\":\"narrative\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07235754\"]}");
+	add("{\"term\":\"narrator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10365535\"]}");
+	add("{\"term\":\"narrow\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09388760\"]}");
+	add("{\"term\":\"narrowboat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02951096\"]}");
+	add("{\"term\":\"narrowing\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00408228\", \"13539766\", \"05078196\"]}");
+	add("{\"term\":\"narrowness\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"05128395\", \"05855153\", \"06215146\", \"05144053\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

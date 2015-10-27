@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.m.o.r.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMORO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"moro\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09732363\"]}");
+	add("{\"term\":\"moroccan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09742978\"]}");
+	add("{\"term\":\"morocco\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14787238\", \"08991642\"]}");
+	add("{\"term\":\"moron\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08731118\", \"10217144\"]}");
+	add("{\"term\":\"morone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02568956\"]}");
+	add("{\"term\":\"moronity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05654673\"]}");
+	add("{\"term\":\"moroseness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04649414\", \"07567833\"]}");
+	add("{\"term\":\"morosoph\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10350811\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

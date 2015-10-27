@@ -1,0 +1,24 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.n.o.w;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSNOW {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"snow\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03070747\", \"11327077\", \"15068330\", \"11528800\"]}");
+	add("{\"term\":\"snowball\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"04258670\", \"07631783\", \"07631874\", \"11857489\"]}");
+	add("{\"term\":\"snowbank\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04258811\"]}");
+	add("{\"term\":\"snowbell\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12798440\"]}");
+	add("{\"term\":\"snowberry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12698373\"]}");
+	add("{\"term\":\"snowbird\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01537074\", \"01541271\", \"01560948\"]}");
+	add("{\"term\":\"snowblindness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14579382\"]}");
+	add("{\"term\":\"snowboard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04258901\"]}");
+	add("{\"term\":\"snowboarder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10637181\"]}");
+	add("{\"term\":\"snowboarding\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00330294\"]}");
+	add("{\"term\":\"snowcap\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09461748\"]}");
+	add("{\"term\":\"snowdrift\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09461844\"]}");
+	add("{\"term\":\"snowdrop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11746442\"]}");
+	add("{\"term\":\"snowfall\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11528800\"]}");
+	add("{\"term\":\"snowfield\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09461936\"]}");
+	add("{\"term\":\"snowflake\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01541271\", \"11529484\"]}");
+	add("{\"term\":\"snowman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04259093\"]}");
+	add("{\"term\":\"snowmobile\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04259187\"]}");
+	add("{\"term\":\"snowplough\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04259335\"]}");
+	add("{\"term\":\"snowplow\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04259335\"]}");
+	add("{\"term\":\"snowshoe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04259441\"]}");
+	add("{\"term\":\"snowstorm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11529988\"]}");
+	add("{\"term\":\"snowsuit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04259670\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

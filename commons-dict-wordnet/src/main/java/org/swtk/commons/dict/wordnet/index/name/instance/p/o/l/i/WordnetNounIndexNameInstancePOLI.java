@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.p.o.l.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePOLI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"polianthes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12500738\"]}");
+	add("{\"term\":\"police\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08226608\"]}");
+	add("{\"term\":\"policeman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10468557\"]}");
+	add("{\"term\":\"policewoman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10468986\"]}");
+	add("{\"term\":\"policy\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06535632\", \"06669153\", \"05910115\"]}");
+	add("{\"term\":\"policyholder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10469238\"]}");
+	add("{\"term\":\"polio\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14163658\"]}");
+	add("{\"term\":\"poliomyelitis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14163658\"]}");
+	add("{\"term\":\"polioptila\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01565954\"]}");
+	add("{\"term\":\"poliosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04984137\"]}");
+	add("{\"term\":\"poliovirus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01340375\"]}");
+	add("{\"term\":\"polish\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"06957482\", \"15020587\", \"14483408\", \"04962337\"]}");
+	add("{\"term\":\"polisher\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02914678\"]}");
+	add("{\"term\":\"polishing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00579832\"]}");
+	add("{\"term\":\"polistes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02216619\"]}");
+	add("{\"term\":\"politburo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08344020\"]}");
+	add("{\"term\":\"politeness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01230397\", \"04920159\"]}");
+	add("{\"term\":\"politesse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04920915\"]}");
+	add("{\"term\":\"politician\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"10471024\", \"10469877\", \"10470837\"]}");
+	add("{\"term\":\"politico\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10469877\"]}");
+	add("{\"term\":\"politics\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"01126829\", \"06158643\", \"00613259\", \"06157599\", \"13862918\"]}");
+	add("{\"term\":\"polity\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01139776\", \"08067137\", \"13992306\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

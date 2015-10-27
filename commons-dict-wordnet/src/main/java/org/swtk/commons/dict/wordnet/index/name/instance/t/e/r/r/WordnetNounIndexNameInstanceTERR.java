@@ -1,0 +1,24 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.t.e.r.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTERR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"terrace\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"08448731\", \"09479337\", \"03905846\"]}");
+	add("{\"term\":\"terrain\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08692301\"]}");
+	add("{\"term\":\"terramycin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03875067\"]}");
+	add("{\"term\":\"terrapene\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01671709\"]}");
+	add("{\"term\":\"terrapin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01670419\"]}");
+	add("{\"term\":\"terrarium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04421334\"]}");
+	add("{\"term\":\"terreplein\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08680165\"]}");
+	add("{\"term\":\"terribleness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04789380\"]}");
+	add("{\"term\":\"terrier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02095120\"]}");
+	add("{\"term\":\"terrietia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12220081\"]}");
+	add("{\"term\":\"terrine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07896188\"]}");
+	add("{\"term\":\"territorial\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08408163\", \"10721956\"]}");
+	add("{\"term\":\"territorialisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01018915\"]}");
+	add("{\"term\":\"territoriality\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01223953\"]}");
+	add("{\"term\":\"territorialization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01018915\"]}");
+	add("{\"term\":\"territory\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"08510074\", \"06008312\", \"08569713\"]}");
+	add("{\"term\":\"terror\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00760853\", \"10722132\", \"10722264\", \"07535851\"]}");
+	add("{\"term\":\"terrorisation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00766546\", \"01225155\"]}");
+	add("{\"term\":\"terrorism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00761047\"]}");
+	add("{\"term\":\"terrorist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10722430\"]}");
+	add("{\"term\":\"terrorization\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00766546\", \"01225155\"]}");
+	add("{\"term\":\"terry\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04421611\", \"11356539\"]}");
+	add("{\"term\":\"terrycloth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04421611\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

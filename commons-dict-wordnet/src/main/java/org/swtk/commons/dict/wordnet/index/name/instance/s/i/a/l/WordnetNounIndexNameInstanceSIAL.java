@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.i.a.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSIAL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"sial\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14722394\"]}");
+	add("{\"term\":\"sialadenitis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14379130\"]}");
+	add("{\"term\":\"sialia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01564525\"]}");
+	add("{\"term\":\"sialidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02269232\"]}");
+	add("{\"term\":\"sialis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02269384\"]}");
+	add("{\"term\":\"sialolith\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09457029\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

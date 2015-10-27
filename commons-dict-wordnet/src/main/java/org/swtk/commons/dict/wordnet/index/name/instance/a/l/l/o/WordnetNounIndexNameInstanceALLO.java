@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.a.l.l.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceALLO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"alloantibody\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15054049\"]}");
+	add("{\"term\":\"allocation\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00165400\", \"01085569\", \"13310490\"]}");
+	add("{\"term\":\"allocator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09804148\"]}");
+	add("{\"term\":\"allocution\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07253843\"]}");
+	add("{\"term\":\"allogamy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07452470\"]}");
+	add("{\"term\":\"allograft\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05591036\"]}");
+	add("{\"term\":\"allograph\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06416449\", \"06832423\"]}");
+	add("{\"term\":\"allomerism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07352535\"]}");
+	add("{\"term\":\"allometry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06007534\"]}");
+	add("{\"term\":\"allomorph\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06317596\", \"14844026\"]}");
+	add("{\"term\":\"allopathy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00711945\"]}");
+	add("{\"term\":\"allopatry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13982575\"]}");
+	add("{\"term\":\"allophone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07126641\"]}");
+	add("{\"term\":\"allopurinol\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02700895\"]}");
+	add("{\"term\":\"allosaur\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01716872\"]}");
+	add("{\"term\":\"allosaurus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01716872\"]}");
+	add("{\"term\":\"allotment\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01085569\", \"13310490\"]}");
+	add("{\"term\":\"allotrope\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14648203\"]}");
+	add("{\"term\":\"allotropism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11429443\"]}");
+	add("{\"term\":\"allotropy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11429443\"]}");
+	add("{\"term\":\"allowance\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"01144162\", \"13391388\", \"04757264\", \"13295115\", \"13314400\", \"13307277\"]}");
+	add("{\"term\":\"alloy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14511182\", \"14610949\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

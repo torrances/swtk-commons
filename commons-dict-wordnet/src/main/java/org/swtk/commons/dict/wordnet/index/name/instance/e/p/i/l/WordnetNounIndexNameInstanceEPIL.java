@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.e.p.i.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceEPIL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"epilachna\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02168676\"]}");
+	add("{\"term\":\"epilation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00255464\", \"13496408\"]}");
+	add("{\"term\":\"epilator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03181831\"]}");
+	add("{\"term\":\"epilepsy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14109625\"]}");
+	add("{\"term\":\"epileptic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10081983\"]}");
+	add("{\"term\":\"epilobium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12362560\"]}");
+	add("{\"term\":\"epilog\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06410403\", \"06410606\"]}");
+	add("{\"term\":\"epilogue\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06410403\", \"06410606\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

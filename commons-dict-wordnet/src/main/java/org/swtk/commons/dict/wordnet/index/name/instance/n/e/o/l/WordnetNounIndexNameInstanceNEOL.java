@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.n.e.o.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNEOL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"neolentinus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13071956\"]}");
+	add("{\"term\":\"neoliberal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10372513\"]}");
+	add("{\"term\":\"neoliberalism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06228946\"]}");
+	add("{\"term\":\"neolith\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03823541\"]}");
+	add("{\"term\":\"neolithic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15258208\"]}");
+	add("{\"term\":\"neologism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00942376\", \"06305222\"]}");
+	add("{\"term\":\"neologist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10372629\"]}");
+	add("{\"term\":\"neology\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00942376\", \"06305222\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

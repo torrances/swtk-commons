@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.o.u.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCOUP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"coup\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00066156\", \"01147528\"]}");
+	add("{\"term\":\"coupe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03124047\"]}");
+	add("{\"term\":\"couperin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10932762\"]}");
+	add("{\"term\":\"couple\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"09280469\", \"13765745\", \"13793430\", \"08005299\", \"08002070\"]}");
+	add("{\"term\":\"coupler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03124161\"]}");
+	add("{\"term\":\"couplet\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06390540\", \"13765745\"]}");
+	add("{\"term\":\"coupling\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00848970\", \"03124161\", \"04620515\"]}");
+	add("{\"term\":\"coupon\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05830361\", \"06530059\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

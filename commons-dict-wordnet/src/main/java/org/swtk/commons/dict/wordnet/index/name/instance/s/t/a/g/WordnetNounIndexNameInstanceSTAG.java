@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.t.a.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSTAG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"stag\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02433205\", \"02433983\"]}");
+	add("{\"term\":\"stage\", \"synsetCount\":8, \"upperType\":\"NOUN\", \"ids\":[\"04304087\", \"08664141\", \"00307726\", \"04304236\", \"07019828\", \"04303700\", \"13962925\", \"15315573\"]}");
+	add("{\"term\":\"stagecoach\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04304236\"]}");
+	add("{\"term\":\"stagecraft\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05651753\"]}");
+	add("{\"term\":\"stagehand\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10664831\"]}");
+	add("{\"term\":\"stager\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10768791\", \"10665050\"]}");
+	add("{\"term\":\"stagflation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13581941\"]}");
+	add("{\"term\":\"stagger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00290232\"]}");
+	add("{\"term\":\"staggerbush\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12261482\"]}");
+	add("{\"term\":\"staggerer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10665293\"]}");
+	add("{\"term\":\"staggers\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14299266\"]}");
+	add("{\"term\":\"staghead\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12542129\"]}");
+	add("{\"term\":\"staghound\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02094825\"]}");
+	add("{\"term\":\"staginess\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04795921\"]}");
+	add("{\"term\":\"staging\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00092224\", \"00307928\", \"04148777\", \"07020287\"]}");
+	add("{\"term\":\"stagira\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08807687\"]}");
+	add("{\"term\":\"stagirus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08807687\"]}");
+	add("{\"term\":\"stagnancy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14036138\", \"14036476\"]}");
+	add("{\"term\":\"stagnation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14036476\", \"14036138\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

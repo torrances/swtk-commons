@@ -1,0 +1,24 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.h.o.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSHOR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"shore\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04211514\", \"09456346\"]}");
+	add("{\"term\":\"shorea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12397845\"]}");
+	add("{\"term\":\"shorebird\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02025338\"]}");
+	add("{\"term\":\"shoreline\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09456743\"]}");
+	add("{\"term\":\"shoring\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01019492\", \"04211514\"]}");
+	add("{\"term\":\"short\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00725235\", \"04211801\", \"04211665\"]}");
+	add("{\"term\":\"shortage\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14473331\", \"05121671\"]}");
+	add("{\"term\":\"shortbread\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07651629\"]}");
+	add("{\"term\":\"shortcake\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07710404\"]}");
+	add("{\"term\":\"shortcoming\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05170169\"]}");
+	add("{\"term\":\"shortcut\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04211999\"]}");
+	add("{\"term\":\"shortener\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09456856\"]}");
+	add("{\"term\":\"shortening\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00359757\", \"07688432\"]}");
+	add("{\"term\":\"shortfall\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05121671\"]}");
+	add("{\"term\":\"shortgrass\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12124411\"]}");
+	add("{\"term\":\"shorthand\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06361497\"]}");
+	add("{\"term\":\"shorthorn\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02409723\"]}");
+	add("{\"term\":\"shortia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12272685\"]}");
+	add("{\"term\":\"shortlist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06507616\"]}");
+	add("{\"term\":\"shortness\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"04922639\", \"05009845\", \"05059983\", \"05145203\", \"14473805\", \"05141209\"]}");
+	add("{\"term\":\"shorts\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03238867\", \"04212364\"]}");
+	add("{\"term\":\"shortsightedness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04901747\", \"14576882\"]}");
+	add("{\"term\":\"shortstop\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00725235\", \"10612394\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

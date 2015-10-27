@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.w.a.r.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceWARM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"warmer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03513245\"]}");
+	add("{\"term\":\"warmheartedness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07560035\", \"07561649\"]}");
+	add("{\"term\":\"warming\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11502540\", \"13513079\"]}");
+	add("{\"term\":\"warmness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05023937\", \"07560035\"]}");
+	add("{\"term\":\"warmonger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10335671\"]}");
+	add("{\"term\":\"warmongering\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06232181\"]}");
+	add("{\"term\":\"warmth\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"04634357\", \"04635549\", \"05023937\", \"07561649\", \"05733472\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

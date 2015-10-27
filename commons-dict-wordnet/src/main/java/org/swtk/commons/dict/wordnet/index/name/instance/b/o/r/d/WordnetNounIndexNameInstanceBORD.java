@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.b.o.r.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBORD {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"bordeaux\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07911212\", \"08954305\"]}");
+	add("{\"term\":\"bordelaise\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07851799\"]}");
+	add("{\"term\":\"bordello\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04588881\"]}");
+	add("{\"term\":\"border\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"02878255\", \"03785780\", \"08583230\", \"13926393\", \"08529808\"]}");
+	add("{\"term\":\"borderer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09886560\"]}");
+	add("{\"term\":\"borderland\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08530235\"]}");
+	add("{\"term\":\"borderline\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08529808\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

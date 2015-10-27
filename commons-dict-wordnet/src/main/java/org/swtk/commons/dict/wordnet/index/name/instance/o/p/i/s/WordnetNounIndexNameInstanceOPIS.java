@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.o.p.i.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceOPIS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"opisthobranchia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01952836\"]}");
+	add("{\"term\":\"opisthocomidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01812087\"]}");
+	add("{\"term\":\"opisthocomus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01812233\"]}");
+	add("{\"term\":\"opisthognathidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02614055\"]}");
+	add("{\"term\":\"opisthorchiasis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14477777\"]}");
+	add("{\"term\":\"opisthotonos\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14384918\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

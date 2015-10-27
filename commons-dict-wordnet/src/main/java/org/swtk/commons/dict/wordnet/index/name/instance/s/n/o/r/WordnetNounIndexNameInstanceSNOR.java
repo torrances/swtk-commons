@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.n.o.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSNOR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"snore\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00837637\", \"07409078\"]}");
+	add("{\"term\":\"snorer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10636913\"]}");
+	add("{\"term\":\"snoring\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00837637\"]}");
+	add("{\"term\":\"snorkel\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04257960\", \"04258254\"]}");
+	add("{\"term\":\"snorkeling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00445922\"]}");
+	add("{\"term\":\"snort\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07138578\", \"07142768\"]}");
+	add("{\"term\":\"snorter\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04258487\", \"05696914\", \"10637017\"]}");
+	add("{\"term\":\"snorting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00836121\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

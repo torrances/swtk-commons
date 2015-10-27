@@ -1,0 +1,26 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.p.h.y.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePHYS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"physa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01955353\"]}");
+	add("{\"term\":\"physalia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01915676\"]}");
+	add("{\"term\":\"physalis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12930901\"]}");
+	add("{\"term\":\"physaria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11913920\"]}");
+	add("{\"term\":\"physeter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02069753\"]}");
+	add("{\"term\":\"physeteridae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02069603\"]}");
+	add("{\"term\":\"physiatrics\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00701253\"]}");
+	add("{\"term\":\"physic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04032142\"]}");
+	add("{\"term\":\"physicalism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05981452\"]}");
+	add("{\"term\":\"physicality\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04631874\"]}");
+	add("{\"term\":\"physicalness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04768026\"]}");
+	add("{\"term\":\"physician\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10040615\"]}");
+	add("{\"term\":\"physicist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10447768\"]}");
+	add("{\"term\":\"physics\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06104194\", \"06100457\"]}");
+	add("{\"term\":\"physidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01955070\"]}");
+	add("{\"term\":\"physiognomy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05609112\"]}");
+	add("{\"term\":\"physiography\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06132052\"]}");
+	add("{\"term\":\"physiologist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10449729\"]}");
+	add("{\"term\":\"physiology\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05012229\", \"06090110\"]}");
+	add("{\"term\":\"physiotherapist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10447528\"]}");
+	add("{\"term\":\"physiotherapy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00701253\"]}");
+	add("{\"term\":\"physique\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05224424\", \"05005695\"]}");
+	add("{\"term\":\"physostegia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12882652\"]}");
+	add("{\"term\":\"physostigma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12507237\"]}");
+	add("{\"term\":\"physostigmine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12507767\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

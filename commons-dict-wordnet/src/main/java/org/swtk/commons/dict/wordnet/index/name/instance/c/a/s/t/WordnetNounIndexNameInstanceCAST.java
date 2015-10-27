@@ -1,0 +1,28 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.a.s.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCAST {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cast\", \"synsetCount\":9, \"upperType\":\"NOUN\", \"ids\":[\"00106299\", \"00455648\", \"01248360\", \"02983121\", \"02983295\", \"04684871\", \"13936581\", \"03784903\", \"08254784\"]}");
+	add("{\"term\":\"castanea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12282844\"]}");
+	add("{\"term\":\"castanets\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02872589\"]}");
+	add("{\"term\":\"castanopsis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12284771\"]}");
+	add("{\"term\":\"castanospermum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12532965\"]}");
+	add("{\"term\":\"castaway\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09918890\", \"10406011\"]}");
+	add("{\"term\":\"caste\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"08012059\", \"08322977\", \"08323124\", \"14455164\"]}");
+	add("{\"term\":\"caster\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"02983495\", \"02983662\", \"09632776\"]}");
+	add("{\"term\":\"castigation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01163504\", \"06726126\"]}");
+	add("{\"term\":\"castile\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09050223\"]}");
+	add("{\"term\":\"castilian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06979859\"]}");
+	add("{\"term\":\"castilla\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09050223\"]}");
+	add("{\"term\":\"castilleia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12900479\"]}");
+	add("{\"term\":\"castilleja\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12900479\"]}");
+	add("{\"term\":\"castillian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09728837\"]}");
+	add("{\"term\":\"casting\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00162423\", \"00455648\", \"00911597\", \"02983121\"]}");
+	add("{\"term\":\"castle\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00167373\", \"02984084\", \"02983900\", \"03883763\"]}");
+	add("{\"term\":\"castling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00167373\"]}");
+	add("{\"term\":\"castor\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"02365514\", \"02821270\", \"02983495\", \"02983662\", \"09260655\"]}");
+	add("{\"term\":\"castoridae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02365373\"]}");
+	add("{\"term\":\"castoroides\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02366163\"]}");
+	add("{\"term\":\"castrate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10086259\"]}");
+	add("{\"term\":\"castration\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00397818\", \"00669090\", \"00693602\"]}");
+	add("{\"term\":\"castrato\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09918986\"]}");
+	add("{\"term\":\"castries\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09011231\"]}");
+	add("{\"term\":\"castro\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10906681\"]}");
+	add("{\"term\":\"castroism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06224796\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -7,13 +7,13 @@ import java.util.Collection;
 
 import org.junit.Test;
 import org.swtk.common.dict.dto.wordnet.IndexNoun;
-import org.swtk.commons.dict.wordnet.index.instance.p0.p0.WordnetNounIndexInstance0000;
+import org.swtk.commons.dict.wordnet.index.byid.instance.p0.p0.WordnetNounIndexIdInstance0000;
 
 public final class WordnetNounIndexInstance0000Test {
 
 	@Test
 	public void test() throws Throwable {
-		Collection<IndexNoun> results = WordnetNounIndexInstance0000.get("00007846");
+		Collection<IndexNoun> results = WordnetNounIndexIdInstance0000.get("00007846");
 		assertNotNull(results);
 		assertFalse(results.isEmpty());
 	}

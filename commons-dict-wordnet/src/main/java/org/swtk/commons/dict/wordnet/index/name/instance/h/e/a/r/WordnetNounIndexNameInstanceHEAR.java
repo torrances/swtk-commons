@@ -1,0 +1,28 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.h.e.a.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHEAR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hearer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10185041\"]}");
+	add("{\"term\":\"hearing\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"05665563\", \"07161975\", \"00883837\", \"08578322\", \"14508362\", \"01202187\"]}");
+	add("{\"term\":\"hearsay\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07238110\"]}");
+	add("{\"term\":\"hearse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03512024\"]}");
+	add("{\"term\":\"hearst\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11057274\"]}");
+	add("{\"term\":\"heart\", \"synsetCount\":10, \"upperType\":\"NOUN\", \"ids\":[\"03512192\", \"07560035\", \"07667514\", \"13888525\", \"04632183\", \"05929717\", \"08540894\", \"04864721\", \"05396148\", \"05927857\"]}");
+	add("{\"term\":\"heartache\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07550398\"]}");
+	add("{\"term\":\"heartbeat\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05202921\", \"15271921\", \"07415506\"]}");
+	add("{\"term\":\"heartbreak\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07550398\"]}");
+	add("{\"term\":\"heartbreaker\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07491317\", \"10185782\"]}");
+	add("{\"term\":\"heartburn\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14358628\"]}");
+	add("{\"term\":\"heartburning\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07564731\"]}");
+	add("{\"term\":\"hearth\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"08599227\", \"03512385\", \"03351301\"]}");
+	add("{\"term\":\"hearthrug\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03512602\"]}");
+	add("{\"term\":\"hearthstone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03512698\"]}");
+	add("{\"term\":\"heartiness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04874770\", \"05037972\"]}");
+	add("{\"term\":\"heartland\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08599425\"]}");
+	add("{\"term\":\"heartleaf\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11823055\", \"11823269\"]}");
+	add("{\"term\":\"heartlessness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07521388\"]}");
+	add("{\"term\":\"heartrot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14304141\"]}");
+	add("{\"term\":\"hearts\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00497610\"]}");
+	add("{\"term\":\"heartsease\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07531029\", \"12408660\", \"12409647\", \"12411198\"]}");
+	add("{\"term\":\"heartseed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12763638\"]}");
+	add("{\"term\":\"heartsickness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07553783\"]}");
+	add("{\"term\":\"heartstrings\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07561327\"]}");
+	add("{\"term\":\"heartthrob\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10185906\"]}");
+	add("{\"term\":\"heartwood\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13118511\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

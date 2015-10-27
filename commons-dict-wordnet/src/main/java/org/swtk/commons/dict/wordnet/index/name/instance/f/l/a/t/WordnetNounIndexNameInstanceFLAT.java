@@ -1,0 +1,24 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.f.l.a.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFLAT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"flat\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"02729230\", \"03364601\", \"03364796\", \"03365577\", \"06879969\", \"03364884\", \"09304317\"]}");
+	add("{\"term\":\"flatbed\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03365146\", \"03365577\"]}");
+	add("{\"term\":\"flatboat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02795575\"]}");
+	add("{\"term\":\"flatbread\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07698369\"]}");
+	add("{\"term\":\"flatbrod\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07699010\"]}");
+	add("{\"term\":\"flatcar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03365577\"]}");
+	add("{\"term\":\"flatfish\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02659998\", \"07806376\"]}");
+	add("{\"term\":\"flatfoot\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05584052\", \"10115433\"]}");
+	add("{\"term\":\"flathead\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02622797\", \"02652176\"]}");
+	add("{\"term\":\"flatiron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03366040\"]}");
+	add("{\"term\":\"flatlet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03366143\"]}");
+	add("{\"term\":\"flatmate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10115538\"]}");
+	add("{\"term\":\"flatness\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"04643310\", \"04963287\", \"05725900\", \"07083787\", \"05070518\"]}");
+	add("{\"term\":\"flats\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03366396\"]}");
+	add("{\"term\":\"flatterer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10115638\"]}");
+	add("{\"term\":\"flattery\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06708324\"]}");
+	add("{\"term\":\"flattop\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02690031\", \"05268304\"]}");
+	add("{\"term\":\"flatulence\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07104765\", \"14059177\"]}");
+	add("{\"term\":\"flatulency\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14059177\"]}");
+	add("{\"term\":\"flatus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00841258\"]}");
+	add("{\"term\":\"flatware\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03366683\", \"03366791\"]}");
+	add("{\"term\":\"flatwork\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03366965\"]}");
+	add("{\"term\":\"flatworm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01927557\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

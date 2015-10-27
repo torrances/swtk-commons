@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.p.i.t.c;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePITC {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"pitch\", \"synsetCount\":11, \"upperType\":\"NOUN\", \"ids\":[\"00106924\", \"00338036\", \"00499569\", \"00574701\", \"08533915\", \"14935855\", \"05076368\", \"07263321\", \"08642231\", \"00107092\", \"04992447\"]}");
+	add("{\"term\":\"pitchblende\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15109112\"]}");
+	add("{\"term\":\"pitcher\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00724235\", \"12800928\", \"13790888\", \"03956504\", \"10455755\"]}");
+	add("{\"term\":\"pitcherful\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13790888\"]}");
+	add("{\"term\":\"pitchfork\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03956635\"]}");
+	add("{\"term\":\"pitching\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00338036\", \"00127971\"]}");
+	add("{\"term\":\"pitchman\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10431296\", \"10456101\"]}");
+	add("{\"term\":\"pitchstone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14905294\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

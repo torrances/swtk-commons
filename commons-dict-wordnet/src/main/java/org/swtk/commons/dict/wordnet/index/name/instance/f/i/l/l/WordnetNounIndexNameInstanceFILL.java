@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.f.i.l.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFILL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"fill\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14892394\", \"13601926\"]}");
+	add("{\"term\":\"fillagree\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03342767\"]}");
+	add("{\"term\":\"fille\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10149362\"]}");
+	add("{\"term\":\"filler\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"03342954\", \"03720260\", \"06688999\", \"13698755\", \"14730187\"]}");
+	add("{\"term\":\"fillet\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"03343088\", \"04390783\", \"05483214\", \"07670946\", \"07675810\"]}");
+	add("{\"term\":\"filling\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"00403343\", \"03343232\", \"04606292\", \"07899006\", \"13501744\", \"14892394\"]}");
+	add("{\"term\":\"fillip\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05837980\"]}");
+	add("{\"term\":\"fillmore\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10990856\"]}");
+	add("{\"term\":\"filly\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02379331\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

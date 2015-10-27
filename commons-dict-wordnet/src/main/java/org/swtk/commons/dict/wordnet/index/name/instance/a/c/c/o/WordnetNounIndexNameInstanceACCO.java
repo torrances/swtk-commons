@@ -1,0 +1,24 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.a.c.c.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceACCO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"accolade\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06709228\"]}");
+	add("{\"term\":\"accommodation\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"00194074\", \"01213306\", \"02675001\", \"05763483\", \"07192097\", \"07384204\"]}");
+	add("{\"term\":\"accommodator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10388865\"]}");
+	add("{\"term\":\"accompaniment\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00829443\", \"05116811\", \"07045239\", \"07299259\"]}");
+	add("{\"term\":\"accompanist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09780244\"]}");
+	add("{\"term\":\"accompanyist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09780244\"]}");
+	add("{\"term\":\"accomplice\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09780399\"]}");
+	add("{\"term\":\"accomplishment\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05645403\", \"00035910\"]}");
+	add("{\"term\":\"accord\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"04720608\", \"06786235\", \"07191464\", \"13994512\"]}");
+	add("{\"term\":\"accordance\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01088496\", \"07191464\"]}");
+	add("{\"term\":\"accordion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02675461\"]}");
+	add("{\"term\":\"accordionist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09780641\"]}");
+	add("{\"term\":\"accouchement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13469507\"]}");
+	add("{\"term\":\"accoucheur\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10389398\"]}");
+	add("{\"term\":\"accoucheuse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10334494\"]}");
+	add("{\"term\":\"account\", \"synsetCount\":10, \"upperType\":\"NOUN\", \"ids\":[\"05165115\", \"06528946\", \"07232584\", \"13376000\", \"05176564\", \"09202279\", \"06751030\", \"13952070\", \"06694296\", \"06526084\"]}");
+	add("{\"term\":\"accountability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04677185\"]}");
+	add("{\"term\":\"accountancy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00619974\"]}");
+	add("{\"term\":\"accountant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09780826\"]}");
+	add("{\"term\":\"accountantship\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00589635\"]}");
+	add("{\"term\":\"accounting\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"13376000\", \"13427135\", \"00619974\", \"05670377\", \"06752258\"]}");
+	add("{\"term\":\"accouterment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02674410\"]}");
+	add("{\"term\":\"accoutrement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02674410\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

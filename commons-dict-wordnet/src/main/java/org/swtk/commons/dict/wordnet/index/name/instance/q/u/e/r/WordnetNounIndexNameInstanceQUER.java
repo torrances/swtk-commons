@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.q.u.e.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceQUER {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"quercitron\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12299975\", \"15025425\"]}");
+	add("{\"term\":\"quercus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12288613\"]}");
+	add("{\"term\":\"querier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10227450\"]}");
+	add("{\"term\":\"quern\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04040277\"]}");
+	add("{\"term\":\"querulousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04650337\"]}");
+	add("{\"term\":\"query\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07208256\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

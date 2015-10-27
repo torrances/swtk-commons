@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.g.a.r.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceGARN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"garner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03457393\"]}");
+	add("{\"term\":\"garnet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14700203\"]}");
+	add("{\"term\":\"garnier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11011299\"]}");
+	add("{\"term\":\"garnierite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14700487\"]}");
+	add("{\"term\":\"garnish\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03425350\", \"07637227\"]}");
+	add("{\"term\":\"garnishee\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10140801\"]}");
+	add("{\"term\":\"garnishment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06569818\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.u.r.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSURP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"surplice\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04372081\"]}");
+	add("{\"term\":\"surplus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05127014\"]}");
+	add("{\"term\":\"surplusage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05127014\"]}");
+	add("{\"term\":\"surprint\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03871382\"]}");
+	add("{\"term\":\"surprisal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00554692\"]}");
+	add("{\"term\":\"surprise\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00554692\", \"07312772\", \"07525587\"]}");
+	add("{\"term\":\"surpriser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10699170\"]}");
+	add("{\"term\":\"surprisingness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04803974\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

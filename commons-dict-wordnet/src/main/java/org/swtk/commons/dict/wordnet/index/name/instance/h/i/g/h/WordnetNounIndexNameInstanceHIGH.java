@@ -1,0 +1,26 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.h.i.g.h;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHIGH {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"high\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"03523794\", \"08426574\", \"08602145\", \"14428856\", \"14429025\", \"14544272\", \"05104798\"]}");
+	add("{\"term\":\"highball\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07928451\"]}");
+	add("{\"term\":\"highbinder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10193884\"]}");
+	add("{\"term\":\"highboard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03523393\"]}");
+	add("{\"term\":\"highboy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03523468\"]}");
+	add("{\"term\":\"highbrow\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10193961\"]}");
+	add("{\"term\":\"highchair\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03523608\"]}");
+	add("{\"term\":\"highflier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10194220\"]}");
+	add("{\"term\":\"highflyer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10194220\"]}");
+	add("{\"term\":\"highjack\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00771433\"]}");
+	add("{\"term\":\"highjacker\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10195138\", \"10195356\"]}");
+	add("{\"term\":\"highjacking\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00784853\"]}");
+	add("{\"term\":\"highland\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09325522\"]}");
+	add("{\"term\":\"highlander\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10194326\", \"10194476\"]}");
+	add("{\"term\":\"highlands\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08911822\"]}");
+	add("{\"term\":\"highlife\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00744939\"]}");
+	add("{\"term\":\"highlight\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04959297\", \"13832353\"]}");
+	add("{\"term\":\"highlighter\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03524106\", \"03524244\"]}");
+	add("{\"term\":\"highlighting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04959297\"]}");
+	add("{\"term\":\"highness\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05104623\", \"05144667\", \"10194721\"]}");
+	add("{\"term\":\"highroad\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03524741\"]}");
+	add("{\"term\":\"highschool\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08426574\"]}");
+	add("{\"term\":\"highwater\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07416560\"]}");
+	add("{\"term\":\"highway\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03525144\"]}");
+	add("{\"term\":\"highwayman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10195138\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

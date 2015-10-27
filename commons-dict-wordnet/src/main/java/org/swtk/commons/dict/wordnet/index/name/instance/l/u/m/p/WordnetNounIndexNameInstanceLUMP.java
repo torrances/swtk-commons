@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.l.u.m.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLUMP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"lump\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"09330206\", \"10294336\", \"14338619\", \"07977630\"]}");
+	add("{\"term\":\"lumpectomy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00685901\"]}");
+	add("{\"term\":\"lumpenproletariat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08197993\"]}");
+	add("{\"term\":\"lumpenus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02618459\"]}");
+	add("{\"term\":\"lumper\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10296174\", \"10674608\"]}");
+	add("{\"term\":\"lumpfish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02649297\"]}");
+	add("{\"term\":\"lumpsucker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02649522\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

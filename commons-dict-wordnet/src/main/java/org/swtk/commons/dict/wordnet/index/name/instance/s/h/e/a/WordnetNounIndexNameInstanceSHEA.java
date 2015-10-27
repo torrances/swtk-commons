@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.h.e.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSHEA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"sheaf\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02922798\"]}");
+	add("{\"term\":\"shear\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04193752\", \"11527156\"]}");
+	add("{\"term\":\"shearer\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"10606497\", \"10606635\", \"11316765\"]}");
+	add("{\"term\":\"shearing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00361068\"]}");
+	add("{\"term\":\"shears\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04193891\"]}");
+	add("{\"term\":\"shearwater\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02063064\"]}");
+	add("{\"term\":\"sheatfish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02520955\"]}");
+	add("{\"term\":\"sheath\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03066018\", \"05245366\", \"04194104\"]}");
+	add("{\"term\":\"sheathing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04194276\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

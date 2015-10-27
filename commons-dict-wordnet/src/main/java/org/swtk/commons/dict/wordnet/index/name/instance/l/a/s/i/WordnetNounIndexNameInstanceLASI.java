@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.l.a.s.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLASI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"lasik\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00681764\"]}");
+	add("{\"term\":\"lasiocampa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02309324\"]}");
+	add("{\"term\":\"lasiocampid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02309085\"]}");
+	add("{\"term\":\"lasiocampidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02308811\"]}");
+	add("{\"term\":\"lasiurus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02148716\"]}");
+	add("{\"term\":\"lasix\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03411507\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

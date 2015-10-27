@@ -1,0 +1,26 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.i.m.m.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceIMMU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"immune\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10219402\"]}");
+	add("{\"term\":\"immunisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00830651\"]}");
+	add("{\"term\":\"immunity\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00214770\", \"05041061\", \"14550773\", \"14550366\"]}");
+	add("{\"term\":\"immunization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00830651\"]}");
+	add("{\"term\":\"immunoassay\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05748505\"]}");
+	add("{\"term\":\"immunochemistry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06061456\"]}");
+	add("{\"term\":\"immunocompetence\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13997591\"]}");
+	add("{\"term\":\"immunodeficiency\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13997764\"]}");
+	add("{\"term\":\"immunoelectrophoresis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13517370\"]}");
+	add("{\"term\":\"immunofluorescence\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05674168\"]}");
+	add("{\"term\":\"immunogen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03567919\"]}");
+	add("{\"term\":\"immunogenicity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14551032\"]}");
+	add("{\"term\":\"immunoglobulin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15055048\"]}");
+	add("{\"term\":\"immunohistochemistry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00793803\"]}");
+	add("{\"term\":\"immunologist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10219521\"]}");
+	add("{\"term\":\"immunology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06061073\"]}");
+	add("{\"term\":\"immunopathology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06061696\"]}");
+	add("{\"term\":\"immunosuppressant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03568138\"]}");
+	add("{\"term\":\"immunosuppression\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13998067\"]}");
+	add("{\"term\":\"immunosuppressive\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03568138\"]}");
+	add("{\"term\":\"immunosuppressor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03568138\"]}");
+	add("{\"term\":\"immunotherapy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00664576\"]}");
+	add("{\"term\":\"immurement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14022691\"]}");
+	add("{\"term\":\"immutability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04749047\"]}");
+	add("{\"term\":\"immutableness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04749047\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

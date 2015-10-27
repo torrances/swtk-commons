@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.b.i.l.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBILL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"bill\", \"synsetCount\":10, \"upperType\":\"NOUN\", \"ids\":[\"01760949\", \"02841963\", \"02842193\", \"06498711\", \"06806283\", \"07265007\", \"00552444\", \"13414935\", \"06528946\", \"06548844\"]}");
+	add("{\"term\":\"billabong\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09243677\", \"09243829\"]}");
+	add("{\"term\":\"billboard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02842339\"]}");
+	add("{\"term\":\"billet\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00587299\", \"02842429\", \"06638793\"]}");
+	add("{\"term\":\"billfish\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"02552620\", \"02554299\", \"02633369\", \"02644009\"]}");
+	add("{\"term\":\"billfold\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04555648\"]}");
+	add("{\"term\":\"billhook\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02842193\"]}");
+	add("{\"term\":\"billiards\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00500935\"]}");
+	add("{\"term\":\"billing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07205601\"]}");
+	add("{\"term\":\"billings\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09131358\"]}");
+	add("{\"term\":\"billingsgate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06734091\"]}");
+	add("{\"term\":\"billion\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"13773969\", \"13798632\", \"13774312\"]}");
+	add("{\"term\":\"billionaire\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10549259\"]}");
+	add("{\"term\":\"billionth\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13761861\", \"13872216\"]}");
+	add("{\"term\":\"billow\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07363145\"]}");
+	add("{\"term\":\"billy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02419526\", \"04498683\"]}");
+	add("{\"term\":\"billyo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13797519\"]}");
+	add("{\"term\":\"billyoh\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13797519\"]}");
+	add("{\"term\":\"billystick\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04498683\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

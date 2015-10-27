@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.h.u.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCHUR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"church\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"08099776\", \"01034400\", \"03031762\", \"08099479\"]}");
+	add("{\"term\":\"churchgoer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09941943\"]}");
+	add("{\"term\":\"churchill\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"08843315\", \"10917064\", \"10917346\"]}");
+	add("{\"term\":\"churchman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09947594\"]}");
+	add("{\"term\":\"churchwarden\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09942117\"]}");
+	add("{\"term\":\"churchyard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08664929\"]}");
+	add("{\"term\":\"churidars\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03032979\"]}");
+	add("{\"term\":\"churl\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"10167825\", \"10377436\", \"10430560\"]}");
+	add("{\"term\":\"churn\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03033147\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

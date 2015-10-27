@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.p.a.t.c;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePATC {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"patch\", \"synsetCount\":9, \"upperType\":\"NOUN\", \"ids\":[\"02788671\", \"03314301\", \"03750776\", \"04416006\", \"06585399\", \"15271164\", \"03903640\", \"08692477\", \"04689819\"]}");
+	add("{\"term\":\"patchboard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04380351\"]}");
+	add("{\"term\":\"patchcord\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03903826\"]}");
+	add("{\"term\":\"patchiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04780083\"]}");
+	add("{\"term\":\"patching\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00268193\"]}");
+	add("{\"term\":\"patchouli\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03903968\", \"12883588\"]}");
+	add("{\"term\":\"patchouly\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03903968\", \"12883588\"]}");
+	add("{\"term\":\"patchwork\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03904197\", \"03904330\", \"05962283\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -1,0 +1,24 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.a.p.p.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceAPPR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"appraisal\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00877197\", \"06540774\", \"05741528\"]}");
+	add("{\"term\":\"appraiser\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09821662\", \"09821473\"]}");
+	add("{\"term\":\"appreciation\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00365266\", \"01221083\", \"07243771\", \"05757616\", \"05814631\"]}");
+	add("{\"term\":\"appreciativeness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07519768\"]}");
+	add("{\"term\":\"appreciator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09821868\"]}");
+	add("{\"term\":\"apprehender\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09820525\", \"10259779\"]}");
+	add("{\"term\":\"apprehension\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00089545\", \"05960433\", \"05813483\", \"07536913\"]}");
+	add("{\"term\":\"apprehensiveness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07536913\"]}");
+	add("{\"term\":\"apprentice\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09821287\"]}");
+	add("{\"term\":\"apprenticeship\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00590035\"]}");
+	add("{\"term\":\"apprisal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07227084\"]}");
+	add("{\"term\":\"appro\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14435968\"]}");
+	add("{\"term\":\"approach\", \"synsetCount\":9, \"upperType\":\"NOUN\", \"ids\":[\"00574305\", \"04753374\", \"05053622\", \"07179000\", \"07325125\", \"08510971\", \"02673692\", \"00281697\", \"00942956\"]}");
+	add("{\"term\":\"approachability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04663006\"]}");
+	add("{\"term\":\"approaching\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00281697\", \"05053622\", \"07325125\"]}");
+	add("{\"term\":\"approbation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06699923\", \"07515851\"]}");
+	add("{\"term\":\"appropriateness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04723223\", \"04906208\"]}");
+	add("{\"term\":\"appropriation\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00084795\", \"00374226\", \"13310868\"]}");
+	add("{\"term\":\"appropriator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09822064\"]}");
+	add("{\"term\":\"approval\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"06699481\", \"14435778\", \"07515398\", \"01217882\"]}");
+	add("{\"term\":\"approver\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09822267\"]}");
+	add("{\"term\":\"approving\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01217882\"]}");
+	add("{\"term\":\"approximation\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00147097\", \"06796299\", \"04751272\", \"05811387\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

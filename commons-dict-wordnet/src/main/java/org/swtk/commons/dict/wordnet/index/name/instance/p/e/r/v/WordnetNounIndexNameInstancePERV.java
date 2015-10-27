@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.p.e.r.v;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePERV {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"pervaporation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00376156\"]}");
+	add("{\"term\":\"pervasion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13556157\"]}");
+	add("{\"term\":\"pervasiveness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04772421\"]}");
+	add("{\"term\":\"perverseness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04860734\", \"04916195\"]}");
+	add("{\"term\":\"perversion\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00743772\", \"00856347\", \"13899560\"]}");
+	add("{\"term\":\"perversity\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04860734\", \"04916195\"]}");
+	add("{\"term\":\"pervert\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10438792\"]}");
+	add("{\"term\":\"perviousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04947907\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.f.o.r.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFORG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"forge\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03388492\", \"03388667\"]}");
+	add("{\"term\":\"forger\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10124854\", \"10125029\"]}");
+	add("{\"term\":\"forgery\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00770410\", \"03567442\"]}");
+	add("{\"term\":\"forgetfulness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05681752\", \"05681053\"]}");
+	add("{\"term\":\"forging\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00927436\"]}");
+	add("{\"term\":\"forgiveness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01229679\", \"07570205\"]}");
+	add("{\"term\":\"forgiver\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10418998\"]}");
+	add("{\"term\":\"forgivingness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04836995\"]}");
+	add("{\"term\":\"forgoing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00205928\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

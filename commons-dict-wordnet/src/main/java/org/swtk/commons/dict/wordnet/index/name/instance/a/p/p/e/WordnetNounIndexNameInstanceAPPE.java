@@ -1,0 +1,26 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.a.p.p.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceAPPE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"appeal\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"06525755\", \"01188101\", \"04694682\", \"07201488\"]}");
+	add("{\"term\":\"appealingness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04694682\"]}");
+	add("{\"term\":\"appearance\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"00756620\", \"00051015\", \"05948150\", \"01236192\", \"07336372\", \"04681322\"]}");
+	add("{\"term\":\"appearing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01236192\"]}");
+	add("{\"term\":\"appeasement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01153433\"]}");
+	add("{\"term\":\"appeaser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09819672\"]}");
+	add("{\"term\":\"appellant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09819892\"]}");
+	add("{\"term\":\"appellation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06347064\", \"06350278\"]}");
+	add("{\"term\":\"appellative\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06350278\"]}");
+	add("{\"term\":\"appendage\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"02731707\", \"05477841\", \"05567541\"]}");
+	add("{\"term\":\"appendectomy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00667475\"]}");
+	add("{\"term\":\"appendicectomy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00667475\"]}");
+	add("{\"term\":\"appendicitis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14282014\"]}");
+	add("{\"term\":\"appendicle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02731912\"]}");
+	add("{\"term\":\"appendicularia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01473374\"]}");
+	add("{\"term\":\"appendix\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05545209\", \"06410980\"]}");
+	add("{\"term\":\"appenzeller\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02110560\"]}");
+	add("{\"term\":\"apperception\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05716605\"]}");
+	add("{\"term\":\"appetence\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07500766\"]}");
+	add("{\"term\":\"appetency\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07500766\"]}");
+	add("{\"term\":\"appetiser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07596911\"]}");
+	add("{\"term\":\"appetisingness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05002696\"]}");
+	add("{\"term\":\"appetite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07500766\"]}");
+	add("{\"term\":\"appetizer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07596911\"]}");
+	add("{\"term\":\"appetizingness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05002696\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

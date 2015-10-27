@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.d.e.p.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDEPE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"dependability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04677379\"]}");
+	add("{\"term\":\"dependableness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04677379\"]}");
+	add("{\"term\":\"dependance\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14024833\", \"14086207\"]}");
+	add("{\"term\":\"dependant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10024466\"]}");
+	add("{\"term\":\"dependence\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14086207\", \"14024833\"]}");
+	add("{\"term\":\"dependency\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"08516868\", \"14086207\", \"14024833\"]}");
+	add("{\"term\":\"dependent\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10024466\"]}");
+	add("{\"term\":\"depersonalisation\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00934113\", \"14049858\", \"14417499\"]}");
+	add("{\"term\":\"depersonalization\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00934113\", \"14049858\", \"14417499\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

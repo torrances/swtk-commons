@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.u.n.p.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceUNPR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"unpredictability\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04765568\", \"04873902\", \"04742315\"]}");
+	add("{\"term\":\"unpretentiousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04794382\"]}");
+	add("{\"term\":\"unproductiveness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05155786\"]}");
+	add("{\"term\":\"unprofitability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05173060\"]}");
+	add("{\"term\":\"unprofitableness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05173060\"]}");
+	add("{\"term\":\"unpropitiousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05169744\"]}");
+	add("{\"term\":\"unprotectedness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05050245\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

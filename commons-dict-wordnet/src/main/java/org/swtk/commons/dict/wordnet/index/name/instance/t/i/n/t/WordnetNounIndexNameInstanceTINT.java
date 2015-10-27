@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.t.i.n.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTINT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"tint\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"13795501\", \"15013061\", \"04966407\"]}");
+	add("{\"term\":\"tintack\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04447533\"]}");
+	add("{\"term\":\"tinter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10732123\"]}");
+	add("{\"term\":\"tinting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00275995\"]}");
+	add("{\"term\":\"tintinnabulation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07406463\"]}");
+	add("{\"term\":\"tintometer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03075556\"]}");
+	add("{\"term\":\"tintoretto\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11363203\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

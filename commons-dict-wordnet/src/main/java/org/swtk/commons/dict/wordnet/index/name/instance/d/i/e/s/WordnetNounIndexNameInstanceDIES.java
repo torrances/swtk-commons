@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.d.i.e.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDIES {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"diesel\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03197791\", \"10954879\"]}");
+	add("{\"term\":\"diesinker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10032458\"]}");
+	add("{\"term\":\"diesis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06841712\"]}");
+	add("{\"term\":\"diestock\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03198438\"]}");
+	add("{\"term\":\"diestrum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14062225\"]}");
+	add("{\"term\":\"diestrus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14062225\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

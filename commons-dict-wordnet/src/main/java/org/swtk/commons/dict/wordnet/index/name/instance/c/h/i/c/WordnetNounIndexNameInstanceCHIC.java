@@ -1,0 +1,26 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.h.i.c;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCHIC {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"chic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04820943\"]}");
+	add("{\"term\":\"chicago\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00494319\", \"09105928\"]}");
+	add("{\"term\":\"chicane\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00754297\", \"03019863\", \"07974070\"]}");
+	add("{\"term\":\"chicanery\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00754297\"]}");
+	add("{\"term\":\"chicano\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09742231\"]}");
+	add("{\"term\":\"chicha\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03538194\"]}");
+	add("{\"term\":\"chichewa\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07005260\", \"09717167\"]}");
+	add("{\"term\":\"chichi\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04820943\", \"09935567\"]}");
+	add("{\"term\":\"chichipe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11869336\"]}");
+	add("{\"term\":\"chick\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10008583\", \"01794683\"]}");
+	add("{\"term\":\"chickadee\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01594725\"]}");
+	add("{\"term\":\"chickamauga\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01278190\"]}");
+	add("{\"term\":\"chickasaw\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06925116\", \"09671854\"]}");
+	add("{\"term\":\"chicken\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07472727\", \"10801493\", \"01794266\", \"07660576\"]}");
+	add("{\"term\":\"chickenfeed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13409173\"]}");
+	add("{\"term\":\"chickenpox\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14156457\"]}");
+	add("{\"term\":\"chickenshit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06624209\"]}");
+	add("{\"term\":\"chickeree\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02360237\"]}");
+	add("{\"term\":\"chickpea\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07742071\", \"12536216\", \"12536430\"]}");
+	add("{\"term\":\"chickweed\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11827577\", \"11838383\"]}");
+	add("{\"term\":\"chicle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14924846\"]}");
+	add("{\"term\":\"chicness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04820943\"]}");
+	add("{\"term\":\"chico\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11180851\"]}");
+	add("{\"term\":\"chicory\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07746831\", \"07747260\", \"11973507\", \"11974079\"]}");
+	add("{\"term\":\"chicot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12516932\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

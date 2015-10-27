@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.h.o.v;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSHOV {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"shove\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00114546\"]}");
+	add("{\"term\":\"shovel\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"04002774\", \"04215494\", \"13792010\", \"04215277\"]}");
+	add("{\"term\":\"shovelboard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00468604\"]}");
+	add("{\"term\":\"shoveler\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01851617\", \"10613026\"]}");
+	add("{\"term\":\"shovelful\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13792010\"]}");
+	add("{\"term\":\"shovelhead\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01497647\"]}");
+	add("{\"term\":\"shoveller\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01851617\", \"10613026\"]}");
+	add("{\"term\":\"shover\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10515006\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.r.a.p.h;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRAPH {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"raphael\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09562751\", \"11274018\"]}");
+	add("{\"term\":\"raphanus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11914642\"]}");
+	add("{\"term\":\"raphe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05283924\"]}");
+	add("{\"term\":\"raphia\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12615507\", \"15027113\"]}");
+	add("{\"term\":\"raphicerus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02428985\"]}");
+	add("{\"term\":\"raphidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01813587\"]}");
+	add("{\"term\":\"raphidiidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02269671\"]}");
+	add("{\"term\":\"raphus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01813745\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

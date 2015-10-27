@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.r.e.c.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRECU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"recuperation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13473520\"]}");
+	add("{\"term\":\"recurrence\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07357963\"]}");
+	add("{\"term\":\"recursion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05856884\"]}");
+	add("{\"term\":\"recurvirostra\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02039202\"]}");
+	add("{\"term\":\"recurvirostridae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02039053\"]}");
+	add("{\"term\":\"recusal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01081986\"]}");
+	add("{\"term\":\"recusancy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01246000\"]}");
+	add("{\"term\":\"recusant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09977313\"]}");
+	add("{\"term\":\"recusation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01027962\", \"01081986\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

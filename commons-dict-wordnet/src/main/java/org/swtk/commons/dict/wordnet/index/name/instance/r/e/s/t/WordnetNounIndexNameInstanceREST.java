@@ -1,0 +1,21 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.r.e.s.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceREST {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"rest\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"06878227\", \"04088156\", \"13986101\", \"14035972\", \"15299060\", \"01066072\", \"13833030\"]}");
+	add("{\"term\":\"restatement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06781692\"]}");
+	add("{\"term\":\"restaurant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04088393\"]}");
+	add("{\"term\":\"restauranter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10544462\"]}");
+	add("{\"term\":\"restaurateur\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10544462\"]}");
+	add("{\"term\":\"rester\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10544566\"]}");
+	add("{\"term\":\"restfulness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04643607\"]}");
+	add("{\"term\":\"restharrow\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12573398\", \"12573619\"]}");
+	add("{\"term\":\"restitution\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00090171\", \"00271119\", \"13311699\"]}");
+	add("{\"term\":\"restiveness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04633073\", \"07540999\"]}");
+	add("{\"term\":\"restlessness\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"04632641\", \"07529034\", \"14430687\", \"04781982\"]}");
+	add("{\"term\":\"restoration\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"01310097\", \"04070101\", \"04090580\", \"14447921\", \"00090171\", \"00269401\", \"15286679\"]}");
+	add("{\"term\":\"restorative\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03116550\", \"04458744\"]}");
+	add("{\"term\":\"restorer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10534555\"]}");
+	add("{\"term\":\"restoril\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04414142\"]}");
+	add("{\"term\":\"restrainer\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10544727\", \"15029441\"]}");
+	add("{\"term\":\"restraint\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"04088956\", \"04704790\", \"06257831\", \"14022266\", \"04890163\", \"01147872\"]}");
+	add("{\"term\":\"restriction\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01151109\", \"00809843\", \"05854882\"]}");
+	add("{\"term\":\"restrictiveness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04646470\", \"13823252\"]}");
+	add("{\"term\":\"restroom\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04025061\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

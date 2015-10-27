@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.e.r.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSERR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"serra\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11313460\"]}");
+	add("{\"term\":\"serranid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02568740\"]}");
+	add("{\"term\":\"serranidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02568359\"]}");
+	add("{\"term\":\"serranus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02571267\"]}");
+	add("{\"term\":\"serrasalmus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02586956\"]}");
+	add("{\"term\":\"serratia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01372274\"]}");
+	add("{\"term\":\"serration\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04181766\", \"08448610\", \"14592202\"]}");
+	add("{\"term\":\"serratula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12035208\"]}");
+	add("{\"term\":\"serratus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05557963\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

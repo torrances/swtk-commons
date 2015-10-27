@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.b.u.r.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBURR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"burr\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"02924676\", \"02927299\", \"10893749\", \"02927186\", \"12056837\"]}");
+	add("{\"term\":\"burrawong\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11624497\"]}");
+	add("{\"term\":\"burrfish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02658931\"]}");
+	add("{\"term\":\"burrito\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07896943\"]}");
+	add("{\"term\":\"burro\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02392431\"]}");
+	add("{\"term\":\"burroughs\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"10893980\", \"10894127\", \"10894293\"]}");
+	add("{\"term\":\"burrow\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09252948\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

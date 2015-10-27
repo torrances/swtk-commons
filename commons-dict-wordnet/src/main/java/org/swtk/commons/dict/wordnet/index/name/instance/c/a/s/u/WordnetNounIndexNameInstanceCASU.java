@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.a.s.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCASU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"casualness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04919417\"]}");
+	add("{\"term\":\"casualty\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07354694\", \"07376317\", \"09919123\", \"09919234\"]}");
+	add("{\"term\":\"casuaridae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01521869\"]}");
+	add("{\"term\":\"casuariiformes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01521687\"]}");
+	add("{\"term\":\"casuarina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12245495\"]}");
+	add("{\"term\":\"casuarinaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12245039\"]}");
+	add("{\"term\":\"casuarinales\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12244826\"]}");
+	add("{\"term\":\"casuarius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01522042\"]}");
+	add("{\"term\":\"casuist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09919381\"]}");
+	add("{\"term\":\"casuistry\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06169771\", \"06169960\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

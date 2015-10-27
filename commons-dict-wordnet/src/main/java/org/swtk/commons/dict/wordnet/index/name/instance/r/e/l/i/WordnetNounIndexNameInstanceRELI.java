@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.r.e.l.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRELI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"reliability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04677379\"]}");
+	add("{\"term\":\"reliableness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04677379\"]}");
+	add("{\"term\":\"reliance\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14025213\", \"05705941\"]}");
+	add("{\"term\":\"relic\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03615483\", \"04080659\"]}");
+	add("{\"term\":\"relict\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09430072\", \"13105393\"]}");
+	add("{\"term\":\"relief\", \"synsetCount\":11, \"upperType\":\"NOUN\", \"ids\":[\"01077491\", \"04080781\", \"00355710\", \"01090092\", \"07371701\", \"15299060\", \"01211710\", \"10667676\", \"13312014\", \"14469215\", \"07508420\"]}");
+	add("{\"term\":\"reliever\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"10537787\", \"10537942\", \"10667676\"]}");
+	add("{\"term\":\"relievo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04080781\"]}");
+	add("{\"term\":\"religion\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08098545\", \"05955536\"]}");
+	add("{\"term\":\"religionism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04834406\", \"06216205\"]}");
+	add("{\"term\":\"religionist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09652253\"]}");
+	add("{\"term\":\"religiosity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04834406\"]}");
+	add("{\"term\":\"religious\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10538195\"]}");
+	add("{\"term\":\"religiousism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04834406\"]}");
+	add("{\"term\":\"religiousness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04856097\", \"04834230\"]}");
+	add("{\"term\":\"relinquishing\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00213657\", \"07269504\"]}");
+	add("{\"term\":\"relinquishment\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00213657\", \"07269504\"]}");
+	add("{\"term\":\"reliquary\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04081297\"]}");
+	add("{\"term\":\"relish\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05723811\", \"07598006\", \"07507121\"]}");
+	add("{\"term\":\"relishing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00843562\"]}");
+	add("{\"term\":\"relistening\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00884138\"]}");
+	add("{\"term\":\"reliving\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05818794\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

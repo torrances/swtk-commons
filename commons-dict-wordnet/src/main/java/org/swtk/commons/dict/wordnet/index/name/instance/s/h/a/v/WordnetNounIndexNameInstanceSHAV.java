@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.h.a.v;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSHAV {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"shave\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00255636\"]}");
+	add("{\"term\":\"shaver\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04192847\", \"09937051\", \"10606311\"]}");
+	add("{\"term\":\"shavian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10606406\"]}");
+	add("{\"term\":\"shaving\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00151582\", \"09408030\", \"00255636\"]}");
+	add("{\"term\":\"shavous\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15221877\"]}");
+	add("{\"term\":\"shavuot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15221877\"]}");
+	add("{\"term\":\"shavuoth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15221877\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

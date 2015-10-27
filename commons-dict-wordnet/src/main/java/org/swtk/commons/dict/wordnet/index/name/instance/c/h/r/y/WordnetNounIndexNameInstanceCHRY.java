@@ -1,0 +1,27 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.h.r.y;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCHRY {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"chrysalis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02315292\"]}");
+	add("{\"term\":\"chrysanthemum\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11970814\", \"11971740\"]}");
+	add("{\"term\":\"chrysaora\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01913912\"]}");
+	add("{\"term\":\"chrysarobin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02735701\"]}");
+	add("{\"term\":\"chrysemys\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01672168\"]}");
+	add("{\"term\":\"chrysobalanus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12645634\"]}");
+	add("{\"term\":\"chrysoberyl\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14695533\"]}");
+	add("{\"term\":\"chrysochloridae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01892915\"]}");
+	add("{\"term\":\"chrysochloris\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01893052\"]}");
+	add("{\"term\":\"chrysolepis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12285138\"]}");
+	add("{\"term\":\"chrysolite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14836217\"]}");
+	add("{\"term\":\"chrysolophus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01806670\"]}");
+	add("{\"term\":\"chrysomelid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02172149\"]}");
+	add("{\"term\":\"chrysomelidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02171997\"]}");
+	add("{\"term\":\"chrysophrys\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02595496\"]}");
+	add("{\"term\":\"chrysophyceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01403216\"]}");
+	add("{\"term\":\"chrysophyllum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12794248\"]}");
+	add("{\"term\":\"chrysophyta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01402413\"]}");
+	add("{\"term\":\"chrysopid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02267537\"]}");
+	add("{\"term\":\"chrysopidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02267386\"]}");
+	add("{\"term\":\"chrysoprase\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14836403\"]}");
+	add("{\"term\":\"chrysopsis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11971854\"]}");
+	add("{\"term\":\"chrysosplenium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12817377\"]}");
+	add("{\"term\":\"chrysothamnus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11972622\"]}");
+	add("{\"term\":\"chrysotherapy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00707475\"]}");
+	add("{\"term\":\"chrysotile\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14749988\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

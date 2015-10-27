@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.h.a.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCHAP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"chap\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03010507\", \"09264835\", \"13930286\", \"09927483\"]}");
+	add("{\"term\":\"chaparral\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08455215\"]}");
+	add("{\"term\":\"chapati\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07699235\"]}");
+	add("{\"term\":\"chapatti\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07699235\"]}");
+	add("{\"term\":\"chapeau\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03502782\"]}");
+	add("{\"term\":\"chapel\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01035056\", \"03010734\"]}");
+	add("{\"term\":\"chapelgoer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09977612\"]}");
+	add("{\"term\":\"chaperon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09927731\"]}");
+	add("{\"term\":\"chaperone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09927731\"]}");
+	add("{\"term\":\"chapiter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02959683\"]}");
+	add("{\"term\":\"chaplain\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09927966\"]}");
+	add("{\"term\":\"chaplaincy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00591384\"]}");
+	add("{\"term\":\"chaplainship\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00591384\"]}");
+	add("{\"term\":\"chaplet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04613372\"]}");
+	add("{\"term\":\"chaplin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10910389\"]}");
+	add("{\"term\":\"chapman\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09928136\", \"10910620\"]}");
+	add("{\"term\":\"chapter\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"07321790\", \"08245759\", \"08245586\", \"15277718\", \"06407785\"]}");
+	add("{\"term\":\"chapterhouse\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03010901\", \"03011048\"]}");
+	add("{\"term\":\"chapultepec\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01277635\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

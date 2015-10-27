@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.m.e.r.c;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMERC {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"mercantilism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01092370\", \"08384266\"]}");
+	add("{\"term\":\"mercaptopurine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03753947\"]}");
+	add("{\"term\":\"mercator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11195233\"]}");
+	add("{\"term\":\"mercedario\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09374154\"]}");
+	add("{\"term\":\"mercenaria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01960564\"]}");
+	add("{\"term\":\"mercenary\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10329281\"]}");
+	add("{\"term\":\"mercer\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11195435\", \"10329452\"]}");
+	add("{\"term\":\"merchandise\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03754377\"]}");
+	add("{\"term\":\"merchandiser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10329563\"]}");
+	add("{\"term\":\"merchandising\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01115160\"]}");
+	add("{\"term\":\"merchant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10329563\"]}");
+	add("{\"term\":\"merchantability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14587746\"]}");
+	add("{\"term\":\"merchantman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02881464\"]}");
+	add("{\"term\":\"mercifulness\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01073335\", \"04836513\", \"07570065\"]}");
+	add("{\"term\":\"mercilessness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04838262\", \"07521621\"]}");
+	add("{\"term\":\"merckx\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11195595\"]}");
+	add("{\"term\":\"mercouri\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11195738\"]}");
+	add("{\"term\":\"mercurialis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12944599\"]}");
+	add("{\"term\":\"mercurochrome\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03753493\"]}");
+	add("{\"term\":\"mercury\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"05021492\", \"09374305\", \"09585833\", \"14669524\"]}");
+	add("{\"term\":\"mercy\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"01229984\", \"14498019\", \"07570065\", \"04836513\", \"01073335\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

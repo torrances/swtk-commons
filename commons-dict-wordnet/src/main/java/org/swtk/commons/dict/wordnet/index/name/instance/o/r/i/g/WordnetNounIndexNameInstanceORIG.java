@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.o.r.i.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceORIG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"origami\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00938272\"]}");
+	add("{\"term\":\"origanum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12873840\"]}");
+	add("{\"term\":\"origen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11236552\"]}");
+	add("{\"term\":\"origin\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"08118903\", \"13580380\", \"06018435\", \"07338522\", \"04930920\", \"08524579\"]}");
+	add("{\"term\":\"original\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05947118\", \"03732765\"]}");
+	add("{\"term\":\"originalism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05955083\"]}");
+	add("{\"term\":\"originality\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04807608\", \"05642458\"]}");
+	add("{\"term\":\"origination\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00241051\", \"07338522\"]}");
+	add("{\"term\":\"originator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10403515\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

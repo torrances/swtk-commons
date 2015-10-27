@@ -1,0 +1,28 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.r.e.c.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRECO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"recoding\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00618191\"]}");
+	add("{\"term\":\"recognisance\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13371458\"]}");
+	add("{\"term\":\"recognition\", \"synsetCount\":8, \"upperType\":\"NOUN\", \"ids\":[\"00166384\", \"06203951\", \"07163815\", \"11523113\", \"05815548\", \"06701019\", \"05770995\", \"14435385\"]}");
+	add("{\"term\":\"recognizance\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13371458\"]}");
+	add("{\"term\":\"recoil\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07364792\", \"07365354\"]}");
+	add("{\"term\":\"recollection\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05944010\", \"05769556\", \"05769915\"]}");
+	add("{\"term\":\"recombinant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01316379\"]}");
+	add("{\"term\":\"recombination\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07388752\", \"07388957\"]}");
+	add("{\"term\":\"recommencement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00242870\"]}");
+	add("{\"term\":\"recommendation\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04681025\", \"06707285\", \"06684382\"]}");
+	add("{\"term\":\"recompense\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00260486\", \"13303030\"]}");
+	add("{\"term\":\"reconciler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09971642\"]}");
+	add("{\"term\":\"reconciliation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00185953\", \"01208317\"]}");
+	add("{\"term\":\"reconditeness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04830647\", \"05934990\"]}");
+	add("{\"term\":\"reconnaissance\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00986695\"]}");
+	add("{\"term\":\"reconnoitering\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00987192\"]}");
+	add("{\"term\":\"reconnoitring\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00987192\"]}");
+	add("{\"term\":\"reconsideration\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05798017\", \"07154240\"]}");
+	add("{\"term\":\"reconstruction\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"05770255\", \"07188789\", \"00270102\", \"15286469\"]}");
+	add("{\"term\":\"record\", \"synsetCount\":8, \"upperType\":\"NOUN\", \"ids\":[\"06502164\", \"13424816\", \"00063834\", \"06649049\", \"00048486\", \"13618229\", \"03930191\", \"06659969\"]}");
+	add("{\"term\":\"recorder\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03348200\", \"10531553\", \"10536467\", \"04070485\"]}");
+	add("{\"term\":\"recording\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04070980\", \"00911901\", \"04070773\"]}");
+	add("{\"term\":\"recount\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00655201\"]}");
+	add("{\"term\":\"recounting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07237483\"]}");
+	add("{\"term\":\"recourse\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05162506\", \"01211087\"]}");
+	add("{\"term\":\"recoverer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10542352\"]}");
+	add("{\"term\":\"recovery\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00046648\", \"13473520\", \"07434392\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

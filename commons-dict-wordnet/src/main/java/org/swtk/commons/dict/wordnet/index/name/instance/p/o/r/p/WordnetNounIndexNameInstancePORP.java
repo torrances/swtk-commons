@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.p.o.r.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePORP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"porphyra\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01418034\"]}");
+	add("{\"term\":\"porphyria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14531253\"]}");
+	add("{\"term\":\"porphyrin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15048691\"]}");
+	add("{\"term\":\"porphyrio\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02019747\"]}");
+	add("{\"term\":\"porphyrula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02019989\"]}");
+	add("{\"term\":\"porphyry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15020962\"]}");
+	add("{\"term\":\"porpoise\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02073082\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.l.i.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCLIN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"clinch\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00418872\", \"03040851\", \"03046814\", \"03046969\", \"00060548\"]}");
+	add("{\"term\":\"clincher\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03047158\", \"05700723\", \"06662312\"]}");
+	add("{\"term\":\"cline\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10921984\"]}");
+	add("{\"term\":\"cling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07754200\"]}");
+	add("{\"term\":\"clingfilm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04142793\"]}");
+	add("{\"term\":\"clingfish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02638210\"]}");
+	add("{\"term\":\"clingstone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07754200\"]}");
+	add("{\"term\":\"clinic\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03047259\", \"07161008\", \"08070828\"]}");
+	add("{\"term\":\"clinician\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09949035\"]}");
+	add("{\"term\":\"clinid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02616770\"]}");
+	add("{\"term\":\"clinidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02616590\"]}");
+	add("{\"term\":\"clink\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03597432\", \"07393823\"]}");
+	add("{\"term\":\"clinker\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03047678\", \"09268118\"]}");
+	add("{\"term\":\"clinocephalism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14182635\"]}");
+	add("{\"term\":\"clinocephaly\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14182635\"]}");
+	add("{\"term\":\"clinodactyly\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14182800\"]}");
+	add("{\"term\":\"clinometer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03047783\"]}");
+	add("{\"term\":\"clinopodium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12864604\"]}");
+	add("{\"term\":\"clinoril\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04360488\"]}");
+	add("{\"term\":\"clinton\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"09109445\", \"10922161\", \"10922343\", \"10922504\"]}");
+	add("{\"term\":\"clintonia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12492529\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

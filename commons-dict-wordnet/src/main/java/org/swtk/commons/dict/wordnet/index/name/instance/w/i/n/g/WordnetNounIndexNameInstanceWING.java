@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.w.i.n.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceWING {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"wing\", \"synsetCount\":11, \"upperType\":\"NOUN\", \"ids\":[\"02716453\", \"03332786\", \"07664158\", \"08503316\", \"08510835\", \"10801811\", \"08499124\", \"08236414\", \"04600289\", \"04600068\", \"02154277\"]}");
+	add("{\"term\":\"wingback\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00728631\", \"10801924\"]}");
+	add("{\"term\":\"winger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10802147\"]}");
+	add("{\"term\":\"wingman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10802308\"]}");
+	add("{\"term\":\"wings\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07282740\", \"00180765\"]}");
+	add("{\"term\":\"wingspan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05137879\"]}");
+	add("{\"term\":\"wingspread\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05137879\", \"05138000\"]}");
+	add("{\"term\":\"wingstem\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12051377\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.r.i.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCRIT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"crit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07474344\"]}");
+	add("{\"term\":\"criterion\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05933552\", \"07275291\"]}");
+	add("{\"term\":\"criterium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07474344\"]}");
+	add("{\"term\":\"crith\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13740019\"]}");
+	add("{\"term\":\"critic\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"09998602\", \"09998851\", \"09999119\"]}");
+	add("{\"term\":\"criticality\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14057069\", \"14475138\"]}");
+	add("{\"term\":\"criticalness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14475138\"]}");
+	add("{\"term\":\"criticism\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06386210\", \"05741963\", \"06723485\"]}");
+	add("{\"term\":\"critique\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05741963\", \"06422034\"]}");
+	add("{\"term\":\"critter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01317154\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

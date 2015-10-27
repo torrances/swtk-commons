@@ -1,0 +1,27 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.e.n.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSENS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"sens\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03997192\"]}");
+	add("{\"term\":\"sensation\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"05659816\", \"14060962\", \"07530021\", \"09781932\", \"05720023\"]}");
+	add("{\"term\":\"sensationalism\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"05979178\", \"05985338\", \"07102245\", \"07262270\"]}");
+	add("{\"term\":\"sensationalist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10599287\"]}");
+	add("{\"term\":\"sense\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"05815020\", \"05622440\", \"05659816\", \"06614825\", \"05685345\"]}");
+	add("{\"term\":\"senselessness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05181550\"]}");
+	add("{\"term\":\"sensibility\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05660771\", \"07528087\", \"05685989\"]}");
+	add("{\"term\":\"sensibleness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05158948\"]}");
+	add("{\"term\":\"sensing\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00878552\", \"05718634\"]}");
+	add("{\"term\":\"sensitisation\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00830831\", \"13575546\", \"14555585\"]}");
+	add("{\"term\":\"sensitiser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14748186\"]}");
+	add("{\"term\":\"sensitising\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00830831\"]}");
+	add("{\"term\":\"sensitive\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10325946\"]}");
+	add("{\"term\":\"sensitiveness\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"04850224\", \"05026827\", \"05660771\", \"07527704\"]}");
+	add("{\"term\":\"sensitivity\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"04850224\", \"14555374\", \"07527704\", \"05026827\", \"05660771\"]}");
+	add("{\"term\":\"sensitization\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00830831\", \"13575546\", \"14555585\"]}");
+	add("{\"term\":\"sensitizer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14748186\"]}");
+	add("{\"term\":\"sensitizing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00830831\"]}");
+	add("{\"term\":\"sensitometer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04179668\"]}");
+	add("{\"term\":\"sensor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03185635\"]}");
+	add("{\"term\":\"sensorium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05497462\"]}");
+	add("{\"term\":\"sensualism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05985338\", \"07504015\"]}");
+	add("{\"term\":\"sensualist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09652434\"]}");
+	add("{\"term\":\"sensuality\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07504015\"]}");
+	add("{\"term\":\"sensualness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07504015\"]}");
+	add("{\"term\":\"sensuousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07528652\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

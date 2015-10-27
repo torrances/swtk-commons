@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.p.y.r.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePYRR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"pyrrhic\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00543621\", \"07110561\"]}");
+	add("{\"term\":\"pyrrhocoridae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02247615\"]}");
+	add("{\"term\":\"pyrrhotine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14717736\"]}");
+	add("{\"term\":\"pyrrhotite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14717736\"]}");
+	add("{\"term\":\"pyrrhula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01536675\"]}");
+	add("{\"term\":\"pyrrhuloxia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01544401\"]}");
+	add("{\"term\":\"pyrrhus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11269880\"]}");
+	add("{\"term\":\"pyrrophyta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01391633\"]}");
+	add("{\"term\":\"pyrrosia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13199005\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

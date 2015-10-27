@@ -1,0 +1,24 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.f.l.u.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFLUO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"fluor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14699517\"]}");
+	add("{\"term\":\"fluorapatite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14699377\"]}");
+	add("{\"term\":\"fluorescein\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15012254\"]}");
+	add("{\"term\":\"fluoresceine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15012254\"]}");
+	add("{\"term\":\"fluorescence\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11478519\"]}");
+	add("{\"term\":\"fluorescent\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03375106\"]}");
+	add("{\"term\":\"fluoridation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00365838\"]}");
+	add("{\"term\":\"fluoride\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14895752\"]}");
+	add("{\"term\":\"fluoridisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00365838\"]}");
+	add("{\"term\":\"fluoridization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00365838\"]}");
+	add("{\"term\":\"fluorine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14661685\"]}");
+	add("{\"term\":\"fluorite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14699517\"]}");
+	add("{\"term\":\"fluoroboride\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14896034\"]}");
+	add("{\"term\":\"fluorocarbon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14896119\"]}");
+	add("{\"term\":\"fluorochrome\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15012896\"]}");
+	add("{\"term\":\"fluoroform\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14644832\"]}");
+	add("{\"term\":\"fluoroscope\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03375492\"]}");
+	add("{\"term\":\"fluoroscopy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00904899\"]}");
+	add("{\"term\":\"fluorosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14092010\"]}");
+	add("{\"term\":\"fluorouracil\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03375667\"]}");
+	add("{\"term\":\"fluorspar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14699517\"]}");
+	add("{\"term\":\"fluosilicate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14896476\"]}");
+	add("{\"term\":\"fluoxetine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03375773\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

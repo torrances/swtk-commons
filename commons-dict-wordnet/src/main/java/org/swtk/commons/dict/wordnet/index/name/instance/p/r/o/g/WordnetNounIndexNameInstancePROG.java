@@ -1,0 +1,26 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.p.r.o.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePROG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"progenitor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10146343\"]}");
+	add("{\"term\":\"progeny\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10393697\"]}");
+	add("{\"term\":\"progeria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14491932\"]}");
+	add("{\"term\":\"progesterone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14770227\"]}");
+	add("{\"term\":\"progestin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14771517\"]}");
+	add("{\"term\":\"progestogen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14771517\"]}");
+	add("{\"term\":\"prognathism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14602608\"]}");
+	add("{\"term\":\"progne\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01599120\"]}");
+	add("{\"term\":\"prognosis\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00154485\", \"06762595\"]}");
+	add("{\"term\":\"prognostic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07301073\"]}");
+	add("{\"term\":\"prognostication\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05783404\", \"06761683\", \"07301073\"]}");
+	add("{\"term\":\"prognosticator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10122275\"]}");
+	add("{\"term\":\"program\", \"synsetCount\":8, \"upperType\":\"NOUN\", \"ids\":[\"00552252\", \"06581154\", \"06689161\", \"06761180\", \"06513302\", \"06631935\", \"05907694\", \"05907175\"]}");
+	add("{\"term\":\"programing\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00930762\", \"01146868\"]}");
+	add("{\"term\":\"programma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06553717\"]}");
+	add("{\"term\":\"programme\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"00552252\", \"05907175\", \"05907694\", \"06581154\", \"06631935\", \"06689161\", \"06761180\"]}");
+	add("{\"term\":\"programmer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10500853\"]}");
+	add("{\"term\":\"programming\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00930762\", \"01146868\"]}");
+	add("{\"term\":\"progress\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07459865\", \"00282894\", \"00250368\"]}");
+	add("{\"term\":\"progression\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00282894\", \"07459865\", \"08475923\"]}");
+	add("{\"term\":\"progressive\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10276453\", \"13827946\"]}");
+	add("{\"term\":\"progressiveness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04744983\"]}");
+	add("{\"term\":\"progressivism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06229656\"]}");
+	add("{\"term\":\"progressivity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04744983\"]}");
+	add("{\"term\":\"progymnosperm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11616795\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

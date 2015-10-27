@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.m.i.t.h;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMITH {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"mithan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02412787\"]}");
+	add("{\"term\":\"mithra\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09554958\"]}");
+	add("{\"term\":\"mithracin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03780206\"]}");
+	add("{\"term\":\"mithraicism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06254093\"]}");
+	add("{\"term\":\"mithraism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06254093\"]}");
+	add("{\"term\":\"mithraist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09705429\"]}");
+	add("{\"term\":\"mithramycin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03780206\"]}");
+	add("{\"term\":\"mithras\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09554958\"]}");
+	add("{\"term\":\"mithridates\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11203377\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

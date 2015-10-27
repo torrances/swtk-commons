@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.a.u.c;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSAUC {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"sauce\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07845388\"]}");
+	add("{\"term\":\"sauceboat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03460968\"]}");
+	add("{\"term\":\"saucepan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04146060\"]}");
+	add("{\"term\":\"saucepot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04146223\"]}");
+	add("{\"term\":\"saucer\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03211323\", \"03212026\", \"04146374\", \"13897824\"]}");
+	add("{\"term\":\"sauciness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04657008\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.e.c.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSECO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"secobarbital\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04170801\"]}");
+	add("{\"term\":\"seconal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04170801\"]}");
+	add("{\"term\":\"second\", \"synsetCount\":10, \"upperType\":\"NOUN\", \"ids\":[\"03592219\", \"04171590\", \"07195032\", \"10587511\", \"13632638\", \"13868743\", \"15269461\", \"00725034\", \"15271664\", \"15259923\"]}");
+	add("{\"term\":\"secondary\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04171063\", \"08446856\"]}");
+	add("{\"term\":\"seconder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10587887\"]}");
+	add("{\"term\":\"secondment\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00733499\", \"07195032\"]}");
+	add("{\"term\":\"secondo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07044888\"]}");
+	add("{\"term\":\"secotiaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13068145\"]}");
+	add("{\"term\":\"secotiales\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13067976\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

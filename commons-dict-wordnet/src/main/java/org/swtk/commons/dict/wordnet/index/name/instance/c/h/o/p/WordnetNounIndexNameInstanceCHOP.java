@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.h.o.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCHOP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"chop\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00130137\", \"00567926\", \"05553931\", \"07669591\", \"11548218\"]}");
+	add("{\"term\":\"chophouse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04315016\"]}");
+	add("{\"term\":\"chopin\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"10916396\", \"10916575\", \"07292961\"]}");
+	add("{\"term\":\"chopine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03028933\"]}");
+	add("{\"term\":\"chopper\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03045617\", \"03517291\", \"05290997\", \"00130137\"]}");
+	add("{\"term\":\"choppiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14547631\"]}");
+	add("{\"term\":\"chopsteak\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07679866\"]}");
+	add("{\"term\":\"chopstick\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03029438\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

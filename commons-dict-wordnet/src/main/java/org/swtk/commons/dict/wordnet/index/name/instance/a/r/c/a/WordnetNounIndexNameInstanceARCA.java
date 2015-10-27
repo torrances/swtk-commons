@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.a.r.c.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceARCA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"arca\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01965777\"]}");
+	add("{\"term\":\"arcade\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02736218\", \"02736383\"]}");
+	add("{\"term\":\"arcadia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08808205\"]}");
+	add("{\"term\":\"arcadian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09731150\"]}");
+	add("{\"term\":\"arcadic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06990608\"]}");
+	add("{\"term\":\"arcanum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06685698\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

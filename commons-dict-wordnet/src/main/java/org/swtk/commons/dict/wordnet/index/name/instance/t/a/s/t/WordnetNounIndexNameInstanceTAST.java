@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.t.a.s.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTAST {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"taste\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"00884380\", \"05666071\", \"07594444\", \"07302729\", \"05757616\", \"07513449\", \"05723230\"]}");
+	add("{\"term\":\"tastebud\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05312635\"]}");
+	add("{\"term\":\"tastefulness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04820644\"]}");
+	add("{\"term\":\"tastelessness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04825515\", \"05004197\"]}");
+	add("{\"term\":\"taster\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10711978\"]}");
+	add("{\"term\":\"tastiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05002599\"]}");
+	add("{\"term\":\"tasting\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00843562\", \"00884380\", \"05830972\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

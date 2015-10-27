@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.i.n.c.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceINCR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"increase\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00364086\", \"05116247\", \"13518338\", \"07371276\", \"13776433\"]}");
+	add("{\"term\":\"incredibility\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04791406\"]}");
+	add("{\"term\":\"incredibleness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04791406\"]}");
+	add("{\"term\":\"incredulity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05706947\"]}");
+	add("{\"term\":\"increment\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05116247\", \"13518338\"]}");
+	add("{\"term\":\"incrimination\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07252418\"]}");
+	add("{\"term\":\"incrustation\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03572040\", \"09283124\", \"13518853\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

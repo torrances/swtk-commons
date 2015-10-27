@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.l.i.l.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLILI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"liliaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12444070\"]}");
+	add("{\"term\":\"liliales\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12431220\"]}");
+	add("{\"term\":\"liliidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12430886\"]}");
+	add("{\"term\":\"liliopsid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11688568\"]}");
+	add("{\"term\":\"liliopsida\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11688013\"]}");
+	add("{\"term\":\"lilith\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09542210\"]}");
+	add("{\"term\":\"lilium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12446605\"]}");
+	add("{\"term\":\"liliuokalani\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11151971\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

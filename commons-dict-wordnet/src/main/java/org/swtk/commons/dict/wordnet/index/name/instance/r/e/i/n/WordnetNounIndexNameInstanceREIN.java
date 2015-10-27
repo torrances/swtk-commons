@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.r.e.i.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceREIN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"rein\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05204842\", \"04079663\"]}");
+	add("{\"term\":\"reincarnation\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06200947\", \"07335847\", \"10537596\"]}");
+	add("{\"term\":\"reincarnationism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05977420\"]}");
+	add("{\"term\":\"reindeer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02436556\"]}");
+	add("{\"term\":\"reinforcement\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"01222041\", \"04343172\", \"05836876\", \"06662983\", \"00973567\"]}");
+	add("{\"term\":\"reinforcer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05836876\"]}");
+	add("{\"term\":\"reinstatement\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00402267\", \"13967966\"]}");
+	add("{\"term\":\"reinsurance\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13369471\"]}");
+	add("{\"term\":\"reinterpretation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00101709\", \"05937519\"]}");
+	add("{\"term\":\"reintroduction\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07232333\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

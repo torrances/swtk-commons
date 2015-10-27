@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.r.o.o.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceROOT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"root\", \"synsetCount\":8, \"upperType\":\"NOUN\", \"ids\":[\"05315809\", \"06311435\", \"09811996\", \"08022396\", \"13753809\", \"06311183\", \"08524579\", \"13145876\"]}");
+	add("{\"term\":\"rootage\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"08524579\", \"13145762\", \"14030169\"]}");
+	add("{\"term\":\"rooter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10659323\"]}");
+	add("{\"term\":\"rooting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13573327\"]}");
+	add("{\"term\":\"rootlet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13147339\"]}");
+	add("{\"term\":\"roots\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14088894\"]}");
+	add("{\"term\":\"rootstalk\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13149341\"]}");
+	add("{\"term\":\"rootstock\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13148062\", \"13149341\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

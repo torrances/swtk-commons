@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.p.e.n.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePENN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"penn\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04519771\", \"11248946\"]}");
+	add("{\"term\":\"pennant\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03917985\", \"06888338\", \"06718654\"]}");
+	add("{\"term\":\"pennatula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01918182\"]}");
+	add("{\"term\":\"pennatulidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01918055\"]}");
+	add("{\"term\":\"penne\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07716892\"]}");
+	add("{\"term\":\"penni\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13710682\"]}");
+	add("{\"term\":\"pennilessness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14517770\"]}");
+	add("{\"term\":\"pennines\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08814865\"]}");
+	add("{\"term\":\"penning\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00931533\"]}");
+	add("{\"term\":\"pennisetum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12149162\"]}");
+	add("{\"term\":\"pennon\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02155098\", \"03917985\"]}");
+	add("{\"term\":\"pennoncel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03918111\"]}");
+	add("{\"term\":\"pennoncelle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03918111\"]}");
+	add("{\"term\":\"pennsylvania\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04519771\", \"09157583\", \"09157081\"]}");
+	add("{\"term\":\"pennsylvanian\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09764655\", \"15152459\"]}");
+	add("{\"term\":\"penny\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13411799\", \"13716472\"]}");
+	add("{\"term\":\"pennycress\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11919108\"]}");
+	add("{\"term\":\"pennyroyal\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12868687\", \"12877440\"]}");
+	add("{\"term\":\"pennyweight\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13744303\"]}");
+	add("{\"term\":\"pennywhistle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03918337\"]}");
+	add("{\"term\":\"pennyworth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13683268\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.b.a.n.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBANT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"bantam\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01794595\"]}");
+	add("{\"term\":\"bantamweight\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09857899\", \"09858009\"]}");
+	add("{\"term\":\"banteng\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02408092\"]}");
+	add("{\"term\":\"banter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06790633\"]}");
+	add("{\"term\":\"banting\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02408092\", \"10853401\"]}");
+	add("{\"term\":\"bantu\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07004640\", \"09712020\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

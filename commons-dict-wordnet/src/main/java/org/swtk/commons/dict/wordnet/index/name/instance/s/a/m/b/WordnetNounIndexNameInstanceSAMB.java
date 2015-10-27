@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.a.m.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSAMB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"samba\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00498436\", \"00538229\", \"07070935\", \"12222455\"]}");
+	add("{\"term\":\"sambar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02434274\"]}");
+	add("{\"term\":\"sambre\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09444069\"]}");
+	add("{\"term\":\"sambuca\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07927489\"]}");
+	add("{\"term\":\"sambucus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12698820\"]}");
+	add("{\"term\":\"sambur\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02434274\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.h.e.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCHEE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cheek\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"04845441\", \"05567360\", \"06734562\", \"05610590\"]}");
+	add("{\"term\":\"cheekbone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05281321\"]}");
+	add("{\"term\":\"cheekiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04923043\"]}");
+	add("{\"term\":\"cheekpiece\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03015667\"]}");
+	add("{\"term\":\"cheep\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07393694\"]}");
+	add("{\"term\":\"cheer\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04638046\", \"06705317\"]}");
+	add("{\"term\":\"cheerer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09932787\"]}");
+	add("{\"term\":\"cheerfulness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07545866\", \"04638046\"]}");
+	add("{\"term\":\"cheering\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07266447\"]}");
+	add("{\"term\":\"cheerio\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06642117\"]}");
+	add("{\"term\":\"cheerleader\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09932913\", \"09933051\"]}");
+	add("{\"term\":\"cheerlessness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07552456\"]}");
+	add("{\"term\":\"cheese\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12192020\", \"07866305\"]}");
+	add("{\"term\":\"cheeseboard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03015813\"]}");
+	add("{\"term\":\"cheeseburger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07713058\"]}");
+	add("{\"term\":\"cheesecake\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03015917\", \"07645698\"]}");
+	add("{\"term\":\"cheesecloth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03016027\"]}");
+	add("{\"term\":\"cheeseflower\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12192020\"]}");
+	add("{\"term\":\"cheesemonger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09933199\"]}");
+	add("{\"term\":\"cheetah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02132960\"]}");
+	add("{\"term\":\"cheever\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10914274\"]}");
+	add("{\"term\":\"cheewink\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01544809\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

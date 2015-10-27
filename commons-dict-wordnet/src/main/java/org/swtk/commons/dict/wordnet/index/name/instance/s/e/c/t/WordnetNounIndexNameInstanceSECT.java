@@ -1,0 +1,13 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.e.c.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSECT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"sect\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08268798\", \"08166788\"]}");
+	add("{\"term\":\"sectarian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10593401\"]}");
+	add("{\"term\":\"sectarianism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06215756\"]}");
+	add("{\"term\":\"sectarist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10593401\"]}");
+	add("{\"term\":\"sectary\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10593401\"]}");
+	add("{\"term\":\"section\", \"synsetCount\":14, \"upperType\":\"NOUN\", \"ids\":[\"00679253\", \"07763431\", \"08131836\", \"08233716\", \"08233821\", \"08256073\", \"08665728\", \"13634785\", \"05876035\", \"08231753\", \"04172050\", \"08665897\", \"09451645\", \"06403644\"]}");
+	add("{\"term\":\"sectional\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04172470\"]}");
+	add("{\"term\":\"sectionalisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00398761\"]}");
+	add("{\"term\":\"sectionalism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06212164\"]}");
+	add("{\"term\":\"sectionalization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00398761\"]}");
+	add("{\"term\":\"sector\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"04172612\", \"08666233\", \"13647711\", \"05861665\", \"07983333\", \"13897666\"]}");
+	add("{\"term\":\"sectral\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02676334\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.m.o.u.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMOUL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"mould\", \"synsetCount\":8, \"upperType\":\"NOUN\", \"ids\":[\"03784903\", \"03785154\", \"04739949\", \"07954834\", \"13097793\", \"13537379\", \"13936581\", \"14977703\"]}");
+	add("{\"term\":\"mouldboard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03785417\"]}");
+	add("{\"term\":\"moulding\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00939711\", \"03785154\", \"03785780\", \"03785925\"]}");
+	add("{\"term\":\"moulin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03033532\"]}");
+	add("{\"term\":\"moulmein\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08733909\"]}");
+	add("{\"term\":\"moult\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13538045\"]}");
+	add("{\"term\":\"moulter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01321151\"]}");
+	add("{\"term\":\"moulting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13538045\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

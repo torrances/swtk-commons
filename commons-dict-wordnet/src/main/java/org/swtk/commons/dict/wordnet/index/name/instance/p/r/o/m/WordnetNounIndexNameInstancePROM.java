@@ -1,0 +1,26 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.p.r.o.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePROM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"prom\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07463916\"]}");
+	add("{\"term\":\"promenade\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00284945\", \"00292507\", \"00541932\", \"04016581\", \"07463916\"]}");
+	add("{\"term\":\"promethazine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04016724\"]}");
+	add("{\"term\":\"prometheus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09599080\"]}");
+	add("{\"term\":\"promethium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14675658\"]}");
+	add("{\"term\":\"prominence\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"13917127\", \"05177034\", \"14457053\"]}");
+	add("{\"term\":\"promiscuity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00857971\"]}");
+	add("{\"term\":\"promiscuousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00857971\"]}");
+	add("{\"term\":\"promise\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05959600\", \"07241205\"]}");
+	add("{\"term\":\"promisee\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10501514\"]}");
+	add("{\"term\":\"promiser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10501639\"]}");
+	add("{\"term\":\"promisor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10501639\"]}");
+	add("{\"term\":\"promo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07261731\"]}");
+	add("{\"term\":\"promontory\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09422467\"]}");
+	add("{\"term\":\"promoter\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10613153\", \"10501805\"]}");
+	add("{\"term\":\"promotion\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00250647\", \"07266652\", \"00199300\", \"07261731\"]}");
+	add("{\"term\":\"prompt\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06291257\", \"07024919\"]}");
+	add("{\"term\":\"promptbook\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07023391\"]}");
+	add("{\"term\":\"prompter\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04017155\", \"10501999\"]}");
+	add("{\"term\":\"prompting\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07024919\", \"07261242\"]}");
+	add("{\"term\":\"promptitude\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05067203\"]}");
+	add("{\"term\":\"promptness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05054929\", \"05067203\"]}");
+	add("{\"term\":\"promulgation\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01268984\", \"06739688\", \"06759293\"]}");
+	add("{\"term\":\"promulgator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10502172\"]}");
+	add("{\"term\":\"promycelium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13015652\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

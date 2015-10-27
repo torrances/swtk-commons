@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.a.l.g.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceALGE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"algebra\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06022075\"]}");
+	add("{\"term\":\"algebraist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09803484\"]}");
+	add("{\"term\":\"alger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10833131\"]}");
+	add("{\"term\":\"algeria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08723211\"]}");
+	add("{\"term\":\"algerian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09709479\"]}");
+	add("{\"term\":\"algerie\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08723211\"]}");
+	add("{\"term\":\"algeripithecus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02482113\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

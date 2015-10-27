@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.a.x.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSAXI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"saxicola\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01563152\"]}");
+	add("{\"term\":\"saxifraga\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12813398\"]}");
+	add("{\"term\":\"saxifragaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12812801\"]}");
+	add("{\"term\":\"saxifrage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12813775\"]}");
+	add("{\"term\":\"saxist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10573671\"]}");
+	add("{\"term\":\"saxitoxin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15044864\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

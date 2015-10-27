@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.v.i.r.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceVIRI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"viricide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15072860\"]}");
+	add("{\"term\":\"viridity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04974368\"]}");
+	add("{\"term\":\"virilisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13532958\"]}");
+	add("{\"term\":\"virilism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05015775\"]}");
+	add("{\"term\":\"virility\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04674194\", \"05015633\"]}");
+	add("{\"term\":\"virilization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13532958\"]}");
+	add("{\"term\":\"virino\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09422073\"]}");
+	add("{\"term\":\"virion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01332576\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

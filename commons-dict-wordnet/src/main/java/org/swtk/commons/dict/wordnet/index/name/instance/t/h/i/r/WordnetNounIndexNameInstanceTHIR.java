@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.t.h.i.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTHIR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"third\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"04432939\", \"04433112\", \"06872554\", \"13869097\", \"00725419\", \"13759330\"]}");
+	add("{\"term\":\"thirst\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04952431\", \"14064142\"]}");
+	add("{\"term\":\"thirster\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10290575\"]}");
+	add("{\"term\":\"thirstiness\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04952431\", \"14064142\", \"14560852\"]}");
+	add("{\"term\":\"thirteen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13769339\"]}");
+	add("{\"term\":\"thirteenth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13870346\"]}");
+	add("{\"term\":\"thirties\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"15174140\", \"15173998\"]}");
+	add("{\"term\":\"thirtieth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13871180\"]}");
+	add("{\"term\":\"thirty\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13771547\"]}");
+	add("{\"term\":\"thiry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10955318\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

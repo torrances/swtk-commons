@@ -1,0 +1,7 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.w.a.g.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceWAGG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"waggery\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00516080\", \"06794138\"]}");
+	add("{\"term\":\"waggishness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06794138\"]}");
+	add("{\"term\":\"waggle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00348478\"]}");
+	add("{\"term\":\"waggon\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02817668\", \"04550444\"]}");
+	add("{\"term\":\"waggoner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10782275\"]}");
+	add("{\"term\":\"waggonwright\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10782361\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

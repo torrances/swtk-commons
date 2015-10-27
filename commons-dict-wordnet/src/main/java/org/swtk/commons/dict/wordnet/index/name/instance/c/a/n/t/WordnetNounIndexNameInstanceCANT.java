@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.a.n.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCANT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cant\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"02836781\", \"07150806\", \"07171981\", \"09236735\", \"06620630\"]}");
+	add("{\"term\":\"cantabrigian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09723104\"]}");
+	add("{\"term\":\"cantala\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12498088\", \"12498636\"]}");
+	add("{\"term\":\"cantaloup\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07771905\", \"12185173\"]}");
+	add("{\"term\":\"cantaloupe\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07771905\", \"12185173\"]}");
+	add("{\"term\":\"cantata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07055995\"]}");
+	add("{\"term\":\"canteen\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"02955921\", \"02956021\", \"02956110\", \"02956234\", \"02955810\"]}");
+	add("{\"term\":\"canter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00289330\"]}");
+	add("{\"term\":\"canterbury\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08903999\"]}");
+	add("{\"term\":\"cantharellus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13024920\"]}");
+	add("{\"term\":\"canthus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05321600\"]}");
+	add("{\"term\":\"canticle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07050189\"]}");
+	add("{\"term\":\"canticles\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06449494\"]}");
+	add("{\"term\":\"cantilever\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02956492\"]}");
+	add("{\"term\":\"cantillation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01257469\"]}");
+	add("{\"term\":\"cantle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02956891\"]}");
+	add("{\"term\":\"canto\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06395912\", \"07045123\"]}");
+	add("{\"term\":\"canton\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08558333\", \"08743287\"]}");
+	add("{\"term\":\"cantonese\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06943204\"]}");
+	add("{\"term\":\"cantonment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02948281\"]}");
+	add("{\"term\":\"cantor\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09911316\", \"09939229\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

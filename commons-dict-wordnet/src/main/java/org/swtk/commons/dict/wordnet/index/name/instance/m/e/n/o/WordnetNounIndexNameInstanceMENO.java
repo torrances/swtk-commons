@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.m.e.n.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMENO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"menominee\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06923531\", \"09680350\"]}");
+	add("{\"term\":\"menomini\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06923531\", \"09680350\"]}");
+	add("{\"term\":\"menopause\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15179422\"]}");
+	add("{\"term\":\"menopon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02188346\"]}");
+	add("{\"term\":\"menorah\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03751496\", \"03751646\"]}");
+	add("{\"term\":\"menorrhagia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13534743\"]}");
+	add("{\"term\":\"menorrhea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05409919\"]}");
+	add("{\"term\":\"menotti\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11194891\"]}");
+	add("{\"term\":\"menotyphla\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01891589\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

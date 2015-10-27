@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.p.r.u.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePRUN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"prune\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07768578\"]}");
+	add("{\"term\":\"prunella\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01529696\", \"12883786\"]}");
+	add("{\"term\":\"prunellidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01529566\"]}");
+	add("{\"term\":\"pruner\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04022634\", \"10506767\"]}");
+	add("{\"term\":\"pruning\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00360969\", \"09423360\"]}");
+	add("{\"term\":\"pruno\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07938539\"]}");
+	add("{\"term\":\"prunus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12658490\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

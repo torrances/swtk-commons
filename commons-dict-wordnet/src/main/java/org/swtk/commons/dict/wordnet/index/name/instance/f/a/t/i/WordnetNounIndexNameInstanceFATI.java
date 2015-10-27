@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.f.a.t.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFATI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"fatigability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05049166\"]}");
+	add("{\"term\":\"fatigue\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00732006\", \"07555469\", \"14487260\", \"14039832\"]}");
+	add("{\"term\":\"fatigues\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03329873\"]}");
+	add("{\"term\":\"fatiha\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06473672\"]}");
+	add("{\"term\":\"fatihah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06473672\"]}");
+	add("{\"term\":\"fatima\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10987439\"]}");
+	add("{\"term\":\"fatimah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10987439\"]}");
+	add("{\"term\":\"fatism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01157148\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

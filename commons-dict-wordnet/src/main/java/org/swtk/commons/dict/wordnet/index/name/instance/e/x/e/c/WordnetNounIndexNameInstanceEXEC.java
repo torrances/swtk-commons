@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.e.x.e.c;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceEXEC {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"exec\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08145819\"]}");
+	add("{\"term\":\"execration\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05819910\", \"07248294\", \"07518669\"]}");
+	add("{\"term\":\"executability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05210475\"]}");
+	add("{\"term\":\"executant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10089103\"]}");
+	add("{\"term\":\"executing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01166269\"]}");
+	add("{\"term\":\"execution\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"00221389\", \"01129700\", \"06565837\", \"06566069\", \"13498665\", \"00098324\", \"01166269\"]}");
+	add("{\"term\":\"executioner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10089234\"]}");
+	add("{\"term\":\"executive\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"09789895\", \"08182354\", \"10089452\"]}");
+	add("{\"term\":\"executor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10090026\"]}");
+	add("{\"term\":\"executrix\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10090184\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

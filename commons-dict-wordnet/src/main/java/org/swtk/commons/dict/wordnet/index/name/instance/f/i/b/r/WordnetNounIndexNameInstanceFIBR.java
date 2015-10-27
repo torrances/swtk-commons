@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.f.i.b.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFIBR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"fibre\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03336189\", \"04627573\", \"05236952\", \"14891040\"]}");
+	add("{\"term\":\"fibreboard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03336335\"]}");
+	add("{\"term\":\"fibreglass\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14890920\"]}");
+	add("{\"term\":\"fibreoptics\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06291469\"]}");
+	add("{\"term\":\"fibril\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14892009\"]}");
+	add("{\"term\":\"fibrillation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00389851\", \"14385584\"]}");
+	add("{\"term\":\"fibrin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14758120\"]}");
+	add("{\"term\":\"fibrinase\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15097224\"]}");
+	add("{\"term\":\"fibrinogen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15047723\"]}");
+	add("{\"term\":\"fibrinolysin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15008333\"]}");
+	add("{\"term\":\"fibrinolysis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13501379\"]}");
+	add("{\"term\":\"fibrinopeptide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14766916\"]}");
+	add("{\"term\":\"fibroadenoma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14261693\"]}");
+	add("{\"term\":\"fibroblast\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05455976\"]}");
+	add("{\"term\":\"fibrocartilage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05296092\"]}");
+	add("{\"term\":\"fibroid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14261875\"]}");
+	add("{\"term\":\"fibroma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14262010\"]}");
+	add("{\"term\":\"fibromyositis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14369485\"]}");
+	add("{\"term\":\"fibrosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14231291\"]}");
+	add("{\"term\":\"fibrositis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14369363\"]}");
+	add("{\"term\":\"fibrosity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05029525\"]}");
+	add("{\"term\":\"fibrousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05029525\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

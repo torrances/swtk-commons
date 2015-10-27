@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.h.e.l.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHELL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hell\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00738084\", \"05637164\", \"05637465\", \"07320525\", \"08600365\"]}");
+	add("{\"term\":\"hellbender\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01636047\"]}");
+	add("{\"term\":\"hellcat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10778005\"]}");
+	add("{\"term\":\"hellebore\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11754373\", \"12484981\"]}");
+	add("{\"term\":\"helleborine\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"12071428\", \"12082969\", \"12084140\"]}");
+	add("{\"term\":\"helleborus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11754238\"]}");
+	add("{\"term\":\"hellene\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09729560\"]}");
+	add("{\"term\":\"hellenic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06989052\"]}");
+	add("{\"term\":\"hellenism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05965356\"]}");
+	add("{\"term\":\"heller\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"10189012\", \"11058974\", \"13703512\", \"13703854\"]}");
+	add("{\"term\":\"helleri\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01450932\"]}");
+	add("{\"term\":\"hellespont\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09063846\"]}");
+	add("{\"term\":\"hellfire\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05638192\"]}");
+	add("{\"term\":\"hellgrammiate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02268921\"]}");
+	add("{\"term\":\"hellhole\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08600365\"]}");
+	add("{\"term\":\"hellhound\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09516335\", \"10189200\"]}");
+	add("{\"term\":\"hellion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10189012\"]}");
+	add("{\"term\":\"hellman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11059184\"]}");
+	add("{\"term\":\"hello\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06645018\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

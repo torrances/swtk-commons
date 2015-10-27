@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.m.u.s.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMUSI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"musial\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11217934\"]}");
+	add("{\"term\":\"music\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"01165019\", \"05726882\", \"00544270\", \"05726503\", \"07034009\"]}");
+	add("{\"term\":\"musical\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07032286\"]}");
+	add("{\"term\":\"musicality\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04990651\"]}");
+	add("{\"term\":\"musicalness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04990651\"]}");
+	add("{\"term\":\"musician\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10359679\", \"10360025\"]}");
+	add("{\"term\":\"musicianship\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05643893\"]}");
+	add("{\"term\":\"musicologist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10360974\"]}");
+	add("{\"term\":\"musicology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06181104\"]}");
+	add("{\"term\":\"musing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05793513\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

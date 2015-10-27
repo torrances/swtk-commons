@@ -1,0 +1,12 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.a.t.c;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCATC {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"catcall\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07136726\"]}");
+	add("{\"term\":\"catch\", \"synsetCount\":10, \"upperType\":\"NOUN\", \"ids\":[\"00089545\", \"00139776\", \"00459665\", \"02986054\", \"02986245\", \"07081800\", \"09261049\", \"09920434\", \"13777962\", \"05172200\"]}");
+	add("{\"term\":\"catchall\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02986527\"]}");
+	add("{\"term\":\"catcher\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00724492\", \"09920596\"]}");
+	add("{\"term\":\"catchfly\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11831942\", \"11835960\"]}");
+	add("{\"term\":\"catching\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00078801\", \"00151907\", \"00127706\"]}");
+	add("{\"term\":\"catchment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02986812\"]}");
+	add("{\"term\":\"catchphrase\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07167171\"]}");
+	add("{\"term\":\"catchweed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12686920\"]}");
+	add("{\"term\":\"catchword\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06302383\", \"07166967\"]}");
+	add("{\"term\":\"catclaw\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11785283\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

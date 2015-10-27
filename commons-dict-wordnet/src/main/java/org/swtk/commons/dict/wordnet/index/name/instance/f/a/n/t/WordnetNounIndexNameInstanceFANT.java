@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.f.a.n.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFANT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"fantail\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03326617\"]}");
+	add("{\"term\":\"fantan\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00493508\", \"00508898\"]}");
+	add("{\"term\":\"fantasia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07058289\"]}");
+	add("{\"term\":\"fantasist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10098195\"]}");
+	add("{\"term\":\"fantasm\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05906160\", \"09570240\"]}");
+	add("{\"term\":\"fantast\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10098309\"]}");
+	add("{\"term\":\"fantasy\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05904666\", \"06380048\", \"05640291\"]}");
+	add("{\"term\":\"fantods\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14083307\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

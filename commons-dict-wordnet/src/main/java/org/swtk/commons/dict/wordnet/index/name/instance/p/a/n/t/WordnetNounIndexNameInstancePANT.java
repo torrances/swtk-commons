@@ -1,0 +1,26 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.p.a.n.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePANT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"pant\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00838759\", \"04496264\", \"07403306\"]}");
+	add("{\"term\":\"pantaloon\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03890251\", \"09625658\", \"09625784\"]}");
+	add("{\"term\":\"pantechnicon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03890336\"]}");
+	add("{\"term\":\"pantheism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06234737\", \"06235366\"]}");
+	add("{\"term\":\"pantheist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10416293\"]}");
+	add("{\"term\":\"pantheon\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03890475\", \"03890623\", \"08170236\"]}");
+	add("{\"term\":\"panther\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"02127963\", \"02131321\", \"02131577\"]}");
+	add("{\"term\":\"panthera\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02130772\"]}");
+	add("{\"term\":\"pantie\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03890725\"]}");
+	add("{\"term\":\"pantile\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15001318\"]}");
+	add("{\"term\":\"panting\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03890891\", \"00835796\"]}");
+	add("{\"term\":\"panto\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00551279\"]}");
+	add("{\"term\":\"pantograph\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03891107\"]}");
+	add("{\"term\":\"pantomime\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00551053\"]}");
+	add("{\"term\":\"pantomimer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10338550\"]}");
+	add("{\"term\":\"pantomimist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10338550\"]}");
+	add("{\"term\":\"pantothen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14998144\"]}");
+	add("{\"term\":\"pantotheria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01876263\"]}");
+	add("{\"term\":\"pantry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03891232\"]}");
+	add("{\"term\":\"pantryman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09903961\"]}");
+	add("{\"term\":\"pants\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02857998\"]}");
+	add("{\"term\":\"pantsuit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03891366\"]}");
+	add("{\"term\":\"panty\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03890725\"]}");
+	add("{\"term\":\"pantyhose\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03891601\"]}");
+	add("{\"term\":\"pantywaist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10622786\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

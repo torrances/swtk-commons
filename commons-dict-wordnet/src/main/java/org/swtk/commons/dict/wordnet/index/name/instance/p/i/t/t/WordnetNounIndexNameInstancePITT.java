@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.p.i.t.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePITT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"pitt\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"11256307\", \"11256487\", \"11256653\"]}");
+	add("{\"term\":\"pitta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01557645\"]}");
+	add("{\"term\":\"pittance\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13321734\"]}");
+	add("{\"term\":\"pittidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01557349\"]}");
+	add("{\"term\":\"pitting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13559097\"]}");
+	add("{\"term\":\"pittsburgh\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09159283\"]}");
+	add("{\"term\":\"pittsfield\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09120191\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

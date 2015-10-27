@@ -1,0 +1,12 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.l.o.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCLOS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"close\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00211646\", \"06410044\", \"15292365\"]}");
+	add("{\"term\":\"closedown\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00230127\"]}");
+	add("{\"term\":\"closeness\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"04662799\", \"04664764\", \"04840918\", \"05092779\", \"05119774\", \"07545512\"]}");
+	add("{\"term\":\"closeout\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01121211\"]}");
+	add("{\"term\":\"closer\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09949715\", \"09949922\"]}");
+	add("{\"term\":\"closet\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03053442\", \"04557470\", \"04565764\", \"03152990\"]}");
+	add("{\"term\":\"closeup\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03053680\"]}");
+	add("{\"term\":\"closing\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00211959\", \"00230127\", \"00282306\", \"06410044\", \"00344866\"]}");
+	add("{\"term\":\"clostridia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01359797\"]}");
+	add("{\"term\":\"clostridium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01359797\"]}");
+	add("{\"term\":\"closure\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"00230127\", \"01076618\", \"02856708\", \"05797094\", \"06259551\", \"06679574\", \"00282306\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

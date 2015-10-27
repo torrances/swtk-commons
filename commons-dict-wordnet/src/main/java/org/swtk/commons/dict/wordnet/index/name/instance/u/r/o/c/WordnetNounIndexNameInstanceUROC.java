@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.u.r.o.c;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceUROC {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"urocele\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14596644\"]}");
+	add("{\"term\":\"urochesia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13593429\"]}");
+	add("{\"term\":\"urochezia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13593429\"]}");
+	add("{\"term\":\"urochord\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01469342\", \"01470879\"]}");
+	add("{\"term\":\"urochorda\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01470627\"]}");
+	add("{\"term\":\"urochordata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01470627\"]}");
+	add("{\"term\":\"urochordate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01470879\"]}");
+	add("{\"term\":\"urocyon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02123039\"]}");
+	add("{\"term\":\"urocystis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13089325\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

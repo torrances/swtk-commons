@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.i.n.d.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceINDU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"indubitability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04762117\"]}");
+	add("{\"term\":\"inducement\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00159997\", \"09202673\"]}");
+	add("{\"term\":\"inducer\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10438586\", \"14942935\"]}");
+	add("{\"term\":\"inducing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00159997\"]}");
+	add("{\"term\":\"inductance\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03574194\", \"11488572\"]}");
+	add("{\"term\":\"inductee\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10048490\", \"10223568\"]}");
+	add("{\"term\":\"induction\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"00157210\", \"00239394\", \"05835577\", \"05782412\", \"11488572\", \"07467805\"]}");
+	add("{\"term\":\"inductor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03574194\"]}");
+	add("{\"term\":\"indulgence\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00095320\", \"00513854\", \"01075165\", \"04645942\", \"04891822\"]}");
+	add("{\"term\":\"indulging\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01075165\"]}");
+	add("{\"term\":\"indument\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09335000\"]}");
+	add("{\"term\":\"indumentum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09335000\"]}");
+	add("{\"term\":\"induration\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14133893\"]}");
+	add("{\"term\":\"indus\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09335137\", \"09335422\"]}");
+	add("{\"term\":\"indusium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13115140\"]}");
+	add("{\"term\":\"industrialisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00925616\"]}");
+	add("{\"term\":\"industrialism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08381684\"]}");
+	add("{\"term\":\"industrialist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10223796\"]}");
+	add("{\"term\":\"industrialization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00925616\"]}");
+	add("{\"term\":\"industriousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04872345\"]}");
+	add("{\"term\":\"industry\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04872345\", \"00925258\", \"08082070\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

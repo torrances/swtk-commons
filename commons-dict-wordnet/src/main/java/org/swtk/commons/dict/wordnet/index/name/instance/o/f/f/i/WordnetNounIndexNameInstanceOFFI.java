@@ -1,0 +1,12 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.o.f.f.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceOFFI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"office\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"00587299\", \"01035490\", \"08369230\", \"13968154\", \"00721817\", \"08354251\", \"03847186\"]}");
+	add("{\"term\":\"officeholder\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10222243\", \"10391149\"]}");
+	add("{\"term\":\"officer\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"10391440\", \"10468557\", \"10391149\", \"10336665\"]}");
+	add("{\"term\":\"official\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10391775\", \"10392072\"]}");
+	add("{\"term\":\"officialdom\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08374711\"]}");
+	add("{\"term\":\"officialese\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07086235\"]}");
+	add("{\"term\":\"officiant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10393089\"]}");
+	add("{\"term\":\"officiating\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01194245\"]}");
+	add("{\"term\":\"officiation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00549210\", \"01194245\"]}");
+	add("{\"term\":\"officiousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04845162\"]}");
+	add("{\"term\":\"offing\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09400037\", \"15288486\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

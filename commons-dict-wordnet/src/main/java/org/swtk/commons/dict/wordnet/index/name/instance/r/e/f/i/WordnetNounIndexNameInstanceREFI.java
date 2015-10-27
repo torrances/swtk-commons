@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.r.e.f.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceREFI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"refill\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04075167\", \"04075373\"]}");
+	add("{\"term\":\"refilling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13569128\"]}");
+	add("{\"term\":\"refinement\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"04819244\", \"06618544\", \"13569308\", \"07372279\", \"14483408\"]}");
+	add("{\"term\":\"refiner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10534377\"]}");
+	add("{\"term\":\"refinery\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04075553\"]}");
+	add("{\"term\":\"refining\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13569308\"]}");
+	add("{\"term\":\"refinisher\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10534555\"]}");
+	add("{\"term\":\"refit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01159762\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

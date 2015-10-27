@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.t.a.n.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTANN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"tannenberg\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01298996\"]}");
+	add("{\"term\":\"tanner\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10710238\", \"13412625\"]}");
+	add("{\"term\":\"tannery\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04397846\"]}");
+	add("{\"term\":\"tannia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11813872\"]}");
+	add("{\"term\":\"tannin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15091592\"]}");
+	add("{\"term\":\"tanning\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00928877\", \"01165537\", \"13586825\"]}");
+	add("{\"term\":\"tannoy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04397960\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

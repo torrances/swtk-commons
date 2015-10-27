@@ -1,0 +1,21 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.a.p.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCAPR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"capra\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02419056\", \"10901738\"]}");
+	add("{\"term\":\"caprella\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01996054\"]}");
+	add("{\"term\":\"capreolus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02436057\"]}");
+	add("{\"term\":\"capri\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08823805\"]}");
+	add("{\"term\":\"capriccio\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07295129\"]}");
+	add("{\"term\":\"caprice\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07505719\"]}");
+	add("{\"term\":\"capriciousness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04679198\", \"04742315\"]}");
+	add("{\"term\":\"capricorn\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"08705447\", \"09258620\", \"09772829\"]}");
+	add("{\"term\":\"capricornis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02421580\"]}");
+	add("{\"term\":\"capricornus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09258620\"]}");
+	add("{\"term\":\"caprifig\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12422398\"]}");
+	add("{\"term\":\"caprifoliaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12691918\"]}");
+	add("{\"term\":\"caprimulgid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01837917\"]}");
+	add("{\"term\":\"caprimulgidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01837728\"]}");
+	add("{\"term\":\"caprimulgiformes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01837343\"]}");
+	add("{\"term\":\"caprimulgus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01838225\"]}");
+	add("{\"term\":\"capriole\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00513278\", \"00513362\"]}");
+	add("{\"term\":\"caproidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01455829\"]}");
+	add("{\"term\":\"capromyidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02369354\"]}");
+	add("{\"term\":\"capros\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01455971\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

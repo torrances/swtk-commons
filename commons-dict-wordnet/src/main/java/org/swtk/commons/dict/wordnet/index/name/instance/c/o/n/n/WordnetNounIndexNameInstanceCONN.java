@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.o.n.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCONN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"connaraceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11766693\"]}");
+	add("{\"term\":\"connarus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11766888\"]}");
+	add("{\"term\":\"connectedness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13813601\", \"14442568\"]}");
+	add("{\"term\":\"connecter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03095830\"]}");
+	add("{\"term\":\"connecticut\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"09091296\", \"09275179\", \"09090929\"]}");
+	add("{\"term\":\"connecticuter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09761235\"]}");
+	add("{\"term\":\"connection\", \"synsetCount\":9, \"upperType\":\"NOUN\", \"ids\":[\"00146038\", \"00317815\", \"09975514\", \"13893444\", \"05771913\", \"09975626\", \"03095830\", \"14442568\", \"13813601\"]}");
+	add("{\"term\":\"connective\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03095830\", \"06336819\"]}");
+	add("{\"term\":\"connectivity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04925230\"]}");
+	add("{\"term\":\"connector\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03095830\"]}");
+	add("{\"term\":\"connexion\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"00146038\", \"00317815\", \"03095830\", \"05771913\", \"13813601\", \"13893444\"]}");
+	add("{\"term\":\"conniption\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14429707\"]}");
+	add("{\"term\":\"connivance\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06701870\", \"07191622\"]}");
+	add("{\"term\":\"connochaetes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02423954\"]}");
+	add("{\"term\":\"connoisseur\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09975866\"]}");
+	add("{\"term\":\"connoisseurship\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05758024\"]}");
+	add("{\"term\":\"connolly\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10926988\"]}");
+	add("{\"term\":\"connors\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10927253\"]}");
+	add("{\"term\":\"connotation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05932198\", \"06615288\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

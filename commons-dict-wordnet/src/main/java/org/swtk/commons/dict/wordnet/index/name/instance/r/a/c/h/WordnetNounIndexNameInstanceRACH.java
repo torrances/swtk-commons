@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.r.a.c.h;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRACH {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"rachel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11271374\"]}");
+	add("{\"term\":\"rachet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04062292\"]}");
+	add("{\"term\":\"rachis\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05595824\", \"13149735\"]}");
+	add("{\"term\":\"rachischisis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14494808\"]}");
+	add("{\"term\":\"rachitis\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14224793\", \"14378047\"]}");
+	add("{\"term\":\"rachmaninoff\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11271521\"]}");
+	add("{\"term\":\"rachmaninov\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11271521\"]}");
+	add("{\"term\":\"rachycentridae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02576549\"]}");
+	add("{\"term\":\"rachycentron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02576724\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

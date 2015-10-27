@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.c.a.b.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCABA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cabal\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05917476\", \"08258719\"]}");
+	add("{\"term\":\"cabala\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05962967\", \"06686515\"]}");
+	add("{\"term\":\"cabalism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01215896\", \"05963233\"]}");
+	add("{\"term\":\"cabalist\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"09904868\", \"09904986\", \"09905128\"]}");
+	add("{\"term\":\"cabana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02934678\"]}");
+	add("{\"term\":\"cabaret\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00521728\", \"02934801\"]}");
+	add("{\"term\":\"cabasset\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03791254\"]}");
+	add("{\"term\":\"cabassous\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02458059\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

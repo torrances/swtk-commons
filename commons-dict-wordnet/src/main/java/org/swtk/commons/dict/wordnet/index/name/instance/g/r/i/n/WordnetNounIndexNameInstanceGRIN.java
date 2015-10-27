@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.g.r.i.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceGRIN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"grin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06891121\"]}");
+	add("{\"term\":\"grind\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00359116\", \"00622716\", \"05101686\", \"10704113\"]}");
+	add("{\"term\":\"grindelia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11993628\"]}");
+	add("{\"term\":\"grinder\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03464972\", \"03771096\", \"05315272\", \"07713570\"]}");
+	add("{\"term\":\"grinding\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"11480462\", \"07398944\", \"09317622\"]}");
+	add("{\"term\":\"grindle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02641717\"]}");
+	add("{\"term\":\"grindstone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03465229\"]}");
+	add("{\"term\":\"gringo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10166641\"]}");
+	add("{\"term\":\"grinner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10166782\"]}");
+	add("{\"term\":\"grinning\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06891121\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.c.a.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSCAT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"scat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00548281\"]}");
+	add("{\"term\":\"scathe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00403900\"]}");
+	add("{\"term\":\"scatology\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00647747\", \"07139636\"]}");
+	add("{\"term\":\"scatophagy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00844258\"]}");
+	add("{\"term\":\"scatter\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00369946\", \"05095531\"]}");
+	add("{\"term\":\"scatterbrain\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10575253\"]}");
+	add("{\"term\":\"scattergood\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10654858\"]}");
+	add("{\"term\":\"scattergun\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04213423\"]}");
+	add("{\"term\":\"scattering\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00369946\", \"07346359\", \"11526585\", \"13574454\", \"13784106\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

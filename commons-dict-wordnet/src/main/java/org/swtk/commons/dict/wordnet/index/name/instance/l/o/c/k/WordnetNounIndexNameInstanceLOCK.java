@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.l.o.c.k;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLOCK {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"lock\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"00816119\", \"03688203\", \"03688405\", \"03688667\", \"05265220\", \"03687813\"]}");
+	add("{\"term\":\"lockage\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00314211\", \"03688783\", \"13343663\"]}");
+	add("{\"term\":\"lockbox\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04132358\"]}");
+	add("{\"term\":\"lockdown\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01149506\"]}");
+	add("{\"term\":\"locke\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11156788\"]}");
+	add("{\"term\":\"locker\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03385147\", \"03688932\", \"02936846\"]}");
+	add("{\"term\":\"locket\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03689321\"]}");
+	add("{\"term\":\"locking\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00829299\"]}");
+	add("{\"term\":\"lockjaw\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14209285\"]}");
+	add("{\"term\":\"lockkeeper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10288775\"]}");
+	add("{\"term\":\"lockman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10288775\"]}");
+	add("{\"term\":\"lockmaster\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10288775\"]}");
+	add("{\"term\":\"locknut\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03689664\"]}");
+	add("{\"term\":\"lockout\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00203469\"]}");
+	add("{\"term\":\"lockring\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03689815\"]}");
+	add("{\"term\":\"locksmith\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10288896\"]}");
+	add("{\"term\":\"lockstep\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00292244\", \"01027196\"]}");
+	add("{\"term\":\"lockstitch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03689937\"]}");
+	add("{\"term\":\"lockup\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00829299\", \"03690066\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }

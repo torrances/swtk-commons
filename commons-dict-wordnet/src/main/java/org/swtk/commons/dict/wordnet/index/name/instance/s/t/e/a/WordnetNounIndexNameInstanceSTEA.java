@@ -1,0 +1,26 @@
+package org.swtk.commons.dict.wordnet.index.name.instance.s.t.e.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSTEA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"stead\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00722683\"]}");
+	add("{\"term\":\"steadfastness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04872247\", \"04884978\"]}");
+	add("{\"term\":\"steadiness\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04777307\", \"04785091\", \"04869613\"]}");
+	add("{\"term\":\"steady\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10702400\"]}");
+	add("{\"term\":\"steak\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07673512\"]}");
+	add("{\"term\":\"steakhouse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04315016\"]}");
+	add("{\"term\":\"steal\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00726403\", \"13274650\"]}");
+	add("{\"term\":\"stealer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10727453\"]}");
+	add("{\"term\":\"stealing\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01053006\", \"00782543\"]}");
+	add("{\"term\":\"stealth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01053006\"]}");
+	add("{\"term\":\"stealthiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04664988\"]}");
+	add("{\"term\":\"steam\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15079748\"]}");
+	add("{\"term\":\"steamboat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04315945\"]}");
+	add("{\"term\":\"steamer\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"01959976\", \"04316486\", \"04316686\", \"07803405\"]}");
+	add("{\"term\":\"steamfitter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10672968\"]}");
+	add("{\"term\":\"steaminess\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04711464\"]}");
+	add("{\"term\":\"steamroller\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04317295\", \"10246226\"]}");
+	add("{\"term\":\"steamship\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04316486\"]}");
+	add("{\"term\":\"stearin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15081670\"]}");
+	add("{\"term\":\"steatite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15068894\"]}");
+	add("{\"term\":\"steatocystoma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14226245\"]}");
+	add("{\"term\":\"steatopygia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05007974\"]}");
+	add("{\"term\":\"steatornis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01840004\"]}");
+	add("{\"term\":\"steatornithidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01839871\"]}");
+	add("{\"term\":\"steatorrhea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14591537\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public boolean has(final String TERM) { 		return map.containsKey(TERM); 	} }
