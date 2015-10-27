@@ -4,13 +4,15 @@ import com.trimc.blogger.commons.LogManager;
 
 public enum DataNounFrameType {
 
+	ACTION("+"),
+
 	HYPERNYM("@"),
+	
+	PARTONOMY("%p"),
 
 	SYNONYM("~"),
 
-	PARTONOMY("%p"),
-
-	ACTION("+");
+	UNKNOWN_1("-c");
 
 	public static LogManager logger = new LogManager(DataNounFrameType.class);
 
