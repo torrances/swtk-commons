@@ -12,6 +12,8 @@ public enum DataNounFrameType {
 
 	SYNONYM("~"),
 
+	UNKNOWN_2("%s"),
+	
 	UNKNOWN_1("-c");
 
 	public static LogManager logger = new LogManager(DataNounFrameType.class);
