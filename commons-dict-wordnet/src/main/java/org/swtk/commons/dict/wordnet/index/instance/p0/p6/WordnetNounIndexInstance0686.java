@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.index.instance.p0.p6;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexInstance0686 {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("06864566", "{\"term\":\"label\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07286877\", \"14644244\", \"06864566\", \"07217239\"]}");
+	add("06864566", "{\"term\":\"recording label\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06864566\"]}");
+	add("06864792", "{\"term\":\"trademark\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06864792\", \"04739783\"]}");
+	add("06868085", "{\"term\":\"assay-mark\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06868085\"]}");
+	add("06868085", "{\"term\":\"authentication\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00155053\", \"06868085\"]}");
+	add("06868085", "{\"term\":\"hallmark\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06868085\", \"04739783\"]}");
+	add("06868257", "{\"term\":\"impression\", \"synsetCount\":9, \"upperType\":\"NOUN\", \"ids\":[\"00114352\", \"00550143\", \"03570029\", \"06602491\", \"06868257\", \"13919062\", \"05945422\", \"04682671\", \"05925333\"]}");
+	add("06868257", "{\"term\":\"stamp\", \"synsetCount\":9, \"upperType\":\"NOUN\", \"ids\":[\"04166119\", \"04307101\", \"04307218\", \"06868867\", \"13395181\", \"06808977\", \"06868257\", \"08015015\", \"13936581\"]}");
+	add("06868482", "{\"term\":\"embossment\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04080781\", \"06868482\"]}");
+	add("06868482", "{\"term\":\"imprint\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"03570468\", \"06868482\", \"06868613\", \"13919062\", \"05701348\"]}");
+	add("06868613", "{\"term\":\"imprint\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"03570468\", \"06868482\", \"06868613\", \"13919062\", \"05701348\"]}");
+	add("06868867", "{\"term\":\"revenue stamp\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06868867\"]}");
+	add("06868867", "{\"term\":\"stamp\", \"synsetCount\":9, \"upperType\":\"NOUN\", \"ids\":[\"04166119\", \"04307101\", \"04307218\", \"06868867\", \"13395181\", \"06808977\", \"06868257\", \"08015015\", \"13936581\"]}");
+	add("06869035", "{\"term\":\"seal\", \"synsetCount\":9, \"upperType\":\"NOUN\", \"ids\":[\"02078848\", \"04166415\", \"04166606\", \"06718747\", \"06869035\", \"10368257\", \"14790219\", \"04166119\", \"04167097\"]}");
+	add("06869239", "{\"term\":\"phylactery\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06869239\"]}");
+	add("06869239", "{\"term\":\"tefillin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06869239\"]}");
+	add("06869537", "{\"term\":\"white feather\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06869537\"]}");
+	add("06869618", "{\"term\":\"musical scale\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06869618\"]}");
+	add("06869618", "{\"term\":\"scale\", \"synsetCount\":10, \"upperType\":\"NOUN\", \"ids\":[\"01905518\", \"03965995\", \"04148903\", \"04149040\", \"06869618\", \"09448485\", \"13176554\", \"13839074\", \"13837554\", \"13872501\"]}");
+	add("06869934", "{\"term\":\"fanfare\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06869934\", \"06902380\"]}");
+	add("06869934", "{\"term\":\"flourish\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"06869934\", \"06903304\", \"06903423\", \"06903627\", \"06903520\"]}");
+	add("06869934", "{\"term\":\"tucket\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06869934\"]}");
+ 	}  	private static void add(final String ID, final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(ID)) ? map.get(ID) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(ID, list); 	} 	 	public static Collection<IndexNoun> get(final String ID) { 		return map.get(ID); 	}  	public boolean has(final String ID) { 		return map.containsKey(ID); 	} }
