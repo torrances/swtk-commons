@@ -11,23 +11,23 @@ import com.trimc.blogger.commons.utils.string.StringUtils;
 public class DataNounFrame {
 
 	@Expose
-	private DataNounFrameType relType;
+	private DataNounFrameType frameType;
 
 	@Expose
 	private String id;
 
 	@Expose
-	private EngGrammarUpperType upperType;
+	private String semPointer;
 
 	@Expose
-	private String semPointer;
+	private EngGrammarUpperType upperType;
+
+	public DataNounFrameType getFrameType() {
+		return frameType;
+	}
 
 	public String getId() {
 		return id;
-	}
-
-	public DataNounFrameType getRelType() {
-		return relType;
 	}
 
 	public String getSemPointer() {
@@ -36,6 +36,11 @@ public class DataNounFrame {
 
 	public EngGrammarUpperType getUpperType() {
 		return upperType;
+	}
+
+	@Ignore
+	public boolean hasFrameType() {
+		return null != getFrameType();
 	}
 
 	@Ignore
@@ -50,11 +55,6 @@ public class DataNounFrame {
 	}
 
 	@Ignore
-	public boolean hasRelType() {
-		return null != getRelType();
-	}
-
-	@Ignore
 	public boolean hasSemPointer() {
 		return StringUtils.hasValue(getSemPointer());
 	}
@@ -64,12 +64,12 @@ public class DataNounFrame {
 		return null != getUpperType();
 	}
 
-	public void setId(String id) {
-		this.id = id;
+	public void setFrameType(DataNounFrameType frameType) {
+		this.frameType = frameType;
 	}
 
-	public void setRelType(DataNounFrameType relType) {
-		this.relType = relType;
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	public void setSemPointer(String semPointer) {

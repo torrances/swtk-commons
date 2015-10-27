@@ -12,7 +12,7 @@ public final class DataNounFrameAdapter {
 		StringBuilder sb = new StringBuilder();
 
 		sb.append("id = " + bean.getId());
-		sb.append(", rel-type = " + bean.getRelType());
+		sb.append(", rel-type = " + bean.getFrameType());
 		sb.append(", pos = " + bean.getUpperType());
 		sb.append(", sem-pointer = " + bean.getSemPointer());
 
@@ -22,7 +22,7 @@ public final class DataNounFrameAdapter {
 	public static DataNounFrame transform(String relType, String id, String pos, String semPointer) throws AdapterValidationException {
 		DataNounFrame bean = new DataNounFrame();
 
-		bean.setRelType(transformRelType(relType));
+		bean.setFrameType(transformFrameType(relType));
 		bean.setId(transformId(id));
 		bean.setUpperType(WordnetAdapterUtils.transformPos(pos));
 		bean.setSemPointer(transformSemPointer(semPointer));
@@ -30,14 +30,14 @@ public final class DataNounFrameAdapter {
 		return bean;
 	}
 
-	private static String transformId(String id) throws AdapterValidationException {
-		return id;
-	}
-
-	private static DataNounFrameType transformRelType(String relType) throws AdapterValidationException {
+	private static DataNounFrameType transformFrameType(String relType) throws AdapterValidationException {
 		DataNounFrameType type = DataNounFrameType.find(relType);
 		if (null == type) throw new AdapterValidationException("Unrecognized WN Relationship Type");
 		return type;
+	}
+
+	private static String transformId(String id) throws AdapterValidationException {
+		return id;
 	}
 
 	private static String transformSemPointer(String text) throws AdapterValidationException {
