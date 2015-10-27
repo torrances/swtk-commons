@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.index.name.controller.v.u;  import java.util.Collection; import java.util.Set; import java.util.TreeSet;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  	import org.swtk.commons.dict.wordnet.index.name.instance.v.u.i.l.WordnetNounIndexNameInstanceVUIL;
+	import org.swtk.commons.dict.wordnet.index.name.instance.v.u.l.c.WordnetNounIndexNameInstanceVULC;
+	import org.swtk.commons.dict.wordnet.index.name.instance.v.u.l.g.WordnetNounIndexNameInstanceVULG;
+	import org.swtk.commons.dict.wordnet.index.name.instance.v.u.l.n.WordnetNounIndexNameInstanceVULN;
+	import org.swtk.commons.dict.wordnet.index.name.instance.v.u.l.p.WordnetNounIndexNameInstanceVULP;
+	import org.swtk.commons.dict.wordnet.index.name.instance.v.u.l.t.WordnetNounIndexNameInstanceVULT;
+	import org.swtk.commons.dict.wordnet.index.name.instance.v.u.l.v.WordnetNounIndexNameInstanceVULV;
+  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerVU {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException {  		String key = TERM.substring(0, 4).toLowerCase(); 			if ("vuil".equals(key)) return WordnetNounIndexNameInstanceVUIL.get(TERM);
+	if ("vulc".equals(key)) return WordnetNounIndexNameInstanceVULC.get(TERM);
+	if ("vulg".equals(key)) return WordnetNounIndexNameInstanceVULG.get(TERM);
+	if ("vuln".equals(key)) return WordnetNounIndexNameInstanceVULN.get(TERM);
+	if ("vulp".equals(key)) return WordnetNounIndexNameInstanceVULP.get(TERM);
+	if ("vult".equals(key)) return WordnetNounIndexNameInstanceVULT.get(TERM);
+	if ("vulv".equals(key)) return WordnetNounIndexNameInstanceVULV.get(TERM);
+  		throw new BusinessException("TERM not found (id = %s)", TERM); 	} 	 	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceVUIL.terms());
+	set.addAll(WordnetNounIndexNameInstanceVULC.terms());
+	set.addAll(WordnetNounIndexNameInstanceVULG.terms());
+	set.addAll(WordnetNounIndexNameInstanceVULN.terms());
+	set.addAll(WordnetNounIndexNameInstanceVULP.terms());
+	set.addAll(WordnetNounIndexNameInstanceVULT.terms());
+	set.addAll(WordnetNounIndexNameInstanceVULV.terms());
+  		return set; 	} }

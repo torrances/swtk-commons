@@ -1,0 +1,25 @@
+package org.swtk.commons.dict.wordnet.index.name.controller.i.t;  import java.util.Collection; import java.util.Set; import java.util.TreeSet;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  	import org.swtk.commons.dict.wordnet.index.name.instance.i.t.a.l.WordnetNounIndexNameInstanceITAL;
+	import org.swtk.commons.dict.wordnet.index.name.instance.i.t.c.h.WordnetNounIndexNameInstanceITCH;
+	import org.swtk.commons.dict.wordnet.index.name.instance.i.t.e.m.WordnetNounIndexNameInstanceITEM;
+	import org.swtk.commons.dict.wordnet.index.name.instance.i.t.e.r.WordnetNounIndexNameInstanceITER;
+	import org.swtk.commons.dict.wordnet.index.name.instance.i.t.h.a.WordnetNounIndexNameInstanceITHA;
+	import org.swtk.commons.dict.wordnet.index.name.instance.i.t.h.u.WordnetNounIndexNameInstanceITHU;
+	import org.swtk.commons.dict.wordnet.index.name.instance.i.t.i.n.WordnetNounIndexNameInstanceITIN;
+	import org.swtk.commons.dict.wordnet.index.name.instance.i.t.r.a.WordnetNounIndexNameInstanceITRA;
+  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerIT {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException {  		String key = TERM.substring(0, 4).toLowerCase(); 			if ("ital".equals(key)) return WordnetNounIndexNameInstanceITAL.get(TERM);
+	if ("itch".equals(key)) return WordnetNounIndexNameInstanceITCH.get(TERM);
+	if ("item".equals(key)) return WordnetNounIndexNameInstanceITEM.get(TERM);
+	if ("iter".equals(key)) return WordnetNounIndexNameInstanceITER.get(TERM);
+	if ("itha".equals(key)) return WordnetNounIndexNameInstanceITHA.get(TERM);
+	if ("ithu".equals(key)) return WordnetNounIndexNameInstanceITHU.get(TERM);
+	if ("itin".equals(key)) return WordnetNounIndexNameInstanceITIN.get(TERM);
+	if ("itra".equals(key)) return WordnetNounIndexNameInstanceITRA.get(TERM);
+  		throw new BusinessException("TERM not found (id = %s)", TERM); 	} 	 	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceITAL.terms());
+	set.addAll(WordnetNounIndexNameInstanceITCH.terms());
+	set.addAll(WordnetNounIndexNameInstanceITEM.terms());
+	set.addAll(WordnetNounIndexNameInstanceITER.terms());
+	set.addAll(WordnetNounIndexNameInstanceITHA.terms());
+	set.addAll(WordnetNounIndexNameInstanceITHU.terms());
+	set.addAll(WordnetNounIndexNameInstanceITIN.terms());
+	set.addAll(WordnetNounIndexNameInstanceITRA.terms());
+  		return set; 	} }

@@ -1,0 +1,28 @@
+package org.swtk.commons.dict.wordnet.index.name.controller.k.y;  import java.util.Collection; import java.util.Set; import java.util.TreeSet;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  	import org.swtk.commons.dict.wordnet.index.name.instance.k.y.a.n.WordnetNounIndexNameInstanceKYAN;
+	import org.swtk.commons.dict.wordnet.index.name.instance.k.y.a.t.WordnetNounIndexNameInstanceKYAT;
+	import org.swtk.commons.dict.wordnet.index.name.instance.k.y.l.i.WordnetNounIndexNameInstanceKYLI;
+	import org.swtk.commons.dict.wordnet.index.name.instance.k.y.m.o.WordnetNounIndexNameInstanceKYMO;
+	import org.swtk.commons.dict.wordnet.index.name.instance.k.y.o.t.WordnetNounIndexNameInstanceKYOT;
+	import org.swtk.commons.dict.wordnet.index.name.instance.k.y.p.h.WordnetNounIndexNameInstanceKYPH;
+	import org.swtk.commons.dict.wordnet.index.name.instance.k.y.r.g.WordnetNounIndexNameInstanceKYRG;
+	import org.swtk.commons.dict.wordnet.index.name.instance.k.y.u.s.WordnetNounIndexNameInstanceKYUS;
+	import org.swtk.commons.dict.wordnet.index.name.instance.k.y.y.i.WordnetNounIndexNameInstanceKYYI;
+  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerKY {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException {  		String key = TERM.substring(0, 4).toLowerCase(); 			if ("kyan".equals(key)) return WordnetNounIndexNameInstanceKYAN.get(TERM);
+	if ("kyat".equals(key)) return WordnetNounIndexNameInstanceKYAT.get(TERM);
+	if ("kyli".equals(key)) return WordnetNounIndexNameInstanceKYLI.get(TERM);
+	if ("kymo".equals(key)) return WordnetNounIndexNameInstanceKYMO.get(TERM);
+	if ("kyot".equals(key)) return WordnetNounIndexNameInstanceKYOT.get(TERM);
+	if ("kyph".equals(key)) return WordnetNounIndexNameInstanceKYPH.get(TERM);
+	if ("kyrg".equals(key)) return WordnetNounIndexNameInstanceKYRG.get(TERM);
+	if ("kyus".equals(key)) return WordnetNounIndexNameInstanceKYUS.get(TERM);
+	if ("kyyi".equals(key)) return WordnetNounIndexNameInstanceKYYI.get(TERM);
+  		throw new BusinessException("TERM not found (id = %s)", TERM); 	} 	 	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceKYAN.terms());
+	set.addAll(WordnetNounIndexNameInstanceKYAT.terms());
+	set.addAll(WordnetNounIndexNameInstanceKYLI.terms());
+	set.addAll(WordnetNounIndexNameInstanceKYMO.terms());
+	set.addAll(WordnetNounIndexNameInstanceKYOT.terms());
+	set.addAll(WordnetNounIndexNameInstanceKYPH.terms());
+	set.addAll(WordnetNounIndexNameInstanceKYRG.terms());
+	set.addAll(WordnetNounIndexNameInstanceKYUS.terms());
+	set.addAll(WordnetNounIndexNameInstanceKYYI.terms());
+  		return set; 	} }

@@ -1,0 +1,4 @@
+package org.swtk.commons.dict.wordnet.index.name.controller.r.t;  import java.util.Collection; import java.util.Set; import java.util.TreeSet;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  	import org.swtk.commons.dict.wordnet.index.name.instance.r.t.l.t.WordnetNounIndexNameInstanceRTLT;
+  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerRT {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException {  		String key = TERM.substring(0, 4).toLowerCase(); 			if ("rtlt".equals(key)) return WordnetNounIndexNameInstanceRTLT.get(TERM);
+  		throw new BusinessException("TERM not found (id = %s)", TERM); 	} 	 	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceRTLT.terms());
+  		return set; 	} }
