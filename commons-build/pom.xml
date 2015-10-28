@@ -25,7 +25,6 @@
 		<module>../commons-dict-wordnet-indexbyname</module>
 		<module>../commons-dict-wordnet-frames</module>
 		<module>../commons-dict-wordnet</module>
-		<module>../commons-dict-wordnet-utils</module>
 	</modules>
 
 	<properties>
@@ -91,11 +90,6 @@
 		<dependency>
 			<groupId>org.swtk.commons.dict.wordnet</groupId>
 			<artifactId>commons-dict-wordnet</artifactId>
-			<version>${swtk.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.swtk.commons.dict.wordnet.utils</groupId>
-			<artifactId>commons-dict-wordnet-utils</artifactId>
 			<version>${swtk.version}</version>
 		</dependency>
 	</dependencies>

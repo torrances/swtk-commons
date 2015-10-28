@@ -1,4 +1,4 @@
-package org.swtk.commons.dict.wordnet.utils;
+package org.swtk.commons.dict.wordnet;
 
 public final class WordnetHypernmHelper {
 
