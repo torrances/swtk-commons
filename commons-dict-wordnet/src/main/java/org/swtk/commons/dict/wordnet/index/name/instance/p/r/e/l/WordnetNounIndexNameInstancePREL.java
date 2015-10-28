@@ -1,9 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.p.r.e.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePREL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"prelacy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00597707\", \"08130676\"]}");
-	add("{\"term\":\"prelate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09826498\"]}");
-	add("{\"term\":\"prelature\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00597707\", \"08130676\"]}");
-	add("{\"term\":\"prelim\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07213673\", \"07472390\"]}");
-	add("{\"term\":\"preliminary\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07341613\", \"07472390\"]}");
-	add("{\"term\":\"prelims\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06402331\"]}");
-	add("{\"term\":\"prelone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14777367\"]}");
-	add("{\"term\":\"prelude\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07054289\", \"07341613\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

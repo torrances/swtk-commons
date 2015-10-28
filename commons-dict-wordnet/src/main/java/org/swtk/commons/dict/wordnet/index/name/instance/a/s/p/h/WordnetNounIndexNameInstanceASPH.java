@@ -1,9 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.a.s.p.h;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceASPH {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"asphalt\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14691634\", \"14793644\"]}");
-	add("{\"term\":\"asphodel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12462463\"]}");
-	add("{\"term\":\"asphodelaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12462275\"]}");
-	add("{\"term\":\"asphodeline\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12462725\"]}");
-	add("{\"term\":\"asphodelus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12463370\"]}");
-	add("{\"term\":\"asphyxia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14065905\"]}");
-	add("{\"term\":\"asphyxiation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00226460\", \"14067364\"]}");
-	add("{\"term\":\"asphyxiator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03350683\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

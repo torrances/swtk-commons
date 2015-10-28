@@ -1,9 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.d.e.s.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDESM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"desmanthus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12546480\"]}");
-	add("{\"term\":\"desmid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01416098\"]}");
-	add("{\"term\":\"desmidiaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01415829\"]}");
-	add("{\"term\":\"desmidium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01415965\"]}");
-	add("{\"term\":\"desmodium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12546885\"]}");
-	add("{\"term\":\"desmodontidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02152958\"]}");
-	add("{\"term\":\"desmodus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02153382\"]}");
-	add("{\"term\":\"desmograthus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01639316\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

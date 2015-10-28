@@ -1,8 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.m.e.t.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMETI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"metic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10332548\"]}");
-	add("{\"term\":\"metical\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13710916\"]}");
-	add("{\"term\":\"meticorten\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14777593\"]}");
-	add("{\"term\":\"meticulosity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04679962\"]}");
-	add("{\"term\":\"meticulousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04679962\"]}");
-	add("{\"term\":\"metier\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00611490\", \"05166608\"]}");
-	add("{\"term\":\"metis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10332658\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

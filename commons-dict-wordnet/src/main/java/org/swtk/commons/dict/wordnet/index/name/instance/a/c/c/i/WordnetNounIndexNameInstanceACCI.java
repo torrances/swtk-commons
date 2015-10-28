@@ -1,8 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.a.c.c.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceACCI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"acciaccatura\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06885033\"]}");
-	add("{\"term\":\"accidence\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06187954\"]}");
-	add("{\"term\":\"accident\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07315578\", \"07315954\"]}");
-	add("{\"term\":\"accidental\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06880395\"]}");
-	add("{\"term\":\"accipiter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01608976\"]}");
-	add("{\"term\":\"accipitridae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01607760\"]}");
-	add("{\"term\":\"accipitriformes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01607609\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

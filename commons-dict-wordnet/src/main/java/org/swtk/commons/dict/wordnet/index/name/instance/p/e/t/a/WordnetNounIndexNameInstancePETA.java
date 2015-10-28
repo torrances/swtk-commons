@@ -1,9 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.p.e.t.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePETA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"petabit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13652006\"]}");
-	add("{\"term\":\"petabyte\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13651674\", \"13651848\"]}");
-	add("{\"term\":\"petal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11710924\"]}");
-	add("{\"term\":\"petard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03925824\"]}");
-	add("{\"term\":\"petasites\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12022666\"]}");
-	add("{\"term\":\"petaurista\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02365072\"]}");
-	add("{\"term\":\"petauristidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02364677\"]}");
-	add("{\"term\":\"petaurus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01884632\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

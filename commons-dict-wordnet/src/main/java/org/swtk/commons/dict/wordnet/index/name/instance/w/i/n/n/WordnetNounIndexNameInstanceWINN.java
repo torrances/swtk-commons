@@ -1,8 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.w.i.n.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceWINN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"winnebago\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06925990\", \"09691810\"]}");
-	add("{\"term\":\"winner\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"09782244\", \"10802467\", \"10802616\"]}");
-	add("{\"term\":\"winning\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00064838\"]}");
-	add("{\"term\":\"winnings\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13280816\"]}");
-	add("{\"term\":\"winnipeg\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09503558\", \"08843144\"]}");
-	add("{\"term\":\"winnow\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01256638\"]}");
-	add("{\"term\":\"winnowing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01256638\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

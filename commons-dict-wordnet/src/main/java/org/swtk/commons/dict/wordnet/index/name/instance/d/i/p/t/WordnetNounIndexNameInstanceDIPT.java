@@ -1,9 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.d.i.p.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDIPT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"diptera\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02190717\"]}");
-	add("{\"term\":\"dipteran\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02191351\"]}");
-	add("{\"term\":\"dipterocarp\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12397715\"]}");
-	add("{\"term\":\"dipterocarpaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12397467\"]}");
-	add("{\"term\":\"dipteron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02191351\"]}");
-	add("{\"term\":\"dipteronia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12776819\"]}");
-	add("{\"term\":\"dipteryx\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11770211\"]}");
-	add("{\"term\":\"diptych\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03209494\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,8 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.c.a.l.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCALE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"calean\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03538194\"]}");
-	add("{\"term\":\"caleche\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02941342\", \"02941479\"]}");
-	add("{\"term\":\"caledonia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08911642\"]}");
-	add("{\"term\":\"calefaction\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05023635\"]}");
-	add("{\"term\":\"calendar\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"08283770\", \"06499232\", \"15198526\"]}");
-	add("{\"term\":\"calender\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02942982\"]}");
-	add("{\"term\":\"calendula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11963876\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

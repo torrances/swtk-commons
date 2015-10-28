@@ -1,9 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.r.e.v.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceREVO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"revocation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01261532\", \"14587637\"]}");
-	add("{\"term\":\"revoke\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01261891\"]}");
-	add("{\"term\":\"revolt\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00964240\"]}");
-	add("{\"term\":\"revolution\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07455579\", \"00964833\", \"07438709\"]}");
-	add("{\"term\":\"revolutionary\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10546909\"]}");
-	add("{\"term\":\"revolutionism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05960559\"]}");
-	add("{\"term\":\"revolutionist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10546909\"]}");
-	add("{\"term\":\"revolver\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04093558\", \"04093385\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

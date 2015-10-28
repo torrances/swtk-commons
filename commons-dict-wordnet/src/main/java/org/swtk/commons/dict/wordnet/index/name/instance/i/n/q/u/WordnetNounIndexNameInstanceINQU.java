@@ -1,9 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.i.n.q.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceINQU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"inquest\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00639053\"]}");
-	add("{\"term\":\"inquietude\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07540296\"]}");
-	add("{\"term\":\"inquirer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10227450\"]}");
-	add("{\"term\":\"inquiring\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07207844\"]}");
-	add("{\"term\":\"inquiry\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00637971\", \"07208256\", \"05805605\"]}");
-	add("{\"term\":\"inquisition\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07209336\", \"08349957\"]}");
-	add("{\"term\":\"inquisitiveness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05691020\"]}");
-	add("{\"term\":\"inquisitor\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10228033\", \"10227888\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

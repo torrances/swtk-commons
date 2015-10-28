@@ -1,8 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.p.e.n.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePENS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"pensacola\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09097101\"]}");
-	add("{\"term\":\"pension\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13405337\"]}");
-	add("{\"term\":\"pensionary\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10196544\", \"10434357\"]}");
-	add("{\"term\":\"pensioner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10434357\"]}");
-	add("{\"term\":\"pensiveness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04668162\", \"07548995\"]}");
-	add("{\"term\":\"penstemon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12905283\"]}");
-	add("{\"term\":\"penstock\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04251507\", \"04251743\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

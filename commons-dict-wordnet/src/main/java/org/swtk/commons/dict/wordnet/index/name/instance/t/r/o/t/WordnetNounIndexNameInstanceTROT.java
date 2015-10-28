@@ -1,9 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.t.r.o.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTROT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"trot\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00288405\", \"06358595\", \"10750670\", \"00295034\"]}");
-	add("{\"term\":\"troth\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07242765\", \"07242871\"]}");
-	add("{\"term\":\"trotline\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04483135\"]}");
-	add("{\"term\":\"trotsky\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11369313\"]}");
-	add("{\"term\":\"trotskyism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06225730\"]}");
-	add("{\"term\":\"trotskyist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10750670\"]}");
-	add("{\"term\":\"trotskyite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10750670\"]}");
-	add("{\"term\":\"trotter\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02390928\", \"02442199\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

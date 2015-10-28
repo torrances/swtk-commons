@@ -1,8 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.s.t.y.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSTYR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"styracaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12797706\"]}");
-	add("{\"term\":\"styracosaur\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01707267\"]}");
-	add("{\"term\":\"styracosaurus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01707267\"]}");
-	add("{\"term\":\"styrax\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12798196\"]}");
-	add("{\"term\":\"styrene\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14619723\"]}");
-	add("{\"term\":\"styrofoam\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14620113\"]}");
-	add("{\"term\":\"styron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11343311\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,8 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.f.i.s.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFISS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"fission\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13502427\", \"13502611\"]}");
-	add("{\"term\":\"fissiparity\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04712544\", \"13502783\"]}");
-	add("{\"term\":\"fissiped\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02084842\"]}");
-	add("{\"term\":\"fissipedia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02084708\"]}");
-	add("{\"term\":\"fissure\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05230663\", \"09281621\", \"13930286\"]}");
-	add("{\"term\":\"fissurella\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01951971\"]}");
-	add("{\"term\":\"fissurellidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01951836\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

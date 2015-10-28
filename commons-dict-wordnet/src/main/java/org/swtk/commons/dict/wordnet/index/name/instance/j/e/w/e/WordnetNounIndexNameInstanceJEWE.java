@@ -1,8 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.j.e.w.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceJEWE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"jewel\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10241326\", \"03601980\"]}");
-	add("{\"term\":\"jeweler\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10241447\", \"10241626\"]}");
-	add("{\"term\":\"jeweller\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10241447\", \"10241626\"]}");
-	add("{\"term\":\"jewellery\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03602662\"]}");
-	add("{\"term\":\"jewelry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03602662\"]}");
-	add("{\"term\":\"jewelweed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12705140\"]}");
-	add("{\"term\":\"jewess\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09701369\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

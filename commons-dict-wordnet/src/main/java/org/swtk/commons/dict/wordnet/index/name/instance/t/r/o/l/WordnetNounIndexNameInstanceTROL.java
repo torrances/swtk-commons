@@ -1,9 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.t.r.o.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTROL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"troll\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00455517\", \"04494190\", \"07067129\", \"09525613\"]}");
-	add("{\"term\":\"troller\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09813387\"]}");
-	add("{\"term\":\"trolley\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04342573\"]}");
-	add("{\"term\":\"trolleybus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04494337\"]}");
-	add("{\"term\":\"trolling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00455517\"]}");
-	add("{\"term\":\"trollius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11759668\"]}");
-	add("{\"term\":\"trollop\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09792353\", \"10628714\"]}");
-	add("{\"term\":\"trollope\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11369202\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

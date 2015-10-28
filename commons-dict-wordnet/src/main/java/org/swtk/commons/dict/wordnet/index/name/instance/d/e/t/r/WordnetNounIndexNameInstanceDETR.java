@@ -1,9 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.d.e.t.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDETR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"detraction\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01223243\", \"06731952\"]}");
-	add("{\"term\":\"detractor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10029325\"]}");
-	add("{\"term\":\"detribalisation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00383714\", \"01155078\"]}");
-	add("{\"term\":\"detribalization\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00383714\", \"01155078\"]}");
-	add("{\"term\":\"detriment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07435138\"]}");
-	add("{\"term\":\"detrition\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00713284\", \"11480462\", \"13444788\"]}");
-	add("{\"term\":\"detritus\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14880285\", \"14882048\"]}");
-	add("{\"term\":\"detroit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09122994\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,9 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.c.r.a.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCRAS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"crash\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"07494014\", \"00127056\", \"07493085\", \"07316568\", \"07394744\"]}");
-	add("{\"term\":\"crasher\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10141609\"]}");
-	add("{\"term\":\"craspedia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11979211\"]}");
-	add("{\"term\":\"crassitude\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04851574\"]}");
-	add("{\"term\":\"crassness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04851574\"]}");
-	add("{\"term\":\"crassostrea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01964109\"]}");
-	add("{\"term\":\"crassula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12806072\"]}");
-	add("{\"term\":\"crassulaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12805870\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

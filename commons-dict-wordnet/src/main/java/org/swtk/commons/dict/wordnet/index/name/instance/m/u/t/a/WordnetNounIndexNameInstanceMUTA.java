@@ -1,9 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.m.u.t.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMUTA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"mutability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04748551\"]}");
-	add("{\"term\":\"mutableness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04748551\"]}");
-	add("{\"term\":\"mutagen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09386983\"]}");
-	add("{\"term\":\"mutagenesis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07440708\"]}");
-	add("{\"term\":\"mutamycin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03780375\"]}");
-	add("{\"term\":\"mutant\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01326946\", \"10361391\"]}");
-	add("{\"term\":\"mutation\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07312429\", \"07439611\", \"10361391\"]}");
-	add("{\"term\":\"mutawa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08227332\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

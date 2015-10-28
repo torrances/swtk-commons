@@ -1,8 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.t.a.r.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTARS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"tarsal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05289373\"]}");
-	add("{\"term\":\"tarsier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02504214\"]}");
-	add("{\"term\":\"tarsiidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02503906\"]}");
-	add("{\"term\":\"tarsioidea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02503732\"]}");
-	add("{\"term\":\"tarsitis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14379902\"]}");
-	add("{\"term\":\"tarsius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02504063\"]}");
-	add("{\"term\":\"tarsus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05602577\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

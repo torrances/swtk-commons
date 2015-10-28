@@ -1,9 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.n.o.n.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNONS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"nonsense\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03381284\", \"06619692\"]}");
-	add("{\"term\":\"nonsensicality\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06619692\"]}");
-	add("{\"term\":\"nonsmoker\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03833560\", \"10382018\"]}");
-	add("{\"term\":\"nonstarter\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02388428\", \"10292761\"]}");
-	add("{\"term\":\"nonsteroid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15082590\"]}");
-	add("{\"term\":\"nonsteroidal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15082590\"]}");
-	add("{\"term\":\"nonstop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00302827\"]}");
-	add("{\"term\":\"nonsuch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10344909\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

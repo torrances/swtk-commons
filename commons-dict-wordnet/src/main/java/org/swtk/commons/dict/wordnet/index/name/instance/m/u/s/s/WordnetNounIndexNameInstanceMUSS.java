@@ -1,8 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.m.u.s.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMUSS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"muss\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14523631\"]}");
-	add("{\"term\":\"mussel\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01966212\", \"07799526\"]}");
-	add("{\"term\":\"musset\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11218084\"]}");
-	add("{\"term\":\"mussiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14523631\"]}");
-	add("{\"term\":\"mussitation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07401520\"]}");
-	add("{\"term\":\"mussolini\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11218243\"]}");
-	add("{\"term\":\"mussorgsky\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11218365\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,8 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.d.o.c.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDOCT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"doctor\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"10041617\", \"00433296\", \"10041836\", \"10040615\"]}");
-	add("{\"term\":\"doctorate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06715221\"]}");
-	add("{\"term\":\"doctorfish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02624207\"]}");
-	add("{\"term\":\"doctorow\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10957874\"]}");
-	add("{\"term\":\"doctorspeak\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07083042\"]}");
-	add("{\"term\":\"doctrinaire\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10043381\"]}");
-	add("{\"term\":\"doctrine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05952149\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

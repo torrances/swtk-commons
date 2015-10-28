@@ -1,9 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.p.o.m.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePOMA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"pomacanthus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02608439\"]}");
-	add("{\"term\":\"pomacentridae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02608824\"]}");
-	add("{\"term\":\"pomacentrus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02609220\"]}");
-	add("{\"term\":\"pomade\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03986384\"]}");
-	add("{\"term\":\"pomaderris\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13164707\"]}");
-	add("{\"term\":\"pomatomidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02576037\"]}");
-	add("{\"term\":\"pomatomus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02576194\"]}");
-	add("{\"term\":\"pomatum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03986384\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

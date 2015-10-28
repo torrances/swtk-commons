@@ -1,9 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.t.i.m.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTIMB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"timbale\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07640810\", \"07640933\"]}");
-	add("{\"term\":\"timber\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"04994869\", \"09306921\", \"04443463\", \"04443319\", \"14967718\"]}");
-	add("{\"term\":\"timberland\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09306921\"]}");
-	add("{\"term\":\"timberline\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08565230\"]}");
-	add("{\"term\":\"timberman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10730902\"]}");
-	add("{\"term\":\"timbre\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04994869\"]}");
-	add("{\"term\":\"timbrel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04443676\"]}");
-	add("{\"term\":\"timbuktu\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08988436\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,9 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.e.y.e.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceEYES {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"eyes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05958470\"]}");
-	add("{\"term\":\"eyeshade\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02841963\"]}");
-	add("{\"term\":\"eyeshadow\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03314632\"]}");
-	add("{\"term\":\"eyeshot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08578489\"]}");
-	add("{\"term\":\"eyesight\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05664382\"]}");
-	add("{\"term\":\"eyesore\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04701065\"]}");
-	add("{\"term\":\"eyespot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04688978\"]}");
-	add("{\"term\":\"eyestrain\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14040334\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

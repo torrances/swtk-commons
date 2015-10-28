@@ -1,9 +1,0 @@
-package org.swtk.commons.dict.wordnet.index.name.instance.s.l.o.v;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSLOV {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"slovak\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06957582\", \"09718932\"]}");
-	add("{\"term\":\"slovakia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08776846\"]}");
-	add("{\"term\":\"sloven\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10631726\"]}");
-	add("{\"term\":\"slovene\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06957772\", \"09750685\"]}");
-	add("{\"term\":\"slovenia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08836296\"]}");
-	add("{\"term\":\"slovenian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09769084\"]}");
-	add("{\"term\":\"slovenija\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08836296\"]}");
-	add("{\"term\":\"slovenliness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04904055\", \"14523318\"]}");
- 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }
