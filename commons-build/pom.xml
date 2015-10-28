@@ -22,6 +22,7 @@
 		<module>../commons-dict-wiktionary</module>
 		<module>../commons-dict-gngrams</module>
 		<module>../commons-dict-wordnet</module>
+		<module>../commons-dict-wordnet-indexbyid</module>
 		<module>../commons-dict-wordnet-utils</module>
 	</modules>
 
@@ -53,32 +54,37 @@
 		<dependency>
 			<groupId>org.swtk.common.dict.dto</groupId>
 			<artifactId>commons-dict-dto</artifactId>
-			<version>1.0.0</version>
+			<version>${swtk.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.swtk.common.dict.iso639</groupId>
 			<artifactId>commons-dict-iso639</artifactId>
-			<version>1.0.0</version>
+			<version>${swtk.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.swtk.commons.dict.wiktionary</groupId>
 			<artifactId>commons-dict-wiktionary</artifactId>
-			<version>1.0.0</version>
+			<version>${swtk.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.swtk.common.dict.gngrams</groupId>
 			<artifactId>commons-dict-gngrams</artifactId>
-			<version>1.0.0</version>
+			<version>${swtk.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.swtk.commons.dict.wordnet</groupId>
 			<artifactId>commons-dict-wordnet</artifactId>
-			<version>1.0.0</version>
+			<version>${swtk.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.swtk.commons.dict.wordnet.indexbyid</groupId>
+			<artifactId>commons-dict-wordnet-indexbyid</artifactId>
+			<version>${swtk.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.swtk.commons.dict.wordnet.utils</groupId>
 			<artifactId>commons-dict-wordnet-utils</artifactId>
-			<version>1.0.0</version>
+			<version>${swtk.version}</version>
 		</dependency>
 	</dependencies>
 
