@@ -23,6 +23,7 @@
 		<module>../commons-dict-gngrams</module>
 		<module>../commons-dict-wordnet-indexbyid</module>
 		<module>../commons-dict-wordnet-indexbyname</module>
+		<module>../commons-dict-wordnet-frames</module>
 		<module>../commons-dict-wordnet</module>
 		<module>../commons-dict-wordnet-utils</module>
 	</modules>
@@ -80,6 +81,11 @@
 		<dependency>
 			<groupId>org.swtk.commons.dict.wordnet.indexbyname</groupId>
 			<artifactId>commons-dict-wordnet-indexbyname</artifactId>
+			<version>${swtk.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.swtk.commons.dict.wordnet.frames</groupId>
+			<artifactId>commons-dict-wordnet-frames</artifactId>
 			<version>${swtk.version}</version>
 		</dependency>
 		<dependency>

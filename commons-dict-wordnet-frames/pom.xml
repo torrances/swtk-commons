@@ -2,17 +2,17 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.swtk.commons.dict.wordnet</groupId>
-	<artifactId>commons-dict-wordnet</artifactId>
+	<groupId>org.swtk.commons.dict.wordnet.frames</groupId>
+	<artifactId>commons-dict-wordnet-frames</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>Commons Dictionary Wordnet</name>
+	<name>Commons Dictionary Wordnet Frames</name>
 	<inceptionYear>2015</inceptionYear>
 	<url>https://github.com/torrances/swtk-common</url>
 	<description>
 		Auto Generated Dictionary [MDA]
-		for Wordnet Entries
+		for Wordnet Entries (Indexed By Frames)
 	</description>
 
 	<build>
@@ -51,21 +51,7 @@
 			<artifactId>commons-dict-dto</artifactId>
 			<version>${swtk.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>org.swtk.commons.dict.wordnet.indexbyid</groupId>
-			<artifactId>commons-dict-wordnet-indexbyid</artifactId>
-			<version>${swtk.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.swtk.commons.dict.wordnet.indexbyname</groupId>
-			<artifactId>commons-dict-wordnet-indexbyname</artifactId>
-			<version>${swtk.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.swtk.commons.dict.wordnet.frames</groupId>
-			<artifactId>commons-dict-wordnet-frames</artifactId>
-			<version>1.0.0</version>
-		</dependency>
 	</dependencies>
 
 </project>
+  
