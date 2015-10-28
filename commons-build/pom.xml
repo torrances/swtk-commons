@@ -21,8 +21,8 @@
 		<module>../commons-dict-iso639</module>
 		<module>../commons-dict-wiktionary</module>
 		<module>../commons-dict-gngrams</module>
-		<module>../commons-dict-wordnet</module>
 		<module>../commons-dict-wordnet-indexbyid</module>
+		<module>../commons-dict-wordnet</module>
 		<module>../commons-dict-wordnet-utils</module>
 	</modules>
 
@@ -72,13 +72,13 @@
 			<version>${swtk.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.swtk.commons.dict.wordnet</groupId>
-			<artifactId>commons-dict-wordnet</artifactId>
+			<groupId>org.swtk.commons.dict.wordnet.indexbyid</groupId>
+			<artifactId>commons-dict-wordnet-indexbyid</artifactId>
 			<version>${swtk.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.swtk.commons.dict.wordnet.indexbyid</groupId>
-			<artifactId>commons-dict-wordnet-indexbyid</artifactId>
+			<groupId>org.swtk.commons.dict.wordnet</groupId>
+			<artifactId>commons-dict-wordnet</artifactId>
 			<version>${swtk.version}</version>
 		</dependency>
 		<dependency>
