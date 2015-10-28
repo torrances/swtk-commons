@@ -1,4 +1,4 @@
-package org.swtk.commons.dict.wordnet.indexbyname.controller.e.n;  import java.util.Collection; import java.util.Set; import java.util.TreeSet;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  	import org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.a.WordnetNounIndexNameInstanceENA;
+package org.swtk.commons.dict.wordnet.indexbyname.controller.e.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Set; import java.util.TreeSet;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  	import org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.a.WordnetNounIndexNameInstanceENA;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.b.WordnetNounIndexNameInstanceENB;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.c.WordnetNounIndexNameInstanceENC;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.d.WordnetNounIndexNameInstanceEND;
@@ -20,7 +20,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.controller.e.n;  import java.u
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.u.WordnetNounIndexNameInstanceENU;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.v.WordnetNounIndexNameInstanceENV;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.z.WordnetNounIndexNameInstanceENZ;
-  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerEN {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException {  		String key = TERM.substring(0, 4).toLowerCase(); 			if ("ena".equals(key)) return WordnetNounIndexNameInstanceENA.get(TERM);
+  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerEN {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException { 		if (TERM.length() < 3) throw new BusinessException("TERM not found (term = %s)", TERM); 		 		String key = TERM.substring(0, 3).toLowerCase(); 			if ("ena".equals(key)) return WordnetNounIndexNameInstanceENA.get(TERM);
 	if ("enb".equals(key)) return WordnetNounIndexNameInstanceENB.get(TERM);
 	if ("enc".equals(key)) return WordnetNounIndexNameInstanceENC.get(TERM);
 	if ("end".equals(key)) return WordnetNounIndexNameInstanceEND.get(TERM);
@@ -42,7 +42,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.controller.e.n;  import java.u
 	if ("enu".equals(key)) return WordnetNounIndexNameInstanceENU.get(TERM);
 	if ("env".equals(key)) return WordnetNounIndexNameInstanceENV.get(TERM);
 	if ("enz".equals(key)) return WordnetNounIndexNameInstanceENZ.get(TERM);
-  		throw new BusinessException("TERM not found (id = %s)", TERM); 	} 	 	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceENA.terms());
+  		throw new BusinessException("TERM not found (term = %s)", TERM); 	} 	 	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceENA.terms());
 	set.addAll(WordnetNounIndexNameInstanceENB.terms());
 	set.addAll(WordnetNounIndexNameInstanceENC.terms());
 	set.addAll(WordnetNounIndexNameInstanceEND.terms());

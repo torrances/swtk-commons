@@ -774,7 +774,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.controller;  import java.util.
 	if ("zu".equals(key)) return WordnetNounIndexNameControllerZU.get(TERM);
 	if ("zw".equals(key)) return WordnetNounIndexNameControllerZW.get(TERM);
 	if ("zy".equals(key)) return WordnetNounIndexNameControllerZY.get(TERM);
-  		throw new BusinessException("TERM not found (id = %s)", TERM); 	}  	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameControllerAA.terms());
+  		throw new BusinessException("TERM not found (term = %s)", TERM); 	}  	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameControllerAA.terms());
 	set.addAll(WordnetNounIndexNameControllerAB.terms());
 	set.addAll(WordnetNounIndexNameControllerAC.terms());
 	set.addAll(WordnetNounIndexNameControllerAD.terms());
