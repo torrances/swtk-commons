@@ -1,4 +1,4 @@
-package org.swtk.commons.dict.wordnet.indexbyname.controller.o.t;  import java.util.Set; import java.util.TreeSet;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  	import org.swtk.commons.dict.wordnet.indexbyname.instance.o.t.a.WordnetNounIndexNameInstanceOTA;
+package org.swtk.commons.dict.wordnet.indexbyname.controller.o.t;  import java.util.Collection; import java.util.Set; import java.util.TreeSet;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  	import org.swtk.commons.dict.wordnet.indexbyname.instance.o.t.a.WordnetNounIndexNameInstanceOTA;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.o.t.h.WordnetNounIndexNameInstanceOTH;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.o.t.i.WordnetNounIndexNameInstanceOTI;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.o.t.o.WordnetNounIndexNameInstanceOTO;
