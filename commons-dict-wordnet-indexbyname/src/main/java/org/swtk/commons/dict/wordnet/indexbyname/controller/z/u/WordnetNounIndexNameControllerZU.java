@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.indexbyname.controller.z.u;  import java.util.Collection; import java.util.Set; import java.util.TreeSet;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  	import org.swtk.commons.dict.wordnet.indexbyname.instance.z.u.b.WordnetNounIndexNameInstanceZUB;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.z.u.c.WordnetNounIndexNameInstanceZUC;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.z.u.k.WordnetNounIndexNameInstanceZUK;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.z.u.l.WordnetNounIndexNameInstanceZUL;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.z.u.m.WordnetNounIndexNameInstanceZUM;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.z.u.n.WordnetNounIndexNameInstanceZUN;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.z.u.r.WordnetNounIndexNameInstanceZUR;
+  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerZU {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException {  		String key = TERM.substring(0, 4).toLowerCase(); 			if ("zub".equals(key)) return WordnetNounIndexNameInstanceZUB.get(TERM);
+	if ("zuc".equals(key)) return WordnetNounIndexNameInstanceZUC.get(TERM);
+	if ("zuk".equals(key)) return WordnetNounIndexNameInstanceZUK.get(TERM);
+	if ("zul".equals(key)) return WordnetNounIndexNameInstanceZUL.get(TERM);
+	if ("zum".equals(key)) return WordnetNounIndexNameInstanceZUM.get(TERM);
+	if ("zun".equals(key)) return WordnetNounIndexNameInstanceZUN.get(TERM);
+	if ("zur".equals(key)) return WordnetNounIndexNameInstanceZUR.get(TERM);
+  		throw new BusinessException("TERM not found (id = %s)", TERM); 	} 	 	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceZUB.terms());
+	set.addAll(WordnetNounIndexNameInstanceZUC.terms());
+	set.addAll(WordnetNounIndexNameInstanceZUK.terms());
+	set.addAll(WordnetNounIndexNameInstanceZUL.terms());
+	set.addAll(WordnetNounIndexNameInstanceZUM.terms());
+	set.addAll(WordnetNounIndexNameInstanceZUN.terms());
+	set.addAll(WordnetNounIndexNameInstanceZUR.terms());
+  		return set; 	} }

@@ -1,0 +1,24 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.f.u.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFUL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ful\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07009170\"]}");
+	add("{\"term\":\"fula\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07009170\", \"09724867\"]}");
+	add("{\"term\":\"fulah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09724867\"]}");
+	add("{\"term\":\"fulani\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07009170\", \"09724867\"]}");
+	add("{\"term\":\"fulbe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09724867\"]}");
+	add("{\"term\":\"fulbright\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11005156\"]}");
+	add("{\"term\":\"fulcrum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03406995\"]}");
+	add("{\"term\":\"fulfillment\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00063271\", \"07547500\"]}");
+	add("{\"term\":\"fulfilment\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00063271\", \"07547500\"]}");
+	add("{\"term\":\"fulgoridae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02262496\"]}");
+	add("{\"term\":\"fulica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02020532\"]}");
+	add("{\"term\":\"full\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15232352\"]}");
+	add("{\"term\":\"fullback\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00728118\", \"10135087\"]}");
+	add("{\"term\":\"fuller\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"10135260\", \"11005436\", \"11005649\"]}");
+	add("{\"term\":\"fullerene\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14646319\"]}");
+	add("{\"term\":\"fullness\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"05113324\", \"14475377\", \"04996251\", \"14485103\"]}");
+	add("{\"term\":\"fulmar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02062786\"]}");
+	add("{\"term\":\"fulmarus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02062669\"]}");
+	add("{\"term\":\"fulminate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14822879\"]}");
+	add("{\"term\":\"fulmination\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00378715\", \"07247964\"]}");
+	add("{\"term\":\"fulsomeness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04875718\", \"06709053\"]}");
+	add("{\"term\":\"fulton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11005834\"]}");
+	add("{\"term\":\"fulvicin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03465606\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

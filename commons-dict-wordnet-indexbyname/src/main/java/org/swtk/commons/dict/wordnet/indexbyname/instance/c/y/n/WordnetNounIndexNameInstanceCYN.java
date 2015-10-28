@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.c.y.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCYN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cynancum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13257393\"]}");
+	add("{\"term\":\"cynara\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11979958\"]}");
+	add("{\"term\":\"cynewulf\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10939248\"]}");
+	add("{\"term\":\"cynic\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10006238\", \"10006070\"]}");
+	add("{\"term\":\"cynicism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07558592\"]}");
+	add("{\"term\":\"cynipidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02219199\"]}");
+	add("{\"term\":\"cynips\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02219576\"]}");
+	add("{\"term\":\"cynocephalidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02504843\"]}");
+	add("{\"term\":\"cynocephalus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02504988\"]}");
+	add("{\"term\":\"cynodon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12136080\"]}");
+	add("{\"term\":\"cynodont\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01723408\"]}");
+	add("{\"term\":\"cynodontia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01723137\"]}");
+	add("{\"term\":\"cynoglossidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02665982\"]}");
+	add("{\"term\":\"cynoglossum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12839502\"]}");
+	add("{\"term\":\"cynomys\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02361856\"]}");
+	add("{\"term\":\"cynophobia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14408487\"]}");
+	add("{\"term\":\"cynopterus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02143371\"]}");
+	add("{\"term\":\"cynoscephalae\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01279558\", \"08808051\"]}");
+	add("{\"term\":\"cynoscion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02601837\"]}");
+	add("{\"term\":\"cynosure\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05820748\", \"06663890\"]}");
+	add("{\"term\":\"cynthia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09579826\"]}");
+	add("{\"term\":\"cynwulf\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10939248\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

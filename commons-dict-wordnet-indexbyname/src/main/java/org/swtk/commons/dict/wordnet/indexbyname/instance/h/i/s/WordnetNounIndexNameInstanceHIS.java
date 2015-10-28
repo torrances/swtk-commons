@@ -1,0 +1,25 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.h.i.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHIS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hispanic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10649009\"]}");
+	add("{\"term\":\"hispaniola\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08769150\"]}");
+	add("{\"term\":\"hiss\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07138578\", \"07399498\"]}");
+	add("{\"term\":\"hisser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10196645\"]}");
+	add("{\"term\":\"hissing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07399498\"]}");
+	add("{\"term\":\"histaminase\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14932448\"]}");
+	add("{\"term\":\"histamine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05422067\"]}");
+	add("{\"term\":\"histidine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14932297\"]}");
+	add("{\"term\":\"histiocyte\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05458193\"]}");
+	add("{\"term\":\"histiocytosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14216272\"]}");
+	add("{\"term\":\"histocompatibility\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11486857\"]}");
+	add("{\"term\":\"histogram\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07014653\"]}");
+	add("{\"term\":\"histoincompatibility\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13998739\"]}");
+	add("{\"term\":\"histologist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10189952\"]}");
+	add("{\"term\":\"histology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06086963\"]}");
+	add("{\"term\":\"histone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15050823\"]}");
+	add("{\"term\":\"historian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10196781\"]}");
+	add("{\"term\":\"historicalness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05177615\", \"13979648\"]}");
+	add("{\"term\":\"historicism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06165589\"]}");
+	add("{\"term\":\"historiographer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10196781\"]}");
+	add("{\"term\":\"historiography\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00933032\", \"06376802\"]}");
+	add("{\"term\":\"history\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"06166450\", \"15148913\", \"06165265\", \"06526084\", \"15146348\"]}");
+	add("{\"term\":\"histrion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09784701\"]}");
+	add("{\"term\":\"histrionics\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07228549\", \"06906924\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

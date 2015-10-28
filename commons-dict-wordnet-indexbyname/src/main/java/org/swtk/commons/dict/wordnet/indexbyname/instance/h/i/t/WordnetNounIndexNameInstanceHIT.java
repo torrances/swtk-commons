@@ -1,0 +1,13 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.h.i.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHIT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hit\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"00146599\", \"01252922\", \"03527722\", \"07317160\", \"00065324\", \"00126449\", \"00044640\"]}");
+	add("{\"term\":\"hitch\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"00287600\", \"03525974\", \"03527797\", \"03528026\", \"05699109\", \"14034398\", \"15318833\"]}");
+	add("{\"term\":\"hitchcock\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11072294\"]}");
+	add("{\"term\":\"hitchhiker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10197708\"]}");
+	add("{\"term\":\"hitchings\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11072493\"]}");
+	add("{\"term\":\"hitchiti\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06925313\", \"09676083\"]}");
+	add("{\"term\":\"hitchrack\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03528297\"]}");
+	add("{\"term\":\"hitler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11072667\"]}");
+	add("{\"term\":\"hitman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10171603\"]}");
+	add("{\"term\":\"hitter\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10197847\", \"09863364\"]}");
+	add("{\"term\":\"hitting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00126449\"]}");
+	add("{\"term\":\"hittite\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06988562\", \"10198095\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

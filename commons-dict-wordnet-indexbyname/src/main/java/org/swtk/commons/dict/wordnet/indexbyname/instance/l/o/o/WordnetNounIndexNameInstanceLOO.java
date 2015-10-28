@@ -1,0 +1,26 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.l.o.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLOO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"loo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04565764\"]}");
+	add("{\"term\":\"loofa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12187592\"]}");
+	add("{\"term\":\"loofah\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12187310\", \"12187592\"]}");
+	add("{\"term\":\"look\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"14549784\", \"04682072\", \"00878805\", \"04687095\"]}");
+	add("{\"term\":\"lookdown\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02581085\"]}");
+	add("{\"term\":\"looker\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10633512\", \"10652848\"]}");
+	add("{\"term\":\"looking\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00948248\", \"00878805\"]}");
+	add("{\"term\":\"lookout\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00883223\", \"03694269\", \"08614732\", \"10290913\"]}");
+	add("{\"term\":\"lookup\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13574763\"]}");
+	add("{\"term\":\"loom\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03694483\"]}");
+	add("{\"term\":\"loon\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"10618312\", \"02051742\", \"10291148\"]}");
+	add("{\"term\":\"looney\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09995813\"]}");
+	add("{\"term\":\"loonie\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13694899\"]}");
+	add("{\"term\":\"loony\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09995813\"]}");
+	add("{\"term\":\"loop\", \"synsetCount\":10, \"upperType\":\"NOUN\", \"ids\":[\"00170632\", \"03052868\", \"03694673\", \"05738669\", \"06585033\", \"06657586\", \"08258575\", \"13525376\", \"13898210\", \"03137089\"]}");
+	add("{\"term\":\"looper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02290920\"]}");
+	add("{\"term\":\"loophole\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03694769\", \"06616901\"]}");
+	add("{\"term\":\"looping\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13525111\"]}");
+	add("{\"term\":\"loos\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11158075\"]}");
+	add("{\"term\":\"looseness\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"00749605\", \"04781750\", \"04784660\", \"04812175\", \"04892804\", \"14395318\"]}");
+	add("{\"term\":\"loosening\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00148682\", \"07457810\"]}");
+	add("{\"term\":\"loosestrife\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12115537\", \"12348915\"]}");
+	add("{\"term\":\"loot\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13406389\", \"13283562\"]}");
+	add("{\"term\":\"looter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10462744\"]}");
+	add("{\"term\":\"looting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00968703\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

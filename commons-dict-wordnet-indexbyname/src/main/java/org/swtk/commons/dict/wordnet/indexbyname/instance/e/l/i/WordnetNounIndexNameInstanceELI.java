@@ -1,0 +1,21 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.e.l.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceELI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"elia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11135019\"]}");
+	add("{\"term\":\"elicitation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05835577\"]}");
+	add("{\"term\":\"eligibility\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04724828\"]}");
+	add("{\"term\":\"elijah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10976604\"]}");
+	add("{\"term\":\"elimination\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00224587\", \"00396311\", \"05790242\", \"13494300\", \"00396141\"]}");
+	add("{\"term\":\"eliminator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09295374\"]}");
+	add("{\"term\":\"elint\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00985188\"]}");
+	add("{\"term\":\"elinvar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14835024\"]}");
+	add("{\"term\":\"eliomys\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02355949\"]}");
+	add("{\"term\":\"eliot\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10976875\", \"10977064\"]}");
+	add("{\"term\":\"elisa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00793536\"]}");
+	add("{\"term\":\"elisabethville\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08753178\"]}");
+	add("{\"term\":\"elision\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05715216\", \"13494739\"]}");
+	add("{\"term\":\"elite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08403286\"]}");
+	add("{\"term\":\"elitism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06227594\"]}");
+	add("{\"term\":\"elitist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10070366\"]}");
+	add("{\"term\":\"elixir\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07899359\", \"14607050\", \"14865226\"]}");
+	add("{\"term\":\"elixophyllin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04426450\"]}");
+	add("{\"term\":\"elizabeth\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10977322\", \"10977740\"]}");
+	add("{\"term\":\"elizabethan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10070520\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

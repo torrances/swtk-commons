@@ -1,0 +1,25 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.l.i.v;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLIV {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"livedo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14253270\"]}");
+	add("{\"term\":\"livelihood\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13386459\"]}");
+	add("{\"term\":\"liveliness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04639514\", \"00553473\"]}");
+	add("{\"term\":\"livelong\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12807224\"]}");
+	add("{\"term\":\"liveness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05012631\"]}");
+	add("{\"term\":\"liver\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"10287877\", \"10287996\", \"07667661\", \"05392877\"]}");
+	add("{\"term\":\"liverleaf\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11755522\"]}");
+	add("{\"term\":\"livermore\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11155478\"]}");
+	add("{\"term\":\"liverpool\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08897609\"]}");
+	add("{\"term\":\"liverpudlian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09723905\"]}");
+	add("{\"term\":\"liverwort\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11563091\"]}");
+	add("{\"term\":\"liverwurst\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07693105\"]}");
+	add("{\"term\":\"livery\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00660189\", \"01110658\", \"03684500\"]}");
+	add("{\"term\":\"liveryman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10288119\"]}");
+	add("{\"term\":\"livestock\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01890115\"]}");
+	add("{\"term\":\"lividity\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04984828\", \"07532531\"]}");
+	add("{\"term\":\"lividness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04984828\"]}");
+	add("{\"term\":\"living\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"13386459\", \"13984978\", \"07962404\", \"05818587\"]}");
+	add("{\"term\":\"livingston\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11155600\"]}");
+	add("{\"term\":\"livingstone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11155787\"]}");
+	add("{\"term\":\"livistona\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12611956\"]}");
+	add("{\"term\":\"livonia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09035268\"]}");
+	add("{\"term\":\"livonian\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06970508\", \"09726457\"]}");
+	add("{\"term\":\"livy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11155981\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

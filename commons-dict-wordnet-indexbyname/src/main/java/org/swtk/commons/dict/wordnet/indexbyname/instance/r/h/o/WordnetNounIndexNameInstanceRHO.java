@@ -1,0 +1,25 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.r.h.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRHO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"rho\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06848895\"]}");
+	add("{\"term\":\"rhodanthe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12028235\"]}");
+	add("{\"term\":\"rhodes\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08801664\", \"11279044\"]}");
+	add("{\"term\":\"rhodesia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09189894\"]}");
+	add("{\"term\":\"rhodium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14676802\"]}");
+	add("{\"term\":\"rhodochrosite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14720196\"]}");
+	add("{\"term\":\"rhododendron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12264670\"]}");
+	add("{\"term\":\"rhodolite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15025961\"]}");
+	add("{\"term\":\"rhodomontade\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07244749\"]}");
+	add("{\"term\":\"rhodonite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14720341\"]}");
+	add("{\"term\":\"rhodophyceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01416385\"]}");
+	add("{\"term\":\"rhodophyta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01416192\"]}");
+	add("{\"term\":\"rhodopsin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15113436\"]}");
+	add("{\"term\":\"rhodosphaera\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12783005\"]}");
+	add("{\"term\":\"rhodymenia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01417627\"]}");
+	add("{\"term\":\"rhodymeniaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01417482\"]}");
+	add("{\"term\":\"rhoeadales\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11884833\"]}");
+	add("{\"term\":\"rhomb\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13905618\"]}");
+	add("{\"term\":\"rhombencephalon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05508245\"]}");
+	add("{\"term\":\"rhombohedron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13938450\"]}");
+	add("{\"term\":\"rhomboid\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05582633\", \"13905790\"]}");
+	add("{\"term\":\"rhombus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13905618\"]}");
+	add("{\"term\":\"rhonchus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07406282\"]}");
+	add("{\"term\":\"rhone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09431855\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

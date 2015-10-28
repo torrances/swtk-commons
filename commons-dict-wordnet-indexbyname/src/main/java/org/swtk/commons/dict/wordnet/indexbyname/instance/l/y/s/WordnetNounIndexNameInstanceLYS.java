@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.l.y.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLYS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"lysander\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11165840\"]}");
+	add("{\"term\":\"lysenko\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11166000\"]}");
+	add("{\"term\":\"lysichiton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11809395\"]}");
+	add("{\"term\":\"lysichitum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11809395\"]}");
+	add("{\"term\":\"lysiloma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11783175\"]}");
+	add("{\"term\":\"lysimachia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12115303\"]}");
+	add("{\"term\":\"lysimachus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11166183\"]}");
+	add("{\"term\":\"lysin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15054213\"]}");
+	add("{\"term\":\"lysine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14968320\"]}");
+	add("{\"term\":\"lysinemia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14186425\"]}");
+	add("{\"term\":\"lysippus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11166397\"]}");
+	add("{\"term\":\"lysis\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13530731\", \"13531046\"]}");
+	add("{\"term\":\"lysogenicity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14217827\"]}");
+	add("{\"term\":\"lysogenisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13531170\"]}");
+	add("{\"term\":\"lysogenization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13531170\"]}");
+	add("{\"term\":\"lysogeny\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14217827\"]}");
+	add("{\"term\":\"lysol\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14968455\"]}");
+	add("{\"term\":\"lysosome\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05441779\"]}");
+	add("{\"term\":\"lysozyme\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14968593\"]}");
+	add("{\"term\":\"lyssa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14295169\"]}");
+	add("{\"term\":\"lyssavirus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01343426\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

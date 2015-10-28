@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.b.o.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBOS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"bos\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02404313\"]}");
+	add("{\"term\":\"bosc\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07784044\"]}");
+	add("{\"term\":\"bosch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10878064\"]}");
+	add("{\"term\":\"bose\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10878173\"]}");
+	add("{\"term\":\"boselaphus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02428039\"]}");
+	add("{\"term\":\"bosh\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06623500\"]}");
+	add("{\"term\":\"bosie\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00478108\"]}");
+	add("{\"term\":\"bosk\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08455832\"]}");
+	add("{\"term\":\"bosnia\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08835482\", \"08835987\"]}");
+	add("{\"term\":\"bosom\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"05562038\", \"05927857\", \"00181619\", \"02879326\", \"05561119\", \"14439877\"]}");
+	add("{\"term\":\"boson\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09249904\"]}");
+	add("{\"term\":\"bosporus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09250126\"]}");
+	add("{\"term\":\"boss\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"03631406\", \"10422907\", \"10123833\", \"09887362\", \"10123978\"]}");
+	add("{\"term\":\"bossism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01130868\"]}");
+	add("{\"term\":\"boston\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09118343\"]}");
+	add("{\"term\":\"bostonian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09760857\"]}");
+	add("{\"term\":\"bosun\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09881589\"]}");
+	add("{\"term\":\"boswell\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09887563\", \"10878468\"]}");
+	add("{\"term\":\"boswellia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12712595\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

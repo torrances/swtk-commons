@@ -1,0 +1,27 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.r.e.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceREN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"renaissance\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01049727\", \"15284623\"]}");
+	add("{\"term\":\"renascence\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01049727\", \"07335847\", \"15284623\"]}");
+	add("{\"term\":\"render\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15084893\"]}");
+	add("{\"term\":\"rendering\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"01124358\", \"04082727\", \"04082827\", \"06548380\", \"00101363\", \"05774244\", \"06906604\"]}");
+	add("{\"term\":\"rendezvous\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"08402448\", \"08660445\", \"01234113\"]}");
+	add("{\"term\":\"rendition\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00101363\", \"00422316\", \"05774244\", \"06906604\"]}");
+	add("{\"term\":\"renegade\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10026763\", \"10540137\"]}");
+	add("{\"term\":\"renege\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01261891\"]}");
+	add("{\"term\":\"renewal\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"13569128\", \"01251399\", \"00269862\"]}");
+	add("{\"term\":\"renin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15028716\"]}");
+	add("{\"term\":\"rennet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14762802\"]}");
+	add("{\"term\":\"rennin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15028884\"]}");
+	add("{\"term\":\"reno\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09133807\"]}");
+	add("{\"term\":\"renoir\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11278086\"]}");
+	add("{\"term\":\"renouncement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07269262\"]}");
+	add("{\"term\":\"renovation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14447921\", \"00265962\"]}");
+	add("{\"term\":\"renovator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10534555\"]}");
+	add("{\"term\":\"renown\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14460852\"]}");
+	add("{\"term\":\"rensselaerite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15091363\"]}");
+	add("{\"term\":\"rent\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00392215\", \"13317293\", \"09433806\", \"13316680\"]}");
+	add("{\"term\":\"rental\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01113280\", \"13269292\"]}");
+	add("{\"term\":\"rente\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13315526\"]}");
+	add("{\"term\":\"renter\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10540397\", \"10719850\"]}");
+	add("{\"term\":\"rentier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10540557\"]}");
+	add("{\"term\":\"renting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01113280\"]}");
+	add("{\"term\":\"renunciation\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00205928\", \"07269262\", \"14436815\", \"07222070\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

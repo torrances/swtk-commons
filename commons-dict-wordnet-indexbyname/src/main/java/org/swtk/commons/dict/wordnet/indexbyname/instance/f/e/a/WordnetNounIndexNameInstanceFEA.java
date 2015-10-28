@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.f.e.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFEA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"fealty\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04885133\"]}");
+	add("{\"term\":\"fear\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07536278\", \"07539768\", \"07534492\"]}");
+	add("{\"term\":\"fearfulness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04867817\", \"07534492\"]}");
+	add("{\"term\":\"fearlessness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04865686\", \"07541421\"]}");
+	add("{\"term\":\"feasibility\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05159611\"]}");
+	add("{\"term\":\"feasibleness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05159611\"]}");
+	add("{\"term\":\"feast\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07464462\", \"07593658\", \"07304867\", \"08270561\"]}");
+	add("{\"term\":\"feasting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00842412\"]}");
+	add("{\"term\":\"feat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00037483\"]}");
+	add("{\"term\":\"feather\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00343391\", \"01898672\"]}");
+	add("{\"term\":\"featherbed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03330426\"]}");
+	add("{\"term\":\"featherbedding\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00412566\"]}");
+	add("{\"term\":\"featheredge\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03330636\"]}");
+	add("{\"term\":\"featherfoil\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12114761\"]}");
+	add("{\"term\":\"featheriness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04946015\"]}");
+	add("{\"term\":\"feathering\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00343391\"]}");
+	add("{\"term\":\"feathertop\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12133712\", \"12149866\"]}");
+	add("{\"term\":\"featherweight\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"10102456\", \"10102574\", \"10102655\"]}");
+	add("{\"term\":\"feature\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"03330714\", \"05858739\", \"06279437\", \"06627379\", \"05609513\", \"05858316\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

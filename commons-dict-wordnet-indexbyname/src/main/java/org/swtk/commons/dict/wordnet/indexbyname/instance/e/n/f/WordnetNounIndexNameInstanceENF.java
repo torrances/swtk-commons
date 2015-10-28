@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.f;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceENF {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"enfeeblement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07345810\"]}");
+	add("{\"term\":\"enfeoffment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06557951\"]}");
+	add("{\"term\":\"enfilade\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00124828\"]}");
+	add("{\"term\":\"enflurane\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03292370\"]}");
+	add("{\"term\":\"enfolding\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00407186\"]}");
+	add("{\"term\":\"enforcement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01129340\"]}");
+	add("{\"term\":\"enforcer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10181460\"]}");
+	add("{\"term\":\"enfranchisement\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01142151\", \"05194714\", \"14015872\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

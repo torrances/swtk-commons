@@ -1,0 +1,27 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.d.i.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDIO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"diocesan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10033556\"]}");
+	add("{\"term\":\"diocese\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08568541\"]}");
+	add("{\"term\":\"diocletian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10955960\"]}");
+	add("{\"term\":\"diode\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03207444\", \"03207624\"]}");
+	add("{\"term\":\"diodon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02658324\"]}");
+	add("{\"term\":\"diodontidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02657985\"]}");
+	add("{\"term\":\"diogenes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10956271\"]}");
+	add("{\"term\":\"diol\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14860150\"]}");
+	add("{\"term\":\"diomedeidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02060728\"]}");
+	add("{\"term\":\"dionaea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12803534\"]}");
+	add("{\"term\":\"dionysia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00512687\"]}");
+	add("{\"term\":\"dionysius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10956416\"]}");
+	add("{\"term\":\"dionysus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09582027\"]}");
+	add("{\"term\":\"dioon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11623324\"]}");
+	add("{\"term\":\"diophantus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10956559\"]}");
+	add("{\"term\":\"diopter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13606121\"]}");
+	add("{\"term\":\"dioptre\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13606121\"]}");
+	add("{\"term\":\"dior\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10956708\"]}");
+	add("{\"term\":\"diorama\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03889769\"]}");
+	add("{\"term\":\"diorite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14956692\"]}");
+	add("{\"term\":\"dioscorea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12108324\"]}");
+	add("{\"term\":\"dioscoreaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12108167\"]}");
+	add("{\"term\":\"diospyros\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12791037\"]}");
+	add("{\"term\":\"diovan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04526314\"]}");
+	add("{\"term\":\"dioxide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14860297\"]}");
+	add("{\"term\":\"dioxin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14860478\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

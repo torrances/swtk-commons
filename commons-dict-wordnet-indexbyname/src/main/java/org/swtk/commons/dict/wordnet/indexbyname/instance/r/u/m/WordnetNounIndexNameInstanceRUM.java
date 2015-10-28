@@ -1,0 +1,26 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.r.u.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRUM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"rum\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00496342\", \"07921278\"]}");
+	add("{\"term\":\"rumania\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08831830\"]}");
+	add("{\"term\":\"rumanian\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09747627\", \"06981017\"]}");
+	add("{\"term\":\"rumansh\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06980848\"]}");
+	add("{\"term\":\"rumba\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00538122\", \"00542816\", \"07070804\"]}");
+	add("{\"term\":\"rumble\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01179139\", \"04126185\", \"07407083\"]}");
+	add("{\"term\":\"rumbling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07407083\"]}");
+	add("{\"term\":\"rumen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02402076\"]}");
+	add("{\"term\":\"rumex\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12624545\"]}");
+	add("{\"term\":\"ruminant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02401652\"]}");
+	add("{\"term\":\"ruminantia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02401384\"]}");
+	add("{\"term\":\"rumination\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00119899\", \"00280221\", \"05793513\"]}");
+	add("{\"term\":\"ruminator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10359217\"]}");
+	add("{\"term\":\"rummage\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00948622\", \"14524403\"]}");
+	add("{\"term\":\"rummer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04126454\"]}");
+	add("{\"term\":\"rummy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00496342\", \"10057110\"]}");
+	add("{\"term\":\"rumohra\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13221704\"]}");
+	add("{\"term\":\"rumor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07238110\"]}");
+	add("{\"term\":\"rumormonger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10158867\"]}");
+	add("{\"term\":\"rumour\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07238110\"]}");
+	add("{\"term\":\"rumourmonger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10158867\"]}");
+	add("{\"term\":\"rump\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05566889\", \"07678578\", \"02466242\"]}");
+	add("{\"term\":\"rumpelstiltskin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10561695\"]}");
+	add("{\"term\":\"rumpus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00554860\"]}");
+	add("{\"term\":\"rumrunner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10562056\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

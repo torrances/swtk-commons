@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.o.p.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceOPE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"opec\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08193929\"]}");
+	add("{\"term\":\"opel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11235714\"]}");
+	add("{\"term\":\"open\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"05620592\", \"07480116\", \"08631308\", \"08649998\"]}");
+	add("{\"term\":\"openbill\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02006231\"]}");
+	add("{\"term\":\"opener\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03853868\", \"10757088\", \"07340969\"]}");
+	add("{\"term\":\"openhandedness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04839947\"]}");
+	add("{\"term\":\"opening\", \"synsetCount\":13, \"upperType\":\"NOUN\", \"ids\":[\"00240097\", \"00458914\", \"03504286\", \"03854249\", \"05257118\", \"05800018\", \"06409119\", \"14508833\", \"00339467\", \"07343963\", \"00384198\", \"07467309\", \"09402023\"]}");
+	add("{\"term\":\"openness\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04652377\", \"04661423\", \"05091112\"]}");
+	add("{\"term\":\"openwork\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03855199\"]}");
+	add("{\"term\":\"opepe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12689678\"]}");
+	add("{\"term\":\"opera\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03855334\", \"06584114\", \"07039821\"]}");
+	add("{\"term\":\"operagoer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10397912\"]}");
+	add("{\"term\":\"operand\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05865930\"]}");
+	add("{\"term\":\"operation\", \"synsetCount\":11, \"upperType\":\"NOUN\", \"ids\":[\"00410032\", \"00871261\", \"05709328\", \"13546752\", \"00578105\", \"00672594\", \"00957171\", \"13546128\", \"00410304\", \"01097871\", \"14032291\"]}");
+	add("{\"term\":\"operationalism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05983230\"]}");
+	add("{\"term\":\"operations\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01109631\"]}");
+	add("{\"term\":\"operative\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10496256\", \"10588855\"]}");
+	add("{\"term\":\"operator\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"10398651\", \"10214185\", \"10398479\", \"10398111\", \"13808625\"]}");
+	add("{\"term\":\"operculum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01905009\"]}");
+	add("{\"term\":\"operetta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07040577\"]}");
+	add("{\"term\":\"operon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05447783\"]}");
+	add("{\"term\":\"operoseness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04717220\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

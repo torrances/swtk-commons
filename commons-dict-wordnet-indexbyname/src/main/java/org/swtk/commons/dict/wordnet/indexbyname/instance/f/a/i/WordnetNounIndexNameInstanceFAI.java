@@ -1,0 +1,24 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.f.a.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFAI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"faience\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03322733\"]}");
+	add("{\"term\":\"failing\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00067721\", \"14486530\"]}");
+	add("{\"term\":\"faille\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03322834\"]}");
+	add("{\"term\":\"failure\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"14083145\", \"14502017\", \"00067217\", \"10292761\", \"14501461\", \"07332364\", \"00067456\"]}");
+	add("{\"term\":\"faineance\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04644647\"]}");
+	add("{\"term\":\"faint\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07493458\"]}");
+	add("{\"term\":\"faintheartedness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04867600\"]}");
+	add("{\"term\":\"faintness\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"04712023\", \"04867600\", \"04998259\", \"05048319\", \"07495806\"]}");
+	add("{\"term\":\"fair\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"01120503\", \"08425224\", \"08425514\", \"00520389\"]}");
+	add("{\"term\":\"fairbanks\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10985353\", \"10985542\"]}");
+	add("{\"term\":\"fairground\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08632207\"]}");
+	add("{\"term\":\"fairlead\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03323081\"]}");
+	add("{\"term\":\"fairness\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"04692745\", \"04984514\", \"06212765\", \"04846385\"]}");
+	add("{\"term\":\"fairway\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"08632475\", \"08635326\", \"08586848\"]}");
+	add("{\"term\":\"fairy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10095821\", \"09563541\"]}");
+	add("{\"term\":\"fairyland\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05635465\", \"05640889\"]}");
+	add("{\"term\":\"fairytale\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06770000\", \"07237241\"]}");
+	add("{\"term\":\"faisal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10985692\"]}");
+	add("{\"term\":\"faisalabad\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08999169\"]}");
+	add("{\"term\":\"faith\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"01209677\", \"08098545\", \"05951915\", \"05955536\"]}");
+	add("{\"term\":\"faithful\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08007806\", \"08240396\"]}");
+	add("{\"term\":\"faithfulness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04884180\"]}");
+	add("{\"term\":\"faithlessness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04886287\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,0 +1,12 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.s.u.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSUI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"suicide\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10693108\", \"00223352\"]}");
+	add("{\"term\":\"suidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02397474\"]}");
+	add("{\"term\":\"suillus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13079899\"]}");
+	add("{\"term\":\"suisse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09054023\"]}");
+	add("{\"term\":\"suit\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"04358311\", \"07203230\", \"07203345\", \"10693385\", \"01185144\", \"04357983\"]}");
+	add("{\"term\":\"suitability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04722763\"]}");
+	add("{\"term\":\"suitableness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04722763\"]}");
+	add("{\"term\":\"suitcase\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02776843\"]}");
+	add("{\"term\":\"suite\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"08023976\", \"08446124\", \"04358628\", \"07061069\"]}");
+	add("{\"term\":\"suiting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04358777\"]}");
+	add("{\"term\":\"suitor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10693569\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

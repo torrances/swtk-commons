@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.d.a.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDAT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"dat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03200643\"]}");
+	add("{\"term\":\"data\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08479331\"]}");
+	add("{\"term\":\"database\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06650349\"]}");
+	add("{\"term\":\"date\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"07781049\", \"15184779\", \"15185626\", \"15145165\", \"08401740\", \"10012076\", \"15184543\"]}");
+	add("{\"term\":\"dateline\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06360400\", \"08617348\"]}");
+	add("{\"term\":\"dating\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00994417\"]}");
+	add("{\"term\":\"dative\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06322713\"]}");
+	add("{\"term\":\"datril\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02677336\"]}");
+	add("{\"term\":\"datum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05824748\"]}");
+	add("{\"term\":\"datura\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12924010\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

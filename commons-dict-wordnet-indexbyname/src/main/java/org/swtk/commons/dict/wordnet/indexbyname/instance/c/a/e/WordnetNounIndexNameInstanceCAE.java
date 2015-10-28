@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.c.a.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCAE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"caeciliadae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01657757\"]}");
+	add("{\"term\":\"caecilian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01657985\"]}");
+	add("{\"term\":\"caeciliidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01657757\"]}");
+	add("{\"term\":\"caecum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05544003\"]}");
+	add("{\"term\":\"caelum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09253553\"]}");
+	add("{\"term\":\"caenogenesis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13466113\"]}");
+	add("{\"term\":\"caenolestes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01878521\"]}");
+	add("{\"term\":\"caenolestidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01878358\"]}");
+	add("{\"term\":\"caesalpinia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12508626\"]}");
+	add("{\"term\":\"caesalpiniaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12507899\"]}");
+	add("{\"term\":\"caesalpinioideae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12508152\"]}");
+	add("{\"term\":\"caesar\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10898127\", \"10897913\"]}");
+	add("{\"term\":\"caesarea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08813344\"]}");
+	add("{\"term\":\"caesarean\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00186627\"]}");
+	add("{\"term\":\"caesarian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00186627\"]}");
+	add("{\"term\":\"caesarism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08457622\"]}");
+	add("{\"term\":\"caesaropapism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06198456\"]}");
+	add("{\"term\":\"caesium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14658410\"]}");
+	add("{\"term\":\"caesura\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07099264\", \"15296718\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

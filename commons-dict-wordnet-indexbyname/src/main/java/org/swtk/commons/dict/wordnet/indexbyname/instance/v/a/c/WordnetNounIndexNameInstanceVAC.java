@@ -1,0 +1,27 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.v.a.c;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceVAC {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"vac\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15163353\"]}");
+	add("{\"term\":\"vacancy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13933131\", \"14479414\"]}");
+	add("{\"term\":\"vacation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01256252\", \"15162842\"]}");
+	add("{\"term\":\"vacationer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10763821\"]}");
+	add("{\"term\":\"vacationing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01067729\"]}");
+	add("{\"term\":\"vacationist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10763821\"]}");
+	add("{\"term\":\"vacay\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15163353\"]}");
+	add("{\"term\":\"vaccaria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11838984\"]}");
+	add("{\"term\":\"vaccina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14381427\"]}");
+	add("{\"term\":\"vaccinating\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00825715\"]}");
+	add("{\"term\":\"vaccination\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14387711\", \"00825545\"]}");
+	add("{\"term\":\"vaccinator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10227133\"]}");
+	add("{\"term\":\"vaccine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04524830\"]}");
+	add("{\"term\":\"vaccinee\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10764113\"]}");
+	add("{\"term\":\"vaccinia\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14286384\", \"14381427\"]}");
+	add("{\"term\":\"vaccinium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12265989\"]}");
+	add("{\"term\":\"vaccinum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04524830\"]}");
+	add("{\"term\":\"vacillation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00328650\", \"05707399\"]}");
+	add("{\"term\":\"vacillator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10622936\"]}");
+	add("{\"term\":\"vacuity\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05181550\", \"08671049\", \"14479502\"]}");
+	add("{\"term\":\"vacuolation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14101175\"]}");
+	add("{\"term\":\"vacuole\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05454663\"]}");
+	add("{\"term\":\"vacuolisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14101175\"]}");
+	add("{\"term\":\"vacuolization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14101175\"]}");
+	add("{\"term\":\"vacuousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05655296\"]}");
+	add("{\"term\":\"vacuum\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"04525118\", \"08671049\", \"13933131\", \"14479502\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

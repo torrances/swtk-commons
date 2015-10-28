@@ -1,0 +1,21 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.g.o.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceGOD {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"god\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03565341\", \"10152827\", \"09528550\", \"09559169\"]}");
+	add("{\"term\":\"godard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11022680\"]}");
+	add("{\"term\":\"godchild\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10153916\"]}");
+	add("{\"term\":\"goddard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11022891\"]}");
+	add("{\"term\":\"goddaughter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10154072\"]}");
+	add("{\"term\":\"goddess\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09558733\"]}");
+	add("{\"term\":\"godel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11023064\"]}");
+	add("{\"term\":\"godfather\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10154147\", \"10154280\"]}");
+	add("{\"term\":\"godhead\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09559474\"]}");
+	add("{\"term\":\"godiva\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11023272\"]}");
+	add("{\"term\":\"godlessness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04835985\"]}");
+	add("{\"term\":\"godliness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04834734\"]}");
+	add("{\"term\":\"godmother\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10154390\"]}");
+	add("{\"term\":\"godown\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03448467\"]}");
+	add("{\"term\":\"godparent\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10154502\"]}");
+	add("{\"term\":\"godsend\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07492727\"]}");
+	add("{\"term\":\"godson\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10154649\"]}");
+	add("{\"term\":\"godspeed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07334149\"]}");
+	add("{\"term\":\"godunov\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11023595\"]}");
+	add("{\"term\":\"godwit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02036783\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

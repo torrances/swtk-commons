@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.d.o.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDOR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"dorado\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09292080\"]}");
+	add("{\"term\":\"dorbeetle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02175413\"]}");
+	add("{\"term\":\"dorian\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08177707\", \"09730282\"]}");
+	add("{\"term\":\"doric\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06990728\"]}");
+	add("{\"term\":\"doriden\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03446702\"]}");
+	add("{\"term\":\"doris\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08801296\", \"09582200\"]}");
+	add("{\"term\":\"dork\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10240710\"]}");
+	add("{\"term\":\"dorking\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01792812\"]}");
+	add("{\"term\":\"dorm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03229596\"]}");
+	add("{\"term\":\"dormancy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01066787\", \"14035282\"]}");
+	add("{\"term\":\"dormer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03229306\"]}");
+	add("{\"term\":\"dormition\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15219029\"]}");
+	add("{\"term\":\"dormitory\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03229811\", \"03229596\"]}");
+	add("{\"term\":\"dormouse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02355243\"]}");
+	add("{\"term\":\"doronicum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11982155\"]}");
+	add("{\"term\":\"dorotheanthus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11840220\"]}");
+	add("{\"term\":\"dorsiflexion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00406713\"]}");
+	add("{\"term\":\"dorsum\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05565133\", \"05566350\"]}");
+	add("{\"term\":\"dortmund\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08788551\"]}");
+	add("{\"term\":\"dory\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01455439\", \"02560380\", \"03204585\"]}");
+	add("{\"term\":\"dorylinae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02223045\"]}");
+	add("{\"term\":\"doryopteris\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13231725\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

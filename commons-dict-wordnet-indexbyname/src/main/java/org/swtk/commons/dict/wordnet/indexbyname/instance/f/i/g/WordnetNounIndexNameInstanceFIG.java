@@ -1,0 +1,14 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.f.i.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFIG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"fig\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07769089\", \"08049347\", \"12422189\", \"07012307\"]}");
+	add("{\"term\":\"figeater\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02175765\"]}");
+	add("{\"term\":\"fight\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00447478\", \"07199051\", \"04844656\", \"01173452\", \"00955670\"]}");
+	add("{\"term\":\"fighter\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"09925991\", \"03339975\", \"09958771\"]}");
+	add("{\"term\":\"fighting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01173452\"]}");
+	add("{\"term\":\"figment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05921754\"]}");
+	add("{\"term\":\"figuration\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00264115\", \"00901625\"]}");
+	add("{\"term\":\"figure\", \"synsetCount\":13, \"upperType\":\"NOUN\", \"ids\":[\"00558029\", \"03183448\", \"05939172\", \"07120141\", \"05128718\", \"04683003\", \"13352649\", \"13885383\", \"10364174\", \"03340545\", \"13763162\", \"05224424\", \"07012307\"]}");
+	add("{\"term\":\"figurehead\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03341015\", \"10133352\"]}");
+	add("{\"term\":\"figurer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09906486\"]}");
+	add("{\"term\":\"figurine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03341404\"]}");
+	add("{\"term\":\"figuring\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05810193\"]}");
+	add("{\"term\":\"figwort\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12897659\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

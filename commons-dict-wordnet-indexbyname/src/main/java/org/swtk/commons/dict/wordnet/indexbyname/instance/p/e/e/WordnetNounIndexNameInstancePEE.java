@@ -1,0 +1,21 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.p.e.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePEE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"pee\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13555089\", \"14879875\"]}");
+	add("{\"term\":\"peeing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13555089\"]}");
+	add("{\"term\":\"peek\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00879899\"]}");
+	add("{\"term\":\"peekaboo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00488083\"]}");
+	add("{\"term\":\"peel\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07754329\", \"11248029\"]}");
+	add("{\"term\":\"peeler\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03911028\", \"10432529\", \"10683779\"]}");
+	add("{\"term\":\"peeling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11465660\"]}");
+	add("{\"term\":\"peen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03911172\"]}");
+	add("{\"term\":\"peep\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00879899\", \"07393694\"]}");
+	add("{\"term\":\"peeper\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01317704\", \"05319565\", \"10780994\"]}");
+	add("{\"term\":\"peephole\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03911327\"]}");
+	add("{\"term\":\"peepshow\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06630034\", \"08425072\"]}");
+	add("{\"term\":\"peepul\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12423101\"]}");
+	add("{\"term\":\"peer\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10432655\", \"09649426\"]}");
+	add("{\"term\":\"peerage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08405367\"]}");
+	add("{\"term\":\"peeress\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10262488\"]}");
+	add("{\"term\":\"peeve\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07566884\"]}");
+	add("{\"term\":\"peevishness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04649615\", \"07568195\"]}");
+	add("{\"term\":\"peewee\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01552071\", \"10563101\"]}");
+	add("{\"term\":\"peewit\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01552071\", \"02027417\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

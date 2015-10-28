@@ -1,0 +1,28 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.a.r.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceARR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"arrack\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07919177\"]}");
+	add("{\"term\":\"arraignment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07250596\"]}");
+	add("{\"term\":\"arrangement\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"00941444\", \"07052146\", \"05082771\", \"05734541\", \"07955013\", \"05803052\"]}");
+	add("{\"term\":\"arranger\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09829330\", \"10402936\"]}");
+	add("{\"term\":\"arranging\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00941444\"]}");
+	add("{\"term\":\"arras\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04400491\"]}");
+	add("{\"term\":\"array\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"02745199\", \"02745327\", \"06901224\", \"07955622\"]}");
+	add("{\"term\":\"arrears\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13418616\", \"14514269\"]}");
+	add("{\"term\":\"arrest\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14034398\", \"00089545\"]}");
+	add("{\"term\":\"arrester\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02745473\"]}");
+	add("{\"term\":\"arrhenatherum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12129259\"]}");
+	add("{\"term\":\"arrhenius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10843956\"]}");
+	add("{\"term\":\"arrhythmia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14134156\"]}");
+	add("{\"term\":\"arrival\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"09829571\", \"00049115\", \"00048966\"]}");
+	add("{\"term\":\"arrivederci\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06642117\"]}");
+	add("{\"term\":\"arriver\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09829571\"]}");
+	add("{\"term\":\"arriviste\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10760525\"]}");
+	add("{\"term\":\"arroba\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13637708\", \"13739724\"]}");
+	add("{\"term\":\"arrogance\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04895107\"]}");
+	add("{\"term\":\"arrogation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00086498\"]}");
+	add("{\"term\":\"arrogator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09829769\"]}");
+	add("{\"term\":\"arrow\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02745758\", \"06830979\"]}");
+	add("{\"term\":\"arrowhead\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02746055\"]}");
+	add("{\"term\":\"arrowroot\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"12371608\", \"12372307\", \"15078914\"]}");
+	add("{\"term\":\"arrowsmith\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09830038\"]}");
+	add("{\"term\":\"arrowworm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01926531\"]}");
+	add("{\"term\":\"arroyo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09229784\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

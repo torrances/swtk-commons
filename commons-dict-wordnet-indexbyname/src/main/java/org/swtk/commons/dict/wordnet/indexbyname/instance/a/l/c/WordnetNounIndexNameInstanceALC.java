@@ -1,0 +1,27 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.a.l.c;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceALC {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"alca\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02048359\"]}");
+	add("{\"term\":\"alcaeus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10831504\"]}");
+	add("{\"term\":\"alcahest\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15073030\"]}");
+	add("{\"term\":\"alcaic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06389727\"]}");
+	add("{\"term\":\"alcalde\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09801245\"]}");
+	add("{\"term\":\"alcapton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14609228\"]}");
+	add("{\"term\":\"alcaptonuria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14108191\"]}");
+	add("{\"term\":\"alcazar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02698486\"]}");
+	add("{\"term\":\"alcea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12193924\"]}");
+	add("{\"term\":\"alcedinidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01829639\"]}");
+	add("{\"term\":\"alcedo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01830299\"]}");
+	add("{\"term\":\"alcelaphus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02424608\"]}");
+	add("{\"term\":\"alces\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02435513\"]}");
+	add("{\"term\":\"alchemist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09801362\"]}");
+	add("{\"term\":\"alchemy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05786746\", \"13863157\"]}");
+	add("{\"term\":\"alcibiades\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10831651\"]}");
+	add("{\"term\":\"alcidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02047678\"]}");
+	add("{\"term\":\"alcides\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09601183\"]}");
+	add("{\"term\":\"alcohol\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14732881\", \"07900542\"]}");
+	add("{\"term\":\"alcoholic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09801608\"]}");
+	add("{\"term\":\"alcoholism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09204890\", \"14088126\"]}");
+	add("{\"term\":\"alcott\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10831829\"]}");
+	add("{\"term\":\"alcove\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02698907\"]}");
+	add("{\"term\":\"alcyonacea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01917931\"]}");
+	add("{\"term\":\"alcyonaria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01917734\"]}");
+	add("{\"term\":\"alcyone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09509769\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

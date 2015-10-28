@@ -1,0 +1,28 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.s.m.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSMO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"smock\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03263433\"]}");
+	add("{\"term\":\"smocking\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04253399\"]}");
+	add("{\"term\":\"smog\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14541979\"]}");
+	add("{\"term\":\"smogginess\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14541979\"]}");
+	add("{\"term\":\"smoke\", \"synsetCount\":8, \"upperType\":\"NOUN\", \"ids\":[\"00109001\", \"00836297\", \"03997192\", \"04110585\", \"04769215\", \"06815738\", \"13578096\", \"11528510\"]}");
+	add("{\"term\":\"smokehouse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04253859\"]}");
+	add("{\"term\":\"smoker\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04253983\", \"08272926\", \"10634492\"]}");
+	add("{\"term\":\"smokescreen\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01052796\", \"04254139\"]}");
+	add("{\"term\":\"smokestack\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04254303\"]}");
+	add("{\"term\":\"smoking\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13578096\", \"00836297\"]}");
+	add("{\"term\":\"smolder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07318714\"]}");
+	add("{\"term\":\"smolensk\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09032186\"]}");
+	add("{\"term\":\"smollett\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11326468\"]}");
+	add("{\"term\":\"smooch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00139419\"]}");
+	add("{\"term\":\"smooching\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00855630\"]}");
+	add("{\"term\":\"smooth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01266417\"]}");
+	add("{\"term\":\"smoothbark\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12356454\"]}");
+	add("{\"term\":\"smoothbore\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04254672\"]}");
+	add("{\"term\":\"smoother\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03255291\"]}");
+	add("{\"term\":\"smoothhound\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01495210\"]}");
+	add("{\"term\":\"smoothie\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07930511\", \"10634695\"]}");
+	add("{\"term\":\"smoothness\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"04716287\", \"04776955\", \"04920499\", \"07083250\", \"04954363\"]}");
+	add("{\"term\":\"smoothy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10634695\"]}");
+	add("{\"term\":\"smorgasbord\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07608770\", \"08415730\"]}");
+	add("{\"term\":\"smother\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11528721\", \"14524151\"]}");
+	add("{\"term\":\"smotherer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10675662\"]}");
+	add("{\"term\":\"smoulder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07318714\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

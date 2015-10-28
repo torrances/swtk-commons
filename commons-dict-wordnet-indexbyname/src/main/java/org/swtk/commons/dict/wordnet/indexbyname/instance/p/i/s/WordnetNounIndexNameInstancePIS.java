@@ -1,0 +1,24 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.p.i.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePIS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"pisa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08827762\"]}");
+	add("{\"term\":\"pisanosaur\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01703565\"]}");
+	add("{\"term\":\"pisanosaurus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01703565\"]}");
+	add("{\"term\":\"piscary\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03355726\"]}");
+	add("{\"term\":\"pisces\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"02514455\", \"09415717\", \"09773123\", \"08705814\"]}");
+	add("{\"term\":\"piscidia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12579807\"]}");
+	add("{\"term\":\"pisiform\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05280244\"]}");
+	add("{\"term\":\"pismire\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02222138\"]}");
+	add("{\"term\":\"pisonia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11861530\"]}");
+	add("{\"term\":\"piss\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13555089\", \"14879875\"]}");
+	add("{\"term\":\"pisser\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05696712\", \"10455483\"]}");
+	add("{\"term\":\"pissing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13555089\"]}");
+	add("{\"term\":\"pissis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09415854\"]}");
+	add("{\"term\":\"pistachio\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07791026\", \"12782462\"]}");
+	add("{\"term\":\"pistacia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12782231\"]}");
+	add("{\"term\":\"piste\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03954518\", \"03954623\"]}");
+	add("{\"term\":\"pistia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11812038\"]}");
+	add("{\"term\":\"pistil\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11696951\"]}");
+	add("{\"term\":\"pistillode\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11697595\"]}");
+	add("{\"term\":\"pistol\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03954735\"]}");
+	add("{\"term\":\"pistoleer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10455622\"]}");
+	add("{\"term\":\"piston\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03955226\", \"11255916\"]}");
+	add("{\"term\":\"pisum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12580347\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

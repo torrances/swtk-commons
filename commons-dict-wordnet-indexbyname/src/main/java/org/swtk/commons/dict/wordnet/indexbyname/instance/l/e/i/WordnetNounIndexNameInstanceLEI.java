@@ -1,0 +1,25 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.l.e.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLEI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"lei\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04613372\"]}");
+	add("{\"term\":\"leibnitz\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11145183\"]}");
+	add("{\"term\":\"leibniz\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11145183\"]}");
+	add("{\"term\":\"leicester\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08899424\", \"08904239\"]}");
+	add("{\"term\":\"leicestershire\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08904239\"]}");
+	add("{\"term\":\"leiden\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08970850\"]}");
+	add("{\"term\":\"leigh\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11145536\"]}");
+	add("{\"term\":\"leiomyoma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14272866\"]}");
+	add("{\"term\":\"leiomyosarcoma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14264570\"]}");
+	add("{\"term\":\"leiopelma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01647919\"]}");
+	add("{\"term\":\"leiopelmatidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01647734\"]}");
+	add("{\"term\":\"leiophyllum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12259617\"]}");
+	add("{\"term\":\"leipoa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01804120\"]}");
+	add("{\"term\":\"leipzig\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08788949\"]}");
+	add("{\"term\":\"leishmania\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01421139\"]}");
+	add("{\"term\":\"leishmaniasis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14201559\"]}");
+	add("{\"term\":\"leishmaniosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14201559\"]}");
+	add("{\"term\":\"leister\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03660915\"]}");
+	add("{\"term\":\"leisure\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01067210\", \"15162628\"]}");
+	add("{\"term\":\"leisureliness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05069424\"]}");
+	add("{\"term\":\"leitmotif\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07042284\"]}");
+	add("{\"term\":\"leitmotiv\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07042284\"]}");
+	add("{\"term\":\"leitneria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11763214\"]}");
+	add("{\"term\":\"leitneriaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11763000\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

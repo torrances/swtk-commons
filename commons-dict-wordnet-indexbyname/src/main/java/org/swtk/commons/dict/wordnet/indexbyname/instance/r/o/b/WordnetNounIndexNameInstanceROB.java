@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.r.o.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceROB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"robalo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02562493\"]}");
+	add("{\"term\":\"robaxin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03761074\"]}");
+	add("{\"term\":\"robber\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10554143\"]}");
+	add("{\"term\":\"robbery\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00968703\", \"00783339\"]}");
+	add("{\"term\":\"robbins\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11283793\"]}");
+	add("{\"term\":\"robe\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03455460\", \"04104960\"]}");
+	add("{\"term\":\"robert\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11283992\"]}");
+	add("{\"term\":\"roberts\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"11284183\", \"11284333\", \"11284498\", \"11284604\"]}");
+	add("{\"term\":\"robertson\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11284818\"]}");
+	add("{\"term\":\"robeson\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11284963\"]}");
+	add("{\"term\":\"robespierre\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11285173\"]}");
+	add("{\"term\":\"robin\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01561634\", \"01564906\"]}");
+	add("{\"term\":\"robinia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12588273\"]}");
+	add("{\"term\":\"robinson\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"11285406\", \"11285581\", \"11285721\", \"11285904\", \"11286107\", \"11286269\", \"11286514\"]}");
+	add("{\"term\":\"robitussin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04105126\"]}");
+	add("{\"term\":\"roble\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12294456\", \"12583290\"]}");
+	add("{\"term\":\"robot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02764397\"]}");
+	add("{\"term\":\"robotics\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06143105\"]}");
+	add("{\"term\":\"robustness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04927177\", \"05038178\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

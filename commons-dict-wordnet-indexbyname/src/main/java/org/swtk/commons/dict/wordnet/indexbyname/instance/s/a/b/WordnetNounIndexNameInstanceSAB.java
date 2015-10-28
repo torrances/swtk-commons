@@ -1,0 +1,27 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.s.a.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSAB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"saba\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08767000\"]}");
+	add("{\"term\":\"sabah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08986934\"]}");
+	add("{\"term\":\"sabahan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09741460\"]}");
+	add("{\"term\":\"sabal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12617767\"]}");
+	add("{\"term\":\"sabaoth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08200970\"]}");
+	add("{\"term\":\"sabaton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04266578\"]}");
+	add("{\"term\":\"sabayon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07637106\"]}");
+	add("{\"term\":\"sabbat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08415537\"]}");
+	add("{\"term\":\"sabbatarian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10564172\"]}");
+	add("{\"term\":\"sabbath\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15189797\"]}");
+	add("{\"term\":\"sabbatia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12318682\"]}");
+	add("{\"term\":\"sabbatical\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15164809\"]}");
+	add("{\"term\":\"sabbatum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15189617\"]}");
+	add("{\"term\":\"sabellian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06975194\"]}");
+	add("{\"term\":\"saber\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02990947\", \"04128605\"]}");
+	add("{\"term\":\"sabertooth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02133197\"]}");
+	add("{\"term\":\"sabicu\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11783611\", \"11783809\"]}");
+	add("{\"term\":\"sabin\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11297269\", \"13632058\"]}");
+	add("{\"term\":\"sabine\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09736629\", \"09441209\"]}");
+	add("{\"term\":\"sabinea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12589370\"]}");
+	add("{\"term\":\"sable\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"02453057\", \"04129356\", \"04967759\", \"14790125\", \"04129443\"]}");
+	add("{\"term\":\"sabot\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03051675\", \"04129672\"]}");
+	add("{\"term\":\"sabotage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01247442\"]}");
+	add("{\"term\":\"saboteur\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10107024\", \"10564305\"]}");
+	add("{\"term\":\"sabra\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09735370\"]}");
+	add("{\"term\":\"sabre\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02990947\", \"04128605\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

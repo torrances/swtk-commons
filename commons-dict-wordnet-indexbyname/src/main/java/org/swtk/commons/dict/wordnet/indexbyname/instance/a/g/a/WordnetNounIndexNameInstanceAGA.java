@@ -1,0 +1,28 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.a.g.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceAGA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"aga\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06351417\"]}");
+	add("{\"term\":\"agal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02686942\"]}");
+	add("{\"term\":\"agalactia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14045670\"]}");
+	add("{\"term\":\"agalactosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14045670\"]}");
+	add("{\"term\":\"agalinis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12904493\"]}");
+	add("{\"term\":\"agama\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01690619\"]}");
+	add("{\"term\":\"agamemnon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09618080\"]}");
+	add("{\"term\":\"agamete\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11568188\"]}");
+	add("{\"term\":\"agamid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01690306\"]}");
+	add("{\"term\":\"agamidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01690082\"]}");
+	add("{\"term\":\"agammaglobulinemia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14151813\"]}");
+	add("{\"term\":\"agamogenesis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13455293\"]}");
+	add("{\"term\":\"agapanthus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12449653\"]}");
+	add("{\"term\":\"agape\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01030476\", \"07559120\", \"07559298\"]}");
+	add("{\"term\":\"agapornis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01822559\"]}");
+	add("{\"term\":\"agar\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14924159\", \"14924335\"]}");
+	add("{\"term\":\"agaric\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13019575\", \"13074833\"]}");
+	add("{\"term\":\"agaricaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13021132\"]}");
+	add("{\"term\":\"agaricales\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13019109\"]}");
+	add("{\"term\":\"agaricus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13021428\"]}");
+	add("{\"term\":\"agassiz\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10828921\"]}");
+	add("{\"term\":\"agastache\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12860599\"]}");
+	add("{\"term\":\"agate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14732393\"]}");
+	add("{\"term\":\"agateware\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02687107\"]}");
+	add("{\"term\":\"agathis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11667582\"]}");
+	add("{\"term\":\"agavaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12496541\"]}");
+	add("{\"term\":\"agave\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12497015\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.u.r.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceURI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"uria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02049806\"]}");
+	add("{\"term\":\"uriah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11377655\"]}");
+	add("{\"term\":\"urial\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02417776\"]}");
+	add("{\"term\":\"uricaciduria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14596496\"]}");
+	add("{\"term\":\"urinal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04523286\"]}");
+	add("{\"term\":\"urinalysis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00647575\"]}");
+	add("{\"term\":\"urination\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13537161\"]}");
+	add("{\"term\":\"urinator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10455483\"]}");
+	add("{\"term\":\"urine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14879875\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

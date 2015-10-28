@@ -1,0 +1,28 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.e.r.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceERI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"erianthus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12141329\"]}");
+	add("{\"term\":\"erica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12247937\"]}");
+	add("{\"term\":\"ericaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12246839\"]}");
+	add("{\"term\":\"ericales\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12246526\"]}");
+	add("{\"term\":\"eridanus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09296938\"]}");
+	add("{\"term\":\"erie\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"09158148\", \"09353972\", \"09674723\"]}");
+	add("{\"term\":\"erigeron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11985847\"]}");
+	add("{\"term\":\"erignathus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02083238\"]}");
+	add("{\"term\":\"erin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08878993\"]}");
+	add("{\"term\":\"erinaceidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01896176\"]}");
+	add("{\"term\":\"erinaceus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01896307\"]}");
+	add("{\"term\":\"eringo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12958841\"]}");
+	add("{\"term\":\"erinyes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09529469\"]}");
+	add("{\"term\":\"eriobotrya\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12650284\"]}");
+	add("{\"term\":\"eriocaulaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12629702\"]}");
+	add("{\"term\":\"eriocaulon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12629889\"]}");
+	add("{\"term\":\"eriodictyon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12856338\"]}");
+	add("{\"term\":\"eriogonum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12623023\"]}");
+	add("{\"term\":\"eriophorum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12172923\"]}");
+	add("{\"term\":\"eriophyllum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11988041\"]}");
+	add("{\"term\":\"eriosoma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02256244\"]}");
+	add("{\"term\":\"eris\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09578520\"]}");
+	add("{\"term\":\"eristic\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05643166\", \"09638495\"]}");
+	add("{\"term\":\"erithacus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01564757\"]}");
+	add("{\"term\":\"eritrea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08795396\"]}");
+	add("{\"term\":\"eritrean\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09725180\"]}");
+	add("{\"term\":\"erivan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09040400\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.v.i.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceVIG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"vigil\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00882340\", \"01031703\", \"05686696\"]}");
+	add("{\"term\":\"vigilance\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04672135\", \"05713669\"]}");
+	add("{\"term\":\"vigilante\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10773007\"]}");
+	add("{\"term\":\"vigilantism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01130587\"]}");
+	add("{\"term\":\"vigna\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12597505\"]}");
+	add("{\"term\":\"vignette\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04542306\", \"04542448\", \"07217676\"]}");
+	add("{\"term\":\"vigor\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04640554\", \"05037972\", \"05043116\"]}");
+	add("{\"term\":\"vigorish\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13310329\", \"13341067\"]}");
+	add("{\"term\":\"vigour\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04640554\", \"05037972\", \"05043116\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

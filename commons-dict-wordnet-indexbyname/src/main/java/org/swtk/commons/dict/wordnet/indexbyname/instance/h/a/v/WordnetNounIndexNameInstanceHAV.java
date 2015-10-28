@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.h.a.v;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHAV {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"havana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08768445\"]}");
+	add("{\"term\":\"havasupai\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06935554\", \"09675782\"]}");
+	add("{\"term\":\"have\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10548806\"]}");
+	add("{\"term\":\"havel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11054592\"]}");
+	add("{\"term\":\"havelock\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03504755\"]}");
+	add("{\"term\":\"haven\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08656633\", \"03504940\"]}");
+	add("{\"term\":\"haversack\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02772753\"]}");
+	add("{\"term\":\"havoc\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00555144\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

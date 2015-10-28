@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.d.a.y;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDAY {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"day\", \"synsetCount\":10, \"upperType\":\"NOUN\", \"ids\":[\"10945524\", \"14508100\", \"15233129\", \"15233336\", \"15274047\", \"15161405\", \"15190004\", \"15182185\", \"15148032\", \"15180180\"]}");
+	add("{\"term\":\"dayan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10945691\"]}");
+	add("{\"term\":\"daybed\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03006315\", \"03169762\"]}");
+	add("{\"term\":\"daybook\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03169877\", \"13426339\"]}");
+	add("{\"term\":\"dayboy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10013360\"]}");
+	add("{\"term\":\"daybreak\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15193837\"]}");
+	add("{\"term\":\"daycare\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01212929\"]}");
+	add("{\"term\":\"daydream\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05777468\"]}");
+	add("{\"term\":\"daydreamer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10013439\"]}");
+	add("{\"term\":\"daydreaming\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05777468\"]}");
+	add("{\"term\":\"dayflower\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12627306\"]}");
+	add("{\"term\":\"dayfly\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02265101\"]}");
+	add("{\"term\":\"daygirl\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10013857\"]}");
+	add("{\"term\":\"daylight\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11464134\", \"15190004\"]}");
+	add("{\"term\":\"daylily\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12477350\"]}");
+	add("{\"term\":\"daypro\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03873193\"]}");
+	add("{\"term\":\"days\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15166019\"]}");
+	add("{\"term\":\"dayspring\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15193837\"]}");
+	add("{\"term\":\"daystar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09382368\"]}");
+	add("{\"term\":\"daytime\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15190004\"]}");
+	add("{\"term\":\"dayton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09153885\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

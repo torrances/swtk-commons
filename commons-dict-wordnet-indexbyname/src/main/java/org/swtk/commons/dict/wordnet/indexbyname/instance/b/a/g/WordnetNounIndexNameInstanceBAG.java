@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.b.a.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBAG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"bag\", \"synsetCount\":9, \"upperType\":\"NOUN\", \"ids\":[\"00433821\", \"02373012\", \"09851681\", \"02776843\", \"13786779\", \"02777157\", \"02801040\", \"13776918\", \"02776042\"]}");
+	add("{\"term\":\"bagascosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14284276\"]}");
+	add("{\"term\":\"bagasse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14796478\"]}");
+	add("{\"term\":\"bagassosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14284276\"]}");
+	add("{\"term\":\"bagatelle\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00502490\", \"02777507\", \"07056244\"]}");
+	add("{\"term\":\"bagdad\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08933966\"]}");
+	add("{\"term\":\"bagel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07709470\"]}");
+	add("{\"term\":\"bagful\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13786779\"]}");
+	add("{\"term\":\"baggage\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"02777926\", \"09851816\", \"02777635\"]}");
+	add("{\"term\":\"baggageman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09851898\"]}");
+	add("{\"term\":\"bagger\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02778364\", \"10410126\"]}");
+	add("{\"term\":\"bagging\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04130661\"]}");
+	add("{\"term\":\"baghdad\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08933966\"]}");
+	add("{\"term\":\"bagman\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09852122\", \"10746438\"]}");
+	add("{\"term\":\"bagnio\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02810060\", \"04588881\"]}");
+	add("{\"term\":\"bagpipe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02778488\"]}");
+	add("{\"term\":\"bagpiper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10454808\"]}");
+	add("{\"term\":\"baguet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07703126\"]}");
+	add("{\"term\":\"baguette\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07703126\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

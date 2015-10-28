@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.p.a.w;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePAW {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"paw\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05572223\", \"02442560\"]}");
+	add("{\"term\":\"pawer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10429067\"]}");
+	add("{\"term\":\"pawl\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03907626\"]}");
+	add("{\"term\":\"pawn\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"01113141\", \"03907828\", \"10229217\", \"13371890\"]}");
+	add("{\"term\":\"pawnbroker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10429204\"]}");
+	add("{\"term\":\"pawnee\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06928703\", \"09684923\"]}");
+	add("{\"term\":\"pawnshop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03908052\"]}");
+	add("{\"term\":\"pawpaw\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07778090\", \"11716068\", \"12393617\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

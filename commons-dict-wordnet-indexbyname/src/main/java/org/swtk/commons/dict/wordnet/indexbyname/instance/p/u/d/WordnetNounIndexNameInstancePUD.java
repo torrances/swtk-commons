@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.p.u.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePUD {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"pud\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07628605\"]}");
+	add("{\"term\":\"pudding\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07628241\", \"07628605\", \"07632797\"]}");
+	add("{\"term\":\"puddingwife\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02611626\"]}");
+	add("{\"term\":\"puddle\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"08682839\", \"09420482\", \"15017512\"]}");
+	add("{\"term\":\"puddler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10511454\"]}");
+	add("{\"term\":\"pudendum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05521923\"]}");
+	add("{\"term\":\"pudge\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10511583\"]}");
+	add("{\"term\":\"pudginess\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05008254\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

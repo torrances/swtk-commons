@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.b.i.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBIN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"bin\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06437204\", \"13787446\", \"02843139\"]}");
+	add("{\"term\":\"binary\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06583139\", \"09243977\"]}");
+	add("{\"term\":\"bind\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05697606\"]}");
+	add("{\"term\":\"binder\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"02843363\", \"02843474\", \"14728626\", \"02843590\"]}");
+	add("{\"term\":\"bindery\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02843744\"]}");
+	add("{\"term\":\"binding\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"02843848\", \"04235277\", \"00698135\", \"02844156\", \"04696547\"]}");
+	add("{\"term\":\"bindweed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12844619\"]}");
+	add("{\"term\":\"bine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12418679\"]}");
+	add("{\"term\":\"binet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10870878\"]}");
+	add("{\"term\":\"binful\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13787446\"]}");
+	add("{\"term\":\"binge\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00511734\", \"01075748\"]}");
+	add("{\"term\":\"binger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09993707\"]}");
+	add("{\"term\":\"binghamton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09147255\"]}");
+	add("{\"term\":\"bingle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00133421\"]}");
+	add("{\"term\":\"bingo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00505671\"]}");
+	add("{\"term\":\"binnacle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02844416\"]}");
+	add("{\"term\":\"binoculars\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02844544\"]}");
+	add("{\"term\":\"binomial\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06046036\"]}");
+	add("{\"term\":\"binturong\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02138755\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

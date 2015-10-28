@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.c.a.v;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCAV {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cavalcade\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08444875\"]}");
+	add("{\"term\":\"cavalier\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09921581\", \"09921709\"]}");
+	add("{\"term\":\"cavalla\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02628481\"]}");
+	add("{\"term\":\"cavalry\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08406441\", \"08414813\"]}");
+	add("{\"term\":\"cavalryman\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09921806\", \"09922064\"]}");
+	add("{\"term\":\"cave\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09261832\"]}");
+	add("{\"term\":\"caveat\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06760621\", \"07239827\"]}");
+	add("{\"term\":\"cavell\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10907903\"]}");
+	add("{\"term\":\"caveman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09922184\"]}");
+	add("{\"term\":\"cavendish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10908153\"]}");
+	add("{\"term\":\"cavern\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09262208\", \"09262357\"]}");
+	add("{\"term\":\"cavetto\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02991161\"]}");
+	add("{\"term\":\"cavia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02367029\"]}");
+	add("{\"term\":\"caviar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07815555\"]}");
+	add("{\"term\":\"caviare\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07815555\"]}");
+	add("{\"term\":\"caviidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02366873\"]}");
+	add("{\"term\":\"cavil\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06774509\"]}");
+	add("{\"term\":\"caviler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10520788\"]}");
+	add("{\"term\":\"caviller\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10520788\"]}");
+	add("{\"term\":\"cavity\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"05310901\", \"13465686\", \"13934532\", \"09416001\"]}");
+	add("{\"term\":\"cavum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05310901\"]}");
+	add("{\"term\":\"cavy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02367172\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

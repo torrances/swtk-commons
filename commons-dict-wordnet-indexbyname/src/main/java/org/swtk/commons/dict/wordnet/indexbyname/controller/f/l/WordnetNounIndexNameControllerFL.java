@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.indexbyname.controller.f.l;  import java.util.Collection; import java.util.Set; import java.util.TreeSet;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  	import org.swtk.commons.dict.wordnet.indexbyname.instance.f.l.a.WordnetNounIndexNameInstanceFLA;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.f.l.e.WordnetNounIndexNameInstanceFLE;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.f.l.i.WordnetNounIndexNameInstanceFLI;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.f.l.n.WordnetNounIndexNameInstanceFLN;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.f.l.o.WordnetNounIndexNameInstanceFLO;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.f.l.u.WordnetNounIndexNameInstanceFLU;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.f.l.y.WordnetNounIndexNameInstanceFLY;
+  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerFL {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException {  		String key = TERM.substring(0, 4).toLowerCase(); 			if ("fla".equals(key)) return WordnetNounIndexNameInstanceFLA.get(TERM);
+	if ("fle".equals(key)) return WordnetNounIndexNameInstanceFLE.get(TERM);
+	if ("fli".equals(key)) return WordnetNounIndexNameInstanceFLI.get(TERM);
+	if ("fln".equals(key)) return WordnetNounIndexNameInstanceFLN.get(TERM);
+	if ("flo".equals(key)) return WordnetNounIndexNameInstanceFLO.get(TERM);
+	if ("flu".equals(key)) return WordnetNounIndexNameInstanceFLU.get(TERM);
+	if ("fly".equals(key)) return WordnetNounIndexNameInstanceFLY.get(TERM);
+  		throw new BusinessException("TERM not found (id = %s)", TERM); 	} 	 	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceFLA.terms());
+	set.addAll(WordnetNounIndexNameInstanceFLE.terms());
+	set.addAll(WordnetNounIndexNameInstanceFLI.terms());
+	set.addAll(WordnetNounIndexNameInstanceFLN.terms());
+	set.addAll(WordnetNounIndexNameInstanceFLO.terms());
+	set.addAll(WordnetNounIndexNameInstanceFLU.terms());
+	set.addAll(WordnetNounIndexNameInstanceFLY.terms());
+  		return set; 	} }

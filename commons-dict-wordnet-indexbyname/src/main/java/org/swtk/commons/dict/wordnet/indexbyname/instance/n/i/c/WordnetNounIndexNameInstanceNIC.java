@@ -1,0 +1,26 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.n.i.c;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNIC {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"nicad\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03828852\"]}");
+	add("{\"term\":\"nicaea\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"08330522\", \"08331645\", \"08521172\"]}");
+	add("{\"term\":\"nicandra\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12927686\"]}");
+	add("{\"term\":\"nicaragua\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08756653\"]}");
+	add("{\"term\":\"nicaraguan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09744070\"]}");
+	add("{\"term\":\"nice\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08957024\"]}");
+	add("{\"term\":\"niceness\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04718532\", \"04786760\", \"04920159\"]}");
+	add("{\"term\":\"nicety\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06618544\", \"04721129\"]}");
+	add("{\"term\":\"niche\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"13947369\", \"04069081\", \"13895060\", \"13949201\"]}");
+	add("{\"term\":\"nicholas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11225787\"]}");
+	add("{\"term\":\"nichrome\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14986035\"]}");
+	add("{\"term\":\"nick\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00388705\", \"03829080\", \"04700732\"]}");
+	add("{\"term\":\"nickel\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"13416825\", \"13411312\", \"14670788\"]}");
+	add("{\"term\":\"nickelodeon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03609369\"]}");
+	add("{\"term\":\"nicker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07401916\"]}");
+	add("{\"term\":\"nicklaus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11226346\"]}");
+	add("{\"term\":\"nicknack\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02900975\"]}");
+	add("{\"term\":\"nickname\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06349373\", \"06349063\"]}");
+	add("{\"term\":\"nicolson\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11226534\"]}");
+	add("{\"term\":\"nicosia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08774965\"]}");
+	add("{\"term\":\"nicotiana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12928047\"]}");
+	add("{\"term\":\"nicotine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14738978\"]}");
+	add("{\"term\":\"nictation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00118779\"]}");
+	add("{\"term\":\"nictitation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00118779\"]}");
+	add("{\"term\":\"nicu\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08163417\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

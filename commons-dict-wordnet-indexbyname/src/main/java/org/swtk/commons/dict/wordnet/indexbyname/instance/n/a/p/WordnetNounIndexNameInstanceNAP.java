@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.n.a.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNAP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"nap\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00494753\", \"00860015\", \"03942321\", \"04954264\", \"15298612\"]}");
+	add("{\"term\":\"napa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11899277\"]}");
+	add("{\"term\":\"napaea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12204854\"]}");
+	add("{\"term\":\"napalm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14982393\"]}");
+	add("{\"term\":\"nape\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05555029\"]}");
+	add("{\"term\":\"napery\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04387704\"]}");
+	add("{\"term\":\"naphazoline\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03812592\"]}");
+	add("{\"term\":\"naphtha\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14982544\"]}");
+	add("{\"term\":\"naphthalene\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14982703\"]}");
+	add("{\"term\":\"naphthol\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14982939\"]}");
+	add("{\"term\":\"naphthoquinone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15117318\"]}");
+	add("{\"term\":\"napier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11220080\"]}");
+	add("{\"term\":\"napkin\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03193215\", \"03813077\"]}");
+	add("{\"term\":\"naples\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08823417\"]}");
+	add("{\"term\":\"napoleon\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00494753\", \"07642695\", \"11220266\"]}");
+	add("{\"term\":\"napoli\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08823417\"]}");
+	add("{\"term\":\"nappy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03193215\"]}");
+	add("{\"term\":\"naprapath\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09648479\"]}");
+	add("{\"term\":\"naprapathy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00709742\"]}");
+	add("{\"term\":\"naprosyn\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03813435\"]}");
+	add("{\"term\":\"naproxen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03813435\"]}");
+	add("{\"term\":\"napu\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02438984\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,0 +1,24 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.i.n.h;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceINH {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"inh\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03592884\"]}");
+	add("{\"term\":\"inhabitancy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01056469\"]}");
+	add("{\"term\":\"inhabitant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09643248\"]}");
+	add("{\"term\":\"inhabitation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01056469\"]}");
+	add("{\"term\":\"inhalant\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03576306\", \"14943307\"]}");
+	add("{\"term\":\"inhalation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03576306\", \"00838449\"]}");
+	add("{\"term\":\"inhalator\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03576431\", \"04087945\"]}");
+	add("{\"term\":\"inhaler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03576431\"]}");
+	add("{\"term\":\"inharmoniousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04992058\"]}");
+	add("{\"term\":\"inherence\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13981424\"]}");
+	add("{\"term\":\"inherency\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13981424\"]}");
+	add("{\"term\":\"inheritance\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"04928188\", \"04929515\", \"13283812\", \"00084405\"]}");
+	add("{\"term\":\"inheritor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10188177\"]}");
+	add("{\"term\":\"inheritress\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10188740\"]}");
+	add("{\"term\":\"inheritrix\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10188740\"]}");
+	add("{\"term\":\"inhibition\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00202772\", \"13521417\", \"04891267\", \"01072816\"]}");
+	add("{\"term\":\"inhibitor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14748597\"]}");
+	add("{\"term\":\"inhomogeneity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04776601\"]}");
+	add("{\"term\":\"inhospitableness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04666299\", \"14543544\"]}");
+	add("{\"term\":\"inhospitality\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06644168\"]}");
+	add("{\"term\":\"inhumaneness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04837333\"]}");
+	add("{\"term\":\"inhumanity\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00425770\", \"04837333\"]}");
+	add("{\"term\":\"inhumation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07466297\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

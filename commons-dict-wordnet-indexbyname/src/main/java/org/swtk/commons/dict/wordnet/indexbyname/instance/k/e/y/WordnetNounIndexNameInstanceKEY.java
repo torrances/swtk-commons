@@ -1,0 +1,13 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.k.e.y;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceKEY {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"key\", \"synsetCount\":15, \"upperType\":\"NOUN\", \"ids\":[\"03618801\", \"03620342\", \"04593867\", \"06436512\", \"06504179\", \"06504429\", \"08608465\", \"09348301\", \"11123094\", \"12056695\", \"13746948\", \"06876801\", \"04993396\", \"05802065\", \"03618503\"]}");
+	add("{\"term\":\"keyboard\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03619082\", \"03619216\"]}");
+	add("{\"term\":\"keyboardist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10249553\"]}");
+	add("{\"term\":\"keycard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06489489\"]}");
+	add("{\"term\":\"keyhole\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03619991\"]}");
+	add("{\"term\":\"keynes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11123387\"]}");
+	add("{\"term\":\"keynesian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10249653\"]}");
+	add("{\"term\":\"keynesianism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06004258\"]}");
+	add("{\"term\":\"keynote\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06870776\", \"05934681\", \"07254938\"]}");
+	add("{\"term\":\"keypad\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03089055\"]}");
+	add("{\"term\":\"keystone\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03620342\", \"05702197\"]}");
+	add("{\"term\":\"keystroke\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00350346\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.k.a.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceKAN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"kanaf\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12198646\"]}");
+	add("{\"term\":\"kanamycin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03613569\"]}");
+	add("{\"term\":\"kananga\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08752841\"]}");
+	add("{\"term\":\"kanara\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08922911\"]}");
+	add("{\"term\":\"kanarese\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06992617\", \"09694116\"]}");
+	add("{\"term\":\"kanawha\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09345991\"]}");
+	add("{\"term\":\"kanchanjanga\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09346127\"]}");
+	add("{\"term\":\"kanchenjunga\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09346127\"]}");
+	add("{\"term\":\"kanchil\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02438855\"]}");
+	add("{\"term\":\"kandahar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08722223\"]}");
+	add("{\"term\":\"kandinski\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11116328\"]}");
+	add("{\"term\":\"kandinsky\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11116328\"]}");
+	add("{\"term\":\"kandy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08737538\"]}");
+	add("{\"term\":\"kangaroo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01879775\"]}");
+	add("{\"term\":\"kannada\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06992617\"]}");
+	add("{\"term\":\"kansa\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06923099\", \"09678248\"]}");
+	add("{\"term\":\"kansan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09762523\"]}");
+	add("{\"term\":\"kansas\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"06923099\", \"09346376\", \"09678248\", \"09110150\"]}");
+	add("{\"term\":\"kansu\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08743525\"]}");
+	add("{\"term\":\"kant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11116498\"]}");
+	add("{\"term\":\"kantrex\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03613569\"]}");
+	add("{\"term\":\"kanzu\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03613717\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

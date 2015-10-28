@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.l.o.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLOA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"loach\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01441222\"]}");
+	add("{\"term\":\"load\", \"synsetCount\":9, \"upperType\":\"NOUN\", \"ids\":[\"03685574\", \"04558661\", \"11466163\", \"05841069\", \"11469898\", \"13794453\", \"02967841\", \"13794608\", \"03685312\"]}");
+	add("{\"term\":\"loader\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10288202\", \"10674608\"]}");
+	add("{\"term\":\"loading\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00715204\", \"02967841\", \"13848639\", \"13794608\", \"03685312\"]}");
+	add("{\"term\":\"loads\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13799721\"]}");
+	add("{\"term\":\"loadstar\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05946135\", \"09365469\"]}");
+	add("{\"term\":\"loadstone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14966549\"]}");
+	add("{\"term\":\"loaf\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07665191\", \"07699531\"]}");
+	add("{\"term\":\"loafer\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03685681\", \"10217586\"]}");
+	add("{\"term\":\"loafing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01067365\"]}");
+	add("{\"term\":\"loam\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14966361\"]}");
+	add("{\"term\":\"loan\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06304241\", \"13420126\"]}");
+	add("{\"term\":\"loanblend\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06304010\"]}");
+	add("{\"term\":\"loaner\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03685838\", \"10274089\"]}");
+	add("{\"term\":\"loaning\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01095590\"]}");
+	add("{\"term\":\"loanword\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06304241\"]}");
+	add("{\"term\":\"loasa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12055682\"]}");
+	add("{\"term\":\"loasaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12055297\"]}");
+	add("{\"term\":\"loather\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09774111\"]}");
+	add("{\"term\":\"loathing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07518669\"]}");
+	add("{\"term\":\"loathsomeness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04788613\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

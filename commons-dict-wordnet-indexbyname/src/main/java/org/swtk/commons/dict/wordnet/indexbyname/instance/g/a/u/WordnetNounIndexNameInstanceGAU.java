@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.g.a.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceGAU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"gaucheness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04922298\"]}");
+	add("{\"term\":\"gaucherie\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00077016\", \"04823356\"]}");
+	add("{\"term\":\"gaucho\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10142098\"]}");
+	add("{\"term\":\"gaud\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02790458\"]}");
+	add("{\"term\":\"gaudery\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06893184\"]}");
+	add("{\"term\":\"gaudi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11012332\"]}");
+	add("{\"term\":\"gaudiness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04698100\", \"04825931\"]}");
+	add("{\"term\":\"gaudy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08270976\"]}");
+	add("{\"term\":\"gauffer\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03448593\", \"03448699\"]}");
+	add("{\"term\":\"gauge\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"05110583\", \"05110730\", \"05137293\", \"13876298\", \"03434198\"]}");
+	add("{\"term\":\"gauguin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11012524\"]}");
+	add("{\"term\":\"gaul\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"08949495\", \"09707883\", \"09728044\"]}");
+	add("{\"term\":\"gaultheria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12255780\"]}");
+	add("{\"term\":\"gauntlet\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"01166553\", \"03434592\", \"03434681\", \"07246935\"]}");
+	add("{\"term\":\"gauntness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05009032\"]}");
+	add("{\"term\":\"gauntry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03421004\"]}");
+	add("{\"term\":\"gaur\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02412657\"]}");
+	add("{\"term\":\"gauri\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09549355\"]}");
+	add("{\"term\":\"gauss\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11012671\", \"13660326\"]}");
+	add("{\"term\":\"gaussmeter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03714382\"]}");
+	add("{\"term\":\"gautama\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09555346\"]}");
+	add("{\"term\":\"gauze\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03434824\", \"03435001\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

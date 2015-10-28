@@ -1,0 +1,24 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.s.n.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSNI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"snick\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00129144\", \"00388705\"]}");
+	add("{\"term\":\"snicker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07142768\"]}");
+	add("{\"term\":\"snickersnee\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01179030\"]}");
+	add("{\"term\":\"sniff\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00884817\"]}");
+	add("{\"term\":\"sniffer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10636186\"]}");
+	add("{\"term\":\"sniffle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00837810\"]}");
+	add("{\"term\":\"sniffler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10636295\"]}");
+	add("{\"term\":\"snifter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04256992\"]}");
+	add("{\"term\":\"snigger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07142768\"]}");
+	add("{\"term\":\"snip\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00360440\", \"04257136\"]}");
+	add("{\"term\":\"snipe\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00124971\", \"02034588\"]}");
+	add("{\"term\":\"snipefish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01459723\"]}");
+	add("{\"term\":\"sniper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10636415\"]}");
+	add("{\"term\":\"snippet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04257136\"]}");
+	add("{\"term\":\"snipping\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04257136\"]}");
+	add("{\"term\":\"snips\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04257583\"]}");
+	add("{\"term\":\"snit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14430839\"]}");
+	add("{\"term\":\"snitch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10110781\"]}");
+	add("{\"term\":\"snitcher\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10110781\", \"10635720\"]}");
+	add("{\"term\":\"snivel\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00837810\", \"00870201\"]}");
+	add("{\"term\":\"sniveler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10636295\"]}");
+	add("{\"term\":\"sniveling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00870201\"]}");
+	add("{\"term\":\"sniveller\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10796007\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

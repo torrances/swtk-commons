@@ -1,0 +1,28 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.a.n.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceANE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"anecdote\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07235246\"]}");
+	add("{\"term\":\"anecdotist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09812793\"]}");
+	add("{\"term\":\"aneides\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01639625\"]}");
+	add("{\"term\":\"anemia\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"12976399\", \"14396143\", \"14218797\"]}");
+	add("{\"term\":\"anemography\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01000271\"]}");
+	add("{\"term\":\"anemometer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02713288\"]}");
+	add("{\"term\":\"anemometry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01000365\"]}");
+	add("{\"term\":\"anemone\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01917250\", \"11745484\"]}");
+	add("{\"term\":\"anemonella\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11747038\"]}");
+	add("{\"term\":\"anemopsis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13172980\"]}");
+	add("{\"term\":\"anencephalia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14176099\"]}");
+	add("{\"term\":\"anencephaly\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14176099\"]}");
+	add("{\"term\":\"anergy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14034316\", \"14152018\"]}");
+	add("{\"term\":\"aneroid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02713459\"]}");
+	add("{\"term\":\"anesthesia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14046962\"]}");
+	add("{\"term\":\"anesthesiologist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09812936\"]}");
+	add("{\"term\":\"anesthesiology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06055914\"]}");
+	add("{\"term\":\"anesthetic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02713625\"]}");
+	add("{\"term\":\"anesthetist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09812936\"]}");
+	add("{\"term\":\"anesthyl\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02713969\"]}");
+	add("{\"term\":\"anestrum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14061964\"]}");
+	add("{\"term\":\"anestrus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14061964\"]}");
+	add("{\"term\":\"anethum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12952209\"]}");
+	add("{\"term\":\"aneuploidy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14046132\"]}");
+	add("{\"term\":\"aneurin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15115696\"]}");
+	add("{\"term\":\"aneurism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14129507\"]}");
+	add("{\"term\":\"aneurysm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14129507\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

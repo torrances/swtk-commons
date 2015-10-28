@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.h.u.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHUN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hun\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09767570\", \"10212207\"]}");
+	add("{\"term\":\"hunan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08743905\"]}");
+	add("{\"term\":\"hunch\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00406935\", \"05927628\"]}");
+	add("{\"term\":\"hunchback\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10212031\", \"14528671\"]}");
+	add("{\"term\":\"hundred\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13772555\"]}");
+	add("{\"term\":\"hundredth\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13761191\", \"13871907\"]}");
+	add("{\"term\":\"hundredweight\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"13743108\", \"13743282\", \"13747381\"]}");
+	add("{\"term\":\"hungarian\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06971576\", \"09733381\"]}");
+	add("{\"term\":\"hungary\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08971963\"]}");
+	add("{\"term\":\"hunger\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04952431\", \"14063016\"]}");
+	add("{\"term\":\"hungriness\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04952431\", \"07501768\", \"14063016\"]}");
+	add("{\"term\":\"hunk\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09330206\", \"10212458\"]}");
+	add("{\"term\":\"hunkpapa\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06922815\", \"09676911\"]}");
+	add("{\"term\":\"hunnemannia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11926458\"]}");
+	add("{\"term\":\"hunt\", \"synsetCount\":8, \"upperType\":\"NOUN\", \"ids\":[\"00453279\", \"00623824\", \"00947217\", \"05778254\", \"08246700\", \"11086762\", \"11086928\", \"11087037\"]}");
+	add("{\"term\":\"hunter\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03554530\", \"09403029\", \"10213338\", \"10212645\"]}");
+	add("{\"term\":\"hunting\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00623824\", \"00947217\", \"00453279\"]}");
+	add("{\"term\":\"huntington\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"09179012\", \"11087174\", \"11087386\", \"11087594\"]}");
+	add("{\"term\":\"huntress\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10213269\"]}");
+	add("{\"term\":\"huntsman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10212645\"]}");
+	add("{\"term\":\"huntsville\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09076813\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

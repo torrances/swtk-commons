@@ -1,0 +1,21 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.r.h.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRHE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"rhea\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01524040\", \"01524397\", \"09599516\"]}");
+	add("{\"term\":\"rheidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01523655\"]}");
+	add("{\"term\":\"rheiformes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01523430\"]}");
+	add("{\"term\":\"rheims\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08957367\"]}");
+	add("{\"term\":\"rhein\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09431418\"]}");
+	add("{\"term\":\"rheinland\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08793130\"]}");
+	add("{\"term\":\"rhenish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07913175\"]}");
+	add("{\"term\":\"rhenium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14676569\"]}");
+	add("{\"term\":\"rheology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06111923\"]}");
+	add("{\"term\":\"rheometer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04093775\"]}");
+	add("{\"term\":\"rheostat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04093906\"]}");
+	add("{\"term\":\"rhesus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02490178\"]}");
+	add("{\"term\":\"rhetoric\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"06180214\", \"06621856\", \"07084469\", \"07086738\"]}");
+	add("{\"term\":\"rhetorician\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10400371\"]}");
+	add("{\"term\":\"rheum\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12623611\", \"14877834\"]}");
+	add("{\"term\":\"rheumatic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10547490\"]}");
+	add("{\"term\":\"rheumatism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14210220\", \"14103692\"]}");
+	add("{\"term\":\"rheumatologist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10547598\"]}");
+	add("{\"term\":\"rheumatology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06072205\"]}");
+	add("{\"term\":\"rhexia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12370433\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

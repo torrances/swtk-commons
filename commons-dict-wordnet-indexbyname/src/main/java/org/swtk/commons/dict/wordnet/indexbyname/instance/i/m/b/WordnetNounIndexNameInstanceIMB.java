@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.i.m.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceIMB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"imbalance\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05072886\", \"14027634\"]}");
+	add("{\"term\":\"imbauba\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12425234\"]}");
+	add("{\"term\":\"imbecile\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10217144\"]}");
+	add("{\"term\":\"imbecility\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01250622\", \"05654860\"]}");
+	add("{\"term\":\"imbiber\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10053926\"]}");
+	add("{\"term\":\"imbibing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00844789\"]}");
+	add("{\"term\":\"imbibition\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00844789\", \"13517220\"]}");
+	add("{\"term\":\"imbrication\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03566837\"]}");
+	add("{\"term\":\"imbroglio\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07189436\", \"13959186\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

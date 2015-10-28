@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.h.a.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHAG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hag\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01481152\", \"10175045\"]}");
+	add("{\"term\":\"hagada\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06474681\"]}");
+	add("{\"term\":\"haganah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08362293\"]}");
+	add("{\"term\":\"hagberry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12668548\"]}");
+	add("{\"term\":\"hagbut\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02745075\"]}");
+	add("{\"term\":\"hagerstown\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09117503\"]}");
+	add("{\"term\":\"hagfish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01481152\"]}");
+	add("{\"term\":\"haggada\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06474681\"]}");
+	add("{\"term\":\"haggadah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06474681\"]}");
+	add("{\"term\":\"haggai\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06452607\", \"11041912\"]}");
+	add("{\"term\":\"haggard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11041997\"]}");
+	add("{\"term\":\"haggis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07885087\"]}");
+	add("{\"term\":\"haggle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07164846\"]}");
+	add("{\"term\":\"haggler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10175160\"]}");
+	add("{\"term\":\"haggling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07164846\"]}");
+	add("{\"term\":\"hagiographa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06464994\"]}");
+	add("{\"term\":\"hagiographer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10175252\"]}");
+	add("{\"term\":\"hagiographist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10175252\"]}");
+	add("{\"term\":\"hagiography\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06528233\"]}");
+	add("{\"term\":\"hagiolatry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01048181\"]}");
+	add("{\"term\":\"hagiologist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10175252\"]}");
+	add("{\"term\":\"hagiology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06388623\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

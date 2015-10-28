@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.t.o.y;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTOY {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"toy\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"02088026\", \"03774770\", \"04469114\", \"04469337\", \"03971038\"]}");
+	add("{\"term\":\"toying\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00513533\"]}");
+	add("{\"term\":\"toynbee\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11367312\"]}");
+	add("{\"term\":\"toyohashi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08946004\"]}");
+	add("{\"term\":\"toyon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12653822\"]}");
+	add("{\"term\":\"toyonaki\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08946154\"]}");
+	add("{\"term\":\"toyota\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08946316\"]}");
+	add("{\"term\":\"toyshop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04469475\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

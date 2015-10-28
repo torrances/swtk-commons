@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.d.u.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDUL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"dulciana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03259328\"]}");
+	add("{\"term\":\"dulcimer\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03259440\", \"03259565\"]}");
+	add("{\"term\":\"dulcinea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10263081\"]}");
+	add("{\"term\":\"dullard\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09886843\", \"10686626\"]}");
+	add("{\"term\":\"dulles\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10964678\"]}");
+	add("{\"term\":\"dullness\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"04713019\", \"04852122\", \"04962810\", \"05213007\", \"05653884\"]}");
+	add("{\"term\":\"dulse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01417780\"]}");
+	add("{\"term\":\"duluth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09125125\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

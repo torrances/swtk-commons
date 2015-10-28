@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.r.a.v;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRAV {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ravage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07349476\"]}");
+	add("{\"term\":\"ravaging\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00969261\"]}");
+	add("{\"term\":\"rave\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06706489\", \"07464276\"]}");
+	add("{\"term\":\"ravehook\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04063711\"]}");
+	add("{\"term\":\"ravel\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07457610\", \"11275075\"]}");
+	add("{\"term\":\"raveling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15027526\"]}");
+	add("{\"term\":\"ravelling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15027526\"]}");
+	add("{\"term\":\"raven\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01581901\"]}");
+	add("{\"term\":\"ravenala\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12375540\"]}");
+	add("{\"term\":\"ravenna\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01295046\"]}");
+	add("{\"term\":\"ravenousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14063553\"]}");
+	add("{\"term\":\"raver\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10526663\", \"10527865\"]}");
+	add("{\"term\":\"ravigote\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07848568\"]}");
+	add("{\"term\":\"ravigotte\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07848568\"]}");
+	add("{\"term\":\"ravine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09428665\"]}");
+	add("{\"term\":\"raving\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07257853\"]}");
+	add("{\"term\":\"ravioli\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07716989\"]}");
+	add("{\"term\":\"ravisher\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10633512\", \"10773949\"]}");
+	add("{\"term\":\"ravishment\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00774891\", \"07506426\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

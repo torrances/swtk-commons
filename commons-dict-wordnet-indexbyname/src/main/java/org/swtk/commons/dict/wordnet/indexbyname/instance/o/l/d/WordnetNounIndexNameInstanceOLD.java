@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.o.l.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceOLD {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"old\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15146244\"]}");
+	add("{\"term\":\"oldenburg\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11233716\"]}");
+	add("{\"term\":\"oldfield\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11233956\"]}");
+	add("{\"term\":\"oldie\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07066740\"]}");
+	add("{\"term\":\"oldness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04932525\", \"04934622\"]}");
+	add("{\"term\":\"oldster\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10396222\"]}");
+	add("{\"term\":\"oldtimer\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10396589\", \"10768791\"]}");
+	add("{\"term\":\"oldwench\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02656127\"]}");
+	add("{\"term\":\"oldwife\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01856511\", \"02656127\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

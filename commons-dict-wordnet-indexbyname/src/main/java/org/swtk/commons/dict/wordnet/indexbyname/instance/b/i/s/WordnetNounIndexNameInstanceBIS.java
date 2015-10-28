@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.b.i.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBIS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"bisayan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10775316\"]}");
+	add("{\"term\":\"bisayas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09004822\"]}");
+	add("{\"term\":\"biscuit\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07650764\", \"07709717\"]}");
+	add("{\"term\":\"biscutella\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11895176\"]}");
+	add("{\"term\":\"bise\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11449470\"]}");
+	add("{\"term\":\"bisection\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00387258\"]}");
+	add("{\"term\":\"bisexual\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09876413\"]}");
+	add("{\"term\":\"bisexuality\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00858789\", \"05015930\"]}");
+	add("{\"term\":\"bishkek\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09043162\"]}");
+	add("{\"term\":\"bishop\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"02847294\", \"07929540\", \"09876606\"]}");
+	add("{\"term\":\"bishopric\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08568541\"]}");
+	add("{\"term\":\"bishopry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00590531\"]}");
+	add("{\"term\":\"biskek\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09043162\"]}");
+	add("{\"term\":\"bismarck\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09152399\", \"10871195\"]}");
+	add("{\"term\":\"bismark\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07654953\"]}");
+	add("{\"term\":\"bismuth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14655680\"]}");
+	add("{\"term\":\"bison\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02413155\"]}");
+	add("{\"term\":\"bisque\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07599897\"]}");
+	add("{\"term\":\"bissau\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08967800\"]}");
+	add("{\"term\":\"bister\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14867810\"]}");
+	add("{\"term\":\"bistre\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14867810\"]}");
+	add("{\"term\":\"bistro\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02847452\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.e.x.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceEXE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"exec\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08145819\"]}");
+	add("{\"term\":\"execration\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05819910\", \"07248294\", \"07518669\"]}");
+	add("{\"term\":\"executability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05210475\"]}");
+	add("{\"term\":\"executant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10089103\"]}");
+	add("{\"term\":\"executing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01166269\"]}");
+	add("{\"term\":\"execution\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"00221389\", \"01129700\", \"06565837\", \"06566069\", \"13498665\", \"00098324\", \"01166269\"]}");
+	add("{\"term\":\"executioner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10089234\"]}");
+	add("{\"term\":\"executive\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"09789895\", \"08182354\", \"10089452\"]}");
+	add("{\"term\":\"executor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10090026\"]}");
+	add("{\"term\":\"executrix\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10090184\"]}");
+	add("{\"term\":\"exegesis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07186591\"]}");
+	add("{\"term\":\"exegete\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10090256\"]}");
+	add("{\"term\":\"exemplar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05933998\"]}");
+	add("{\"term\":\"exemplification\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05773898\", \"06893583\"]}");
+	add("{\"term\":\"exemption\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00214770\", \"13332007\", \"14552475\"]}");
+	add("{\"term\":\"exenteration\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00674953\"]}");
+	add("{\"term\":\"exercise\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"00034873\", \"07469062\", \"00731217\", \"00896250\", \"00948944\", \"00625978\"]}");
+	add("{\"term\":\"exerciser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03477355\"]}");
+	add("{\"term\":\"exercising\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00625978\"]}");
+	add("{\"term\":\"exercycle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03307616\"]}");
+	add("{\"term\":\"exertion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00622867\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

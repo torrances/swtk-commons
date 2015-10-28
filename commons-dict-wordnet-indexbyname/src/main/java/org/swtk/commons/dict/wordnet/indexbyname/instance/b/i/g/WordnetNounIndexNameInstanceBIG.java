@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.b.i.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBIG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"bigamist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09872713\"]}");
+	add("{\"term\":\"bigamy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00776592\", \"13987802\"]}");
+	add("{\"term\":\"bigarade\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12729414\"]}");
+	add("{\"term\":\"bigeye\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02574283\"]}");
+	add("{\"term\":\"bigfoot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09510515\"]}");
+	add("{\"term\":\"biggin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02840523\"]}");
+	add("{\"term\":\"bighead\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14284614\"]}");
+	add("{\"term\":\"bigheartedness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04839632\"]}");
+	add("{\"term\":\"bighorn\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02418223\", \"09242953\"]}");
+	add("{\"term\":\"bight\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"02840781\", \"09243146\", \"13892535\", \"13898523\"]}");
+	add("{\"term\":\"bigness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05111246\"]}");
+	add("{\"term\":\"bignonia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12834630\"]}");
+	add("{\"term\":\"bignoniaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12834153\"]}");
+	add("{\"term\":\"bignoniad\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12834513\"]}");
+	add("{\"term\":\"bigos\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07605029\"]}");
+	add("{\"term\":\"bigot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09873051\"]}");
+	add("{\"term\":\"bigotry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06215945\"]}");
+	add("{\"term\":\"bigram\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06372006\"]}");
+	add("{\"term\":\"bigwig\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10254839\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

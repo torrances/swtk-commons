@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.p.a.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePAG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"pagad\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08056353\"]}");
+	add("{\"term\":\"pagan\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"10187776\", \"10410601\", \"10185987\"]}");
+	add("{\"term\":\"paganini\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11239841\"]}");
+	add("{\"term\":\"paganism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06234419\"]}");
+	add("{\"term\":\"page\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"10410785\", \"10410947\", \"10411115\", \"11239982\", \"11240139\", \"06267274\"]}");
+	add("{\"term\":\"pageant\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07466861\", \"00901459\"]}");
+	add("{\"term\":\"pageantry\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00901459\", \"07466861\"]}");
+	add("{\"term\":\"pageboy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05267610\", \"10411115\"]}");
+	add("{\"term\":\"pagellus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02594123\"]}");
+	add("{\"term\":\"pager\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02826266\"]}");
+	add("{\"term\":\"paget\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11240309\"]}");
+	add("{\"term\":\"pagination\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06269333\"]}");
+	add("{\"term\":\"paging\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06269333\", \"07143030\"]}");
+	add("{\"term\":\"pagoda\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03880643\"]}");
+	add("{\"term\":\"pagophila\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02044996\"]}");
+	add("{\"term\":\"pagophilus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02082674\"]}");
+	add("{\"term\":\"pagrus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02593835\"]}");
+	add("{\"term\":\"paguridae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01988588\"]}");
+	add("{\"term\":\"pagurus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01988713\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

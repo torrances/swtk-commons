@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.l.o.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLOU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"loudmouth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10294015\"]}");
+	add("{\"term\":\"loudness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04825931\", \"04997456\"]}");
+	add("{\"term\":\"loudspeaker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03696785\"]}");
+	add("{\"term\":\"lough\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09366493\", \"09366566\"]}");
+	add("{\"term\":\"louis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11161699\"]}");
+	add("{\"term\":\"louisiana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09113391\"]}");
+	add("{\"term\":\"louisianan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09762714\"]}");
+	add("{\"term\":\"louisianian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09762714\"]}");
+	add("{\"term\":\"louisville\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09112488\"]}");
+	add("{\"term\":\"lounge\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03697143\", \"04263630\"]}");
+	add("{\"term\":\"lounger\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03697330\", \"04069540\", \"10008241\"]}");
+	add("{\"term\":\"loungewear\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03697705\"]}");
+	add("{\"term\":\"loupe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03697848\"]}");
+	add("{\"term\":\"louse\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"02188133\", \"02254427\", \"10811668\", \"02186509\"]}");
+	add("{\"term\":\"lousiness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04788613\", \"14477916\"]}");
+	add("{\"term\":\"lout\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10294336\"]}");
+	add("{\"term\":\"louvar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02635124\"]}");
+	add("{\"term\":\"louver\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03698002\"]}");
+	add("{\"term\":\"louvre\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03698002\", \"03698268\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

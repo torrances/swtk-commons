@@ -1,0 +1,21 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.m.a.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMAU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"maugham\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11184960\"]}");
+	add("{\"term\":\"maui\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09102671\"]}");
+	add("{\"term\":\"maul\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03737186\"]}");
+	add("{\"term\":\"mauldin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11185154\"]}");
+	add("{\"term\":\"mauler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10323180\"]}");
+	add("{\"term\":\"maulers\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05572825\"]}");
+	add("{\"term\":\"maulstick\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03737373\"]}");
+	add("{\"term\":\"maund\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13740372\"]}");
+	add("{\"term\":\"maundy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07469761\"]}");
+	add("{\"term\":\"maupassant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11185329\"]}");
+	add("{\"term\":\"mauriac\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11185509\"]}");
+	add("{\"term\":\"mauritania\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08989171\"]}");
+	add("{\"term\":\"mauritanian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09741795\"]}");
+	add("{\"term\":\"mauritanie\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08989171\"]}");
+	add("{\"term\":\"mauritian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09741926\"]}");
+	add("{\"term\":\"mauritius\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08989680\", \"08989835\"]}");
+	add("{\"term\":\"maurois\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11185702\"]}");
+	add("{\"term\":\"mauser\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03737511\", \"11185844\"]}");
+	add("{\"term\":\"mausoleum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03737605\"]}");
+	add("{\"term\":\"mauve\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04977811\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

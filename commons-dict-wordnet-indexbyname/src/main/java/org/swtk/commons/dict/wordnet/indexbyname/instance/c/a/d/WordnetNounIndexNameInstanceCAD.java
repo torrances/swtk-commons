@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.c.a.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCAD {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cad\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06579865\", \"09905672\"]}");
+	add("{\"term\":\"cadaster\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06514183\"]}");
+	add("{\"term\":\"cadastre\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06514183\"]}");
+	add("{\"term\":\"cadaver\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05225393\"]}");
+	add("{\"term\":\"cadaverine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15120338\"]}");
+	add("{\"term\":\"caddie\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09905855\"]}");
+	add("{\"term\":\"caddisworm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02272309\"]}");
+	add("{\"term\":\"caddo\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06928377\", \"09670828\"]}");
+	add("{\"term\":\"caddoan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06928377\"]}");
+	add("{\"term\":\"caddy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02938771\"]}");
+	add("{\"term\":\"cadence\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04999057\", \"07059986\", \"07108759\"]}");
+	add("{\"term\":\"cadency\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04999057\"]}");
+	add("{\"term\":\"cadenza\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07060276\"]}");
+	add("{\"term\":\"cadet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09905992\"]}");
+	add("{\"term\":\"cadetship\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00590633\"]}");
+	add("{\"term\":\"cadger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10349902\"]}");
+	add("{\"term\":\"cadiz\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09047821\"]}");
+	add("{\"term\":\"cadmium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14656622\"]}");
+	add("{\"term\":\"cadmus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09513184\"]}");
+	add("{\"term\":\"cadra\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02293173\"]}");
+	add("{\"term\":\"cadre\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08259021\", \"08375521\"]}");
+	add("{\"term\":\"caduceus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06897570\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

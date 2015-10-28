@@ -1,0 +1,28 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.r.u.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRUB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"rub\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00125946\", \"05699109\"]}");
+	add("{\"term\":\"rubato\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15290234\"]}");
+	add("{\"term\":\"rubber\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"02738543\", \"03092620\", \"04123606\", \"07480405\", \"15031356\", \"15030825\"]}");
+	add("{\"term\":\"rubberneck\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10560663\", \"10616097\"]}");
+	add("{\"term\":\"rubbernecker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10560663\"]}");
+	add("{\"term\":\"rubbing\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00713284\", \"04123838\", \"11479937\"]}");
+	add("{\"term\":\"rubbish\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06624351\", \"14881648\"]}");
+	add("{\"term\":\"rubble\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14882048\"]}");
+	add("{\"term\":\"rubdown\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00259538\"]}");
+	add("{\"term\":\"rube\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10823706\"]}");
+	add("{\"term\":\"rubefacient\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04124183\"]}");
+	add("{\"term\":\"rubel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13722161\"]}");
+	add("{\"term\":\"rubella\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14146741\"]}");
+	add("{\"term\":\"rubens\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11293094\"]}");
+	add("{\"term\":\"rubeola\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14146526\"]}");
+	add("{\"term\":\"rubia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12681557\"]}");
+	add("{\"term\":\"rubiaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12680770\"]}");
+	add("{\"term\":\"rubiales\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12680491\"]}");
+	add("{\"term\":\"rubicelle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15076175\"]}");
+	add("{\"term\":\"rubicon\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05757039\", \"08662127\"]}");
+	add("{\"term\":\"rubidium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14677133\"]}");
+	add("{\"term\":\"rubinstein\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11293276\", \"11293469\"]}");
+	add("{\"term\":\"ruble\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13721181\", \"13724636\"]}");
+	add("{\"term\":\"rubor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14359944\"]}");
+	add("{\"term\":\"rubric\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"05848285\", \"06356368\", \"06357363\", \"06665457\", \"06756695\", \"06665359\"]}");
+	add("{\"term\":\"rubus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12673817\"]}");
+	add("{\"term\":\"ruby\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04970765\", \"15032709\", \"13393435\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

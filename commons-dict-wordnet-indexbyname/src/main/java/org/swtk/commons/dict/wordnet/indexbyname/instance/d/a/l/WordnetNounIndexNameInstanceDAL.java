@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.d.a.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDAL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"dal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13645904\"]}");
+	add("{\"term\":\"dalasi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13690266\"]}");
+	add("{\"term\":\"dalbergia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12542352\"]}");
+	add("{\"term\":\"dale\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09285596\"]}");
+	add("{\"term\":\"dalea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12545023\"]}");
+	add("{\"term\":\"dalesman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10008135\"]}");
+	add("{\"term\":\"daleth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06850087\"]}");
+	add("{\"term\":\"dali\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10940970\"]}");
+	add("{\"term\":\"dalian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08744836\"]}");
+	add("{\"term\":\"dallas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09166523\"]}");
+	add("{\"term\":\"dalliance\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00513533\", \"01069743\"]}");
+	add("{\"term\":\"dallier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10008241\"]}");
+	add("{\"term\":\"dallisgrass\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12148588\"]}");
+	add("{\"term\":\"dalmane\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03376209\"]}");
+	add("{\"term\":\"dalmatia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08837075\"]}");
+	add("{\"term\":\"dalmatian\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02112993\", \"10008456\"]}");
+	add("{\"term\":\"dalo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11807008\"]}");
+	add("{\"term\":\"dalton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10941076\"]}");
+	add("{\"term\":\"daltonism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14177650\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

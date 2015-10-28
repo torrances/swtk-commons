@@ -1,0 +1,28 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.s.o.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSON {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"son\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09560255\", \"10643436\"]}");
+	add("{\"term\":\"sonant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07135072\"]}");
+	add("{\"term\":\"sonar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04266881\"]}");
+	add("{\"term\":\"sonata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07057834\"]}");
+	add("{\"term\":\"sonatina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07058426\"]}");
+	add("{\"term\":\"sonchus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12039109\"]}");
+	add("{\"term\":\"sondheim\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11328391\"]}");
+	add("{\"term\":\"sone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13735922\"]}");
+	add("{\"term\":\"song\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"08175640\", \"13274910\", \"06809500\", \"00547426\", \"07409188\", \"07062058\"]}");
+	add("{\"term\":\"songbird\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01529162\"]}");
+	add("{\"term\":\"songbook\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06429789\"]}");
+	add("{\"term\":\"songfulness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04990937\"]}");
+	add("{\"term\":\"songhai\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07011291\"]}");
+	add("{\"term\":\"songster\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01529162\", \"10643672\", \"10643902\"]}");
+	add("{\"term\":\"songstress\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10643799\"]}");
+	add("{\"term\":\"songwriter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10643902\"]}");
+	add("{\"term\":\"sonnet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06392995\"]}");
+	add("{\"term\":\"sonneteer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10644362\"]}");
+	add("{\"term\":\"sonny\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09890635\"]}");
+	add("{\"term\":\"sonogram\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04267474\"]}");
+	add("{\"term\":\"sonograph\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04267699\"]}");
+	add("{\"term\":\"sonography\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00903487\"]}");
+	add("{\"term\":\"sonometer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02760342\"]}");
+	add("{\"term\":\"sonora\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01738897\"]}");
+	add("{\"term\":\"sonority\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04996893\"]}");
+	add("{\"term\":\"sonorousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04996893\"]}");
+	add("{\"term\":\"sontag\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11328515\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

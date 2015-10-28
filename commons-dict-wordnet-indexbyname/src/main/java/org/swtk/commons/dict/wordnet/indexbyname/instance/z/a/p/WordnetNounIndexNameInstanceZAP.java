@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.z.a.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceZAP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"zap\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07494768\"]}");
+	add("{\"term\":\"zapata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11425172\"]}");
+	add("{\"term\":\"zapodidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02353497\"]}");
+	add("{\"term\":\"zapotec\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06931898\", \"09669077\"]}");
+	add("{\"term\":\"zapotecan\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06931898\", \"09669077\"]}");
+	add("{\"term\":\"zapper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04621440\"]}");
+	add("{\"term\":\"zapus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02353864\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

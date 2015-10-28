@@ -1,0 +1,24 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.s.e.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSEE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"see\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08604380\"]}");
+	add("{\"term\":\"seed\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"05411679\", \"05843082\", \"10594907\", \"11704458\", \"13156591\"]}");
+	add("{\"term\":\"seedbed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04174183\"]}");
+	add("{\"term\":\"seedcake\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07650214\"]}");
+	add("{\"term\":\"seedcase\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13160826\"]}");
+	add("{\"term\":\"seeder\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04174289\", \"04174407\", \"10595038\"]}");
+	add("{\"term\":\"seediness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04823992\"]}");
+	add("{\"term\":\"seedling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11573045\"]}");
+	add("{\"term\":\"seedman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10595149\"]}");
+	add("{\"term\":\"seedpod\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13159832\"]}");
+	add("{\"term\":\"seedsman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10595149\"]}");
+	add("{\"term\":\"seedtime\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"15263068\", \"15316652\"]}");
+	add("{\"term\":\"seeger\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11310854\", \"11310974\"]}");
+	add("{\"term\":\"seeing\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05664382\", \"05718807\"]}");
+	add("{\"term\":\"seek\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07365493\"]}");
+	add("{\"term\":\"seeker\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04174550\", \"10595231\"]}");
+	add("{\"term\":\"seeking\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00790023\", \"00948466\"]}");
+	add("{\"term\":\"seeland\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08779530\"]}");
+	add("{\"term\":\"seemliness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04907534\"]}");
+	add("{\"term\":\"seepage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07446719\"]}");
+	add("{\"term\":\"seer\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"10503115\", \"10595515\", \"10776101\"]}");
+	add("{\"term\":\"seersucker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04174722\"]}");
+	add("{\"term\":\"seesaw\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04174820\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

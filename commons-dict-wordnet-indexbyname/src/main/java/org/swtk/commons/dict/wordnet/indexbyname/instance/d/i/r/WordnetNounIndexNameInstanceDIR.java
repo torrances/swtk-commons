@@ -1,0 +1,21 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.d.i.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDIR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"dirac\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10956886\"]}");
+	add("{\"term\":\"dirca\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12368007\"]}");
+	add("{\"term\":\"direction\", \"synsetCount\":9, \"upperType\":\"NOUN\", \"ids\":[\"05712641\", \"07184131\", \"00816981\", \"06799486\", \"01135602\", \"06663446\", \"06206950\", \"13849639\", \"08697710\"]}");
+	add("{\"term\":\"directionality\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05071022\", \"05073795\"]}");
+	add("{\"term\":\"directive\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07184731\"]}");
+	add("{\"term\":\"directiveness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05074036\"]}");
+	add("{\"term\":\"directivity\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05074036\", \"05073795\"]}");
+	add("{\"term\":\"directness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04878915\", \"04925387\"]}");
+	add("{\"term\":\"director\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"09972018\", \"10107969\", \"10034960\", \"10035230\", \"10034684\"]}");
+	add("{\"term\":\"directorate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08397499\"]}");
+	add("{\"term\":\"directorship\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00592973\"]}");
+	add("{\"term\":\"directory\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06502442\", \"06435262\"]}");
+	add("{\"term\":\"dirge\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07064659\"]}");
+	add("{\"term\":\"dirham\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"13692103\", \"13692504\", \"13692895\", \"13693632\", \"13693918\", \"13720550\"]}");
+	add("{\"term\":\"dirigible\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02695736\"]}");
+	add("{\"term\":\"dirk\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03210179\"]}");
+	add("{\"term\":\"dirndl\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03210295\", \"03210390\"]}");
+	add("{\"term\":\"dirt\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07238471\", \"14878732\", \"14521680\", \"14868863\"]}");
+	add("{\"term\":\"dirtiness\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04910855\", \"14511588\", \"14521347\"]}");
+	add("{\"term\":\"dirtying\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00277464\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

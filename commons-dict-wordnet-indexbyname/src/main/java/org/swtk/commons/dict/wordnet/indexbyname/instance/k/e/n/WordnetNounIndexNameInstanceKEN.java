@@ -1,0 +1,27 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.k.e.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceKEN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ken\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05631601\", \"05813165\"]}");
+	add("{\"term\":\"kenaf\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12198646\", \"12198875\"]}");
+	add("{\"term\":\"kenalog\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15103335\"]}");
+	add("{\"term\":\"kendal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15013528\"]}");
+	add("{\"term\":\"kendall\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11120452\"]}");
+	add("{\"term\":\"kendrew\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11120609\"]}");
+	add("{\"term\":\"kennan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11120788\"]}");
+	add("{\"term\":\"kennedia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12557170\"]}");
+	add("{\"term\":\"kennedy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09147066\", \"11120990\"]}");
+	add("{\"term\":\"kennedya\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12557170\"]}");
+	add("{\"term\":\"kennel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03615737\"]}");
+	add("{\"term\":\"kennelly\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11121240\"]}");
+	add("{\"term\":\"kennewick\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09176636\"]}");
+	add("{\"term\":\"kenning\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07121336\"]}");
+	add("{\"term\":\"keno\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00505671\"]}");
+	add("{\"term\":\"kenogenesis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13466113\"]}");
+	add("{\"term\":\"kenosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05951056\"]}");
+	add("{\"term\":\"kent\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11121566\", \"08903161\"]}");
+	add("{\"term\":\"kentan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12448071\"]}");
+	add("{\"term\":\"kentish\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06962088\", \"06962708\"]}");
+	add("{\"term\":\"kentuckian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09762606\"]}");
+	add("{\"term\":\"kentucky\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09111697\"]}");
+	add("{\"term\":\"kenya\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08947966\"]}");
+	add("{\"term\":\"kenyan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09738705\"]}");
+	add("{\"term\":\"kenyapithecus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02481621\"]}");
+	add("{\"term\":\"kenyata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11121690\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

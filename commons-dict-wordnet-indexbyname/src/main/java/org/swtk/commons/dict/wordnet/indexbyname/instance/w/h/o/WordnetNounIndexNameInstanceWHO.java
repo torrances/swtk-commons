@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.w.h.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceWHO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"who\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08319645\"]}");
+	add("{\"term\":\"whodunit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06382415\"]}");
+	add("{\"term\":\"whole\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00003553\", \"05878206\"]}");
+	add("{\"term\":\"wholeheartedness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04652830\", \"04874770\"]}");
+	add("{\"term\":\"wholeness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14073493\", \"14484149\"]}");
+	add("{\"term\":\"wholesale\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01116756\"]}");
+	add("{\"term\":\"wholesaler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10242167\"]}");
+	add("{\"term\":\"wholesomeness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04796917\"]}");
+	add("{\"term\":\"whoop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07137996\"]}");
+	add("{\"term\":\"whoopee\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00520307\"]}");
+	add("{\"term\":\"whooper\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01861966\", \"02015831\"]}");
+	add("{\"term\":\"whoosh\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07411130\"]}");
+	add("{\"term\":\"whopper\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04581520\", \"06770387\"]}");
+	add("{\"term\":\"whore\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10505025\"]}");
+	add("{\"term\":\"whoredom\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00749453\"]}");
+	add("{\"term\":\"whorehouse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04588881\"]}");
+	add("{\"term\":\"whoremaster\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10799573\", \"10799671\"]}");
+	add("{\"term\":\"whoremonger\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10799573\", \"10799671\"]}");
+	add("{\"term\":\"whoreson\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09834593\", \"09862211\"]}");
+	add("{\"term\":\"whorl\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03069428\", \"05265220\", \"13898609\"]}");
+	add("{\"term\":\"whorlywort\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12903081\"]}");
+	add("{\"term\":\"whortleberry\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07759200\", \"12269091\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

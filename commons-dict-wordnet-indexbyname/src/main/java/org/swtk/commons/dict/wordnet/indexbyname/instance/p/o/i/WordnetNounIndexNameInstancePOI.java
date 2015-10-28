@@ -1,0 +1,26 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.p.o.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePOI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"poi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07890507\"]}");
+	add("{\"term\":\"poignance\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14012928\"]}");
+	add("{\"term\":\"poignancy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05218522\", \"14012928\"]}");
+	add("{\"term\":\"poikilotherm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01318072\"]}");
+	add("{\"term\":\"poilu\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07605748\", \"10467402\"]}");
+	add("{\"term\":\"poinciana\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12510320\", \"12519244\"]}");
+	add("{\"term\":\"poinsettia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12940964\"]}");
+	add("{\"term\":\"point\", \"synsetCount\":26, \"upperType\":\"NOUN\", \"ids\":[\"03218529\", \"03981029\", \"03981127\", \"04739307\", \"05078725\", \"06825147\", \"06834918\", \"06856570\", \"13421323\", \"13734391\", \"13852504\", \"03980573\", \"04739165\", \"13817097\", \"06494090\", \"09419340\", \"13631405\", \"13934887\", \"13925175\", \"05992951\", \"15205381\", \"13962925\", \"05825971\", \"06619161\", \"08637636\", \"05874582\"]}");
+	add("{\"term\":\"pointedness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04926188\", \"05078725\"]}");
+	add("{\"term\":\"pointel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03460299\"]}");
+	add("{\"term\":\"pointer\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"02102649\", \"03155461\", \"03981590\", \"06830979\"]}");
+	add("{\"term\":\"pointillism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03981777\", \"08292974\"]}");
+	add("{\"term\":\"pointillist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10467498\"]}");
+	add("{\"term\":\"pointlessness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05181550\"]}");
+	add("{\"term\":\"pointrel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03460299\"]}");
+	add("{\"term\":\"pointsman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10467896\"]}");
+	add("{\"term\":\"poise\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04911339\", \"14027365\", \"13737345\"]}");
+	add("{\"term\":\"poison\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05173924\", \"15056943\"]}");
+	add("{\"term\":\"poisonberry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12917067\"]}");
+	add("{\"term\":\"poisoner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10468142\"]}");
+	add("{\"term\":\"poisoning\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00225605\", \"14533314\"]}");
+	add("{\"term\":\"poitier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11260599\"]}");
+	add("{\"term\":\"poitiers\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01294332\"]}");
+	add("{\"term\":\"poitou\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08963997\"]}");
+	add("{\"term\":\"poivrade\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07855288\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

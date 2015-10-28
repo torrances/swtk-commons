@@ -1,0 +1,24 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.h.o.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHOT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hotbed\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03547253\", \"13958786\"]}");
+	add("{\"term\":\"hotbox\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03547400\"]}");
+	add("{\"term\":\"hotcake\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07655812\"]}");
+	add("{\"term\":\"hotchpotch\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07606073\", \"08416934\"]}");
+	add("{\"term\":\"hotdog\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07692347\", \"07713282\", \"10207329\"]}");
+	add("{\"term\":\"hotei\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09558029\"]}");
+	add("{\"term\":\"hotel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03547513\"]}");
+	add("{\"term\":\"hotelier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10207609\"]}");
+	add("{\"term\":\"hotelkeeper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10207609\"]}");
+	add("{\"term\":\"hotelman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10207609\"]}");
+	add("{\"term\":\"hotfoot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00515482\"]}");
+	add("{\"term\":\"hoth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09604303\"]}");
+	add("{\"term\":\"hothead\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10011068\", \"10111333\"]}");
+	add("{\"term\":\"hothouse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03096622\"]}");
+	add("{\"term\":\"hothr\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09604303\"]}");
+	add("{\"term\":\"hotness\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05000490\", \"14061509\", \"05023355\"]}");
+	add("{\"term\":\"hotplate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03548434\"]}");
+	add("{\"term\":\"hotpot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07606182\"]}");
+	add("{\"term\":\"hotshot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09781932\"]}");
+	add("{\"term\":\"hotspot\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03548691\", \"08603745\", \"08603857\"]}");
+	add("{\"term\":\"hotspur\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10207765\", \"11249489\"]}");
+	add("{\"term\":\"hottentot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06954241\"]}");
+	add("{\"term\":\"hottonia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12114638\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

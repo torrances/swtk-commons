@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.u.n.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceUNM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"unmalleability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05031140\"]}");
+	add("{\"term\":\"unmanageableness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04914752\"]}");
+	add("{\"term\":\"unmanliness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04675496\"]}");
+	add("{\"term\":\"unmasking\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07230228\"]}");
+	add("{\"term\":\"unmentionable\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04515458\"]}");
+	add("{\"term\":\"unmercifulness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04838262\"]}");
+	add("{\"term\":\"unmindfulness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04672900\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

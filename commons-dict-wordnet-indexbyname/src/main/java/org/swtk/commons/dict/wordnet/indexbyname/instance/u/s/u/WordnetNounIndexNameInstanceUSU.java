@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.u.s.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceUSU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"usualness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04803335\"]}");
+	add("{\"term\":\"usufruct\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05197624\"]}");
+	add("{\"term\":\"usufructuary\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10761926\"]}");
+	add("{\"term\":\"usuli\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08491352\"]}");
+	add("{\"term\":\"usumbura\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08734350\"]}");
+	add("{\"term\":\"usurer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10762041\"]}");
+	add("{\"term\":\"usurpation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00086252\", \"00734781\"]}");
+	add("{\"term\":\"usurper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10762203\"]}");
+	add("{\"term\":\"usury\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01095779\", \"13341067\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

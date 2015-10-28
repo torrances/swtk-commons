@@ -1,0 +1,21 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.r.i.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRIB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"rib\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"04094402\", \"05243209\", \"06780484\", \"07672350\", \"05286525\", \"04094238\"]}");
+	add("{\"term\":\"ribald\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10548544\"]}");
+	add("{\"term\":\"ribaldry\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04909460\", \"06794668\"]}");
+	add("{\"term\":\"riband\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04094544\"]}");
+	add("{\"term\":\"ribavirin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04094636\"]}");
+	add("{\"term\":\"ribband\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04094544\"]}");
+	add("{\"term\":\"ribbing\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00426908\", \"04094938\"]}");
+	add("{\"term\":\"ribbon\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"04095011\", \"04095170\", \"06719615\", \"09432081\"]}");
+	add("{\"term\":\"ribbonfish\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02548962\", \"02549645\"]}");
+	add("{\"term\":\"ribbonwood\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12201402\", \"12205771\"]}");
+	add("{\"term\":\"ribes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12825626\"]}");
+	add("{\"term\":\"ribgrass\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12619946\"]}");
+	add("{\"term\":\"ribhus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09551269\"]}");
+	add("{\"term\":\"ribier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07776273\"]}");
+	add("{\"term\":\"riboflavin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15116040\"]}");
+	add("{\"term\":\"ribonuclease\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14856216\"]}");
+	add("{\"term\":\"ribonucleinase\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14856216\"]}");
+	add("{\"term\":\"ribose\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14720492\"]}");
+	add("{\"term\":\"ribosome\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05453970\"]}");
+	add("{\"term\":\"ribwort\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12619946\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

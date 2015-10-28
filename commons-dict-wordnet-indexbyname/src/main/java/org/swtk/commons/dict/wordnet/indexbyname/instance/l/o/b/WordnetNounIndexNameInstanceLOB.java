@@ -1,0 +1,27 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.l.o.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLOB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"lob\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00121624\", \"00570398\"]}");
+	add("{\"term\":\"lobachevsky\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11156612\"]}");
+	add("{\"term\":\"lobata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01923857\"]}");
+	add("{\"term\":\"lobby\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07985266\", \"08392643\", \"02718424\"]}");
+	add("{\"term\":\"lobbyism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00416346\"]}");
+	add("{\"term\":\"lobbyist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10288326\"]}");
+	add("{\"term\":\"lobe\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03686060\", \"07018639\", \"13182404\", \"05500955\"]}");
+	add("{\"term\":\"lobectomy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00684843\"]}");
+	add("{\"term\":\"lobefin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02517845\"]}");
+	add("{\"term\":\"lobelia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12189082\"]}");
+	add("{\"term\":\"lobeliaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12188643\"]}");
+	add("{\"term\":\"lobipes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02040664\"]}");
+	add("{\"term\":\"lobito\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08726442\"]}");
+	add("{\"term\":\"loblolly\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07891062\"]}");
+	add("{\"term\":\"lobotes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02638665\"]}");
+	add("{\"term\":\"lobotidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02638541\"]}");
+	add("{\"term\":\"lobotomy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00685381\"]}");
+	add("{\"term\":\"lobscouse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07606901\"]}");
+	add("{\"term\":\"lobscuse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07606901\"]}");
+	add("{\"term\":\"lobster\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01985291\", \"07808701\"]}");
+	add("{\"term\":\"lobsterback\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10049710\"]}");
+	add("{\"term\":\"lobsterman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10288524\"]}");
+	add("{\"term\":\"lobularia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11911519\"]}");
+	add("{\"term\":\"lobularity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05071891\"]}");
+	add("{\"term\":\"lobule\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05501302\"]}");
+	add("{\"term\":\"lobworm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01939312\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

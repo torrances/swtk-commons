@@ -1,0 +1,21 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.u.n.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceUNA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"unabridged\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06431862\"]}");
+	add("{\"term\":\"unacceptability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04801174\"]}");
+	add("{\"term\":\"unacceptableness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04801174\"]}");
+	add("{\"term\":\"unadaptability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04667437\"]}");
+	add("{\"term\":\"unaffectedness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04793554\"]}");
+	add("{\"term\":\"unai\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02460576\", \"02460766\"]}");
+	add("{\"term\":\"unalterability\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04747895\", \"04749324\"]}");
+	add("{\"term\":\"unambiguity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04829033\"]}");
+	add("{\"term\":\"unanimity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13995834\"]}");
+	add("{\"term\":\"unappetisingness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05003988\"]}");
+	add("{\"term\":\"unappetizingness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05003988\"]}");
+	add("{\"term\":\"unapproachability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04664601\"]}");
+	add("{\"term\":\"unassertiveness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07538888\"]}");
+	add("{\"term\":\"unassumingness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04793823\"]}");
+	add("{\"term\":\"unattainableness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14507092\"]}");
+	add("{\"term\":\"unattractiveness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04698824\"]}");
+	add("{\"term\":\"unau\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02460576\", \"02460766\"]}");
+	add("{\"term\":\"unavailability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04730186\"]}");
+	add("{\"term\":\"unavoidability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04761184\"]}");
+	add("{\"term\":\"unawareness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05687452\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

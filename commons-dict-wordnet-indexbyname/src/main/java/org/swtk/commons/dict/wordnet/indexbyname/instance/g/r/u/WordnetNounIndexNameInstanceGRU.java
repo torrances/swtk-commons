@@ -1,0 +1,25 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.g.r.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceGRU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"grub\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02314658\", \"07580726\"]}");
+	add("{\"term\":\"grubbiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14522427\"]}");
+	add("{\"term\":\"grubby\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02648871\"]}");
+	add("{\"term\":\"grubstake\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13308262\"]}");
+	add("{\"term\":\"grudge\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07565002\"]}");
+	add("{\"term\":\"gruel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07719799\"]}");
+	add("{\"term\":\"gruesomeness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04789874\"]}");
+	add("{\"term\":\"gruffness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04922639\", \"04996097\"]}");
+	add("{\"term\":\"grugru\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12604603\"]}");
+	add("{\"term\":\"gruidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02015369\"]}");
+	add("{\"term\":\"gruiformes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02014960\"]}");
+	add("{\"term\":\"grumble\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07225752\", \"07407083\"]}");
+	add("{\"term\":\"grumbler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10796007\"]}");
+	add("{\"term\":\"grumbling\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07225752\", \"07407083\"]}");
+	add("{\"term\":\"grume\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05409676\", \"14963801\"]}");
+	add("{\"term\":\"grummet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03137089\"]}");
+	add("{\"term\":\"grump\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10167825\"]}");
+	add("{\"term\":\"grumpiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04649226\"]}");
+	add("{\"term\":\"grundyism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04908329\"]}");
+	add("{\"term\":\"grunge\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14521680\"]}");
+	add("{\"term\":\"grunt\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"02590916\", \"10168761\", \"07399214\"]}");
+	add("{\"term\":\"grunter\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02398058\", \"10168956\"]}");
+	add("{\"term\":\"grus\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02015688\", \"09318361\"]}");
+	add("{\"term\":\"gruyere\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07871081\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

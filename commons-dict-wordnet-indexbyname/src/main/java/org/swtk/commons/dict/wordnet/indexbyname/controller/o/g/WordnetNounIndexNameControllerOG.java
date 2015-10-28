@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.indexbyname.controller.o.g;  import java.util.Collection; import java.util.Set; import java.util.TreeSet;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  	import org.swtk.commons.dict.wordnet.indexbyname.instance.o.g.a.WordnetNounIndexNameInstanceOGA;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.o.g.c.WordnetNounIndexNameInstanceOGC;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.o.g.d.WordnetNounIndexNameInstanceOGD;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.o.g.e.WordnetNounIndexNameInstanceOGE;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.o.g.i.WordnetNounIndexNameInstanceOGI;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.o.g.l.WordnetNounIndexNameInstanceOGL;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.o.g.r.WordnetNounIndexNameInstanceOGR;
+  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerOG {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException {  		String key = TERM.substring(0, 4).toLowerCase(); 			if ("oga".equals(key)) return WordnetNounIndexNameInstanceOGA.get(TERM);
+	if ("ogc".equals(key)) return WordnetNounIndexNameInstanceOGC.get(TERM);
+	if ("ogd".equals(key)) return WordnetNounIndexNameInstanceOGD.get(TERM);
+	if ("oge".equals(key)) return WordnetNounIndexNameInstanceOGE.get(TERM);
+	if ("ogi".equals(key)) return WordnetNounIndexNameInstanceOGI.get(TERM);
+	if ("ogl".equals(key)) return WordnetNounIndexNameInstanceOGL.get(TERM);
+	if ("ogr".equals(key)) return WordnetNounIndexNameInstanceOGR.get(TERM);
+  		throw new BusinessException("TERM not found (id = %s)", TERM); 	} 	 	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceOGA.terms());
+	set.addAll(WordnetNounIndexNameInstanceOGC.terms());
+	set.addAll(WordnetNounIndexNameInstanceOGD.terms());
+	set.addAll(WordnetNounIndexNameInstanceOGE.terms());
+	set.addAll(WordnetNounIndexNameInstanceOGI.terms());
+	set.addAll(WordnetNounIndexNameInstanceOGL.terms());
+	set.addAll(WordnetNounIndexNameInstanceOGR.terms());
+  		return set; 	} }

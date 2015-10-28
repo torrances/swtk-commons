@@ -1,0 +1,21 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.n.a.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNAS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"nasa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08143272\"]}");
+	add("{\"term\":\"nasal\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05285031\", \"07133919\"]}");
+	add("{\"term\":\"nasalis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02491691\"]}");
+	add("{\"term\":\"nasalisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07132710\"]}");
+	add("{\"term\":\"nasality\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04996598\"]}");
+	add("{\"term\":\"nasalization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07132710\"]}");
+	add("{\"term\":\"nascence\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07334902\"]}");
+	add("{\"term\":\"nascency\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07334902\"]}");
+	add("{\"term\":\"nasdaq\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03815726\"]}");
+	add("{\"term\":\"naseby\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01291042\", \"08906264\"]}");
+	add("{\"term\":\"nash\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11220676\"]}");
+	add("{\"term\":\"nashville\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09164027\"]}");
+	add("{\"term\":\"nasion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05241492\"]}");
+	add("{\"term\":\"nasopharynx\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05536487\"]}");
+	add("{\"term\":\"nassau\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08866562\"]}");
+	add("{\"term\":\"nasser\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09355152\", \"11220802\"]}");
+	add("{\"term\":\"nast\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11220939\"]}");
+	add("{\"term\":\"nastiness\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04788030\", \"04849746\", \"14519345\"]}");
+	add("{\"term\":\"nasturtium\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07835745\", \"11913473\", \"12740444\"]}");
+	add("{\"term\":\"nasua\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02512036\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

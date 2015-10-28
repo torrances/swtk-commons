@@ -1,0 +1,13 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.b.o.x;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBOX {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"box\", \"synsetCount\":10, \"upperType\":\"NOUN\", \"ids\":[\"00135968\", \"02887252\", \"02887691\", \"02887848\", \"12766866\", \"13906151\", \"14432355\", \"13787764\", \"02887466\", \"02886585\"]}");
+	add("{\"term\":\"boxberry\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07759699\", \"12689278\"]}");
+	add("{\"term\":\"boxcar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02888349\"]}");
+	add("{\"term\":\"boxcars\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13769086\"]}");
+	add("{\"term\":\"boxer\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"02110741\", \"09890152\", \"10410126\", \"09889614\"]}");
+	add("{\"term\":\"boxers\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03238867\"]}");
+	add("{\"term\":\"boxershorts\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03238867\"]}");
+	add("{\"term\":\"boxfish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02657055\"]}");
+	add("{\"term\":\"boxful\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13787764\"]}");
+	add("{\"term\":\"boxing\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00323054\", \"00446787\"]}");
+	add("{\"term\":\"boxthorn\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12925698\"]}");
+	add("{\"term\":\"boxwood\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12766866\", \"12767234\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

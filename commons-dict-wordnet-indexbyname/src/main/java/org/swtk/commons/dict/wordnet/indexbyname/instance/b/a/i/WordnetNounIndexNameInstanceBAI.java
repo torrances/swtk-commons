@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.b.a.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBAI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"bai\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06944382\"]}");
+	add("{\"term\":\"baic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06944382\"]}");
+	add("{\"term\":\"baikal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09265673\"]}");
+	add("{\"term\":\"bail\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05912039\", \"13371991\"]}");
+	add("{\"term\":\"bailee\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09852338\"]}");
+	add("{\"term\":\"bailey\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"02778694\", \"02778818\", \"10850732\", \"10850959\"]}");
+	add("{\"term\":\"bailiff\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09852471\"]}");
+	add("{\"term\":\"bailiffship\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00590355\"]}");
+	add("{\"term\":\"bailiwick\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06005806\", \"08568239\"]}");
+	add("{\"term\":\"bailment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01110876\"]}");
+	add("{\"term\":\"bailor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09852635\"]}");
+	add("{\"term\":\"baiomys\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02340132\"]}");
+	add("{\"term\":\"bairava\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09552041\"]}");
+	add("{\"term\":\"bairdiella\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02597847\"]}");
+	add("{\"term\":\"bairiki\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08859956\"]}");
+	add("{\"term\":\"bairn\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09852801\"]}");
+	add("{\"term\":\"baisa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13719367\"]}");
+	add("{\"term\":\"baisakh\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15244823\"]}");
+	add("{\"term\":\"bait\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02779210\", \"05703197\"]}");
+	add("{\"term\":\"baiting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00426185\"]}");
+	add("{\"term\":\"baiza\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13719367\"]}");
+	add("{\"term\":\"baize\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02779510\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.a.r.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceARE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"are\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13635143\"]}");
+	add("{\"term\":\"area\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"05135784\", \"02738693\", \"14537641\", \"05229188\", \"05823643\", \"08514304\"]}");
+	add("{\"term\":\"areaway\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02739401\"]}");
+	add("{\"term\":\"areca\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12604939\"]}");
+	add("{\"term\":\"arecaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12602129\"]}");
+	add("{\"term\":\"arecidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11689024\"]}");
+	add("{\"term\":\"areflexia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14429869\"]}");
+	add("{\"term\":\"arena\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"02739516\", \"04303019\", \"08514117\", \"14537641\"]}");
+	add("{\"term\":\"arenaria\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02027577\", \"11826306\"]}");
+	add("{\"term\":\"arenaviridae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01335723\"]}");
+	add("{\"term\":\"arenavirus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01333138\"]}");
+	add("{\"term\":\"arendt\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10841303\"]}");
+	add("{\"term\":\"arenga\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12605320\"]}");
+	add("{\"term\":\"areola\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05562437\", \"05562650\"]}");
+	add("{\"term\":\"areopagite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09826802\"]}");
+	add("{\"term\":\"areopagus\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08181009\", \"08803595\"]}");
+	add("{\"term\":\"arequipa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09001960\"]}");
+	add("{\"term\":\"arere\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12222455\"]}");
+	add("{\"term\":\"ares\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09578365\"]}");
+	add("{\"term\":\"arete\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09228397\"]}");
+	add("{\"term\":\"arethusa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12066329\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

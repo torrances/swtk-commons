@@ -1,0 +1,26 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.d.o.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDOG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"dog\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"02712903\", \"03907626\", \"07692347\", \"09905672\", \"10042764\", \"10133978\", \"02086723\"]}");
+	add("{\"term\":\"dogbane\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11787823\"]}");
+	add("{\"term\":\"dogcart\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03222442\"]}");
+	add("{\"term\":\"doge\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10042989\"]}");
+	add("{\"term\":\"dogfight\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00973906\", \"00976310\", \"01174931\", \"07473003\"]}");
+	add("{\"term\":\"dogfighter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10043106\"]}");
+	add("{\"term\":\"dogfish\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01494515\", \"02641717\"]}");
+	add("{\"term\":\"doggedness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04871746\"]}");
+	add("{\"term\":\"doggerel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06390876\"]}");
+	add("{\"term\":\"doggie\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02087384\"]}");
+	add("{\"term\":\"doggy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02087384\"]}");
+	add("{\"term\":\"doghouse\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06210664\", \"03615737\"]}");
+	add("{\"term\":\"dogie\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02406572\"]}");
+	add("{\"term\":\"dogleg\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03222803\", \"13914835\"]}");
+	add("{\"term\":\"dogma\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05969331\", \"06802899\"]}");
+	add("{\"term\":\"dogmatism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06215945\"]}");
+	add("{\"term\":\"dogmatist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10043381\"]}");
+	add("{\"term\":\"dogsbody\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10043610\"]}");
+	add("{\"term\":\"dogshit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06623729\"]}");
+	add("{\"term\":\"dogsled\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03222901\"]}");
+	add("{\"term\":\"dogtooth\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03223037\", \"05314590\", \"12470849\"]}");
+	add("{\"term\":\"dogtrot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00295210\"]}");
+	add("{\"term\":\"dogwatch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15317860\"]}");
+	add("{\"term\":\"dogwood\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12967931\", \"12967609\"]}");
+	add("{\"term\":\"dogy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02406572\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

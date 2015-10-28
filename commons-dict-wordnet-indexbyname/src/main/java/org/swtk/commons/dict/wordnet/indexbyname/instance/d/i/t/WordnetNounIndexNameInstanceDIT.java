@@ -1,0 +1,11 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.d.i.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDIT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"dit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06818684\"]}");
+	add("{\"term\":\"dita\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11790725\"]}");
+	add("{\"term\":\"ditch\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09290664\", \"03218956\"]}");
+	add("{\"term\":\"ditchmoss\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12635078\"]}");
+	add("{\"term\":\"dither\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14427176\"]}");
+	add("{\"term\":\"dithering\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13489989\"]}");
+	add("{\"term\":\"dithyramb\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06390717\", \"07254088\"]}");
+	add("{\"term\":\"dittany\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12733386\"]}");
+	add("{\"term\":\"ditto\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06834163\"]}");
+	add("{\"term\":\"ditty\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07064543\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

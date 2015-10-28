@@ -1,0 +1,28 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.b.o.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBOA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"boa\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01744584\", \"03330529\"]}");
+	add("{\"term\":\"boann\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09531500\"]}");
+	add("{\"term\":\"boar\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02398666\", \"02399079\"]}");
+	add("{\"term\":\"board\", \"synsetCount\":9, \"upperType\":\"NOUN\", \"ids\":[\"02860303\", \"03037971\", \"03102791\", \"03205892\", \"03216337\", \"07580824\", \"02859743\", \"15126421\", \"08339911\"]}");
+	add("{\"term\":\"boarder\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"09881751\", \"09881885\", \"10289155\"]}");
+	add("{\"term\":\"boarding\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02860645\", \"00059157\"]}");
+	add("{\"term\":\"boardinghouse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02860757\"]}");
+	add("{\"term\":\"boardroom\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02860924\"]}");
+	add("{\"term\":\"boards\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02861187\", \"02861345\"]}");
+	add("{\"term\":\"boardwalk\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02861501\"]}");
+	add("{\"term\":\"boarfish\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01456116\", \"01456383\"]}");
+	add("{\"term\":\"boarhound\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02091397\"]}");
+	add("{\"term\":\"boast\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07244190\"]}");
+	add("{\"term\":\"boaster\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09891532\"]}");
+	add("{\"term\":\"boastfulness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04894568\"]}");
+	add("{\"term\":\"boasting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07244190\"]}");
+	add("{\"term\":\"boat\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03460968\", \"02861626\"]}");
+	add("{\"term\":\"boatbill\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02013935\"]}");
+	add("{\"term\":\"boatbuilder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09881269\"]}");
+	add("{\"term\":\"boater\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09881352\", \"02862524\"]}");
+	add("{\"term\":\"boathouse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02862783\"]}");
+	add("{\"term\":\"boating\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00316216\"]}");
+	add("{\"term\":\"boatload\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13797723\"]}");
+	add("{\"term\":\"boatman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09881352\"]}");
+	add("{\"term\":\"boatmanship\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05647786\"]}");
+	add("{\"term\":\"boatswain\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09881589\"]}");
+	add("{\"term\":\"boatyard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02863295\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

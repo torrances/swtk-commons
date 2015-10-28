@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.s.a.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSAI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"saida\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08977985\"]}");
+	add("{\"term\":\"saiga\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02428822\"]}");
+	add("{\"term\":\"saigon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09187034\"]}");
+	add("{\"term\":\"sail\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04135514\", \"00313758\", \"04135005\"]}");
+	add("{\"term\":\"sailboat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04135600\"]}");
+	add("{\"term\":\"sailcloth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04135793\"]}");
+	add("{\"term\":\"sailfish\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02632911\", \"07808359\"]}");
+	add("{\"term\":\"sailing\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00304321\", \"00058477\", \"00314632\", \"00315295\"]}");
+	add("{\"term\":\"sailmaker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10566118\"]}");
+	add("{\"term\":\"sailor\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"02862524\", \"09880801\", \"10566190\"]}");
+	add("{\"term\":\"sailplane\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03444738\"]}");
+	add("{\"term\":\"sailplaning\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00304321\"]}");
+	add("{\"term\":\"saimiri\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02496605\"]}");
+	add("{\"term\":\"sainfoin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12572814\"]}");
+	add("{\"term\":\"saint\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"10344909\", \"10566407\", \"10566702\"]}");
+	add("{\"term\":\"sainthood\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00600444\", \"08169654\"]}");
+	add("{\"term\":\"saintliness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04855614\"]}");
+	add("{\"term\":\"saintpaulia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12853736\"]}");
+	add("{\"term\":\"saipan\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01295931\", \"08857062\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

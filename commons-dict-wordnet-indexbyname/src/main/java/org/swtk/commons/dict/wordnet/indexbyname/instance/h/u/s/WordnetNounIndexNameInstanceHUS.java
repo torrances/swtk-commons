@@ -1,0 +1,24 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.h.u.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHUS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11087875\"]}");
+	add("{\"term\":\"husain\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11088186\", \"11088391\"]}");
+	add("{\"term\":\"husayn\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11088186\", \"11088391\"]}");
+	add("{\"term\":\"husband\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10213586\"]}");
+	add("{\"term\":\"husbandman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10098586\"]}");
+	add("{\"term\":\"husbandry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00918295\"]}");
+	add("{\"term\":\"hush\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04989727\"]}");
+	add("{\"term\":\"hushing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07399498\"]}");
+	add("{\"term\":\"hushpuppy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07704643\"]}");
+	add("{\"term\":\"husk\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13160424\", \"14830069\"]}");
+	add("{\"term\":\"huskiness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04996097\", \"05038369\"]}");
+	add("{\"term\":\"husking\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00395611\"]}");
+	add("{\"term\":\"husky\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02112613\"]}");
+	add("{\"term\":\"huss\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11087875\"]}");
+	add("{\"term\":\"hussar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10213960\"]}");
+	add("{\"term\":\"hussein\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11088186\", \"11088391\"]}");
+	add("{\"term\":\"husserl\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11088620\"]}");
+	add("{\"term\":\"hussite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10214082\"]}");
+	add("{\"term\":\"hussy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09792353\"]}");
+	add("{\"term\":\"hustings\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00801782\"]}");
+	add("{\"term\":\"hustle\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00556175\", \"00780744\"]}");
+	add("{\"term\":\"hustler\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10214185\", \"10682754\"]}");
+	add("{\"term\":\"huston\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11088750\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

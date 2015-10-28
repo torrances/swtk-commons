@@ -1,0 +1,25 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.b.e.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBET {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"bet\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00507669\", \"13364541\"]}");
+	add("{\"term\":\"beta\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11852577\", \"06847295\"]}");
+	add("{\"term\":\"betaine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14746112\"]}");
+	add("{\"term\":\"betatron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02836043\"]}");
+	add("{\"term\":\"betel\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13170753\", \"13176801\"]}");
+	add("{\"term\":\"betelgeuse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09242638\"]}");
+	add("{\"term\":\"beth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06849872\"]}");
+	add("{\"term\":\"bethe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10869869\"]}");
+	add("{\"term\":\"bethel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02836245\"]}");
+	add("{\"term\":\"bethlehem\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08813084\", \"09157947\"]}");
+	add("{\"term\":\"bethune\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10870065\"]}");
+	add("{\"term\":\"betise\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01250622\"]}");
+	add("{\"term\":\"betrayal\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04887074\", \"00751065\"]}");
+	add("{\"term\":\"betrayer\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10047315\", \"10225792\"]}");
+	add("{\"term\":\"betrothal\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01038810\", \"07242871\"]}");
+	add("{\"term\":\"betrothed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09870983\"]}");
+	add("{\"term\":\"better\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"05150937\", \"09871127\", \"09871284\", \"05150805\"]}");
+	add("{\"term\":\"betterment\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00261872\", \"14446155\", \"07371988\"]}");
+	add("{\"term\":\"bettong\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01883357\"]}");
+	add("{\"term\":\"bettongia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01883211\"]}");
+	add("{\"term\":\"bettor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09871284\"]}");
+	add("{\"term\":\"betula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12301403\"]}");
+	add("{\"term\":\"betulaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12301004\"]}");
+	add("{\"term\":\"betweenbrain\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05504641\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

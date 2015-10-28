@@ -1,0 +1,24 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.k.h.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceKHA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"khabarovsk\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09027643\", \"09027827\"]}");
+	add("{\"term\":\"khachaturian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11123638\"]}");
+	add("{\"term\":\"khadafy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11270277\"]}");
+	add("{\"term\":\"khaddar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03620509\"]}");
+	add("{\"term\":\"khadi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03620509\"]}");
+	add("{\"term\":\"khaki\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03620615\"]}");
+	add("{\"term\":\"khakis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03620772\"]}");
+	add("{\"term\":\"khalif\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09906948\"]}");
+	add("{\"term\":\"khalifah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09906948\"]}");
+	add("{\"term\":\"khalka\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06941785\", \"09757184\"]}");
+	add("{\"term\":\"khalkha\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06941785\", \"09757184\"]}");
+	add("{\"term\":\"khalsa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08116791\"]}");
+	add("{\"term\":\"khama\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11123854\"]}");
+	add("{\"term\":\"khamsin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11462848\"]}");
+	add("{\"term\":\"khamti\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06948518\"]}");
+	add("{\"term\":\"khan\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02964471\", \"10249767\"]}");
+	add("{\"term\":\"khanate\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00595185\", \"08575619\"]}");
+	add("{\"term\":\"khanty\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06971758\", \"09726307\"]}");
+	add("{\"term\":\"kharkiv\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09039230\"]}");
+	add("{\"term\":\"kharkov\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09039230\"]}");
+	add("{\"term\":\"khartoum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09052580\"]}");
+	add("{\"term\":\"khat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03614083\"]}");
+	add("{\"term\":\"khaya\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12719665\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

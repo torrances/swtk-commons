@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.m.o.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMOS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"mosaic\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"03793437\", \"03793580\", \"05940766\", \"06583966\", \"14304277\", \"03793292\"]}");
+	add("{\"term\":\"mosaicism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14594609\"]}");
+	add("{\"term\":\"mosan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06926544\"]}");
+	add("{\"term\":\"mosander\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11213240\"]}");
+	add("{\"term\":\"moschus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02437730\"]}");
+	add("{\"term\":\"moscow\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09026438\"]}");
+	add("{\"term\":\"moselle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07912740\"]}");
+	add("{\"term\":\"moses\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11213635\", \"11213382\"]}");
+	add("{\"term\":\"moshav\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08243759\"]}");
+	add("{\"term\":\"moslem\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09701687\"]}");
+	add("{\"term\":\"mosque\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03793728\"]}");
+	add("{\"term\":\"mosquito\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02202850\"]}");
+	add("{\"term\":\"mosquitofish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01452015\"]}");
+	add("{\"term\":\"moss\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11557957\"]}");
+	add("{\"term\":\"mossad\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08363417\"]}");
+	add("{\"term\":\"mossback\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10351729\"]}");
+	add("{\"term\":\"mossbauer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11213804\"]}");
+	add("{\"term\":\"mostaccioli\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07888468\"]}");
+	add("{\"term\":\"mosul\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08934790\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,0 +1,28 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.p.o.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePOP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"pop\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07074002\", \"07405000\", \"07943752\", \"10007601\"]}");
+	add("{\"term\":\"popcorn\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07748612\", \"12165994\"]}");
+	add("{\"term\":\"pope\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11262733\", \"10473089\"]}");
+	add("{\"term\":\"popery\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01032520\"]}");
+	add("{\"term\":\"popgun\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03989857\"]}");
+	add("{\"term\":\"popillia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02175892\"]}");
+	add("{\"term\":\"popinjay\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01819904\", \"10474201\"]}");
+	add("{\"term\":\"poplar\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12752161\", \"12752474\"]}");
+	add("{\"term\":\"poplin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03989970\"]}");
+	add("{\"term\":\"popover\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07706484\"]}");
+	add("{\"term\":\"popper\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03990070\", \"03990172\", \"11262839\"]}");
+	add("{\"term\":\"poppet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03990286\"]}");
+	add("{\"term\":\"popping\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07405000\"]}");
+	add("{\"term\":\"poppy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11921038\"]}");
+	add("{\"term\":\"poppycock\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06622262\"]}");
+	add("{\"term\":\"popsicle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07631383\"]}");
+	add("{\"term\":\"populace\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08196607\"]}");
+	add("{\"term\":\"popularisation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00273921\", \"07188911\"]}");
+	add("{\"term\":\"populariser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10474308\"]}");
+	add("{\"term\":\"popularism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07038586\"]}");
+	add("{\"term\":\"popularity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04815891\"]}");
+	add("{\"term\":\"popularization\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00273921\", \"07188911\"]}");
+	add("{\"term\":\"popularizer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10474308\"]}");
+	add("{\"term\":\"population\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"01260649\", \"13802016\", \"06035684\", \"08195659\", \"08196797\"]}");
+	add("{\"term\":\"populism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05974800\"]}");
+	add("{\"term\":\"populist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10021663\"]}");
+	add("{\"term\":\"populus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12751962\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

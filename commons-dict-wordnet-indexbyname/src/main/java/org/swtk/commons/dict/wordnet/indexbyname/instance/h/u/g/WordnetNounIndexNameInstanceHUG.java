@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.h.u.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHUG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hug\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00418872\"]}");
+	add("{\"term\":\"hugger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10210620\"]}");
+	add("{\"term\":\"hugging\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00855630\"]}");
+	add("{\"term\":\"huggins\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11084467\"]}");
+	add("{\"term\":\"hughes\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"11084657\", \"11084829\", \"11085096\", \"11085224\"]}");
+	add("{\"term\":\"hugo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11085340\"]}");
+	add("{\"term\":\"hugueninia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11909547\"]}");
+	add("{\"term\":\"huguenot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10210708\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

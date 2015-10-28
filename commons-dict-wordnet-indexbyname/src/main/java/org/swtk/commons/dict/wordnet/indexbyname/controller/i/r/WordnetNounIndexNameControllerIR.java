@@ -1,0 +1,25 @@
+package org.swtk.commons.dict.wordnet.indexbyname.controller.i.r;  import java.util.Collection; import java.util.Set; import java.util.TreeSet;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  	import org.swtk.commons.dict.wordnet.indexbyname.instance.i.r.a.WordnetNounIndexNameInstanceIRA;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.i.r.e.WordnetNounIndexNameInstanceIRE;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.i.r.i.WordnetNounIndexNameInstanceIRI;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.i.r.o.WordnetNounIndexNameInstanceIRO;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.i.r.r.WordnetNounIndexNameInstanceIRR;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.i.r.t.WordnetNounIndexNameInstanceIRT;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.i.r.u.WordnetNounIndexNameInstanceIRU;
+	import org.swtk.commons.dict.wordnet.indexbyname.instance.i.r.v.WordnetNounIndexNameInstanceIRV;
+  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerIR {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException {  		String key = TERM.substring(0, 4).toLowerCase(); 			if ("ira".equals(key)) return WordnetNounIndexNameInstanceIRA.get(TERM);
+	if ("ire".equals(key)) return WordnetNounIndexNameInstanceIRE.get(TERM);
+	if ("iri".equals(key)) return WordnetNounIndexNameInstanceIRI.get(TERM);
+	if ("iro".equals(key)) return WordnetNounIndexNameInstanceIRO.get(TERM);
+	if ("irr".equals(key)) return WordnetNounIndexNameInstanceIRR.get(TERM);
+	if ("irt".equals(key)) return WordnetNounIndexNameInstanceIRT.get(TERM);
+	if ("iru".equals(key)) return WordnetNounIndexNameInstanceIRU.get(TERM);
+	if ("irv".equals(key)) return WordnetNounIndexNameInstanceIRV.get(TERM);
+  		throw new BusinessException("TERM not found (id = %s)", TERM); 	} 	 	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceIRA.terms());
+	set.addAll(WordnetNounIndexNameInstanceIRE.terms());
+	set.addAll(WordnetNounIndexNameInstanceIRI.terms());
+	set.addAll(WordnetNounIndexNameInstanceIRO.terms());
+	set.addAll(WordnetNounIndexNameInstanceIRR.terms());
+	set.addAll(WordnetNounIndexNameInstanceIRT.terms());
+	set.addAll(WordnetNounIndexNameInstanceIRU.terms());
+	set.addAll(WordnetNounIndexNameInstanceIRV.terms());
+  		return set; 	} }

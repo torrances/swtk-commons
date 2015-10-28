@@ -1,0 +1,21 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.f.r.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFRU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"fructidor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15202752\"]}");
+	add("{\"term\":\"fructification\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11570656\", \"13506611\"]}");
+	add("{\"term\":\"fructose\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14899083\"]}");
+	add("{\"term\":\"fructosuria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14291090\"]}");
+	add("{\"term\":\"frugality\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04900553\"]}");
+	add("{\"term\":\"frugalness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04900553\"]}");
+	add("{\"term\":\"fruit\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07309308\", \"04620079\", \"13155706\"]}");
+	add("{\"term\":\"fruitage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13107513\"]}");
+	add("{\"term\":\"fruitcake\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07646959\", \"09994026\"]}");
+	add("{\"term\":\"fruiterer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10133766\"]}");
+	add("{\"term\":\"fruitfulness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05632849\", \"05154628\"]}");
+	add("{\"term\":\"fruition\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00062737\", \"05221642\", \"14599394\"]}");
+	add("{\"term\":\"fruitlessness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05155433\", \"05657383\"]}");
+	add("{\"term\":\"fruitlet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13156451\"]}");
+	add("{\"term\":\"fruitwood\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12673637\"]}");
+	add("{\"term\":\"frumenty\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07720401\"]}");
+	add("{\"term\":\"frump\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10133978\"]}");
+	add("{\"term\":\"frunze\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09043162\"]}");
+	add("{\"term\":\"frustration\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07533902\", \"00068810\", \"07556254\"]}");
+	add("{\"term\":\"frustum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13940490\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

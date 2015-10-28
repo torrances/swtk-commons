@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.j.a.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceJAM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"jam\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"01255966\", \"08200316\", \"14432893\", \"07658542\"]}");
+	add("{\"term\":\"jamaica\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08771562\", \"08771766\"]}");
+	add("{\"term\":\"jamaican\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09737488\"]}");
+	add("{\"term\":\"jamb\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03597960\"]}");
+	add("{\"term\":\"jambalaya\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07885587\"]}");
+	add("{\"term\":\"jambeau\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03462393\"]}");
+	add("{\"term\":\"jamberry\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12932200\", \"12932433\"]}");
+	add("{\"term\":\"jambon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07685636\"]}");
+	add("{\"term\":\"jamboree\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00519725\"]}");
+	add("{\"term\":\"jambos\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12353235\"]}");
+	add("{\"term\":\"jambosa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12352735\"]}");
+	add("{\"term\":\"james\", \"synsetCount\":10, \"upperType\":\"NOUN\", \"ids\":[\"06458381\", \"09343891\", \"09344086\", \"11098972\", \"11099242\", \"11099382\", \"11099534\", \"11099792\", \"11100164\", \"11100341\"]}");
+	add("{\"term\":\"jamesonia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13232077\"]}");
+	add("{\"term\":\"jamestown\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09173203\"]}");
+	add("{\"term\":\"jamison\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11100591\"]}");
+	add("{\"term\":\"jamjar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03598309\"]}");
+	add("{\"term\":\"jammer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03598118\"]}");
+	add("{\"term\":\"jammies\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03883150\"]}");
+	add("{\"term\":\"jamming\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01255966\"]}");
+	add("{\"term\":\"jampan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03598221\"]}");
+	add("{\"term\":\"jampot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03598309\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,0 +1,27 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.o.p.h;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceOPH {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"opheodrys\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01732479\"]}");
+	add("{\"term\":\"ophidia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01729031\"]}");
+	add("{\"term\":\"ophidian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01729333\"]}");
+	add("{\"term\":\"ophidiidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02561355\"]}");
+	add("{\"term\":\"ophidism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14535611\"]}");
+	add("{\"term\":\"ophiodon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02555525\"]}");
+	add("{\"term\":\"ophiodontidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02555368\"]}");
+	add("{\"term\":\"ophioglossaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12980727\"]}");
+	add("{\"term\":\"ophioglossales\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12980562\"]}");
+	add("{\"term\":\"ophioglossum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12980971\"]}");
+	add("{\"term\":\"ophiolatry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01048716\"]}");
+	add("{\"term\":\"ophiophagus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01751201\"]}");
+	add("{\"term\":\"ophisaurus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01692980\"]}");
+	add("{\"term\":\"ophiuchus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09402484\"]}");
+	add("{\"term\":\"ophiurida\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02320305\"]}");
+	add("{\"term\":\"ophiuroidea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02320140\"]}");
+	add("{\"term\":\"ophryon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05241768\"]}");
+	add("{\"term\":\"ophrys\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12095179\"]}");
+	add("{\"term\":\"ophthalmectomy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00688079\"]}");
+	add("{\"term\":\"ophthalmia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14282822\"]}");
+	add("{\"term\":\"ophthalmitis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14282822\"]}");
+	add("{\"term\":\"ophthalmologist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10398772\"]}");
+	add("{\"term\":\"ophthalmology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06063977\"]}");
+	add("{\"term\":\"ophthalmoplegia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14374624\"]}");
+	add("{\"term\":\"ophthalmoscope\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03856133\"]}");
+	add("{\"term\":\"ophthalmoscopy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00144583\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

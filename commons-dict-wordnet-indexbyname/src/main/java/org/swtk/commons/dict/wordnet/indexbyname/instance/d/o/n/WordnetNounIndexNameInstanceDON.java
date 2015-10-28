@@ -1,0 +1,25 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.d.o.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDON {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"don\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"06351765\", \"09291684\", \"09532107\", \"10045020\", \"10484108\", \"10044920\"]}");
+	add("{\"term\":\"dona\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06351933\"]}");
+	add("{\"term\":\"donar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09608825\"]}");
+	add("{\"term\":\"donatello\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10959032\"]}");
+	add("{\"term\":\"donation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01091702\", \"13291061\"]}");
+	add("{\"term\":\"donatism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06238217\"]}");
+	add("{\"term\":\"donatist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10045116\"]}");
+	add("{\"term\":\"donatus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10959179\"]}");
+	add("{\"term\":\"donbas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09038602\"]}");
+	add("{\"term\":\"donbass\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09038602\"]}");
+	add("{\"term\":\"donee\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09869529\"]}");
+	add("{\"term\":\"donetsk\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09038469\"]}");
+	add("{\"term\":\"donetske\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09038469\"]}");
+	add("{\"term\":\"dong\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13696995\"]}");
+	add("{\"term\":\"dongle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03226054\"]}");
+	add("{\"term\":\"donizetti\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10959352\"]}");
+	add("{\"term\":\"donjon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03615311\"]}");
+	add("{\"term\":\"donkey\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02392211\", \"06894410\"]}");
+	add("{\"term\":\"donkeywork\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00622716\"]}");
+	add("{\"term\":\"donkin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10959622\"]}");
+	add("{\"term\":\"donna\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10045360\"]}");
+	add("{\"term\":\"donne\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10959848\"]}");
+	add("{\"term\":\"donor\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10045783\", \"10045455\"]}");
+	add("{\"term\":\"donut\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07654678\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,0 +1,21 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.o.d.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceODO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"odo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11376631\"]}");
+	add("{\"term\":\"odoacer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11232216\"]}");
+	add("{\"term\":\"odobenidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02083934\"]}");
+	add("{\"term\":\"odobenus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02084075\"]}");
+	add("{\"term\":\"odocoileus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02434785\"]}");
+	add("{\"term\":\"odometer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03846663\"]}");
+	add("{\"term\":\"odonata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02270627\"]}");
+	add("{\"term\":\"odonate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02270800\"]}");
+	add("{\"term\":\"odontalgia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14347383\"]}");
+	add("{\"term\":\"odontaspididae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01489718\"]}");
+	add("{\"term\":\"odontaspis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01489953\"]}");
+	add("{\"term\":\"odontiasis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13586984\"]}");
+	add("{\"term\":\"odontoceti\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02069103\"]}");
+	add("{\"term\":\"odontoglossum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12094492\"]}");
+	add("{\"term\":\"odontology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06056961\"]}");
+	add("{\"term\":\"odontophorus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01808087\"]}");
+	add("{\"term\":\"odor\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05721684\", \"04987257\"]}");
+	add("{\"term\":\"odour\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04987257\", \"05721684\"]}");
+	add("{\"term\":\"odovacar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11232216\"]}");
+	add("{\"term\":\"odovakar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11232216\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

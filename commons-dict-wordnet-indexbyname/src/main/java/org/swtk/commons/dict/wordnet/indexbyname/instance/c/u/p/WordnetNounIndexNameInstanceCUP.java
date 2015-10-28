@@ -1,0 +1,20 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.c.u.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCUP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cup\", \"synsetCount\":8, \"upperType\":\"NOUN\", \"ids\":[\"03152567\", \"03152796\", \"07947104\", \"12288358\", \"13640449\", \"13927671\", \"13788873\", \"03152175\"]}");
+	add("{\"term\":\"cupbearer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10002583\"]}");
+	add("{\"term\":\"cupboard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03152990\"]}");
+	add("{\"term\":\"cupcake\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07646632\"]}");
+	add("{\"term\":\"cupel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02872315\"]}");
+	add("{\"term\":\"cupflower\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12929405\", \"12934551\"]}");
+	add("{\"term\":\"cupful\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13788873\"]}");
+	add("{\"term\":\"cupid\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06894274\", \"09583190\"]}");
+	add("{\"term\":\"cupidity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04952935\"]}");
+	add("{\"term\":\"cupola\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03153393\", \"03153474\"]}");
+	add("{\"term\":\"cuppa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07950039\"]}");
+	add("{\"term\":\"cupper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07950039\"]}");
+	add("{\"term\":\"cupping\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00700047\"]}");
+	add("{\"term\":\"cupressaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11649952\"]}");
+	add("{\"term\":\"cupressus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11650802\"]}");
+	add("{\"term\":\"cuprimine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03915954\"]}");
+	add("{\"term\":\"cuprite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14697486\"]}");
+	add("{\"term\":\"cupronickel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14742086\"]}");
+	add("{\"term\":\"cupule\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02468216\", \"12288448\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

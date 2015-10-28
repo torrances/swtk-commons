@@ -1,0 +1,28 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.t.a.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTAP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"tap\", \"synsetCount\":8, \"upperType\":\"NOUN\", \"ids\":[\"00126256\", \"00655643\", \"04398064\", \"04398245\", \"04398363\", \"04566737\", \"07424621\", \"07403587\"]}");
+	add("{\"term\":\"tapa\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04398532\", \"13183843\"]}");
+	add("{\"term\":\"tape\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"03713575\", \"04399200\", \"08701724\", \"04398925\", \"04398656\"]}");
+	add("{\"term\":\"tapeline\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04399200\"]}");
+	add("{\"term\":\"tapenade\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07874312\"]}");
+	add("{\"term\":\"taper\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"02951508\", \"04589115\", \"05078537\", \"13925486\"]}");
+	add("{\"term\":\"tapering\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00354437\"]}");
+	add("{\"term\":\"tapestry\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04400491\", \"04400642\", \"04774278\"]}");
+	add("{\"term\":\"tapeworm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01930097\"]}");
+	add("{\"term\":\"taphephobia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14407914\"]}");
+	add("{\"term\":\"taphouse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04024793\"]}");
+	add("{\"term\":\"taping\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04398925\"]}");
+	add("{\"term\":\"tapioca\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07635490\"]}");
+	add("{\"term\":\"tapir\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02396232\"]}");
+	add("{\"term\":\"tapiridae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02395952\"]}");
+	add("{\"term\":\"tapirus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02396097\"]}");
+	add("{\"term\":\"tapis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04400642\"]}");
+	add("{\"term\":\"tapotement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00661567\"]}");
+	add("{\"term\":\"tappa\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04398532\", \"13183843\"]}");
+	add("{\"term\":\"tappan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11351187\"]}");
+	add("{\"term\":\"tapper\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"10710644\", \"10710814\", \"10710981\", \"10711096\", \"10711260\"]}");
+	add("{\"term\":\"tappet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04400901\"]}");
+	add("{\"term\":\"tapping\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07411258\"]}");
+	add("{\"term\":\"taproom\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02800154\"]}");
+	add("{\"term\":\"taproot\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05843270\", \"13146809\"]}");
+	add("{\"term\":\"taps\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06817341\"]}");
+	add("{\"term\":\"tapster\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10711260\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

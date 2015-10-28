@@ -1,0 +1,8 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.b.h.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBHA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"bhadon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15245299\"]}");
+	add("{\"term\":\"bhadrapada\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15245299\"]}");
+	add("{\"term\":\"bhaga\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09547975\"]}");
+	add("{\"term\":\"bhagavadgita\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06442826\"]}");
+	add("{\"term\":\"bhakti\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01045030\"]}");
+	add("{\"term\":\"bhang\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02837352\"]}");
+	add("{\"term\":\"bharat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08920762\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

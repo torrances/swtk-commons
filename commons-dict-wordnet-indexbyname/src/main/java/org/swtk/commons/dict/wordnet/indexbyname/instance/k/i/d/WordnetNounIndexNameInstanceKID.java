@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.k.i.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceKID {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"kid\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"02419466\", \"09937706\", \"11133479\", \"14787025\", \"09937051\"]}");
+	add("{\"term\":\"kidd\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11124448\"]}");
+	add("{\"term\":\"kiddie\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10250406\"]}");
+	add("{\"term\":\"kiddy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10250406\"]}");
+	add("{\"term\":\"kidnaper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10250498\"]}");
+	add("{\"term\":\"kidnapper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10250498\"]}");
+	add("{\"term\":\"kidnapping\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00777199\"]}");
+	add("{\"term\":\"kidney\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05340350\"]}");
+	add("{\"term\":\"kidskin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14787025\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

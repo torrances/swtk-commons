@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.s.l.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSLU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"slub\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04956082\"]}");
+	add("{\"term\":\"sludge\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14980800\", \"14615984\"]}");
+	add("{\"term\":\"slug\", \"synsetCount\":8, \"upperType\":\"NOUN\", \"ids\":[\"00135600\", \"01948326\", \"04512230\", \"07938847\", \"10632447\", \"13411961\", \"13741207\", \"02919696\"]}");
+	add("{\"term\":\"slugabed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10278593\"]}");
+	add("{\"term\":\"slugfest\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01176316\"]}");
+	add("{\"term\":\"sluggard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10632447\"]}");
+	add("{\"term\":\"slugger\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09890501\", \"09863364\"]}");
+	add("{\"term\":\"sluggishness\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04643310\", \"05069687\", \"14038461\"]}");
+	add("{\"term\":\"sluice\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04251507\"]}");
+	add("{\"term\":\"sluicegate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04251743\"]}");
+	add("{\"term\":\"sluiceway\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04251507\"]}");
+	add("{\"term\":\"slum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08669407\"]}");
+	add("{\"term\":\"slumber\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14038619\", \"14048353\"]}");
+	add("{\"term\":\"slumberer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10629981\"]}");
+	add("{\"term\":\"slumgullion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07608678\"]}");
+	add("{\"term\":\"slump\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14512697\", \"13577712\"]}");
+	add("{\"term\":\"slur\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04701789\", \"06731387\", \"06879003\"]}");
+	add("{\"term\":\"slurry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14615513\"]}");
+	add("{\"term\":\"slush\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15067875\"]}");
+	add("{\"term\":\"slut\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09792353\", \"10628714\"]}");
+	add("{\"term\":\"sluttishness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04904172\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

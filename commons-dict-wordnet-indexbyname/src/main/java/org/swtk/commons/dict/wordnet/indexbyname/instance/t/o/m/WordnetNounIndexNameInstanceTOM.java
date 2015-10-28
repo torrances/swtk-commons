@@ -1,0 +1,28 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.t.o.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTOM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"tom\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01796985\", \"02125377\"]}");
+	add("{\"term\":\"tomahawk\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04457237\"]}");
+	add("{\"term\":\"tomalley\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07809922\"]}");
+	add("{\"term\":\"tomatillo\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07750531\", \"12932200\", \"12932433\"]}");
+	add("{\"term\":\"tomato\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12926577\", \"07749993\"]}");
+	add("{\"term\":\"tomb\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03459977\"]}");
+	add("{\"term\":\"tombac\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15100258\"]}");
+	add("{\"term\":\"tombak\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15100258\"]}");
+	add("{\"term\":\"tombaugh\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11365534\"]}");
+	add("{\"term\":\"tombigbee\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09482687\"]}");
+	add("{\"term\":\"tombola\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00505855\"]}");
+	add("{\"term\":\"tomboy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10734679\"]}");
+	add("{\"term\":\"tomboyishness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04674615\"]}");
+	add("{\"term\":\"tombstone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03460432\"]}");
+	add("{\"term\":\"tomcat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02125377\"]}");
+	add("{\"term\":\"tome\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06425222\"]}");
+	add("{\"term\":\"tomentum\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05255349\", \"13110851\"]}");
+	add("{\"term\":\"tomfool\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10120530\"]}");
+	add("{\"term\":\"tomfoolery\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00513854\"]}");
+	add("{\"term\":\"tomistoma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01700478\"]}");
+	add("{\"term\":\"tommyrot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06623500\"]}");
+	add("{\"term\":\"tomograph\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04457514\"]}");
+	add("{\"term\":\"tomography\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00902781\"]}");
+	add("{\"term\":\"tomorrow\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"15288606\", \"15180851\"]}");
+	add("{\"term\":\"tompion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04395127\"]}");
+	add("{\"term\":\"tomtate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02591692\"]}");
+	add("{\"term\":\"tomtit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01595335\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

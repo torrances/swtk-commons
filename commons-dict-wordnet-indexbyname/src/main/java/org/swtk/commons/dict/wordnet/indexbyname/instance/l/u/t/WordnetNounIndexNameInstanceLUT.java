@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.l.u.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLUT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"luta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08744578\"]}");
+	add("{\"term\":\"lutanist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10297335\"]}");
+	add("{\"term\":\"lute\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03703694\", \"14730375\"]}");
+	add("{\"term\":\"lutecium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14668241\"]}");
+	add("{\"term\":\"lutefisk\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07887041\"]}");
+	add("{\"term\":\"lutein\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14745796\"]}");
+	add("{\"term\":\"lutenist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10297335\"]}");
+	add("{\"term\":\"luteotropin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14773722\"]}");
+	add("{\"term\":\"lutetium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14668241\"]}");
+	add("{\"term\":\"lutfisk\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07887041\"]}");
+	add("{\"term\":\"luther\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11165354\"]}");
+	add("{\"term\":\"lutheran\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10297512\"]}");
+	add("{\"term\":\"lutheranism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06240321\"]}");
+	add("{\"term\":\"luthier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10297206\"]}");
+	add("{\"term\":\"luting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14730375\"]}");
+	add("{\"term\":\"lutist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10297335\"]}");
+	add("{\"term\":\"lutjanidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02589013\"]}");
+	add("{\"term\":\"lutjanus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02589496\"]}");
+	add("{\"term\":\"lutra\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02447278\"]}");
+	add("{\"term\":\"lutrinae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02447131\"]}");
+	add("{\"term\":\"lutyens\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11165553\"]}");
+	add("{\"term\":\"lutzen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01287798\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

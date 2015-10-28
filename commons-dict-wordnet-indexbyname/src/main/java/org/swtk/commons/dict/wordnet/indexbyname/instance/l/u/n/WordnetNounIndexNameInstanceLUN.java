@@ -1,0 +1,26 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.l.u.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLUN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"luna\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09594427\"]}");
+	add("{\"term\":\"lunacy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00513854\", \"14418644\"]}");
+	add("{\"term\":\"lunaria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11911864\"]}");
+	add("{\"term\":\"lunatic\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10011068\", \"10296461\"]}");
+	add("{\"term\":\"lunation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15232668\"]}");
+	add("{\"term\":\"lunch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07590641\"]}");
+	add("{\"term\":\"luncheon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07590641\"]}");
+	add("{\"term\":\"luncher\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10296829\"]}");
+	add("{\"term\":\"lunching\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00842958\"]}");
+	add("{\"term\":\"lunchroom\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03702886\"]}");
+	add("{\"term\":\"lunchtime\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15190964\"]}");
+	add("{\"term\":\"lund\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08784404\"]}");
+	add("{\"term\":\"lunda\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02050896\"]}");
+	add("{\"term\":\"lunette\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03702999\", \"03703146\"]}");
+	add("{\"term\":\"lung\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05394887\"]}");
+	add("{\"term\":\"lunge\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01176741\", \"00291120\"]}");
+	add("{\"term\":\"lungen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12764112\"]}");
+	add("{\"term\":\"lunger\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09979480\", \"10296928\"]}");
+	add("{\"term\":\"lungfish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02518819\"]}");
+	add("{\"term\":\"lungi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03703247\"]}");
+	add("{\"term\":\"lungyi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03703247\"]}");
+	add("{\"term\":\"lunkhead\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10059388\"]}");
+	add("{\"term\":\"lunt\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11165189\"]}");
+	add("{\"term\":\"lunula\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03703457\", \"05589688\"]}");
+	add("{\"term\":\"lunule\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05589688\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

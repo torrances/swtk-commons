@@ -1,0 +1,27 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.l.o.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLOR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"loranthaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12758143\"]}");
+	add("{\"term\":\"loranthus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12758505\"]}");
+	add("{\"term\":\"lorazepam\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03695331\"]}");
+	add("{\"term\":\"lorca\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11009973\"]}");
+	add("{\"term\":\"lorchel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13056149\"]}");
+	add("{\"term\":\"lord\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"10291374\", \"10408139\", \"09559474\"]}");
+	add("{\"term\":\"lordliness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04895107\", \"04917861\"]}");
+	add("{\"term\":\"lordolatry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01047337\"]}");
+	add("{\"term\":\"lordosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14528817\"]}");
+	add("{\"term\":\"lordship\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05205304\", \"06354151\"]}");
+	add("{\"term\":\"lore\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05994266\"]}");
+	add("{\"term\":\"lorelei\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10292354\"]}");
+	add("{\"term\":\"loren\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11158170\"]}");
+	add("{\"term\":\"lorentz\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11158291\"]}");
+	add("{\"term\":\"lorenz\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11158439\"]}");
+	add("{\"term\":\"lorfan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03663699\"]}");
+	add("{\"term\":\"lorgnette\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03695494\"]}");
+	add("{\"term\":\"lorica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01908057\"]}");
+	add("{\"term\":\"loricata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01699166\"]}");
+	add("{\"term\":\"loriinae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01822831\"]}");
+	add("{\"term\":\"lorikeet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01823187\"]}");
+	add("{\"term\":\"lorisidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02500986\"]}");
+	add("{\"term\":\"lorraine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08962877\"]}");
+	add("{\"term\":\"lorre\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11158914\"]}");
+	add("{\"term\":\"lorry\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03695799\", \"03695926\"]}");
+	add("{\"term\":\"lory\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01822989\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

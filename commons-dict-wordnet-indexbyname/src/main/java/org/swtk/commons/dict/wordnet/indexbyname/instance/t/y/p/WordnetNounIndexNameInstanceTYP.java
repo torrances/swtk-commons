@@ -1,0 +1,23 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.t.y.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTYP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"type\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"04511781\", \"06808825\", \"06838170\", \"08128385\", \"09928518\", \"05848697\"]}");
+	add("{\"term\":\"typeface\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06838449\"]}");
+	add("{\"term\":\"typescript\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06400752\"]}");
+	add("{\"term\":\"typesetter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09969425\"]}");
+	add("{\"term\":\"typewriter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04512331\"]}");
+	add("{\"term\":\"typewriting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06414208\"]}");
+	add("{\"term\":\"typha\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12175976\"]}");
+	add("{\"term\":\"typhaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12175776\"]}");
+	add("{\"term\":\"typhlopidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01742924\"]}");
+	add("{\"term\":\"typhoeus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09525832\"]}");
+	add("{\"term\":\"typhoid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14167898\"]}");
+	add("{\"term\":\"typhon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09526038\"]}");
+	add("{\"term\":\"typhoon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11541578\"]}");
+	add("{\"term\":\"typhus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14164544\"]}");
+	add("{\"term\":\"typicality\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14525129\"]}");
+	add("{\"term\":\"typification\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00902279\", \"05773898\"]}");
+	add("{\"term\":\"typing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06414208\"]}");
+	add("{\"term\":\"typist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10754830\"]}");
+	add("{\"term\":\"typo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06782461\"]}");
+	add("{\"term\":\"typographer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09969425\"]}");
+	add("{\"term\":\"typography\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06690719\", \"01104905\"]}");
+	add("{\"term\":\"typology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01015913\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

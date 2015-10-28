@@ -1,0 +1,26 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.p.e.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePEP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"pep\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04642190\"]}");
+	add("{\"term\":\"pepcid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03324803\"]}");
+	add("{\"term\":\"peperomia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13171671\"]}");
+	add("{\"term\":\"pepin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11249085\"]}");
+	add("{\"term\":\"peplos\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03920049\"]}");
+	add("{\"term\":\"peplum\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03920049\", \"03920225\"]}");
+	add("{\"term\":\"peplus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03920049\"]}");
+	add("{\"term\":\"pepper\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07736187\", \"07831564\", \"12921222\", \"13170289\"]}");
+	add("{\"term\":\"peppercorn\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07831564\"]}");
+	add("{\"term\":\"pepperidge\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12361272\"]}");
+	add("{\"term\":\"pepperiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05000490\"]}");
+	add("{\"term\":\"peppermint\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07622147\", \"12356609\", \"12876851\"]}");
+	add("{\"term\":\"pepperoni\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07693225\"]}");
+	add("{\"term\":\"pepperwood\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11728296\"]}");
+	add("{\"term\":\"pepperwort\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11910976\", \"12978368\"]}");
+	add("{\"term\":\"peppiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04642190\"]}");
+	add("{\"term\":\"pepsi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07945030\"]}");
+	add("{\"term\":\"pepsin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15003288\"]}");
+	add("{\"term\":\"pepsinogen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15003446\"]}");
+	add("{\"term\":\"peptidase\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15023673\"]}");
+	add("{\"term\":\"peptide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14767225\"]}");
+	add("{\"term\":\"peptisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13555301\"]}");
+	add("{\"term\":\"peptization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13555301\"]}");
+	add("{\"term\":\"peptone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14714608\"]}");
+	add("{\"term\":\"pepys\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11249313\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

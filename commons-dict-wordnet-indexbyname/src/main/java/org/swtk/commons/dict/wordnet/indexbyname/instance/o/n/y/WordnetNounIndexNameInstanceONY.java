@@ -1,0 +1,10 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.o.n.y;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceONY {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"onychium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13232203\"]}");
+	add("{\"term\":\"onychogalea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01881141\"]}");
+	add("{\"term\":\"onycholysis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14103222\"]}");
+	add("{\"term\":\"onychomys\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02340426\"]}");
+	add("{\"term\":\"onychophora\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02002028\"]}");
+	add("{\"term\":\"onychophoran\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02002421\"]}");
+	add("{\"term\":\"onychosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14103343\"]}");
+	add("{\"term\":\"onyx\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14994082\"]}");
+	add("{\"term\":\"onyxis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05592255\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

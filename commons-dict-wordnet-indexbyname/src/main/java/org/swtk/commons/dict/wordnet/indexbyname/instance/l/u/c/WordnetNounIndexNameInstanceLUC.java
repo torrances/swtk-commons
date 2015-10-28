@@ -1,0 +1,22 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.l.u.c;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLUC {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"lucania\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08822339\"]}");
+	add("{\"term\":\"lucanidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02178443\"]}");
+	add("{\"term\":\"lucas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11163448\"]}");
+	add("{\"term\":\"luce\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11163796\", \"11163923\"]}");
+	add("{\"term\":\"lucerne\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12569925\"]}");
+	add("{\"term\":\"lucidity\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14403108\", \"04827489\"]}");
+	add("{\"term\":\"lucidness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04827489\"]}");
+	add("{\"term\":\"lucifer\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03733928\", \"09382368\", \"09566482\"]}");
+	add("{\"term\":\"luciferin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14781190\"]}");
+	add("{\"term\":\"lucilia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02194779\"]}");
+	add("{\"term\":\"lucite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14618212\"]}");
+	add("{\"term\":\"luck\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"11438574\", \"11438252\", \"14496806\"]}");
+	add("{\"term\":\"luckiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14497239\"]}");
+	add("{\"term\":\"lucknow\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01287421\", \"08924501\"]}");
+	add("{\"term\":\"lucrativeness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05165249\"]}");
+	add("{\"term\":\"lucre\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13279261\", \"13406389\"]}");
+	add("{\"term\":\"lucretius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11164058\"]}");
+	add("{\"term\":\"lucubration\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05792487\", \"06388756\"]}");
+	add("{\"term\":\"lucullus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11163590\"]}");
+	add("{\"term\":\"luculus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11164281\"]}");
+	add("{\"term\":\"lucy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02479367\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

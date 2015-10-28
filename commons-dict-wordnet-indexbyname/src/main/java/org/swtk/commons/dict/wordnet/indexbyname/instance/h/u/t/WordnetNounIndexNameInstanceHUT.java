@@ -1,0 +1,9 @@
+package org.swtk.commons.dict.wordnet.indexbyname.instance.h.u.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHUT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hut\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03552234\", \"03555333\"]}");
+	add("{\"term\":\"hutch\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03552234\", \"03555469\"]}");
+	add("{\"term\":\"hutchins\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11088912\"]}");
+	add("{\"term\":\"hutchinson\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11089075\"]}");
+	add("{\"term\":\"hutment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03555600\"]}");
+	add("{\"term\":\"hutton\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11089251\", \"11089420\"]}");
+	add("{\"term\":\"hutu\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09712496\"]}");
+	add("{\"term\":\"hutzpah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04923377\"]}");
+ 	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }
