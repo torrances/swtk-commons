@@ -1,4 +1,4 @@
-package org.swtk.commons.dict.wordnet.indexbyname.controller.y.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Set; import java.util.TreeSet;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  	import org.swtk.commons.dict.wordnet.indexbyname.instance.y.e.a.WordnetNounIndexNameInstanceYEA;
+package org.swtk.commons.dict.wordnet.indexbyname.controller.y.e;  import java.util.Set; import java.util.TreeSet;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  	import org.swtk.commons.dict.wordnet.indexbyname.instance.y.e.a.WordnetNounIndexNameInstanceYEA;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.y.e.d.WordnetNounIndexNameInstanceYED;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.y.e.k.WordnetNounIndexNameInstanceYEK;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.y.e.l.WordnetNounIndexNameInstanceYEL;

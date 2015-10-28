@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public final class WordnetHypernmHelperTest {
 
-	@Test
+	// @Test
 	public void test() throws Throwable {
 		WordnetHypernmHelper.process("cat");
 		WordnetHypernmHelper.process("feline");
