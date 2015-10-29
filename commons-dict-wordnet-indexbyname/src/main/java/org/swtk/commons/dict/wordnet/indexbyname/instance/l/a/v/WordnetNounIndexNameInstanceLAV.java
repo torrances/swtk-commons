@@ -7,11 +7,18 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.l.a.v;  import java.u
 	add("{\"term\":\"lavaliere\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03654475\"]}");
 	add("{\"term\":\"lavalliere\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03654475\"]}");
 	add("{\"term\":\"lavandula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12870357\"]}");
+	add("{\"term\":\"lavandula angustifolia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12870712\"]}");
+	add("{\"term\":\"lavandula latifolia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12871096\"]}");
+	add("{\"term\":\"lavandula officinalis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12870712\"]}");
+	add("{\"term\":\"lavandula stoechas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12870928\"]}");
 	add("{\"term\":\"lavatera\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12202931\"]}");
+	add("{\"term\":\"lavatera arborea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12203132\"]}");
 	add("{\"term\":\"lavation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00256577\"]}");
 	add("{\"term\":\"lavatory\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03376721\", \"04561206\", \"04453410\"]}");
 	add("{\"term\":\"lavender\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04977737\", \"12870477\"]}");
+	add("{\"term\":\"lavender cotton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12029889\"]}");
 	add("{\"term\":\"laver\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"01411384\", \"01418165\", \"03654602\", \"11139624\"]}");
 	add("{\"term\":\"lavishness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00744939\", \"05153718\"]}");
 	add("{\"term\":\"lavoisier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11139907\"]}");
+	add("{\"term\":\"lavrenti pavlovich beria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10866289\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

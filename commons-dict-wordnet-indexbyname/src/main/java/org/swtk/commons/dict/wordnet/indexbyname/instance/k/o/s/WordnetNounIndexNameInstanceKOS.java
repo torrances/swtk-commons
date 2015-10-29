@@ -4,4 +4,5 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.k.o.s;  import java.u
 	add("{\"term\":\"kosher\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07576107\"]}");
 	add("{\"term\":\"kosovo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08834659\"]}");
 	add("{\"term\":\"kosteletzya\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12202368\"]}");
+	add("{\"term\":\"kosteletzya virginica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12202793\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,5 +1,9 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.h.a.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHAD {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"haddock\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02526508\", \"07805517\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.h.a.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHAD {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"had crime\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00771184\"]}");
+	add("{\"term\":\"haddock\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02526508\", \"07805517\"]}");
 	add("{\"term\":\"hadean\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15154524\"]}");
+	add("{\"term\":\"hadean aeon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15154524\"]}");
+	add("{\"term\":\"hadean eon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15154524\"]}");
+	add("{\"term\":\"hadean time\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15154524\"]}");
 	add("{\"term\":\"hades\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05637164\", \"09593427\"]}");
 	add("{\"term\":\"hadith\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00417422\", \"05677025\"]}");
 	add("{\"term\":\"hadj\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05923628\"]}");

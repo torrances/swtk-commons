@@ -1,10 +1,21 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.c.a.f;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCAF {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cafe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02939042\"]}");
+	add("{\"term\":\"cafe au lait\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07935812\"]}");
+	add("{\"term\":\"cafe noir\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07935905\"]}");
+	add("{\"term\":\"cafe royale\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07946180\"]}");
 	add("{\"term\":\"cafeteria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02939275\"]}");
+	add("{\"term\":\"cafeteria facility\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02939404\"]}");
+	add("{\"term\":\"cafeteria tray\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02939560\"]}");
 	add("{\"term\":\"caff\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02939665\"]}");
+	add("{\"term\":\"caffe latte\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07936462\"]}");
 	add("{\"term\":\"caffein\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14785301\"]}");
+	add("{\"term\":\"caffein addict\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09906152\"]}");
+	add("{\"term\":\"caffein addiction\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14088638\"]}");
 	add("{\"term\":\"caffeine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14785301\"]}");
+	add("{\"term\":\"caffeine addict\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09906152\"]}");
+	add("{\"term\":\"caffeine intoxication\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14533849\"]}");
 	add("{\"term\":\"caffeinism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14533849\"]}");
 	add("{\"term\":\"caffer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10248534\"]}");
+	add("{\"term\":\"caffer cat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02128524\"]}");
 	add("{\"term\":\"caffre\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10248534\"]}");
 	add("{\"term\":\"caftan\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02939786\", \"02939954\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

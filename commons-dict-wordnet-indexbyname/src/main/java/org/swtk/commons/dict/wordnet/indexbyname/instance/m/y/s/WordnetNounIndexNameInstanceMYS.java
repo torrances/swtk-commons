@@ -6,8 +6,13 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.m.y.s;  import java.u
 	add("{\"term\":\"mysophilia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07514008\"]}");
 	add("{\"term\":\"mysophobia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14407253\"]}");
 	add("{\"term\":\"mysore\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08922385\", \"08924699\"]}");
+	add("{\"term\":\"mysore thorn\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12509551\"]}");
 	add("{\"term\":\"mystery\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06382415\", \"05693343\"]}");
+	add("{\"term\":\"mystery novel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06379765\"]}");
+	add("{\"term\":\"mystery play\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07031718\"]}");
+	add("{\"term\":\"mystery story\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06382415\"]}");
 	add("{\"term\":\"mystic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10363285\"]}");
+	add("{\"term\":\"mystic jewel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09556901\"]}");
 	add("{\"term\":\"mysticeti\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02065644\"]}");
 	add("{\"term\":\"mysticism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05792565\", \"05957724\"]}");
 	add("{\"term\":\"mystification\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01268645\", \"03809451\", \"05692835\"]}");

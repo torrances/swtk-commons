@@ -1,5 +1,8 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.t.a.f;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTAF {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"taffeta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04390926\"]}");
+	add("{\"term\":\"taffeta weave\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03960288\"]}");
 	add("{\"term\":\"taffrail\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04391010\"]}");
+	add("{\"term\":\"taffrail log\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03904484\"]}");
 	add("{\"term\":\"taffy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07625016\"]}");
+	add("{\"term\":\"taffy apple\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07616267\"]}");
 	add("{\"term\":\"taft\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11348709\", \"11348925\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

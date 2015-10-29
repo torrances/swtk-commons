@@ -6,6 +6,12 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.s.s;  import java.u
 	add("{\"term\":\"essence\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03922150\", \"06616419\", \"15134663\", \"05929717\"]}");
 	add("{\"term\":\"essene\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09675059\"]}");
 	add("{\"term\":\"essential\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09390100\"]}");
+	add("{\"term\":\"essential amino acid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14629965\"]}");
+	add("{\"term\":\"essential condition\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05901868\"]}");
+	add("{\"term\":\"essential hypertension\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14128127\"]}");
+	add("{\"term\":\"essential oil\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14916806\"]}");
+	add("{\"term\":\"essential thrombocytopenia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14221262\"]}");
+	add("{\"term\":\"essential tremor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14028787\"]}");
 	add("{\"term\":\"essentiality\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05178572\"]}");
 	add("{\"term\":\"essentialness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05178572\"]}");
 	add("{\"term\":\"essex\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08902288\"]}");

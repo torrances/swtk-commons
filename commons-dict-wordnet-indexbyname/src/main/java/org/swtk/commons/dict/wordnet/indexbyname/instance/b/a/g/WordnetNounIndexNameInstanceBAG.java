@@ -1,4 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.b.a.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBAG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"bag\", \"synsetCount\":9, \"upperType\":\"NOUN\", \"ids\":[\"00433821\", \"02373012\", \"09851681\", \"02776843\", \"13786779\", \"02777157\", \"02801040\", \"13776918\", \"02776042\"]}");
+	add("{\"term\":\"bag lady\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09851993\"]}");
+	add("{\"term\":\"bag of tricks\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05624738\"]}");
 	add("{\"term\":\"bagascosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14284276\"]}");
 	add("{\"term\":\"bagasse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14796478\"]}");
 	add("{\"term\":\"bagassosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14284276\"]}");
@@ -7,6 +9,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.b.a.g;  import java.u
 	add("{\"term\":\"bagel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07709470\"]}");
 	add("{\"term\":\"bagful\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13786779\"]}");
 	add("{\"term\":\"baggage\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"02777926\", \"09851816\", \"02777635\"]}");
+	add("{\"term\":\"baggage car\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02778044\"]}");
+	add("{\"term\":\"baggage claim\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02778183\"]}");
 	add("{\"term\":\"baggageman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09851898\"]}");
 	add("{\"term\":\"bagger\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02778364\", \"10410126\"]}");
 	add("{\"term\":\"bagging\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04130661\"]}");

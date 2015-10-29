@@ -1,9 +1,12 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.v.i.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceVIL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"vila\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09183761\"]}");
 	add("{\"term\":\"vileness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04788613\", \"04859981\"]}");
+	add("{\"term\":\"vilfredo pareto\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11242447\"]}");
 	add("{\"term\":\"vilification\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06728162\", \"06732965\"]}");
 	add("{\"term\":\"vilifier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10018655\"]}");
 	add("{\"term\":\"villa\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"04542547\", \"04542665\", \"04542819\", \"11386400\"]}");
+	add("{\"term\":\"villa hermosa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08764469\"]}");
 	add("{\"term\":\"village\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"09145635\", \"08690476\", \"08243620\"]}");
+	add("{\"term\":\"village green\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08696143\"]}");
 	add("{\"term\":\"villager\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10773110\"]}");
 	add("{\"term\":\"villahermosa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08764469\"]}");
 	add("{\"term\":\"villain\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10773447\", \"10773214\"]}");

@@ -1,9 +1,11 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.f.a.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFAU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"faubourg\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08572639\"]}");
 	add("{\"term\":\"fauces\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05555537\"]}");
 	add("{\"term\":\"faucet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03330033\"]}");
+	add("{\"term\":\"faucial tonsil\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05316575\"]}");
 	add("{\"term\":\"fauld\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03330233\"]}");
 	add("{\"term\":\"faulkner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10987625\"]}");
 	add("{\"term\":\"fault\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"00569850\", \"04677049\", \"07436844\", \"09301443\", \"05146359\", \"14487787\", \"00071785\"]}");
+	add("{\"term\":\"fault line\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08587120\"]}");
 	add("{\"term\":\"faultfinder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10006070\"]}");
 	add("{\"term\":\"faultfinding\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06723969\"]}");
 	add("{\"term\":\"faultiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14495883\"]}");
@@ -14,9 +16,12 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.f.a.u;  import java.u
 	add("{\"term\":\"fauntleroy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10102068\"]}");
 	add("{\"term\":\"faunus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09591617\"]}");
 	add("{\"term\":\"faust\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09622197\"]}");
+	add("{\"term\":\"fausto paolo sozzini\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11327257\"]}");
 	add("{\"term\":\"faustus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09622197\"]}");
+	add("{\"term\":\"faustus socinus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11327257\"]}");
 	add("{\"term\":\"fauteuil\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03330348\"]}");
 	add("{\"term\":\"fauve\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10102192\"]}");
 	add("{\"term\":\"fauvism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08484882\"]}");
 	add("{\"term\":\"fauvist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10102192\"]}");
+	add("{\"term\":\"faux pas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00077016\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

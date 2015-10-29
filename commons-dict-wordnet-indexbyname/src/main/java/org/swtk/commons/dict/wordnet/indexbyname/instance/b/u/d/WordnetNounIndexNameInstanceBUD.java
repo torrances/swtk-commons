@@ -1,4 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.b.u.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBUD {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"bud\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13185984\", \"11695365\"]}");
+	add("{\"term\":\"bud brush\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11951604\"]}");
+	add("{\"term\":\"bud sagebrush\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11951604\"]}");
 	add("{\"term\":\"budapest\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08972196\"]}");
 	add("{\"term\":\"buddha\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09556053\", \"09555346\"]}");
 	add("{\"term\":\"buddhism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06250374\", \"08115674\"]}");
@@ -6,11 +8,17 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.b.u.d;  import java.u
 	add("{\"term\":\"budding\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13463132\"]}");
 	add("{\"term\":\"buddleia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12506158\"]}");
 	add("{\"term\":\"buddy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09897417\"]}");
+	add("{\"term\":\"buddy holly\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11076649\"]}");
+	add("{\"term\":\"buddy system\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00390571\"]}");
 	add("{\"term\":\"budge\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10890027\"]}");
 	add("{\"term\":\"budgereegah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01824510\"]}");
 	add("{\"term\":\"budgerigar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01824510\"]}");
 	add("{\"term\":\"budgerygah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01824510\"]}");
 	add("{\"term\":\"budget\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13442635\", \"13443005\"]}");
+	add("{\"term\":\"budget cut\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00353411\"]}");
+	add("{\"term\":\"budget deficit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13417658\"]}");
+	add("{\"term\":\"budget items\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13298202\"]}");
 	add("{\"term\":\"budgie\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01824510\"]}");
 	add("{\"term\":\"budorcas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02422161\"]}");
+	add("{\"term\":\"budorcas taxicolor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02422280\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

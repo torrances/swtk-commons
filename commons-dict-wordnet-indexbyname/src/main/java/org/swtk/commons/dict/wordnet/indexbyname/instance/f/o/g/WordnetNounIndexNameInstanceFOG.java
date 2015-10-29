@@ -2,6 +2,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.f.o.g;  import java.u
 	add("{\"term\":\"fogbank\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11478931\"]}");
 	add("{\"term\":\"fogey\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10042633\"]}");
 	add("{\"term\":\"fogginess\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04711694\", \"14545250\"]}");
+	add("{\"term\":\"foggy bottom\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08155079\"]}");
 	add("{\"term\":\"foghorn\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03380017\", \"07280087\"]}");
 	add("{\"term\":\"foglamp\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03380175\"]}");
 	add("{\"term\":\"fogsignal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07280087\"]}");

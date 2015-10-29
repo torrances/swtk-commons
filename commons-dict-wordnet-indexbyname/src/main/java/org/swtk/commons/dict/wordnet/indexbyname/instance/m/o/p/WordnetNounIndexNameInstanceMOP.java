@@ -1,4 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.m.o.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMOP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"mop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04374567\"]}");
+	add("{\"term\":\"mop handle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03790675\"]}");
+	add("{\"term\":\"mop up\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00211959\"]}");
 	add("{\"term\":\"mopboard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02803513\"]}");
 	add("{\"term\":\"mope\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10008241\"]}");
 	add("{\"term\":\"moped\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03790549\"]}");

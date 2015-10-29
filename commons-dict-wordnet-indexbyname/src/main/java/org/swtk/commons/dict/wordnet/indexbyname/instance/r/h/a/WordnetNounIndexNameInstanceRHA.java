@@ -1,4 +1,5 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.r.h.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRHA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"rhabdomancer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10790559\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.r.h.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRHA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"rh antibody\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15052537\"]}");
+	add("{\"term\":\"rhabdomancer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10790559\"]}");
 	add("{\"term\":\"rhabdomancy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05784676\"]}");
 	add("{\"term\":\"rhabdomyoma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14272994\"]}");
 	add("{\"term\":\"rhabdomyosarcoma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14268887\"]}");
@@ -8,10 +9,18 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.r.h.a;  import java.u
 	add("{\"term\":\"rhadamanthus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09594135\"]}");
 	add("{\"term\":\"rhagades\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14255516\"]}");
 	add("{\"term\":\"rhagoletis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02199413\"]}");
+	add("{\"term\":\"rhagoletis pomonella\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02199548\"]}");
 	add("{\"term\":\"rhamnaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13161476\"]}");
 	add("{\"term\":\"rhamnales\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13161312\"]}");
 	add("{\"term\":\"rhamnus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13161770\"]}");
+	add("{\"term\":\"rhamnus californicus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13162959\"]}");
+	add("{\"term\":\"rhamnus carolinianus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13162749\"]}");
+	add("{\"term\":\"rhamnus croceus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13163281\"]}");
+	add("{\"term\":\"rhamnus frangula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13163157\"]}");
+	add("{\"term\":\"rhamnus purshianus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13162341\"]}");
 	add("{\"term\":\"rhaphe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05283924\"]}");
 	add("{\"term\":\"rhapis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12616562\"]}");
+	add("{\"term\":\"rhapis excelsa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12616909\"]}");
+	add("{\"term\":\"rhapis humilis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12617106\"]}");
 	add("{\"term\":\"rhapsody\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06394213\", \"07038703\", \"07542913\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

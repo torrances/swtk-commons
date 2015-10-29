@@ -8,9 +8,13 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.a.r.b;  import java.u
 	add("{\"term\":\"arbitrament\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01193374\"]}");
 	add("{\"term\":\"arbitrariness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04679198\"]}");
 	add("{\"term\":\"arbitration\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01193374\", \"07165558\"]}");
+	add("{\"term\":\"arbitration clause\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06404896\"]}");
 	add("{\"term\":\"arbitrator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09822852\"]}");
 	add("{\"term\":\"arbitrement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01193374\"]}");
 	add("{\"term\":\"arbor\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"02735832\", \"04284631\", \"13128650\"]}");
+	add("{\"term\":\"arbor day\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15183319\"]}");
+	add("{\"term\":\"arboreal salamander\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01639979\"]}");
+	add("{\"term\":\"arborescent plant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13124509\"]}");
 	add("{\"term\":\"arboretum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02736080\"]}");
 	add("{\"term\":\"arboriculture\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00919445\"]}");
 	add("{\"term\":\"arboriculturist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10124525\"]}");
@@ -21,4 +25,6 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.a.r.b;  import java.u
 	add("{\"term\":\"arbour\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02735832\"]}");
 	add("{\"term\":\"arbovirus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01331827\"]}");
 	add("{\"term\":\"arbutus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12250864\"]}");
+	add("{\"term\":\"arbutus menziesii\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12251057\"]}");
+	add("{\"term\":\"arbutus unedo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12251311\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

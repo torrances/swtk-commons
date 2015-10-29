@@ -1,5 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.n.a.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNAL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"nalchik\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09031363\"]}");
 	add("{\"term\":\"nalfon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03333337\"]}");
+	add("{\"term\":\"nalidixic acid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03811580\"]}");
 	add("{\"term\":\"nalline\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03811720\"]}");
 	add("{\"term\":\"nalorphine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03811720\"]}");
 	add("{\"term\":\"naloxone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03811921\"]}");

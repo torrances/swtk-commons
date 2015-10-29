@@ -1,5 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.e.y.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceEYR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"eyra\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02128341\"]}");
 	add("{\"term\":\"eyre\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09300819\"]}");
+	add("{\"term\":\"eyre peninsula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09301068\"]}");
 	add("{\"term\":\"eyrie\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08509364\", \"09212054\"]}");
 	add("{\"term\":\"eyrir\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13704221\"]}");
 	add("{\"term\":\"eyry\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08509364\", \"09212054\"]}");

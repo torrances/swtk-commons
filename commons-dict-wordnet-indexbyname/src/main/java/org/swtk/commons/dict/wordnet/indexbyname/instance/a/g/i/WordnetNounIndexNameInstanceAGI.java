@@ -4,6 +4,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.a.g.i;  import java.u
 	add("{\"term\":\"agio\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13345319\"]}");
 	add("{\"term\":\"agiotage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13345319\"]}");
 	add("{\"term\":\"agism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01156868\"]}");
+	add("{\"term\":\"agitated depression\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14412989\"]}");
 	add("{\"term\":\"agitation\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00334192\", \"00555337\", \"07528747\", \"14002988\", \"14426511\"]}");
 	add("{\"term\":\"agitator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09798224\"]}");
 	add("{\"term\":\"agitprop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06687536\"]}");

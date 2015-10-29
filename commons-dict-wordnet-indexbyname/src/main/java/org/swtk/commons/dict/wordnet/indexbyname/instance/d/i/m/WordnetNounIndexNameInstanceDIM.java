@@ -1,14 +1,19 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.d.i.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDIM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"dimaggio\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10955559\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.d.i.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDIM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"dim sum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07587112\"]}");
+	add("{\"term\":\"dimaggio\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10955559\"]}");
 	add("{\"term\":\"dimash\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09056411\"]}");
 	add("{\"term\":\"dime\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03203503\", \"13411213\"]}");
+	add("{\"term\":\"dime bag\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03203503\"]}");
+	add("{\"term\":\"dime novel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06379944\"]}");
 	add("{\"term\":\"dimenhydrinate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03203635\"]}");
 	add("{\"term\":\"dimension\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"05098398\", \"06020795\", \"05857567\", \"05100843\"]}");
 	add("{\"term\":\"dimensionality\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05070162\"]}");
 	add("{\"term\":\"dimer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14859739\"]}");
 	add("{\"term\":\"dimetane\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02908747\"]}");
 	add("{\"term\":\"dimetapp\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03203826\"]}");
+	add("{\"term\":\"dimethyl ketone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14624684\"]}");
 	add("{\"term\":\"dimethylglyoxime\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14859856\"]}");
 	add("{\"term\":\"dimetrodon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01725311\"]}");
+	add("{\"term\":\"diminished arch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04233234\"]}");
 	add("{\"term\":\"diminuendo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04998347\"]}");
 	add("{\"term\":\"diminution\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00352464\", \"07044036\", \"13478551\"]}");
 	add("{\"term\":\"diminutive\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06301026\"]}");
@@ -17,9 +22,11 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.d.i.m;  import java.u
 	add("{\"term\":\"dimmer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03204172\"]}");
 	add("{\"term\":\"dimness\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04712023\", \"04963084\", \"14008808\"]}");
 	add("{\"term\":\"dimocarpus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12763992\"]}");
+	add("{\"term\":\"dimocarpus longan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12764112\"]}");
 	add("{\"term\":\"dimorphism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11513043\", \"11513483\"]}");
 	add("{\"term\":\"dimorphotheca\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11981735\"]}");
 	add("{\"term\":\"dimout\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14007567\"]}");
 	add("{\"term\":\"dimple\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05607629\", \"13919388\", \"14859987\"]}");
+	add("{\"term\":\"dimpled chad\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14859987\"]}");
 	add("{\"term\":\"dimwit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10032859\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

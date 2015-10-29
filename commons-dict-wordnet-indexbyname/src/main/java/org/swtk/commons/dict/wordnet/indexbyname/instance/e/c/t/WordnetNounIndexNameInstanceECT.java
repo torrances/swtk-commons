@@ -7,7 +7,10 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.c.t;  import java.u
 	add("{\"term\":\"ectomorphy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05006276\"]}");
 	add("{\"term\":\"ectoparasite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01387971\"]}");
 	add("{\"term\":\"ectopia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05088867\"]}");
+	add("{\"term\":\"ectopic gestation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14071222\"]}");
+	add("{\"term\":\"ectopic pregnancy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14071222\"]}");
 	add("{\"term\":\"ectopistes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01817776\"]}");
+	add("{\"term\":\"ectopistes migratorius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01817911\"]}");
 	add("{\"term\":\"ectoplasm\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05441432\", \"15134498\"]}");
 	add("{\"term\":\"ectoproct\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02316810\"]}");
 	add("{\"term\":\"ectoprocta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02316653\"]}");

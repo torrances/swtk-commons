@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.u.t.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceUTA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"uta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01683841\"]}");
+	add("{\"term\":\"uta stansburiana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01683969\"]}");
 	add("{\"term\":\"utah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09169783\"]}");
 	add("{\"term\":\"utahan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09765264\"]}");
 	add("{\"term\":\"utahraptor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01721055\"]}");

@@ -1,7 +1,10 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.s.o.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSOO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"soochong\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07951283\"]}");
 	add("{\"term\":\"sooner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09764463\"]}");
+	add("{\"term\":\"sooner state\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09154334\"]}");
 	add("{\"term\":\"soot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14817703\"]}");
+	add("{\"term\":\"soot black\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04967759\"]}");
 	add("{\"term\":\"sooth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04874671\"]}");
+	add("{\"term\":\"soothing syrup\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04267926\"]}");
 	add("{\"term\":\"soothsayer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10122275\"]}");
 	add("{\"term\":\"soothsaying\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05784209\"]}");
 	add("{\"term\":\"sootiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14522556\"]}");

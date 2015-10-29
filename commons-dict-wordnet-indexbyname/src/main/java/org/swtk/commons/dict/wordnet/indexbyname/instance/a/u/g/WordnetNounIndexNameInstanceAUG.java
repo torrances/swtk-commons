@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.a.u.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceAUG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"aug\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15237251\"]}");
+	add("{\"term\":\"augean stables\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02761275\"]}");
 	add("{\"term\":\"augeas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09509554\"]}");
 	add("{\"term\":\"augend\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13751034\"]}");
 	add("{\"term\":\"auger\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02761495\", \"03975218\"]}");
@@ -6,11 +7,27 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.a.u.g;  import java.u
 	add("{\"term\":\"augite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14691829\"]}");
 	add("{\"term\":\"augmentation\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00366057\", \"07043863\", \"07384070\"]}");
 	add("{\"term\":\"augmentin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02706753\"]}");
+	add("{\"term\":\"augsburg confession\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06484278\"]}");
 	add("{\"term\":\"augur\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09842689\"]}");
 	add("{\"term\":\"augury\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07300719\"]}");
 	add("{\"term\":\"august\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15237251\"]}");
+	add("{\"term\":\"august ferdinand mobius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11203781\"]}");
+	add("{\"term\":\"august friedrich leopold weismann\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11400154\"]}");
+	add("{\"term\":\"august plum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12659725\"]}");
+	add("{\"term\":\"august strindberg\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11342476\"]}");
+	add("{\"term\":\"august von wassermann\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11395904\"]}");
+	add("{\"term\":\"august wilhelm von hoffmann\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11075037\"]}");
 	add("{\"term\":\"augusta\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09099622\", \"09115400\"]}");
+	add("{\"term\":\"auguste comte\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10925986\"]}");
+	add("{\"term\":\"auguste rodin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11287939\"]}");
+	add("{\"term\":\"augustin eugene scribe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11309989\"]}");
+	add("{\"term\":\"augustin jean fresnel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11001957\"]}");
 	add("{\"term\":\"augustine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10848177\"]}");
+	add("{\"term\":\"augustine of hippo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10848177\"]}");
 	add("{\"term\":\"augustinian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10798379\"]}");
+	add("{\"term\":\"augustinian canons\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08165301\"]}");
+	add("{\"term\":\"augustinian hermits\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08165395\"]}");
+	add("{\"term\":\"augustinian order\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08165074\"]}");
 	add("{\"term\":\"augustus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10848594\"]}");
+	add("{\"term\":\"augustus welby northmore pugin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11268222\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

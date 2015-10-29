@@ -2,6 +2,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.p.l.o;  import java.u
 	add("{\"term\":\"ploce\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07115053\"]}");
 	add("{\"term\":\"ploceidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01545208\"]}");
 	add("{\"term\":\"ploceus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01545700\"]}");
+	add("{\"term\":\"ploceus philippinus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01545816\"]}");
 	add("{\"term\":\"plod\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00292809\"]}");
 	add("{\"term\":\"plodder\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"10461806\", \"10461991\", \"10751505\"]}");
 	add("{\"term\":\"plodding\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00292809\", \"00622716\"]}");
@@ -9,10 +10,18 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.p.l.o;  import java.u
 	add("{\"term\":\"plop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07404649\"]}");
 	add("{\"term\":\"plosion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07131151\"]}");
 	add("{\"term\":\"plosive\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07130622\"]}");
+	add("{\"term\":\"plosive consonant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07130622\"]}");
+	add("{\"term\":\"plosive speech sound\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07130622\"]}");
 	add("{\"term\":\"plot\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07012805\", \"06384937\", \"08692477\", \"05916276\"]}");
+	add("{\"term\":\"plot element\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05874236\"]}");
+	add("{\"term\":\"plot line\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06385268\"]}");
+	add("{\"term\":\"plot of ground\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08692477\"]}");
+	add("{\"term\":\"plot of land\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08692477\"]}");
 	add("{\"term\":\"plotinus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11259979\"]}");
+	add("{\"term\":\"plott hound\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02092905\"]}");
 	add("{\"term\":\"plotter\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03973728\", \"09978371\", \"10462147\", \"10575946\"]}");
 	add("{\"term\":\"plough\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03973894\", \"09242765\"]}");
+	add("{\"term\":\"plough horse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02384990\"]}");
 	add("{\"term\":\"ploughboy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10462279\"]}");
 	add("{\"term\":\"ploughing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00920458\"]}");
 	add("{\"term\":\"ploughland\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09283813\"]}");
@@ -22,6 +31,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.p.l.o;  import java.u
 	add("{\"term\":\"plovdiv\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08732628\"]}");
 	add("{\"term\":\"plover\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02025995\"]}");
 	add("{\"term\":\"plow\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03973894\"]}");
+	add("{\"term\":\"plow horse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02384990\"]}");
 	add("{\"term\":\"plowboy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10462279\"]}");
 	add("{\"term\":\"plower\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10462389\"]}");
 	add("{\"term\":\"plowing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00920458\"]}");

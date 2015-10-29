@@ -1,6 +1,22 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.i.s.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceISA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"isaac\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11093576\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.i.s.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceISA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"i samuel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06446320\"]}");
+	add("{\"term\":\"isaac\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11093576\"]}");
+	add("{\"term\":\"isaac asimov\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10845808\"]}");
+	add("{\"term\":\"isaac bashevis singer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11322610\"]}");
+	add("{\"term\":\"isaac hull\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11085713\"]}");
+	add("{\"term\":\"isaac mayer wise\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11413119\"]}");
+	add("{\"term\":\"isaac merrit singer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11322767\"]}");
+	add("{\"term\":\"isaac newton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11225365\"]}");
+	add("{\"term\":\"isaac stern\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11336823\"]}");
+	add("{\"term\":\"isaac watts\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11397038\"]}");
 	add("{\"term\":\"isabella\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11093785\"]}");
+	add("{\"term\":\"isabella i\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11093785\"]}");
+	add("{\"term\":\"isabella stewart gardner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11010505\"]}");
+	add("{\"term\":\"isabella the catholic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11093785\"]}");
+	add("{\"term\":\"isadora duncan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10965407\"]}");
 	add("{\"term\":\"isaiah\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06449796\", \"11094130\"]}");
+	add("{\"term\":\"isak dinesen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10955737\"]}");
+	add("{\"term\":\"isamu noguchi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11229191\"]}");
 	add("{\"term\":\"isarithm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08607357\"]}");
 	add("{\"term\":\"isatis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11910316\"]}");
+	add("{\"term\":\"isatis tinctoria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11910619\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

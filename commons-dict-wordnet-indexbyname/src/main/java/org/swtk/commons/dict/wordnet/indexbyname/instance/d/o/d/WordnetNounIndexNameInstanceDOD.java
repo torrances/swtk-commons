@@ -5,7 +5,9 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.d.o.d;  import java.u
 	add("{\"term\":\"dodecagon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13905540\"]}");
 	add("{\"term\":\"dodecahedron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13938817\"]}");
 	add("{\"term\":\"dodecanese\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08801138\"]}");
+	add("{\"term\":\"dodecanoic acid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14954614\"]}");
 	add("{\"term\":\"dodge\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06769391\", \"00060715\", \"05914396\"]}");
+	add("{\"term\":\"dodge city\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09110554\"]}");
 	add("{\"term\":\"dodgem\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02922348\"]}");
 	add("{\"term\":\"dodger\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07704502\", \"10042484\"]}");
 	add("{\"term\":\"dodging\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00204602\", \"06769391\", \"00742010\"]}");

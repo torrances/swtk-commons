@@ -3,6 +3,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.f.u.g;  import java.u
 	add("{\"term\":\"fugacity\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05062654\", \"05063029\"]}");
 	add("{\"term\":\"fugard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11004975\"]}");
 	add("{\"term\":\"fugitive\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10134554\", \"10134739\"]}");
+	add("{\"term\":\"fugitive from justice\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10134554\"]}");
 	add("{\"term\":\"fugleman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10134928\"]}");
 	add("{\"term\":\"fugo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02785455\"]}");
 	add("{\"term\":\"fugu\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07798180\"]}");

@@ -1,7 +1,11 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.n.i.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNIP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"nip\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"00843942\", \"05000286\", \"05022862\", \"05723811\", \"09738048\", \"13795390\"]}");
+	add("{\"term\":\"nip and tuck\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00675401\"]}");
 	add("{\"term\":\"nipa\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07907588\", \"12612658\"]}");
+	add("{\"term\":\"nipa fruticans\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12612819\"]}");
+	add("{\"term\":\"nipa palm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12612819\"]}");
 	add("{\"term\":\"nipper\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02159184\", \"09937051\"]}");
 	add("{\"term\":\"nipple\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03831328\", \"05562286\"]}");
+	add("{\"term\":\"nipple shield\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03831453\"]}");
 	add("{\"term\":\"nippon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08941623\"]}");
 	add("{\"term\":\"nipponese\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09737613\"]}");
 	add("{\"term\":\"nipr\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08060251\"]}");

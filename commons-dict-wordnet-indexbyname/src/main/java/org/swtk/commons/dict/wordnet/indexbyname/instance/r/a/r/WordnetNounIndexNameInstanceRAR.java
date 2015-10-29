@@ -1,4 +1,7 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.r.a.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRAR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"rarebit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07896300\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.r.a.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRAR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"rara avis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10527285\"]}");
+	add("{\"term\":\"rare bird\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10527285\"]}");
+	add("{\"term\":\"rare earth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14648921\"]}");
+	add("{\"term\":\"rarebit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07896300\"]}");
 	add("{\"term\":\"rarefaction\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07434008\"]}");
 	add("{\"term\":\"rareness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05124537\"]}");
 	add("{\"term\":\"rariora\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04061678\"]}");

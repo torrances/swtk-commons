@@ -1,4 +1,15 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.t.o.y;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTOY {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"toy\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"02088026\", \"03774770\", \"04469114\", \"04469337\", \"03971038\"]}");
+	add("{\"term\":\"toy box\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04469246\"]}");
+	add("{\"term\":\"toy business\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08091845\"]}");
+	add("{\"term\":\"toy chest\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04469246\"]}");
+	add("{\"term\":\"toy dog\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02088026\"]}");
+	add("{\"term\":\"toy industry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08091845\"]}");
+	add("{\"term\":\"toy manchester\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02097583\"]}");
+	add("{\"term\":\"toy manchester terrier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02097583\"]}");
+	add("{\"term\":\"toy poodle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02116276\"]}");
+	add("{\"term\":\"toy soldier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04469553\"]}");
+	add("{\"term\":\"toy spaniel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02088998\"]}");
+	add("{\"term\":\"toy terrier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02089698\"]}");
 	add("{\"term\":\"toying\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00513533\"]}");
 	add("{\"term\":\"toynbee\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11367312\"]}");
 	add("{\"term\":\"toyohashi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08946004\"]}");

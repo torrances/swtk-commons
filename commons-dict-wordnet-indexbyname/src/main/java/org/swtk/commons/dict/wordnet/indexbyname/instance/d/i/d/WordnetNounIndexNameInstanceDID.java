@@ -7,6 +7,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.d.i.d;  import java.u
 	add("{\"term\":\"diddlysquat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13795187\"]}");
 	add("{\"term\":\"didelphidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01877425\"]}");
 	add("{\"term\":\"didelphis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01877806\"]}");
+	add("{\"term\":\"didelphis marsupialis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01877954\"]}");
+	add("{\"term\":\"didelphis virginiana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01877954\"]}");
 	add("{\"term\":\"dideoxycytosine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03195447\"]}");
 	add("{\"term\":\"dideoxyinosine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03195581\"]}");
 	add("{\"term\":\"diderot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10954509\"]}");

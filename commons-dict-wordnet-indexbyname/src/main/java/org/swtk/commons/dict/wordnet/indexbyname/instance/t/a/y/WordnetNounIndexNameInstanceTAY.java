@@ -1,7 +1,11 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.t.a.y;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTAY {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"tay\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06948688\"]}");
 	add("{\"term\":\"tayalic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06953616\"]}");
 	add("{\"term\":\"tayassu\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02400029\"]}");
+	add("{\"term\":\"tayassu angulatus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02400396\"]}");
+	add("{\"term\":\"tayassu pecari\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02400639\"]}");
+	add("{\"term\":\"tayassu tajacu\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02400396\"]}");
 	add("{\"term\":\"tayassuidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02399903\"]}");
 	add("{\"term\":\"taylor\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"11353232\", \"11353385\", \"11353596\"]}");
+	add("{\"term\":\"taymyr peninsula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09044502\"]}");
 	add("{\"term\":\"tayra\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02454046\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

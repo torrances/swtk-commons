@@ -1,7 +1,9 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.d.o.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDOB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"dobbin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02389906\"]}");
 	add("{\"term\":\"doberman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02109794\"]}");
+	add("{\"term\":\"doberman pinscher\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02109794\"]}");
 	add("{\"term\":\"dobra\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13697696\"]}");
 	add("{\"term\":\"dobrich\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08732457\"]}");
 	add("{\"term\":\"dobson\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02268702\", \"02268921\"]}");
+	add("{\"term\":\"dobson fly\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02268702\"]}");
 	add("{\"term\":\"dobsonfly\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02268702\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

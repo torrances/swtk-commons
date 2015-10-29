@@ -1,11 +1,22 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.c.y.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCYS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cyst\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05525229\", \"14226478\"]}");
 	add("{\"term\":\"cysteine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14628632\"]}");
+	add("{\"term\":\"cystic artery\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05351898\"]}");
+	add("{\"term\":\"cystic breast disease\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14221862\"]}");
+	add("{\"term\":\"cystic fibrosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14178988\"]}");
+	add("{\"term\":\"cystic fibrosis transport regulator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05447386\"]}");
+	add("{\"term\":\"cystic mastitis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14221862\"]}");
+	add("{\"term\":\"cystic vein\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05372607\"]}");
 	add("{\"term\":\"cystine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14628794\"]}");
 	add("{\"term\":\"cystitis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14212184\"]}");
 	add("{\"term\":\"cystocele\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14320468\"]}");
+	add("{\"term\":\"cystoid macular edema\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14278408\"]}");
 	add("{\"term\":\"cystolith\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09246394\"]}");
 	add("{\"term\":\"cystoparalysis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14109518\"]}");
 	add("{\"term\":\"cystophora\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02083586\"]}");
+	add("{\"term\":\"cystophora cristata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02083712\"]}");
 	add("{\"term\":\"cystoplegia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14109518\"]}");
 	add("{\"term\":\"cystopteris\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13216445\"]}");
+	add("{\"term\":\"cystopteris bulbifera\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13217267\"]}");
+	add("{\"term\":\"cystopteris fragilis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13216901\"]}");
+	add("{\"term\":\"cystopteris montana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13217132\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,4 +1,8 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.w.o.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceWOM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"woman\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"08494645\", \"09930684\", \"10808492\", \"10807146\"]}");
+	add("{\"term\":\"woman chaser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10806873\"]}");
+	add("{\"term\":\"woman hater\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10342306\"]}");
+	add("{\"term\":\"woman of the house\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10209395\"]}");
+	add("{\"term\":\"woman of the street\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10505025\"]}");
 	add("{\"term\":\"womanhood\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00607121\", \"08494645\", \"14449119\"]}");
 	add("{\"term\":\"womaniser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10808758\"]}");
 	add("{\"term\":\"womanishness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04675496\"]}");

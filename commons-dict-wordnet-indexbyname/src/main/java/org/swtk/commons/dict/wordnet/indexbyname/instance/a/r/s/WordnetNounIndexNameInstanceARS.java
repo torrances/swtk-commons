@@ -3,9 +3,14 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.a.r.s;  import java.u
 	add("{\"term\":\"arsenal\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"02744372\", \"02746212\", \"02746431\"]}");
 	add("{\"term\":\"arsenate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14634439\"]}");
 	add("{\"term\":\"arsenic\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14653327\", \"14792380\"]}");
+	add("{\"term\":\"arsenic acid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14634525\"]}");
+	add("{\"term\":\"arsenic group\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14812884\"]}");
+	add("{\"term\":\"arsenic trioxide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14792380\"]}");
 	add("{\"term\":\"arsenical\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14626899\"]}");
 	add("{\"term\":\"arsenide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14634621\"]}");
 	add("{\"term\":\"arsenopyrite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14691507\"]}");
+	add("{\"term\":\"arsenous anhydride\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14792380\"]}");
+	add("{\"term\":\"arsenous oxide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14792380\"]}");
 	add("{\"term\":\"arsine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14780379\"]}");
 	add("{\"term\":\"arson\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00379104\"]}");
 	add("{\"term\":\"arsonist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09830112\"]}");

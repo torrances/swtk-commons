@@ -1,12 +1,22 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.s.e.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSED {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"sedalia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09130572\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.s.e.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSED {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"sed rate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15302448\"]}");
+	add("{\"term\":\"sedalia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09130572\"]}");
 	add("{\"term\":\"sedan\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04173497\", \"04173342\"]}");
+	add("{\"term\":\"sedan chair\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04173497\"]}");
 	add("{\"term\":\"sedateness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04655183\"]}");
 	add("{\"term\":\"sedation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00696553\", \"14313714\"]}");
 	add("{\"term\":\"sedative\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04173614\"]}");
+	add("{\"term\":\"sedative drug\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04173614\"]}");
 	add("{\"term\":\"seder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01037699\"]}");
 	add("{\"term\":\"sedge\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12170545\"]}");
+	add("{\"term\":\"sedge bird\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01568240\"]}");
+	add("{\"term\":\"sedge family\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12170268\"]}");
+	add("{\"term\":\"sedge warbler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01568240\"]}");
+	add("{\"term\":\"sedge wren\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01568240\", \"01588063\"]}");
 	add("{\"term\":\"sediment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09451871\"]}");
+	add("{\"term\":\"sedimentary clay\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15046391\"]}");
+	add("{\"term\":\"sedimentary rock\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14722161\"]}");
 	add("{\"term\":\"sedimentation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11465491\"]}");
+	add("{\"term\":\"sedimentation rate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15302448\"]}");
 	add("{\"term\":\"sedition\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00774302\"]}");
 	add("{\"term\":\"sedna\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09452098\"]}");
 	add("{\"term\":\"seducer\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10594533\", \"10594685\"]}");
@@ -15,4 +25,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.s.e.d;  import java.u
 	add("{\"term\":\"sedulity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04873309\"]}");
 	add("{\"term\":\"sedulousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04873309\"]}");
 	add("{\"term\":\"sedum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12806484\"]}");
+	add("{\"term\":\"sedum acre\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12806857\"]}");
+	add("{\"term\":\"sedum rosea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12807033\"]}");
+	add("{\"term\":\"sedum telephium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12807224\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

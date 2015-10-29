@@ -1,9 +1,15 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.l.o.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLOP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"lope\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00289330\", \"00295034\"]}");
+	add("{\"term\":\"lope de vega\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11382190\"]}");
+	add("{\"term\":\"lope felix de vega carpio\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11382190\"]}");
 	add("{\"term\":\"lophiidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02550578\"]}");
 	add("{\"term\":\"lophius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02550759\"]}");
+	add("{\"term\":\"lophius americanus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02550878\"]}");
 	add("{\"term\":\"lophodytes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01857984\"]}");
+	add("{\"term\":\"lophodytes cucullatus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01858117\"]}");
 	add("{\"term\":\"lopholatilus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02575706\"]}");
+	add("{\"term\":\"lopholatilus chamaeleonticeps\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02575880\"]}");
 	add("{\"term\":\"lophophora\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11869486\"]}");
+	add("{\"term\":\"lophophora williamsii\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11869740\"]}");
 	add("{\"term\":\"lophophorus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01807840\"]}");
 	add("{\"term\":\"lophosoria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13224303\"]}");
 	add("{\"term\":\"lophosoriaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13224149\"]}");

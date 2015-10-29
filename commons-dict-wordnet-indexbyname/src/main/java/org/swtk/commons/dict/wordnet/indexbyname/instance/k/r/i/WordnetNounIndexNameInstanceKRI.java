@@ -1,7 +1,10 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.k.r.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceKRI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"krigia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12006208\"]}");
+	add("{\"term\":\"krigia bulbosa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12006372\"]}");
+	add("{\"term\":\"krigia dandelion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12006372\"]}");
 	add("{\"term\":\"krill\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01991342\"]}");
 	add("{\"term\":\"kris\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03634019\"]}");
 	add("{\"term\":\"krishna\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09553853\"]}");
 	add("{\"term\":\"krishnaism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06248967\"]}");
+	add("{\"term\":\"kriss kringle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10570230\"]}");
 	add("{\"term\":\"kriti\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08802185\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,8 +1,13 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.g.l.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceGLI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"glia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05474706\"]}");
+	add("{\"term\":\"glial cell\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05475084\"]}");
 	add("{\"term\":\"glibness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05102586\"]}");
 	add("{\"term\":\"glide\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00304321\", \"00329328\", \"07129117\"]}");
+	add("{\"term\":\"glide path\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08510971\"]}");
+	add("{\"term\":\"glide slope\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08510971\"]}");
 	add("{\"term\":\"glider\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03444738\"]}");
 	add("{\"term\":\"gliding\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00304321\"]}");
+	add("{\"term\":\"gliding bacteria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01381186\"]}");
+	add("{\"term\":\"gliding joint\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05585882\"]}");
 	add("{\"term\":\"glimmer\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05924900\", \"07427078\"]}");
 	add("{\"term\":\"glimmering\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05924900\"]}");
 	add("{\"term\":\"glimpse\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06815302\", \"05943132\", \"00879303\"]}");
@@ -14,6 +19,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.g.l.i;  import java.u
 	add("{\"term\":\"gliricidia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12552232\"]}");
 	add("{\"term\":\"gliridae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02355042\"]}");
 	add("{\"term\":\"glis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02355456\"]}");
+	add("{\"term\":\"glis glis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02355584\"]}");
 	add("{\"term\":\"glissade\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00535381\"]}");
 	add("{\"term\":\"glissando\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06870172\"]}");
 	add("{\"term\":\"glisten\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04960121\"]}");

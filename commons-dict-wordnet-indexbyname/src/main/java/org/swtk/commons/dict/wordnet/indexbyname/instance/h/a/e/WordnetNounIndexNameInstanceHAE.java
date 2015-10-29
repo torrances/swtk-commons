@@ -2,12 +2,15 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.h.a.e;  import java.u
 	add("{\"term\":\"haeckel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11041663\"]}");
 	add("{\"term\":\"haem\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15049564\"]}");
 	add("{\"term\":\"haemagglutination\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13513339\"]}");
+	add("{\"term\":\"haemal arch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05595464\"]}");
 	add("{\"term\":\"haemangioma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14271057\"]}");
 	add("{\"term\":\"haemanthus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12440840\"]}");
+	add("{\"term\":\"haemanthus coccineus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12441227\"]}");
 	add("{\"term\":\"haematemesis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00120030\"]}");
 	add("{\"term\":\"haematinic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03519105\"]}");
 	add("{\"term\":\"haematite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14929871\"]}");
 	add("{\"term\":\"haematobia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02202004\"]}");
+	add("{\"term\":\"haematobia irritans\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02202154\"]}");
 	add("{\"term\":\"haematocele\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14340648\"]}");
 	add("{\"term\":\"haematochezia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13513490\"]}");
 	add("{\"term\":\"haematocoele\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14340648\"]}");
@@ -28,6 +31,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.h.a.e;  import java.u
 	add("{\"term\":\"haematopus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02039636\"]}");
 	add("{\"term\":\"haematoxylon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12517240\"]}");
 	add("{\"term\":\"haematoxylum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12517240\"]}");
+	add("{\"term\":\"haematoxylum campechianum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12517454\"]}");
 	add("{\"term\":\"haematuria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14337747\"]}");
 	add("{\"term\":\"haemitin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15049564\"]}");
 	add("{\"term\":\"haemodialysis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00651786\"]}");
@@ -40,8 +44,11 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.h.a.e;  import java.u
 	add("{\"term\":\"haemoglobinuria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14337910\"]}");
 	add("{\"term\":\"haemolysin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14930412\"]}");
 	add("{\"term\":\"haemolysis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13514416\"]}");
+	add("{\"term\":\"haemolytic anaemia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14188722\"]}");
 	add("{\"term\":\"haemophile\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10190661\"]}");
 	add("{\"term\":\"haemophilia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14193819\"]}");
+	add("{\"term\":\"haemophilia a\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14194254\"]}");
+	add("{\"term\":\"haemophilia b\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14194469\"]}");
 	add("{\"term\":\"haemophiliac\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10190661\"]}");
 	add("{\"term\":\"haemopis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01941259\"]}");
 	add("{\"term\":\"haemopoiesis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13513656\"]}");
@@ -51,6 +58,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.h.a.e;  import java.u
 	add("{\"term\":\"haemoproteus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01427579\"]}");
 	add("{\"term\":\"haemoptysis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14215681\"]}");
 	add("{\"term\":\"haemorrhage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14311737\"]}");
+	add("{\"term\":\"haemorrhagic fever\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14200905\"]}");
+	add("{\"term\":\"haemorrhagic stroke\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14312063\"]}");
 	add("{\"term\":\"haemorrhoid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14350534\"]}");
 	add("{\"term\":\"haemorrhoidectomy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00677936\"]}");
 	add("{\"term\":\"haemosiderin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15051530\"]}");
@@ -63,4 +72,9 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.h.a.e;  import java.u
 	add("{\"term\":\"haemothorax\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14344240\"]}");
 	add("{\"term\":\"haemulidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02590738\"]}");
 	add("{\"term\":\"haemulon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02591210\"]}");
+	add("{\"term\":\"haemulon album\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02591424\"]}");
+	add("{\"term\":\"haemulon aurolineatum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02591692\"]}");
+	add("{\"term\":\"haemulon macrostomum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02591575\"]}");
+	add("{\"term\":\"haemulon malanurum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02591826\"]}");
+	add("{\"term\":\"haemulon parra\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02591946\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,10 +1,22 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.i.r.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceIRA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ira\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00760325\", \"05920606\", \"08041485\"]}");
+	add("{\"term\":\"ira gershwin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11017064\"]}");
 	add("{\"term\":\"irak\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08933207\"]}");
 	add("{\"term\":\"iraki\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09734090\"]}");
 	add("{\"term\":\"iran\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08930441\"]}");
 	add("{\"term\":\"irani\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09733825\"]}");
 	add("{\"term\":\"iranian\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06986270\", \"09733825\"]}");
+	add("{\"term\":\"iranian capital\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08931194\"]}");
+	add("{\"term\":\"iranian dinar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13718998\"]}");
+	add("{\"term\":\"iranian language\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06986270\"]}");
+	add("{\"term\":\"iranian monetary unit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13718757\"]}");
+	add("{\"term\":\"iranian rial\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13718882\"]}");
 	add("{\"term\":\"iraq\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08933207\"]}");
 	add("{\"term\":\"iraqi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09734090\"]}");
+	add("{\"term\":\"iraqi dinar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13691447\"]}");
+	add("{\"term\":\"iraqi intelligence service\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08361844\"]}");
+	add("{\"term\":\"iraqi kurdistan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09061735\"]}");
+	add("{\"term\":\"iraqi monetary unit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13691342\"]}");
+	add("{\"term\":\"iraqi mukhabarat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08361844\"]}");
+	add("{\"term\":\"iraqi national congress\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08420864\"]}");
 	add("{\"term\":\"irascibility\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07568015\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

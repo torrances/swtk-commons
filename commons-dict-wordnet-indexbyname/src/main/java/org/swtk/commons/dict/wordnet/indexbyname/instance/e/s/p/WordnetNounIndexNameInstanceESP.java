@@ -8,9 +8,14 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.s.p;  import java.u
 	add("{\"term\":\"esperanto\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06908812\"]}");
 	add("{\"term\":\"espial\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00151907\"]}");
 	add("{\"term\":\"espionage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00655806\"]}");
+	add("{\"term\":\"espionage agent\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10083726\"]}");
+	add("{\"term\":\"espionage network\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08451632\"]}");
 	add("{\"term\":\"esplanade\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03302283\"]}");
 	add("{\"term\":\"espoo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08798134\"]}");
 	add("{\"term\":\"espousal\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00181262\", \"01038810\", \"01039501\"]}");
 	add("{\"term\":\"espresso\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07936292\"]}");
+	add("{\"term\":\"espresso maker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03302424\"]}");
+	add("{\"term\":\"espresso shop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03302573\"]}");
 	add("{\"term\":\"esprit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04641073\"]}");
+	add("{\"term\":\"esprit de corps\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04632486\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

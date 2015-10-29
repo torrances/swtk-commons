@@ -18,7 +18,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.controller.g.a;  import java.u
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.g.a.w.WordnetNounIndexNameInstanceGAW;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.g.a.y.WordnetNounIndexNameInstanceGAY;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.g.a.z.WordnetNounIndexNameInstanceGAZ;
-  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerGA {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException { 		if (TERM.length() < 3) throw new BusinessException("TERM not found (term = %s)", TERM); 		 		String key = TERM.substring(0, 3).toLowerCase(); 			if ("gaa".equals(key)) return WordnetNounIndexNameInstanceGAA.get(TERM);
+  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerGA {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException { 		if (TERM.length() < 3) throw new BusinessException("TERM not found (term = %s)", TERM); 		 		String key = TERM.replaceAll(" ", "").substring(0, 3).toLowerCase(); 			if ("gaa".equals(key)) return WordnetNounIndexNameInstanceGAA.get(TERM);
 	if ("gab".equals(key)) return WordnetNounIndexNameInstanceGAB.get(TERM);
 	if ("gad".equals(key)) return WordnetNounIndexNameInstanceGAD.get(TERM);
 	if ("gae".equals(key)) return WordnetNounIndexNameInstanceGAE.get(TERM);
@@ -38,7 +38,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.controller.g.a;  import java.u
 	if ("gaw".equals(key)) return WordnetNounIndexNameInstanceGAW.get(TERM);
 	if ("gay".equals(key)) return WordnetNounIndexNameInstanceGAY.get(TERM);
 	if ("gaz".equals(key)) return WordnetNounIndexNameInstanceGAZ.get(TERM);
-  		throw new BusinessException("TERM not found (term = %s)", TERM); 	} 	 	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceGAA.terms());
+  		throw new BusinessException("TERM not found (term = %s)", TERM); 	}  	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceGAA.terms());
 	set.addAll(WordnetNounIndexNameInstanceGAB.terms());
 	set.addAll(WordnetNounIndexNameInstanceGAD.terms());
 	set.addAll(WordnetNounIndexNameInstanceGAE.terms());

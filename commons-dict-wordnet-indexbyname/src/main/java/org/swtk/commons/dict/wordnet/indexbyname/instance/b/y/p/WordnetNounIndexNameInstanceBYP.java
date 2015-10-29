@@ -1,4 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.b.y.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBYP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"bypass\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04218068\", \"05555836\", \"02831832\"]}");
+	add("{\"term\":\"bypass capacitor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02933723\"]}");
+	add("{\"term\":\"bypass condenser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02933723\"]}");
 	add("{\"term\":\"bypath\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02934029\"]}");
 	add("{\"term\":\"byplay\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00551378\"]}");
 	add("{\"term\":\"byproduct\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02933876\", \"11432706\"]}");

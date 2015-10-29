@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.p.i.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePIA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"pia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12496279\"]}");
+	add("{\"term\":\"pia mater\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05490452\"]}");
 	add("{\"term\":\"piaf\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11254142\"]}");
 	add("{\"term\":\"piaffe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00289228\"]}");
 	add("{\"term\":\"piaget\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11254282\"]}");
@@ -6,8 +7,22 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.p.i.a;  import java.u
 	add("{\"term\":\"pianissimo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04998511\"]}");
 	add("{\"term\":\"pianist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10450429\"]}");
 	add("{\"term\":\"piano\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04998511\", \"03934354\"]}");
+	add("{\"term\":\"piano accordion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02675726\"]}");
+	add("{\"term\":\"piano action\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03934827\"]}");
+	add("{\"term\":\"piano damper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03166559\"]}");
+	add("{\"term\":\"piano keyboard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03935052\"]}");
+	add("{\"term\":\"piano lesson\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00891561\"]}");
+	add("{\"term\":\"piano maker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10450886\"]}");
+	add("{\"term\":\"piano music\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05727272\", \"06828479\"]}");
+	add("{\"term\":\"piano player\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10450429\"]}");
+	add("{\"term\":\"piano sonata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07058022\"]}");
+	add("{\"term\":\"piano stool\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03807420\"]}");
+	add("{\"term\":\"piano teacher\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10450988\"]}");
+	add("{\"term\":\"piano tuner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10752774\"]}");
+	add("{\"term\":\"piano wire\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03935232\"]}");
 	add("{\"term\":\"pianoforte\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03934354\"]}");
 	add("{\"term\":\"pianola\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03743557\"]}");
+	add("{\"term\":\"piassava palm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12605898\"]}");
 	add("{\"term\":\"piaster\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13709383\", \"13716265\"]}");
 	add("{\"term\":\"piastre\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13709383\", \"13716265\"]}");
 	add("{\"term\":\"piazza\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08637370\"]}");

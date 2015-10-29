@@ -5,9 +5,12 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.u.r.e;  import java.u
 	add("{\"term\":\"ureter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05520486\"]}");
 	add("{\"term\":\"ureteritis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14381175\"]}");
 	add("{\"term\":\"ureterocele\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14596182\"]}");
+	add("{\"term\":\"ureterorenal reflux\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14359166\"]}");
 	add("{\"term\":\"ureterostenosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14596315\"]}");
 	add("{\"term\":\"urethane\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15108844\"]}");
 	add("{\"term\":\"urethra\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05520671\"]}");
+	add("{\"term\":\"urethral orifice\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05520321\"]}");
+	add("{\"term\":\"urethral sphincter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05579858\"]}");
 	add("{\"term\":\"urethritis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14591002\"]}");
 	add("{\"term\":\"urethrocele\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14596399\"]}");
 	add("{\"term\":\"urex\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03760669\"]}");

@@ -1,13 +1,24 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.l.o.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLOT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"lot\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"10293366\", \"07971317\", \"03238126\", \"14496806\", \"08257090\", \"08692708\", \"13796604\"]}");
 	add("{\"term\":\"lota\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02525969\", \"03696177\"]}");
+	add("{\"term\":\"lota lota\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02526058\"]}");
+	add("{\"term\":\"lotario di segni\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11091950\"]}");
 	add("{\"term\":\"lothario\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10293870\"]}");
+	add("{\"term\":\"lothian region\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08912993\"]}");
 	add("{\"term\":\"lothringen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08962877\"]}");
 	add("{\"term\":\"loti\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13709757\"]}");
 	add("{\"term\":\"lotion\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03696454\", \"03696264\"]}");
 	add("{\"term\":\"lots\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13799721\"]}");
 	add("{\"term\":\"lotte\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02550878\"]}");
 	add("{\"term\":\"lottery\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00509102\", \"07331744\"]}");
+	add("{\"term\":\"lottery winner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09650995\"]}");
 	add("{\"term\":\"lotto\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00505671\"]}");
 	add("{\"term\":\"lotus\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"11736279\", \"12565595\", \"11737868\"]}");
+	add("{\"term\":\"lotus americanus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12565737\"]}");
+	add("{\"term\":\"lotus berthelotii\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12565934\"]}");
+	add("{\"term\":\"lotus corniculatus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12566140\"]}");
+	add("{\"term\":\"lotus land\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14538287\"]}");
+	add("{\"term\":\"lotus position\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05088130\"]}");
+	add("{\"term\":\"lotus tetragonolobus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12566370\"]}");
+	add("{\"term\":\"lotus tree\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13164260\"]}");
 	add("{\"term\":\"lotusland\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14538287\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

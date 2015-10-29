@@ -3,4 +3,5 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.c.y.d;  import java.u
 	add("{\"term\":\"cydippida\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01922355\"]}");
 	add("{\"term\":\"cydippidea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01922355\"]}");
 	add("{\"term\":\"cydonia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12649633\"]}");
+	add("{\"term\":\"cydonia oblonga\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12649747\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -2,6 +2,9 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.a.z.e;  import java.u
 	add("{\"term\":\"azederach\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12716736\"]}");
 	add("{\"term\":\"azerbaijan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09040532\"]}");
 	add("{\"term\":\"azerbaijani\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06939784\", \"09754974\"]}");
+	add("{\"term\":\"azerbaijani monetary unit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13721717\"]}");
+	add("{\"term\":\"azerbaijani republic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09040532\"]}");
 	add("{\"term\":\"azerbajdzhan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09040532\"]}");
+	add("{\"term\":\"azerbajdzhan republic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09040532\"]}");
 	add("{\"term\":\"azeri\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08500276\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

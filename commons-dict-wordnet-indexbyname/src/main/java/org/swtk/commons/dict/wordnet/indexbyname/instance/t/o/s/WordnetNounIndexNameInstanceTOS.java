@@ -2,7 +2,10 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.t.o.s;  import java.u
 	add("{\"term\":\"toscanini\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11366252\"]}");
 	add("{\"term\":\"tosh\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06623500\"]}");
 	add("{\"term\":\"tosk\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06955312\"]}");
+	add("{\"term\":\"tosk dialect\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06955312\"]}");
 	add("{\"term\":\"toss\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00346643\", \"00106640\", \"01248633\"]}");
+	add("{\"term\":\"toss bombing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00981434\"]}");
+	add("{\"term\":\"tossed salad\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07822609\"]}");
 	add("{\"term\":\"tosser\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10736704\", \"10736845\"]}");
 	add("{\"term\":\"tossup\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11540232\"]}");
 	add("{\"term\":\"tostada\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07897285\", \"07897379\"]}");

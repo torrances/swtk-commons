@@ -1,5 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.h.o.y;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHOY {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hoy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02795575\"]}");
 	add("{\"term\":\"hoya\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13257785\"]}");
+	add("{\"term\":\"hoya carnosa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13258086\"]}");
 	add("{\"term\":\"hoyden\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10734679\"]}");
 	add("{\"term\":\"hoydenism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04674615\"]}");
 	add("{\"term\":\"hoyle\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11083177\", \"11083304\"]}");

@@ -4,9 +4,13 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.c;  import java.u
 	add("{\"term\":\"encasement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00323314\"]}");
 	add("{\"term\":\"encaustic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03290489\"]}");
 	add("{\"term\":\"encelia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11984224\"]}");
+	add("{\"term\":\"encelia farinosa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11984401\"]}");
 	add("{\"term\":\"enceliopsis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11984738\"]}");
+	add("{\"term\":\"enceliopsis nudicaulis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11984915\"]}");
 	add("{\"term\":\"encephalartos\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11623697\"]}");
+	add("{\"term\":\"encephalartos caffer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11623913\"]}");
 	add("{\"term\":\"encephalitis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14365537\"]}");
+	add("{\"term\":\"encephalitis lethargica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14367140\"]}");
 	add("{\"term\":\"encephalocele\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14490430\"]}");
 	add("{\"term\":\"encephalogram\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03290641\", \"07017357\"]}");
 	add("{\"term\":\"encephalography\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00907988\"]}");
@@ -22,6 +26,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.c;  import java.u
 	add("{\"term\":\"enchondroma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14261523\"]}");
 	add("{\"term\":\"encirclement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00956197\"]}");
 	add("{\"term\":\"enclave\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08570669\"]}");
+	add("{\"term\":\"enclosed space\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13934532\"]}");
 	add("{\"term\":\"enclosing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00322782\"]}");
 	add("{\"term\":\"enclosure\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"06485052\", \"09296197\", \"00322782\", \"03290823\"]}");
 	add("{\"term\":\"encoding\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00617127\"]}");
@@ -31,6 +36,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.c;  import java.u
 	add("{\"term\":\"encopresis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14410882\"]}");
 	add("{\"term\":\"encore\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00100259\"]}");
 	add("{\"term\":\"encounter\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07195703\", \"00148007\", \"07429522\", \"00961487\"]}");
+	add("{\"term\":\"encounter group\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08326541\"]}");
 	add("{\"term\":\"encouragement\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07556837\", \"01213509\", \"06704187\"]}");
 	add("{\"term\":\"encroacher\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10233732\"]}");
 	add("{\"term\":\"encroachment\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00158777\", \"00734781\", \"07444576\"]}");
@@ -39,7 +45,11 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.c;  import java.u
 	add("{\"term\":\"enculturation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01131305\"]}");
 	add("{\"term\":\"encumbrance\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03525974\", \"13424198\", \"05841069\"]}");
 	add("{\"term\":\"encyclia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12081317\"]}");
+	add("{\"term\":\"encyclia citrina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12081605\"]}");
+	add("{\"term\":\"encyclia tampensis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12081881\"]}");
+	add("{\"term\":\"encyclia venosa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12082115\"]}");
 	add("{\"term\":\"encyclical\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06637569\"]}");
+	add("{\"term\":\"encyclical letter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06637569\"]}");
 	add("{\"term\":\"encyclopaedia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06439057\"]}");
 	add("{\"term\":\"encyclopaedism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05994884\"]}");
 	add("{\"term\":\"encyclopaedist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10075374\"]}");

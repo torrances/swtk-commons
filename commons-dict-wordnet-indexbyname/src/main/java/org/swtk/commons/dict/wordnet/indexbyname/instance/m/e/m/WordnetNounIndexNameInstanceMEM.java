@@ -1,12 +1,18 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.m.e.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMEM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"mem\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06851055\"]}");
 	add("{\"term\":\"member\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"05534035\", \"08187585\", \"05567541\", \"13832827\", \"10326901\"]}");
+	add("{\"term\":\"member bank\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08435990\"]}");
+	add("{\"term\":\"member of parliament\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10420136\"]}");
 	add("{\"term\":\"membership\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13954660\", \"08417922\"]}");
+	add("{\"term\":\"membership card\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06489641\"]}");
 	add("{\"term\":\"membracidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02262217\"]}");
 	add("{\"term\":\"membrane\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05433820\", \"03749252\"]}");
+	add("{\"term\":\"membrane bone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05284359\"]}");
 	add("{\"term\":\"membranophone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03254272\"]}");
+	add("{\"term\":\"membranous labyrinth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05329212\"]}");
 	add("{\"term\":\"meme\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05994011\"]}");
 	add("{\"term\":\"memel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09036436\"]}");
 	add("{\"term\":\"memento\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05821923\"]}");
+	add("{\"term\":\"memento mori\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05822013\"]}");
 	add("{\"term\":\"memo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06518182\"]}");
 	add("{\"term\":\"memoir\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06421830\", \"06528486\"]}");
 	add("{\"term\":\"memorabilia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06517696\"]}");
@@ -14,6 +20,9 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.m.e.m;  import java.u
 	add("{\"term\":\"memoranda\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06518182\"]}");
 	add("{\"term\":\"memorandum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06518182\"]}");
 	add("{\"term\":\"memorial\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03749393\", \"06525615\", \"06701267\"]}");
+	add("{\"term\":\"memorial day\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15214287\"]}");
+	add("{\"term\":\"memorial park\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08538806\"]}");
+	add("{\"term\":\"memorial tablet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02895442\"]}");
 	add("{\"term\":\"memorialisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07467451\"]}");
 	add("{\"term\":\"memorialization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07467451\"]}");
 	add("{\"term\":\"memorisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05763153\"]}");
@@ -21,6 +30,15 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.m.e.m;  import java.u
 	add("{\"term\":\"memorization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05763153\"]}");
 	add("{\"term\":\"memorizer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10328171\"]}");
 	add("{\"term\":\"memory\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"06149719\", \"03749767\", \"05659244\", \"05768199\", \"05943778\"]}");
+	add("{\"term\":\"memory access\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02673854\"]}");
+	add("{\"term\":\"memory board\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03749767\"]}");
+	add("{\"term\":\"memory cache\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02938401\"]}");
+	add("{\"term\":\"memory chip\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03750175\"]}");
+	add("{\"term\":\"memory device\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03750331\"]}");
+	add("{\"term\":\"memory image\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05944589\"]}");
+	add("{\"term\":\"memory loss\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05680235\"]}");
+	add("{\"term\":\"memory picture\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05944734\"]}");
+	add("{\"term\":\"memory trace\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05944099\"]}");
 	add("{\"term\":\"memphis\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08919578\", \"09163849\"]}");
 	add("{\"term\":\"memsahib\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09707336\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

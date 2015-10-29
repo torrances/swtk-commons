@@ -1,7 +1,22 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.a.r.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceARN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"arng\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08413947\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.a.r.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceARN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"arna wendell bontemps\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10876755\"]}");
+	add("{\"term\":\"arng\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08413947\"]}");
 	add("{\"term\":\"arnhem\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08970003\"]}");
 	add("{\"term\":\"arnica\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"02744986\", \"11947302\", \"11947978\"]}");
+	add("{\"term\":\"arnica bud\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12009556\"]}");
+	add("{\"term\":\"arnica cordifolia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11947445\"]}");
+	add("{\"term\":\"arnica montana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11947684\"]}");
 	add("{\"term\":\"arno\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09229581\"]}");
+	add("{\"term\":\"arno river\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09229581\"]}");
 	add("{\"term\":\"arnold\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10843133\", \"10843364\"]}");
+	add("{\"term\":\"arnold daniel palmer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11241640\"]}");
+	add("{\"term\":\"arnold gesell\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11017230\"]}");
+	add("{\"term\":\"arnold joseph toynbee\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11367312\"]}");
+	add("{\"term\":\"arnold lucius gesell\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11017230\"]}");
+	add("{\"term\":\"arnold of brescia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10843498\"]}");
+	add("{\"term\":\"arnold palmer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11241640\"]}");
+	add("{\"term\":\"arnold schoenberg\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11305892\"]}");
+	add("{\"term\":\"arnold schonberg\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11305892\"]}");
+	add("{\"term\":\"arnold toynbee\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11367312\"]}");
 	add("{\"term\":\"arnoseris\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11948085\"]}");
+	add("{\"term\":\"arnoseris minima\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11948209\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

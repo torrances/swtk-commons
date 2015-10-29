@@ -3,15 +3,28 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.a.m.m;  import java.u
 	add("{\"term\":\"ammine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14767906\"]}");
 	add("{\"term\":\"ammo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02706134\"]}");
 	add("{\"term\":\"ammobium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11940967\"]}");
+	add("{\"term\":\"ammobium alatum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11941132\"]}");
 	add("{\"term\":\"ammodytes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02621002\"]}");
 	add("{\"term\":\"ammodytidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02620874\"]}");
 	add("{\"term\":\"ammonia\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14767761\", \"14768019\"]}");
+	add("{\"term\":\"ammonia alum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14652485\"]}");
+	add("{\"term\":\"ammonia clock\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02705983\"]}");
+	add("{\"term\":\"ammonia water\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14768019\"]}");
 	add("{\"term\":\"ammoniac\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14768155\"]}");
 	add("{\"term\":\"ammonification\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13451435\"]}");
 	add("{\"term\":\"ammonite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09218836\"]}");
 	add("{\"term\":\"ammonium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14768299\"]}");
+	add("{\"term\":\"ammonium alum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14652485\"]}");
+	add("{\"term\":\"ammonium carbamate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14768470\"]}");
+	add("{\"term\":\"ammonium carbonate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14768596\"]}");
+	add("{\"term\":\"ammonium chloride\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14768768\"]}");
+	add("{\"term\":\"ammonium hydroxide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14768019\"]}");
+	add("{\"term\":\"ammonium ion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14768299\"]}");
+	add("{\"term\":\"ammonium nitrate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15038579\"]}");
 	add("{\"term\":\"ammoniuria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14289815\"]}");
 	add("{\"term\":\"ammonoid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09218836\"]}");
 	add("{\"term\":\"ammotragus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02418617\"]}");
+	add("{\"term\":\"ammotragus lervia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02418750\"]}");
 	add("{\"term\":\"ammunition\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06496385\", \"14609988\", \"02706134\"]}");
+	add("{\"term\":\"ammunition chest\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02940621\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

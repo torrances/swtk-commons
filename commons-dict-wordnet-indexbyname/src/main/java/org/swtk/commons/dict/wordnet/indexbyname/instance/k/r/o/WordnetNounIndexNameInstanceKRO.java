@@ -2,6 +2,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.k.r.o;  import java.u
 	add("{\"term\":\"krona\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13704098\", \"13704435\"]}");
 	add("{\"term\":\"krone\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13704845\", \"13705076\"]}");
 	add("{\"term\":\"kronecker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11131075\"]}");
+	add("{\"term\":\"kronecker delta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13806975\"]}");
 	add("{\"term\":\"kroon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13722467\"]}");
 	add("{\"term\":\"kropotkin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11131184\"]}");
 	add("{\"term\":\"kroto\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11131325\"]}");

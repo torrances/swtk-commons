@@ -7,8 +7,10 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.k.i.r;  import java.u
 	add("{\"term\":\"kirgizia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09042810\"]}");
 	add("{\"term\":\"kirgizstan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09042810\"]}");
 	add("{\"term\":\"kiribati\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08859741\"]}");
+	add("{\"term\":\"kiribati dollar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13695755\"]}");
 	add("{\"term\":\"kirk\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03624191\"]}");
 	add("{\"term\":\"kirkia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12738674\"]}");
+	add("{\"term\":\"kirkia wilmsii\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12738834\"]}");
 	add("{\"term\":\"kirkuk\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08934623\"]}");
 	add("{\"term\":\"kirpan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03624259\"]}");
 	add("{\"term\":\"kirsch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07920312\"]}");

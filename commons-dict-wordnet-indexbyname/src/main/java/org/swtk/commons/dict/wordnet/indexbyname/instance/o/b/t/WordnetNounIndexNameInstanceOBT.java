@@ -2,5 +2,9 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.o.b.t;  import java.u
 	add("{\"term\":\"obtention\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00078676\"]}");
 	add("{\"term\":\"obtrusiveness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04714404\"]}");
 	add("{\"term\":\"obturator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03845847\"]}");
+	add("{\"term\":\"obturator vein\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05382001\"]}");
+	add("{\"term\":\"obtuse angle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13914741\"]}");
+	add("{\"term\":\"obtuse leaf\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13179612\"]}");
+	add("{\"term\":\"obtuse triangle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13903072\"]}");
 	add("{\"term\":\"obtuseness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04713298\", \"05653884\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

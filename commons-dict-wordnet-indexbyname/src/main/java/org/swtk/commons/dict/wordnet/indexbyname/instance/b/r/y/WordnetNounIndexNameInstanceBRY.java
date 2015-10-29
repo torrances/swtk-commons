@@ -1,9 +1,15 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.b.r.y;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBRY {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"brya\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11769405\"]}");
+	add("{\"term\":\"brya ebenus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11769581\"]}");
 	add("{\"term\":\"bryaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11561421\"]}");
 	add("{\"term\":\"bryales\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11560451\"]}");
 	add("{\"term\":\"bryan\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09166286\", \"10888972\"]}");
+	add("{\"term\":\"bryan donkin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10959622\"]}");
 	add("{\"term\":\"bryanthus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12253766\"]}");
+	add("{\"term\":\"bryanthus taxifolius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12263367\"]}");
+	add("{\"term\":\"bryce canyon national park\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08620714\"]}");
 	add("{\"term\":\"brynhild\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09613669\"]}");
+	add("{\"term\":\"bryonia alba\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12183796\"]}");
+	add("{\"term\":\"bryonia dioica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12183973\"]}");
 	add("{\"term\":\"bryony\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12183552\"]}");
 	add("{\"term\":\"bryophyta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11557229\"]}");
 	add("{\"term\":\"bryophyte\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11557778\"]}");

@@ -2,4 +2,10 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.i.n.p;  import java.u
 	add("{\"term\":\"inpour\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13521640\"]}");
 	add("{\"term\":\"inpouring\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13521640\"]}");
 	add("{\"term\":\"input\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03578305\", \"05836008\", \"06777755\", \"07279488\"]}");
+	add("{\"term\":\"input data\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06522469\"]}");
+	add("{\"term\":\"input device\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03168639\"]}");
+	add("{\"term\":\"input file\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06522469\"]}");
+	add("{\"term\":\"input program\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06587268\"]}");
+	add("{\"term\":\"input routine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06595821\"]}");
+	add("{\"term\":\"input signal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07279488\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

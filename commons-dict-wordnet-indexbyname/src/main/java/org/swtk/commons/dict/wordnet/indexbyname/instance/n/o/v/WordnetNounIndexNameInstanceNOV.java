@@ -1,6 +1,16 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.n.o.v;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNOV {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"nov\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15238202\"]}");
 	add("{\"term\":\"nova\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09397404\"]}");
+	add("{\"term\":\"nova lisboa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08726314\"]}");
+	add("{\"term\":\"nova lox\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07812946\"]}");
+	add("{\"term\":\"nova salmon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07812946\"]}");
+	add("{\"term\":\"nova scotia\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08845298\", \"08845833\"]}");
+	add("{\"term\":\"nova scotia lox\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07812946\"]}");
+	add("{\"term\":\"nova scotia salmon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07812946\"]}");
+	add("{\"term\":\"nova scotian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09744960\"]}");
+	add("{\"term\":\"nova style salmon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07812946\"]}");
+	add("{\"term\":\"nova zembla\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09033155\"]}");
 	add("{\"term\":\"novation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00197697\"]}");
+	add("{\"term\":\"novaya zemlya\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09033155\"]}");
 	add("{\"term\":\"novel\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03838605\", \"06379324\"]}");
 	add("{\"term\":\"novelette\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06380585\"]}");
 	add("{\"term\":\"novelisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00933268\"]}");
@@ -8,6 +18,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.n.o.v;  import java.u
 	add("{\"term\":\"novelization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00933268\"]}");
 	add("{\"term\":\"novella\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06380585\"]}");
 	add("{\"term\":\"novelty\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"02790458\", \"03628657\", \"05642900\", \"04807845\"]}");
+	add("{\"term\":\"novelty shop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03441327\"]}");
 	add("{\"term\":\"november\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15238202\"]}");
 	add("{\"term\":\"novena\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01045221\"]}");
 	add("{\"term\":\"novgorod\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09031544\"]}");

@@ -1,8 +1,24 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.h.e.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHED {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hedeoma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12868509\"]}");
+	add("{\"term\":\"hedeoma oil\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12868972\"]}");
+	add("{\"term\":\"hedeoma pulegioides\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12868687\"]}");
 	add("{\"term\":\"hedera\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11819320\"]}");
+	add("{\"term\":\"hedera helix\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11819447\"]}");
 	add("{\"term\":\"hedge\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06774314\", \"13365477\", \"03516319\"]}");
+	add("{\"term\":\"hedge bindweed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12845821\"]}");
+	add("{\"term\":\"hedge fund\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08088065\"]}");
+	add("{\"term\":\"hedge garlic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11890887\"]}");
+	add("{\"term\":\"hedge maple\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12775408\"]}");
+	add("{\"term\":\"hedge mustard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11917585\"]}");
+	add("{\"term\":\"hedge nettle\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12889640\", \"12889821\"]}");
+	add("{\"term\":\"hedge pink\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11835053\"]}");
+	add("{\"term\":\"hedge sparrow\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01529988\"]}");
+	add("{\"term\":\"hedge thorn\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11792215\"]}");
+	add("{\"term\":\"hedge trimmer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03516477\"]}");
+	add("{\"term\":\"hedge violet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12410831\"]}");
 	add("{\"term\":\"hedgefund\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08088065\"]}");
 	add("{\"term\":\"hedgehog\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01896466\", \"02349279\"]}");
+	add("{\"term\":\"hedgehog cactus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11866262\"]}");
+	add("{\"term\":\"hedgehog cereus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11866781\"]}");
 	add("{\"term\":\"hedger\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"10187333\", \"10187431\", \"10187605\"]}");
 	add("{\"term\":\"hedgerow\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03516319\"]}");
 	add("{\"term\":\"hedging\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06774314\", \"13365477\"]}");
@@ -11,4 +27,6 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.h.e.d;  import java.u
 	add("{\"term\":\"hedonism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06170312\", \"09206868\"]}");
 	add("{\"term\":\"hedonist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10187776\"]}");
 	add("{\"term\":\"hedysarum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12554958\"]}");
+	add("{\"term\":\"hedysarum boreale\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12555130\"]}");
+	add("{\"term\":\"hedysarum coronarium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12555367\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -2,6 +2,9 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.o.t.h;  import java.u
 	add("{\"term\":\"otherness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04750006\"]}");
 	add("{\"term\":\"otherworld\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05818169\"]}");
 	add("{\"term\":\"otherworldliness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04628671\"]}");
+	add("{\"term\":\"othman i\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11237779\"]}");
 	add("{\"term\":\"otho\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11376631\"]}");
+	add("{\"term\":\"otho i\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11238615\"]}");
+	add("{\"term\":\"otho of lagery\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11376631\"]}");
 	add("{\"term\":\"othonna\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12019747\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

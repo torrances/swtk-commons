@@ -5,4 +5,5 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.z.a.p;  import java.u
 	add("{\"term\":\"zapotecan\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06931898\", \"09669077\"]}");
 	add("{\"term\":\"zapper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04621440\"]}");
 	add("{\"term\":\"zapus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02353864\"]}");
+	add("{\"term\":\"zapus hudsonius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02353995\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

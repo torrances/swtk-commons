@@ -1,7 +1,9 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.a.e.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceAES {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"aeschylus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10828690\"]}");
 	add("{\"term\":\"aeschynanthus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12851328\"]}");
+	add("{\"term\":\"aeschynanthus radicans\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12851549\"]}");
 	add("{\"term\":\"aesculapius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09582330\"]}");
 	add("{\"term\":\"aesculus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12788937\"]}");
+	add("{\"term\":\"aesculus hippocastanum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12789129\"]}");
 	add("{\"term\":\"aesir\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09602248\"]}");
 	add("{\"term\":\"aesop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10828827\"]}");
 	add("{\"term\":\"aesthesia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05685989\"]}");

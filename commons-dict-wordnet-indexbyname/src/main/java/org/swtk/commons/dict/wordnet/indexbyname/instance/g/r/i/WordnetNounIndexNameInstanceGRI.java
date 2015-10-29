@@ -1,5 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.g.r.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceGRI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"grias\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12347924\"]}");
+	add("{\"term\":\"grias cauliflora\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12348045\"]}");
 	add("{\"term\":\"grid\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"03463354\", \"03463484\", \"03463685\", \"04003385\", \"05940298\"]}");
+	add("{\"term\":\"grid metal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14916019\"]}");
 	add("{\"term\":\"griddle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03464260\"]}");
 	add("{\"term\":\"griddlecake\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07655812\", \"07706836\"]}");
 	add("{\"term\":\"gridiron\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03383761\", \"03463354\"]}");
@@ -8,16 +10,24 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.g.r.i;  import java.u
 	add("{\"term\":\"grieg\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11036195\"]}");
 	add("{\"term\":\"grievance\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07225461\", \"07251126\", \"07565002\"]}");
 	add("{\"term\":\"griever\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10354959\"]}");
+	add("{\"term\":\"grievous bodily harm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04260861\"]}");
 	add("{\"term\":\"griffin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09519093\"]}");
 	add("{\"term\":\"griffith\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11036370\"]}");
 	add("{\"term\":\"griffon\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"01619736\", \"02105833\", \"02115149\", \"09519093\"]}");
+	add("{\"term\":\"griffon vulture\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01619736\"]}");
+	add("{\"term\":\"grifola frondosa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13073430\"]}");
 	add("{\"term\":\"grifter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09974494\"]}");
+	add("{\"term\":\"grigori aleksandrovich potemkin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11264051\"]}");
+	add("{\"term\":\"grigori efimovich rasputin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11274673\"]}");
+	add("{\"term\":\"grigori potemkin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11264051\"]}");
+	add("{\"term\":\"grigori potyokin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11264051\"]}");
 	add("{\"term\":\"grigri\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03464430\"]}");
 	add("{\"term\":\"grill\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03464523\", \"03464846\"]}");
 	add("{\"term\":\"grille\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03464523\", \"03464707\", \"04589740\"]}");
 	add("{\"term\":\"grilling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00247621\"]}");
 	add("{\"term\":\"grillroom\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03464846\"]}");
 	add("{\"term\":\"grillwork\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03464523\", \"04603089\"]}");
+	add("{\"term\":\"grim reaper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09511714\"]}");
 	add("{\"term\":\"grimace\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06890628\"]}");
 	add("{\"term\":\"grime\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14521680\"]}");
 	add("{\"term\":\"griminess\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14522427\"]}");
@@ -26,9 +36,13 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.g.r.i;  import java.u
 	add("{\"term\":\"grimoire\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06433675\"]}");
 	add("{\"term\":\"grin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06891121\"]}");
 	add("{\"term\":\"grind\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00359116\", \"00622716\", \"05101686\", \"10704113\"]}");
+	add("{\"term\":\"grind organ\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02799001\"]}");
 	add("{\"term\":\"grindelia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11993628\"]}");
+	add("{\"term\":\"grindelia robusta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11994103\"]}");
+	add("{\"term\":\"grindelia squarrosa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11994218\"]}");
 	add("{\"term\":\"grinder\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03464972\", \"03771096\", \"05315272\", \"07713570\"]}");
 	add("{\"term\":\"grinding\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"11480462\", \"07398944\", \"09317622\"]}");
+	add("{\"term\":\"grinding wheel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03465079\"]}");
 	add("{\"term\":\"grindle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02641717\"]}");
 	add("{\"term\":\"grindstone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03465229\"]}");
 	add("{\"term\":\"gringo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10166641\"]}");
@@ -44,8 +58,11 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.g.r.i;  import java.u
 	add("{\"term\":\"gris\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11037016\"]}");
 	add("{\"term\":\"grisaille\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03465458\"]}");
 	add("{\"term\":\"griselinia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12969738\"]}");
+	add("{\"term\":\"griselinia littoralis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12970121\"]}");
+	add("{\"term\":\"griselinia lucida\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12969920\"]}");
 	add("{\"term\":\"griseofulvin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03465606\"]}");
 	add("{\"term\":\"grison\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02452330\"]}");
+	add("{\"term\":\"grison vittatus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02452330\"]}");
 	add("{\"term\":\"grissino\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07696400\"]}");
 	add("{\"term\":\"grist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07818743\"]}");
 	add("{\"term\":\"gristle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05295590\"]}");
@@ -57,4 +74,5 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.g.r.i;  import java.u
 	add("{\"term\":\"grivet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02488002\"]}");
 	add("{\"term\":\"grizzle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03465969\"]}");
 	add("{\"term\":\"grizzly\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02135232\"]}");
+	add("{\"term\":\"grizzly bear\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02135232\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

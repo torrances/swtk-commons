@@ -1,5 +1,22 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.j.u.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceJUL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"julep\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07931731\"]}");
+	add("{\"term\":\"jules alfred huot de goncourt\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11026685\"]}");
+	add("{\"term\":\"jules de goncourt\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11026685\"]}");
+	add("{\"term\":\"jules emile frederic massenet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11183699\"]}");
+	add("{\"term\":\"jules feifer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10988249\"]}");
+	add("{\"term\":\"jules verne\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11383407\"]}");
+	add("{\"term\":\"julia evelina smith\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11325846\"]}");
+	add("{\"term\":\"julia ward howe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11082644\"]}");
 	add("{\"term\":\"julian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11114302\"]}");
+	add("{\"term\":\"julian bond\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10875583\"]}");
+	add("{\"term\":\"julian calendar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15199932\"]}");
+	add("{\"term\":\"julian the apostate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11114302\"]}");
 	add("{\"term\":\"julienne\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07601568\", \"07723869\"]}");
+	add("{\"term\":\"julienne vegetable\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07723869\"]}");
+	add("{\"term\":\"julio iglesias\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11090845\"]}");
+	add("{\"term\":\"julius caesar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10897913\"]}");
+	add("{\"term\":\"julius erving\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10980764\"]}");
+	add("{\"term\":\"julius marx\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11180666\"]}");
+	add("{\"term\":\"julius ullman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10985353\"]}");
+	add("{\"term\":\"julius winfield erving\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10980764\"]}");
 	add("{\"term\":\"july\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15236963\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

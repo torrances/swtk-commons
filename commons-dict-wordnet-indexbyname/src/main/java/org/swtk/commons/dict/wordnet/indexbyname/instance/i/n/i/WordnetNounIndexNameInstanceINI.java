@@ -1,6 +1,10 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.i.n.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceINI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"inion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05240568\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.i.n.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceINI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"inigo jones\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11110225\"]}");
+	add("{\"term\":\"inion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05240568\"]}");
 	add("{\"term\":\"iniquity\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00745914\", \"00746935\"]}");
 	add("{\"term\":\"initial\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06844047\"]}");
+	add("{\"term\":\"initial offering\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01096499\"]}");
+	add("{\"term\":\"initial public offering\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01096499\"]}");
+	add("{\"term\":\"initial rhyme\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07111760\"]}");
 	add("{\"term\":\"initialisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06649875\"]}");
 	add("{\"term\":\"initialism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07106112\", \"07106330\"]}");
 	add("{\"term\":\"initialization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06649875\"]}");

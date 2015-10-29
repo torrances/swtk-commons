@@ -6,17 +6,27 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.t.y.r;  import java.u
 	add("{\"term\":\"tyrannidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01550100\"]}");
 	add("{\"term\":\"tyrannosaur\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01716405\"]}");
 	add("{\"term\":\"tyrannosaurus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01716405\"]}");
+	add("{\"term\":\"tyrannosaurus rex\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01716405\"]}");
 	add("{\"term\":\"tyrannus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01550784\"]}");
+	add("{\"term\":\"tyrannus domenicensis domenicensis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01551694\"]}");
+	add("{\"term\":\"tyrannus tyrannus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01550942\"]}");
+	add("{\"term\":\"tyrannus vociferans\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01551335\"]}");
 	add("{\"term\":\"tyranny\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14467378\", \"08457622\"]}");
 	add("{\"term\":\"tyrant\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"10755221\", \"10755364\", \"10754955\"]}");
+	add("{\"term\":\"tyrant bird\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01550473\"]}");
+	add("{\"term\":\"tyrant flycatcher\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01550473\"]}");
 	add("{\"term\":\"tyre\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04447883\", \"08978107\"]}");
+	add("{\"term\":\"tyrian purple\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04977489\", \"15026320\"]}");
 	add("{\"term\":\"tyro\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10383612\"]}");
 	add("{\"term\":\"tyrocidin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04513001\"]}");
 	add("{\"term\":\"tyrocidine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04513001\"]}");
 	add("{\"term\":\"tyrol\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08865127\"]}");
 	add("{\"term\":\"tyrolean\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04513183\", \"09754455\"]}");
+	add("{\"term\":\"tyrolean alps\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09487782\"]}");
 	add("{\"term\":\"tyrosine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15107333\"]}");
+	add("{\"term\":\"tyrosine kinase inhibitor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04513300\"]}");
 	add("{\"term\":\"tyrosinemia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14193379\"]}");
 	add("{\"term\":\"tyrothricin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04513420\"]}");
 	add("{\"term\":\"tyrr\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09606898\"]}");
+	add("{\"term\":\"tyrrhenian sea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09488092\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

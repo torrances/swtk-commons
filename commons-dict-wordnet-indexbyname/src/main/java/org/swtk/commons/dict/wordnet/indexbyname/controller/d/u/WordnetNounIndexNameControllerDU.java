@@ -15,7 +15,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.controller.d.u;  import java.u
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.d.u.s.WordnetNounIndexNameInstanceDUS;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.d.u.t.WordnetNounIndexNameInstanceDUT;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.d.u.v.WordnetNounIndexNameInstanceDUV;
-  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerDU {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException { 		if (TERM.length() < 3) throw new BusinessException("TERM not found (term = %s)", TERM); 		 		String key = TERM.substring(0, 3).toLowerCase(); 			if ("dua".equals(key)) return WordnetNounIndexNameInstanceDUA.get(TERM);
+  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerDU {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException { 		if (TERM.length() < 3) throw new BusinessException("TERM not found (term = %s)", TERM); 		 		String key = TERM.replaceAll(" ", "").substring(0, 3).toLowerCase(); 			if ("dua".equals(key)) return WordnetNounIndexNameInstanceDUA.get(TERM);
 	if ("dub".equals(key)) return WordnetNounIndexNameInstanceDUB.get(TERM);
 	if ("duc".equals(key)) return WordnetNounIndexNameInstanceDUC.get(TERM);
 	if ("dud".equals(key)) return WordnetNounIndexNameInstanceDUD.get(TERM);
@@ -32,7 +32,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.controller.d.u;  import java.u
 	if ("dus".equals(key)) return WordnetNounIndexNameInstanceDUS.get(TERM);
 	if ("dut".equals(key)) return WordnetNounIndexNameInstanceDUT.get(TERM);
 	if ("duv".equals(key)) return WordnetNounIndexNameInstanceDUV.get(TERM);
-  		throw new BusinessException("TERM not found (term = %s)", TERM); 	} 	 	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceDUA.terms());
+  		throw new BusinessException("TERM not found (term = %s)", TERM); 	}  	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceDUA.terms());
 	set.addAll(WordnetNounIndexNameInstanceDUB.terms());
 	set.addAll(WordnetNounIndexNameInstanceDUC.terms());
 	set.addAll(WordnetNounIndexNameInstanceDUD.terms());

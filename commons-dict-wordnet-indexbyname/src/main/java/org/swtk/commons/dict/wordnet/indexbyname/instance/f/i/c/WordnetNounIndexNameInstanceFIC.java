@@ -3,7 +3,22 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.f.i.c;  import java.u
 	add("{\"term\":\"fichu\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03337118\"]}");
 	add("{\"term\":\"fickleness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04886287\"]}");
 	add("{\"term\":\"fiction\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06770602\", \"06378552\"]}");
+	add("{\"term\":\"fictional animal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02454206\"]}");
+	add("{\"term\":\"fictional character\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09610740\"]}");
 	add("{\"term\":\"fictionalisation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00932855\", \"06378818\"]}");
 	add("{\"term\":\"fictionalization\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00932855\", \"06378818\"]}");
+	add("{\"term\":\"fictitious character\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09610740\"]}");
+	add("{\"term\":\"fictitious name\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06345523\"]}");
+	add("{\"term\":\"fictitious place\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05633662\"]}");
 	add("{\"term\":\"ficus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12421627\"]}");
+	add("{\"term\":\"ficus aurea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12422556\"]}");
+	add("{\"term\":\"ficus bengalensis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12422853\"]}");
+	add("{\"term\":\"ficus carica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12422189\"]}");
+	add("{\"term\":\"ficus carica sylvestris\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12422398\"]}");
+	add("{\"term\":\"ficus deltoidea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12423580\"]}");
+	add("{\"term\":\"ficus diversifolia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12423580\"]}");
+	add("{\"term\":\"ficus elastica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12423345\"]}");
+	add("{\"term\":\"ficus religiosa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12423101\"]}");
+	add("{\"term\":\"ficus rubiginosa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12423781\"]}");
+	add("{\"term\":\"ficus sycomorus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12424018\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

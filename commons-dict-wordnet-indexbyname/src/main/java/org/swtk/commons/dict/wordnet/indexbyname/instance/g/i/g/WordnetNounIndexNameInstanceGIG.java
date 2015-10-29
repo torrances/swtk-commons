@@ -2,6 +2,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.g.i.g;  import java.u
 	add("{\"term\":\"gigabit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13650593\"]}");
 	add("{\"term\":\"gigabyte\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13650222\", \"13650416\"]}");
 	add("{\"term\":\"gigacycle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15303677\"]}");
+	add("{\"term\":\"gigacycle per second\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15303677\"]}");
 	add("{\"term\":\"gigahertz\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15303677\"]}");
 	add("{\"term\":\"gigantism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05113520\", \"14391693\"]}");
 	add("{\"term\":\"gigartinaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01417000\"]}");

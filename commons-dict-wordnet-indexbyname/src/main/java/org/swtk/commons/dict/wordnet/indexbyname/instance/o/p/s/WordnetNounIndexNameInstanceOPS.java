@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.o.p.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceOPS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ops\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09599726\"]}");
+	add("{\"term\":\"opsanus tau\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02551320\"]}");
 	add("{\"term\":\"opsin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14759256\"]}");
 	add("{\"term\":\"opsonin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15054831\"]}");
 	add("{\"term\":\"opsonisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13547115\"]}");

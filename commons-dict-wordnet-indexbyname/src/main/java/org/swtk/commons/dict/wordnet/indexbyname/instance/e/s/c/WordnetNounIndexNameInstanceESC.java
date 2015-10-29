@@ -3,9 +3,18 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.s.c;  import java.u
 	add("{\"term\":\"escalader\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10082592\"]}");
 	add("{\"term\":\"escalation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00367672\"]}");
 	add("{\"term\":\"escalator\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03300702\", \"06405443\"]}");
+	add("{\"term\":\"escalator clause\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06405443\"]}");
 	add("{\"term\":\"escallop\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01968530\", \"07670495\", \"07813617\"]}");
+	add("{\"term\":\"escalope de veau orloff\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07670676\"]}");
 	add("{\"term\":\"escapade\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00430307\", \"00797976\"]}");
 	add("{\"term\":\"escape\", \"synsetCount\":8, \"upperType\":\"NOUN\", \"ids\":[\"04134734\", \"07451261\", \"11573870\", \"00174132\", \"00205048\", \"00742010\", \"00430425\", \"00059563\"]}");
+	add("{\"term\":\"escape cock\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04134734\"]}");
+	add("{\"term\":\"escape expert\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10082984\"]}");
+	add("{\"term\":\"escape hatch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03300857\"]}");
+	add("{\"term\":\"escape mechanism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00742456\"]}");
+	add("{\"term\":\"escape valve\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04134734\"]}");
+	add("{\"term\":\"escape velocity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15308772\"]}");
+	add("{\"term\":\"escape wheel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03301146\"]}");
 	add("{\"term\":\"escapee\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10082712\"]}");
 	add("{\"term\":\"escapement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03301010\"]}");
 	add("{\"term\":\"escapism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00430425\"]}");
@@ -23,13 +32,18 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.s.c;  import java.u
 	add("{\"term\":\"eschaton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15196354\"]}");
 	add("{\"term\":\"escheat\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13277498\", \"13362608\"]}");
 	add("{\"term\":\"escherichia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01370857\"]}");
+	add("{\"term\":\"escherichia coli\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01370979\"]}");
 	add("{\"term\":\"eschrichtiidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02068585\"]}");
 	add("{\"term\":\"eschrichtius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02068739\"]}");
+	add("{\"term\":\"eschrichtius gibbosus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02068898\"]}");
+	add("{\"term\":\"eschrichtius robustus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02068898\"]}");
 	add("{\"term\":\"eschscholtzia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11925705\"]}");
+	add("{\"term\":\"eschscholtzia californica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11925861\"]}");
 	add("{\"term\":\"escolar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02625177\"]}");
 	add("{\"term\":\"escort\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"10012076\", \"10083268\", \"00829443\", \"09882437\"]}");
 	add("{\"term\":\"escritoire\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04171929\"]}");
 	add("{\"term\":\"escrow\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13435727\"]}");
+	add("{\"term\":\"escrow funds\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13435943\"]}");
 	add("{\"term\":\"escudo\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13697929\", \"13698213\"]}");
 	add("{\"term\":\"escutcheon\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03301407\", \"03301526\", \"03347207\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,6 +1,24 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.w.i.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceWIR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"wire\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"06635216\", \"08701845\", \"04601816\", \"04601545\"]}");
+	add("{\"term\":\"wire cloth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04602069\"]}");
+	add("{\"term\":\"wire cutter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04602155\"]}");
+	add("{\"term\":\"wire gage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04602246\"]}");
+	add("{\"term\":\"wire gauge\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04602246\"]}");
+	add("{\"term\":\"wire glass\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14907249\"]}");
+	add("{\"term\":\"wire grass\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12138931\", \"12153979\"]}");
+	add("{\"term\":\"wire matrix printer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04602612\"]}");
+	add("{\"term\":\"wire printer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04602612\"]}");
+	add("{\"term\":\"wire recorder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04602828\"]}");
+	add("{\"term\":\"wire service\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08372002\"]}");
+	add("{\"term\":\"wire stripper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04602938\"]}");
+	add("{\"term\":\"wire wool\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14827748\"]}");
 	add("{\"term\":\"wirehair\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02098064\"]}");
+	add("{\"term\":\"wirehaired terrier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02098064\"]}");
 	add("{\"term\":\"wireless\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"04048624\", \"04050813\", \"06286006\", \"06287788\"]}");
+	add("{\"term\":\"wireless fidelity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04602355\"]}");
+	add("{\"term\":\"wireless local area network\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04602355\"]}");
+	add("{\"term\":\"wireless telegraph\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04051387\"]}");
+	add("{\"term\":\"wireless telegraphy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04051387\", \"06286124\"]}");
+	add("{\"term\":\"wireless telephone\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04051578\", \"06287154\"]}");
 	add("{\"term\":\"wireman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10803410\"]}");
 	add("{\"term\":\"wirer\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10803410\", \"10803691\"]}");
 	add("{\"term\":\"wiretap\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00655643\"]}");
@@ -9,4 +27,5 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.w.i.r;  import java.u
 	add("{\"term\":\"wireworm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02179568\"]}");
 	add("{\"term\":\"wiriness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05040326\"]}");
 	add("{\"term\":\"wiring\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00716058\", \"04603182\"]}");
+	add("{\"term\":\"wiring diagram\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04603325\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

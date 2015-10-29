@@ -1,4 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.c.z.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCZE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"czech\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06957673\", \"09718596\", \"09718799\"]}");
+	add("{\"term\":\"czech capital\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08775759\"]}");
+	add("{\"term\":\"czech monetary unit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13703247\"]}");
+	add("{\"term\":\"czech republic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08775097\"]}");
 	add("{\"term\":\"czechoslovak\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09718596\"]}");
 	add("{\"term\":\"czechoslovakia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08775402\"]}");
 	add("{\"term\":\"czechoslovakian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09718596\"]}");

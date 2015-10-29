@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.a.s.y;  import java.u
 	add("{\"term\":\"asymmetry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05072886\"]}");
 	add("{\"term\":\"asymptote\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13893574\"]}");
 	add("{\"term\":\"asynchronism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13868035\"]}");
+	add("{\"term\":\"asynchronous operation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13456550\"]}");
+	add("{\"term\":\"asynchronous transfer mode\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06289724\"]}");
 	add("{\"term\":\"asynchrony\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13868035\"]}");
 	add("{\"term\":\"asynclitism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14072580\"]}");
 	add("{\"term\":\"asyndeton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07113801\"]}");

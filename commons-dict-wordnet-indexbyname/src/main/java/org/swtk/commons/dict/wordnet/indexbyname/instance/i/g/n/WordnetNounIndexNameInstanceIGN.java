@@ -1,6 +1,17 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.i.g.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceIGN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ignatius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11090984\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.i.g.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceIGN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ignace jan paderewski\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11239625\"]}");
+	add("{\"term\":\"ignace paderewski\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11239625\"]}");
+	add("{\"term\":\"ignatius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11090984\"]}");
+	add("{\"term\":\"ignatius of loyola\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11091167\"]}");
+	add("{\"term\":\"igneous rock\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14956017\"]}");
+	add("{\"term\":\"ignis fatuus\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05905122\", \"11479768\"]}");
 	add("{\"term\":\"igniter\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03671917\", \"15125928\"]}");
 	add("{\"term\":\"ignition\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00379287\", \"03565747\", \"13517076\"]}");
+	add("{\"term\":\"ignition coil\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03566040\"]}");
+	add("{\"term\":\"ignition interlock\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03584960\"]}");
+	add("{\"term\":\"ignition key\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03566227\"]}");
+	add("{\"term\":\"ignition lock\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03688203\"]}");
+	add("{\"term\":\"ignition switch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03566349\"]}");
+	add("{\"term\":\"ignition system\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03565747\"]}");
 	add("{\"term\":\"ignitor\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03671917\", \"15125928\"]}");
 	add("{\"term\":\"ignobility\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04880999\"]}");
 	add("{\"term\":\"ignobleness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04880999\"]}");
@@ -9,4 +20,5 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.i.g.n;  import java.u
 	add("{\"term\":\"ignoramus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10218577\"]}");
 	add("{\"term\":\"ignorance\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05997167\"]}");
 	add("{\"term\":\"ignorantness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05997628\"]}");
+	add("{\"term\":\"ignoratio elenchi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05903067\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

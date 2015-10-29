@@ -1,8 +1,10 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.m.y.x;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMYX {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"myxedema\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14144982\"]}");
 	add("{\"term\":\"myxine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01481457\"]}");
+	add("{\"term\":\"myxine glutinosa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01481610\"]}");
 	add("{\"term\":\"myxinidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01480941\"]}");
 	add("{\"term\":\"myxiniformes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01480714\"]}");
 	add("{\"term\":\"myxinikela\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01481970\"]}");
+	add("{\"term\":\"myxinikela siroka\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01482100\"]}");
 	add("{\"term\":\"myxinoidea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01480714\"]}");
 	add("{\"term\":\"myxinoidei\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01480714\"]}");
 	add("{\"term\":\"myxobacter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01381186\"]}");
@@ -12,8 +14,10 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.m.y.x;  import java.u
 	add("{\"term\":\"myxobacteriales\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01380547\"]}");
 	add("{\"term\":\"myxobacterium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01381186\"]}");
 	add("{\"term\":\"myxocephalus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02648747\"]}");
+	add("{\"term\":\"myxocephalus aenaeus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02648871\"]}");
 	add("{\"term\":\"myxoedema\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14144982\"]}");
 	add("{\"term\":\"myxoma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14272151\"]}");
+	add("{\"term\":\"myxoma virus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01336531\"]}");
 	add("{\"term\":\"myxomatosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14298203\"]}");
 	add("{\"term\":\"myxomycete\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12996564\"]}");
 	add("{\"term\":\"myxomycetes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12996368\"]}");

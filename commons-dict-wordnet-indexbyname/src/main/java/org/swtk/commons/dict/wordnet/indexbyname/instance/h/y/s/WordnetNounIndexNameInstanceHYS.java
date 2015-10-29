@@ -1,12 +1,17 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.h.y.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHYS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hyson\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07951528\"]}");
 	add("{\"term\":\"hyssop\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07832551\", \"12869259\"]}");
+	add("{\"term\":\"hyssop loosestrife\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12349318\"]}");
+	add("{\"term\":\"hyssop oil\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12869530\"]}");
 	add("{\"term\":\"hyssopus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12869103\"]}");
+	add("{\"term\":\"hyssopus officinalis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12869259\"]}");
 	add("{\"term\":\"hysterectomy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00678417\"]}");
 	add("{\"term\":\"hysteresis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11487718\"]}");
 	add("{\"term\":\"hysteria\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"14416843\", \"07535746\", \"14415281\"]}");
 	add("{\"term\":\"hysteric\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10215665\"]}");
+	add("{\"term\":\"hysterical neurosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14416843\"]}");
 	add("{\"term\":\"hysterics\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14106466\"]}");
 	add("{\"term\":\"hysterocatalepsy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14417267\"]}");
+	add("{\"term\":\"hysteron proteron\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05902918\", \"07118815\"]}");
 	add("{\"term\":\"hysterosalpingogram\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03561176\"]}");
 	add("{\"term\":\"hysteroscopy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00644153\"]}");
 	add("{\"term\":\"hysterotomy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00678542\"]}");

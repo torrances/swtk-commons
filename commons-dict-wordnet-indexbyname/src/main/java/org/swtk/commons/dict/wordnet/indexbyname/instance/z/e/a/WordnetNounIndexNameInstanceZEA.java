@@ -1,4 +1,11 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.z.e.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceZEA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"zea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12164089\"]}");
+	add("{\"term\":\"zea mays\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12164193\"]}");
+	add("{\"term\":\"zea mays amylacea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12165842\"]}");
+	add("{\"term\":\"zea mays everta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12165994\"]}");
+	add("{\"term\":\"zea mays indentata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12165504\"]}");
+	add("{\"term\":\"zea mays indurata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12165665\"]}");
+	add("{\"term\":\"zea mays rugosa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12165259\"]}");
+	add("{\"term\":\"zea saccharata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12165259\"]}");
 	add("{\"term\":\"zeal\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04652076\", \"07496925\", \"07570967\"]}");
 	add("{\"term\":\"zealand\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08779530\"]}");
 	add("{\"term\":\"zealander\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09719413\"]}");

@@ -1,9 +1,21 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.f.i.f;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFIF {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"fife\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03339437\"]}");
+	add("{\"term\":\"fife rail\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03339612\"]}");
 	add("{\"term\":\"fifo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00621324\"]}");
 	add("{\"term\":\"fifteen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13769609\"]}");
 	add("{\"term\":\"fifteenth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13870546\"]}");
 	add("{\"term\":\"fifth\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"06872850\", \"13759970\", \"13869437\", \"13640756\"]}");
+	add("{\"term\":\"fifth amendment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06741080\"]}");
+	add("{\"term\":\"fifth avenue\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09143606\"]}");
+	add("{\"term\":\"fifth column\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08376680\"]}");
+	add("{\"term\":\"fifth columnist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10107024\"]}");
+	add("{\"term\":\"fifth cranial nerve\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05486548\"]}");
+	add("{\"term\":\"fifth crusade\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00971962\"]}");
+	add("{\"term\":\"fifth lateran council\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08334270\"]}");
+	add("{\"term\":\"fifth part\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13759970\"]}");
+	add("{\"term\":\"fifth wheel\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03339720\", \"03339857\", \"05127864\"]}");
 	add("{\"term\":\"fifties\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"15174602\", \"15174723\"]}");
 	add("{\"term\":\"fiftieth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13871377\"]}");
 	add("{\"term\":\"fifty\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13416360\", \"13771784\"]}");
+	add("{\"term\":\"fifty dollar bill\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13416360\"]}");
+	add("{\"term\":\"fifty percent\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13759137\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

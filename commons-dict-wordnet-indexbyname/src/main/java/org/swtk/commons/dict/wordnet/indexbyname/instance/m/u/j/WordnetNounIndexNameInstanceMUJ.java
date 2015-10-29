@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.m.u.j;  import java.u
 	add("{\"term\":\"mujahadein\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08223584\"]}");
 	add("{\"term\":\"mujahadin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08223584\"]}");
 	add("{\"term\":\"mujahedeen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08223584\"]}");
+	add("{\"term\":\"mujahedeen khalq\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08223922\"]}");
+	add("{\"term\":\"mujahedeen kompak\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08051332\"]}");
 	add("{\"term\":\"mujahedin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08223584\"]}");
 	add("{\"term\":\"mujahid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10357502\"]}");
 	add("{\"term\":\"mujahideen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08223584\"]}");

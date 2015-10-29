@@ -1,4 +1,24 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.e.d.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceEDM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"edmonton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08841734\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.e.d.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceEDM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"edmond de goncourt\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11026427\"]}");
+	add("{\"term\":\"edmond halley\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11045322\"]}");
+	add("{\"term\":\"edmond hoyle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11083177\"]}");
+	add("{\"term\":\"edmond louis antoine huot de goncourt\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11026427\"]}");
+	add("{\"term\":\"edmond malone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11172112\"]}");
+	add("{\"term\":\"edmond rostand\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11291849\"]}");
+	add("{\"term\":\"edmonton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08841734\"]}");
 	add("{\"term\":\"edmontonia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01705120\"]}");
 	add("{\"term\":\"edmontosaurus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01709641\"]}");
+	add("{\"term\":\"edmund burke\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10892646\"]}");
+	add("{\"term\":\"edmund cartwright\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10905104\"]}");
+	add("{\"term\":\"edmund charles edouard genet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11014093\"]}");
+	add("{\"term\":\"edmund halley\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11045322\"]}");
+	add("{\"term\":\"edmund hillary\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11070178\"]}");
+	add("{\"term\":\"edmund husserl\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11088620\"]}");
+	add("{\"term\":\"edmund i\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10969416\"]}");
+	add("{\"term\":\"edmund ii\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10969578\"]}");
+	add("{\"term\":\"edmund ironside\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10969578\"]}");
+	add("{\"term\":\"edmund john millington synge\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11347739\"]}");
+	add("{\"term\":\"edmund kean\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11118213\"]}");
+	add("{\"term\":\"edmund malone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11172112\"]}");
+	add("{\"term\":\"edmund spenser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11330828\"]}");
+	add("{\"term\":\"edmund wilson\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11411118\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

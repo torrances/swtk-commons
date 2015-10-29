@@ -8,5 +8,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.r.g;  import java.u
 	add("{\"term\":\"ergot\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12986386\", \"14306298\"]}");
 	add("{\"term\":\"ergotamine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14738189\"]}");
 	add("{\"term\":\"ergotism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14534557\"]}");
+	add("{\"term\":\"ergotrate maleate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14737909\"]}");
 	add("{\"term\":\"ergotropism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00863572\"]}");
+	add("{\"term\":\"ergun he\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09228778\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

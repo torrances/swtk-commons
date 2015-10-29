@@ -2,7 +2,10 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.k.a.z;  import java.u
 	add("{\"term\":\"kazakh\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06939905\", \"09042096\", \"09755467\"]}");
 	add("{\"term\":\"kazakhstan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09042096\"]}");
 	add("{\"term\":\"kazakhstani\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09755613\"]}");
+	add("{\"term\":\"kazakhstani monetary unit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13722975\"]}");
 	add("{\"term\":\"kazakstan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09042096\"]}");
 	add("{\"term\":\"kazan\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09030703\", \"11118029\"]}");
+	add("{\"term\":\"kazimir malevich\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11171426\"]}");
+	add("{\"term\":\"kazimir severinovich malevich\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11171426\"]}");
 	add("{\"term\":\"kazoo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03614610\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

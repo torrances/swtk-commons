@@ -3,6 +3,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.s.h.r;  import java.u
 	add("{\"term\":\"shredder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04217187\"]}");
 	add("{\"term\":\"shreveport\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09114924\"]}");
 	add("{\"term\":\"shrew\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01894274\", \"10613555\"]}");
+	add("{\"term\":\"shrew mole\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01893501\"]}");
 	add("{\"term\":\"shrewdness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05629222\"]}");
 	add("{\"term\":\"shrewishness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04650223\"]}");
 	add("{\"term\":\"shrewmouse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01894274\"]}");
@@ -13,16 +14,24 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.s.h.r;  import java.u
 	add("{\"term\":\"shrilling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07408189\"]}");
 	add("{\"term\":\"shrillness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04997257\", \"05200889\"]}");
 	add("{\"term\":\"shrimp\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01989447\", \"07810135\", \"10563101\"]}");
+	add("{\"term\":\"shrimp butter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07871883\"]}");
+	add("{\"term\":\"shrimp cocktail\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07597717\"]}");
+	add("{\"term\":\"shrimp newburg\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07886596\"]}");
+	add("{\"term\":\"shrimp sauce\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07855031\"]}");
 	add("{\"term\":\"shrimper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04217355\"]}");
 	add("{\"term\":\"shrimpfish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01460048\"]}");
 	add("{\"term\":\"shrine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04217457\"]}");
 	add("{\"term\":\"shrink\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10507601\"]}");
 	add("{\"term\":\"shrinkage\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00783134\", \"05119515\", \"07327604\"]}");
 	add("{\"term\":\"shrinking\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00361311\", \"07327604\"]}");
+	add("{\"term\":\"shrinking violet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10614123\"]}");
 	add("{\"term\":\"shroud\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03884813\", \"04195411\", \"04217790\"]}");
+	add("{\"term\":\"shrove tuesday\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15266695\"]}");
 	add("{\"term\":\"shrovetide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15266574\"]}");
 	add("{\"term\":\"shrub\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13133423\"]}");
 	add("{\"term\":\"shrubbery\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08456686\", \"08666642\"]}");
+	add("{\"term\":\"shrubby bittersweet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12769008\"]}");
+	add("{\"term\":\"shrubby penstemon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12907360\"]}");
 	add("{\"term\":\"shrublet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13139328\"]}");
 	add("{\"term\":\"shrug\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07288629\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

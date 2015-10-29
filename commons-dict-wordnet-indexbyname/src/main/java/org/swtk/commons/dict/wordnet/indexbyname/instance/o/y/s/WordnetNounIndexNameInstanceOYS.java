@@ -1,4 +1,21 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.o.y.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceOYS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"oyster\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07664951\", \"07802140\", \"01963100\"]}");
+	add("{\"term\":\"oyster agaric\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13028177\"]}");
+	add("{\"term\":\"oyster bank\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03875654\"]}");
+	add("{\"term\":\"oyster bar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03875516\"]}");
+	add("{\"term\":\"oyster bed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03875654\"]}");
+	add("{\"term\":\"oyster catcher\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02039764\"]}");
+	add("{\"term\":\"oyster crab\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01983471\"]}");
+	add("{\"term\":\"oyster cracker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07711155\"]}");
+	add("{\"term\":\"oyster dressing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07694779\"]}");
+	add("{\"term\":\"oyster fish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02551515\"]}");
+	add("{\"term\":\"oyster fungus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13028177\"]}");
+	add("{\"term\":\"oyster mushroom\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13028177\"]}");
+	add("{\"term\":\"oyster park\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03875654\"]}");
+	add("{\"term\":\"oyster plant\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07751155\", \"12047691\", \"12048007\"]}");
+	add("{\"term\":\"oyster shell\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01907527\"]}");
+	add("{\"term\":\"oyster stew\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07606733\"]}");
+	add("{\"term\":\"oyster stuffing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07694779\"]}");
 	add("{\"term\":\"oystercatcher\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02039764\"]}");
 	add("{\"term\":\"oysterfish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02551515\"]}");
+	add("{\"term\":\"oysters rockefeller\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07802313\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,4 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.n.o.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNOI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"noise\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"04778571\", \"04830262\", \"07137438\", \"07444811\", \"05728195\", \"07402109\"]}");
+	add("{\"term\":\"noise conditions\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13947569\"]}");
+	add("{\"term\":\"noise level\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05105882\"]}");
+	add("{\"term\":\"noise pollution\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14542141\"]}");
 	add("{\"term\":\"noiselessness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04990262\"]}");
 	add("{\"term\":\"noisemaker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03833076\"]}");
 	add("{\"term\":\"noisiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04988723\"]}");

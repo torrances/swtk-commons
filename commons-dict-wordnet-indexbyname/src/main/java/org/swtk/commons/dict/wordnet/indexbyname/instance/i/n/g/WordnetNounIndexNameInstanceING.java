@@ -1,4 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.i.n.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceING {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"inga\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11782119\"]}");
+	add("{\"term\":\"inga edulis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11782305\"]}");
+	add("{\"term\":\"inga laurina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11782487\"]}");
 	add("{\"term\":\"ingathering\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06525755\"]}");
 	add("{\"term\":\"inge\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11091564\", \"11091667\"]}");
 	add("{\"term\":\"ingeniousness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04737625\", \"05641517\"]}");
@@ -10,7 +12,9 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.i.n.g;  import java.u
 	add("{\"term\":\"ingesta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07575987\"]}");
 	add("{\"term\":\"ingestion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00839759\"]}");
 	add("{\"term\":\"inglenook\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03021489\"]}");
+	add("{\"term\":\"ingmar bergman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10865820\"]}");
 	add("{\"term\":\"ingot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03575706\"]}");
+	add("{\"term\":\"ingot iron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14826015\"]}");
 	add("{\"term\":\"ingraining\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00890760\"]}");
 	add("{\"term\":\"ingrate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10226382\"]}");
 	add("{\"term\":\"ingratiation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00160893\"]}");
@@ -19,7 +23,12 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.i.n.g;  import java.u
 	add("{\"term\":\"ingres\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11091828\"]}");
 	add("{\"term\":\"ingress\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00049744\", \"07336941\"]}");
 	add("{\"term\":\"ingrian\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06971262\", \"09725944\"]}");
+	add("{\"term\":\"ingrid bergman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10865996\"]}");
 	add("{\"term\":\"ingroup\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08257554\"]}");
+	add("{\"term\":\"ingrown hair\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05262091\"]}");
+	add("{\"term\":\"ingrown toenail\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05592255\"]}");
 	add("{\"term\":\"ingrowth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09336065\"]}");
 	add("{\"term\":\"inguen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05605489\"]}");
+	add("{\"term\":\"inguinal canal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05393887\"]}");
+	add("{\"term\":\"inguinal hernia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14320304\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

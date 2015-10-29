@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.o.r.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceORP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"orphan\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"01324261\", \"07026385\", \"10404195\", \"10404091\"]}");
+	add("{\"term\":\"orphan site\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08679435\"]}");
 	add("{\"term\":\"orphanage\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03861532\", \"14594762\"]}");
 	add("{\"term\":\"orphanhood\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14594762\"]}");
 	add("{\"term\":\"orphenadrine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03861668\"]}");

@@ -1,4 +1,8 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.n.a.j;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNAJ {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"naja\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01750380\"]}");
+	add("{\"term\":\"naja haje\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01751030\"]}");
+	add("{\"term\":\"naja hannah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01751547\"]}");
+	add("{\"term\":\"naja naja\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01750905\"]}");
+	add("{\"term\":\"naja nigricollis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01751327\"]}");
 	add("{\"term\":\"najadaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12632004\"]}");
 	add("{\"term\":\"najas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12632240\"]}");
 	add("{\"term\":\"najd\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09017612\"]}");

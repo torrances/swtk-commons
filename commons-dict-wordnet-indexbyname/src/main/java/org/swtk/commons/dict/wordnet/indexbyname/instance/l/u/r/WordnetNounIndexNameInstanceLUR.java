@@ -3,4 +3,5 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.l.u.r;  import java.u
 	add("{\"term\":\"lure\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"02779210\", \"05703197\", \"04697009\"]}");
 	add("{\"term\":\"luridness\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04789874\", \"04984828\", \"07102245\"]}");
 	add("{\"term\":\"lurker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10297049\"]}");
+	add("{\"term\":\"lurking place\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08601888\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

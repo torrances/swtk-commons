@@ -2,5 +2,9 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.p.y.o;  import java.u
 	add("{\"term\":\"pyocyanin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04035491\"]}");
 	add("{\"term\":\"pyongyang\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08975170\"]}");
 	add("{\"term\":\"pyorrhea\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14104318\", \"14234370\"]}");
+	add("{\"term\":\"pyorrhea alveolaris\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14104318\"]}");
 	add("{\"term\":\"pyorrhoea\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14104318\", \"14234370\"]}");
+	add("{\"term\":\"pyotr alexeyevich kropotkin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11131184\"]}");
+	add("{\"term\":\"pyotr ilych tchaikovsky\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11353757\"]}");
+	add("{\"term\":\"pyotr tchaikovsky\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11353757\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

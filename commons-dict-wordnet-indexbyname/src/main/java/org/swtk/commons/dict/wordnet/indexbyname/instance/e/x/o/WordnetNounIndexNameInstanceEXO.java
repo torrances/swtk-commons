@@ -3,6 +3,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.x.o;  import java.u
 	add("{\"term\":\"exocet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03309142\"]}");
 	add("{\"term\":\"exocoetidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02552927\"]}");
 	add("{\"term\":\"exocrine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05336415\"]}");
+	add("{\"term\":\"exocrine gland\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05336415\"]}");
 	add("{\"term\":\"exocycloida\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02322075\"]}");
 	add("{\"term\":\"exode\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07031325\"]}");
 	add("{\"term\":\"exoderm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01466380\"]}");
@@ -10,12 +11,16 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.x.o;  import java.u
 	add("{\"term\":\"exodontics\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06057904\"]}");
 	add("{\"term\":\"exodontist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10091700\"]}");
 	add("{\"term\":\"exodus\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06444385\", \"00061234\"]}");
+	add("{\"term\":\"exoergic reaction\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13498894\"]}");
 	add("{\"term\":\"exogamy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13988623\"]}");
 	add("{\"term\":\"exogen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11687305\"]}");
+	add("{\"term\":\"exogenous depression\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14413654\"]}");
+	add("{\"term\":\"exogenous obesity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05007882\"]}");
 	add("{\"term\":\"exomphalos\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14319756\"]}");
 	add("{\"term\":\"exon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14855162\"]}");
 	add("{\"term\":\"exoneration\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01243896\", \"14598944\"]}");
 	add("{\"term\":\"exonuclease\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14630315\"]}");
+	add("{\"term\":\"exophthalmic goiter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14144540\"]}");
 	add("{\"term\":\"exophthalmos\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14336444\"]}");
 	add("{\"term\":\"exopterygota\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02235060\"]}");
 	add("{\"term\":\"exorbitance\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05126396\"]}");
@@ -27,6 +32,9 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.x.o;  import java.u
 	add("{\"term\":\"exosphere\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09300338\"]}");
 	add("{\"term\":\"exostosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14257799\"]}");
 	add("{\"term\":\"exotherm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14908105\"]}");
+	add("{\"term\":\"exothermic reaction\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13499015\"]}");
+	add("{\"term\":\"exotic belly dancer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09868870\"]}");
+	add("{\"term\":\"exotic dancer\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09868870\", \"10683779\"]}");
 	add("{\"term\":\"exoticism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04806861\"]}");
 	add("{\"term\":\"exoticness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04806861\"]}");
 	add("{\"term\":\"exotism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04806861\"]}");

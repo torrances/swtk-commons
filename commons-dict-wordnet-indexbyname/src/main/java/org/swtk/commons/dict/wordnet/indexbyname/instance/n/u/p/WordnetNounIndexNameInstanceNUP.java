@@ -1,4 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.n.u.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNUP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"nuphar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11736754\"]}");
+	add("{\"term\":\"nuphar advena\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11736891\"]}");
+	add("{\"term\":\"nuphar lutea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11737346\"]}");
+	add("{\"term\":\"nuphar sagittifolium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11737167\"]}");
 	add("{\"term\":\"nuprin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03561461\"]}");
 	add("{\"term\":\"nuptials\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07466684\"]}");
 	add("{\"term\":\"nuptse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09398605\"]}");

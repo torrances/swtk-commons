@@ -1,4 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.y.a.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceYAM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"yam\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07727652\", \"07728012\", \"12108478\", \"12108740\"]}");
+	add("{\"term\":\"yam bean\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12575760\", \"12576058\"]}");
+	add("{\"term\":\"yam family\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12108167\"]}");
+	add("{\"term\":\"yam plant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12108478\"]}");
 	add("{\"term\":\"yama\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09553263\"]}");
 	add("{\"term\":\"yamaltu\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06996455\"]}");
 	add("{\"term\":\"yamamoto\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11421793\"]}");

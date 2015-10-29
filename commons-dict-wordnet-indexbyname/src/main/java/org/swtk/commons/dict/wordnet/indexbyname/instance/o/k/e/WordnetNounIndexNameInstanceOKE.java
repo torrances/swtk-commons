@@ -1,4 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.o.k.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceOKE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"okeechobee\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09400773\"]}");
+	add("{\"term\":\"okeechobee waterway\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09282652\"]}");
+	add("{\"term\":\"okefenokee swamp\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09400926\"]}");
 	add("{\"term\":\"okeh\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06700446\"]}");
 	add("{\"term\":\"oken\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11233313\"]}");
 	add("{\"term\":\"okenfuss\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11233313\"]}");

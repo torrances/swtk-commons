@@ -1,5 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.j.o.y;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceJOY {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"joy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05838106\", \"07542591\"]}");
 	add("{\"term\":\"joyce\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11113106\"]}");
+	add("{\"term\":\"joyce carol oates\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11230953\"]}");
 	add("{\"term\":\"joyfulness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07542591\"]}");
 	add("{\"term\":\"joylessness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07552764\"]}");
 	add("{\"term\":\"joyousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07542591\"]}");

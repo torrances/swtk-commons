@@ -1,7 +1,10 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.n.i.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNIM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"nim\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00500610\"]}");
+	add("{\"term\":\"nim tree\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12717253\"]}");
+	add("{\"term\":\"nimble will\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12146101\"]}");
 	add("{\"term\":\"nimbleness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05011015\", \"05627336\"]}");
 	add("{\"term\":\"nimblewill\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12146101\"]}");
 	add("{\"term\":\"nimbus\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04958893\", \"09394597\"]}");
+	add("{\"term\":\"nimbus cloud\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09394597\"]}");
 	add("{\"term\":\"nimby\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10378274\"]}");
 	add("{\"term\":\"nimiety\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05127014\"]}");
 	add("{\"term\":\"nimitz\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11227919\"]}");

@@ -1,16 +1,24 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.a.e.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceAER {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"aeration\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00201093\", \"13449332\"]}");
 	add("{\"term\":\"aerator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02685423\"]}");
 	add("{\"term\":\"aerial\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02718140\", \"00562263\"]}");
+	add("{\"term\":\"aerial ladder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02685553\"]}");
+	add("{\"term\":\"aerial ladder truck\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03638143\"]}");
+	add("{\"term\":\"aerial torpedo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02685665\"]}");
+	add("{\"term\":\"aerial tramway\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04477048\"]}");
 	add("{\"term\":\"aerialist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09784021\"]}");
 	add("{\"term\":\"aerides\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12064936\"]}");
 	add("{\"term\":\"aerie\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08509364\", \"09212054\"]}");
 	add("{\"term\":\"aerobacter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01356414\"]}");
+	add("{\"term\":\"aerobacter aerogenes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01356573\"]}");
 	add("{\"term\":\"aerobatics\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00303687\"]}");
 	add("{\"term\":\"aerobe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01329538\"]}");
+	add("{\"term\":\"aerobic exercise\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00627098\"]}");
 	add("{\"term\":\"aerobics\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00627098\"]}");
 	add("{\"term\":\"aerobiosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11494085\"]}");
 	add("{\"term\":\"aerodontalgia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14347508\"]}");
 	add("{\"term\":\"aerodrome\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02695091\"]}");
+	add("{\"term\":\"aerodynamic force\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11442228\"]}");
+	add("{\"term\":\"aerodynamic lift\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11442391\"]}");
 	add("{\"term\":\"aerodynamics\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06123958\"]}");
 	add("{\"term\":\"aeroembolism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14091826\", \"14124799\"]}");
 	add("{\"term\":\"aerofoil\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02691302\"]}");
@@ -22,6 +30,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.a.e.r;  import java.u
 	add("{\"term\":\"aeromechanics\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06123958\"]}");
 	add("{\"term\":\"aeromedicine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06055568\"]}");
 	add("{\"term\":\"aeronaut\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09845606\"]}");
+	add("{\"term\":\"aeronautical engineer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09795348\"]}");
+	add("{\"term\":\"aeronautical engineering\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00952059\", \"06135628\"]}");
 	add("{\"term\":\"aeronautics\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06106520\"]}");
 	add("{\"term\":\"aerophagia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00841718\"]}");
 	add("{\"term\":\"aerophilately\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01018570\"]}");
@@ -29,7 +39,12 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.a.e.r;  import java.u
 	add("{\"term\":\"aerophyte\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13143744\"]}");
 	add("{\"term\":\"aeroplane\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02694015\"]}");
 	add("{\"term\":\"aerosol\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02685776\", \"11442711\"]}");
+	add("{\"term\":\"aerosol bomb\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02685776\", \"04427596\"]}");
+	add("{\"term\":\"aerosol can\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02685776\"]}");
+	add("{\"term\":\"aerosol container\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02685776\"]}");
 	add("{\"term\":\"aerospace\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08519192\"]}");
+	add("{\"term\":\"aerospace engineer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09795520\"]}");
+	add("{\"term\":\"aerospace medicine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06055568\"]}");
 	add("{\"term\":\"aertex\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02686037\"]}");
 	add("{\"term\":\"aery\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08509364\", \"09212054\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,7 +1,9 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceENT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"entablature\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03295106\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceENT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ent man\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10079131\"]}");
+	add("{\"term\":\"entablature\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03295106\"]}");
 	add("{\"term\":\"entail\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00050729\", \"13309965\"]}");
 	add("{\"term\":\"entailment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05788882\"]}");
 	add("{\"term\":\"entandrophragma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12718643\"]}");
+	add("{\"term\":\"entandrophragma cylindricum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12718787\"]}");
 	add("{\"term\":\"entanglement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04575843\"]}");
 	add("{\"term\":\"entasis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13887163\"]}");
 	add("{\"term\":\"entebbe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09066031\"]}");
@@ -9,6 +11,9 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.t;  import java.u
 	add("{\"term\":\"entelechy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13978438\"]}");
 	add("{\"term\":\"entellus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02491046\"]}");
 	add("{\"term\":\"entente\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06785262\", \"08188891\"]}");
+	add("{\"term\":\"entente cordiale\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06785262\", \"08188891\"]}");
+	add("{\"term\":\"enteric bacteria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01370413\"]}");
+	add("{\"term\":\"enteric fever\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14167898\"]}");
 	add("{\"term\":\"enterics\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01370413\"]}");
 	add("{\"term\":\"entering\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00049744\", \"07384725\"]}");
 	add("{\"term\":\"enteritis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14368402\"]}");
@@ -16,11 +21,13 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.t;  import java.u
 	add("{\"term\":\"enterobacteriaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01370071\"]}");
 	add("{\"term\":\"enterobiasis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14199854\"]}");
 	add("{\"term\":\"enterobius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01934039\"]}");
+	add("{\"term\":\"enterobius vermicularis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01934161\"]}");
 	add("{\"term\":\"enteroceptor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05307186\"]}");
 	add("{\"term\":\"enterokinase\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14874360\"]}");
 	add("{\"term\":\"enterolith\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09296587\"]}");
 	add("{\"term\":\"enterolithiasis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14138833\"]}");
 	add("{\"term\":\"enterolobium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11781476\"]}");
+	add("{\"term\":\"enterolobium cyclocarpa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11781671\"]}");
 	add("{\"term\":\"enteron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05540274\"]}");
 	add("{\"term\":\"enteropathy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14098088\"]}");
 	add("{\"term\":\"enteroptosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14117073\"]}");
@@ -31,10 +38,14 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.t;  import java.u
 	add("{\"term\":\"enterotoxin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15060264\"]}");
 	add("{\"term\":\"enterovirus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01340556\"]}");
 	add("{\"term\":\"enterprise\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04843305\", \"08072983\", \"00798547\"]}");
+	add("{\"term\":\"enterprise zone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08708403\"]}");
 	add("{\"term\":\"enterpriser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10080160\"]}");
 	add("{\"term\":\"enterprisingness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04843305\"]}");
 	add("{\"term\":\"entertainer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09639952\"]}");
 	add("{\"term\":\"entertainment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00430033\"]}");
+	add("{\"term\":\"entertainment center\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03295564\"]}");
+	add("{\"term\":\"entertainment deduction\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13332239\"]}");
+	add("{\"term\":\"entertainment industry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08084787\"]}");
 	add("{\"term\":\"enthalpy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05019456\"]}");
 	add("{\"term\":\"enthrallment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07513215\"]}");
 	add("{\"term\":\"enthronement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07468248\"]}");
@@ -44,6 +55,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.t;  import java.u
 	add("{\"term\":\"enthusiast\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10097911\", \"10079390\"]}");
 	add("{\"term\":\"enticement\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00160440\", \"04697009\", \"05702756\"]}");
 	add("{\"term\":\"entire\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02379833\"]}");
+	add("{\"term\":\"entire leaf\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13181383\"]}");
 	add("{\"term\":\"entireness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14484815\"]}");
 	add("{\"term\":\"entirety\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14484815\"]}");
 	add("{\"term\":\"entitlement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05189022\"]}");
@@ -52,6 +64,9 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.t;  import java.u
 	add("{\"term\":\"entoblast\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01467214\"]}");
 	add("{\"term\":\"entoderm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01467214\"]}");
 	add("{\"term\":\"entoloma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13032790\"]}");
+	add("{\"term\":\"entoloma aprile\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13033229\"]}");
+	add("{\"term\":\"entoloma lividum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13033013\"]}");
+	add("{\"term\":\"entoloma sinuatum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13033013\"]}");
 	add("{\"term\":\"entolomataceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13032616\"]}");
 	add("{\"term\":\"entombment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07466297\"]}");
 	add("{\"term\":\"entomion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05239833\"]}");
@@ -63,6 +78,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.t;  import java.u
 	add("{\"term\":\"entomophthorales\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12995046\"]}");
 	add("{\"term\":\"entomostraca\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01996603\"]}");
 	add("{\"term\":\"entoparasite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01387658\"]}");
+	add("{\"term\":\"entopic pregnancy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14071497\"]}");
 	add("{\"term\":\"entoproct\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02317144\"]}");
 	add("{\"term\":\"entoprocta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02316973\"]}");
 	add("{\"term\":\"entourage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08446124\"]}");
@@ -70,6 +86,11 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.t;  import java.u
 	add("{\"term\":\"entozoon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01387658\"]}");
 	add("{\"term\":\"entrails\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05306487\"]}");
 	add("{\"term\":\"entrance\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00049744\", \"07384725\", \"03295682\"]}");
+	add("{\"term\":\"entrance exam\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07212779\"]}");
+	add("{\"term\":\"entrance examination\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07212779\"]}");
+	add("{\"term\":\"entrance fee\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13342517\"]}");
+	add("{\"term\":\"entrance hall\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02718424\"]}");
+	add("{\"term\":\"entrance money\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13342517\"]}");
 	add("{\"term\":\"entrancement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07506426\"]}");
 	add("{\"term\":\"entranceway\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03295682\"]}");
 	add("{\"term\":\"entrant\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"10079883\", \"10079983\", \"10375148\", \"03296154\"]}");
@@ -78,6 +99,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.t;  import java.u
 	add("{\"term\":\"entrecote\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07672475\"]}");
 	add("{\"term\":\"entree\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00050548\", \"03295682\", \"05183715\", \"07595140\"]}");
 	add("{\"term\":\"entremets\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07595618\"]}");
+	add("{\"term\":\"entrenching tool\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03296324\"]}");
 	add("{\"term\":\"entrenchment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03296462\"]}");
 	add("{\"term\":\"entrepot\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04336328\", \"08655346\"]}");
 	add("{\"term\":\"entrepreneur\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10080160\"]}");
@@ -85,6 +107,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.t;  import java.u
 	add("{\"term\":\"entric\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01370413\"]}");
 	add("{\"term\":\"entropy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05019769\", \"05098731\"]}");
 	add("{\"term\":\"entry\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"00049744\", \"03295682\", \"07182229\", \"13426469\", \"00238889\", \"06515715\"]}");
+	add("{\"term\":\"entry word\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06311622\"]}");
 	add("{\"term\":\"entryway\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03295682\"]}");
 	add("{\"term\":\"entsi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06972672\"]}");
 	add("{\"term\":\"entsy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06972672\"]}");

@@ -1,4 +1,15 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.o.n.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceONE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"one\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05878677\", \"13764713\"]}");
+	add("{\"term\":\"one c\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13772555\"]}");
+	add("{\"term\":\"one dollar bill\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13417070\"]}");
+	add("{\"term\":\"one iron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03249478\"]}");
+	add("{\"term\":\"one million million\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13774312\", \"13774583\"]}");
+	add("{\"term\":\"one million million million\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13774819\"]}");
+	add("{\"term\":\"one of the boys\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10397564\"]}");
+	add("{\"term\":\"one percent\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13761191\"]}");
+	add("{\"term\":\"one shot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04120735\"]}");
+	add("{\"term\":\"one thousand\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13772984\"]}");
+	add("{\"term\":\"one thousand million\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13773969\"]}");
+	add("{\"term\":\"one thousand thousand\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13773673\"]}");
 	add("{\"term\":\"onega\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09355504\"]}");
 	add("{\"term\":\"oneida\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06929281\", \"09683704\"]}");
 	add("{\"term\":\"oneirism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05777468\"]}");

@@ -1,7 +1,23 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.j.i.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceJIM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"jimdandy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03604405\", \"10242023\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.j.i.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceJIM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"jim bowie\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10879453\"]}");
+	add("{\"term\":\"jim corbett\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10930173\"]}");
+	add("{\"term\":\"jim crow\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03604304\", \"05700199\"]}");
+	add("{\"term\":\"jim henson\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11063831\"]}");
+	add("{\"term\":\"jim morrison\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11212523\"]}");
+	add("{\"term\":\"jim thorpe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11361474\"]}");
+	add("{\"term\":\"jimdandy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03604405\", \"10242023\"]}");
 	add("{\"term\":\"jimenez\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11104779\"]}");
+	add("{\"term\":\"jimenez de cisneros\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11104885\"]}");
 	add("{\"term\":\"jimhickey\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03604405\", \"10242023\"]}");
+	add("{\"term\":\"jimi hendrix\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11060020\"]}");
 	add("{\"term\":\"jimmies\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07619791\"]}");
 	add("{\"term\":\"jimmy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03604544\"]}");
+	add("{\"term\":\"jimmy cagney\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10898596\"]}");
+	add("{\"term\":\"jimmy carter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10904583\"]}");
+	add("{\"term\":\"jimmy conors\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10927253\"]}");
+	add("{\"term\":\"jimmy doolittle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10960045\"]}");
+	add("{\"term\":\"jimmy durante\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10965817\"]}");
+	add("{\"term\":\"jimmy hoffa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11074168\"]}");
+	add("{\"term\":\"jimmy stewart\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11338166\"]}");
+	add("{\"term\":\"jimson weed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12924263\"]}");
 	add("{\"term\":\"jimsonweed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12924263\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

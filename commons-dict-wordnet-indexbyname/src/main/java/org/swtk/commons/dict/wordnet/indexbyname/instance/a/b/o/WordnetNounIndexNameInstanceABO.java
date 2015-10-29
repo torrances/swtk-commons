@@ -1,4 +1,8 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.a.b.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceABO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"abocclusion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14077447\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.a.b.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceABO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"abo antibodies\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15052455\"]}");
+	add("{\"term\":\"abo blood group system\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05741306\"]}");
+	add("{\"term\":\"abo group\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05741306\"]}");
+	add("{\"term\":\"abo system\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05741306\"]}");
+	add("{\"term\":\"abocclusion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14077447\"]}");
 	add("{\"term\":\"abode\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03264208\", \"08576500\"]}");
 	add("{\"term\":\"abohm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13668312\"]}");
 	add("{\"term\":\"abolishment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00229150\"]}");
@@ -6,17 +10,21 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.a.b.o;  import java.u
 	add("{\"term\":\"abolitionism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05967075\"]}");
 	add("{\"term\":\"abolitionist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09775968\"]}");
 	add("{\"term\":\"abomasum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02402594\"]}");
+	add("{\"term\":\"abominable snowman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09510382\"]}");
 	add("{\"term\":\"abomination\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00746729\", \"07518669\", \"09776292\"]}");
 	add("{\"term\":\"abominator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09774111\"]}");
 	add("{\"term\":\"abor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06946601\"]}");
 	add("{\"term\":\"aboriginal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09643964\"]}");
+	add("{\"term\":\"aboriginal australian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06953052\"]}");
 	add("{\"term\":\"aborigine\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09695957\", \"09643964\"]}");
 	add("{\"term\":\"abort\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00035660\"]}");
 	add("{\"term\":\"aborticide\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00232182\", \"02670536\"]}");
 	add("{\"term\":\"abortifacient\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02670536\"]}");
 	add("{\"term\":\"abortion\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07334252\", \"00231191\"]}");
+	add("{\"term\":\"abortion pill\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02670723\"]}");
 	add("{\"term\":\"abortionist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09776506\"]}");
 	add("{\"term\":\"abortus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01462944\"]}");
 	add("{\"term\":\"aboulia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14049648\"]}");
+	add("{\"term\":\"about turn\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00347762\"]}");
 	add("{\"term\":\"above\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06404303\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

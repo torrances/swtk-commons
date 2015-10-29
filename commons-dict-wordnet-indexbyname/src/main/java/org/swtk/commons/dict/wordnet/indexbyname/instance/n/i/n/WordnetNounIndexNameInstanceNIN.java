@@ -1,12 +1,16 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.n.i.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNIN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"nina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09543502\"]}");
+	add("{\"term\":\"nina from carolina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13767410\"]}");
 	add("{\"term\":\"nincompoop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10378493\"]}");
 	add("{\"term\":\"nine\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03831088\", \"08096490\", \"13767410\"]}");
+	add("{\"term\":\"nine iron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03828756\"]}");
 	add("{\"term\":\"ninepence\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13412866\"]}");
 	add("{\"term\":\"ninepin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03830811\"]}");
+	add("{\"term\":\"ninepin ball\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03830982\"]}");
 	add("{\"term\":\"ninepins\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00463444\"]}");
 	add("{\"term\":\"niner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13767410\"]}");
 	add("{\"term\":\"nineteen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13770129\"]}");
 	add("{\"term\":\"nineteenth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13870981\"]}");
+	add("{\"term\":\"nineteenth amendment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06742000\"]}");
 	add("{\"term\":\"nineties\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"15176215\", \"15176339\", \"15176430\"]}");
 	add("{\"term\":\"ninetieth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13871808\"]}");
 	add("{\"term\":\"ninety\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13772437\"]}");
@@ -25,6 +29,9 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.n.i.n;  import java.u
 	add("{\"term\":\"ninny\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10378493\"]}");
 	add("{\"term\":\"ninon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03831213\"]}");
 	add("{\"term\":\"ninth\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13760375\", \"13869912\"]}");
+	add("{\"term\":\"ninth cranial nerve\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05487438\"]}");
+	add("{\"term\":\"ninth of ab\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15222493\"]}");
+	add("{\"term\":\"ninth of av\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15222493\"]}");
 	add("{\"term\":\"nintoo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09544186\"]}");
 	add("{\"term\":\"nintu\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09544186\"]}");
 	add("{\"term\":\"ninurta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09544292\"]}");

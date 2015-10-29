@@ -1,6 +1,8 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.l.u.f;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLUF {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"lufengpithecus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02481170\"]}");
 	add("{\"term\":\"luff\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00314797\", \"03700778\"]}");
 	add("{\"term\":\"luffa\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12186941\", \"12187592\"]}");
+	add("{\"term\":\"luffa acutangula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12187446\"]}");
+	add("{\"term\":\"luffa cylindrica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12187310\"]}");
 	add("{\"term\":\"lufkin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09168078\"]}");
 	add("{\"term\":\"luftwaffe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08212169\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -6,4 +6,5 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.s.c.y;  import java.u
 	add("{\"term\":\"scythe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04165311\"]}");
 	add("{\"term\":\"scythia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09200544\"]}");
 	add("{\"term\":\"scythian\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06988129\", \"10586394\"]}");
+	add("{\"term\":\"scythian lamb\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13212046\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

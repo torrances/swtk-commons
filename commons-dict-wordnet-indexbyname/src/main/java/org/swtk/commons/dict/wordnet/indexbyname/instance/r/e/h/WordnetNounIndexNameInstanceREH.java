@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.r.e.h;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceREH {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"rehabilitation\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00701513\", \"01244544\", \"00269862\", \"00401453\"]}");
+	add("{\"term\":\"rehabilitation program\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05909190\"]}");
 	add("{\"term\":\"reharmonisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07041138\"]}");
 	add("{\"term\":\"reharmonization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07041138\"]}");
 	add("{\"term\":\"rehash\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06648284\"]}");

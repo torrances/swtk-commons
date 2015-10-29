@@ -1,5 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.i.n.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceINU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"inuit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10083442\"]}");
 	add("{\"term\":\"inula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12005011\"]}");
+	add("{\"term\":\"inula helenium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12005128\"]}");
 	add("{\"term\":\"inulin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14820129\"]}");
 	add("{\"term\":\"inunction\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01043706\"]}");
 	add("{\"term\":\"inundation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13797906\", \"11475008\"]}");

@@ -1,4 +1,10 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.a.n.x;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceANX {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"anxiety\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07539144\", \"14397837\"]}");
+	add("{\"term\":\"anxiety attack\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14105147\"]}");
+	add("{\"term\":\"anxiety disorder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14403878\"]}");
+	add("{\"term\":\"anxiety hysteria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14417121\"]}");
+	add("{\"term\":\"anxiety neurosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14417363\"]}");
+	add("{\"term\":\"anxiety reaction\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14404122\"]}");
 	add("{\"term\":\"anxiolytic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03776976\"]}");
+	add("{\"term\":\"anxiolytic drug\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03776976\"]}");
 	add("{\"term\":\"anxiousness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07539999\", \"14397837\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

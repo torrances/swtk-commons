@@ -1,7 +1,11 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.g.e.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceGET {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"get\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00568933\"]}");
+	add("{\"term\":\"get together\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08327319\"]}");
 	add("{\"term\":\"geta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03051675\"]}");
 	add("{\"term\":\"getaway\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00061021\", \"05068172\"]}");
 	add("{\"term\":\"getting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00042637\"]}");
+	add("{\"term\":\"getting even\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01237294\"]}");
 	add("{\"term\":\"gettysburg\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01282108\", \"09158291\"]}");
+	add("{\"term\":\"gettysburg address\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07254210\"]}");
+	add("{\"term\":\"getulio dornelles vargas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11380739\"]}");
 	add("{\"term\":\"getup\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03865478\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

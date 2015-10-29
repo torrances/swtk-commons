@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.p.u.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePUT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"put\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00081788\"]}");
+	add("{\"term\":\"put option\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00081788\", \"13263382\"]}");
 	add("{\"term\":\"putamen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05506111\"]}");
 	add("{\"term\":\"putin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11269312\"]}");
 	add("{\"term\":\"putoff\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06772685\"]}");
@@ -15,7 +16,12 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.p.u.t;  import java.u
 	add("{\"term\":\"putter\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04034550\", \"10515666\"]}");
 	add("{\"term\":\"putterer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10515778\"]}");
 	add("{\"term\":\"putting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00573875\"]}");
+	add("{\"term\":\"putting green\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08597308\"]}");
+	add("{\"term\":\"putting iron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04034550\"]}");
+	add("{\"term\":\"putting surface\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08597308\"]}");
+	add("{\"term\":\"putting to death\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00219879\"]}");
 	add("{\"term\":\"putty\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14727958\"]}");
+	add("{\"term\":\"putty knife\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04034697\"]}");
 	add("{\"term\":\"puttyroot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12065983\"]}");
 	add("{\"term\":\"putz\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05534354\", \"10515978\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

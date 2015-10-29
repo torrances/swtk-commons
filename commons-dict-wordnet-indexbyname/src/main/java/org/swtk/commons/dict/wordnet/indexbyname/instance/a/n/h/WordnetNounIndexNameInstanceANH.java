@@ -1,8 +1,10 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.a.n.h;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceANH {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"anhedonia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14049767\"]}");
 	add("{\"term\":\"anhidrosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14047275\"]}");
 	add("{\"term\":\"anhima\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01863354\"]}");
+	add("{\"term\":\"anhima cornuta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01863505\"]}");
 	add("{\"term\":\"anhimidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01862978\"]}");
 	add("{\"term\":\"anhinga\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02057156\"]}");
+	add("{\"term\":\"anhinga anhinga\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02057365\"]}");
 	add("{\"term\":\"anhingidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02056905\"]}");
 	add("{\"term\":\"anhydride\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14791470\"]}");
 	add("{\"term\":\"anhydrosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14047275\"]}");

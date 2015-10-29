@@ -1,4 +1,9 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.f.i.v;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFIV {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"five\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03358629\", \"08096729\", \"13766661\"]}");
+	add("{\"term\":\"five dollar bill\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13416688\"]}");
+	add("{\"term\":\"five hundred\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00493320\", \"13772852\"]}");
+	add("{\"term\":\"five iron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03730029\"]}");
+	add("{\"term\":\"five nations\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08322207\"]}");
+	add("{\"term\":\"five spice powder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07829809\"]}");
 	add("{\"term\":\"fivepence\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13412546\"]}");
 	add("{\"term\":\"fiver\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13416688\"]}");
 	add("{\"term\":\"fives\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00480745\"]}");

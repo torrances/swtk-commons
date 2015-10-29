@@ -1,13 +1,23 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.d.u.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDUM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"duma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08336982\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.d.u.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDUM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"du maurier\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10965040\", \"10965255\"]}");
+	add("{\"term\":\"duma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08336982\"]}");
 	add("{\"term\":\"dumas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10964894\"]}");
+	add("{\"term\":\"dumb bomb\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03259870\"]}");
+	add("{\"term\":\"dumb cane\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11808094\"]}");
+	add("{\"term\":\"dumb show\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00551053\"]}");
 	add("{\"term\":\"dumbass\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10059388\"]}");
 	add("{\"term\":\"dumbbell\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10059116\", \"03259733\"]}");
 	add("{\"term\":\"dumbness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05653699\"]}");
 	add("{\"term\":\"dumbwaiter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03260025\"]}");
 	add("{\"term\":\"dumdum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03260191\"]}");
+	add("{\"term\":\"dumdum bullet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03260191\"]}");
+	add("{\"term\":\"dumdum fever\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14204531\"]}");
 	add("{\"term\":\"dumetella\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01590047\"]}");
+	add("{\"term\":\"dumetella carolinensis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01590167\"]}");
 	add("{\"term\":\"dummy\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"02852159\", \"03260351\", \"10059116\", \"10059294\"]}");
+	add("{\"term\":\"dummy whist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00497448\"]}");
 	add("{\"term\":\"dump\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03260493\", \"06401870\", \"08577564\", \"13576978\"]}");
+	add("{\"term\":\"dump routine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06595694\"]}");
+	add("{\"term\":\"dump truck\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03260869\"]}");
 	add("{\"term\":\"dumpcart\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03260602\"]}");
 	add("{\"term\":\"dumper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03260869\"]}");
 	add("{\"term\":\"dumpiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05005981\"]}");
@@ -17,5 +27,6 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.d.u.m;  import java.u
 	add("{\"term\":\"dumps\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14428465\"]}");
 	add("{\"term\":\"dumpsite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08577564\"]}");
 	add("{\"term\":\"dumpster\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03260735\"]}");
+	add("{\"term\":\"dumpy level\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03261175\"]}");
 	add("{\"term\":\"dumuzi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09540627\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

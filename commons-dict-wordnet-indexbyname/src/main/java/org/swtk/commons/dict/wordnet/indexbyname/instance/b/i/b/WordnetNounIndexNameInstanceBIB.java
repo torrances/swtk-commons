@@ -1,5 +1,10 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.b.i.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBIB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"bib\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02837500\", \"02837602\"]}");
+	add("{\"term\":\"bibb lettuce\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07739823\"]}");
 	add("{\"term\":\"bible\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06434286\", \"06443410\"]}");
+	add("{\"term\":\"bible belt\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08527051\"]}");
+	add("{\"term\":\"bible leaf\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12041968\"]}");
+	add("{\"term\":\"biblical aramaic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07001200\"]}");
+	add("{\"term\":\"biblical latin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06976313\"]}");
 	add("{\"term\":\"bibliographer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09871966\"]}");
 	add("{\"term\":\"bibliography\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06498467\"]}");
 	add("{\"term\":\"bibliolatry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01046791\"]}");
@@ -12,4 +17,6 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.b.i.b;  import java.u
 	add("{\"term\":\"bibliotics\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06007704\"]}");
 	add("{\"term\":\"bibliotist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09872387\"]}");
 	add("{\"term\":\"bibos\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02412348\"]}");
+	add("{\"term\":\"bibos frontalis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02412787\"]}");
+	add("{\"term\":\"bibos gaurus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02412657\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -2,6 +2,9 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.t.o.k;  import java.u
 	add("{\"term\":\"tokay\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07776477\", \"07914870\"]}");
 	add("{\"term\":\"toke\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00839626\"]}");
 	add("{\"term\":\"token\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03615483\", \"04455632\", \"06659294\", \"06808603\"]}");
+	add("{\"term\":\"token economy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00704245\"]}");
+	add("{\"term\":\"token money\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13406951\"]}");
+	add("{\"term\":\"token payment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13321048\"]}");
 	add("{\"term\":\"tokio\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08943121\"]}");
 	add("{\"term\":\"toklas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11365012\"]}");
 	add("{\"term\":\"tokyo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08943121\"]}");

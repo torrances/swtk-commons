@@ -2,6 +2,9 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.w.r.o;  import java.u
 	add("{\"term\":\"wrong\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00745429\", \"04861835\"]}");
 	add("{\"term\":\"wrongdoer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09657157\"]}");
 	add("{\"term\":\"wrongdoing\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00734044\", \"04860996\"]}");
+	add("{\"term\":\"wrongful conduct\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00734044\"]}");
+	add("{\"term\":\"wrongful death\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07348571\"]}");
 	add("{\"term\":\"wrongfulness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04861835\"]}");
 	add("{\"term\":\"wrongness\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04809652\", \"04859193\", \"04909173\"]}");
+	add("{\"term\":\"wrought iron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14826432\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

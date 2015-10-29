@@ -2,4 +2,5 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.k.u.m;  import java.u
 	add("{\"term\":\"kumis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07942048\"]}");
 	add("{\"term\":\"kummel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07926485\"]}");
 	add("{\"term\":\"kumquat\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07765422\", \"12733823\"]}");
+	add("{\"term\":\"kumquat tree\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12733823\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

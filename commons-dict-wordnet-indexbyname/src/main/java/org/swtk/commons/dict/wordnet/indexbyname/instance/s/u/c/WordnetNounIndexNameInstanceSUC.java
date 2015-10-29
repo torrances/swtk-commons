@@ -7,6 +7,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.s.u.c;  import java.u
 	add("{\"term\":\"successiveness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05051973\"]}");
 	add("{\"term\":\"successor\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"10691052\", \"05704768\", \"10691175\"]}");
 	add("{\"term\":\"succinctness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07103216\"]}");
+	add("{\"term\":\"succinic acid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14640470\"]}");
 	add("{\"term\":\"succinylcholine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04356604\"]}");
 	add("{\"term\":\"succor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01211710\"]}");
 	add("{\"term\":\"succorer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10691337\"]}");
@@ -25,12 +26,23 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.s.u.c;  import java.u
 	add("{\"term\":\"succussion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00878055\"]}");
 	add("{\"term\":\"suck\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00844353\"]}");
 	add("{\"term\":\"sucker\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"01447563\", \"02468045\", \"07623214\", \"07795871\", \"10691505\", \"13185779\", \"09940867\"]}");
+	add("{\"term\":\"sucker punch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00136972\"]}");
 	add("{\"term\":\"suckerfish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02577541\"]}");
 	add("{\"term\":\"sucking\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00844353\"]}");
+	add("{\"term\":\"sucking fish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02577541\"]}");
+	add("{\"term\":\"sucking louse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02186509\"]}");
+	add("{\"term\":\"sucking pig\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02398507\"]}");
 	add("{\"term\":\"suckling\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00844658\", \"01325902\", \"10387990\", \"11343443\"]}");
+	add("{\"term\":\"suckling pig\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07684843\"]}");
+	add("{\"term\":\"suckling reflex\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00869468\"]}");
 	add("{\"term\":\"sucralfate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04356779\"]}");
 	add("{\"term\":\"sucrase\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14945760\"]}");
 	add("{\"term\":\"sucre\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08872604\", \"13729690\"]}");
 	add("{\"term\":\"sucrose\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15087345\"]}");
 	add("{\"term\":\"suction\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00844353\", \"11537927\"]}");
+	add("{\"term\":\"suction cup\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04356991\"]}");
+	add("{\"term\":\"suction curettage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00670930\"]}");
+	add("{\"term\":\"suction lipectomy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00683496\"]}");
+	add("{\"term\":\"suction pump\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04357182\"]}");
+	add("{\"term\":\"suction stop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07132918\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

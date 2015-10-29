@@ -1,4 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.j.a.y;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceJAY {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"jay\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01582718\", \"11101101\"]}");
+	add("{\"term\":\"jay cooke\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10928286\"]}");
+	add("{\"term\":\"jay gould\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11029269\"]}");
 	add("{\"term\":\"jaybird\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01583511\"]}");
 	add("{\"term\":\"jayshullah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08044067\"]}");
 	add("{\"term\":\"jaywalker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10240030\"]}");

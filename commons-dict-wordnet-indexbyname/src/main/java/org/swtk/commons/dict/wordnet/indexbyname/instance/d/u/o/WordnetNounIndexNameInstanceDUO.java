@@ -1,5 +1,11 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.d.u.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDUO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"duo\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07055197\", \"08002070\", \"08263942\", \"13765745\"]}");
 	add("{\"term\":\"duodecimal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13760599\"]}");
+	add("{\"term\":\"duodecimal digit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13763937\"]}");
+	add("{\"term\":\"duodecimal notation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06823855\"]}");
+	add("{\"term\":\"duodecimal number system\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06823967\"]}");
+	add("{\"term\":\"duodecimal system\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06823967\"]}");
+	add("{\"term\":\"duodenal smear\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05273595\"]}");
+	add("{\"term\":\"duodenal ulcer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14236061\"]}");
 	add("{\"term\":\"duodenum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05542588\"]}");
 	add("{\"term\":\"duologue\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07023808\", \"07150914\"]}");
 	add("{\"term\":\"duomo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02987658\"]}");

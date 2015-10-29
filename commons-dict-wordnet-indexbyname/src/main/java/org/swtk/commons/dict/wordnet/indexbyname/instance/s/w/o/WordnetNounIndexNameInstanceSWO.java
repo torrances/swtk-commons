@@ -4,6 +4,16 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.s.w.o;  import java.u
 	add("{\"term\":\"swoosh\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07411130\"]}");
 	add("{\"term\":\"swop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01111592\"]}");
 	add("{\"term\":\"sword\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04380981\"]}");
+	add("{\"term\":\"sword bean\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12531993\"]}");
+	add("{\"term\":\"sword cane\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04381402\"]}");
+	add("{\"term\":\"sword dance\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00539547\"]}");
+	add("{\"term\":\"sword dancing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00539547\"]}");
+	add("{\"term\":\"sword fern\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13225724\"]}");
+	add("{\"term\":\"sword grass\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12124621\"]}");
+	add("{\"term\":\"sword knot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04381508\"]}");
+	add("{\"term\":\"sword lily\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12432427\", \"12437887\"]}");
+	add("{\"term\":\"sword of damocles\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14566585\"]}");
+	add("{\"term\":\"sword stick\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04381402\"]}");
 	add("{\"term\":\"swordfish\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02632346\", \"07801863\"]}");
 	add("{\"term\":\"swordplay\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00042206\"]}");
 	add("{\"term\":\"swordsman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10104986\"]}");

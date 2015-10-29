@@ -1,5 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.b.e.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBEG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"begetter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10100638\"]}");
 	add("{\"term\":\"beggar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09866418\"]}");
+	add("{\"term\":\"beggar lice\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12547021\", \"12840873\"]}");
 	add("{\"term\":\"beggarman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09866675\"]}");
 	add("{\"term\":\"beggarweed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12547259\"]}");
 	add("{\"term\":\"beggarwoman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09866752\"]}");
@@ -8,7 +9,19 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.b.e.g;  import java.u
 	add("{\"term\":\"begin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10861253\"]}");
 	add("{\"term\":\"beginner\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10127072\", \"10383612\"]}");
 	add("{\"term\":\"beginning\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00236302\", \"08524579\", \"05876673\", \"15290329\", \"07305628\"]}");
+	add("{\"term\":\"beginning rhyme\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07111760\"]}");
 	add("{\"term\":\"begonia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12380625\"]}");
+	add("{\"term\":\"begonia cheimantha\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12381475\"]}");
+	add("{\"term\":\"begonia cocchinea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12381652\"]}");
+	add("{\"term\":\"begonia dregei\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12381867\"]}");
+	add("{\"term\":\"begonia erythrophylla\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12382077\"]}");
+	add("{\"term\":\"begonia family\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12380251\"]}");
+	add("{\"term\":\"begonia feastii\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12382077\"]}");
+	add("{\"term\":\"begonia heracleifolia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12382271\"]}");
+	add("{\"term\":\"begonia rex\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12382463\"]}");
+	add("{\"term\":\"begonia semperflorens\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12382791\"]}");
+	add("{\"term\":\"begonia socotrana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12383031\"]}");
+	add("{\"term\":\"begonia tuberhybrida\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12383185\"]}");
 	add("{\"term\":\"begoniaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12380251\"]}");
 	add("{\"term\":\"beguilement\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00516425\", \"04693737\"]}");
 	add("{\"term\":\"beguiler\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09929832\", \"10017621\"]}");

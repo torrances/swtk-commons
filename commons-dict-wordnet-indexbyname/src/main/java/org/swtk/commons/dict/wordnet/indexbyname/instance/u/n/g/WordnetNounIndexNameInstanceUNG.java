@@ -2,10 +2,13 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.u.n.g;  import java.u
 	add("{\"term\":\"ungodliness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04835985\"]}");
 	add("{\"term\":\"ungracefulness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05011697\"]}");
 	add("{\"term\":\"ungraciousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04922168\"]}");
+	add("{\"term\":\"ungradable opposition\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13879356\"]}");
+	add("{\"term\":\"ungrateful person\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10226382\"]}");
 	add("{\"term\":\"ungratefulness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07519950\"]}");
 	add("{\"term\":\"unguent\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03851070\"]}");
 	add("{\"term\":\"unguiculata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02373777\"]}");
 	add("{\"term\":\"unguiculate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02373996\"]}");
+	add("{\"term\":\"unguiculate mammal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02373996\"]}");
 	add("{\"term\":\"unguis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05589145\"]}");
 	add("{\"term\":\"ungulata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02373177\"]}");
 	add("{\"term\":\"ungulate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02373458\"]}");

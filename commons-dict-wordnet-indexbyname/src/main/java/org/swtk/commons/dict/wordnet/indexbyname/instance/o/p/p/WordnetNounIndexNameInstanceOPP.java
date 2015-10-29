@@ -3,9 +3,13 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.o.p.p;  import java.u
 	add("{\"term\":\"opportuneness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04726102\"]}");
 	add("{\"term\":\"opportunism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04842719\"]}");
 	add("{\"term\":\"opportunist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10399075\"]}");
+	add("{\"term\":\"opportunistic infection\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14201964\"]}");
 	add("{\"term\":\"opportunity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14507501\"]}");
+	add("{\"term\":\"opportunity cost\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13326816\"]}");
 	add("{\"term\":\"opposer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09792668\"]}");
 	add("{\"term\":\"opposite\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"13881030\", \"10399319\", \"13880801\", \"06298695\"]}");
+	add("{\"term\":\"opposite number\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05703771\"]}");
+	add("{\"term\":\"opposite word\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06298695\"]}");
 	add("{\"term\":\"oppositeness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13876846\"]}");
 	add("{\"term\":\"opposition\", \"synsetCount\":8, \"upperType\":\"NOUN\", \"ids\":[\"08421145\", \"10075655\", \"13851118\", \"08420744\", \"10399319\", \"01172234\", \"13876846\", \"00203133\"]}");
 	add("{\"term\":\"oppression\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07554062\", \"14020204\", \"00422042\"]}");

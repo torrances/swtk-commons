@@ -2,8 +2,19 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.i.d.i;  import java.u
 	add("{\"term\":\"idiolatry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01046685\"]}");
 	add("{\"term\":\"idiolect\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07171401\"]}");
 	add("{\"term\":\"idiom\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07169038\", \"04936599\", \"07170369\", \"07095369\"]}");
+	add("{\"term\":\"idiom neutral\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06909080\"]}");
+	add("{\"term\":\"idiomatic expression\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07169038\"]}");
+	add("{\"term\":\"idiopathic disease\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14098197\"]}");
+	add("{\"term\":\"idiopathic disorder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14098197\"]}");
+	add("{\"term\":\"idiopathic hemochromatosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14230738\"]}");
+	add("{\"term\":\"idiopathic thrombocytopenic purpura\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14588998\"]}");
 	add("{\"term\":\"idiopathy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14098197\"]}");
 	add("{\"term\":\"idiosyncrasy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04771497\"]}");
 	add("{\"term\":\"idiot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10217144\"]}");
+	add("{\"term\":\"idiot box\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04413042\"]}");
+	add("{\"term\":\"idiot light\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06887738\"]}");
+	add("{\"term\":\"idiot savant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10217399\"]}");
 	add("{\"term\":\"iditarod\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07475861\"]}");
+	add("{\"term\":\"iditarod trail\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03565021\"]}");
+	add("{\"term\":\"iditarod trail dog sled race\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07475861\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

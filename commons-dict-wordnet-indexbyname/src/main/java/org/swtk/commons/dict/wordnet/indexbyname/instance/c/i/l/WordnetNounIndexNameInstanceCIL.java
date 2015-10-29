@@ -1,6 +1,10 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.c.i.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCIL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cilantro\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07833291\", \"12957229\"]}");
+	add("{\"term\":\"ciliary artery\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05349762\"]}");
+	add("{\"term\":\"ciliary body\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05320869\"]}");
+	add("{\"term\":\"ciliary veins\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05371107\"]}");
 	add("{\"term\":\"ciliata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01397542\"]}");
 	add("{\"term\":\"ciliate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01397895\"]}");
+	add("{\"term\":\"ciliated protozoan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01397895\"]}");
 	add("{\"term\":\"cilioflagellata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01419682\"]}");
 	add("{\"term\":\"ciliophora\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01397542\"]}");
 	add("{\"term\":\"ciliophoran\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01397895\"]}");

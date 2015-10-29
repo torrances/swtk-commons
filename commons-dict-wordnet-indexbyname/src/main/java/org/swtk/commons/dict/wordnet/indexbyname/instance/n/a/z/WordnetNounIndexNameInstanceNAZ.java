@@ -2,6 +2,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.n.a.z;  import java.u
 	add("{\"term\":\"nazareth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08812045\"]}");
 	add("{\"term\":\"naze\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08783604\"]}");
 	add("{\"term\":\"nazi\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10370215\", \"10369951\"]}");
+	add("{\"term\":\"nazi germany\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08187154\"]}");
+	add("{\"term\":\"nazi party\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08279230\"]}");
 	add("{\"term\":\"nazification\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13541629\"]}");
 	add("{\"term\":\"naziism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08383367\"]}");
 	add("{\"term\":\"nazimova\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11221931\"]}");

@@ -1,11 +1,14 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.d.e.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDEU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"deuce\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03187461\", \"07140494\", \"13765409\", \"13970452\"]}");
+	add("{\"term\":\"deus ex machina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10029580\"]}");
 	add("{\"term\":\"deuteranopia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14177650\"]}");
 	add("{\"term\":\"deuterium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14665224\"]}");
+	add("{\"term\":\"deuterium oxide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14751687\"]}");
 	add("{\"term\":\"deuteromycetes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13016828\"]}");
 	add("{\"term\":\"deuteromycota\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13016484\"]}");
 	add("{\"term\":\"deuteromycotina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13016484\"]}");
 	add("{\"term\":\"deuteron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09289193\"]}");
 	add("{\"term\":\"deuteronomy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06445145\"]}");
+	add("{\"term\":\"deutsche mark\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13710138\"]}");
 	add("{\"term\":\"deutschland\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08784821\"]}");
 	add("{\"term\":\"deutschmark\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13710138\"]}");
 	add("{\"term\":\"deutzia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12811190\"]}");

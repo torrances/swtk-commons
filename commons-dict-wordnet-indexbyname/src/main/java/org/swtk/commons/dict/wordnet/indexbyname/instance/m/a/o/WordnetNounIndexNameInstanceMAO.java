@@ -1,6 +1,10 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.m.a.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMAO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"mao\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11175434\", \"14978107\"]}");
+	add("{\"term\":\"mao jacket\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03725496\"]}");
+	add("{\"term\":\"mao tsetung\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11175434\"]}");
+	add("{\"term\":\"mao zedong\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11175434\"]}");
 	add("{\"term\":\"maoi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03788550\"]}");
 	add("{\"term\":\"maoism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06225248\"]}");
 	add("{\"term\":\"maoist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10312283\"]}");
 	add("{\"term\":\"maori\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06951163\", \"08501250\"]}");
+	add("{\"term\":\"maori hen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02018011\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

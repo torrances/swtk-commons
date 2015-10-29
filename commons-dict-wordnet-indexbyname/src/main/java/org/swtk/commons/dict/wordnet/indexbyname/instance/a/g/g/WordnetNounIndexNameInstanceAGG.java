@@ -2,14 +2,18 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.a.g.g;  import java.u
 	add("{\"term\":\"agglomerate\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07978094\", \"14735808\"]}");
 	add("{\"term\":\"agglomeration\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01016432\", \"07975883\"]}");
 	add("{\"term\":\"agglomerator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02687215\"]}");
+	add("{\"term\":\"agglutinating activity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13449977\"]}");
 	add("{\"term\":\"agglutination\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"13449977\", \"13449594\", \"13449781\"]}");
+	add("{\"term\":\"agglutination test\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05747558\"]}");
 	add("{\"term\":\"agglutinin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15053251\"]}");
 	add("{\"term\":\"agglutinogen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15053569\"]}");
 	add("{\"term\":\"aggrandisement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00374352\"]}");
 	add("{\"term\":\"aggrandizement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00374352\"]}");
+	add("{\"term\":\"aggravated assault\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00769552\"]}");
 	add("{\"term\":\"aggravation\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00375643\", \"01224279\", \"07534117\"]}");
 	add("{\"term\":\"aggravator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09797978\"]}");
 	add("{\"term\":\"aggregate\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"08435060\", \"14619105\", \"04360881\"]}");
+	add("{\"term\":\"aggregate fruit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13158449\"]}");
 	add("{\"term\":\"aggregation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01016008\", \"07968050\"]}");
 	add("{\"term\":\"aggregator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09956078\"]}");
 	add("{\"term\":\"aggression\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"01224100\", \"01239732\", \"00966680\", \"07564033\", \"04665625\"]}");

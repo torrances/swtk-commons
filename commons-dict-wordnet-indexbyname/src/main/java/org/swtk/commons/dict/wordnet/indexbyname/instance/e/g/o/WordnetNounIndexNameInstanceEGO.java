@@ -1,4 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.e.g.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceEGO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ego\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05620953\", \"05683445\", \"07524045\"]}");
+	add("{\"term\":\"ego ideal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05934494\"]}");
+	add("{\"term\":\"ego trip\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00374670\"]}");
 	add("{\"term\":\"egocentric\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10067007\"]}");
 	add("{\"term\":\"egocentrism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04842259\"]}");
 	add("{\"term\":\"egoism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04842259\", \"05962130\"]}");

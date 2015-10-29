@@ -1,4 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.s.i.z;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSIZ {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"size\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"05106493\", \"13960760\", \"14730533\", \"05102953\", \"05106204\"]}");
+	add("{\"term\":\"size constancy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05717713\"]}");
+	add("{\"term\":\"size of it\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13960760\"]}");
+	add("{\"term\":\"size stick\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04232640\"]}");
 	add("{\"term\":\"sizeableness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05111848\"]}");
 	add("{\"term\":\"sizing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14730533\"]}");
 	add("{\"term\":\"sizzle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07408519\"]}");

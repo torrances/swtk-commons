@@ -3,10 +3,15 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.b.u.m;  import java.u
 	add("{\"term\":\"bumbler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09899210\"]}");
 	add("{\"term\":\"bumboat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02921839\"]}");
 	add("{\"term\":\"bumelia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12793317\"]}");
+	add("{\"term\":\"bumelia lanuginosa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12793902\"]}");
+	add("{\"term\":\"bumelia lycioides\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12793668\"]}");
 	add("{\"term\":\"bumf\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06610597\"]}");
 	add("{\"term\":\"bummer\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14335136\", \"14430304\"]}");
 	add("{\"term\":\"bump\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07353281\", \"13917127\", \"14313006\"]}");
 	add("{\"term\":\"bumper\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02921979\", \"02922215\"]}");
+	add("{\"term\":\"bumper car\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02922348\"]}");
+	add("{\"term\":\"bumper guard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02922532\"]}");
+	add("{\"term\":\"bumper jack\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02922692\"]}");
 	add("{\"term\":\"bumph\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06610597\"]}");
 	add("{\"term\":\"bumpiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04956858\"]}");
 	add("{\"term\":\"bumpkin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10823706\"]}");

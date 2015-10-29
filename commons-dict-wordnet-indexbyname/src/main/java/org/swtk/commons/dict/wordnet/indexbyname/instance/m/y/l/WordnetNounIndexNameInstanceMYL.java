@@ -1,5 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.m.y.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMYL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"mylanta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14801682\"]}");
 	add("{\"term\":\"mylar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14616397\"]}");
+	add("{\"term\":\"myles standish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11332357\"]}");
 	add("{\"term\":\"myliobatidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01501463\"]}");
 	add("{\"term\":\"mylitta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09539633\"]}");
 	add("{\"term\":\"mylodon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02462116\"]}");

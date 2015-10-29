@@ -3,9 +3,11 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.s.u.f;  import java.u
 	add("{\"term\":\"suffering\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07510467\", \"07511603\", \"14472376\", \"14347683\"]}");
 	add("{\"term\":\"sufficiency\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05119909\", \"13601618\", \"14516537\"]}");
 	add("{\"term\":\"suffix\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06319977\"]}");
+	add("{\"term\":\"suffix notation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06827513\"]}");
 	add("{\"term\":\"suffixation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00929776\"]}");
 	add("{\"term\":\"suffocation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14067364\", \"00226460\"]}");
 	add("{\"term\":\"suffragan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10691979\"]}");
+	add("{\"term\":\"suffragan bishop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10691979\"]}");
 	add("{\"term\":\"suffrage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05193574\"]}");
 	add("{\"term\":\"suffragette\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10692101\"]}");
 	add("{\"term\":\"suffragism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05961234\"]}");

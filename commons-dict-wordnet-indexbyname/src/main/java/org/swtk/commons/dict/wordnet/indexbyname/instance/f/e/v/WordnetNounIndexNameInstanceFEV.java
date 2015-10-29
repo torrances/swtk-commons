@@ -1,4 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.f.e.v;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFEV {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"fever\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07526619\", \"14388761\"]}");
+	add("{\"term\":\"fever blister\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14155857\"]}");
+	add("{\"term\":\"fever pitch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14060374\"]}");
+	add("{\"term\":\"fever tree\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"11778952\", \"12358134\", \"12690123\", \"13132099\"]}");
 	add("{\"term\":\"feverfew\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12043577\"]}");
 	add("{\"term\":\"feverishness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14388761\"]}");
 	add("{\"term\":\"feverroot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12700637\"]}");

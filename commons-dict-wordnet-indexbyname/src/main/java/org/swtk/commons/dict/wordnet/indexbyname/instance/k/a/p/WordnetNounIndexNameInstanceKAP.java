@@ -1,5 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.k.a.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceKAP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"kapeika\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13722247\"]}");
 	add("{\"term\":\"kaph\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06850837\"]}");
+	add("{\"term\":\"kaplan group\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08045376\"]}");
 	add("{\"term\":\"kapok\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12210927\", \"14949914\"]}");
 	add("{\"term\":\"kappa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06848148\"]}");
 	add("{\"term\":\"kapsiki\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06996657\"]}");

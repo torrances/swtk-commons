@@ -3,6 +3,9 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.p.u.s;  import java.u
 	add("{\"term\":\"pusey\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11268987\"]}");
 	add("{\"term\":\"puseyism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06239523\"]}");
 	add("{\"term\":\"push\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00283329\", \"04033499\", \"04843914\", \"11518603\", \"00113132\"]}");
+	add("{\"term\":\"push back\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00982865\"]}");
+	add("{\"term\":\"push broom\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04033394\"]}");
+	add("{\"term\":\"push button\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04033499\"]}");
 	add("{\"term\":\"pushan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09551058\"]}");
 	add("{\"term\":\"pushball\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00478838\"]}");
 	add("{\"term\":\"pushcart\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03489166\"]}");
@@ -21,6 +24,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.p.u.s;  import java.u
 	add("{\"term\":\"pussley\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11878546\"]}");
 	add("{\"term\":\"pussly\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11878546\"]}");
 	add("{\"term\":\"pussy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02124950\", \"05529165\"]}");
+	add("{\"term\":\"pussy willow\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12748278\", \"12747861\"]}");
 	add("{\"term\":\"pussycat\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02124950\", \"10515560\"]}");
 	add("{\"term\":\"pussytoes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11942843\"]}");
 	add("{\"term\":\"pustule\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14357527\"]}");

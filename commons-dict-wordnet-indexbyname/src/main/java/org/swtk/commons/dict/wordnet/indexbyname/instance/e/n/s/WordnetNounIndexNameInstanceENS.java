@@ -1,5 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceENS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ensemble\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"03294896\", \"07971894\", \"08206019\", \"08254969\", \"08205165\"]}");
 	add("{\"term\":\"ensete\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12374121\"]}");
+	add("{\"term\":\"ensete ventricosum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12374271\"]}");
+	add("{\"term\":\"ensiform leaf\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13179065\"]}");
 	add("{\"term\":\"ensign\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03295007\", \"06895059\", \"09639752\"]}");
 	add("{\"term\":\"ensilage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07817318\"]}");
 	add("{\"term\":\"ensis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01961555\"]}");

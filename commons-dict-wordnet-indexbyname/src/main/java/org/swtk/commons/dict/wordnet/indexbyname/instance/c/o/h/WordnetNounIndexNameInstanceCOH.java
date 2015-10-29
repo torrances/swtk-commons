@@ -6,8 +6,13 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.c.o.h;  import java.u
 	add("{\"term\":\"cohesiveness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04943081\", \"14443868\"]}");
 	add("{\"term\":\"cohn\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10924391\"]}");
 	add("{\"term\":\"coho\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02539495\", \"07812444\"]}");
+	add("{\"term\":\"coho salmon\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02539495\", \"07812444\"]}");
 	add("{\"term\":\"cohoe\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02539495\", \"07812444\"]}");
 	add("{\"term\":\"cohort\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07959756\", \"08268025\", \"08268134\"]}");
 	add("{\"term\":\"cohosh\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11744239\"]}");
 	add("{\"term\":\"cohune\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12613883\"]}");
+	add("{\"term\":\"cohune fat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12614269\"]}");
+	add("{\"term\":\"cohune nut\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12614102\"]}");
+	add("{\"term\":\"cohune oil\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12614269\"]}");
+	add("{\"term\":\"cohune palm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12613883\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

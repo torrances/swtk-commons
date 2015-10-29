@@ -2,12 +2,15 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.r.e.b;  import java.u
 	add("{\"term\":\"rebate\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04043252\", \"13303298\"]}");
 	add("{\"term\":\"rebato\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04043124\"]}");
 	add("{\"term\":\"rebecca\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11275765\"]}");
+	add("{\"term\":\"rebecca rolfe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11260239\"]}");
+	add("{\"term\":\"rebecca west\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11402393\"]}");
 	add("{\"term\":\"rebekah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11275765\"]}");
 	add("{\"term\":\"rebel\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"10323321\", \"10229738\", \"10647730\"]}");
 	add("{\"term\":\"rebellion\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00964240\", \"01179817\"]}");
 	add("{\"term\":\"rebelliousness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01181883\", \"04915168\"]}");
 	add("{\"term\":\"rebirth\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00095608\", \"01049727\", \"07335847\", \"11429028\"]}");
 	add("{\"term\":\"rebound\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00140932\", \"00861369\", \"07364792\"]}");
+	add("{\"term\":\"rebound tenderness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14355853\"]}");
 	add("{\"term\":\"reboxetine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04067428\"]}");
 	add("{\"term\":\"rebozo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04067560\"]}");
 	add("{\"term\":\"rebroadcast\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06632258\"]}");

@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.m.a.f;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMAF {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"mafa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06996907\"]}");
+	add("{\"term\":\"maffeo barberini\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11377327\"]}");
 	add("{\"term\":\"maffia\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"08262346\", \"08262470\", \"08262723\"]}");
 	add("{\"term\":\"mafia\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"08262346\", \"08262470\", \"08262723\"]}");
 	add("{\"term\":\"mafioso\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10300061\", \"10300192\"]}");

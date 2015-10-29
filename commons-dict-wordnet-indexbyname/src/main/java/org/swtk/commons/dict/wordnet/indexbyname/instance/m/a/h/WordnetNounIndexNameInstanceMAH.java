@@ -3,6 +3,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.m.a.h;  import java.u
 	add("{\"term\":\"mahabharatam\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06443166\"]}");
 	add("{\"term\":\"mahabharatum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06443166\"]}");
 	add("{\"term\":\"mahagua\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12199011\", \"12200685\"]}");
+	add("{\"term\":\"mahalia jackson\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11096810\"]}");
 	add("{\"term\":\"mahan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11169473\"]}");
 	add("{\"term\":\"maharaja\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10301334\"]}");
 	add("{\"term\":\"maharajah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10301334\"]}");
@@ -10,12 +11,15 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.m.a.h;  import java.u
 	add("{\"term\":\"maharani\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10301467\"]}");
 	add("{\"term\":\"maharashtra\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08925719\"]}");
 	add("{\"term\":\"mahatma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10301593\"]}");
+	add("{\"term\":\"mahatma gandhi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11009335\"]}");
 	add("{\"term\":\"mahayana\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06250995\", \"08116230\"]}");
+	add("{\"term\":\"mahayana buddhism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06250995\"]}");
 	add("{\"term\":\"mahayanism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06198976\"]}");
 	add("{\"term\":\"mahayanist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09703460\"]}");
 	add("{\"term\":\"mahdi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10301711\"]}");
 	add("{\"term\":\"mahdism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06245983\"]}");
 	add("{\"term\":\"mahdist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10301959\"]}");
+	add("{\"term\":\"mahernia verticillata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12221021\"]}");
 	add("{\"term\":\"mahgrib\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08614879\"]}");
 	add("{\"term\":\"mahican\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06923734\", \"09681578\"]}");
 	add("{\"term\":\"mahimahi\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02584588\", \"07794914\"]}");
@@ -24,8 +28,12 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.m.a.h;  import java.u
 	add("{\"term\":\"mahlstick\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03737373\"]}");
 	add("{\"term\":\"mahoe\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12199011\", \"12200685\"]}");
 	add("{\"term\":\"mahogany\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04980653\", \"12715905\", \"12716333\"]}");
+	add("{\"term\":\"mahogany family\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12715468\"]}");
+	add("{\"term\":\"mahogany tree\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12715905\"]}");
 	add("{\"term\":\"mahomet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11204082\"]}");
 	add("{\"term\":\"mahonia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11719752\"]}");
+	add("{\"term\":\"mahonia aquifolium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11719911\"]}");
+	add("{\"term\":\"mahonia nervosa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11720220\"]}");
 	add("{\"term\":\"mahound\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11204082\"]}");
 	add("{\"term\":\"mahout\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10302071\"]}");
 	add("{\"term\":\"mahratta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09695841\"]}");

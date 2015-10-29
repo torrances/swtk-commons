@@ -6,6 +6,11 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.c.i.s;  import java.u
 	add("{\"term\":\"cistern\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03039495\", \"03039700\", \"05524362\"]}");
 	add("{\"term\":\"cisterna\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05524362\"]}");
 	add("{\"term\":\"cistothorus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01587635\"]}");
+	add("{\"term\":\"cistothorus palustris\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01587928\"]}");
+	add("{\"term\":\"cistothorus platensis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01588063\"]}");
 	add("{\"term\":\"cistron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05444328\"]}");
 	add("{\"term\":\"cistus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12394755\"]}");
+	add("{\"term\":\"cistus albidus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12395222\"]}");
+	add("{\"term\":\"cistus ladanifer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12395379\"]}");
+	add("{\"term\":\"cistus ladanum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12395379\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,5 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.u.p.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceUPS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"upsala\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08784679\"]}");
 	add("{\"term\":\"upset\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"00068990\", \"00349138\", \"04522739\", \"14075885\", \"00555887\", \"14426686\"]}");
+	add("{\"term\":\"upset price\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13325687\"]}");
+	add("{\"term\":\"upset stomach\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14359722\"]}");
 	add("{\"term\":\"upsetter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10760251\"]}");
 	add("{\"term\":\"upshot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11430739\"]}");
 	add("{\"term\":\"upside\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08681092\"]}");

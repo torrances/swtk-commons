@@ -2,6 +2,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.c.l;  import java.u
 	add("{\"term\":\"eclampsia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14214766\"]}");
 	add("{\"term\":\"eclat\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04822103\", \"04822233\", \"06704429\"]}");
 	add("{\"term\":\"eclectic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10062832\"]}");
+	add("{\"term\":\"eclectic method\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05796718\"]}");
 	add("{\"term\":\"eclecticism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05796718\"]}");
 	add("{\"term\":\"eclecticist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10062832\"]}");
 	add("{\"term\":\"eclipse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07383246\"]}");

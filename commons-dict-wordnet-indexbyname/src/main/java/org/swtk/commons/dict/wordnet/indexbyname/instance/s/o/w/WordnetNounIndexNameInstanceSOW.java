@@ -1,4 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.s.o.w;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSOW {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"sow\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02398740\"]}");
+	add("{\"term\":\"sow bug\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01994916\"]}");
+	add("{\"term\":\"sow thistle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12039229\"]}");
 	add("{\"term\":\"sowbane\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11850391\"]}");
 	add("{\"term\":\"sowbelly\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07687108\"]}");
 	add("{\"term\":\"sowbread\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12114117\"]}");

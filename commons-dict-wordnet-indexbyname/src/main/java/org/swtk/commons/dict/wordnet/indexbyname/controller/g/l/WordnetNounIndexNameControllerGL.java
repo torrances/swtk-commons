@@ -4,13 +4,13 @@ package org.swtk.commons.dict.wordnet.indexbyname.controller.g.l;  import java.u
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.g.l.o.WordnetNounIndexNameInstanceGLO;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.g.l.u.WordnetNounIndexNameInstanceGLU;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.g.l.y.WordnetNounIndexNameInstanceGLY;
-  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerGL {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException { 		if (TERM.length() < 3) throw new BusinessException("TERM not found (term = %s)", TERM); 		 		String key = TERM.substring(0, 3).toLowerCase(); 			if ("gla".equals(key)) return WordnetNounIndexNameInstanceGLA.get(TERM);
+  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerGL {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException { 		if (TERM.length() < 3) throw new BusinessException("TERM not found (term = %s)", TERM); 		 		String key = TERM.replaceAll(" ", "").substring(0, 3).toLowerCase(); 			if ("gla".equals(key)) return WordnetNounIndexNameInstanceGLA.get(TERM);
 	if ("gle".equals(key)) return WordnetNounIndexNameInstanceGLE.get(TERM);
 	if ("gli".equals(key)) return WordnetNounIndexNameInstanceGLI.get(TERM);
 	if ("glo".equals(key)) return WordnetNounIndexNameInstanceGLO.get(TERM);
 	if ("glu".equals(key)) return WordnetNounIndexNameInstanceGLU.get(TERM);
 	if ("gly".equals(key)) return WordnetNounIndexNameInstanceGLY.get(TERM);
-  		throw new BusinessException("TERM not found (term = %s)", TERM); 	} 	 	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceGLA.terms());
+  		throw new BusinessException("TERM not found (term = %s)", TERM); 	}  	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceGLA.terms());
 	set.addAll(WordnetNounIndexNameInstanceGLE.terms());
 	set.addAll(WordnetNounIndexNameInstanceGLI.terms());
 	set.addAll(WordnetNounIndexNameInstanceGLO.terms());

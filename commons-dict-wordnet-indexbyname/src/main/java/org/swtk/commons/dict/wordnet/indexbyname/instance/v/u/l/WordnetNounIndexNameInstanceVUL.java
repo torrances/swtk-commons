@@ -3,8 +3,10 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.v.u.l;  import java.u
 	add("{\"term\":\"vulcaniser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10781187\"]}");
 	add("{\"term\":\"vulcanite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15032101\"]}");
 	add("{\"term\":\"vulcanization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13595118\"]}");
+	add("{\"term\":\"vulcanized fiber\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03336189\"]}");
 	add("{\"term\":\"vulcanizer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10781187\"]}");
 	add("{\"term\":\"vulcanology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06130260\"]}");
+	add("{\"term\":\"vulgar latin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06976171\"]}");
 	add("{\"term\":\"vulgarian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10781361\"]}");
 	add("{\"term\":\"vulgarisation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00273921\", \"01270513\"]}");
 	add("{\"term\":\"vulgariser\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10474308\", \"10781526\"]}");
@@ -16,9 +18,15 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.v.u.l;  import java.u
 	add("{\"term\":\"vulnerability\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05050025\", \"14567533\"]}");
 	add("{\"term\":\"vulpecula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09496815\"]}");
 	add("{\"term\":\"vulpes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02121506\"]}");
+	add("{\"term\":\"vulpes fulva\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02122129\"]}");
+	add("{\"term\":\"vulpes macrotis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02122441\"]}");
+	add("{\"term\":\"vulpes velox\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02122286\"]}");
+	add("{\"term\":\"vulpes vulpes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02121674\"]}");
 	add("{\"term\":\"vultur\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01622316\"]}");
+	add("{\"term\":\"vultur gryphus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01622476\"]}");
 	add("{\"term\":\"vulture\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10312833\", \"01618959\"]}");
 	add("{\"term\":\"vulva\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05529287\"]}");
+	add("{\"term\":\"vulvar slit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05530435\"]}");
 	add("{\"term\":\"vulvectomy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00717928\"]}");
 	add("{\"term\":\"vulvitis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14382398\"]}");
 	add("{\"term\":\"vulvovaginitis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14382478\"]}");

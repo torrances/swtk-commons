@@ -1,5 +1,24 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.r.o.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceROA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"roach\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"01445091\", \"02235990\", \"04042970\", \"04102947\", \"05268587\"]}");
+	add("{\"term\":\"roach clip\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04103032\"]}");
+	add("{\"term\":\"roach holder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04103032\"]}");
 	add("{\"term\":\"road\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00174852\", \"04103160\"]}");
+	add("{\"term\":\"road agent\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10195138\"]}");
+	add("{\"term\":\"road builder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10553238\"]}");
+	add("{\"term\":\"road construction\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00914564\"]}");
+	add("{\"term\":\"road game\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00457714\"]}");
+	add("{\"term\":\"road gang\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08260413\"]}");
+	add("{\"term\":\"road hog\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10553337\"]}");
+	add("{\"term\":\"road map\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04104350\", \"05921146\"]}");
+	add("{\"term\":\"road mender\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10553431\"]}");
+	add("{\"term\":\"road metal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14720851\"]}");
+	add("{\"term\":\"road rage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01172896\"]}");
+	add("{\"term\":\"road roller\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04317295\"]}");
+	add("{\"term\":\"road runner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10312630\"]}");
+	add("{\"term\":\"road sense\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05623041\"]}");
+	add("{\"term\":\"road show\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00524134\"]}");
+	add("{\"term\":\"road surface\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04104621\"]}");
+	add("{\"term\":\"road test\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05808161\"]}");
+	add("{\"term\":\"road to damascus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07433097\"]}");
 	add("{\"term\":\"roadbed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04103827\"]}");
 	add("{\"term\":\"roadblock\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04103942\", \"05698721\"]}");
 	add("{\"term\":\"roadbook\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06434733\"]}");
@@ -14,6 +33,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.r.o.a;  import java.u
 	add("{\"term\":\"roadster\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02915903\", \"04104467\"]}");
 	add("{\"term\":\"roadway\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04104716\"]}");
 	add("{\"term\":\"roadworthiness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04814878\"]}");
+	add("{\"term\":\"roald amundsen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10835827\"]}");
+	add("{\"term\":\"roald hoffmann\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11074851\"]}");
 	add("{\"term\":\"roamer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10785347\"]}");
 	add("{\"term\":\"roan\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02377954\", \"15039412\"]}");
 	add("{\"term\":\"roanoke\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09174166\"]}");
@@ -21,6 +42,11 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.r.o.a;  import java.u
 	add("{\"term\":\"roarer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10553540\"]}");
 	add("{\"term\":\"roaring\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07136069\", \"07392282\"]}");
 	add("{\"term\":\"roast\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05742326\", \"07596347\"]}");
+	add("{\"term\":\"roast beef\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07679541\"]}");
+	add("{\"term\":\"roast beef plant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12434147\"]}");
+	add("{\"term\":\"roast lamb\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07683960\"]}");
+	add("{\"term\":\"roast pork\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07685533\"]}");
+	add("{\"term\":\"roast veal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07681589\"]}");
 	add("{\"term\":\"roaster\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"04104854\", \"07661240\", \"10553834\", \"10553946\"]}");
 	add("{\"term\":\"roasting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00248309\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

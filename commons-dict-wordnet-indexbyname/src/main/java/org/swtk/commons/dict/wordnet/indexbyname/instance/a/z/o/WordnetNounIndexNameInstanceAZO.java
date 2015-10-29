@@ -1,5 +1,9 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.a.z.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceAZO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"azoimide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14636942\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.a.z.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceAZO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"azo dye\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14794661\"]}");
+	add("{\"term\":\"azo group\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14645497\"]}");
+	add("{\"term\":\"azo radical\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14645497\"]}");
+	add("{\"term\":\"azoimide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14636942\"]}");
 	add("{\"term\":\"azolla\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12980131\"]}");
+	add("{\"term\":\"azolla caroliniana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12980298\"]}");
 	add("{\"term\":\"azollaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12979986\"]}");
 	add("{\"term\":\"azores\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09007715\"]}");
 	add("{\"term\":\"azotaemia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14234453\"]}");

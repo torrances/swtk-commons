@@ -1,3 +1,10 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.c.y.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCYG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cygnet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01861547\"]}");
 	add("{\"term\":\"cygnus\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01861630\", \"09285396\"]}");
+	add("{\"term\":\"cygnus atratus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01862828\"]}");
+	add("{\"term\":\"cygnus buccinator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01862643\"]}");
+	add("{\"term\":\"cygnus columbianus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01862137\"]}");
+	add("{\"term\":\"cygnus columbianus bewickii\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01862493\"]}");
+	add("{\"term\":\"cygnus columbianus columbianus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01862330\"]}");
+	add("{\"term\":\"cygnus cygnus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01861966\"]}");
+	add("{\"term\":\"cygnus olor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01861831\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

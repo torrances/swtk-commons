@@ -3,12 +3,12 @@ package org.swtk.commons.dict.wordnet.indexbyname.controller.b.l;  import java.u
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.b.l.i.WordnetNounIndexNameInstanceBLI;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.b.l.o.WordnetNounIndexNameInstanceBLO;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.b.l.u.WordnetNounIndexNameInstanceBLU;
-  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerBL {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException { 		if (TERM.length() < 3) throw new BusinessException("TERM not found (term = %s)", TERM); 		 		String key = TERM.substring(0, 3).toLowerCase(); 			if ("bla".equals(key)) return WordnetNounIndexNameInstanceBLA.get(TERM);
+  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerBL {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException { 		if (TERM.length() < 3) throw new BusinessException("TERM not found (term = %s)", TERM); 		 		String key = TERM.replaceAll(" ", "").substring(0, 3).toLowerCase(); 			if ("bla".equals(key)) return WordnetNounIndexNameInstanceBLA.get(TERM);
 	if ("ble".equals(key)) return WordnetNounIndexNameInstanceBLE.get(TERM);
 	if ("bli".equals(key)) return WordnetNounIndexNameInstanceBLI.get(TERM);
 	if ("blo".equals(key)) return WordnetNounIndexNameInstanceBLO.get(TERM);
 	if ("blu".equals(key)) return WordnetNounIndexNameInstanceBLU.get(TERM);
-  		throw new BusinessException("TERM not found (term = %s)", TERM); 	} 	 	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceBLA.terms());
+  		throw new BusinessException("TERM not found (term = %s)", TERM); 	}  	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceBLA.terms());
 	set.addAll(WordnetNounIndexNameInstanceBLE.terms());
 	set.addAll(WordnetNounIndexNameInstanceBLI.terms());
 	set.addAll(WordnetNounIndexNameInstanceBLO.terms());

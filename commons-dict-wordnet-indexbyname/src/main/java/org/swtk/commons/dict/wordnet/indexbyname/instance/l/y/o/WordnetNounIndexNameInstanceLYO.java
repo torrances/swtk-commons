@@ -1,6 +1,10 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.l.y.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLYO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"lyon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08956420\"]}");
 	add("{\"term\":\"lyonia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12261232\"]}");
+	add("{\"term\":\"lyonia ligustrina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12261709\"]}");
+	add("{\"term\":\"lyonia lucida\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12261943\"]}");
+	add("{\"term\":\"lyonia mariana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12261482\"]}");
 	add("{\"term\":\"lyonnais\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08964883\"]}");
+	add("{\"term\":\"lyonnaise sauce\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07855840\"]}");
 	add("{\"term\":\"lyons\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"08333276\", \"08333494\", \"08956420\"]}");
 	add("{\"term\":\"lyophilisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13506140\"]}");
 	add("{\"term\":\"lyophilization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13506140\"]}");

@@ -6,11 +6,24 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.t.a.k;  import java.u
 	add("{\"term\":\"takedown\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06729735\", \"07486654\"]}");
 	add("{\"term\":\"takelma\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06938315\", \"09689756\"]}");
 	add("{\"term\":\"takeoff\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00550647\", \"06793148\", \"07390235\", \"00306928\"]}");
+	add("{\"term\":\"takeoff booster\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02875694\"]}");
+	add("{\"term\":\"takeoff rocket\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02875694\"]}");
 	add("{\"term\":\"takeout\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06750377\", \"07610082\"]}");
+	add("{\"term\":\"takeout food\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07610082\"]}");
 	add("{\"term\":\"takeover\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00791567\", \"01147528\"]}");
+	add("{\"term\":\"takeover arbitrage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01096217\"]}");
+	add("{\"term\":\"takeover attempt\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00791866\"]}");
+	add("{\"term\":\"takeover bid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00792008\"]}");
+	add("{\"term\":\"takeover target\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08092911\"]}");
 	add("{\"term\":\"taker\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09871489\", \"10709280\"]}");
 	add("{\"term\":\"takilman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06938315\"]}");
 	add("{\"term\":\"takin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02422280\"]}");
 	add("{\"term\":\"taking\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00715729\"]}");
+	add("{\"term\":\"taking apart\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07448110\"]}");
+	add("{\"term\":\"taking hold\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00813935\"]}");
+	add("{\"term\":\"taking into custody\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00089545\"]}");
+	add("{\"term\":\"taking over\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00083574\"]}");
 	add("{\"term\":\"takings\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13281089\"]}");
+	add("{\"term\":\"taklamakan desert\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09196185\"]}");
+	add("{\"term\":\"taklimakan desert\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09196185\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

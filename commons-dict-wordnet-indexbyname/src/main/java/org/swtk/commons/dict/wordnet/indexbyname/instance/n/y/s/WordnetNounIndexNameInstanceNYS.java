@@ -1,5 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.n.y.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNYS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"nyse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03828491\"]}");
 	add("{\"term\":\"nyssa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12360719\"]}");
+	add("{\"term\":\"nyssa aquatica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12361098\"]}");
+	add("{\"term\":\"nyssa sylvatica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12361272\"]}");
 	add("{\"term\":\"nyssaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12360489\"]}");
 	add("{\"term\":\"nystagmus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00338431\"]}");
 	add("{\"term\":\"nystan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03842677\"]}");

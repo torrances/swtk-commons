@@ -2,5 +2,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.d.a.d;  import java.u
 	add("{\"term\":\"dada\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08483423\", \"10007601\"]}");
 	add("{\"term\":\"dadaism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08483423\"]}");
 	add("{\"term\":\"daddy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10007601\"]}");
+	add("{\"term\":\"daddy longlegs\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01772722\", \"02207871\"]}");
 	add("{\"term\":\"dado\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03163208\", \"03163334\", \"04551424\"]}");
+	add("{\"term\":\"dado plane\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03163462\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

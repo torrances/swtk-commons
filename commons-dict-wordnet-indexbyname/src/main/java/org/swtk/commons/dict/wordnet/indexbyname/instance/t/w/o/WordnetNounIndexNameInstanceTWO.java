@@ -1,4 +1,10 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.t.w.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTWO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"two\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03187461\", \"13765409\"]}");
+	add("{\"term\":\"two dollar bill\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13416972\"]}");
+	add("{\"term\":\"two dozen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13770762\"]}");
+	add("{\"term\":\"two iron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03767867\"]}");
+	add("{\"term\":\"two kettle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09690907\"]}");
+	add("{\"term\":\"two weeks\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15195378\"]}");
+	add("{\"term\":\"two year old\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02388000\"]}");
 	add("{\"term\":\"twofer\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06530556\", \"07181977\"]}");
 	add("{\"term\":\"twopence\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13412136\"]}");
 	add("{\"term\":\"twosome\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08002070\", \"13765745\"]}");

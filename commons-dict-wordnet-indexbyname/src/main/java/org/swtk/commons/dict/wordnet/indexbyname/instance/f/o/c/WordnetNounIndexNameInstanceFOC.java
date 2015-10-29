@@ -1,4 +1,11 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.f.o.c;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFOC {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"focalisation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00376433\", \"13503984\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.f.o.c;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFOC {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"focal distance\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05093657\"]}");
+	add("{\"term\":\"focal epilepsy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14110108\"]}");
+	add("{\"term\":\"focal infection\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14200197\"]}");
+	add("{\"term\":\"focal length\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05093657\"]}");
+	add("{\"term\":\"focal point\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05712641\", \"14206179\", \"11476112\"]}");
+	add("{\"term\":\"focal ratio\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13843620\"]}");
+	add("{\"term\":\"focal seizure\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14110406\"]}");
+	add("{\"term\":\"focalisation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00376433\", \"13503984\"]}");
 	add("{\"term\":\"focalization\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00376433\", \"13503984\"]}");
 	add("{\"term\":\"focus\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"08589882\", \"11476112\", \"14458653\", \"14206179\", \"04828315\", \"04710583\", \"05712641\"]}");
 	add("{\"term\":\"focusing\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00376433\", \"05712641\"]}");

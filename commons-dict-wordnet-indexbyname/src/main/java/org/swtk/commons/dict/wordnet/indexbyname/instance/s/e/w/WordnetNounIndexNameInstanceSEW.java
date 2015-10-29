@@ -1,7 +1,25 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.s.e.w;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSEW {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"sewage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14881044\"]}");
+	add("{\"term\":\"sewage disposal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00092713\"]}");
+	add("{\"term\":\"sewage disposal plant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04185729\"]}");
+	add("{\"term\":\"sewage farm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04185845\"]}");
+	add("{\"term\":\"sewage system\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04185958\"]}");
+	add("{\"term\":\"sewage works\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04185958\"]}");
 	add("{\"term\":\"seward\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11314339\"]}");
+	add("{\"term\":\"seward peninsula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09079300\"]}");
 	add("{\"term\":\"sewellel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02366648\"]}");
 	add("{\"term\":\"sewer\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"14499576\", \"10603770\", \"04186187\"]}");
+	add("{\"term\":\"sewer gas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15062993\"]}");
+	add("{\"term\":\"sewer line\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04186332\"]}");
+	add("{\"term\":\"sewer main\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04186332\"]}");
+	add("{\"term\":\"sewer rat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02336471\"]}");
+	add("{\"term\":\"sewer system\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04185958\"]}");
+	add("{\"term\":\"sewer water\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14881172\"]}");
 	add("{\"term\":\"sewerage\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04186187\", \"14881044\"]}");
 	add("{\"term\":\"sewing\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04186446\", \"00716926\"]}");
+	add("{\"term\":\"sewing basket\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04186773\"]}");
+	add("{\"term\":\"sewing kit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04186885\"]}");
+	add("{\"term\":\"sewing machine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04186974\"]}");
+	add("{\"term\":\"sewing needle\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02271095\", \"04187124\"]}");
+	add("{\"term\":\"sewing room\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04187290\"]}");
+	add("{\"term\":\"sewing stitch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04187375\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

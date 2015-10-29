@@ -1,13 +1,28 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.t.i.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTIG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"tiger\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02132256\", \"10730281\"]}");
+	add("{\"term\":\"tiger beetle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02167757\"]}");
+	add("{\"term\":\"tiger cat\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02125811\", \"02129117\"]}");
+	add("{\"term\":\"tiger cowrie\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01956403\"]}");
+	add("{\"term\":\"tiger cub\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01325559\"]}");
+	add("{\"term\":\"tiger lily\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12447689\", \"12448071\"]}");
+	add("{\"term\":\"tiger moth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02308288\"]}");
+	add("{\"term\":\"tiger rattlesnake\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01759557\"]}");
+	add("{\"term\":\"tiger salamander\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01635242\"]}");
+	add("{\"term\":\"tiger shark\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01494002\"]}");
+	add("{\"term\":\"tiger snake\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01753078\"]}");
 	add("{\"term\":\"tigers\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08048776\"]}");
+	add("{\"term\":\"tight end\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10730427\"]}");
+	add("{\"term\":\"tight money\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13277333\"]}");
 	add("{\"term\":\"tightening\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00148877\"]}");
 	add("{\"term\":\"tightfistedness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04840918\"]}");
 	add("{\"term\":\"tightness\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"04784179\", \"04840918\", \"05096011\", \"05729675\", \"14474006\"]}");
 	add("{\"term\":\"tightrope\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04441914\"]}");
+	add("{\"term\":\"tightrope walker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10135603\"]}");
+	add("{\"term\":\"tightrope walking\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00325804\"]}");
 	add("{\"term\":\"tights\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04442066\"]}");
 	add("{\"term\":\"tightwad\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09932139\"]}");
 	add("{\"term\":\"tiglon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02132738\"]}");
 	add("{\"term\":\"tigon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02132738\"]}");
 	add("{\"term\":\"tigress\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02132575\"]}");
 	add("{\"term\":\"tigris\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09481921\"]}");
+	add("{\"term\":\"tigris river\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09481921\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,8 +1,13 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.r.i.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRID {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"riddance\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00207776\", \"00396141\"]}");
 	add("{\"term\":\"riddle\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04095808\", \"06798080\"]}");
+	add("{\"term\":\"riddle canon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07056772\"]}");
 	add("{\"term\":\"ride\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04095909\", \"00308457\"]}");
 	add("{\"term\":\"rider\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"10423621\", \"10549725\", \"06406207\", \"10549540\"]}");
+	add("{\"term\":\"rider haggard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11041997\"]}");
+	add("{\"term\":\"rider plate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04096094\"]}");
 	add("{\"term\":\"ridge\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"04096264\", \"05611097\", \"09432630\", \"09432776\", \"13924741\", \"09432390\"]}");
+	add("{\"term\":\"ridge rope\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04096488\"]}");
+	add("{\"term\":\"ridge tile\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15030144\"]}");
 	add("{\"term\":\"ridgel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02379715\"]}");
 	add("{\"term\":\"ridgeline\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09432630\"]}");
 	add("{\"term\":\"ridgeling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02379715\"]}");
@@ -13,5 +18,16 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.r.i.d;  import java.u
 	add("{\"term\":\"ridiculer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10572170\"]}");
 	add("{\"term\":\"ridiculousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06620162\"]}");
 	add("{\"term\":\"riding\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00300043\", \"00451320\"]}");
+	add("{\"term\":\"riding bitt\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04096634\"]}");
+	add("{\"term\":\"riding boot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04096778\"]}");
+	add("{\"term\":\"riding breeches\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03605477\"]}");
+	add("{\"term\":\"riding crop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04096948\"]}");
+	add("{\"term\":\"riding habit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03479290\"]}");
+	add("{\"term\":\"riding horse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02380355\"]}");
+	add("{\"term\":\"riding lamp\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02712622\"]}");
+	add("{\"term\":\"riding light\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02712622\"]}");
+	add("{\"term\":\"riding master\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10549958\"]}");
+	add("{\"term\":\"riding mower\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04097088\"]}");
+	add("{\"term\":\"riding school\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08301291\"]}");
 	add("{\"term\":\"ridley\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01667010\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

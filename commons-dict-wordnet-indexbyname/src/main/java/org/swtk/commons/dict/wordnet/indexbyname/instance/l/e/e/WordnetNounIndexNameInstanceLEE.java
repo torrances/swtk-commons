@@ -1,4 +1,13 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.l.e.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLEE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"lee\", \"synsetCount\":8, \"upperType\":\"NOUN\", \"ids\":[\"08609908\", \"11143580\", \"11143752\", \"11143884\", \"11144078\", \"11144290\", \"11144462\", \"11144637\"]}");
+	add("{\"term\":\"lee buck trevino\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11368807\"]}");
+	add("{\"term\":\"lee de forest\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10947175\"]}");
+	add("{\"term\":\"lee harvey oswald\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11238143\"]}");
+	add("{\"term\":\"lee krasner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11130386\"]}");
+	add("{\"term\":\"lee side\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08609908\"]}");
+	add("{\"term\":\"lee strasberg\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11341046\"]}");
+	add("{\"term\":\"lee tide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07418201\"]}");
+	add("{\"term\":\"lee trevino\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11368807\"]}");
+	add("{\"term\":\"lee yuen kam\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11144290\"]}");
 	add("{\"term\":\"leech\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10272371\", \"01940550\"]}");
 	add("{\"term\":\"leechee\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07782149\"]}");
 	add("{\"term\":\"leeds\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08899255\"]}");
@@ -7,5 +16,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.l.e.e;  import java.u
 	add("{\"term\":\"lees\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09360312\"]}");
 	add("{\"term\":\"leeuwenhoek\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11149798\"]}");
 	add("{\"term\":\"leeward\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08609908\", \"13852047\"]}");
+	add("{\"term\":\"leeward islands\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08767280\"]}");
+	add("{\"term\":\"leeward side\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13852179\"]}");
+	add("{\"term\":\"leeward tide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07418201\"]}");
 	add("{\"term\":\"leeway\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04757264\", \"13528413\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

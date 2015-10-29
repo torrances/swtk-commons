@@ -1,6 +1,10 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.e.p.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceEPA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"epa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08139934\"]}");
 	add("{\"term\":\"epacridaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12273137\"]}");
 	add("{\"term\":\"epacris\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12273746\"]}");
+	add("{\"term\":\"epacris family\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12273137\"]}");
+	add("{\"term\":\"epacris impressa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12274004\"]}");
+	add("{\"term\":\"epacris obtusifolia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12274181\"]}");
+	add("{\"term\":\"epacris purpurascens\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12274352\"]}");
 	add("{\"term\":\"epanalepsis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07114418\"]}");
 	add("{\"term\":\"epanaphora\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07115344\"]}");
 	add("{\"term\":\"epanodos\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07114510\", \"07114631\"]}");

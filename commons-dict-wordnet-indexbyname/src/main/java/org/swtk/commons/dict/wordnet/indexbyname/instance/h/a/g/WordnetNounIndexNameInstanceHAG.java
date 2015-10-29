@@ -2,7 +2,9 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.h.a.g;  import java.u
 	add("{\"term\":\"hagada\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06474681\"]}");
 	add("{\"term\":\"haganah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08362293\"]}");
 	add("{\"term\":\"hagberry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12668548\"]}");
+	add("{\"term\":\"hagberry tree\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12668321\"]}");
 	add("{\"term\":\"hagbut\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02745075\"]}");
+	add("{\"term\":\"hageman factor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15097058\"]}");
 	add("{\"term\":\"hagerstown\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09117503\"]}");
 	add("{\"term\":\"hagfish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01481152\"]}");
 	add("{\"term\":\"haggada\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06474681\"]}");
@@ -13,6 +15,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.h.a.g;  import java.u
 	add("{\"term\":\"haggle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07164846\"]}");
 	add("{\"term\":\"haggler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10175160\"]}");
 	add("{\"term\":\"haggling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07164846\"]}");
+	add("{\"term\":\"hagia sofia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03480241\"]}");
+	add("{\"term\":\"hagia sophia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03480241\"]}");
 	add("{\"term\":\"hagiographa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06464994\"]}");
 	add("{\"term\":\"hagiographer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10175252\"]}");
 	add("{\"term\":\"hagiographist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10175252\"]}");

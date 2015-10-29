@@ -1,5 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.k.e.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceKEE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"keel\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03614755\", \"05235704\", \"13942952\"]}");
+	add("{\"term\":\"keel arch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03848274\"]}");
 	add("{\"term\":\"keelboat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03614999\"]}");
+	add("{\"term\":\"keeled garlic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12453212\"]}");
 	add("{\"term\":\"keelson\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03615172\"]}");
 	add("{\"term\":\"keen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07056481\"]}");
 	add("{\"term\":\"keenness\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04712672\", \"07570749\", \"05628251\"]}");

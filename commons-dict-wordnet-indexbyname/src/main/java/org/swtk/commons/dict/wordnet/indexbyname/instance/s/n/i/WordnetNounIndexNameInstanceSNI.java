@@ -9,8 +9,10 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.s.n.i;  import java.u
 	add("{\"term\":\"snigger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07142768\"]}");
 	add("{\"term\":\"snip\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00360440\", \"04257136\"]}");
 	add("{\"term\":\"snipe\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00124971\", \"02034588\"]}");
+	add("{\"term\":\"snipe hunt\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00515798\"]}");
 	add("{\"term\":\"snipefish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01459723\"]}");
 	add("{\"term\":\"sniper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10636415\"]}");
+	add("{\"term\":\"sniper rifle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04257334\"]}");
 	add("{\"term\":\"snippet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04257136\"]}");
 	add("{\"term\":\"snipping\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04257136\"]}");
 	add("{\"term\":\"snips\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04257583\"]}");

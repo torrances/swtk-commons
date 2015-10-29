@@ -10,6 +10,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.k.e.r;  import java.u
 	add("{\"term\":\"keratoconjunctivitis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14371834\"]}");
 	add("{\"term\":\"keratoconus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14127700\"]}");
 	add("{\"term\":\"keratoderma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14251388\"]}");
+	add("{\"term\":\"keratoderma blennorrhagica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14251994\"]}");
 	add("{\"term\":\"keratodermia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14251388\"]}");
 	add("{\"term\":\"keratohyalin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14950318\"]}");
 	add("{\"term\":\"keratoiritis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14371943\"]}");
@@ -22,8 +23,13 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.k.e.r;  import java.u
 	add("{\"term\":\"keratoscope\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03616049\"]}");
 	add("{\"term\":\"keratoscopy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00644864\"]}");
 	add("{\"term\":\"keratosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14251630\"]}");
+	add("{\"term\":\"keratosis blennorrhagica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14251994\"]}");
+	add("{\"term\":\"keratosis follicularis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14252194\"]}");
+	add("{\"term\":\"keratosis nigricans\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14245406\"]}");
+	add("{\"term\":\"keratosis pilaris\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14252367\"]}");
 	add("{\"term\":\"keratotomy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00681153\"]}");
 	add("{\"term\":\"kerb\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03153586\"]}");
+	add("{\"term\":\"kerb crawler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10249391\"]}");
 	add("{\"term\":\"kerbala\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08934346\"]}");
 	add("{\"term\":\"kerbela\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08934346\"]}");
 	add("{\"term\":\"kerbstone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03154352\"]}");
@@ -36,8 +42,14 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.k.e.r;  import java.u
 	add("{\"term\":\"kernicterus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14343645\"]}");
 	add("{\"term\":\"kernite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14703428\"]}");
 	add("{\"term\":\"kerosene\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14711794\"]}");
+	add("{\"term\":\"kerosene heater\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03849403\"]}");
+	add("{\"term\":\"kerosene lamp\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03849565\"]}");
 	add("{\"term\":\"kerosine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14711794\"]}");
+	add("{\"term\":\"kerosine heater\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03849403\"]}");
+	add("{\"term\":\"kerosine lamp\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03849565\"]}");
 	add("{\"term\":\"kerouac\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11122483\"]}");
+	add("{\"term\":\"kerr cell\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03616523\"]}");
+	add("{\"term\":\"kerry blue terrier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02096511\"]}");
 	add("{\"term\":\"kerugma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07258965\"]}");
 	add("{\"term\":\"kerygma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07258965\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

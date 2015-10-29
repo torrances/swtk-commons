@@ -1,5 +1,23 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.r.h.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRHU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"rhubarb\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12623741\", \"07729012\"]}");
+	add("{\"term\":\"rhubarb pie\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07642110\"]}");
+	add("{\"term\":\"rhubarb plant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12623741\"]}");
 	add("{\"term\":\"rhumb\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08650253\"]}");
+	add("{\"term\":\"rhumb line\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08650253\"]}");
 	add("{\"term\":\"rhumba\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00538122\", \"00542816\", \"07070804\"]}");
 	add("{\"term\":\"rhus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12783343\"]}");
+	add("{\"term\":\"rhus aromatica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12784051\"]}");
+	add("{\"term\":\"rhus copallina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12784522\"]}");
+	add("{\"term\":\"rhus dermatitis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14246778\"]}");
+	add("{\"term\":\"rhus diversiloba\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12787968\"]}");
+	add("{\"term\":\"rhus glabra\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12784289\"]}");
+	add("{\"term\":\"rhus laurina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12781635\"]}");
+	add("{\"term\":\"rhus ovata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12784768\"]}");
+	add("{\"term\":\"rhus quercifolia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12788183\"]}");
+	add("{\"term\":\"rhus radicans\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12787629\"]}");
+	add("{\"term\":\"rhus rhodanthema\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12783165\"]}");
+	add("{\"term\":\"rhus toxicodenedron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12788183\"]}");
+	add("{\"term\":\"rhus trilobata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12785267\"]}");
+	add("{\"term\":\"rhus typhina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12784962\"]}");
+	add("{\"term\":\"rhus verniciflua\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12788408\"]}");
+	add("{\"term\":\"rhus vernix\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12787355\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.a.i.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceAID {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"aid\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00656128\", \"13286803\", \"01210099\", \"05162155\"]}");
+	add("{\"term\":\"aid station\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03243110\"]}");
 	add("{\"term\":\"aide\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09799690\", \"09789602\"]}");
 	add("{\"term\":\"aides\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09593427\"]}");
 	add("{\"term\":\"aidoneus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09593427\"]}");

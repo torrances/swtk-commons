@@ -6,7 +6,17 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.c.o.i;  import java.u
 	add("{\"term\":\"coigne\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04042388\", \"04042480\"]}");
 	add("{\"term\":\"coigue\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12287161\"]}");
 	add("{\"term\":\"coil\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"03069712\", \"03070033\", \"03070134\", \"03070236\", \"13898609\", \"03069428\"]}");
+	add("{\"term\":\"coil spring\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03070363\"]}");
 	add("{\"term\":\"coin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13409418\"]}");
+	add("{\"term\":\"coin bank\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04146942\"]}");
+	add("{\"term\":\"coin blank\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03960669\"]}");
+	add("{\"term\":\"coin box\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03070468\"]}");
+	add("{\"term\":\"coin collecting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01017938\"]}");
+	add("{\"term\":\"coin collection\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01017938\", \"07971449\"]}");
+	add("{\"term\":\"coin collector\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10386478\"]}");
+	add("{\"term\":\"coin machine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04251069\"]}");
+	add("{\"term\":\"coin silver\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14840783\"]}");
+	add("{\"term\":\"coin slot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03070610\"]}");
 	add("{\"term\":\"coinage\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00942376\", \"06305222\", \"13409050\"]}");
 	add("{\"term\":\"coincidence\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05055452\", \"05084830\", \"07331599\"]}");
 	add("{\"term\":\"coiner\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"09954379\", \"09954565\", \"09954691\"]}");
@@ -14,4 +24,5 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.c.o.i;  import java.u
 	add("{\"term\":\"coir\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12608815\"]}");
 	add("{\"term\":\"coition\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00847184\"]}");
 	add("{\"term\":\"coitus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00847184\"]}");
+	add("{\"term\":\"coitus interruptus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00850689\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

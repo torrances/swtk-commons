@@ -1,8 +1,13 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.m.y.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMYO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"myocardiopathy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14134448\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.m.y.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMYO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"myocardial infarct\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14136503\"]}");
+	add("{\"term\":\"myocardial infarction\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14136503\"]}");
+	add("{\"term\":\"myocardial inflammation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14362792\"]}");
+	add("{\"term\":\"myocardiopathy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14134448\"]}");
 	add("{\"term\":\"myocarditis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14362792\"]}");
 	add("{\"term\":\"myocardium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05398343\"]}");
 	add("{\"term\":\"myocastor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02369477\"]}");
+	add("{\"term\":\"myocastor coypus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02369611\"]}");
 	add("{\"term\":\"myoclonus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14384820\"]}");
+	add("{\"term\":\"myoclonus epilepsy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14111420\"]}");
 	add("{\"term\":\"myodynia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14352445\"]}");
 	add("{\"term\":\"myofibril\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05467529\"]}");
 	add("{\"term\":\"myofibrilla\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05467529\"]}");
@@ -15,6 +20,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.m.y.o;  import java.u
 	add("{\"term\":\"myometrium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05527819\"]}");
 	add("{\"term\":\"myomorpha\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02333234\"]}");
 	add("{\"term\":\"myonecrosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11507383\"]}");
+	add("{\"term\":\"myoneural junction\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05481847\"]}");
 	add("{\"term\":\"myopathy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14232683\"]}");
 	add("{\"term\":\"myope\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10363086\"]}");
 	add("{\"term\":\"myopia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14576882\"]}");
@@ -23,9 +29,20 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.m.y.o;  import java.u
 	add("{\"term\":\"myosin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15047184\"]}");
 	add("{\"term\":\"myosis\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00867486\", \"14353745\"]}");
 	add("{\"term\":\"myositis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14373697\"]}");
+	add("{\"term\":\"myositis trichinosa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14373941\"]}");
 	add("{\"term\":\"myosotis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12842496\"]}");
+	add("{\"term\":\"myosotis scorpiodes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12842875\"]}");
+	add("{\"term\":\"myosotis sylvatica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12842655\"]}");
+	add("{\"term\":\"myotactic reflex\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00869284\"]}");
 	add("{\"term\":\"myotic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03778414\"]}");
+	add("{\"term\":\"myotic drug\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03778414\"]}");
 	add("{\"term\":\"myotis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02149178\"]}");
+	add("{\"term\":\"myotis leucifugus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02149352\"]}");
+	add("{\"term\":\"myotis velifer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02149531\"]}");
 	add("{\"term\":\"myotomy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00689715\"]}");
 	add("{\"term\":\"myotonia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14568955\"]}");
+	add("{\"term\":\"myotonia atrophica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14186664\"]}");
+	add("{\"term\":\"myotonia congenita\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14569287\"]}");
+	add("{\"term\":\"myotonic dystrophy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14186664\"]}");
+	add("{\"term\":\"myotonic muscular dystrophy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14186664\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

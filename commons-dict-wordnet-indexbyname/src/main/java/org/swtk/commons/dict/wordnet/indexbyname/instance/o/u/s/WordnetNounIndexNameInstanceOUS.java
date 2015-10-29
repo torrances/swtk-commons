@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.o.u.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceOUS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ouse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09403960\"]}");
+	add("{\"term\":\"ouse river\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09403960\"]}");
 	add("{\"term\":\"ousel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01561235\"]}");
 	add("{\"term\":\"ouster\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00209646\", \"01197105\", \"10405770\"]}");
 	add("{\"term\":\"ousting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00209646\"]}");

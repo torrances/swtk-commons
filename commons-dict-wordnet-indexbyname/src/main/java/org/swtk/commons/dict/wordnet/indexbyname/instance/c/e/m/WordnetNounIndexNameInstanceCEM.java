@@ -1,5 +1,8 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.c.e.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCEM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cembalo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03501421\"]}");
+	add("{\"term\":\"cembra nut\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11632686\"]}");
+	add("{\"term\":\"cembra nut tree\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11632469\"]}");
 	add("{\"term\":\"cement\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"05316335\", \"14828811\", \"14728801\", \"14828345\", \"14828657\"]}");
+	add("{\"term\":\"cement mixer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03091491\"]}");
 	add("{\"term\":\"cementite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14829315\"]}");
 	add("{\"term\":\"cementum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05316335\"]}");
 	add("{\"term\":\"cemetery\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08538806\"]}");

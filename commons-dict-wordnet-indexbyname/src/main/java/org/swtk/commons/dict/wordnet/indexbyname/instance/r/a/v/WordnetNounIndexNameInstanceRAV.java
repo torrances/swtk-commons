@@ -7,9 +7,12 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.r.a.v;  import java.u
 	add("{\"term\":\"ravelling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15027526\"]}");
 	add("{\"term\":\"raven\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01581901\"]}");
 	add("{\"term\":\"ravenala\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12375540\"]}");
+	add("{\"term\":\"ravenala madagascariensis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12375540\"]}");
 	add("{\"term\":\"ravenna\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01295046\"]}");
+	add("{\"term\":\"ravenna grass\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12141704\"]}");
 	add("{\"term\":\"ravenousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14063553\"]}");
 	add("{\"term\":\"raver\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10526663\", \"10527865\"]}");
+	add("{\"term\":\"ravi shankar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11315454\"]}");
 	add("{\"term\":\"ravigote\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07848568\"]}");
 	add("{\"term\":\"ravigotte\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07848568\"]}");
 	add("{\"term\":\"ravine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09428665\"]}");

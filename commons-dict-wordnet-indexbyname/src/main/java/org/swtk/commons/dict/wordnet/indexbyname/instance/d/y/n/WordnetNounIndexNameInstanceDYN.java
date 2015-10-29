@@ -1,4 +1,9 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.d.y.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDYN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"dynamic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09202859\"]}");
+	add("{\"term\":\"dynamic balance\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14026400\"]}");
+	add("{\"term\":\"dynamic electricity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11534992\"]}");
+	add("{\"term\":\"dynamic headroom\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01022570\"]}");
+	add("{\"term\":\"dynamic viscosity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13610343\"]}");
+	add("{\"term\":\"dynamical system\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06256491\"]}");
 	add("{\"term\":\"dynamics\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06123204\"]}");
 	add("{\"term\":\"dynamism\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04642839\", \"05037972\", \"05969792\"]}");
 	add("{\"term\":\"dynamite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03264996\"]}");

@@ -10,7 +10,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.controller.z.e;  import java.u
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.z.e.s.WordnetNounIndexNameInstanceZES;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.z.e.t.WordnetNounIndexNameInstanceZET;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.z.e.u.WordnetNounIndexNameInstanceZEU;
-  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerZE {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException { 		if (TERM.length() < 3) throw new BusinessException("TERM not found (term = %s)", TERM); 		 		String key = TERM.substring(0, 3).toLowerCase(); 			if ("zea".equals(key)) return WordnetNounIndexNameInstanceZEA.get(TERM);
+  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerZE {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException { 		if (TERM.length() < 3) throw new BusinessException("TERM not found (term = %s)", TERM); 		 		String key = TERM.replaceAll(" ", "").substring(0, 3).toLowerCase(); 			if ("zea".equals(key)) return WordnetNounIndexNameInstanceZEA.get(TERM);
 	if ("zeb".equals(key)) return WordnetNounIndexNameInstanceZEB.get(TERM);
 	if ("zec".equals(key)) return WordnetNounIndexNameInstanceZEC.get(TERM);
 	if ("zee".equals(key)) return WordnetNounIndexNameInstanceZEE.get(TERM);
@@ -22,7 +22,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.controller.z.e;  import java.u
 	if ("zes".equals(key)) return WordnetNounIndexNameInstanceZES.get(TERM);
 	if ("zet".equals(key)) return WordnetNounIndexNameInstanceZET.get(TERM);
 	if ("zeu".equals(key)) return WordnetNounIndexNameInstanceZEU.get(TERM);
-  		throw new BusinessException("TERM not found (term = %s)", TERM); 	} 	 	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceZEA.terms());
+  		throw new BusinessException("TERM not found (term = %s)", TERM); 	}  	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceZEA.terms());
 	set.addAll(WordnetNounIndexNameInstanceZEB.terms());
 	set.addAll(WordnetNounIndexNameInstanceZEC.terms());
 	set.addAll(WordnetNounIndexNameInstanceZEE.terms());

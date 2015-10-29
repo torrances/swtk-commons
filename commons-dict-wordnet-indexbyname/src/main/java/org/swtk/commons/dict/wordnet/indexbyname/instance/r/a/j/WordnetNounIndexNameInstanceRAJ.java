@@ -1,5 +1,9 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.r.a.j;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRAJ {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"raj\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14466811\"]}");
 	add("{\"term\":\"raja\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01504091\", \"10525325\"]}");
+	add("{\"term\":\"raja batis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01504282\"]}");
+	add("{\"term\":\"raja erinacea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01504418\"]}");
+	add("{\"term\":\"raja laevis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01504742\"]}");
+	add("{\"term\":\"raja radiata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01504589\"]}");
 	add("{\"term\":\"rajab\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15242833\"]}");
 	add("{\"term\":\"rajah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10525325\"]}");
 	add("{\"term\":\"rajanya\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08324075\"]}");

@@ -1,8 +1,12 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.e.r.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceERA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"era\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07275968\", \"15272831\", \"15273375\"]}");
 	add("{\"term\":\"eradication\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07345613\"]}");
 	add("{\"term\":\"eradicator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10094127\"]}");
+	add("{\"term\":\"eragrostic abyssinica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12140864\"]}");
 	add("{\"term\":\"eragrostis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12140464\"]}");
+	add("{\"term\":\"eragrostis curvula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12141095\"]}");
+	add("{\"term\":\"eragrostis tef\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12140864\"]}");
 	add("{\"term\":\"eranthis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11753893\"]}");
+	add("{\"term\":\"eranthis hyemalis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11754017\"]}");
 	add("{\"term\":\"eraser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03299762\"]}");
 	add("{\"term\":\"erasmus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10979849\"]}");
 	add("{\"term\":\"erastianism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06198456\"]}");

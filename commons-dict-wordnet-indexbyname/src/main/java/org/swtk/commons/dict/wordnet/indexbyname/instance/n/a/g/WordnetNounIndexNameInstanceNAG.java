@@ -1,10 +1,15 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.n.a.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNAG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"nag\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02384856\", \"10581289\"]}");
+	add("{\"term\":\"nag hammadi\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08001247\", \"08919705\"]}");
+	add("{\"term\":\"nag hammadi library\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08001247\"]}");
 	add("{\"term\":\"naga\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06946206\"]}");
 	add("{\"term\":\"nagami\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12734281\"]}");
+	add("{\"term\":\"nagami kumquat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12734281\"]}");
 	add("{\"term\":\"nagano\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08943359\"]}");
 	add("{\"term\":\"nagari\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06364189\"]}");
+	add("{\"term\":\"nagari script\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06364189\"]}");
 	add("{\"term\":\"nagasaki\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08945730\"]}");
 	add("{\"term\":\"nageia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11677765\"]}");
+	add("{\"term\":\"nageia nagi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11678036\"]}");
 	add("{\"term\":\"nagger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10581289\"]}");
 	add("{\"term\":\"nagi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11678036\"]}");
 	add("{\"term\":\"nagoya\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08943528\"]}");

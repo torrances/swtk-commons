@@ -1,4 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.p.u.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePUG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"pug\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02113610\"]}");
+	add("{\"term\":\"pug nose\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05607153\"]}");
+	add("{\"term\":\"puget sound\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09423542\"]}");
 	add("{\"term\":\"pugilism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00446787\"]}");
 	add("{\"term\":\"pugilist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09889614\"]}");
 	add("{\"term\":\"pugin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11268222\"]}");

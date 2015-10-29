@@ -1,8 +1,10 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.s.y.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSYL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"syllabary\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06373177\"]}");
+	add("{\"term\":\"syllabic script\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06373177\"]}");
 	add("{\"term\":\"syllabication\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00391389\"]}");
 	add("{\"term\":\"syllabicity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07128199\"]}");
 	add("{\"term\":\"syllabification\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00391389\"]}");
 	add("{\"term\":\"syllable\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06315661\"]}");
+	add("{\"term\":\"syllable structure\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06187445\"]}");
 	add("{\"term\":\"syllabub\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07628767\", \"07933112\"]}");
 	add("{\"term\":\"syllabus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06689161\"]}");
 	add("{\"term\":\"syllepsis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07123342\"]}");
@@ -15,9 +17,18 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.s.y.l;  import java.u
 	add("{\"term\":\"sylvan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10704963\"]}");
 	add("{\"term\":\"sylvanite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15090280\"]}");
 	add("{\"term\":\"sylvanus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09599924\"]}");
+	add("{\"term\":\"sylvester ii\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11347393\"]}");
+	add("{\"term\":\"sylvia communis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01567555\"]}");
+	add("{\"term\":\"sylvia curruca\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01567719\"]}");
+	add("{\"term\":\"sylvia plath\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11259133\"]}");
+	add("{\"term\":\"sylvian aqueduct\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05511052\"]}");
+	add("{\"term\":\"sylvian fissure\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05231373\"]}");
 	add("{\"term\":\"sylviidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01565225\"]}");
 	add("{\"term\":\"sylviinae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01565619\"]}");
 	add("{\"term\":\"sylvilagus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02327863\"]}");
+	add("{\"term\":\"sylvilagus aquaticus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02328536\"]}");
+	add("{\"term\":\"sylvilagus floridanus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02328374\"]}");
+	add("{\"term\":\"sylvilagus palustris\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02328726\"]}");
 	add("{\"term\":\"sylvine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15090495\"]}");
 	add("{\"term\":\"sylvite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15090495\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

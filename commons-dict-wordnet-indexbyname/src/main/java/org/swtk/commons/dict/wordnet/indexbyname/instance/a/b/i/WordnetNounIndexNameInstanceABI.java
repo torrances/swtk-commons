@@ -2,6 +2,16 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.a.b.i;  import java.u
 	add("{\"term\":\"abidjan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08754612\"]}");
 	add("{\"term\":\"abience\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09203513\"]}");
 	add("{\"term\":\"abies\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11641011\"]}");
+	add("{\"term\":\"abies alba\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11641998\"]}");
+	add("{\"term\":\"abies amabilis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11641732\"]}");
+	add("{\"term\":\"abies balsamea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11642401\"]}");
+	add("{\"term\":\"abies bracteata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11643222\"]}");
+	add("{\"term\":\"abies concolor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11642178\"]}");
+	add("{\"term\":\"abies fraseri\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11642635\"]}");
+	add("{\"term\":\"abies grandis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11642819\"]}");
+	add("{\"term\":\"abies lasiocarpa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11643042\"]}");
+	add("{\"term\":\"abies lowiana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11642178\"]}");
+	add("{\"term\":\"abies venusta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11643222\"]}");
 	add("{\"term\":\"abila\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09344600\"]}");
 	add("{\"term\":\"abilene\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09110709\", \"09165411\"]}");
 	add("{\"term\":\"ability\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05624029\", \"05207437\"]}");

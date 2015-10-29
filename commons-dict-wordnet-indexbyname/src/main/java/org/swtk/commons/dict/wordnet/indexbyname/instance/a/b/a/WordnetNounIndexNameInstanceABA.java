@@ -1,4 +1,6 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.a.b.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceABA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"aba\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02668615\", \"02668709\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.a.b.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceABA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"a battery\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02669254\"]}");
+	add("{\"term\":\"aba\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02668615\", \"02668709\"]}");
+	add("{\"term\":\"aba transit number\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06437204\"]}");
 	add("{\"term\":\"abaca\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12373948\", \"14971696\"]}");
 	add("{\"term\":\"abacus\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02668826\", \"02668977\"]}");
 	add("{\"term\":\"abadan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08931375\"]}");
@@ -6,12 +8,18 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.a.b.a;  import java.u
 	add("{\"term\":\"abamp\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13659201\"]}");
 	add("{\"term\":\"abampere\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13659201\"]}");
 	add("{\"term\":\"abandon\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07496363\", \"04892593\"]}");
+	add("{\"term\":\"abandoned infant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10127652\"]}");
+	add("{\"term\":\"abandoned person\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09773261\"]}");
+	add("{\"term\":\"abandoned ship\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02669131\"]}");
 	add("{\"term\":\"abandonment\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00091833\", \"00056135\", \"00205288\"]}");
 	add("{\"term\":\"abarticulation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14317773\"]}");
 	add("{\"term\":\"abasement\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00274293\", \"14464089\"]}");
 	add("{\"term\":\"abashment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07523331\"]}");
 	add("{\"term\":\"abasia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14572662\"]}");
+	add("{\"term\":\"abasia trepidans\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14572876\"]}");
+	add("{\"term\":\"abatable nuisance\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05839156\"]}");
 	add("{\"term\":\"abatement\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00362159\", \"07382856\"]}");
+	add("{\"term\":\"abatement of a nuisance\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00362285\"]}");
 	add("{\"term\":\"abatis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02669365\"]}");
 	add("{\"term\":\"abator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09773382\"]}");
 	add("{\"term\":\"abattis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02669365\"]}");

@@ -1,4 +1,9 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.c.z.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCZA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"czar\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10006699\", \"10006777\"]}");
+	add("{\"term\":\"czar alexander i\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10832154\"]}");
+	add("{\"term\":\"czar alexander ii\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10832404\"]}");
+	add("{\"term\":\"czar alexander iii\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10832653\"]}");
+	add("{\"term\":\"czar nicholas i\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11225965\"]}");
+	add("{\"term\":\"czar peter i\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11251423\"]}");
 	add("{\"term\":\"czarina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10007111\"]}");
 	add("{\"term\":\"czaritza\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10007111\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

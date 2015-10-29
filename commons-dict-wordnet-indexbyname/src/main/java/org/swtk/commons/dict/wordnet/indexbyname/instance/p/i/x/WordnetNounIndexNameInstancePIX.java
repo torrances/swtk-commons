@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.p.i.x;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePIX {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"pix\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04036637\", \"04036750\"]}");
+	add("{\"term\":\"pix chest\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04036750\"]}");
 	add("{\"term\":\"pixel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03958553\"]}");
 	add("{\"term\":\"pixie\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12272257\", \"09563850\"]}");
 	add("{\"term\":\"pixy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09563850\", \"12272257\"]}");

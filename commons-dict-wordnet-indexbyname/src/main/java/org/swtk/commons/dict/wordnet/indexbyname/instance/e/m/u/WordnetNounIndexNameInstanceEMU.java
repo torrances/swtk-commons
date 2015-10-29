@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.e.m.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceEMU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"emu\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01522514\", \"13623769\"]}");
+	add("{\"term\":\"emu novaehollandiae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01522514\"]}");
 	add("{\"term\":\"emulation\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01023212\", \"05673828\", \"07500069\"]}");
 	add("{\"term\":\"emulator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09983941\"]}");
 	add("{\"term\":\"emulsifier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14698569\"]}");

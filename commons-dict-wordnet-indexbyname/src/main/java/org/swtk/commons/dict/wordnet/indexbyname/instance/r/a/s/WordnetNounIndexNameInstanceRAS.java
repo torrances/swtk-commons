@@ -1,15 +1,21 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.r.a.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRAS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ras\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05510026\"]}");
+	add("{\"term\":\"ras tafari\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11042305\"]}");
+	add("{\"term\":\"ras tafari makonnen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11042305\"]}");
 	add("{\"term\":\"rascal\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10219666\", \"10556285\"]}");
 	add("{\"term\":\"rascality\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00737673\", \"04882923\", \"04916898\"]}");
 	add("{\"term\":\"rash\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08476098\", \"14345380\"]}");
 	add("{\"term\":\"rasher\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02647131\"]}");
 	add("{\"term\":\"rashness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04669283\", \"04901399\"]}");
 	add("{\"term\":\"rasht\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08931926\"]}");
+	add("{\"term\":\"rashtriya swayamsevak sangh\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08252544\"]}");
 	add("{\"term\":\"rask\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11274203\"]}");
 	add("{\"term\":\"raskolnikov\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10527376\"]}");
+	add("{\"term\":\"rasmus christian rask\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11274203\"]}");
 	add("{\"term\":\"rasmussen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11274383\"]}");
 	add("{\"term\":\"rasp\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04061782\", \"07145482\"]}");
+	add("{\"term\":\"rasp fern\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13206556\"]}");
 	add("{\"term\":\"raspberry\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07138578\", \"07761442\", \"12676630\"]}");
+	add("{\"term\":\"raspberry bush\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12676630\"]}");
 	add("{\"term\":\"rasping\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07145482\"]}");
 	add("{\"term\":\"rasputin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11274673\"]}");
 	add("{\"term\":\"rassling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00448525\"]}");
@@ -19,4 +25,5 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.r.a.s;  import java.u
 	add("{\"term\":\"rastafarianism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06235986\"]}");
 	add("{\"term\":\"rastas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08309339\"]}");
 	add("{\"term\":\"raster\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04061907\"]}");
+	add("{\"term\":\"raster font\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06840729\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

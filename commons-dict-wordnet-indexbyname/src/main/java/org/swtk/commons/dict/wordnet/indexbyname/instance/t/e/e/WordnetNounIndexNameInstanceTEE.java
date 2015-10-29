@@ -1,4 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.t.e.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTEE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"tee\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04406672\", \"04406835\", \"08679015\"]}");
+	add("{\"term\":\"tee hinge\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04406981\"]}");
+	add("{\"term\":\"tee shirt\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03600807\"]}");
+	add("{\"term\":\"teeing ground\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08679015\"]}");
 	add("{\"term\":\"teemingness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05122340\"]}");
 	add("{\"term\":\"teen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09791452\"]}");
 	add("{\"term\":\"teenager\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09791452\"]}");
@@ -10,6 +13,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.t.e.e;  import java.u
 	add("{\"term\":\"teetertotter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04174820\"]}");
 	add("{\"term\":\"teeth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05289932\"]}");
 	add("{\"term\":\"teething\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13586984\"]}");
+	add("{\"term\":\"teething ring\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03079772\"]}");
 	add("{\"term\":\"teetotaler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10716778\"]}");
 	add("{\"term\":\"teetotaling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01071791\"]}");
 	add("{\"term\":\"teetotalism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01071791\"]}");

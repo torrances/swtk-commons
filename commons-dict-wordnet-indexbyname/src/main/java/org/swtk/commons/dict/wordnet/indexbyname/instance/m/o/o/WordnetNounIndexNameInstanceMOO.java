@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.m.o.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMOO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"moo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07401421\"]}");
+	add("{\"term\":\"moo goo gai pan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07877959\"]}");
 	add("{\"term\":\"mooch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10349902\"]}");
 	add("{\"term\":\"moocher\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10349902\"]}");
 	add("{\"term\":\"mood\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"13823636\", \"14548263\", \"07566518\"]}");
@@ -6,6 +7,14 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.m.o.o;  import java.u
 	add("{\"term\":\"moody\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11208732\", \"11208842\"]}");
 	add("{\"term\":\"moolah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13406389\"]}");
 	add("{\"term\":\"moon\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"09381123\", \"11209044\", \"11505375\", \"15232668\", \"09381447\", \"09381255\"]}");
+	add("{\"term\":\"moon blindness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14297953\", \"14578445\"]}");
+	add("{\"term\":\"moon carrot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12965150\"]}");
+	add("{\"term\":\"moon curser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10634850\"]}");
+	add("{\"term\":\"moon daisy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12010338\"]}");
+	add("{\"term\":\"moon ray\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11505261\"]}");
+	add("{\"term\":\"moon shell\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01950638\"]}");
+	add("{\"term\":\"moon shot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00104557\"]}");
+	add("{\"term\":\"moon trefoil\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12569069\"]}");
 	add("{\"term\":\"moonbeam\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11505261\"]}");
 	add("{\"term\":\"mooneye\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14297953\"]}");
 	add("{\"term\":\"moonfish\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02548472\", \"02580864\"]}");
@@ -15,6 +24,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.m.o.o;  import java.u
 	add("{\"term\":\"moonlight\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11505375\"]}");
 	add("{\"term\":\"moonlighter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10350306\"]}");
 	add("{\"term\":\"moonseed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11733633\"]}");
+	add("{\"term\":\"moonseed family\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11733296\"]}");
 	add("{\"term\":\"moonshell\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01950638\"]}");
 	add("{\"term\":\"moonshine\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07918760\", \"11505375\"]}");
 	add("{\"term\":\"moonshiner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09886328\"]}");
@@ -22,6 +32,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.m.o.o;  import java.u
 	add("{\"term\":\"moonwalk\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00293113\", \"00293969\"]}");
 	add("{\"term\":\"moonwort\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12981872\"]}");
 	add("{\"term\":\"moor\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09381648\", \"09742775\"]}");
+	add("{\"term\":\"moor berry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12269297\"]}");
 	add("{\"term\":\"moorage\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00052966\", \"08657686\", \"13343889\"]}");
 	add("{\"term\":\"moorbird\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01799160\"]}");
 	add("{\"term\":\"moorcock\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01799441\"]}");
@@ -30,10 +41,17 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.m.o.o;  import java.u
 	add("{\"term\":\"moorgame\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01799160\"]}");
 	add("{\"term\":\"moorhen\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01799370\", \"02019470\"]}");
 	add("{\"term\":\"mooring\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03790008\", \"08657686\"]}");
+	add("{\"term\":\"mooring anchor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03790199\"]}");
+	add("{\"term\":\"mooring line\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03790008\"]}");
+	add("{\"term\":\"mooring mast\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03790326\"]}");
+	add("{\"term\":\"mooring tower\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03790326\"]}");
 	add("{\"term\":\"moorish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05852214\"]}");
+	add("{\"term\":\"moorish arch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03790429\"]}");
+	add("{\"term\":\"moorish architecture\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05852214\"]}");
 	add("{\"term\":\"moorland\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09381648\"]}");
 	add("{\"term\":\"moorwort\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12250168\"]}");
 	add("{\"term\":\"moose\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02435629\"]}");
 	add("{\"term\":\"moosewood\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12368156\", \"12774522\"]}");
 	add("{\"term\":\"moot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01186128\"]}");
+	add("{\"term\":\"moot court\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08351246\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

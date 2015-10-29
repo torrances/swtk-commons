@@ -7,11 +7,22 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.g.a.b;  import java.u
 	add("{\"term\":\"gaberdine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03263433\"]}");
 	add("{\"term\":\"gabfest\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07149788\"]}");
 	add("{\"term\":\"gable\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11006433\", \"03414303\"]}");
+	add("{\"term\":\"gable end\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03414303\"]}");
+	add("{\"term\":\"gable roof\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03414501\"]}");
+	add("{\"term\":\"gable wall\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03414303\"]}");
 	add("{\"term\":\"gabon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08965302\"]}");
+	add("{\"term\":\"gabon franc\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13699994\"]}");
 	add("{\"term\":\"gabonese\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09729437\"]}");
+	add("{\"term\":\"gabonese republic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08965302\"]}");
+	add("{\"term\":\"gaboon viper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01755821\"]}");
 	add("{\"term\":\"gabor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11006558\"]}");
 	add("{\"term\":\"gaboriau\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11006706\"]}");
 	add("{\"term\":\"gaborone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08871677\"]}");
 	add("{\"term\":\"gabriel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09562505\"]}");
+	add("{\"term\":\"gabriel daniel fahrenheit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10985143\"]}");
+	add("{\"term\":\"gabriel lippmann\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11154456\"]}");
+	add("{\"term\":\"gabriel tellez\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11363328\"]}");
+	add("{\"term\":\"gabriele fallopius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10985958\"]}");
+	add("{\"term\":\"gabriello fallopio\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10985958\"]}");
 	add("{\"term\":\"gabun\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08965302\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

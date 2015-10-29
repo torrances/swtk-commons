@@ -1,4 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.a.f.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceAFG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"afghan\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"02090746\", \"04195013\", \"06987792\", \"09708831\", \"02686177\"]}");
+	add("{\"term\":\"afghan hound\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02090746\"]}");
+	add("{\"term\":\"afghan monetary unit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13685182\"]}");
 	add("{\"term\":\"afghani\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06987792\", \"13685334\"]}");
 	add("{\"term\":\"afghanistan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08721268\"]}");
 	add("{\"term\":\"afghanistani\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09708831\"]}");

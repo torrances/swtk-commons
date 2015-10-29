@@ -1,5 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceENR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"enragement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07532656\"]}");
 	add("{\"term\":\"enrichment\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13292521\", \"00265209\"]}");
+	add("{\"term\":\"enrico caruso\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10905239\"]}");
+	add("{\"term\":\"enrico fermi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10989978\"]}");
 	add("{\"term\":\"enrollee\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10078970\"]}");
 	add("{\"term\":\"enrollment\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08496997\", \"00050857\"]}");
 	add("{\"term\":\"enrolment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00050857\"]}");

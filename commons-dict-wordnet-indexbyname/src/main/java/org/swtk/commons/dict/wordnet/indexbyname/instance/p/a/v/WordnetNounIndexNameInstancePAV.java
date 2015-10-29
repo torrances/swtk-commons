@@ -3,9 +3,14 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.p.a.v;  import java.u
 	add("{\"term\":\"pavane\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00527985\", \"07070446\"]}");
 	add("{\"term\":\"pavarotti\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11247091\"]}");
 	add("{\"term\":\"pave\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03906471\"]}");
+	add("{\"term\":\"paved surface\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03906587\"]}");
 	add("{\"term\":\"pavement\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04222469\", \"15002063\", \"03906828\"]}");
+	add("{\"term\":\"pavement artist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10428906\"]}");
 	add("{\"term\":\"pavilion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03907057\"]}");
 	add("{\"term\":\"paving\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00718333\", \"03906828\", \"15002063\"]}");
+	add("{\"term\":\"paving machine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03907307\"]}");
+	add("{\"term\":\"paving material\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15002063\"]}");
+	add("{\"term\":\"paving stone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03907152\"]}");
 	add("{\"term\":\"pavior\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03907307\"]}");
 	add("{\"term\":\"paviour\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03907307\"]}");
 	add("{\"term\":\"pavis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03907416\"]}");
@@ -13,5 +18,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.p.a.v;  import java.u
 	add("{\"term\":\"pavlov\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11247196\"]}");
 	add("{\"term\":\"pavlova\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07627746\", \"11247390\"]}");
 	add("{\"term\":\"pavo\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01808333\", \"09410657\"]}");
+	add("{\"term\":\"pavo cristatus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01809005\"]}");
+	add("{\"term\":\"pavo muticus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01809108\"]}");
 	add("{\"term\":\"pavonia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12205429\"]}");
+	add("{\"term\":\"pavor nocturnus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14048729\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

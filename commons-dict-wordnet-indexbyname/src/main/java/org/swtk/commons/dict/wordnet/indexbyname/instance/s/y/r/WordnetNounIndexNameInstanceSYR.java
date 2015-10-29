@@ -1,9 +1,25 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.s.y.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSYR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"syracuse\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"01298618\", \"01298787\", \"08827903\", \"09148194\"]}");
 	add("{\"term\":\"syria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09055808\"]}");
 	add("{\"term\":\"syrian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09752891\"]}");
+	add("{\"term\":\"syrian arab republic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09055808\"]}");
+	add("{\"term\":\"syrian bean caper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12741882\"]}");
+	add("{\"term\":\"syrian bear\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02135118\"]}");
+	add("{\"term\":\"syrian desert\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09195920\"]}");
+	add("{\"term\":\"syrian hamster\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02345972\"]}");
+	add("{\"term\":\"syrian monetary unit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13717672\"]}");
+	add("{\"term\":\"syrian pound\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13717779\"]}");
 	add("{\"term\":\"syringa\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12330670\", \"12812089\"]}");
+	add("{\"term\":\"syringa amurensis japonica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12331741\"]}");
+	add("{\"term\":\"syringa emodi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12331155\"]}");
+	add("{\"term\":\"syringa josikaea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12331357\"]}");
+	add("{\"term\":\"syringa josikea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12331357\"]}");
+	add("{\"term\":\"syringa persica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12331562\"]}");
+	add("{\"term\":\"syringa reticulata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12331741\"]}");
+	add("{\"term\":\"syringa villosa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12331930\"]}");
+	add("{\"term\":\"syringa vulgaris\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12332096\"]}");
 	add("{\"term\":\"syringe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04383963\"]}");
 	add("{\"term\":\"syrinx\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02514264\", \"03890094\"]}");
 	add("{\"term\":\"syrrhaptes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01818977\"]}");
+	add("{\"term\":\"syrrhaptes paradoxus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01819115\"]}");
 	add("{\"term\":\"syrup\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07875559\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

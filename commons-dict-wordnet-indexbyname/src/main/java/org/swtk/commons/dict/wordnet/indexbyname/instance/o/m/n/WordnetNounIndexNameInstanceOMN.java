@@ -1,4 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.o.m.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceOMN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"omnibus\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02927500\", \"06605048\"]}");
+	add("{\"term\":\"omnidirectional antenna\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03852292\"]}");
+	add("{\"term\":\"omnidirectional radio range\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03852490\"]}");
+	add("{\"term\":\"omnidirectional range\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03852490\"]}");
 	add("{\"term\":\"omnipotence\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14482633\"]}");
 	add("{\"term\":\"omnipresence\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13981742\"]}");
 	add("{\"term\":\"omnirange\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03852490\"]}");

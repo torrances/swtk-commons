@@ -1,6 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.f.o.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFOM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"fomentation\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00157445\", \"00709421\", \"14897207\"]}");
 	add("{\"term\":\"fomenter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09798224\"]}");
 	add("{\"term\":\"fomes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13074576\"]}");
+	add("{\"term\":\"fomes igniarius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13074833\"]}");
 	add("{\"term\":\"fomite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09306099\"]}");
 	add("{\"term\":\"fomor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09532507\"]}");
 	add("{\"term\":\"fomorian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09532507\"]}");

@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.m.o.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMOI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"moiety\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08389226\", \"13759229\"]}");
+	add("{\"term\":\"moira shearer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11316765\"]}");
 	add("{\"term\":\"moirae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09588228\"]}");
 	add("{\"term\":\"moirai\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09588228\"]}");
 	add("{\"term\":\"moire\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03784779\"]}");

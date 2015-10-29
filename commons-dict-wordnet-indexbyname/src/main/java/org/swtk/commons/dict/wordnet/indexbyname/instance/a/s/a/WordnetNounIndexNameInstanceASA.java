@@ -1,4 +1,7 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.a.s.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceASA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"asadha\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15245063\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.a.s.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceASA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"asa dulcis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14922092\"]}");
+	add("{\"term\":\"asa gray\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11032470\"]}");
+	add("{\"term\":\"asa yoelson\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11109659\"]}");
+	add("{\"term\":\"asadha\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15245063\"]}");
 	add("{\"term\":\"asafetida\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14793168\"]}");
 	add("{\"term\":\"asafoetida\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14793168\"]}");
 	add("{\"term\":\"asahikawa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08942950\"]}");
@@ -7,7 +10,12 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.a.s.a;  import java.u
 	add("{\"term\":\"asamiya\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06983458\"]}");
 	add("{\"term\":\"asana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05089164\"]}");
 	add("{\"term\":\"asanga\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10845011\"]}");
+	add("{\"term\":\"asaph hall\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11044415\"]}");
 	add("{\"term\":\"asarabacca\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11823464\"]}");
 	add("{\"term\":\"asarh\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15245063\"]}");
 	add("{\"term\":\"asarum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11822545\"]}");
+	add("{\"term\":\"asarum canadense\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11822879\"]}");
+	add("{\"term\":\"asarum europaeum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11823464\"]}");
+	add("{\"term\":\"asarum shuttleworthii\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11823269\"]}");
+	add("{\"term\":\"asarum virginicum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11823055\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

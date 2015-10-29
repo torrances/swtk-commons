@@ -1,5 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.d.e.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDEI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"deicer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03176877\"]}");
 	add("{\"term\":\"deictic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06300473\"]}");
+	add("{\"term\":\"deictic word\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06300473\"]}");
 	add("{\"term\":\"deification\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01031146\", \"10438322\", \"14598608\"]}");
 	add("{\"term\":\"deimos\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09286927\"]}");
 	add("{\"term\":\"deinocheirus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01719235\"]}");

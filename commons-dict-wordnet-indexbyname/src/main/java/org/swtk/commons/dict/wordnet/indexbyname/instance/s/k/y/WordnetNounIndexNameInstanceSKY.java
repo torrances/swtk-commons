@@ -1,8 +1,14 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.s.k.y;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSKY {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"sky\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09459612\"]}");
+	add("{\"term\":\"sky burial\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07466513\"]}");
+	add("{\"term\":\"sky glow\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11484046\"]}");
+	add("{\"term\":\"sky marshal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09800612\"]}");
+	add("{\"term\":\"sky pilot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10336185\"]}");
+	add("{\"term\":\"sky wave\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11520540\"]}");
 	add("{\"term\":\"skybox\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04239421\"]}");
 	add("{\"term\":\"skycap\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10627589\"]}");
 	add("{\"term\":\"skydiver\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10627704\"]}");
 	add("{\"term\":\"skydiving\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00304866\"]}");
+	add("{\"term\":\"skye terrier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02100438\"]}");
 	add("{\"term\":\"skyhook\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04239546\", \"04239652\"]}");
 	add("{\"term\":\"skylab\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04239800\"]}");
 	add("{\"term\":\"skylark\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01530558\"]}");

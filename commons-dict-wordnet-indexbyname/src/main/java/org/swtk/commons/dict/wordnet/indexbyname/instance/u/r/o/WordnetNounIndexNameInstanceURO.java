@@ -8,10 +8,17 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.u.r.o;  import java.u
 	add("{\"term\":\"urochordata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01470627\"]}");
 	add("{\"term\":\"urochordate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01470879\"]}");
 	add("{\"term\":\"urocyon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02123039\"]}");
+	add("{\"term\":\"urocyon cinereoargenteus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02123157\"]}");
 	add("{\"term\":\"urocystis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13089325\"]}");
+	add("{\"term\":\"urocystis cepulae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13089495\"]}");
+	add("{\"term\":\"urocystis tritici\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13089984\"]}");
 	add("{\"term\":\"urodele\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01631411\"]}");
 	add("{\"term\":\"urodella\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01631091\"]}");
 	add("{\"term\":\"urodynia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14357050\"]}");
+	add("{\"term\":\"urogenital apparatus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05517103\"]}");
+	add("{\"term\":\"urogenital cleft\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05530435\"]}");
+	add("{\"term\":\"urogenital medicine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06074758\"]}");
+	add("{\"term\":\"urogenital system\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05517103\"]}");
 	add("{\"term\":\"urokinase\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15008625\"]}");
 	add("{\"term\":\"urolith\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09490826\"]}");
 	add("{\"term\":\"urologist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10761150\"]}");
@@ -19,7 +26,10 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.u.r.o;  import java.u
 	add("{\"term\":\"uropathy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14596741\"]}");
 	add("{\"term\":\"urophycis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02527442\"]}");
 	add("{\"term\":\"uropsilus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01893359\"]}");
+	add("{\"term\":\"uropsilus soricipes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01893654\"]}");
 	add("{\"term\":\"uropygi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01773887\"]}");
+	add("{\"term\":\"uropygial gland\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02470648\"]}");
 	add("{\"term\":\"uropygium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02161006\"]}");
 	add("{\"term\":\"urosaurus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01684154\"]}");
+	add("{\"term\":\"urosaurus ornatus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01684294\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

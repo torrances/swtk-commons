@@ -10,7 +10,12 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.m.b;  import java.u
 	add("{\"term\":\"embayment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09238571\"]}");
 	add("{\"term\":\"embellishment\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00263586\", \"03287312\", \"07187630\"]}");
 	add("{\"term\":\"ember\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09296036\"]}");
+	add("{\"term\":\"ember day\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15220669\"]}");
 	add("{\"term\":\"emberiza\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01540351\"]}");
+	add("{\"term\":\"emberiza aureola\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01541003\"]}");
+	add("{\"term\":\"emberiza citrinella\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01540841\"]}");
+	add("{\"term\":\"emberiza hortulana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01540536\"]}");
+	add("{\"term\":\"emberiza schoeniclus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01540700\"]}");
 	add("{\"term\":\"emberizidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01539557\"]}");
 	add("{\"term\":\"embezzlement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00778229\"]}");
 	add("{\"term\":\"embezzler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10071145\"]}");
@@ -26,6 +31,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.m.b;  import java.u
 	add("{\"term\":\"embonpoint\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05008078\"]}");
 	add("{\"term\":\"embossment\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04080781\", \"06868482\"]}");
 	add("{\"term\":\"embothrium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12236899\"]}");
+	add("{\"term\":\"embothrium coccineum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12237145\"]}");
 	add("{\"term\":\"embouchure\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03800320\"]}");
 	add("{\"term\":\"embrace\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00181619\", \"14450812\", \"00418410\"]}");
 	add("{\"term\":\"embracement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00418410\"]}");
@@ -35,8 +41,20 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.m.b;  import java.u
 	add("{\"term\":\"embroiderer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10071360\"]}");
 	add("{\"term\":\"embroideress\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10071491\"]}");
 	add("{\"term\":\"embroidery\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03287844\", \"07187630\"]}");
+	add("{\"term\":\"embroidery frame\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04394348\"]}");
+	add("{\"term\":\"embroidery hoop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04394348\"]}");
+	add("{\"term\":\"embroidery needle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03167222\"]}");
+	add("{\"term\":\"embroidery stitch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04187375\"]}");
 	add("{\"term\":\"embroilment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13959186\"]}");
 	add("{\"term\":\"embryo\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01461483\", \"11706972\"]}");
 	add("{\"term\":\"embryologist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10071569\"]}");
 	add("{\"term\":\"embryology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06080976\"]}");
+	add("{\"term\":\"embryoma of the kidney\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14269579\"]}");
+	add("{\"term\":\"embryonal carcinoma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14270842\"]}");
+	add("{\"term\":\"embryonal carcinosarcoma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14260077\"]}");
+	add("{\"term\":\"embryonal rhabdomyosarcoma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14269076\"]}");
+	add("{\"term\":\"embryonal rhabdosarcoma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14269076\"]}");
+	add("{\"term\":\"embryonic cell\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05455333\"]}");
+	add("{\"term\":\"embryonic membrane\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05318121\"]}");
+	add("{\"term\":\"embryonic tissue\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01466060\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,6 +1,8 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.i.d.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceIDO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ido\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06909521\"]}");
 	add("{\"term\":\"idocrase\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15112471\"]}");
 	add("{\"term\":\"idol\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05933151\", \"10218056\", \"03565341\"]}");
+	add("{\"term\":\"idol worship\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01046116\"]}");
+	add("{\"term\":\"idol worshiper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10218221\"]}");
 	add("{\"term\":\"idolater\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10218221\"]}");
 	add("{\"term\":\"idolatress\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10218378\"]}");
 	add("{\"term\":\"idolatry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01046116\"]}");

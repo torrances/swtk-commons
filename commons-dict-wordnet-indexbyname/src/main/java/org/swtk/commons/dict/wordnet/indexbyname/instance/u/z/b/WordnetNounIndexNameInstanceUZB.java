@@ -2,4 +2,5 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.u.z.b;  import java.u
 	add("{\"term\":\"uzbeg\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06940140\", \"09756183\"]}");
 	add("{\"term\":\"uzbek\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06940140\", \"09044635\", \"09756183\"]}");
 	add("{\"term\":\"uzbekistan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09044635\"]}");
+	add("{\"term\":\"uzbekistani monetary unit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13725475\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

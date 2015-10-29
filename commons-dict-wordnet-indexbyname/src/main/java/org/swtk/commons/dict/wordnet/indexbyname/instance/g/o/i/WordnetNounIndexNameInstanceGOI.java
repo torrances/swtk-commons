@@ -1,5 +1,9 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.g.o.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceGOI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"goidelic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06973306\"]}");
 	add("{\"term\":\"going\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00048792\", \"07348249\", \"00043495\"]}");
+	add("{\"term\":\"going ashore\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00059067\"]}");
+	add("{\"term\":\"going away\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00043495\"]}");
+	add("{\"term\":\"going to jerusalem\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00487681\"]}");
+	add("{\"term\":\"going under\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07379173\"]}");
 	add("{\"term\":\"goiter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14222959\"]}");
 	add("{\"term\":\"goitre\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14222959\"]}");
 	add("{\"term\":\"goitrogen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14913879\"]}");

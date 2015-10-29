@@ -1,5 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.u.v.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceUVU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"uvula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05316770\"]}");
 	add("{\"term\":\"uvularia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12495333\"]}");
+	add("{\"term\":\"uvularia grandiflora\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12495747\"]}");
 	add("{\"term\":\"uvulariaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12495125\"]}");
 	add("{\"term\":\"uvulitis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14381347\"]}");
 	add("{\"term\":\"uvulopalatopharyngoplasty\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00690982\"]}");

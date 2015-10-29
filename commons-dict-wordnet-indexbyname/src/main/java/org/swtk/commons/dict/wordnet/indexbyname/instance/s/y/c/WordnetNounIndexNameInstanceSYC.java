@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.s.y.c;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSYC {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"sycamore\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"12424018\", \"12775741\", \"12827492\", \"12827842\"]}");
+	add("{\"term\":\"sycamore fig\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12424018\"]}");
 	add("{\"term\":\"syconium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13158002\"]}");
 	add("{\"term\":\"sycophancy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04914100\"]}");
 	add("{\"term\":\"sycophant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10704310\"]}");

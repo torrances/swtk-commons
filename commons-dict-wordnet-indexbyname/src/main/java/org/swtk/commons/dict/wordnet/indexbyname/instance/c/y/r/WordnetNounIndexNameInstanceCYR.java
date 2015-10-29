@@ -1,7 +1,21 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.c.y.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCYR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cyril\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10939638\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.c.y.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCYR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cyrano de bergerac\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10939350\"]}");
+	add("{\"term\":\"cyril\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10939638\"]}");
+	add("{\"term\":\"cyril burt\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10894508\"]}");
+	add("{\"term\":\"cyril lodowic burt\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10894508\"]}");
+	add("{\"term\":\"cyril northcote parkinson\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11243109\"]}");
 	add("{\"term\":\"cyrilla\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12771527\"]}");
+	add("{\"term\":\"cyrilla family\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12771066\"]}");
+	add("{\"term\":\"cyrilla racemiflora\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12771527\"]}");
 	add("{\"term\":\"cyrilliaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12771066\"]}");
 	add("{\"term\":\"cyrillic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06511787\"]}");
+	add("{\"term\":\"cyrillic alphabet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06511787\"]}");
 	add("{\"term\":\"cyrtomium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13216049\"]}");
+	add("{\"term\":\"cyrtomium aculeatum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13216239\"]}");
 	add("{\"term\":\"cyrus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10939803\"]}");
+	add("{\"term\":\"cyrus hall mccormick\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11188635\"]}");
+	add("{\"term\":\"cyrus ii\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10939959\"]}");
+	add("{\"term\":\"cyrus mccormick\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11188635\"]}");
+	add("{\"term\":\"cyrus the elder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10939959\"]}");
+	add("{\"term\":\"cyrus the great\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10939959\"]}");
+	add("{\"term\":\"cyrus the younger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10939803\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

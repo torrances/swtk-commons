@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.a.e.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceAEP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"aepyceros\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02425207\"]}");
+	add("{\"term\":\"aepyceros melampus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02425345\"]}");
 	add("{\"term\":\"aepyornidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01524788\"]}");
 	add("{\"term\":\"aepyorniformes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01524621\"]}");
 	add("{\"term\":\"aepyornis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01525091\"]}");

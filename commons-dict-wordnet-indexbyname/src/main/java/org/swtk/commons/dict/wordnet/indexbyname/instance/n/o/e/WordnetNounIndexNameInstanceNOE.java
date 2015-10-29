@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.n.o.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNOE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"noel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15221372\"]}");
+	add("{\"term\":\"noel coward\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10933393\"]}");
 	add("{\"term\":\"noemi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11219933\"]}");
 	add("{\"term\":\"noesis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00023451\"]}");
 	add("{\"term\":\"noether\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11228907\"]}");

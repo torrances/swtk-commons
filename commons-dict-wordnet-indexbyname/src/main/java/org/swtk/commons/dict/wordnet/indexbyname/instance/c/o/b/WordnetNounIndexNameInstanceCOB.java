@@ -1,6 +1,9 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.c.o.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCOB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cob\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"01861421\", \"02044529\", \"02388793\", \"07788764\"]}");
 	add("{\"term\":\"cobalamin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15115871\"]}");
 	add("{\"term\":\"cobalt\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14659468\"]}");
+	add("{\"term\":\"cobalt bloom\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14698937\"]}");
+	add("{\"term\":\"cobalt blue\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14695905\", \"04976975\"]}");
+	add("{\"term\":\"cobalt ultramarine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14695905\"]}");
 	add("{\"term\":\"cobaltite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14696056\"]}");
 	add("{\"term\":\"cobber\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09952478\"]}");
 	add("{\"term\":\"cobble\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03063531\"]}");

@@ -1,4 +1,12 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.n.o.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNOS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"nose\", \"synsetCount\":8, \"upperType\":\"NOUN\", \"ids\":[\"03839104\", \"05644951\", \"05666671\", \"06819914\", \"13784598\", \"03836602\", \"03836375\", \"05605902\"]}");
+	add("{\"term\":\"nose candy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03070747\"]}");
+	add("{\"term\":\"nose cone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03837077\"]}");
+	add("{\"term\":\"nose count\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00654631\"]}");
+	add("{\"term\":\"nose dive\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00327503\"]}");
+	add("{\"term\":\"nose drops\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02840630\"]}");
+	add("{\"term\":\"nose flute\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03837297\"]}");
+	add("{\"term\":\"nose job\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00690315\"]}");
+	add("{\"term\":\"nose ring\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03837548\"]}");
 	add("{\"term\":\"nosebag\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03836743\"]}");
 	add("{\"term\":\"noseband\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03836922\"]}");
 	add("{\"term\":\"nosebleed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14394397\"]}");

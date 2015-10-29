@@ -10,7 +10,11 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.d.o.o;  import java.u
 	add("{\"term\":\"doom\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07348806\"]}");
 	add("{\"term\":\"doomed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07963280\"]}");
 	add("{\"term\":\"doomsday\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07348806\", \"15196354\"]}");
+	add("{\"term\":\"doomsday book\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06515377\"]}");
 	add("{\"term\":\"door\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"03226879\", \"03227021\", \"05188408\", \"03228735\", \"03226423\"]}");
+	add("{\"term\":\"door guard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10046278\"]}");
+	add("{\"term\":\"door latch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03650325\"]}");
+	add("{\"term\":\"door prize\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13289507\"]}");
 	add("{\"term\":\"doorbell\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03227219\"]}");
 	add("{\"term\":\"doorcase\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03227425\"]}");
 	add("{\"term\":\"doorframe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03227425\"]}");

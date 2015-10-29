@@ -7,7 +7,15 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.k.o.r;  import java.u
 	add("{\"term\":\"kordofanian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07004282\"]}");
 	add("{\"term\":\"kore\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09592596\"]}");
 	add("{\"term\":\"korea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08974384\"]}");
+	add("{\"term\":\"korea bay\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09350107\"]}");
+	add("{\"term\":\"korea strait\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09350267\"]}");
 	add("{\"term\":\"korean\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06941948\", \"09738332\"]}");
+	add("{\"term\":\"korean lawn grass\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12167171\"]}");
+	add("{\"term\":\"korean lespedeza\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12564144\"]}");
+	add("{\"term\":\"korean peninsula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08974384\"]}");
+	add("{\"term\":\"korean strait\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09350267\"]}");
+	add("{\"term\":\"korean velvet grass\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12167340\"]}");
+	add("{\"term\":\"korean war\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01308042\"]}");
 	add("{\"term\":\"korinthos\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08804284\"]}");
 	add("{\"term\":\"koruna\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13703380\", \"13703766\"]}");
 	add("{\"term\":\"korzybski\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11129553\"]}");

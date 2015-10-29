@@ -1,13 +1,27 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.t.i.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTID {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"tidbit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07610308\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.t.i.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTID {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"tidal basin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09481109\"]}");
+	add("{\"term\":\"tidal bore\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07418520\"]}");
+	add("{\"term\":\"tidal current\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07418714\"]}");
+	add("{\"term\":\"tidal flow\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07418714\"]}");
+	add("{\"term\":\"tidal river\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09481209\"]}");
+	add("{\"term\":\"tidal stream\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09481209\"]}");
+	add("{\"term\":\"tidal wave\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07363294\", \"07363470\", \"07363669\"]}");
+	add("{\"term\":\"tidal zone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08708926\"]}");
+	add("{\"term\":\"tidbit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07610308\"]}");
 	add("{\"term\":\"tiddler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09937051\"]}");
 	add("{\"term\":\"tiddlywinks\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00489062\"]}");
 	add("{\"term\":\"tide\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"15300713\", \"07459095\", \"07417119\"]}");
+	add("{\"term\":\"tide rip\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07419184\"]}");
 	add("{\"term\":\"tideland\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09481399\"]}");
 	add("{\"term\":\"tidemark\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04440076\"]}");
 	add("{\"term\":\"tidewater\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09074354\", \"09481502\"]}");
+	add("{\"term\":\"tidewater region\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09074354\"]}");
+	add("{\"term\":\"tidewater river\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09481209\"]}");
+	add("{\"term\":\"tidewater stream\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09481209\"]}");
 	add("{\"term\":\"tideway\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09481624\"]}");
 	add("{\"term\":\"tidiness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04903710\", \"14520817\"]}");
 	add("{\"term\":\"tidings\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06654787\"]}");
 	add("{\"term\":\"tidy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04440211\"]}");
+	add("{\"term\":\"tidy sum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13796604\"]}");
+	add("{\"term\":\"tidy tips\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12009065\"]}");
 	add("{\"term\":\"tidytips\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12009065\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

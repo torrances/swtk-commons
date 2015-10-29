@@ -1,5 +1,11 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.l.u.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLUD {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"luda\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08744578\"]}");
 	add("{\"term\":\"luddite\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10295373\", \"10295545\"]}");
+	add("{\"term\":\"ludi saeculares\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00519826\"]}");
 	add("{\"term\":\"ludian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06970918\"]}");
 	add("{\"term\":\"ludo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00505986\"]}");
+	add("{\"term\":\"ludwig boltzmann\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10875430\"]}");
+	add("{\"term\":\"ludwig josef johan wittgenstein\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11413823\"]}");
+	add("{\"term\":\"ludwig mies van der rohe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11198912\"]}");
+	add("{\"term\":\"ludwig van beethoven\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10861001\"]}");
+	add("{\"term\":\"ludwig wittgenstein\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11413823\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

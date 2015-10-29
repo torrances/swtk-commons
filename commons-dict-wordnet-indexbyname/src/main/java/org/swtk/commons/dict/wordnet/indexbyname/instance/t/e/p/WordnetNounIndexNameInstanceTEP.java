@@ -1,6 +1,9 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.t.e.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTEP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"tepal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11571495\"]}");
+	add("{\"term\":\"tepary bean\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12579185\"]}");
 	add("{\"term\":\"tepee\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04419551\"]}");
 	add("{\"term\":\"tephrosia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12592878\"]}");
+	add("{\"term\":\"tephrosia purpurea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12593264\"]}");
+	add("{\"term\":\"tephrosia virginiana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12593363\"]}");
 	add("{\"term\":\"tepic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08763633\"]}");
 	add("{\"term\":\"tepidity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05024120\"]}");
 	add("{\"term\":\"tepidness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04637904\", \"05024120\"]}");

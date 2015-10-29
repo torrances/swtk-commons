@@ -4,10 +4,13 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.b.u.g;  import java.u
 	add("{\"term\":\"bugbane\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11748999\", \"12485154\"]}");
 	add("{\"term\":\"bugbear\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05819688\", \"09511247\"]}");
 	add("{\"term\":\"bugger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10640876\"]}");
+	add("{\"term\":\"bugger all\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13762905\"]}");
 	add("{\"term\":\"buggery\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00850924\"]}");
 	add("{\"term\":\"bugginess\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14496110\"]}");
 	add("{\"term\":\"buggy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02915903\"]}");
+	add("{\"term\":\"buggy whip\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02916019\"]}");
 	add("{\"term\":\"bugle\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"02916381\", \"12861509\", \"02916240\"]}");
+	add("{\"term\":\"bugle call\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06817057\"]}");
 	add("{\"term\":\"bugler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09897645\"]}");
 	add("{\"term\":\"bugleweed\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12861509\", \"12872994\"]}");
 	add("{\"term\":\"bugloss\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12023636\", \"12838454\"]}");

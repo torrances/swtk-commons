@@ -1,4 +1,8 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.u.p.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceUPL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"upland\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09325522\"]}");
+	add("{\"term\":\"upland cotton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12197470\"]}");
+	add("{\"term\":\"upland plover\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02032360\"]}");
+	add("{\"term\":\"upland sandpiper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02032360\"]}");
+	add("{\"term\":\"upland white aster\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11955496\"]}");
 	add("{\"term\":\"uplift\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04521536\", \"07390381\"]}");
 	add("{\"term\":\"uplifting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07390608\"]}");
 	add("{\"term\":\"uplink\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07295000\"]}");

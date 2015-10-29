@@ -3,12 +3,15 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.w.a.i;  import java.u
 	add("{\"term\":\"wail\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07226610\"]}");
 	add("{\"term\":\"wailer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10782913\"]}");
 	add("{\"term\":\"wailing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00870477\"]}");
+	add("{\"term\":\"wailing wall\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08815471\"]}");
 	add("{\"term\":\"wain\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04551210\", \"09242765\", \"11390196\"]}");
 	add("{\"term\":\"wainscot\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04551282\", \"04551424\"]}");
 	add("{\"term\":\"wainscoting\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04551282\", \"04551611\"]}");
 	add("{\"term\":\"wainscotting\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04551282\", \"04551611\"]}");
 	add("{\"term\":\"wainwright\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10782361\"]}");
 	add("{\"term\":\"waist\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04190706\", \"05563321\"]}");
+	add("{\"term\":\"waist anchor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04196028\"]}");
+	add("{\"term\":\"waist pack\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04551736\"]}");
 	add("{\"term\":\"waistband\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03442981\"]}");
 	add("{\"term\":\"waistcloth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03442981\"]}");
 	add("{\"term\":\"waistcoat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04539168\"]}");
@@ -17,6 +20,11 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.w.a.i;  import java.u
 	add("{\"term\":\"waite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11390309\"]}");
 	add("{\"term\":\"waiter\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10783393\", \"10783051\"]}");
 	add("{\"term\":\"waiting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01065863\"]}");
+	add("{\"term\":\"waiting area\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03697143\"]}");
+	add("{\"term\":\"waiting game\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05917900\"]}");
+	add("{\"term\":\"waiting line\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08449355\"]}");
+	add("{\"term\":\"waiting list\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06509004\"]}");
+	add("{\"term\":\"waiting room\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03697143\"]}");
 	add("{\"term\":\"waitress\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10783288\"]}");
 	add("{\"term\":\"waiver\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00214561\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

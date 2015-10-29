@@ -3,6 +3,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.i.n.q;  import java.u
 	add("{\"term\":\"inquirer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10227450\"]}");
 	add("{\"term\":\"inquiring\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07207844\"]}");
 	add("{\"term\":\"inquiry\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00637971\", \"07208256\", \"05805605\"]}");
+	add("{\"term\":\"inquiry agent\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10227790\"]}");
 	add("{\"term\":\"inquisition\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07209336\", \"08349957\"]}");
 	add("{\"term\":\"inquisitiveness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05691020\"]}");
 	add("{\"term\":\"inquisitor\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10228033\", \"10227888\"]}");

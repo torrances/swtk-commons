@@ -3,6 +3,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.h.o.b;  import java.u
 	add("{\"term\":\"hobbes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11072950\"]}");
 	add("{\"term\":\"hobbit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09512125\"]}");
 	add("{\"term\":\"hobble\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00287600\", \"03335892\"]}");
+	add("{\"term\":\"hobble skirt\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03528669\"]}");
 	add("{\"term\":\"hobbledehoy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10198452\"]}");
 	add("{\"term\":\"hobbler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10198548\"]}");
 	add("{\"term\":\"hobbs\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11073213\"]}");
@@ -13,4 +14,5 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.h.o.b;  import java.u
 	add("{\"term\":\"hobgoblin\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05819688\", \"09566877\"]}");
 	add("{\"term\":\"hobnail\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03529012\"]}");
 	add("{\"term\":\"hobo\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10719072\", \"10742949\"]}");
+	add("{\"term\":\"hobo camp\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08495182\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

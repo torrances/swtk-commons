@@ -10,8 +10,12 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.g.a.d;  import java.u
 	add("{\"term\":\"gadidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02524547\"]}");
 	add("{\"term\":\"gadiformes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02523872\"]}");
 	add("{\"term\":\"gadoid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02524277\"]}");
+	add("{\"term\":\"gadoid fish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02524277\"]}");
 	add("{\"term\":\"gadolinite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14699730\"]}");
 	add("{\"term\":\"gadolinium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14662219\"]}");
 	add("{\"term\":\"gadsden\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09076696\"]}");
 	add("{\"term\":\"gadus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02524878\"]}");
+	add("{\"term\":\"gadus macrocephalus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02525497\"]}");
+	add("{\"term\":\"gadus merlangus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02525741\"]}");
+	add("{\"term\":\"gadus morhua\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02525353\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

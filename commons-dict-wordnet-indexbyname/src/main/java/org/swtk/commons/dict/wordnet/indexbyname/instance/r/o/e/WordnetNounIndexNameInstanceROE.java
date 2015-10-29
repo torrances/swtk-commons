@@ -1,7 +1,9 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.r.o.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceROE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"roe\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"01464086\", \"01464173\", \"02325276\", \"07815254\"]}");
+	add("{\"term\":\"roe deer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02436177\"]}");
 	add("{\"term\":\"roebling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11288108\"]}");
 	add("{\"term\":\"roebuck\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02436360\"]}");
 	add("{\"term\":\"roentgen\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11288316\", \"13667510\"]}");
+	add("{\"term\":\"roentgen ray\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11547628\"]}");
 	add("{\"term\":\"roentgenium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14677003\"]}");
 	add("{\"term\":\"roentgenogram\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04107714\"]}");
 	add("{\"term\":\"roentgenography\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00906321\"]}");

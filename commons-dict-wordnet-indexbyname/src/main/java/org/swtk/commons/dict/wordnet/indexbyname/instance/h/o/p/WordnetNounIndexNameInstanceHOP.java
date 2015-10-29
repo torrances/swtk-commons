@@ -1,5 +1,12 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.h.o.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHOP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hop\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07464148\", \"12418369\", \"00120830\"]}");
+	add("{\"term\":\"hop clover\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11773406\", \"12569697\"]}");
+	add("{\"term\":\"hop field\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03540366\"]}");
+	add("{\"term\":\"hop garden\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03540366\"]}");
+	add("{\"term\":\"hop hornbeam\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12308159\"]}");
+	add("{\"term\":\"hop marjoram\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12874466\"]}");
+	add("{\"term\":\"hop pole\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03540706\"]}");
 	add("{\"term\":\"hope\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"04855493\", \"11079258\", \"10204565\", \"05959600\", \"07556441\", \"07526972\"]}");
+	add("{\"term\":\"hope chest\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03540204\"]}");
 	add("{\"term\":\"hopeful\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09820956\"]}");
 	add("{\"term\":\"hopefulness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07556704\", \"14507204\"]}");
 	add("{\"term\":\"hopeh\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08743759\"]}");

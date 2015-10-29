@@ -5,4 +5,6 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.i.r.e;  import java.u
 	add("{\"term\":\"irenaeus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11093051\"]}");
 	add("{\"term\":\"irenidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01596346\"]}");
 	add("{\"term\":\"iresine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11846885\"]}");
+	add("{\"term\":\"iresine herbstii\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11847184\"]}");
+	add("{\"term\":\"iresine reticulata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11847184\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

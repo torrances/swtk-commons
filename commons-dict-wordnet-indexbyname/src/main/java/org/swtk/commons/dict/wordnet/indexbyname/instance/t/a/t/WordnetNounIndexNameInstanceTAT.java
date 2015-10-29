@@ -13,6 +13,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.t.a.t;  import java.u
 	add("{\"term\":\"tattle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06818155\"]}");
 	add("{\"term\":\"tattler\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02032941\", \"10712192\"]}");
 	add("{\"term\":\"tattletale\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10712192\"]}");
+	add("{\"term\":\"tattletale gray\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04969866\"]}");
+	add("{\"term\":\"tattletale grey\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04969866\"]}");
 	add("{\"term\":\"tattoo\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00264196\", \"04402786\", \"06818355\"]}");
 	add("{\"term\":\"tatu\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02458639\"]}");
 	add("{\"term\":\"tatum\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11352683\", \"11352887\"]}");

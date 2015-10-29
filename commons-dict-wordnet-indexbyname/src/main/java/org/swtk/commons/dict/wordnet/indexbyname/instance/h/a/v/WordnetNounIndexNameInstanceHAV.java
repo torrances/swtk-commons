@@ -4,6 +4,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.h.a.v;  import java.u
 	add("{\"term\":\"havel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11054592\"]}");
 	add("{\"term\":\"havelock\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03504755\"]}");
 	add("{\"term\":\"haven\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08656633\", \"03504940\"]}");
+	add("{\"term\":\"haverhill fever\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14216154\"]}");
 	add("{\"term\":\"haversack\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02772753\"]}");
+	add("{\"term\":\"haversian canal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05393482\"]}");
 	add("{\"term\":\"havoc\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00555144\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

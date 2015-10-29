@@ -2,6 +2,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.p.a.w;  import java.u
 	add("{\"term\":\"pawer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10429067\"]}");
 	add("{\"term\":\"pawl\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03907626\"]}");
 	add("{\"term\":\"pawn\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"01113141\", \"03907828\", \"10229217\", \"13371890\"]}");
+	add("{\"term\":\"pawn ticket\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13435616\"]}");
 	add("{\"term\":\"pawnbroker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10429204\"]}");
 	add("{\"term\":\"pawnee\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06928703\", \"09684923\"]}");
 	add("{\"term\":\"pawnshop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03908052\"]}");

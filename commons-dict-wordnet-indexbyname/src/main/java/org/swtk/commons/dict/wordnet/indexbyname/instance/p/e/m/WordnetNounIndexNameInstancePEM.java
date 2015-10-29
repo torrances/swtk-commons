@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.p.e.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePEM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"pembroke\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02115675\"]}");
+	add("{\"term\":\"pembroke welsh corgi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02115675\"]}");
 	add("{\"term\":\"pemican\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07680891\"]}");
 	add("{\"term\":\"pemmican\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07680891\"]}");
 	add("{\"term\":\"pempheridae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02606367\"]}");

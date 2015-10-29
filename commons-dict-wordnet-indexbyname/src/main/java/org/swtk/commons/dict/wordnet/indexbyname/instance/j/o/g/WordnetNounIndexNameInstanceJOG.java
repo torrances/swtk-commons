@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.j.o.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceJOG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"jog\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00113817\", \"00295034\", \"13909904\"]}");
+	add("{\"term\":\"jog trot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00288293\"]}");
 	add("{\"term\":\"jogger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10243129\"]}");
 	add("{\"term\":\"jogging\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00629630\"]}");
 	add("{\"term\":\"joggle\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00348185\", \"03233947\"]}");

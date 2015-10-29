@@ -1,4 +1,14 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.h.o.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHOG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hog\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"02398058\", \"02415433\", \"10199280\"]}");
+	add("{\"term\":\"hog badger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02451516\"]}");
+	add("{\"term\":\"hog cholera\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14287446\"]}");
+	add("{\"term\":\"hog cranberry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12251875\"]}");
+	add("{\"term\":\"hog millet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12148092\"]}");
+	add("{\"term\":\"hog molly\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01448498\"]}");
+	add("{\"term\":\"hog peanut\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12525758\"]}");
+	add("{\"term\":\"hog plum\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07781588\", \"07781704\", \"12659929\", \"12786606\"]}");
+	add("{\"term\":\"hog plum bush\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12659929\"]}");
+	add("{\"term\":\"hog snapper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02611177\"]}");
+	add("{\"term\":\"hog sucker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01448498\"]}");
 	add("{\"term\":\"hogan\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03530020\", \"11075449\"]}");
 	add("{\"term\":\"hogarth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11075607\"]}");
 	add("{\"term\":\"hogback\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09327282\"]}");
@@ -8,6 +18,9 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.h.o.g;  import java.u
 	add("{\"term\":\"hogget\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02415433\"]}");
 	add("{\"term\":\"hoggishness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04893430\"]}");
 	add("{\"term\":\"hogmanay\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15207559\"]}");
+	add("{\"term\":\"hognose bat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02145794\"]}");
+	add("{\"term\":\"hognose snake\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01731963\"]}");
+	add("{\"term\":\"hognosed skunk\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02449276\"]}");
 	add("{\"term\":\"hogshead\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03530156\", \"13644486\"]}");
 	add("{\"term\":\"hogwash\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06624034\"]}");
 	add("{\"term\":\"hogweed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12960634\"]}");

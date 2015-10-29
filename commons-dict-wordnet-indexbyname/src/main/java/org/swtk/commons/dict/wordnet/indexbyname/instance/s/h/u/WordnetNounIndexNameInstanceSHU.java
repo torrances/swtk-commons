@@ -8,9 +8,14 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.s.h.u;  import java.u
 	add("{\"term\":\"shuffler\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10613816\", \"10613931\"]}");
 	add("{\"term\":\"shuffling\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00341289\", \"00293556\"]}");
 	add("{\"term\":\"shufti\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00988007\"]}");
+	add("{\"term\":\"shuha shinto\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08117622\"]}");
 	add("{\"term\":\"shumac\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12783656\"]}");
+	add("{\"term\":\"shumard oak\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12298624\"]}");
+	add("{\"term\":\"shumard red oak\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12298624\"]}");
+	add("{\"term\":\"shun giku\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11971521\"]}");
 	add("{\"term\":\"shunning\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00204602\"]}");
 	add("{\"term\":\"shunt\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04217925\", \"04218068\", \"05556154\"]}");
+	add("{\"term\":\"shunt circuit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03894505\"]}");
 	add("{\"term\":\"shunter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04218286\"]}");
 	add("{\"term\":\"shutdown\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00230127\"]}");
 	add("{\"term\":\"shute\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11319202\"]}");
@@ -19,6 +24,11 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.s.h.u;  import java.u
 	add("{\"term\":\"shutter\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04218423\", \"04218595\"]}");
 	add("{\"term\":\"shutterbug\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10614042\"]}");
 	add("{\"term\":\"shutting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00344866\"]}");
+	add("{\"term\":\"shutting post\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04218822\"]}");
 	add("{\"term\":\"shuttle\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04218924\", \"04219037\", \"04219349\"]}");
+	add("{\"term\":\"shuttle bus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04219232\"]}");
+	add("{\"term\":\"shuttle diplomacy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07164056\"]}");
+	add("{\"term\":\"shuttle helicopter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04219534\"]}");
 	add("{\"term\":\"shuttlecock\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04219349\"]}");
+	add("{\"term\":\"shuttlecock fern\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13218952\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,4 +1,9 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.g.a.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceGAG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"gag\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03415650\", \"06790941\"]}");
+	add("{\"term\":\"gag law\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06550403\", \"06679574\"]}");
+	add("{\"term\":\"gag line\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06791616\"]}");
+	add("{\"term\":\"gag order\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06569576\"]}");
+	add("{\"term\":\"gag reflex\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00868101\"]}");
+	add("{\"term\":\"gag rule\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06679574\"]}");
 	add("{\"term\":\"gagarin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11006862\"]}");
 	add("{\"term\":\"gage\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03434198\", \"03997192\"]}");
 	add("{\"term\":\"gaggle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08008558\"]}");

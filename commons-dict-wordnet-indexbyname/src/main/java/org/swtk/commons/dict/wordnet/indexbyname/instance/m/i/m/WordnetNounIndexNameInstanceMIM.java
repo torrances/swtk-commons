@@ -2,6 +2,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.m.i.m;  import java.u
 	add("{\"term\":\"mime\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00551053\", \"10338550\"]}");
 	add("{\"term\":\"mimeo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03772994\"]}");
 	add("{\"term\":\"mimeograph\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03772994\"]}");
+	add("{\"term\":\"mimeograph machine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03772994\"]}");
 	add("{\"term\":\"mimer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10338550\"]}");
 	add("{\"term\":\"mimesis\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06625801\", \"14102215\", \"05971652\"]}");
 	add("{\"term\":\"mimic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10338821\"]}");
@@ -10,7 +11,11 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.m.i.m;  import java.u
 	add("{\"term\":\"mimidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01589182\"]}");
 	add("{\"term\":\"mimir\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09605034\"]}");
 	add("{\"term\":\"mimosa\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07946555\", \"11775362\", \"11778122\"]}");
+	add("{\"term\":\"mimosa bush\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11778320\"]}");
+	add("{\"term\":\"mimosa pudica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11775788\"]}");
+	add("{\"term\":\"mimosa sensitiva\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11775579\"]}");
 	add("{\"term\":\"mimosaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11774405\"]}");
 	add("{\"term\":\"mimosoideae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11774657\"]}");
 	add("{\"term\":\"mimus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01589432\"]}");
+	add("{\"term\":\"mimus polyglotktos\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01589582\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

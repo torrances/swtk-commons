@@ -1,4 +1,6 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.d.u.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDUB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"dub\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05728468\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.d.u.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDUB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"du barry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10963803\"]}");
+	add("{\"term\":\"du bois\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10964005\"]}");
+	add("{\"term\":\"dub\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05728468\"]}");
 	add("{\"term\":\"dubai\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09067189\"]}");
 	add("{\"term\":\"dubbin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14863376\"]}");
 	add("{\"term\":\"dubbing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03257662\"]}");
@@ -7,6 +9,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.d.u.b;  import java.u
 	add("{\"term\":\"dublin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08909418\"]}");
 	add("{\"term\":\"dubliner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09734823\"]}");
 	add("{\"term\":\"dubnium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14660701\"]}");
+	add("{\"term\":\"dubois heyward\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11068996\"]}");
 	add("{\"term\":\"dubonnet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07912397\"]}");
 	add("{\"term\":\"dubrovnik\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08836687\"]}");
 	add("{\"term\":\"dubuque\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09109677\"]}");

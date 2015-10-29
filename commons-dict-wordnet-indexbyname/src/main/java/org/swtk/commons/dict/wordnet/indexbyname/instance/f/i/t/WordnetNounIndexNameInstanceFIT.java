@@ -3,6 +3,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.f.i.t;  import java.u
 	add("{\"term\":\"fitfulness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04777774\"]}");
 	add("{\"term\":\"fitment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03358127\"]}");
 	add("{\"term\":\"fitness\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05161042\", \"14570034\", \"04724140\"]}");
+	add("{\"term\":\"fits and starts\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00556562\"]}");
+	add("{\"term\":\"fitted sheet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03358313\"]}");
 	add("{\"term\":\"fitter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10113677\"]}");
 	add("{\"term\":\"fitting\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00796669\", \"02733566\", \"03358462\", \"07384204\"]}");
 	add("{\"term\":\"fittingness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04724140\"]}");

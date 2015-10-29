@@ -2,8 +2,23 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.v.e.g;  import java.u
 	add("{\"term\":\"vega\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09493042\", \"11382190\"]}");
 	add("{\"term\":\"vegan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10767092\"]}");
 	add("{\"term\":\"vegetable\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12232878\", \"07723196\"]}");
+	add("{\"term\":\"vegetable garden\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03625652\"]}");
+	add("{\"term\":\"vegetable hummingbird\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12590356\"]}");
+	add("{\"term\":\"vegetable ivory\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12615294\"]}");
+	add("{\"term\":\"vegetable marrow\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07732249\", \"12180072\"]}");
+	add("{\"term\":\"vegetable matter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15135523\"]}");
+	add("{\"term\":\"vegetable oil\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07689142\"]}");
+	add("{\"term\":\"vegetable oyster\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07751155\", \"12047691\"]}");
+	add("{\"term\":\"vegetable patch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03625652\"]}");
+	add("{\"term\":\"vegetable sheep\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11996127\", \"12026775\"]}");
+	add("{\"term\":\"vegetable silk\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14949914\"]}");
+	add("{\"term\":\"vegetable soup\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07602465\"]}");
+	add("{\"term\":\"vegetable sponge\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12187310\"]}");
+	add("{\"term\":\"vegetable tallow\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15087208\"]}");
+	add("{\"term\":\"vegetable wax\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15120063\"]}");
 	add("{\"term\":\"vegetarian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10766787\"]}");
 	add("{\"term\":\"vegetarianism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07580536\"]}");
 	add("{\"term\":\"vegetation\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"01066981\", \"05611609\", \"13594260\", \"08453769\"]}");
+	add("{\"term\":\"vegetative cell\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05438205\"]}");
 	add("{\"term\":\"veggie\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07723196\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

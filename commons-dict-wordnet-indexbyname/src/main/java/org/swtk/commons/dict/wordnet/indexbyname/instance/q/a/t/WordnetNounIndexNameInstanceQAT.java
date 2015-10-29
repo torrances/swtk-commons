@@ -1,4 +1,8 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.q.a.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceQAT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"qat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03614083\"]}");
 	add("{\"term\":\"qatar\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09009061\", \"09009275\"]}");
+	add("{\"term\":\"qatar peninsula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09009061\"]}");
 	add("{\"term\":\"qatari\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09747479\"]}");
+	add("{\"term\":\"qatari dirham\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13720550\"]}");
+	add("{\"term\":\"qatari monetary unit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13720307\"]}");
+	add("{\"term\":\"qatari riyal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13720432\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

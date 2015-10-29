@@ -3,12 +3,24 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.h.y.g;  import java.u
 	add("{\"term\":\"hygienics\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06060911\"]}");
 	add("{\"term\":\"hygienist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10214588\"]}");
 	add("{\"term\":\"hygrocybe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13091468\"]}");
+	add("{\"term\":\"hygrocybe acutoconica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13091635\"]}");
 	add("{\"term\":\"hygrodeik\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03559555\"]}");
 	add("{\"term\":\"hygrometer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03559640\"]}");
 	add("{\"term\":\"hygrophoraceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13090763\"]}");
 	add("{\"term\":\"hygrophorus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13091789\"]}");
+	add("{\"term\":\"hygrophorus borealis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13092131\"]}");
+	add("{\"term\":\"hygrophorus caeruleus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13092313\"]}");
+	add("{\"term\":\"hygrophorus inocybiformis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13092575\"]}");
+	add("{\"term\":\"hygrophorus kauffmanii\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13092791\"]}");
+	add("{\"term\":\"hygrophorus marzuolus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13092969\"]}");
+	add("{\"term\":\"hygrophorus purpurascens\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13093110\"]}");
+	add("{\"term\":\"hygrophorus russula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13093288\"]}");
+	add("{\"term\":\"hygrophorus sordidus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13093466\"]}");
+	add("{\"term\":\"hygrophorus tennesseensis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13093623\"]}");
+	add("{\"term\":\"hygrophorus turundus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13093815\"]}");
 	add("{\"term\":\"hygrophyte\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11573973\"]}");
 	add("{\"term\":\"hygroscope\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03559825\"]}");
 	add("{\"term\":\"hygroton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03027306\"]}");
 	add("{\"term\":\"hygrotrama\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13093971\"]}");
+	add("{\"term\":\"hygrotrama foetens\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13094140\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

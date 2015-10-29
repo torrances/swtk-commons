@@ -1,4 +1,7 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.f.e.c;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFEC {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"fecalith\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09279266\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.f.e.c;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFEC {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"fecal impaction\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14395025\"]}");
+	add("{\"term\":\"fecal matter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14878449\"]}");
+	add("{\"term\":\"fecal occult test\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05749285\"]}");
+	add("{\"term\":\"fecalith\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09279266\"]}");
 	add("{\"term\":\"feces\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14878449\"]}");
 	add("{\"term\":\"fechner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10988050\"]}");
 	add("{\"term\":\"fecklessness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05147207\"]}");

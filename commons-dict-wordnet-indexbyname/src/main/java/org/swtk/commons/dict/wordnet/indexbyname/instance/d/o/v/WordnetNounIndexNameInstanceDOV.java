@@ -3,6 +3,10 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.d.o.v;  import java.u
 	add("{\"term\":\"dovekie\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02048825\"]}");
 	add("{\"term\":\"dover\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09092731\"]}");
 	add("{\"term\":\"dovetail\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03233670\"]}");
+	add("{\"term\":\"dovetail joint\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03233670\"]}");
+	add("{\"term\":\"dovetail plane\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03233818\"]}");
 	add("{\"term\":\"dovishness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06231430\"]}");
 	add("{\"term\":\"dovyalis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12399063\"]}");
+	add("{\"term\":\"dovyalis caffra\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12399270\"]}");
+	add("{\"term\":\"dovyalis hebecarpa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12399480\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

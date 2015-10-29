@@ -1,6 +1,12 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.m.a.k;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMAK {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"mak\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08050207\"]}");
 	add("{\"term\":\"makaira\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02633556\"]}");
+	add("{\"term\":\"makaira albida\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02634405\"]}");
+	add("{\"term\":\"makaira marlina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02634105\"]}");
+	add("{\"term\":\"makaira mazara\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02634105\"]}");
+	add("{\"term\":\"makaira mitsukurii\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02634258\"]}");
+	add("{\"term\":\"makaira nigricans\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02633960\"]}");
 	add("{\"term\":\"makalu\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09369181\"]}");
+	add("{\"term\":\"makarios iii\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11170799\"]}");
 	add("{\"term\":\"makataimeshekiakiak\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10871916\"]}");
 	add("{\"term\":\"make\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00341289\", \"05853667\"]}");
 	add("{\"term\":\"makedonija\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08935145\"]}");
@@ -12,6 +18,12 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.m.a.k;  import java.u
 	add("{\"term\":\"makeweight\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03720149\", \"03720260\"]}");
 	add("{\"term\":\"makin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01299188\"]}");
 	add("{\"term\":\"making\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03720438\", \"04724415\", \"00925809\"]}");
+	add("{\"term\":\"making known\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07226850\"]}");
+	add("{\"term\":\"making love\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00848145\"]}");
+	add("{\"term\":\"making water\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13527930\"]}");
 	add("{\"term\":\"mako\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01486738\"]}");
+	add("{\"term\":\"mako shark\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01486738\"]}");
 	add("{\"term\":\"makomako\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12214182\"]}");
+	add("{\"term\":\"maksim gorky\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11028866\"]}");
+	add("{\"term\":\"maksutov telescope\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03720653\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

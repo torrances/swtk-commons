@@ -1,5 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.n.a.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNAD {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"nad\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14986751\"]}");
 	add("{\"term\":\"nada\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13762308\"]}");
+	add("{\"term\":\"nada daiquiri\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07930926\"]}");
+	add("{\"term\":\"nadine gordimer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11027989\"]}");
 	add("{\"term\":\"nadir\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08618316\", \"14510223\"]}");
 	add("{\"term\":\"nadolol\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03809851\"]}");
 	add("{\"term\":\"nadp\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14986976\"]}");

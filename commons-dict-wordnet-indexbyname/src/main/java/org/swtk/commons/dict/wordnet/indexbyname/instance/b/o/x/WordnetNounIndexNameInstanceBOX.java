@@ -1,4 +1,24 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.b.o.x;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBOX {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"box\", \"synsetCount\":10, \"upperType\":\"NOUN\", \"ids\":[\"00135968\", \"02887252\", \"02887691\", \"02887848\", \"12766866\", \"13906151\", \"14432355\", \"13787764\", \"02887466\", \"02886585\"]}");
+	add("{\"term\":\"box beam\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02888100\"]}");
+	add("{\"term\":\"box calf\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14808760\"]}");
+	add("{\"term\":\"box camera\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02888235\"]}");
+	add("{\"term\":\"box coat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02888474\"]}");
+	add("{\"term\":\"box elder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12775985\"]}");
+	add("{\"term\":\"box end wrench\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02889675\"]}");
+	add("{\"term\":\"box family\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12766548\"]}");
+	add("{\"term\":\"box girder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02888100\"]}");
+	add("{\"term\":\"box huckleberry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12257669\"]}");
+	add("{\"term\":\"box kite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02889026\"]}");
+	add("{\"term\":\"box kodak\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02888235\"]}");
+	add("{\"term\":\"box number\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08508420\", \"08508541\"]}");
+	add("{\"term\":\"box office\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02889123\", \"13279066\"]}");
+	add("{\"term\":\"box pleat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02889276\"]}");
+	add("{\"term\":\"box seat\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02887691\", \"02889424\"]}");
+	add("{\"term\":\"box spring\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02889562\"]}");
+	add("{\"term\":\"box tortoise\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01671832\"]}");
+	add("{\"term\":\"box turtle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01671832\"]}");
+	add("{\"term\":\"box white oak\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12298888\"]}");
+	add("{\"term\":\"box wrench\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02889675\"]}");
 	add("{\"term\":\"boxberry\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07759699\", \"12689278\"]}");
 	add("{\"term\":\"boxcar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02888349\"]}");
 	add("{\"term\":\"boxcars\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13769086\"]}");
@@ -8,6 +28,11 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.b.o.x;  import java.u
 	add("{\"term\":\"boxfish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02657055\"]}");
 	add("{\"term\":\"boxful\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13787764\"]}");
 	add("{\"term\":\"boxing\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00323054\", \"00446787\"]}");
+	add("{\"term\":\"boxing day\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15221581\"]}");
+	add("{\"term\":\"boxing equipment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02888579\"]}");
+	add("{\"term\":\"boxing glove\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02888703\"]}");
+	add("{\"term\":\"boxing match\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07481100\"]}");
+	add("{\"term\":\"boxing ring\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02888904\"]}");
 	add("{\"term\":\"boxthorn\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12925698\"]}");
 	add("{\"term\":\"boxwood\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12766866\", \"12767234\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

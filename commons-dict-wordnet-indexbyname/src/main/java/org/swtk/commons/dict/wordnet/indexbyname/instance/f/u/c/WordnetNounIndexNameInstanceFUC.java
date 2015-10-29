@@ -2,11 +2,17 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.f.u.c;  import java.u
 	add("{\"term\":\"fucales\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01406446\"]}");
 	add("{\"term\":\"fuchs\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11004585\"]}");
 	add("{\"term\":\"fuchsia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12363997\"]}");
+	add("{\"term\":\"fuchsia coccinea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12364270\"]}");
+	add("{\"term\":\"fuchsia excorticata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12364468\"]}");
 	add("{\"term\":\"fuck\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00847651\"]}");
+	add("{\"term\":\"fuck all\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13762905\"]}");
 	add("{\"term\":\"fucker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10134245\"]}");
 	add("{\"term\":\"fuckhead\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10059388\"]}");
 	add("{\"term\":\"fucking\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00847651\"]}");
 	add("{\"term\":\"fuckup\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00075610\", \"09899210\"]}");
 	add("{\"term\":\"fucoid\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01407006\", \"01407136\"]}");
+	add("{\"term\":\"fucoid algae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01407006\"]}");
 	add("{\"term\":\"fucus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01407648\"]}");
+	add("{\"term\":\"fucus serratus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01407748\"]}");
+	add("{\"term\":\"fucus vesiculosus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01407891\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

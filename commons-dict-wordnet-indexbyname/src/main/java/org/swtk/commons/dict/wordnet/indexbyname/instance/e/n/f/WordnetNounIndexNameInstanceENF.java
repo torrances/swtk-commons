@@ -1,6 +1,8 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.f;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceENF {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"enfeeblement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07345810\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.e.n.f;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceENF {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"enfant terrible\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10077403\"]}");
+	add("{\"term\":\"enfeeblement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07345810\"]}");
 	add("{\"term\":\"enfeoffment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06557951\"]}");
 	add("{\"term\":\"enfilade\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00124828\"]}");
+	add("{\"term\":\"enfilade fire\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00124828\"]}");
 	add("{\"term\":\"enflurane\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03292370\"]}");
 	add("{\"term\":\"enfolding\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00407186\"]}");
 	add("{\"term\":\"enforcement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01129340\"]}");

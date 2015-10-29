@@ -1,5 +1,8 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.h.y.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHYB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hybanthus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12411431\"]}");
 	add("{\"term\":\"hybrid\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01329963\", \"05879237\", \"06304010\"]}");
+	add("{\"term\":\"hybrid petunia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12930677\"]}");
+	add("{\"term\":\"hybrid tuberous begonia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12383185\"]}");
+	add("{\"term\":\"hybrid vigor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04929774\"]}");
 	add("{\"term\":\"hybridisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00852055\"]}");
 	add("{\"term\":\"hybridization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00852055\"]}");
 	add("{\"term\":\"hybridizing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00852055\"]}");

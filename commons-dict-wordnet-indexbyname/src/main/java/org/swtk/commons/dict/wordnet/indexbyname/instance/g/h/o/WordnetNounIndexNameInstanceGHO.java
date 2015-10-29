@@ -1,4 +1,9 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.g.h.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceGHO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ghost\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07178814\", \"09569105\", \"10148285\", \"05906778\"]}");
+	add("{\"term\":\"ghost dance\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00543360\"]}");
+	add("{\"term\":\"ghost gum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12357244\"]}");
+	add("{\"term\":\"ghost town\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08689247\"]}");
+	add("{\"term\":\"ghost weed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12940163\"]}");
+	add("{\"term\":\"ghost word\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06311048\"]}");
 	add("{\"term\":\"ghostfish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02619027\"]}");
 	add("{\"term\":\"ghostliness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04805269\"]}");
 	add("{\"term\":\"ghostwriter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10148285\"]}");

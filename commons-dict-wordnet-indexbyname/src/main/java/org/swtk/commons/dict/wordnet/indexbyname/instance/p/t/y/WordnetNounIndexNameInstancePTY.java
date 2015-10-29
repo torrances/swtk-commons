@@ -2,5 +2,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.p.t.y;  import java.u
 	add("{\"term\":\"ptyalism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13565074\"]}");
 	add("{\"term\":\"ptyalith\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09423459\"]}");
 	add("{\"term\":\"ptyas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01735735\"]}");
+	add("{\"term\":\"ptyas mucosus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01735855\"]}");
 	add("{\"term\":\"ptychozoon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01677866\"]}");
+	add("{\"term\":\"ptychozoon homalocephalum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01677993\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

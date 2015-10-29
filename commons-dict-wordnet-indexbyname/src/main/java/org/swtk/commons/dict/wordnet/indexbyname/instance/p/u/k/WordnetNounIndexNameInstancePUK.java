@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.p.u.k;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePUK {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"puka\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11819800\", \"12969920\"]}");
+	add("{\"term\":\"puka inti\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08056760\"]}");
 	add("{\"term\":\"puke\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14880143\", \"10559272\"]}");
 	add("{\"term\":\"puking\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00119553\"]}");
 	add("{\"term\":\"puku\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02430735\"]}");

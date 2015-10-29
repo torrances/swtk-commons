@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.f.a.k;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFAK {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"fake\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00173038\", \"10221154\", \"03323383\"]}");
+	add("{\"term\":\"fake book\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03323652\"]}");
 	add("{\"term\":\"fakeer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10096087\"]}");
 	add("{\"term\":\"faker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10221154\"]}");
 	add("{\"term\":\"fakery\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00753641\"]}");

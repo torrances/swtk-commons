@@ -21,6 +21,7 @@ public final class WordnetNounIndexNameControllerTest {
 	public void get() throws Throwable {
 		get("cat");
 		get("feline");
+		get("placental mammal");
 	}
 
 	private void get(String term) throws Throwable {

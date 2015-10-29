@@ -1,6 +1,8 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.t.u.c;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTUC {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"tucana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09486054\"]}");
 	add("{\"term\":\"tuchman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11371207\"]}");
 	add("{\"term\":\"tuck\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"04061473\", \"04502201\", \"05090894\", \"07572437\"]}");
+	add("{\"term\":\"tuck box\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04502346\"]}");
+	add("{\"term\":\"tuck shop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04502745\"]}");
 	add("{\"term\":\"tuckahoe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11811405\"]}");
 	add("{\"term\":\"tucker\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"04502478\", \"10752405\", \"11371342\", \"11371524\"]}");
 	add("{\"term\":\"tucket\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06869934\"]}");

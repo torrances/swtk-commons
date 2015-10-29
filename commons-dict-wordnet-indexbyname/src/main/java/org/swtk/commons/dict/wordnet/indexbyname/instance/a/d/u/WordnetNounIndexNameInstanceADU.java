@@ -1,6 +1,15 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.a.d.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceADU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"adulation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06708498\"]}");
 	add("{\"term\":\"adulator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10115638\"]}");
 	add("{\"term\":\"adult\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01323947\", \"09628463\"]}");
+	add("{\"term\":\"adult body\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05226835\"]}");
+	add("{\"term\":\"adult education\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00886975\"]}");
+	add("{\"term\":\"adult female\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10807146\"]}");
+	add("{\"term\":\"adult female body\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05227400\"]}");
+	add("{\"term\":\"adult intelligence\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13844461\"]}");
+	add("{\"term\":\"adult male\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10306910\"]}");
+	add("{\"term\":\"adult male body\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05227580\"]}");
+	add("{\"term\":\"adult respiratory distress syndrome\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14078534\"]}");
+	add("{\"term\":\"adult tooth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05314207\"]}");
 	add("{\"term\":\"adulterant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14641117\"]}");
 	add("{\"term\":\"adulteration\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00164451\", \"14511027\"]}");
 	add("{\"term\":\"adulterator\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09792029\", \"14641117\"]}");

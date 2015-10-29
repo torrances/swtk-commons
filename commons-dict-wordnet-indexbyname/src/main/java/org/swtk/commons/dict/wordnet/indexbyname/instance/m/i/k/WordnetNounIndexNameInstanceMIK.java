@@ -1,6 +1,20 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.m.i.k;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMIK {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"mikado\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10334875\"]}");
 	add("{\"term\":\"mikania\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12016561\"]}");
+	add("{\"term\":\"mikania scandens\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12016720\"]}");
 	add("{\"term\":\"mike\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03765483\"]}");
+	add("{\"term\":\"mike tyson\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11375077\"]}");
+	add("{\"term\":\"mikhail aleksandrovich bakunin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10851079\"]}");
+	add("{\"term\":\"mikhail bakunin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10851079\"]}");
+	add("{\"term\":\"mikhail baryshnikov\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10857333\"]}");
+	add("{\"term\":\"mikhail glinka\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11022418\"]}");
+	add("{\"term\":\"mikhail gorbachev\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11027746\"]}");
+	add("{\"term\":\"mikhail ilarionovich kutuzov\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11133067\"]}");
+	add("{\"term\":\"mikhail ivanovich glinka\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11022418\"]}");
+	add("{\"term\":\"mikhail ivanovich kalinin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11116023\"]}");
+	add("{\"term\":\"mikhail kalinin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11116023\"]}");
+	add("{\"term\":\"mikhail sergeyevich gorbachev\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11027746\"]}");
+	add("{\"term\":\"mikhail yurievich lermontov\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11149007\"]}");
 	add("{\"term\":\"mikmaq\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09680963\"]}");
+	add("{\"term\":\"mikolaj kopernik\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10929476\"]}");
 	add("{\"term\":\"mikvah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00258936\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

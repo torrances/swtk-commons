@@ -1,5 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.a.z.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceAZA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"azactam\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02768873\"]}");
 	add("{\"term\":\"azadirachta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12717083\"]}");
+	add("{\"term\":\"azadirachta indica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12717253\"]}");
 	add("{\"term\":\"azadirachtin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14763450\"]}");
 	add("{\"term\":\"azalea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12265836\"]}");
 	add("{\"term\":\"azaleastrum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12265584\"]}");

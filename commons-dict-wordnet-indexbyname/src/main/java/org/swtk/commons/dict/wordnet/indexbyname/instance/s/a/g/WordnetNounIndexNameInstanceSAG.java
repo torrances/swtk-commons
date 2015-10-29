@@ -4,13 +4,28 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.s.a.g;  import java.u
 	add("{\"term\":\"sagacity\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04897556\", \"05621958\"]}");
 	add("{\"term\":\"sagamore\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10564497\"]}");
 	add("{\"term\":\"sage\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"12885305\", \"07836473\", \"10565759\"]}");
+	add("{\"term\":\"sage brush\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11949496\"]}");
+	add("{\"term\":\"sage green\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04974978\"]}");
+	add("{\"term\":\"sage grouse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01800242\"]}");
+	add("{\"term\":\"sage hen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01800242\"]}");
+	add("{\"term\":\"sage willow\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12748924\", \"12751304\"]}");
 	add("{\"term\":\"sagebrush\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11949496\"]}");
+	add("{\"term\":\"sagebrush buttercup\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11742313\"]}");
+	add("{\"term\":\"sagebrush lizard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01683624\"]}");
+	add("{\"term\":\"sagebrush mariposa tulip\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12468866\"]}");
+	add("{\"term\":\"sagebrush state\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09133059\"]}");
 	add("{\"term\":\"sagina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11834528\"]}");
 	add("{\"term\":\"saginaw\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09124353\"]}");
 	add("{\"term\":\"sagitta\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01926950\", \"09441832\"]}");
+	add("{\"term\":\"sagittal suture\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05552680\"]}");
 	add("{\"term\":\"sagittaria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12633171\"]}");
 	add("{\"term\":\"sagittariidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01620861\"]}");
 	add("{\"term\":\"sagittarius\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"01620997\", \"08705263\", \"09441990\", \"09772679\"]}");
+	add("{\"term\":\"sagittarius serpentarius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01621144\"]}");
+	add("{\"term\":\"sagittarius the archer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08705263\"]}");
+	add("{\"term\":\"sagittiform leaf\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13180676\"]}");
 	add("{\"term\":\"sago\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15079174\"]}");
+	add("{\"term\":\"sago fern\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13208265\"]}");
+	add("{\"term\":\"sago palm\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11621628\", \"12603413\"]}");
 	add("{\"term\":\"saguaro\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11864840\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,22 +1,29 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.d.e.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDER {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"deracination\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00116623\", \"00316656\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.d.e.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDER {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"der fuhrer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11072667\"]}");
+	add("{\"term\":\"deracination\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00116623\", \"00316656\"]}");
 	add("{\"term\":\"derailment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07316885\"]}");
 	add("{\"term\":\"derain\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10951084\"]}");
 	add("{\"term\":\"derangement\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00555887\", \"14421118\"]}");
 	add("{\"term\":\"derby\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02884998\"]}");
+	add("{\"term\":\"derby hat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02884998\"]}");
 	add("{\"term\":\"deregulating\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00806998\"]}");
 	add("{\"term\":\"deregulation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00806998\"]}");
 	add("{\"term\":\"derelict\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02669131\", \"10025743\"]}");
 	add("{\"term\":\"dereliction\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00740264\", \"04673440\"]}");
 	add("{\"term\":\"derision\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01227006\", \"06728577\"]}");
 	add("{\"term\":\"derivation\", \"synsetCount\":8, \"upperType\":\"NOUN\", \"ids\":[\"00393143\", \"00393276\", \"00393390\", \"04929964\", \"13483590\", \"05788715\", \"06756849\", \"08525126\"]}");
+	add("{\"term\":\"derivational morphology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06188096\"]}");
 	add("{\"term\":\"derivative\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"06300831\", \"06492177\", \"14858055\", \"06024079\"]}");
+	add("{\"term\":\"derivative instrument\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06492177\"]}");
+	add("{\"term\":\"derived function\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06024079\"]}");
 	add("{\"term\":\"deriving\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06756849\"]}");
 	add("{\"term\":\"derma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05251222\"]}");
 	add("{\"term\":\"dermabrasion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00395825\"]}");
 	add("{\"term\":\"dermacentor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01781625\"]}");
+	add("{\"term\":\"dermacentor variabilis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01781789\"]}");
 	add("{\"term\":\"dermaptera\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02275359\"]}");
 	add("{\"term\":\"dermatitis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14248239\"]}");
 	add("{\"term\":\"dermatobia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02196730\"]}");
+	add("{\"term\":\"dermatobia hominis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02196901\"]}");
 	add("{\"term\":\"dermatoglyphic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13929498\"]}");
 	add("{\"term\":\"dermatoglyphics\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06051486\"]}");
 	add("{\"term\":\"dermatologist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10025839\"]}");
@@ -31,6 +38,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.d.e.r;  import java.u
 	add("{\"term\":\"dermis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05251222\"]}");
 	add("{\"term\":\"dermochelyidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01667879\"]}");
 	add("{\"term\":\"dermochelys\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01668013\"]}");
+	add("{\"term\":\"dermochelys coriacea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01668182\"]}");
+	add("{\"term\":\"dermoid cyst\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14225164\"]}");
 	add("{\"term\":\"dermoptera\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02504716\"]}");
 	add("{\"term\":\"derogation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00233014\", \"06730109\"]}");
 	add("{\"term\":\"derrick\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03183096\", \"03183204\"]}");
@@ -38,6 +47,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.d.e.r;  import java.u
 	add("{\"term\":\"derriere\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05566889\"]}");
 	add("{\"term\":\"derringer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03183340\"]}");
 	add("{\"term\":\"derris\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12546018\"]}");
+	add("{\"term\":\"derris elliptica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12546258\"]}");
+	add("{\"term\":\"derris root\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12546258\"]}");
 	add("{\"term\":\"derv\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14710181\"]}");
 	add("{\"term\":\"dervish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10025999\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,7 +1,10 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.i.o.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceIOD {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"iodide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14946509\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.i.o.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceIOD {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"iodic acid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14946390\"]}");
+	add("{\"term\":\"iodide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14946509\"]}");
 	add("{\"term\":\"iodin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14665575\"]}");
+	add("{\"term\":\"iodinated protein\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14758940\"]}");
 	add("{\"term\":\"iodination\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13523759\"]}");
 	add("{\"term\":\"iodine\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04446439\", \"14665575\"]}");
+	add("{\"term\":\"iodoamino acid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14631428\"]}");
 	add("{\"term\":\"iodochlorhydroxyquin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03588278\"]}");
 	add("{\"term\":\"iodocompound\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14946667\"]}");
 	add("{\"term\":\"iodoform\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03588421\", \"14644959\"]}");

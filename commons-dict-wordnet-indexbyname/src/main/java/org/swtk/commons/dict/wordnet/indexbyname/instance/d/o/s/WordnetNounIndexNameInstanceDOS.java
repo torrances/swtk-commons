@@ -1,6 +1,8 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.d.o.s;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDOS {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"dos\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06580598\", \"08154738\"]}");
+	add("{\"term\":\"dos passos\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10960466\"]}");
 	add("{\"term\":\"dosage\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03229941\", \"13794246\"]}");
 	add("{\"term\":\"dose\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"02678511\", \"14156641\", \"13794246\", \"03229941\"]}");
+	add("{\"term\":\"dose rate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15302344\"]}");
 	add("{\"term\":\"dosemeter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03230161\"]}");
 	add("{\"term\":\"dosimeter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03230161\"]}");
 	add("{\"term\":\"dosimetry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01004107\"]}");

@@ -7,11 +7,20 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.v.i.b;  import java.u
 	add("{\"term\":\"vibrancy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04996893\"]}");
 	add("{\"term\":\"vibraphone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04540126\"]}");
 	add("{\"term\":\"vibraphonist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10769596\"]}");
+	add("{\"term\":\"vibrating reed\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04074000\"]}");
 	add("{\"term\":\"vibration\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"04735141\", \"07359766\", \"14028057\", \"00346752\"]}");
 	add("{\"term\":\"vibrato\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07413737\"]}");
 	add("{\"term\":\"vibrator\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04540337\", \"04540494\"]}");
 	add("{\"term\":\"vibrio\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01366803\"]}");
+	add("{\"term\":\"vibrio comma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01366970\"]}");
+	add("{\"term\":\"vibrio fetus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01367113\"]}");
 	add("{\"term\":\"vibrion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01366803\"]}");
 	add("{\"term\":\"vibrissa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01904469\"]}");
 	add("{\"term\":\"viburnum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12700886\"]}");
+	add("{\"term\":\"viburnum dentatum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12701902\"]}");
+	add("{\"term\":\"viburnum lantana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12701413\"]}");
+	add("{\"term\":\"viburnum opulus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12701625\"]}");
+	add("{\"term\":\"viburnum prunifolium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12702340\"]}");
+	add("{\"term\":\"viburnum recognitum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12702137\"]}");
+	add("{\"term\":\"viburnum trilobum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12701163\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

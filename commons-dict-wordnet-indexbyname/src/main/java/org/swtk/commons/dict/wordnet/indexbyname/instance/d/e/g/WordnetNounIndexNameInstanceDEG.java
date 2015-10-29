@@ -1,11 +1,24 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.d.e.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDEG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"degas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10947438\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.d.e.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDEG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"de gaulle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10947575\"]}");
+	add("{\"term\":\"degas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10947438\"]}");
 	add("{\"term\":\"degaussing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13481332\"]}");
 	add("{\"term\":\"degeneracy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04858227\", \"14464341\"]}");
 	add("{\"term\":\"degenerate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10438792\"]}");
 	add("{\"term\":\"degeneration\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07441493\", \"14464341\", \"13481502\"]}");
+	add("{\"term\":\"degenerative arthritis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14211720\"]}");
+	add("{\"term\":\"degenerative disorder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14082045\"]}");
+	add("{\"term\":\"degenerative joint disease\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14211720\"]}");
 	add("{\"term\":\"deglutition\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00841439\"]}");
 	add("{\"term\":\"degradation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14464089\", \"00272107\"]}");
 	add("{\"term\":\"degrader\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10016750\"]}");
 	add("{\"term\":\"degree\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"05101827\", \"13736289\", \"05869901\", \"13632450\", \"06710094\", \"13962925\", \"05101152\"]}");
+	add("{\"term\":\"degree celsius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13736596\"]}");
+	add("{\"term\":\"degree centigrade\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13736596\"]}");
+	add("{\"term\":\"degree day\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13737106\", \"15183651\"]}");
+	add("{\"term\":\"degree fahrenheit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13736746\"]}");
+	add("{\"term\":\"degree of a polynomial\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05870163\"]}");
+	add("{\"term\":\"degree of a term\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05870047\"]}");
+	add("{\"term\":\"degree of freedom\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05868061\", \"05867135\"]}");
+	add("{\"term\":\"degree program\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06689939\"]}");
+	add("{\"term\":\"degressive tax\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13335818\"]}");
 	add("{\"term\":\"degustation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00843562\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

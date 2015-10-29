@@ -1,6 +1,9 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.r.e.j;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceREJ {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"reject\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05798577\"]}");
 	add("{\"term\":\"rejection\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07221933\", \"11525736\", \"13960587\", \"00204191\"]}");
 	add("{\"term\":\"rejoicing\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07144130\", \"07544951\"]}");
+	add("{\"term\":\"rejoicing in the law\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15222137\"]}");
+	add("{\"term\":\"rejoicing of the law\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15222137\"]}");
+	add("{\"term\":\"rejoicing over the law\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15222137\"]}");
 	add("{\"term\":\"rejoinder\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06575315\", \"07214582\"]}");
 	add("{\"term\":\"rejuvenation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00402447\", \"11525964\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

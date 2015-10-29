@@ -1,10 +1,14 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.b.e.h;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceBEH {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"behalf\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05150547\", \"00722912\"]}");
 	add("{\"term\":\"behavior\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"01223743\", \"04904939\", \"14031827\", \"01223473\"]}");
+	add("{\"term\":\"behavior modification\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00702232\"]}");
+	add("{\"term\":\"behavior therapy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00702232\"]}");
 	add("{\"term\":\"behaviorism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06149215\"]}");
 	add("{\"term\":\"behaviorist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09631550\"]}");
+	add("{\"term\":\"behavioristic psychology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06149215\"]}");
 	add("{\"term\":\"behaviour\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"01223473\", \"01223743\", \"04904939\", \"14031827\"]}");
 	add("{\"term\":\"behaviourism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06149215\"]}");
 	add("{\"term\":\"behaviourist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09631550\"]}");
+	add("{\"term\":\"behaviouristic psychology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06149215\"]}");
 	add("{\"term\":\"beheading\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00229048\", \"01167714\"]}");
 	add("{\"term\":\"behemoth\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09958449\", \"10148446\"]}");
 	add("{\"term\":\"behest\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07185223\"]}");

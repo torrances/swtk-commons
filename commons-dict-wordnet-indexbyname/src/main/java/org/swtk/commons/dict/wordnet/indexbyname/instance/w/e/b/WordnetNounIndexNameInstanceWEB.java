@@ -1,6 +1,16 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.w.e.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceWEB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"web\", \"synsetCount\":7, \"upperType\":\"NOUN\", \"ids\":[\"01900969\", \"04575999\", \"04611634\", \"08451269\", \"01900632\", \"04575843\", \"09500167\"]}");
+	add("{\"term\":\"web browser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06583477\"]}");
+	add("{\"term\":\"web log\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06413845\"]}");
+	add("{\"term\":\"web map server\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06590499\"]}");
+	add("{\"term\":\"web map service\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06590499\"]}");
+	add("{\"term\":\"web page\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06370307\"]}");
+	add("{\"term\":\"web site\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06370600\"]}");
+	add("{\"term\":\"web spinner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02186159\"]}");
 	add("{\"term\":\"webb\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11397846\", \"11398082\"]}");
+	add("{\"term\":\"webbed foot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02157858\"]}");
 	add("{\"term\":\"webbing\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04576127\", \"04576230\", \"09500449\"]}");
+	add("{\"term\":\"webbing clothes moth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02295053\"]}");
+	add("{\"term\":\"webbing moth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02295053\"]}");
 	add("{\"term\":\"webcam\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04576349\"]}");
 	add("{\"term\":\"weber\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"11398249\", \"11398457\", \"11398657\", \"11398800\", \"11398924\", \"13660056\"]}");
 	add("{\"term\":\"webfoot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02157272\"]}");
@@ -9,4 +19,5 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.w.e.b;  import java.u
 	add("{\"term\":\"website\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06370600\"]}");
 	add("{\"term\":\"webster\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"11399103\", \"11399212\", \"11399331\"]}");
 	add("{\"term\":\"webworm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02310791\"]}");
+	add("{\"term\":\"webworm moth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02311123\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

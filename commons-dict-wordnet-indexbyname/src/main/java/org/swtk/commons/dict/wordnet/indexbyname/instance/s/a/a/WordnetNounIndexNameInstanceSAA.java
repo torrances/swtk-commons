@@ -1,4 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.s.a.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSAA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"saale\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09441047\"]}");
+	add("{\"term\":\"saale glaciation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13508994\"]}");
+	add("{\"term\":\"saale river\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09441047\"]}");
 	add("{\"term\":\"saame\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06972167\", \"09739429\"]}");
 	add("{\"term\":\"saami\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06972167\", \"09739429\"]}");
 	add("{\"term\":\"saarinen\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11296961\", \"11297086\"]}");

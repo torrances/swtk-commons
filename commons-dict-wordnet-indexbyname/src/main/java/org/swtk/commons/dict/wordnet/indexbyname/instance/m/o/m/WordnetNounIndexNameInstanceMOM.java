@@ -1,7 +1,13 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.m.o.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMOM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"mom\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10297825\"]}");
 	add("{\"term\":\"mombasa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08948706\"]}");
 	add("{\"term\":\"mombin\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07781493\", \"12786803\"]}");
+	add("{\"term\":\"mombin tree\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12786803\"]}");
 	add("{\"term\":\"moment\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"06031858\", \"11503385\", \"05178101\", \"15144992\", \"15271664\", \"15269461\"]}");
+	add("{\"term\":\"moment magnitude scale\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13874280\"]}");
+	add("{\"term\":\"moment of a couple\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11503579\"]}");
+	add("{\"term\":\"moment of a magnet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11504229\"]}");
+	add("{\"term\":\"moment of inertia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11489373\"]}");
+	add("{\"term\":\"moment of truth\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"15269955\", \"15270055\"]}");
 	add("{\"term\":\"momentousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05176939\"]}");
 	add("{\"term\":\"momentum\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05036303\", \"05042975\"]}");
 	add("{\"term\":\"momism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00822382\"]}");
@@ -9,6 +15,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.m.o.m;  import java.u
 	add("{\"term\":\"mommsen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11205034\"]}");
 	add("{\"term\":\"mommy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10297825\"]}");
 	add("{\"term\":\"momordica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12187799\"]}");
+	add("{\"term\":\"momordica balsamina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12187953\"]}");
+	add("{\"term\":\"momordica charantia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12188119\"]}");
 	add("{\"term\":\"momos\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09589043\"]}");
 	add("{\"term\":\"momot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01833556\"]}");
 	add("{\"term\":\"momotidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01833264\"]}");

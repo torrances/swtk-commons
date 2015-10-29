@@ -1,5 +1,11 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.e.b.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceEBO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ebola\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14159105\"]}");
+	add("{\"term\":\"ebola fever\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14159105\"]}");
+	add("{\"term\":\"ebola hemorrhagic fever\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14159105\"]}");
+	add("{\"term\":\"ebola virus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01334650\"]}");
 	add("{\"term\":\"ebonics\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06960420\"]}");
 	add("{\"term\":\"ebonite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15032101\"]}");
 	add("{\"term\":\"ebony\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"12791289\", \"12791496\", \"04967759\"]}");
+	add("{\"term\":\"ebony family\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12790828\"]}");
+	add("{\"term\":\"ebony spleenwort\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13202142\"]}");
+	add("{\"term\":\"ebony tree\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12791289\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

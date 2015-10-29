@@ -1,8 +1,23 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.r.o.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceROG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"rogaine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03777353\"]}");
 	add("{\"term\":\"rogation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07205134\"]}");
+	add("{\"term\":\"rogation day\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15217571\"]}");
+	add("{\"term\":\"roger bacon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10850327\"]}");
+	add("{\"term\":\"roger bannister\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10853191\"]}");
+	add("{\"term\":\"roger brooke taney\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11350687\"]}");
+	add("{\"term\":\"roger de mortimer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11212891\"]}");
+	add("{\"term\":\"roger eliot fry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11004253\"]}");
+	add("{\"term\":\"roger fry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11004253\"]}");
+	add("{\"term\":\"roger huntington sessions\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11313795\"]}");
+	add("{\"term\":\"roger sessions\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11313795\"]}");
+	add("{\"term\":\"roger sherman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11317746\"]}");
+	add("{\"term\":\"roger taney\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11350687\"]}");
+	add("{\"term\":\"roger williams\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11409614\"]}");
 	add("{\"term\":\"rogers\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"11288513\", \"11288657\", \"11288873\"]}");
 	add("{\"term\":\"roget\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11289075\"]}");
 	add("{\"term\":\"rogue\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10556285\"]}");
+	add("{\"term\":\"rogue elephant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02506387\"]}");
+	add("{\"term\":\"rogue nation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08187273\"]}");
+	add("{\"term\":\"rogue state\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08187273\"]}");
 	add("{\"term\":\"roguery\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00737673\"]}");
 	add("{\"term\":\"roguishness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00737673\", \"04916898\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

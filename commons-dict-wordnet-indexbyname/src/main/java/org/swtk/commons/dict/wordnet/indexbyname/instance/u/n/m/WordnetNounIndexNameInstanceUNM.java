@@ -1,6 +1,8 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.u.n.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceUNM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"unmalleability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05031140\"]}");
 	add("{\"term\":\"unmanageableness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04914752\"]}");
 	add("{\"term\":\"unmanliness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04675496\"]}");
+	add("{\"term\":\"unmarried man\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09849169\"]}");
+	add("{\"term\":\"unmarried woman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10759169\"]}");
 	add("{\"term\":\"unmasking\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07230228\"]}");
 	add("{\"term\":\"unmentionable\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04515458\"]}");
 	add("{\"term\":\"unmercifulness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04838262\"]}");

@@ -1,7 +1,13 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.c.a.c;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCAC {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cacajao\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02495740\"]}");
 	add("{\"term\":\"cacalia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11963344\"]}");
+	add("{\"term\":\"cacalia javanica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11983774\"]}");
+	add("{\"term\":\"cacalia lutea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11983774\"]}");
 	add("{\"term\":\"cacao\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12222097\"]}");
+	add("{\"term\":\"cacao bean\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07770870\"]}");
+	add("{\"term\":\"cacao moth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02292992\"]}");
+	add("{\"term\":\"cacao tree\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12222097\"]}");
 	add("{\"term\":\"cacatua\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01821600\"]}");
+	add("{\"term\":\"cacatua galerita\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01821954\"]}");
 	add("{\"term\":\"cachalot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02069893\"]}");
 	add("{\"term\":\"cache\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"02938401\", \"13388085\", \"02938272\"]}");
 	add("{\"term\":\"cachet\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"02938700\", \"06560101\", \"06718747\"]}");
@@ -17,6 +23,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.c.a.c;  import java.u
 	add("{\"term\":\"cacodaemon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09565670\"]}");
 	add("{\"term\":\"cacodemon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09565670\"]}");
 	add("{\"term\":\"cacodyl\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14812884\", \"14813045\"]}");
+	add("{\"term\":\"cacodyl group\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14812884\"]}");
+	add("{\"term\":\"cacodyl radical\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14812884\"]}");
 	add("{\"term\":\"cacoethes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09204454\"]}");
 	add("{\"term\":\"cacogenesis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14069317\"]}");
 	add("{\"term\":\"cacogenics\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06052221\"]}");
@@ -26,4 +34,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.c.a.c;  import java.u
 	add("{\"term\":\"cacophony\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04992187\", \"07392073\"]}");
 	add("{\"term\":\"cactaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11861998\"]}");
 	add("{\"term\":\"cactus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11862673\"]}");
+	add("{\"term\":\"cactus euphorbia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12942420\"]}");
+	add("{\"term\":\"cactus family\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11861998\"]}");
+	add("{\"term\":\"cactus mouse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02339823\"]}");
+	add("{\"term\":\"cactus wren\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01589015\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

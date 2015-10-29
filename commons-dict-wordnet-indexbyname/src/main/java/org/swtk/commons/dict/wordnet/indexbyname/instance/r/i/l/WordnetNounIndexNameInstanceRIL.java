@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.r.i.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceRIL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"riley\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11282458\"]}");
+	add("{\"term\":\"riley b king\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11125288\"]}");
 	add("{\"term\":\"rilievo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04080781\"]}");
 	add("{\"term\":\"rilke\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11282564\"]}");
 	add("{\"term\":\"rill\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09433338\", \"09438816\"]}");

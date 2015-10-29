@@ -1,14 +1,27 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.l.i.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLIP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"lip\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"01944179\", \"02905554\", \"06734698\", \"11712326\", \"05313305\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.l.i.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLIP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"li po\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11154105\"]}");
+	add("{\"term\":\"lip\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"01944179\", \"02905554\", \"06734698\", \"11712326\", \"05313305\"]}");
+	add("{\"term\":\"lip balm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03681332\"]}");
+	add("{\"term\":\"lip fern\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13229603\"]}");
+	add("{\"term\":\"lip reader\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10285087\"]}");
+	add("{\"term\":\"lip rouge\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03681809\"]}");
+	add("{\"term\":\"lip service\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06772787\"]}");
+	add("{\"term\":\"lip sync\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00912231\"]}");
+	add("{\"term\":\"lip synch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00912231\"]}");
+	add("{\"term\":\"lip synchronisation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00912231\"]}");
+	add("{\"term\":\"lip synchronization\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00912231\"]}");
 	add("{\"term\":\"lipaemia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14217407\"]}");
 	add("{\"term\":\"liparidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02649615\"]}");
 	add("{\"term\":\"liparididae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02649615\"]}");
 	add("{\"term\":\"liparis\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02649774\", \"12090882\"]}");
+	add("{\"term\":\"liparis liparis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02649924\"]}");
+	add("{\"term\":\"liparis loeselii\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12091213\"]}");
 	add("{\"term\":\"lipase\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14962825\"]}");
 	add("{\"term\":\"lipchitz\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11153768\"]}");
 	add("{\"term\":\"lipectomy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00683333\"]}");
 	add("{\"term\":\"lipemia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14217407\"]}");
 	add("{\"term\":\"lipfern\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13229603\"]}");
 	add("{\"term\":\"lipid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14963045\"]}");
+	add("{\"term\":\"lipid granulomatosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14257199\"]}");
 	add("{\"term\":\"lipidaemia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14217407\"]}");
 	add("{\"term\":\"lipide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14963045\"]}");
 	add("{\"term\":\"lipidemia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14217407\"]}");
@@ -19,6 +32,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.l.i.p;  import java.u
 	add("{\"term\":\"lipochondrodystrophy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14180645\"]}");
 	add("{\"term\":\"lipogram\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07027301\"]}");
 	add("{\"term\":\"lipoid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14963045\"]}");
+	add("{\"term\":\"lipoid granulomatosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14257199\"]}");
 	add("{\"term\":\"lipoidaemia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14217407\"]}");
 	add("{\"term\":\"lipoidemia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14217407\"]}");
 	add("{\"term\":\"lipoma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14262804\"]}");
@@ -26,6 +40,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.l.i.p;  import java.u
 	add("{\"term\":\"lipoprotein\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14963368\"]}");
 	add("{\"term\":\"liposarcoma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14264723\"]}");
 	add("{\"term\":\"liposcelis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02263938\"]}");
+	add("{\"term\":\"liposcelis divinatorius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02264071\"]}");
+	add("{\"term\":\"liposomal delivery vector\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09362574\"]}");
 	add("{\"term\":\"liposome\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05527943\"]}");
 	add("{\"term\":\"liposuction\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00683496\"]}");
 	add("{\"term\":\"lipotyphla\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01891462\"]}");
@@ -36,4 +52,5 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.l.i.p;  import java.u
 	add("{\"term\":\"lipreading\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00884232\"]}");
 	add("{\"term\":\"lipscomb\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11154720\"]}");
 	add("{\"term\":\"lipstick\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03681809\"]}");
+	add("{\"term\":\"lipstick plant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12851549\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

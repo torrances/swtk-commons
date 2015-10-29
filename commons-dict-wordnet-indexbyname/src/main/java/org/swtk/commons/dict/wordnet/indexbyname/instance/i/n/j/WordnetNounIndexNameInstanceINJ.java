@@ -4,6 +4,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.i.n.j;  import java.u
 	add("{\"term\":\"injudiciousness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04898753\", \"05623875\"]}");
 	add("{\"term\":\"injun\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09686910\"]}");
 	add("{\"term\":\"injunction\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06554821\", \"07185118\"]}");
+	add("{\"term\":\"injured party\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09919123\"]}");
 	add("{\"term\":\"injuriousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05173599\"]}");
 	add("{\"term\":\"injury\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00745603\", \"00745741\", \"07354849\", \"07328236\", \"14309164\"]}");
 	add("{\"term\":\"injustice\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04861620\", \"00745914\"]}");

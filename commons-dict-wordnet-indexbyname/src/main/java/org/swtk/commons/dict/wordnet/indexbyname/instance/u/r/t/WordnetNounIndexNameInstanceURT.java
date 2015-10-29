@@ -1,5 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.u.r.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceURT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"urth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09605791\"]}");
 	add("{\"term\":\"urtica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12412902\"]}");
+	add("{\"term\":\"urtica dioica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12413066\"]}");
+	add("{\"term\":\"urtica pipulifera\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12413282\"]}");
 	add("{\"term\":\"urticaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12412262\"]}");
 	add("{\"term\":\"urticales\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12411994\"]}");
 	add("{\"term\":\"urticaria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14345675\"]}");

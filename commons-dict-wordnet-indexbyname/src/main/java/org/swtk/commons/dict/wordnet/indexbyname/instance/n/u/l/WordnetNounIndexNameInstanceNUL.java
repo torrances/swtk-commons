@@ -1,5 +1,8 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.n.u.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNUL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"null\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13762308\"]}");
+	add("{\"term\":\"null set\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08017786\"]}");
+	add("{\"term\":\"null space\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08020885\"]}");
 	add("{\"term\":\"nullah\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09398518\"]}");
+	add("{\"term\":\"nullarbor plain\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08854382\"]}");
 	add("{\"term\":\"nullification\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00232434\", \"06195483\"]}");
 	add("{\"term\":\"nullifier\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10234060\", \"10385683\"]}");
 	add("{\"term\":\"nullipara\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10385844\"]}");

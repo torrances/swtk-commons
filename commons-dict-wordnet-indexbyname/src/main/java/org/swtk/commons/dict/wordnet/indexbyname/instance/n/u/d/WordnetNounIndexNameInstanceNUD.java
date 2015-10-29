@@ -1,5 +1,11 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.n.u.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNUD {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"nuda\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01921740\"]}");
 	add("{\"term\":\"nude\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03840838\", \"10385098\", \"14479883\", \"03840737\"]}");
+	add("{\"term\":\"nude dancing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00532238\"]}");
+	add("{\"term\":\"nude mouse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02335606\"]}");
+	add("{\"term\":\"nude painting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03840737\"]}");
+	add("{\"term\":\"nude person\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10385098\"]}");
+	add("{\"term\":\"nude sculpture\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03840838\"]}");
+	add("{\"term\":\"nude statue\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03840838\"]}");
 	add("{\"term\":\"nudeness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14479586\"]}");
 	add("{\"term\":\"nudge\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00113817\"]}");
 	add("{\"term\":\"nudger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10385213\"]}");

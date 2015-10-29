@@ -1,5 +1,11 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.u.r.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceURU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"urubupunga\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09490895\"]}");
+	add("{\"term\":\"urubupunga falls\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09490895\"]}");
 	add("{\"term\":\"uruguay\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09183088\"]}");
+	add("{\"term\":\"uruguay potato\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07727544\", \"12915198\"]}");
+	add("{\"term\":\"uruguay potato vine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12915198\"]}");
+	add("{\"term\":\"uruguay river\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09491051\"]}");
 	add("{\"term\":\"uruguayan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09766267\"]}");
+	add("{\"term\":\"uruguayan monetary unit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13715342\"]}");
+	add("{\"term\":\"uruguayan peso\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13715454\"]}");
 	add("{\"term\":\"urus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02407753\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

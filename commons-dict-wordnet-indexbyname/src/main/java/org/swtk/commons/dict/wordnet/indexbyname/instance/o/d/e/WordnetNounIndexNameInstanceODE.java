@@ -1,5 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.o.d.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceODE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ode\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06395302\"]}");
 	add("{\"term\":\"oder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09399891\"]}");
+	add("{\"term\":\"oder river\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09399891\"]}");
 	add("{\"term\":\"odesa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09039375\"]}");
 	add("{\"term\":\"odessa\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09168392\", \"09039375\"]}");
 	add("{\"term\":\"odets\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11232110\"]}");

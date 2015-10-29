@@ -2,11 +2,16 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.t.i.r;  import java.u
 	add("{\"term\":\"tiramisu\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07628875\"]}");
 	add("{\"term\":\"tirana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08722905\"]}");
 	add("{\"term\":\"tire\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04447883\"]}");
+	add("{\"term\":\"tire chain\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04448097\"]}");
+	add("{\"term\":\"tire iron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04448227\"]}");
+	add("{\"term\":\"tire tool\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04448227\"]}");
 	add("{\"term\":\"tiredness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14039832\"]}");
 	add("{\"term\":\"tirelessness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04872055\"]}");
 	add("{\"term\":\"tiresias\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09621240\"]}");
 	add("{\"term\":\"tiresomeness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05213505\"]}");
+	add("{\"term\":\"tirich mir\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09482244\"]}");
 	add("{\"term\":\"tiro\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10383612\"]}");
 	add("{\"term\":\"tirol\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08865127\"]}");
 	add("{\"term\":\"tirolean\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04513183\"]}");
+	add("{\"term\":\"tirso de molina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11363328\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,5 +1,27 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.d.u.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDUT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"dutch\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06965334\", \"09719159\"]}");
+	add("{\"term\":\"dutch auction\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01118055\"]}");
+	add("{\"term\":\"dutch capital\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08969510\"]}");
+	add("{\"term\":\"dutch clover\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11774169\"]}");
+	add("{\"term\":\"dutch courage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04865453\"]}");
+	add("{\"term\":\"dutch door\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03263821\"]}");
+	add("{\"term\":\"dutch east indies\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08927379\"]}");
+	add("{\"term\":\"dutch elm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12427727\"]}");
+	add("{\"term\":\"dutch elm disease\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14306200\"]}");
+	add("{\"term\":\"dutch elm fungus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12985680\"]}");
+	add("{\"term\":\"dutch florin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13701960\"]}");
+	add("{\"term\":\"dutch guiana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09053122\"]}");
+	add("{\"term\":\"dutch hoe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04163652\"]}");
+	add("{\"term\":\"dutch iris\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12433806\", \"12435323\"]}");
+	add("{\"term\":\"dutch leonard\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11148226\"]}");
+	add("{\"term\":\"dutch monetary unit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13701844\"]}");
+	add("{\"term\":\"dutch oven\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03264104\", \"03263983\"]}");
+	add("{\"term\":\"dutch people\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09719159\"]}");
+	add("{\"term\":\"dutch treat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00843188\"]}");
+	add("{\"term\":\"dutch uncle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10060037\"]}");
 	add("{\"term\":\"dutchman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09732504\"]}");
 	add("{\"term\":\"dutifulness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04834623\"]}");
 	add("{\"term\":\"duty\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"13337021\", \"00720746\", \"01132241\"]}");
+	add("{\"term\":\"duty assignment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00731545\"]}");
+	add("{\"term\":\"duty period\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15317037\"]}");
+	add("{\"term\":\"duty tour\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15318833\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

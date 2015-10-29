@@ -1,2 +1,25 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.g.i.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceGIO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"giotto\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11020782\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.g.i.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceGIO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"gioacchino pecci\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11147986\"]}");
+	add("{\"term\":\"giordano bruno\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10888325\"]}");
+	add("{\"term\":\"giorgio de chirico\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10916007\"]}");
+	add("{\"term\":\"giorgio vasari\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11381283\"]}");
+	add("{\"term\":\"giosue carducci\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10902045\"]}");
+	add("{\"term\":\"giotto\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11020782\"]}");
+	add("{\"term\":\"giotto di bondone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11020782\"]}");
+	add("{\"term\":\"giovanni angelo braschi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11257265\"]}");
+	add("{\"term\":\"giovanni battista cibo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11092179\"]}");
+	add("{\"term\":\"giovanni battista montini\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11246417\"]}");
+	add("{\"term\":\"giovanni battista tiepolo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11362186\"]}");
+	add("{\"term\":\"giovanni boccaccio\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10873742\"]}");
+	add("{\"term\":\"giovanni cabato\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10897336\"]}");
+	add("{\"term\":\"giovanni cimabue\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10917885\"]}");
+	add("{\"term\":\"giovanni da verrazano\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11383925\"]}");
+	add("{\"term\":\"giovanni da verrazzano\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11383925\"]}");
+	add("{\"term\":\"giovanni di bernardone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10998094\"]}");
+	add("{\"term\":\"giovanni francesco albani\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10921172\"]}");
+	add("{\"term\":\"giovanni jacopo casanova\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10905746\"]}");
+	add("{\"term\":\"giovanni jacopo casanova de seingalt\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10905746\"]}");
+	add("{\"term\":\"giovanni lorenzo bernini\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10867718\"]}");
+	add("{\"term\":\"giovanni pierluigi da palestrina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11241258\"]}");
+	add("{\"term\":\"giovanni vincenzo pecci\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11147986\"]}");
+	add("{\"term\":\"giovanni virginio schiaparelli\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11304206\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

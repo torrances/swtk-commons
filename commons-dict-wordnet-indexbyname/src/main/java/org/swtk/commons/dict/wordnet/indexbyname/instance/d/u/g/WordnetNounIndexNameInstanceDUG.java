@@ -1,5 +1,8 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.d.u.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDUG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"dug\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02372917\"]}");
+	add("{\"term\":\"dugald stewart\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11338034\"]}");
 	add("{\"term\":\"dugong\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02077019\"]}");
+	add("{\"term\":\"dugong dugon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02077019\"]}");
 	add("{\"term\":\"dugongidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02076656\"]}");
 	add("{\"term\":\"dugout\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"02923887\", \"03259077\", \"03258892\"]}");
+	add("{\"term\":\"dugout canoe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03259077\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

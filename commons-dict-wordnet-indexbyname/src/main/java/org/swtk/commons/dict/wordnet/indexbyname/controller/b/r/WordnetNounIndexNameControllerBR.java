@@ -5,14 +5,14 @@ package org.swtk.commons.dict.wordnet.indexbyname.controller.b.r;  import java.u
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.b.r.o.WordnetNounIndexNameInstanceBRO;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.b.r.u.WordnetNounIndexNameInstanceBRU;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.b.r.y.WordnetNounIndexNameInstanceBRY;
-  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerBR {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException { 		if (TERM.length() < 3) throw new BusinessException("TERM not found (term = %s)", TERM); 		 		String key = TERM.substring(0, 3).toLowerCase(); 			if ("bra".equals(key)) return WordnetNounIndexNameInstanceBRA.get(TERM);
+  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerBR {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException { 		if (TERM.length() < 3) throw new BusinessException("TERM not found (term = %s)", TERM); 		 		String key = TERM.replaceAll(" ", "").substring(0, 3).toLowerCase(); 			if ("bra".equals(key)) return WordnetNounIndexNameInstanceBRA.get(TERM);
 	if ("bre".equals(key)) return WordnetNounIndexNameInstanceBRE.get(TERM);
 	if ("bri".equals(key)) return WordnetNounIndexNameInstanceBRI.get(TERM);
 	if ("brn".equals(key)) return WordnetNounIndexNameInstanceBRN.get(TERM);
 	if ("bro".equals(key)) return WordnetNounIndexNameInstanceBRO.get(TERM);
 	if ("bru".equals(key)) return WordnetNounIndexNameInstanceBRU.get(TERM);
 	if ("bry".equals(key)) return WordnetNounIndexNameInstanceBRY.get(TERM);
-  		throw new BusinessException("TERM not found (term = %s)", TERM); 	} 	 	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceBRA.terms());
+  		throw new BusinessException("TERM not found (term = %s)", TERM); 	}  	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceBRA.terms());
 	set.addAll(WordnetNounIndexNameInstanceBRE.terms());
 	set.addAll(WordnetNounIndexNameInstanceBRI.terms());
 	set.addAll(WordnetNounIndexNameInstanceBRN.terms());

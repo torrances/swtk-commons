@@ -1,16 +1,29 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.l.e.v;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLEV {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"lev\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13707914\"]}");
+	add("{\"term\":\"lev davidovich bronstein\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11369313\"]}");
+	add("{\"term\":\"lev davidovich landau\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11135775\"]}");
+	add("{\"term\":\"lev ivanov\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11095342\"]}");
 	add("{\"term\":\"levallorphan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03663699\"]}");
 	add("{\"term\":\"levant\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08934932\", \"14787397\"]}");
+	add("{\"term\":\"levant cotton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12197226\"]}");
+	add("{\"term\":\"levant garlic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12452861\"]}");
+	add("{\"term\":\"levant morocco\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14787397\"]}");
 	add("{\"term\":\"levanter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11493433\"]}");
 	add("{\"term\":\"levantine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09740098\"]}");
 	add("{\"term\":\"levator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05300235\"]}");
 	add("{\"term\":\"levee\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03663961\", \"03664085\", \"08271548\"]}");
 	add("{\"term\":\"level\", \"synsetCount\":8, \"upperType\":\"NOUN\", \"ids\":[\"03370837\", \"06257026\", \"03541528\", \"03664184\", \"05139167\", \"13962925\", \"14451564\", \"05101152\"]}");
+	add("{\"term\":\"level best\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05132193\"]}");
+	add("{\"term\":\"level crossing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03664448\"]}");
 	add("{\"term\":\"leveler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10275264\"]}");
 	add("{\"term\":\"leveling\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00045411\", \"00218912\", \"00914407\"]}");
 	add("{\"term\":\"leveller\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10275264\"]}");
 	add("{\"term\":\"lever\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03665012\", \"03665135\", \"03664618\"]}");
+	add("{\"term\":\"lever hang\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00437757\"]}");
+	add("{\"term\":\"lever lock\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03665276\"]}");
+	add("{\"term\":\"lever scale\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04319292\"]}");
+	add("{\"term\":\"lever tumbler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03665012\"]}");
 	add("{\"term\":\"leverage\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01101851\", \"05163864\", \"11493538\"]}");
+	add("{\"term\":\"leveraged buyout\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00176023\"]}");
 	add("{\"term\":\"leveraging\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01101851\"]}");
 	add("{\"term\":\"leveret\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02329415\"]}");
 	add("{\"term\":\"levi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11184661\"]}");
@@ -18,6 +31,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.l.e.v;  import java.u
 	add("{\"term\":\"levirate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05677462\"]}");
 	add("{\"term\":\"levis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03665450\"]}");
 	add("{\"term\":\"levisticum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12960820\"]}");
+	add("{\"term\":\"levisticum officinale\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12960986\"]}");
 	add("{\"term\":\"levitation\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00325525\", \"07377667\", \"11428847\"]}");
 	add("{\"term\":\"levite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10275612\"]}");
 	add("{\"term\":\"leviticus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06444705\"]}");
@@ -27,4 +41,5 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.l.e.v;  import java.u
 	add("{\"term\":\"levorotation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07456094\"]}");
 	add("{\"term\":\"levulose\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14899083\"]}");
 	add("{\"term\":\"levy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01160551\", \"13329886\"]}");
+	add("{\"term\":\"levy en masse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01160551\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

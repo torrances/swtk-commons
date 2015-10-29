@@ -2,4 +2,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.t.i.s;  import java.u
 	add("{\"term\":\"tishri\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15239215\"]}");
 	add("{\"term\":\"tisiphone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09529883\"]}");
 	add("{\"term\":\"tissue\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"15099529\", \"05274844\"]}");
+	add("{\"term\":\"tissue layer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05433820\"]}");
+	add("{\"term\":\"tissue paper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15099529\"]}");
+	add("{\"term\":\"tissue plasminogen activator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04448416\"]}");
+	add("{\"term\":\"tissue typing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05754813\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

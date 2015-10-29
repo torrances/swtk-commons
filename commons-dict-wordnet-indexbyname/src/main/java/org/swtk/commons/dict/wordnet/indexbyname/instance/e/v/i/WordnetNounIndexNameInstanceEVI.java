@@ -1,6 +1,8 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.e.v.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceEVI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"eviction\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01196821\", \"01197394\"]}");
 	add("{\"term\":\"evidence\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06746688\", \"06656171\", \"05832256\"]}");
 	add("{\"term\":\"evil\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04859319\", \"05151910\", \"00746935\"]}");
+	add("{\"term\":\"evil eye\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00880834\"]}");
+	add("{\"term\":\"evil spirit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09565030\"]}");
 	add("{\"term\":\"evildoer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10620486\"]}");
 	add("{\"term\":\"evildoing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00746303\"]}");
 	add("{\"term\":\"evilness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04859319\"]}");

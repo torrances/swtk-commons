@@ -7,6 +7,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.w.r.a;  import java.u
 	add("{\"term\":\"wraparound\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04612930\"]}");
 	add("{\"term\":\"wrapper\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04612804\", \"04613084\", \"03823187\"]}");
 	add("{\"term\":\"wrapping\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04376112\", \"04613084\"]}");
+	add("{\"term\":\"wrapping paper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15129689\"]}");
 	add("{\"term\":\"wrasse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02610492\"]}");
 	add("{\"term\":\"wrath\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00760325\", \"07532144\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

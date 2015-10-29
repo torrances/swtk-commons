@@ -2,4 +2,10 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.t.u.f;  import java.u
 	add("{\"term\":\"tuff\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14955350\"]}");
 	add("{\"term\":\"tuffet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03385570\"]}");
 	add("{\"term\":\"tuft\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01328416\", \"07977383\"]}");
+	add("{\"term\":\"tufted centaury\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12311809\"]}");
+	add("{\"term\":\"tufted gentian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12318024\"]}");
+	add("{\"term\":\"tufted pansy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12409506\"]}");
+	add("{\"term\":\"tufted puffin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02051007\"]}");
+	add("{\"term\":\"tufted titmouse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01595028\"]}");
+	add("{\"term\":\"tufted vetch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12596317\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

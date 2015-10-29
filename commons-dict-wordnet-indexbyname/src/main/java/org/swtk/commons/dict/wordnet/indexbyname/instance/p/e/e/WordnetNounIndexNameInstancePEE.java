@@ -1,4 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.p.e.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePEE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"pee\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13555089\", \"14879875\"]}");
+	add("{\"term\":\"pee dee\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09411211\"]}");
+	add("{\"term\":\"pee dee river\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09411211\"]}");
 	add("{\"term\":\"peeing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13555089\"]}");
 	add("{\"term\":\"peek\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00879899\"]}");
 	add("{\"term\":\"peekaboo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00488083\"]}");
@@ -7,11 +9,15 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.p.e.e;  import java.u
 	add("{\"term\":\"peeling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11465660\"]}");
 	add("{\"term\":\"peen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03911172\"]}");
 	add("{\"term\":\"peep\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00879899\", \"07393694\"]}");
+	add("{\"term\":\"peep sight\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03911480\"]}");
 	add("{\"term\":\"peeper\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01317704\", \"05319565\", \"10780994\"]}");
 	add("{\"term\":\"peephole\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03911327\"]}");
+	add("{\"term\":\"peeping tom\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10780994\"]}");
 	add("{\"term\":\"peepshow\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06630034\", \"08425072\"]}");
 	add("{\"term\":\"peepul\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12423101\"]}");
 	add("{\"term\":\"peer\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10432655\", \"09649426\"]}");
+	add("{\"term\":\"peer group\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08389117\"]}");
+	add("{\"term\":\"peer of the realm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10433021\"]}");
 	add("{\"term\":\"peerage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08405367\"]}");
 	add("{\"term\":\"peeress\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10262488\"]}");
 	add("{\"term\":\"peeve\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07566884\"]}");

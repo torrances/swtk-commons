@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.u.n.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceUND {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"undecagon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13905461\"]}");
+	add("{\"term\":\"undecylenic acid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15108280\"]}");
 	add("{\"term\":\"undependability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04678751\"]}");
 	add("{\"term\":\"undependableness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04678751\"]}");
 	add("{\"term\":\"underachievement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00048291\"]}");
@@ -15,6 +16,9 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.u.n.d;  import java.u
 	add("{\"term\":\"underclothes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04516244\"]}");
 	add("{\"term\":\"underclothing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04516244\"]}");
 	add("{\"term\":\"undercoat\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"01901879\", \"03365691\", \"04514984\"]}");
+	add("{\"term\":\"undercover agent\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10661153\"]}");
+	add("{\"term\":\"undercover operation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00410956\"]}");
+	add("{\"term\":\"undercover work\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00655477\"]}");
 	add("{\"term\":\"undercurrent\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07419398\", \"05931441\"]}");
 	add("{\"term\":\"undercut\", \"synsetCount\":5, \"upperType\":\"NOUN\", \"ids\":[\"00388334\", \"00566846\", \"04515186\", \"07675538\", \"15108541\"]}");
 	add("{\"term\":\"underdevelopment\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13592244\", \"14446672\"]}");
@@ -31,6 +35,9 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.u.n.d;  import java.u
 	add("{\"term\":\"undergrad\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10756259\"]}");
 	add("{\"term\":\"undergraduate\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10756259\"]}");
 	add("{\"term\":\"underground\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03762667\", \"08377599\"]}");
+	add("{\"term\":\"underground press\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06282273\"]}");
+	add("{\"term\":\"underground railroad\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00061637\"]}");
+	add("{\"term\":\"underground railway\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00061637\"]}");
 	add("{\"term\":\"undergrowth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08456468\"]}");
 	add("{\"term\":\"underlay\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02971078\"]}");
 	add("{\"term\":\"underlayment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02971078\"]}");
@@ -67,20 +74,29 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.u.n.d;  import java.u
 	add("{\"term\":\"undertone\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04966744\", \"05931441\", \"07097328\"]}");
 	add("{\"term\":\"undertow\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07418861\", \"07514688\"]}");
 	add("{\"term\":\"undervaluation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05744538\"]}");
+	add("{\"term\":\"underwater archaeology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06154609\"]}");
+	add("{\"term\":\"underwater archeology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06154609\"]}");
+	add("{\"term\":\"underwater diver\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10039277\"]}");
 	add("{\"term\":\"underwear\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04516244\"]}");
 	add("{\"term\":\"underwing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02298522\"]}");
 	add("{\"term\":\"underwood\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08456468\"]}");
 	add("{\"term\":\"underworld\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05637164\", \"08261980\"]}");
 	add("{\"term\":\"underwriter\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"08087301\", \"10229332\", \"10235623\"]}");
+	add("{\"term\":\"undescended testicle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05533042\"]}");
+	add("{\"term\":\"undescended testis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05533042\"]}");
 	add("{\"term\":\"undesirability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05149255\"]}");
 	add("{\"term\":\"undesirable\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10756921\"]}");
 	add("{\"term\":\"undies\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04516466\"]}");
 	add("{\"term\":\"undine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09564457\"]}");
 	add("{\"term\":\"undiscipline\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04891645\"]}");
+	add("{\"term\":\"undivided interest\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13309360\"]}");
+	add("{\"term\":\"undivided right\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13309360\"]}");
 	add("{\"term\":\"undoer\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"10028370\", \"10757088\", \"10757374\"]}");
 	add("{\"term\":\"undoing\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00150082\", \"00235941\"]}");
 	add("{\"term\":\"undress\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14480200\"]}");
 	add("{\"term\":\"undset\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11376178\"]}");
+	add("{\"term\":\"undulant fever\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14151511\"]}");
 	add("{\"term\":\"undulation\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07360193\", \"07366648\", \"13891583\"]}");
+	add("{\"term\":\"undulatory theory\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06115480\"]}");
 	add("{\"term\":\"undutifulness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04835716\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

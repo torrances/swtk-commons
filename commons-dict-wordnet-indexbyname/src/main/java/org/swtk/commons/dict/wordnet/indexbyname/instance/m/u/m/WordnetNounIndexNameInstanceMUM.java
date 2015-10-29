@@ -3,6 +3,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.m.u.m;  import java.u
 	add("{\"term\":\"mumble\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07141960\"]}");
 	add("{\"term\":\"mumbler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10362274\"]}");
 	add("{\"term\":\"mumbling\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00280079\", \"07147342\"]}");
+	add("{\"term\":\"mumbo jumbo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06624773\"]}");
+	add("{\"term\":\"mumification necrosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14337088\"]}");
 	add("{\"term\":\"mummer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10338550\"]}");
 	add("{\"term\":\"mummery\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06621756\"]}");
 	add("{\"term\":\"mummichog\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01449780\"]}");

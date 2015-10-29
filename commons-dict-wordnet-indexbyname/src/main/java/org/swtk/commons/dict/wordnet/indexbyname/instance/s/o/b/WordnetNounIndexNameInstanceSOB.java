@@ -1,4 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.s.o.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSOB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"sob\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00870347\", \"09834593\", \"14393527\"]}");
+	add("{\"term\":\"sob sister\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10637750\"]}");
+	add("{\"term\":\"sob story\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07237093\"]}");
+	add("{\"term\":\"sob stuff\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07237093\"]}");
 	add("{\"term\":\"sobbing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00870347\"]}");
 	add("{\"term\":\"soberness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04654835\", \"14042609\"]}");
 	add("{\"term\":\"sobersides\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10637662\"]}");

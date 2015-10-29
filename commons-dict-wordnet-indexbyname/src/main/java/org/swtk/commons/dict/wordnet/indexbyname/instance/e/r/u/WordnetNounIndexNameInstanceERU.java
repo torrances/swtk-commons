@@ -1,4 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.e.r.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceERU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"eruca\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11906849\"]}");
+	add("{\"term\":\"eruca sativa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11907006\"]}");
+	add("{\"term\":\"eruca vesicaria sativa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11907006\"]}");
 	add("{\"term\":\"eructation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00118398\", \"14032052\"]}");
 	add("{\"term\":\"eruditeness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05994884\"]}");
 	add("{\"term\":\"erudition\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05994884\"]}");

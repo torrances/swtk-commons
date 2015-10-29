@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.h.o.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHOD {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hod\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03529467\"]}");
+	add("{\"term\":\"hod carrier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10199158\"]}");
 	add("{\"term\":\"hodeida\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09187939\"]}");
 	add("{\"term\":\"hoder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09604303\"]}");
 	add("{\"term\":\"hodgepodge\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05962283\", \"08416934\"]}");

@@ -1,4 +1,8 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.h.a.y;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceHAY {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"hay\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07818002\"]}");
+	add("{\"term\":\"hay bacillus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01353126\"]}");
+	add("{\"term\":\"hay bale\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03505533\"]}");
+	add("{\"term\":\"hay conditioner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03505843\"]}");
+	add("{\"term\":\"hay fever\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14557801\"]}");
 	add("{\"term\":\"hayastan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09039896\"]}");
 	add("{\"term\":\"haycock\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07979944\"]}");
 	add("{\"term\":\"haydn\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07293287\", \"11055776\"]}");
@@ -7,7 +11,9 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.h.a.y;  import java.u
 	add("{\"term\":\"hayfield\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08588163\"]}");
 	add("{\"term\":\"hayfork\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03505601\"]}");
 	add("{\"term\":\"haying\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00923740\", \"01017419\"]}");
+	add("{\"term\":\"haying time\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00923740\"]}");
 	add("{\"term\":\"hayloft\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03505701\"]}");
+	add("{\"term\":\"haym salomon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11299423\"]}");
 	add("{\"term\":\"haymaker\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00136457\", \"03505843\"]}");
 	add("{\"term\":\"haymaking\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00624197\", \"00624292\"]}");
 	add("{\"term\":\"haymow\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03505701\", \"13798139\"]}");

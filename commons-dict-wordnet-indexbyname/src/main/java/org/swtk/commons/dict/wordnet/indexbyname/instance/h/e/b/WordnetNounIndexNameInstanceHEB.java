@@ -2,11 +2,21 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.h.e.b;  import java.u
 	add("{\"term\":\"hebdomad\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15194920\"]}");
 	add("{\"term\":\"hebe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09584069\"]}");
 	add("{\"term\":\"hebei\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08743759\"]}");
+	add("{\"term\":\"hebei province\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08743759\"]}");
 	add("{\"term\":\"hebephrenia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14422842\"]}");
+	add("{\"term\":\"hebephrenic schizophrenia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14422842\"]}");
 	add("{\"term\":\"hebetude\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05689093\"]}");
+	add("{\"term\":\"hebraic alphabet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06510560\"]}");
 	add("{\"term\":\"hebraism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08110979\"]}");
 	add("{\"term\":\"hebraist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10187041\"]}");
 	add("{\"term\":\"hebrew\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09700747\", \"06999784\"]}");
+	add("{\"term\":\"hebrew alphabet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06510560\"]}");
+	add("{\"term\":\"hebrew calendar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15202913\"]}");
+	add("{\"term\":\"hebrew lesson\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00731123\"]}");
+	add("{\"term\":\"hebrew script\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06510560\"]}");
+	add("{\"term\":\"hebrew scripture\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06464033\"]}");
 	add("{\"term\":\"hebrews\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06458146\", \"08500946\"]}");
+	add("{\"term\":\"hebridean islands\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08913450\"]}");
+	add("{\"term\":\"hebridean isles\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08913450\"]}");
 	add("{\"term\":\"hebrides\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08913450\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

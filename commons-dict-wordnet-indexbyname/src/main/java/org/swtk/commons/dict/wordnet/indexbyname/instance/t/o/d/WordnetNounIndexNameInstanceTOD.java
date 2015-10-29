@@ -4,7 +4,10 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.t.o.d;  import java.u
 	add("{\"term\":\"todd\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10733966\", \"11364544\"]}");
 	add("{\"term\":\"toddler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10734114\"]}");
 	add("{\"term\":\"toddy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07935119\"]}");
+	add("{\"term\":\"toddy palm\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"12606390\", \"12607893\"]}");
 	add("{\"term\":\"todea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12975394\"]}");
+	add("{\"term\":\"todea barbara\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12975559\"]}");
+	add("{\"term\":\"todea superba\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12975113\"]}");
 	add("{\"term\":\"todidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01833719\"]}");
 	add("{\"term\":\"todus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01833872\"]}");
 	add("{\"term\":\"tody\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01834001\"]}");

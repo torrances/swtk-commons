@@ -3,4 +3,6 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.u.p.h;  import java.u
 	add("{\"term\":\"upholder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10759876\"]}");
 	add("{\"term\":\"upholsterer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10760139\"]}");
 	add("{\"term\":\"upholstery\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01122669\", \"04521122\"]}");
+	add("{\"term\":\"upholstery material\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04521293\"]}");
+	add("{\"term\":\"upholstery needle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04521390\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

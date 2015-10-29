@@ -1,5 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.i.b.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceIBE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"iberia\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09006937\", \"09041017\"]}");
 	add("{\"term\":\"iberian\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10215752\", \"10215902\"]}");
+	add("{\"term\":\"iberian peninsula\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09006937\"]}");
 	add("{\"term\":\"iberis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11909942\"]}");
 	add("{\"term\":\"ibert\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11090521\"]}");
 	add("{\"term\":\"ibex\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02420560\"]}");

@@ -1,4 +1,15 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.w.a.v;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceWAV {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"wave\", \"synsetCount\":9, \"upperType\":\"NOUN\", \"ids\":[\"10790734\", \"11544884\", \"13891583\", \"05266723\", \"07288732\", \"07367435\", \"07360193\", \"00346921\", \"07366790\"]}");
+	add("{\"term\":\"wave angle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13942427\"]}");
+	add("{\"term\":\"wave equation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06684084\"]}");
+	add("{\"term\":\"wave form\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07362264\"]}");
+	add("{\"term\":\"wave front\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08699704\", \"11534064\"]}");
+	add("{\"term\":\"wave guide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04571699\"]}");
+	add("{\"term\":\"wave mechanics\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06117457\"]}");
+	add("{\"term\":\"wave number\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13665526\"]}");
+	add("{\"term\":\"wave shape\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07362264\"]}");
+	add("{\"term\":\"wave theory\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06115480\"]}");
+	add("{\"term\":\"wave theory of light\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06115480\"]}");
+	add("{\"term\":\"wave train\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08478886\"]}");
 	add("{\"term\":\"waveband\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06271281\"]}");
 	add("{\"term\":\"waveform\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07362264\"]}");
 	add("{\"term\":\"wavefront\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08699704\"]}");

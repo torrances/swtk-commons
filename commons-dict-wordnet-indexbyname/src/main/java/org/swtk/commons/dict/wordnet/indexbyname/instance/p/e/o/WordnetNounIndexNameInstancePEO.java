@@ -1,7 +1,10 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.p.e.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePEO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"peon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10055534\"]}");
 	add("{\"term\":\"peonage\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00416553\", \"14021671\"]}");
 	add("{\"term\":\"peony\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11739755\"]}");
+	add("{\"term\":\"peony family\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11739380\"]}");
 	add("{\"term\":\"people\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"08197108\", \"07987588\", \"08177175\", \"07958392\"]}");
+	add("{\"term\":\"people against gangsterism and drugs\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08056353\"]}");
+	add("{\"term\":\"people in power\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08404537\"]}");
 	add("{\"term\":\"peoples\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07959576\"]}");
 	add("{\"term\":\"peoria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09106613\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

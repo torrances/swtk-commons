@@ -1,6 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.k.h.o;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceKHO {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"khoikhoi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06954241\"]}");
 	add("{\"term\":\"khoikhoin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06954241\"]}");
 	add("{\"term\":\"khoisan\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06954103\", \"09901079\"]}");
+	add("{\"term\":\"khoisan language\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06954103\"]}");
 	add("{\"term\":\"khomeini\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11123998\"]}");
 	add("{\"term\":\"khoum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13711980\"]}");
 	add("{\"term\":\"khowar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06985314\"]}");

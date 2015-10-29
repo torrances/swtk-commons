@@ -1,10 +1,17 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.n.a.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNAI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"naiad\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09573572\", \"12632401\"]}");
+	add("{\"term\":\"naiad family\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12632004\"]}");
 	add("{\"term\":\"naiadaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12632004\"]}");
 	add("{\"term\":\"naiadales\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12631694\"]}");
 	add("{\"term\":\"naias\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12632240\"]}");
 	add("{\"term\":\"naif\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10363852\"]}");
 	add("{\"term\":\"naiki\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06994478\"]}");
 	add("{\"term\":\"nail\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"13673953\", \"03810284\", \"05589324\"]}");
+	add("{\"term\":\"nail enamel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03811265\"]}");
+	add("{\"term\":\"nail hole\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03811174\"]}");
+	add("{\"term\":\"nail polish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03811265\"]}");
+	add("{\"term\":\"nail pulling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00424426\"]}");
+	add("{\"term\":\"nail removal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00424426\"]}");
+	add("{\"term\":\"nail varnish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03811265\"]}");
 	add("{\"term\":\"nailbrush\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03810720\"]}");
 	add("{\"term\":\"nailer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10363934\"]}");
 	add("{\"term\":\"nailfile\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03810820\"]}");
@@ -14,6 +21,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.n.a.i;  import java.u
 	add("{\"term\":\"naira\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13711178\"]}");
 	add("{\"term\":\"nairobi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08948355\"]}");
 	add("{\"term\":\"naismith\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11219224\"]}");
+	add("{\"term\":\"naive art\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03867479\"]}");
+	add("{\"term\":\"naive realism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05984526\"]}");
 	add("{\"term\":\"naiveness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04887768\"]}");
 	add("{\"term\":\"naivete\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04887768\"]}");
 	add("{\"term\":\"naivety\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04887768\"]}");

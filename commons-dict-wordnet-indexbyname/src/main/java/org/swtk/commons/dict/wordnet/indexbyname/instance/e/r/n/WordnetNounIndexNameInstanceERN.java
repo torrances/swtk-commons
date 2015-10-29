@@ -1,4 +1,23 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.e.r.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceERN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ern\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01618099\"]}");
 	add("{\"term\":\"erne\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01618099\"]}");
+	add("{\"term\":\"ernest bevin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10870560\"]}");
+	add("{\"term\":\"ernest bloch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10873009\"]}");
+	add("{\"term\":\"ernest hemingway\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11059856\"]}");
+	add("{\"term\":\"ernest orlando lawrence\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11140358\"]}");
+	add("{\"term\":\"ernest rutherford\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11296275\"]}");
+	add("{\"term\":\"ernest solvay\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11327932\"]}");
+	add("{\"term\":\"ernest thomas sinton walton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11392891\"]}");
+	add("{\"term\":\"ernest walton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11392891\"]}");
+	add("{\"term\":\"ernesto guevara\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11038149\"]}");
 	add("{\"term\":\"ernst\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10980553\"]}");
+	add("{\"term\":\"ernst boris chain\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10910781\"]}");
+	add("{\"term\":\"ernst cassirer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10906310\"]}");
+	add("{\"term\":\"ernst heinrich haeckel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11041663\"]}");
+	add("{\"term\":\"ernst heinrich weber\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11398249\"]}");
+	add("{\"term\":\"ernst lubitsch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11163321\"]}");
+	add("{\"term\":\"ernst ludwig kirchner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11126160\"]}");
+	add("{\"term\":\"ernst mach\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11167523\"]}");
+	add("{\"term\":\"ernst theodor amadeus hoffmann\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11074665\"]}");
+	add("{\"term\":\"ernst theodor wilhelm hoffmann\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11074665\"]}");
+	add("{\"term\":\"ernst werner von siemens\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11319765\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,5 +1,8 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.y.a.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceYAL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"yale\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11421613\", \"04617725\"]}");
+	add("{\"term\":\"yale university\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04617725\"]}");
 	add("{\"term\":\"yalta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09039671\"]}");
+	add("{\"term\":\"yalta conference\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08345254\"]}");
 	add("{\"term\":\"yaltopya\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08795913\"]}");
 	add("{\"term\":\"yalu\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09504415\"]}");
+	add("{\"term\":\"yalu river\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01302485\", \"09504415\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

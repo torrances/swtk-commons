@@ -5,14 +5,21 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.g.a.t;  import java.u
 	add("{\"term\":\"gatefold\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06269194\"]}");
 	add("{\"term\":\"gatehouse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03433000\"]}");
 	add("{\"term\":\"gatekeeper\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10046278\", \"10141785\"]}");
+	add("{\"term\":\"gateleg table\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03433136\"]}");
 	add("{\"term\":\"gatepost\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03433259\"]}");
 	add("{\"term\":\"gates\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11011932\"]}");
+	add("{\"term\":\"gates of the arctic national park\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08622277\"]}");
 	add("{\"term\":\"gateway\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03433387\"]}");
+	add("{\"term\":\"gateway drug\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03433481\"]}");
+	add("{\"term\":\"gateway to the west\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09130248\"]}");
 	add("{\"term\":\"gather\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01016932\", \"03433715\"]}");
+	add("{\"term\":\"gathered skirt\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03433913\"]}");
 	add("{\"term\":\"gatherer\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09955820\", \"10141957\"]}");
 	add("{\"term\":\"gathering\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"03433715\", \"01016932\", \"01232427\", \"07991473\"]}");
+	add("{\"term\":\"gathering place\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08591763\"]}");
 	add("{\"term\":\"gathic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06986707\"]}");
 	add("{\"term\":\"gatling\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11012188\"]}");
+	add("{\"term\":\"gatling gun\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03434047\"]}");
 	add("{\"term\":\"gator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01701075\"]}");
 	add("{\"term\":\"gatt\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08317350\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

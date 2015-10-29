@@ -2,6 +2,15 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.f.o.e;  import java.u
 	add("{\"term\":\"foehn\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11462726\"]}");
 	add("{\"term\":\"foeman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10075655\"]}");
 	add("{\"term\":\"foeniculum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12959657\"]}");
+	add("{\"term\":\"foeniculum dulce\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12960239\"]}");
+	add("{\"term\":\"foeniculum vulgare\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12960042\"]}");
+	add("{\"term\":\"foeniculum vulgare dulce\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12960239\"]}");
+	add("{\"term\":\"foetal circulation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05519626\"]}");
+	add("{\"term\":\"foetal distress\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14117356\"]}");
+	add("{\"term\":\"foetal monitor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03283825\"]}");
+	add("{\"term\":\"foetal movement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00335000\"]}");
+	add("{\"term\":\"foetid bugbane\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11749611\"]}");
+	add("{\"term\":\"foetid pothos\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11813211\"]}");
 	add("{\"term\":\"foetology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06063385\"]}");
 	add("{\"term\":\"foetometry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01004226\"]}");
 	add("{\"term\":\"foetoprotein\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15058229\"]}");

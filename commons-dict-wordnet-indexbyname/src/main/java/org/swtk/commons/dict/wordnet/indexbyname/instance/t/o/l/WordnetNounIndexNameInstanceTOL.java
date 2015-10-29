@@ -1,4 +1,5 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.t.o.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTOL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"tolazamide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04455782\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.t.o.l;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTOL {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"to leeward\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13852179\"]}");
+	add("{\"term\":\"tolazamide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04455782\"]}");
 	add("{\"term\":\"tolazoline\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04455951\"]}");
 	add("{\"term\":\"tolbooth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04456561\"]}");
 	add("{\"term\":\"tolbukhin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08732457\"]}");
@@ -11,6 +12,15 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.t.o.l;  import java.u
 	add("{\"term\":\"tolinase\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04455782\"]}");
 	add("{\"term\":\"tolkien\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11365176\"]}");
 	add("{\"term\":\"toll\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"07391844\", \"05171334\", \"13344771\"]}");
+	add("{\"term\":\"toll agent\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10734333\"]}");
+	add("{\"term\":\"toll bridge\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04456720\"]}");
+	add("{\"term\":\"toll call\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06284945\"]}");
+	add("{\"term\":\"toll collector\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10734333\"]}");
+	add("{\"term\":\"toll house cookie\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07653926\"]}");
+	add("{\"term\":\"toll line\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04456971\"]}");
+	add("{\"term\":\"toll plaza\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08637524\"]}");
+	add("{\"term\":\"toll road\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04508313\"]}");
+	add("{\"term\":\"toll taker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10734333\"]}");
 	add("{\"term\":\"tollbar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04456821\"]}");
 	add("{\"term\":\"tollbooth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04456561\"]}");
 	add("{\"term\":\"toller\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10734333\", \"10734500\"]}");
@@ -20,10 +30,17 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.t.o.l;  import java.u
 	add("{\"term\":\"tollkeeper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10734333\"]}");
 	add("{\"term\":\"tollman\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10734333\"]}");
 	add("{\"term\":\"tollon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12653822\"]}");
+	add("{\"term\":\"tolmetin sodium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04457067\"]}");
 	add("{\"term\":\"tolmiea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12824976\"]}");
+	add("{\"term\":\"tolmiea menziesii\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12825112\"]}");
 	add("{\"term\":\"tolstoy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11365373\"]}");
 	add("{\"term\":\"toltec\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09668954\"]}");
 	add("{\"term\":\"tolu\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12572174\"]}");
+	add("{\"term\":\"tolu balsam\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12572174\"]}");
+	add("{\"term\":\"tolu balsam tree\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12571678\"]}");
+	add("{\"term\":\"tolu tree\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12571678\"]}");
 	add("{\"term\":\"toluene\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15099945\"]}");
+	add("{\"term\":\"toluic acid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15100163\"]}");
 	add("{\"term\":\"tolypeutes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02457630\"]}");
+	add("{\"term\":\"tolypeutes tricinctus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02457766\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

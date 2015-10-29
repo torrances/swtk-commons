@@ -17,6 +17,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.d.y.s;  import java.u
 	add("{\"term\":\"dysmenorrhea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14349599\"]}");
 	add("{\"term\":\"dysomia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14575947\"]}");
 	add("{\"term\":\"dysosmia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14082503\"]}");
+	add("{\"term\":\"dysostosis multiplex\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14180645\"]}");
 	add("{\"term\":\"dyspepsia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14359722\"]}");
 	add("{\"term\":\"dyspeptic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10060506\"]}");
 	add("{\"term\":\"dysphagia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14082625\"]}");
@@ -30,6 +31,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.d.y.s;  import java.u
 	add("{\"term\":\"dysprosium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14660825\"]}");
 	add("{\"term\":\"dyssynergia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14114736\"]}");
 	add("{\"term\":\"dysthymia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14413314\"]}");
+	add("{\"term\":\"dysthymic depression\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14413314\"]}");
 	add("{\"term\":\"dystopia\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06379147\", \"13955246\"]}");
 	add("{\"term\":\"dystrophy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"14082818\", \"14183847\"]}");
 	add("{\"term\":\"dysuria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14082734\"]}");

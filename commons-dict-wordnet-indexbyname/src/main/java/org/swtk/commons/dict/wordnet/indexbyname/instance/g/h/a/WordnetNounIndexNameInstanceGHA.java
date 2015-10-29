@@ -1,7 +1,9 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.g.h.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceGHA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ghana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08965960\"]}");
 	add("{\"term\":\"ghanian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09768220\"]}");
+	add("{\"term\":\"ghanian monetary unit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13689027\"]}");
 	add("{\"term\":\"gharry\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03440901\"]}");
 	add("{\"term\":\"ghastliness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04789874\"]}");
 	add("{\"term\":\"ghat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03440985\"]}");
 	add("{\"term\":\"ghatti\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14902995\"]}");
+	add("{\"term\":\"ghatti gum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14902995\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

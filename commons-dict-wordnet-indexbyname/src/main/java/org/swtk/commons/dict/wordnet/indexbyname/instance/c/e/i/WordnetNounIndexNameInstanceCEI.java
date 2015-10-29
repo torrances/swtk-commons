@@ -1,4 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.c.e.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCEI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ceiba\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12210758\"]}");
+	add("{\"term\":\"ceiba pentandra\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12210927\"]}");
+	add("{\"term\":\"ceiba tree\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12210927\"]}");
 	add("{\"term\":\"ceibo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12549054\"]}");
 	add("{\"term\":\"ceilidh\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07462994\"]}");
 	add("{\"term\":\"ceiling\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"05139932\", \"06670391\", \"05139807\", \"02993828\"]}");

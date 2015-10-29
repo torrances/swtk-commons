@@ -1,8 +1,11 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.n.i.h;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNIH {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"nih\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08151063\"]}");
 	add("{\"term\":\"nihau\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09102940\"]}");
+	add("{\"term\":\"nihau island\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09102940\"]}");
 	add("{\"term\":\"nihil\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13762731\"]}");
+	add("{\"term\":\"nihil obstat\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01142070\", \"06700804\"]}");
 	add("{\"term\":\"nihilism\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"13996767\", \"14402117\", \"05974255\"]}");
 	add("{\"term\":\"nihilist\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09811257\", \"10378119\"]}");
+	add("{\"term\":\"nihilistic delusion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14402117\"]}");
 	add("{\"term\":\"nihility\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14479148\"]}");
 	add("{\"term\":\"nihon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08941623\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

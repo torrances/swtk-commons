@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.p.a.x;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePAX {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"pax\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06643647\"]}");
+	add("{\"term\":\"pax romana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14563920\"]}");
 	add("{\"term\":\"paxil\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03897548\"]}");
 	add("{\"term\":\"paxto\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06987792\"]}");
 	add("{\"term\":\"paxton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11247489\"]}");

@@ -2,4 +2,5 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.b.u;  import java.u
 	add("{\"term\":\"ebullition\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07027434\"]}");
 	add("{\"term\":\"eburnation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13491890\"]}");
 	add("{\"term\":\"eburophyton\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12080881\"]}");
+	add("{\"term\":\"eburophyton austinae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12081047\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

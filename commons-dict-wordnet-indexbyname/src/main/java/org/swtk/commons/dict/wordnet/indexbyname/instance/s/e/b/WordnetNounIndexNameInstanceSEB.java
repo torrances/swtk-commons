@@ -1,9 +1,22 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.s.e.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSEB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"seb\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15075262\"]}");
+	add("{\"term\":\"sebaceous cyst\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14226245\"]}");
+	add("{\"term\":\"sebaceous follicle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05335780\"]}");
+	add("{\"term\":\"sebaceous gland\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05335780\"]}");
+	add("{\"term\":\"sebacic acid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14764040\"]}");
+	add("{\"term\":\"sebastian cabot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10897593\"]}");
+	add("{\"term\":\"sebastian vizcaino\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11388071\"]}");
 	add("{\"term\":\"sebastiana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12949450\"]}");
 	add("{\"term\":\"sebastodes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02646619\"]}");
+	add("{\"term\":\"sebastodes caurinus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02646990\"]}");
+	add("{\"term\":\"sebastodes marinus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02647447\"]}");
+	add("{\"term\":\"sebastodes miniatus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02647131\"]}");
+	add("{\"term\":\"sebastodes ruberrimus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02647295\"]}");
 	add("{\"term\":\"sebastopol\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09039538\"]}");
 	add("{\"term\":\"sebe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13854916\"]}");
 	add("{\"term\":\"seborrhea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14256078\"]}");
+	add("{\"term\":\"seborrheic dermatitis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14256222\"]}");
+	add("{\"term\":\"seborrheic eczema\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14256222\"]}");
+	add("{\"term\":\"seborrheic keratosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14252549\"]}");
 	add("{\"term\":\"sebs\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13855192\"]}");
 	add("{\"term\":\"sebum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05424323\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

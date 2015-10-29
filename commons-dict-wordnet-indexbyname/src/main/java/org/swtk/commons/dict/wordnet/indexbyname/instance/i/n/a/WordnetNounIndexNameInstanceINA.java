@@ -2,6 +2,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.i.n.a;  import java.u
 	add("{\"term\":\"inaccessibility\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04730186\"]}");
 	add("{\"term\":\"inaccuracy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04811700\"]}");
 	add("{\"term\":\"inachis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02281779\"]}");
+	add("{\"term\":\"inachis io\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02281909\"]}");
 	add("{\"term\":\"inaction\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14033619\"]}");
 	add("{\"term\":\"inactivation\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00234662\", \"13517974\"]}");
 	add("{\"term\":\"inactiveness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04642988\", \"14033619\"]}");
@@ -28,6 +29,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.i.n.a;  import java.u
 	add("{\"term\":\"inaudibility\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05026329\"]}");
 	add("{\"term\":\"inaudibleness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05026329\"]}");
 	add("{\"term\":\"inaugural\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00244240\", \"07254737\"]}");
+	add("{\"term\":\"inaugural address\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07254737\"]}");
 	add("{\"term\":\"inauguration\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00244240\", \"00240777\"]}");
+	add("{\"term\":\"inauguration day\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15184225\"]}");
 	add("{\"term\":\"inauspiciousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05169744\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

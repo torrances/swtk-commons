@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.p.s.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePSA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"psa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14760689\"]}");
+	add("{\"term\":\"psa blood test\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05750648\"]}");
 	add("{\"term\":\"psalm\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06478348\", \"06478458\"]}");
 	add("{\"term\":\"psalmist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10506948\"]}");
 	add("{\"term\":\"psalmody\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01258136\"]}");

@@ -20,7 +20,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.controller.h.o;  import java.u
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.h.o.v.WordnetNounIndexNameInstanceHOV;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.h.o.w.WordnetNounIndexNameInstanceHOW;
 	import org.swtk.commons.dict.wordnet.indexbyname.instance.h.o.y.WordnetNounIndexNameInstanceHOY;
-  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerHO {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException { 		if (TERM.length() < 3) throw new BusinessException("TERM not found (term = %s)", TERM); 		 		String key = TERM.substring(0, 3).toLowerCase(); 			if ("hoa".equals(key)) return WordnetNounIndexNameInstanceHOA.get(TERM);
+  import com.trimc.blogger.commons.exception.BusinessException;  public final class WordnetNounIndexNameControllerHO {  	public static Collection<IndexNoun> get(final String TERM) throws BusinessException { 		if (TERM.length() < 3) throw new BusinessException("TERM not found (term = %s)", TERM); 		 		String key = TERM.replaceAll(" ", "").substring(0, 3).toLowerCase(); 			if ("hoa".equals(key)) return WordnetNounIndexNameInstanceHOA.get(TERM);
 	if ("hob".equals(key)) return WordnetNounIndexNameInstanceHOB.get(TERM);
 	if ("hoc".equals(key)) return WordnetNounIndexNameInstanceHOC.get(TERM);
 	if ("hod".equals(key)) return WordnetNounIndexNameInstanceHOD.get(TERM);
@@ -42,7 +42,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.controller.h.o;  import java.u
 	if ("hov".equals(key)) return WordnetNounIndexNameInstanceHOV.get(TERM);
 	if ("how".equals(key)) return WordnetNounIndexNameInstanceHOW.get(TERM);
 	if ("hoy".equals(key)) return WordnetNounIndexNameInstanceHOY.get(TERM);
-  		throw new BusinessException("TERM not found (term = %s)", TERM); 	} 	 	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceHOA.terms());
+  		throw new BusinessException("TERM not found (term = %s)", TERM); 	}  	public static Collection<String> terms() throws BusinessException { 		Set<String> set = new TreeSet<String>();  			set.addAll(WordnetNounIndexNameInstanceHOA.terms());
 	set.addAll(WordnetNounIndexNameInstanceHOB.terms());
 	set.addAll(WordnetNounIndexNameInstanceHOC.terms());
 	set.addAll(WordnetNounIndexNameInstanceHOD.terms());

@@ -1,5 +1,8 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.d.u.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDUR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"dura\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05490181\"]}");
+	add("{\"term\":\"dura mater\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05490181\"]}");
 	add("{\"term\":\"durability\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05060839\"]}");
+	add("{\"term\":\"durable goods\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03262580\"]}");
+	add("{\"term\":\"durable press\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03923936\"]}");
 	add("{\"term\":\"durables\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03262580\"]}");
 	add("{\"term\":\"durabolin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14772514\"]}");
 	add("{\"term\":\"duralumin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14863492\"]}");
@@ -10,6 +13,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.d.u.r;  import java.u
 	add("{\"term\":\"durante\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10965817\"]}");
 	add("{\"term\":\"duration\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05058400\", \"15158440\", \"15158573\"]}");
 	add("{\"term\":\"durative\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13827391\"]}");
+	add("{\"term\":\"durative aspect\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13827391\"]}");
 	add("{\"term\":\"durazzo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08723065\"]}");
 	add("{\"term\":\"durban\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09023377\"]}");
 	add("{\"term\":\"durbar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03262752\"]}");
@@ -18,7 +22,9 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.d.u.r;  import java.u
 	add("{\"term\":\"durga\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09548880\"]}");
 	add("{\"term\":\"durham\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02409723\", \"09151209\"]}");
 	add("{\"term\":\"durian\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07778889\", \"12211386\"]}");
+	add("{\"term\":\"durian tree\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12211386\"]}");
 	add("{\"term\":\"durio\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12211229\"]}");
+	add("{\"term\":\"durio zibethinus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12211386\"]}");
 	add("{\"term\":\"durion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12211386\"]}");
 	add("{\"term\":\"durkheim\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10966126\"]}");
 	add("{\"term\":\"durmast\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12296994\"]}");
@@ -26,4 +32,5 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.d.u.r;  import java.u
 	add("{\"term\":\"durrell\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10966278\"]}");
 	add("{\"term\":\"durres\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08723065\"]}");
 	add("{\"term\":\"durum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12162967\"]}");
+	add("{\"term\":\"durum wheat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12162967\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

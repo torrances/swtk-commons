@@ -1,9 +1,24 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.c.e.d;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCED {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cedar\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"11643556\", \"11643755\", \"11650468\"]}");
+	add("{\"term\":\"cedar chest\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02992554\"]}");
+	add("{\"term\":\"cedar elm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12427407\"]}");
+	add("{\"term\":\"cedar mahogany\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12718787\"]}");
+	add("{\"term\":\"cedar nut\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11632686\"]}");
+	add("{\"term\":\"cedar of goa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11652827\"]}");
+	add("{\"term\":\"cedar of lebanon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11644266\"]}");
+	add("{\"term\":\"cedar rapids\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09109344\"]}");
+	add("{\"term\":\"cedar tree\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11643556\", \"11650468\"]}");
+	add("{\"term\":\"cedar waxwing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01606453\"]}");
 	add("{\"term\":\"cedarbird\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01606453\"]}");
 	add("{\"term\":\"cedarwood\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11643755\"]}");
 	add("{\"term\":\"cedi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13689153\"]}");
 	add("{\"term\":\"cedilla\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06835838\"]}");
 	add("{\"term\":\"ceding\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00213901\"]}");
+	add("{\"term\":\"ceding back\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01252578\"]}");
 	add("{\"term\":\"cedrela\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12717782\"]}");
+	add("{\"term\":\"cedrela calantas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12721117\"]}");
+	add("{\"term\":\"cedrela odorata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12717913\"]}");
 	add("{\"term\":\"cedrus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11643439\"]}");
+	add("{\"term\":\"cedrus atlantica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11644643\"]}");
+	add("{\"term\":\"cedrus deodara\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11644418\"]}");
+	add("{\"term\":\"cedrus libani\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11644266\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

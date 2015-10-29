@@ -2,8 +2,16 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.p.i.r;  import java.u
 	add("{\"term\":\"pirana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02587080\"]}");
 	add("{\"term\":\"pirandello\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11255777\"]}");
 	add("{\"term\":\"piranga\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01600192\"]}");
+	add("{\"term\":\"piranga flava hepatica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01600912\"]}");
+	add("{\"term\":\"piranga ludoviciana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01600547\"]}");
+	add("{\"term\":\"piranga olivacea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01600378\"]}");
+	add("{\"term\":\"piranga rubra\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01600715\"]}");
 	add("{\"term\":\"piranha\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02587080\", \"10312833\"]}");
 	add("{\"term\":\"pirate\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03954164\", \"10455134\", \"10457029\"]}");
+	add("{\"term\":\"pirate flag\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02850247\"]}");
+	add("{\"term\":\"pirate ship\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03954164\"]}");
+	add("{\"term\":\"piriform area\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05484957\"]}");
+	add("{\"term\":\"piriform lobe\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05484957\"]}");
 	add("{\"term\":\"pirogi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07640533\"]}");
 	add("{\"term\":\"pirogue\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03259077\"]}");
 	add("{\"term\":\"piroplasm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01428275\"]}");

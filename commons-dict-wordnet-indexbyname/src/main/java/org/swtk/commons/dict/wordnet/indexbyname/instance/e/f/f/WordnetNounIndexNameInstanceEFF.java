@@ -12,10 +12,16 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.f.f;  import java.u
 	add("{\"term\":\"effeminateness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04675496\"]}");
 	add("{\"term\":\"effendi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09755222\"]}");
 	add("{\"term\":\"efferent\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05482390\"]}");
+	add("{\"term\":\"efferent fiber\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05482628\"]}");
+	add("{\"term\":\"efferent nerve\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05482390\"]}");
+	add("{\"term\":\"efferent neuron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05474348\"]}");
 	add("{\"term\":\"effervescence\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04740587\", \"13492884\"]}");
 	add("{\"term\":\"efficaciousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05207137\"]}");
 	add("{\"term\":\"efficacy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05207137\"]}");
 	add("{\"term\":\"efficiency\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05652372\", \"13843205\"]}");
+	add("{\"term\":\"efficiency apartment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03270665\"]}");
+	add("{\"term\":\"efficiency engineer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10066525\"]}");
+	add("{\"term\":\"efficiency expert\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10066525\"]}");
 	add("{\"term\":\"effigy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03270785\"]}");
 	add("{\"term\":\"effleurage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00660910\"]}");
 	add("{\"term\":\"efflorescence\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"11430641\", \"13460743\", \"14345380\", \"15320288\"]}");

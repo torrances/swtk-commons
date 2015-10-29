@@ -1,4 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.z.i.p;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceZIP {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"zip\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"04245427\", \"05043116\", \"06367112\", \"13762308\"]}");
+	add("{\"term\":\"zip code\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06367112\"]}");
+	add("{\"term\":\"zip fastener\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04245427\"]}");
+	add("{\"term\":\"zip gun\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04622506\"]}");
 	add("{\"term\":\"ziphiidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02070594\"]}");
 	add("{\"term\":\"zipper\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04245427\"]}");
 	add("{\"term\":\"zippo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13762308\"]}");

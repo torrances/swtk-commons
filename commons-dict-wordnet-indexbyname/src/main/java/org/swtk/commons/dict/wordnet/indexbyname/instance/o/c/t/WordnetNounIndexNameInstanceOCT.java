@@ -1,9 +1,17 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.o.c.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceOCT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"oct\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15237911\"]}");
 	add("{\"term\":\"octad\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13767226\"]}");
+	add("{\"term\":\"octadecanoic acid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15081505\"]}");
 	add("{\"term\":\"octagon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13905220\"]}");
 	add("{\"term\":\"octahedron\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13938627\"]}");
+	add("{\"term\":\"octal digit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13763743\"]}");
+	add("{\"term\":\"octal notation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06823402\"]}");
+	add("{\"term\":\"octal number system\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06823096\"]}");
+	add("{\"term\":\"octal numeration system\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06823096\"]}");
 	add("{\"term\":\"octameter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07110996\"]}");
 	add("{\"term\":\"octane\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14990918\"]}");
+	add("{\"term\":\"octane number\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13601136\"]}");
+	add("{\"term\":\"octane rating\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13601136\"]}");
+	add("{\"term\":\"octanedioic acid\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14640359\"]}");
 	add("{\"term\":\"octans\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09399778\"]}");
 	add("{\"term\":\"octant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03846343\"]}");
 	add("{\"term\":\"octave\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06394566\", \"06872451\", \"15321501\"]}");
@@ -13,6 +21,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.o.c.t;  import java.u
 	add("{\"term\":\"octette\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"07055883\", \"08004345\", \"08005046\", \"08264968\"]}");
 	add("{\"term\":\"octillion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13775880\"]}");
 	add("{\"term\":\"october\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15237911\"]}");
+	add("{\"term\":\"october revolution\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01310499\"]}");
 	add("{\"term\":\"octoberfest\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07904033\"]}");
 	add("{\"term\":\"octogenarian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10389985\"]}");
 	add("{\"term\":\"octonary\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13767226\"]}");

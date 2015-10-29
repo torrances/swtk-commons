@@ -1,9 +1,15 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.c.y.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCYT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cytherea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09577261\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.c.y.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCYT {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cytesis proliferus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12535097\"]}");
+	add("{\"term\":\"cytherea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09577261\"]}");
 	add("{\"term\":\"cytidine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15097714\"]}");
 	add("{\"term\":\"cytisus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12541166\"]}");
+	add("{\"term\":\"cytisus albus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12541691\"]}");
+	add("{\"term\":\"cytisus multiflorus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12541691\"]}");
+	add("{\"term\":\"cytisus ramentaceus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12518962\"]}");
+	add("{\"term\":\"cytisus scoparius\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12541899\"]}");
 	add("{\"term\":\"cytoarchitectonics\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04940374\"]}");
 	add("{\"term\":\"cytoarchitecture\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04940374\"]}");
 	add("{\"term\":\"cytochrome\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15050138\"]}");
+	add("{\"term\":\"cytochrome c\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15050382\"]}");
 	add("{\"term\":\"cytogenesis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13476123\"]}");
 	add("{\"term\":\"cytogeneticist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10006442\"]}");
 	add("{\"term\":\"cytogenetics\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06080288\"]}");
@@ -12,6 +18,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.c.y.t;  import java.u
 	add("{\"term\":\"cytokinesis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13525700\"]}");
 	add("{\"term\":\"cytokinin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14769656\"]}");
 	add("{\"term\":\"cytol\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05440524\"]}");
+	add("{\"term\":\"cytologic smear\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05272638\"]}");
+	add("{\"term\":\"cytologic specimen\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05274572\"]}");
 	add("{\"term\":\"cytologist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10006583\"]}");
 	add("{\"term\":\"cytology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06080053\"]}");
 	add("{\"term\":\"cytolysin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14852566\"]}");
@@ -28,6 +36,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.c.y.t;  import java.u
 	add("{\"term\":\"cytosmear\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05272638\"]}");
 	add("{\"term\":\"cytosol\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05441285\"]}");
 	add("{\"term\":\"cytostome\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01460651\"]}");
+	add("{\"term\":\"cytotoxic drug\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03162653\"]}");
+	add("{\"term\":\"cytotoxic t cell\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05460092\"]}");
 	add("{\"term\":\"cytotoxicity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13604814\"]}");
 	add("{\"term\":\"cytotoxin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15059934\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

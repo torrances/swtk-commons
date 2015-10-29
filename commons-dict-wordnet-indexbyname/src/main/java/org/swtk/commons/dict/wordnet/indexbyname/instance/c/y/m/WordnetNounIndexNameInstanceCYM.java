@@ -1,4 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.c.y.m;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCYM {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cyma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03161656\"]}");
+	add("{\"term\":\"cyma recta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03161881\"]}");
+	add("{\"term\":\"cyma reversa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03848105\"]}");
 	add("{\"term\":\"cymatiidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01950254\"]}");
 	add("{\"term\":\"cymatium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03161656\"]}");
 	add("{\"term\":\"cymbal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03162014\"]}");

@@ -1,5 +1,7 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.d.o.x;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDOX {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"doxazosin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03234359\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.d.o.x;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDOX {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"doxastic logic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06176110\"]}");
+	add("{\"term\":\"doxazosin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03234359\"]}");
 	add("{\"term\":\"doxepin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03234608\"]}");
+	add("{\"term\":\"doxepin hydrochloride\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03234608\"]}");
 	add("{\"term\":\"doxology\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07049949\"]}");
 	add("{\"term\":\"doxorubicin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03234852\"]}");
 	add("{\"term\":\"doxy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09971872\"]}");

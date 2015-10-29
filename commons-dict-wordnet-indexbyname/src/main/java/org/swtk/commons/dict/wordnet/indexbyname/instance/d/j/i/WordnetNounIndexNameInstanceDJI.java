@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.d.j.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDJI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"djibouti\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08780328\", \"08780656\"]}");
+	add("{\"term\":\"djibouti franc\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13699797\"]}");
 	add("{\"term\":\"djiboutian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09719521\"]}");
 	add("{\"term\":\"djinn\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09567562\"]}");
 	add("{\"term\":\"djinni\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09567562\"]}");

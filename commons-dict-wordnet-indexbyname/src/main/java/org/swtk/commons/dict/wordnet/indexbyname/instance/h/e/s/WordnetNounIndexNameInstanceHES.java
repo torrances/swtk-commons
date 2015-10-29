@@ -7,11 +7,15 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.h.e.s;  import java.u
 	add("{\"term\":\"hesitator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10622936\"]}");
 	add("{\"term\":\"hesperides\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09572345\"]}");
 	add("{\"term\":\"hesperiphona\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01543073\"]}");
+	add("{\"term\":\"hesperiphona vespertina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01543207\"]}");
 	add("{\"term\":\"hesperis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11909090\"]}");
+	add("{\"term\":\"hesperis matronalis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11909269\"]}");
 	add("{\"term\":\"hesperus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09299778\"]}");
 	add("{\"term\":\"hess\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"11067516\", \"11067696\", \"11067956\", \"11068104\"]}");
 	add("{\"term\":\"hesse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11068200\"]}");
 	add("{\"term\":\"hessian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03522007\"]}");
+	add("{\"term\":\"hessian boot\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03522007\"]}");
+	add("{\"term\":\"hessian fly\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02192322\"]}");
 	add("{\"term\":\"hessonite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14927617\"]}");
 	add("{\"term\":\"hestia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09587127\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

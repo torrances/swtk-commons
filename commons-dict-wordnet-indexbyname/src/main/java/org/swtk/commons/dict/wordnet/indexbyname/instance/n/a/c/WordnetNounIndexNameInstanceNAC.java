@@ -3,4 +3,5 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.n.a.c;  import java.u
 	add("{\"term\":\"nacho\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07728704\"]}");
 	add("{\"term\":\"nacimiento\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09387323\"]}");
 	add("{\"term\":\"nacre\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14782885\"]}");
+	add("{\"term\":\"nacreous cloud\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09387479\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

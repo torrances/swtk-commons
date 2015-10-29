@@ -1,10 +1,13 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.a.v.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceAVI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"aviary\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02766609\"]}");
 	add("{\"term\":\"aviation\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00301267\", \"05643033\", \"08084054\", \"08450737\"]}");
+	add("{\"term\":\"aviation medicine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06055568\"]}");
 	add("{\"term\":\"aviator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09845606\"]}");
 	add("{\"term\":\"aviatress\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09846007\"]}");
 	add("{\"term\":\"aviatrix\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09846007\"]}");
 	add("{\"term\":\"avicenna\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10849337\"]}");
 	add("{\"term\":\"avicennia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12935990\"]}");
+	add("{\"term\":\"avicennia marina\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12936328\"]}");
+	add("{\"term\":\"avicennia officinalis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12936571\"]}");
 	add("{\"term\":\"avicenniaceae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12936160\"]}");
 	add("{\"term\":\"avidity\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07570749\"]}");
 	add("{\"term\":\"avidness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07570749\"]}");

@@ -7,10 +7,14 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.n.e.b;  import java.u
 	add("{\"term\":\"nebn\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13853916\"]}");
 	add("{\"term\":\"nebo\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09542731\"]}");
 	add("{\"term\":\"nebraska\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09132074\"]}");
+	add("{\"term\":\"nebraska fern\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12956369\"]}");
 	add("{\"term\":\"nebraskan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09763492\"]}");
 	add("{\"term\":\"nebuchadnezzar\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03819486\", \"11222053\"]}");
+	add("{\"term\":\"nebuchadnezzar ii\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11222053\"]}");
 	add("{\"term\":\"nebuchadrezzar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11222053\"]}");
+	add("{\"term\":\"nebuchadrezzar ii\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11222053\"]}");
 	add("{\"term\":\"nebula\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"04689541\", \"09389837\", \"14338183\", \"14984745\"]}");
+	add("{\"term\":\"nebular hypothesis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05896822\"]}");
 	add("{\"term\":\"nebule\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09390034\"]}");
 	add("{\"term\":\"nebuliser\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02757108\"]}");
 	add("{\"term\":\"nebulizer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02757108\"]}");

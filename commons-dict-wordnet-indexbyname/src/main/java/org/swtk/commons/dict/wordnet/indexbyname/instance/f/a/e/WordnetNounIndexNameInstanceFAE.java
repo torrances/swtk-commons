@@ -1,7 +1,10 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.f.a.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceFAE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"fae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03405304\"]}");
+	add("{\"term\":\"faecal matter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14878449\"]}");
+	add("{\"term\":\"faecal occult test\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05749285\"]}");
 	add("{\"term\":\"faecalith\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09279266\"]}");
 	add("{\"term\":\"faeces\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14878449\"]}");
 	add("{\"term\":\"faerie\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05635465\", \"09563541\"]}");
+	add("{\"term\":\"faeroe islands\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08972401\", \"08972629\"]}");
 	add("{\"term\":\"faeroes\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"08972401\", \"08972629\"]}");
 	add("{\"term\":\"faeroese\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06967827\"]}");
 	add("{\"term\":\"faery\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05635465\", \"09563541\"]}");

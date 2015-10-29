@@ -3,6 +3,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.s.a.v;  import java.u
 	add("{\"term\":\"savagery\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00425937\", \"04837920\", \"05045406\"]}");
 	add("{\"term\":\"savanna\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08663422\"]}");
 	add("{\"term\":\"savannah\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"08663422\", \"09447743\", \"09100332\"]}");
+	add("{\"term\":\"savannah river\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09447743\"]}");
 	add("{\"term\":\"savant\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10226506\"]}");
 	add("{\"term\":\"savara\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06993497\", \"09694768\"]}");
 	add("{\"term\":\"savarin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07649569\"]}");
@@ -11,7 +12,16 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.s.a.v;  import java.u
 	add("{\"term\":\"saver\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10573055\", \"10542352\"]}");
 	add("{\"term\":\"savin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11658442\"]}");
 	add("{\"term\":\"saving\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"00820685\", \"00094303\", \"00193462\"]}");
+	add("{\"term\":\"saving grace\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04740092\", \"14481629\"]}");
 	add("{\"term\":\"savings\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13380745\"]}");
+	add("{\"term\":\"savings account\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13385385\"]}");
+	add("{\"term\":\"savings account trust\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13384538\"]}");
+	add("{\"term\":\"savings and loan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08439671\"]}");
+	add("{\"term\":\"savings and loan association\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08439671\"]}");
+	add("{\"term\":\"savings bank\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04146942\", \"08440014\"]}");
+	add("{\"term\":\"savings bank trust\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13384538\"]}");
+	add("{\"term\":\"savings bond\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13361766\"]}");
+	add("{\"term\":\"savinien cyrano de bergerac\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10939350\"]}");
 	add("{\"term\":\"savior\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10573233\", \"11103646\"]}");
 	add("{\"term\":\"saviour\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10573233\", \"11103646\"]}");
 	add("{\"term\":\"savitar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09551609\"]}");
@@ -26,6 +36,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.s.a.v;  import java.u
 	add("{\"term\":\"savourlessness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05004197\"]}");
 	add("{\"term\":\"savoury\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07610411\", \"07836790\"]}");
 	add("{\"term\":\"savoy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07730640\", \"08965050\"]}");
+	add("{\"term\":\"savoy cabbage\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07730640\", \"11896673\"]}");
 	add("{\"term\":\"savoyard\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09728551\", \"10573452\"]}");
 	add("{\"term\":\"savvy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05813483\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.s.h.y;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSHY {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"shy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00107708\"]}");
+	add("{\"term\":\"shy person\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10614123\"]}");
 	add("{\"term\":\"shylock\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10561958\", \"10762041\"]}");
 	add("{\"term\":\"shyness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07538419\"]}");
 	add("{\"term\":\"shyster\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10614265\"]}");

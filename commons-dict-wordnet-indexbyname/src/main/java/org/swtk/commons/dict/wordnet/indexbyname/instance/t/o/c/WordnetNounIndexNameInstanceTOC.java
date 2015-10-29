@@ -1,5 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.t.o.c;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceTOC {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"tocainide\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04451052\"]}");
 	add("{\"term\":\"tocantins\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09482523\"]}");
+	add("{\"term\":\"tocantins river\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09482523\"]}");
 	add("{\"term\":\"toccata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07058099\"]}");
 	add("{\"term\":\"tocharian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06981381\"]}");
 	add("{\"term\":\"tocktact\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07412555\"]}");

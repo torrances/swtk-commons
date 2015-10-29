@@ -1,4 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.d.u.a;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDUA {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"duad\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13765745\"]}");
+	add("{\"term\":\"dual carriageway\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03220211\"]}");
+	add("{\"term\":\"dual inline package switch\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03209242\"]}");
+	add("{\"term\":\"dual scan display\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03257490\"]}");
 	add("{\"term\":\"dualism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05969565\"]}");
 	add("{\"term\":\"dualist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10057951\"]}");
 	add("{\"term\":\"duality\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04743577\", \"04927745\", \"07956120\"]}");

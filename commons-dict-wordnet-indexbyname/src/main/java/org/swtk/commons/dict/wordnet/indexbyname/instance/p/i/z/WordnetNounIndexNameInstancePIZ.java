@@ -1,5 +1,8 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.p.i.z;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstancePIZ {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"pizarro\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11258716\"]}");
 	add("{\"term\":\"pizza\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07889783\"]}");
+	add("{\"term\":\"pizza parlor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03958852\"]}");
+	add("{\"term\":\"pizza pie\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07889783\"]}");
+	add("{\"term\":\"pizza shop\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03958852\"]}");
 	add("{\"term\":\"pizzaz\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04642839\"]}");
 	add("{\"term\":\"pizzazz\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04642839\"]}");
 	add("{\"term\":\"pizzeria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03958852\"]}");

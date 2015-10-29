@@ -1,6 +1,9 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.e.c.u;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceECU {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ecuador\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08794520\"]}");
 	add("{\"term\":\"ecuadoran\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09719767\"]}");
+	add("{\"term\":\"ecuadoran monetary unit\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13729578\"]}");
 	add("{\"term\":\"ecuadorian\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09719767\"]}");
+	add("{\"term\":\"ecumenical council\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08329918\"]}");
+	add("{\"term\":\"ecumenical movement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08491886\"]}");
 	add("{\"term\":\"ecumenicalism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06803092\"]}");
 	add("{\"term\":\"ecumenicism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06803092\"]}");
 	add("{\"term\":\"ecumenism\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06803092\", \"08488960\"]}");

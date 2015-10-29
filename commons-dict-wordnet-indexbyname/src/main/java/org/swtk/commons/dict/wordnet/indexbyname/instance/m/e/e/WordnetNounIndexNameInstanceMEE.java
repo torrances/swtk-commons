@@ -6,5 +6,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.m.e.e;  import java.u
 	add("{\"term\":\"meet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07482986\"]}");
 	add("{\"term\":\"meeter\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09631032\"]}");
 	add("{\"term\":\"meeting\", \"synsetCount\":6, \"upperType\":\"NOUN\", \"ids\":[\"08560197\", \"00147676\", \"01233454\", \"07429522\", \"08327319\", \"08324519\"]}");
+	add("{\"term\":\"meeting house\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11747827\"]}");
+	add("{\"term\":\"meeting of minds\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13995249\"]}");
+	add("{\"term\":\"meeting place\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03391266\"]}");
 	add("{\"term\":\"meetinghouse\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03104273\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

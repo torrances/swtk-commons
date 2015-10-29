@@ -3,5 +3,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.i.m.i;  import java.u
 	add("{\"term\":\"iminazole\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14940821\"]}");
 	add("{\"term\":\"imipramine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03567069\"]}");
 	add("{\"term\":\"imitation\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"06792908\", \"01022878\", \"03567306\", \"05971469\"]}");
+	add("{\"term\":\"imitation leather\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03658436\"]}");
+	add("{\"term\":\"imitative electronic deception\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01254510\"]}");
 	add("{\"term\":\"imitator\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09983941\", \"10219984\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

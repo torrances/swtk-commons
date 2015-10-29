@@ -1,6 +1,13 @@
-package org.swtk.commons.dict.wordnet.indexbyname.instance.o.s.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceOST {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"ostariophysi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01431813\"]}");
+package org.swtk.commons.dict.wordnet.indexbyname.instance.o.s.t;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceOST {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"os tarsi fibulare\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05282307\"]}");
+	add("{\"term\":\"os temporale\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05289499\"]}");
+	add("{\"term\":\"os trapezium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05280390\"]}");
+	add("{\"term\":\"os trapezoideum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05280572\"]}");
+	add("{\"term\":\"os triquetrum\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05280044\"]}");
+	add("{\"term\":\"ostariophysi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01431813\"]}");
 	add("{\"term\":\"osteichthyes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02517206\"]}");
 	add("{\"term\":\"osteitis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14374726\"]}");
+	add("{\"term\":\"osteitis deformans\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14103453\"]}");
+	add("{\"term\":\"ostensive definition\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06757980\"]}");
 	add("{\"term\":\"ostensorium\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03789803\"]}");
 	add("{\"term\":\"ostentation\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"04796502\", \"04825154\", \"06902380\"]}");
 	add("{\"term\":\"ostentatiousness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04825154\"]}");
@@ -12,6 +19,8 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.o.s.t;  import java.u
 	add("{\"term\":\"osteoclast\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05456649\"]}");
 	add("{\"term\":\"osteocyte\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05456772\"]}");
 	add("{\"term\":\"osteodystrophy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14082963\"]}");
+	add("{\"term\":\"osteogenesis imperfecta\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14181906\"]}");
+	add("{\"term\":\"osteogenic sarcoma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14265038\"]}");
 	add("{\"term\":\"osteoglossidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02547385\"]}");
 	add("{\"term\":\"osteoglossiformes\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02547227\"]}");
 	add("{\"term\":\"osteologer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10405154\"]}");
@@ -29,6 +38,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.o.s.t;  import java.u
 	add("{\"term\":\"osteoporosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14233836\"]}");
 	add("{\"term\":\"osteosarcoma\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14265038\"]}");
 	add("{\"term\":\"osteosclerosis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14211949\"]}");
+	add("{\"term\":\"osteosclerosis congenita\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14145286\"]}");
 	add("{\"term\":\"osteostracan\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01478289\"]}");
 	add("{\"term\":\"osteostraci\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01478062\"]}");
 	add("{\"term\":\"osteotomy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00690720\"]}");
@@ -46,10 +56,14 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.o.s.t;  import java.u
 	add("{\"term\":\"ostracodermi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01477282\"]}");
 	add("{\"term\":\"ostrava\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08776320\"]}");
 	add("{\"term\":\"ostrea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01963541\"]}");
+	add("{\"term\":\"ostrea gigas\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01963875\"]}");
 	add("{\"term\":\"ostreidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01962942\"]}");
 	add("{\"term\":\"ostrich\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"01521519\", \"10405406\"]}");
+	add("{\"term\":\"ostrich fern\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13218952\"]}");
 	add("{\"term\":\"ostrogoth\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10405622\"]}");
 	add("{\"term\":\"ostrya\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12307905\"]}");
+	add("{\"term\":\"ostrya carpinifolia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12308353\"]}");
+	add("{\"term\":\"ostrya virginiana\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12308522\"]}");
 	add("{\"term\":\"ostryopsis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12308705\"]}");
 	add("{\"term\":\"ostwald\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11238044\"]}");
 	add("{\"term\":\"ostyak\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06971758\", \"09726307\"]}");

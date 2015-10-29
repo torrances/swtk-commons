@@ -1,7 +1,11 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.c.e.b;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceCEB {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"cebidae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02494221\"]}");
 	add("{\"term\":\"cebu\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09003010\", \"09004407\"]}");
+	add("{\"term\":\"cebu city\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09004407\"]}");
+	add("{\"term\":\"cebu maguey\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12498636\"]}");
 	add("{\"term\":\"cebuan\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"06952871\", \"09716642\"]}");
 	add("{\"term\":\"cebuano\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06952871\"]}");
 	add("{\"term\":\"cebuella\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02493317\"]}");
+	add("{\"term\":\"cebuella pygmaea\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02493442\"]}");
 	add("{\"term\":\"cebus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02494537\"]}");
+	add("{\"term\":\"cebus capucinus\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02494666\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

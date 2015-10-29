@@ -2,7 +2,12 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.r.a.z;  import java.u
 	add("{\"term\":\"razing\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00218912\", \"07349697\"]}");
 	add("{\"term\":\"razmataz\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00564367\"]}");
 	add("{\"term\":\"razor\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04064159\"]}");
+	add("{\"term\":\"razor clam\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01961670\"]}");
+	add("{\"term\":\"razor edge\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04064435\"]}");
+	add("{\"term\":\"razor fish\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02612247\"]}");
 	add("{\"term\":\"razorback\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02066991\", \"02398809\"]}");
+	add("{\"term\":\"razorback hog\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02398809\"]}");
+	add("{\"term\":\"razorbacked hog\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02398809\"]}");
 	add("{\"term\":\"razorbill\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02048518\"]}");
 	add("{\"term\":\"razorblade\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04064327\"]}");
 	add("{\"term\":\"razz\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07138578\"]}");

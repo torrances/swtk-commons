@@ -2,6 +2,11 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.m.o;  import java.u
 	add("{\"term\":\"emolument\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13311308\"]}");
 	add("{\"term\":\"emoticon\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06290592\"]}");
 	add("{\"term\":\"emotion\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07495208\"]}");
+	add("{\"term\":\"emotional arousal\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14059685\"]}");
+	add("{\"term\":\"emotional disorder\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14412315\"]}");
+	add("{\"term\":\"emotional disturbance\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14412315\"]}");
+	add("{\"term\":\"emotional person\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10072651\"]}");
+	add("{\"term\":\"emotional state\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14009303\"]}");
 	add("{\"term\":\"emotionalism\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04633637\"]}");
 	add("{\"term\":\"emotionality\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04633637\"]}");
 	add("{\"term\":\"emotionlessness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04636551\", \"07498922\"]}");

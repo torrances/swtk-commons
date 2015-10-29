@@ -2,10 +2,15 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.a.b.r;  import java.u
 	add("{\"term\":\"abrachia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14489842\"]}");
 	add("{\"term\":\"abradant\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"02671023\", \"14823414\"]}");
 	add("{\"term\":\"abrader\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02671023\"]}");
+	add("{\"term\":\"abrading stone\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02671243\"]}");
 	add("{\"term\":\"abraham\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10827091\"]}");
+	add("{\"term\":\"abraham lincoln\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11152452\"]}");
+	add("{\"term\":\"abraham stoker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11338819\"]}");
 	add("{\"term\":\"abramis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01442985\"]}");
+	add("{\"term\":\"abramis brama\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01443108\"]}");
 	add("{\"term\":\"abrasion\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"11480462\", \"13444788\", \"14310051\"]}");
 	add("{\"term\":\"abrasive\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14823414\"]}");
+	add("{\"term\":\"abrasive material\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14823414\"]}");
 	add("{\"term\":\"abrasiveness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04787389\", \"04956243\"]}");
 	add("{\"term\":\"abreaction\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00254262\"]}");
 	add("{\"term\":\"abridgement\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06479794\"]}");
@@ -16,7 +21,15 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.a.b.r;  import java.u
 	add("{\"term\":\"abrogation\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00232754\"]}");
 	add("{\"term\":\"abrogator\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09776642\"]}");
 	add("{\"term\":\"abronia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11857025\"]}");
+	add("{\"term\":\"abronia elliptica\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11857489\"]}");
+	add("{\"term\":\"abronia fragrans\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11857673\"]}");
+	add("{\"term\":\"abronia latifolia\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11857820\"]}");
+	add("{\"term\":\"abronia maritima\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11858031\"]}");
+	add("{\"term\":\"abronia umbellata\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11858212\"]}");
+	add("{\"term\":\"abronia villosa\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11858439\"]}");
+	add("{\"term\":\"abruptio placentae\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14077584\"]}");
 	add("{\"term\":\"abruption\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01070452\"]}");
 	add("{\"term\":\"abruptness\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"05067645\", \"05076793\", \"04922639\"]}");
 	add("{\"term\":\"abruzzi\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08822006\"]}");
+	add("{\"term\":\"abruzzi e molise\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08822006\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }

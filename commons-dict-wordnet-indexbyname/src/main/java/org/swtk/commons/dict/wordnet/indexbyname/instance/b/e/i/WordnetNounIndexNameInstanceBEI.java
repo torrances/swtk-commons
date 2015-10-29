@@ -2,6 +2,7 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.b.e.i;  import java.u
 	add("{\"term\":\"beigel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07709470\"]}");
 	add("{\"term\":\"beignet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07655325\"]}");
 	add("{\"term\":\"beijing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08742559\"]}");
+	add("{\"term\":\"beijing dialect\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06942870\"]}");
 	add("{\"term\":\"being\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00004475\", \"13977471\"]}");
 	add("{\"term\":\"beingness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13977471\"]}");
 	add("{\"term\":\"beira\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08993755\"]}");

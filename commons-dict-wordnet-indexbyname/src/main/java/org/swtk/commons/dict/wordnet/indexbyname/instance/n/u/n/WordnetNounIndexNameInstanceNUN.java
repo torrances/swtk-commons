@@ -1,5 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.n.u.n;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceNUN {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"nun\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"06851162\", \"07281584\", \"10387708\"]}");
+	add("{\"term\":\"nun buoy\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07281584\"]}");
 	add("{\"term\":\"nunavut\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08844656\"]}");
+	add("{\"term\":\"nunc dimittis\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06468312\"]}");
 	add("{\"term\":\"nuncio\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10387812\"]}");
 	add("{\"term\":\"nung\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06948767\"]}");
 	add("{\"term\":\"nunnery\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03841373\"]}");

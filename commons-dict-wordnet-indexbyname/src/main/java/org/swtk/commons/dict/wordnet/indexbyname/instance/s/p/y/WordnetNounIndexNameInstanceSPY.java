@@ -1,4 +1,5 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.s.p.y;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceSPY {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"spy\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10661549\", \"10661153\"]}");
+	add("{\"term\":\"spy satellite\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04297900\"]}");
 	add("{\"term\":\"spyeria\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02280995\"]}");
 	add("{\"term\":\"spyglass\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03338074\"]}");
 	add("{\"term\":\"spyhole\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03911327\"]}");

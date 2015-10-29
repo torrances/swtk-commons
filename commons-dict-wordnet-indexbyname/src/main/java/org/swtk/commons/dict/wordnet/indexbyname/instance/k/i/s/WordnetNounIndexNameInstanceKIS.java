@@ -5,9 +5,18 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.k.i.s;  import java.u
 	add("{\"term\":\"kismat\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07345160\"]}");
 	add("{\"term\":\"kismet\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07345160\"]}");
 	add("{\"term\":\"kiss\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"00138898\", \"07622373\", \"07652478\", \"00139041\"]}");
+	add("{\"term\":\"kiss curl\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05266110\"]}");
+	add("{\"term\":\"kiss of death\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07330842\"]}");
+	add("{\"term\":\"kiss of life\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00834287\"]}");
+	add("{\"term\":\"kiss of peace\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06643647\"]}");
 	add("{\"term\":\"kisser\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05609112\", \"10256893\"]}");
 	add("{\"term\":\"kissimmee\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09349045\"]}");
+	add("{\"term\":\"kissimmee river\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09349045\"]}");
 	add("{\"term\":\"kissing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00855630\"]}");
+	add("{\"term\":\"kissing bug\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02247167\"]}");
+	add("{\"term\":\"kissing cousin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10257012\"]}");
+	add("{\"term\":\"kissing disease\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"14158759\"]}");
+	add("{\"term\":\"kissing kin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10257012\"]}");
 	add("{\"term\":\"kissinger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11126280\"]}");
 	add("{\"term\":\"kisumu\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08948515\"]}");
 	add("{\"term\":\"kiswahili\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07006307\"]}");

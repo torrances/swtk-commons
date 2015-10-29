@@ -1,8 +1,15 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.l.u.g;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceLUG {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"lug\", \"synsetCount\":4, \"upperType\":\"NOUN\", \"ids\":[\"01939312\", \"03700942\", \"03701902\", \"09533437\"]}");
+	add("{\"term\":\"lug wrench\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03702080\"]}");
 	add("{\"term\":\"luganda\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07006637\"]}");
 	add("{\"term\":\"luge\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03701079\"]}");
 	add("{\"term\":\"luger\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"10295637\", \"03701183\"]}");
 	add("{\"term\":\"luggage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02777635\"]}");
+	add("{\"term\":\"luggage carousel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02969824\"]}");
+	add("{\"term\":\"luggage carrier\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03701283\"]}");
+	add("{\"term\":\"luggage carrousel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02969824\"]}");
+	add("{\"term\":\"luggage compartment\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03701391\"]}");
+	add("{\"term\":\"luggage rack\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03701635\"]}");
+	add("{\"term\":\"luggage van\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02778044\"]}");
 	add("{\"term\":\"lugger\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03701779\"]}");
 	add("{\"term\":\"lugh\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09533437\"]}");
 	add("{\"term\":\"luging\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00448346\"]}");

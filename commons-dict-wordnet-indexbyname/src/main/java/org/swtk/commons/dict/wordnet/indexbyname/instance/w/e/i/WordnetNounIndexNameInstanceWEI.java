@@ -1,9 +1,15 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.w.e.i;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceWEI {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"wei\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08176490\"]}");
+	add("{\"term\":\"wei dynasty\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08176490\"]}");
 	add("{\"term\":\"weigela\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12702654\"]}");
+	add("{\"term\":\"weigela florida\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12702654\"]}");
 	add("{\"term\":\"weighbridge\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04578244\"]}");
 	add("{\"term\":\"weigher\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10792945\"]}");
 	add("{\"term\":\"weighing\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05793072\"]}");
+	add("{\"term\":\"weighing machine\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04149040\"]}");
 	add("{\"term\":\"weight\", \"synsetCount\":8, \"upperType\":\"NOUN\", \"ids\":[\"13610524\", \"13630031\", \"13737860\", \"07554200\", \"04578374\", \"05179849\", \"04578578\", \"05034009\"]}");
+	add("{\"term\":\"weight gainer\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10137396\"]}");
+	add("{\"term\":\"weight gaining\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"00628561\"]}");
+	add("{\"term\":\"weight unit\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13630031\", \"13739260\"]}");
 	add("{\"term\":\"weightiness\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"05034695\", \"05179849\"]}");
 	add("{\"term\":\"weighting\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13610524\"]}");
 	add("{\"term\":\"weightlessness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05035866\"]}");
@@ -13,10 +19,12 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.w.e.i;  import java.u
 	add("{\"term\":\"weil\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"11399686\", \"11399807\"]}");
 	add("{\"term\":\"weill\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11399903\"]}");
 	add("{\"term\":\"weimar\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08789233\"]}");
+	add("{\"term\":\"weimar republic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08186969\"]}");
 	add("{\"term\":\"weimaraner\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"02094991\"]}");
 	add("{\"term\":\"weinberg\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11400030\"]}");
 	add("{\"term\":\"weir\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04578972\", \"04578852\"]}");
 	add("{\"term\":\"weird\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09609617\"]}");
+	add("{\"term\":\"weird sister\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09605518\"]}");
 	add("{\"term\":\"weirdie\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09996447\"]}");
 	add("{\"term\":\"weirdness\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04805760\"]}");
 	add("{\"term\":\"weirdo\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09995813\", \"09996447\"]}");

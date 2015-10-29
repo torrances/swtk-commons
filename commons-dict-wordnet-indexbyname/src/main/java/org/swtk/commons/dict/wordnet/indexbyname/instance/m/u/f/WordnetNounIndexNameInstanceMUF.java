@@ -1,5 +1,6 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.m.u.f;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceMUF {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"muff\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00076732\", \"03802496\"]}");
 	add("{\"term\":\"muffin\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07706018\"]}");
+	add("{\"term\":\"muffin man\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10356617\"]}");
 	add("{\"term\":\"muffle\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03802584\"]}");
 	add("{\"term\":\"muffler\", \"synsetCount\":3, \"upperType\":\"NOUN\", \"ids\":[\"03166116\", \"03802704\", \"04225631\"]}");
 	add("{\"term\":\"mufti\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"03802786\", \"10356733\"]}");

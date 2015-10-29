@@ -1,7 +1,16 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.y.a.r;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceYAR {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"yard\", \"synsetCount\":9, \"upperType\":\"NOUN\", \"ids\":[\"04617860\", \"04618033\", \"04618511\", \"08702414\", \"13639357\", \"13772984\", \"08702032\", \"04618236\", \"13672065\"]}");
+	add("{\"term\":\"yard bird\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09982445\", \"10822111\"]}");
+	add("{\"term\":\"yard donkey\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04618827\"]}");
+	add("{\"term\":\"yard goods\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04619011\"]}");
+	add("{\"term\":\"yard grass\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12138931\"]}");
+	add("{\"term\":\"yard line\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08671702\"]}");
+	add("{\"term\":\"yard marker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04619152\"]}");
+	add("{\"term\":\"yard measure\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04619273\"]}");
+	add("{\"term\":\"yard sale\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01121571\"]}");
 	add("{\"term\":\"yardage\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"05138140\"]}");
 	add("{\"term\":\"yardarm\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"04618708\"]}");
 	add("{\"term\":\"yardbird\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"09982445\", \"10822111\"]}");
+	add("{\"term\":\"yardbird parker\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11242904\"]}");
 	add("{\"term\":\"yarder\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"04618827\", \"13672353\"]}");
 	add("{\"term\":\"yardgrass\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"12138931\"]}");
 	add("{\"term\":\"yardie\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10822225\"]}");

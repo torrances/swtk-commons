@@ -1,5 +1,7 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.w.i.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceWIE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"wieland\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"09608393\"]}");
 	add("{\"term\":\"wiener\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"07692347\", \"11405606\"]}");
+	add("{\"term\":\"wiener roast\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07592809\"]}");
+	add("{\"term\":\"wiener schnitzel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07896433\"]}");
 	add("{\"term\":\"wienerwurst\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"07692347\"]}");
 	add("{\"term\":\"wiesbaden\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"08792886\"]}");
 	add("{\"term\":\"wiesel\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"11405743\"]}");

@@ -1,4 +1,12 @@
 package org.swtk.commons.dict.wordnet.indexbyname.instance.d.u.e;  import java.util.ArrayList; import java.util.Collection; import java.util.Map; import java.util.TreeMap;  import org.swtk.common.dict.dto.wordnet.IndexNoun;  import com.trimc.blogger.commons.utils.GsonUtils;  public final class WordnetNounIndexNameInstanceDUE {  	private static Map<String, Collection<IndexNoun>> map = new TreeMap<String, Collection<IndexNoun>>();  	static { 			add("{\"term\":\"due\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"13418034\", \"05183609\"]}");
+	add("{\"term\":\"due care\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01134115\"]}");
+	add("{\"term\":\"due date\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15178185\"]}");
+	add("{\"term\":\"due east\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13854554\"]}");
+	add("{\"term\":\"due north\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13853375\"]}");
+	add("{\"term\":\"due process\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01183965\"]}");
+	add("{\"term\":\"due process of law\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"01183965\"]}");
+	add("{\"term\":\"due south\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13855574\"]}");
+	add("{\"term\":\"due west\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"13856598\"]}");
 	add("{\"term\":\"duel\", \"synsetCount\":2, \"upperType\":\"NOUN\", \"ids\":[\"00790898\", \"01175274\"]}");
 	add("{\"term\":\"dueler\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10058654\"]}");
 	add("{\"term\":\"duelist\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"10058654\"]}");

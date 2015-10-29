@@ -2,4 +2,5 @@ package org.swtk.commons.dict.wordnet.indexbyname.instance.e.o.l;  import java.u
 	add("{\"term\":\"eolic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"06990460\"]}");
 	add("{\"term\":\"eolith\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"03296996\"]}");
 	add("{\"term\":\"eolithic\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15257032\"]}");
+	add("{\"term\":\"eolithic age\", \"synsetCount\":1, \"upperType\":\"NOUN\", \"ids\":[\"15257032\"]}");
  	}  	private static void add(final String JSON) { 		IndexNoun indexNoun = GsonUtils.toObject(JSON, IndexNoun.class); 		Collection<IndexNoun> list = (map.containsKey(indexNoun.getTerm())) ? map.get(indexNoun.getTerm()) : new ArrayList<IndexNoun>(); 		list.add(indexNoun); 		map.put(indexNoun.getTerm(), list); 	} 	 	public static Collection<IndexNoun> get(final String TERM) { 		return map.get(TERM); 	}  	public static boolean has(final String TERM) { 		return map.containsKey(TERM); 	} 	 	public static Collection<String> terms() { 		return map.keySet(); 	} }
