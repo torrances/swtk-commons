@@ -4,11 +4,15 @@ import com.trimc.blogger.commons.LogManager;
 
 public enum LanguageTag {
 
+	ENGLISH("en"),
+
 	ENGLISH_UK("en_UK"),
-
+	
 	ENGLISH_US("en_US"),
+	
+	GREEK("el_GR"),
 
-	GREEK("el_GR");
+	SPANISH("es");
 
 	public static LogManager	logger	= new LogManager(LanguageTag.class);
 
