@@ -42,11 +42,6 @@
 			<version>${swtk.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.swtk.common.core</groupId>
-			<artifactId>commons-core</artifactId>
-			<version>${swtk.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>org.swtk.common.dict.dto</groupId>
 			<artifactId>commons-dict-dto</artifactId>
 			<version>${swtk.version}</version>
