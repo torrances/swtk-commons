@@ -21,6 +21,7 @@
 		<module>../commons-dict-iso639</module>
 		<module>../commons-dict-wiktionary</module>
 		<module>../commons-dict-gngrams</module>
+		<module>../commons-dict-stopwords</module>
 		<module>../commons-dict-wordnet-indexbyid</module>
 		<module>../commons-dict-wordnet-indexbyname</module>
 		<module>../commons-dict-wordnet-frames</module>
@@ -70,6 +71,11 @@
 		<dependency>
 			<groupId>org.swtk.common.dict.gngrams</groupId>
 			<artifactId>commons-dict-gngrams</artifactId>
+			<version>${swtk.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.swtk.common.dict.stopwords</groupId>
+			<artifactId>commons-dict-stopwords</artifactId>
 			<version>${swtk.version}</version>
 		</dependency>
 		<dependency>
