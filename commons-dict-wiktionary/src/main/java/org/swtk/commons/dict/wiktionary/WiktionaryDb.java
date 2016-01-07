@@ -29,7 +29,7 @@ import org.swtk.commons.dict.wiktionary.controller.WiktionaryDbY;
 import org.swtk.commons.dict.wiktionary.controller.WiktionaryDbZ;
 
 public final class WiktionaryDb {
-
+	
 	public static Entry findByName(String name) {
 		if (null == name || 0 == name.length()) return null;
 		name = name.toLowerCase();
@@ -63,5 +63,9 @@ public final class WiktionaryDb {
 		else if ("z".equals(key)) return WiktionaryDbZ.findByName(name);
 
 		return null;
+	}
+
+	public static boolean hasByName(String name) {
+		return null != findByName(name);
 	}
 }

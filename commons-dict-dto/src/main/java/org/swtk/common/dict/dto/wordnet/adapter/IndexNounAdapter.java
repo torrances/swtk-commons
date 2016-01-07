@@ -2,6 +2,7 @@ package org.swtk.common.dict.dto.wordnet.adapter;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
 
 import org.swtk.common.dict.dto.wordnet.IndexNoun;
@@ -12,6 +13,18 @@ import com.trimc.blogger.commons.utils.SetUtils;
 import com.trimc.blogger.commons.utils.string.StringUtils;
 
 public final class IndexNounAdapter {
+
+	public static String toString(Collection<IndexNoun> list) {
+		StringBuilder sb = new StringBuilder();
+
+		Iterator<IndexNoun> iter = list.iterator();
+		while (iter.hasNext()) {
+			sb.append(toString(iter.next()));
+			if (iter.hasNext()) sb.append(System.lineSeparator());
+		}
+
+		return sb.toString();
+	}
 
 	public static String toString(IndexNoun bean) {
 		StringBuilder sb = new StringBuilder();
